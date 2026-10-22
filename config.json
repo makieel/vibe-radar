@@ -1,0 +1,18 @@
+{
+  "tools": [
+    { "id": "claude-code", "name": "Claude Code", "kind": "github-release", "repo": "anthropics/claude-code" },
+    { "id": "codex", "name": "Codex CLI", "kind": "github-release", "repo": "openai/codex" },
+    { "id": "gemini-cli", "name": "Gemini CLI", "kind": "github-release", "repo": "google-gemini/gemini-cli" },
+    { "id": "copilot", "name": "GitHub Copilot", "kind": "copilot-feed" },
+    { "id": "cursor", "name": "Cursor", "kind": "cursor-page" }
+  ],
+  "kitTopics": ["mcp", "mcp-server", "claude-code", "agent-skills", "cursor-rules"],
+  "watchlist": {
+    "npm": ["openai", "@anthropic-ai/sdk", "langchain", "next", "vite", "express"],
+    "pip": ["litellm", "openai", "anthropic", "langchain"]
+  },
+  "securityTerms": ["backdoor", "compromised", "malware", "credential stealer", "supply chain", "CVE-", "vulnerability", "exploit", "취약점", "악성", "보안 패치", "해킹"],
+  "redditSubs": ["ClaudeAI", "vibecoding"],
+  "arxivMax": 200,
+  "trackDays": 30
+}
