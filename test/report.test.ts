@@ -1,10 +1,13 @@
 import { test } from 'node:test';
+import { mkdirSync, mkdtempSync, rmSync, writeFileSync } from 'node:fs';
+import { tmpdir } from 'node:os';
+import { join } from 'node:path';
 import assert from 'node:assert/strict';
 import { readFileSync } from 'node:fs';
 import { loadConfig } from '../src/config.ts';
 import { DailyReportSchema, RawSnapshotSchema, type DailyReport, type Issue, type RawSnapshot } from '../src/schema.ts';
 import type { StarHistory } from '../src/collectors/types.ts';
-import { buildDailyReport } from '../src/analyze/report.ts';
+import { analyzeDate, buildDailyReport } from '../src/analyze/report.ts';
 import { computeGauge } from '../src/analyze/gauge.ts';
 import { pickAlerts } from '../src/analyze/alerts.ts';
 import { risingRepos, repoChanges } from '../src/analyze/repos.ts';
@@ -142,13 +145,29 @@ test('repoChanges compares trending sets; null prev → empty', () => {
 });
 
 test('kitCards classifies cloudflare/security-audit-skill as SKILL', () => {
-  const cards = kitCards(fixtureRaw, config);
-  const c = cards.find((x) => x.fullName === 'cloudflare/security-audit-skill');
-  assert.ok(c);
-  assert.equal(c.kind, 'SKILL');
-  const stars = cards.map((x) => x.stars);
-  assert.deepEqual(stars, [...stars].sort((a, b) => b - a));
-  assert.equal(new Set(cards.map((x) => x.fullName.toLowerCase())).size, cards.length);
+  const real = fixtureRaw.trending.find((t) => t.fullName === 'cloudflare/security-audit-skill')!;
+  const cards = kitCards(makeRaw({ trending: [real] }), config);
+  assert.equal(cards[0]!.fullName, 'cloudflare/security-audit-skill');
+  assert.equal(cards[0]!.kind, 'SKILL');
+  const all = kitCards(fixtureRaw, config);
+  assert.ok(all.length <= 12);
+  assert.equal(new Set(all.map((x) => x.fullName.toLowerCase())).size, all.length);
+});
+
+const trend = (fullName: string, description: string | null, stars: number) =>
+  ({ fullName, url: `https://github.com/${fullName}`, description, language: null, stars, starsInPeriod: 1, period: 'daily' as const });
+
+test('kitCards R14: agent-only trending excluded; plugin/MCP trending included; search hits come first', () => {
+  const raw = makeRaw({
+    kit: [{ fullName: 's/search', url: 'https://github.com/s/search', description: 'tiny mcp server', stars: 10, createdAt: null, topics: ['mcp'] }],
+    trending: [
+      trend('t/agent-only', 'a huge autonomous agent framework', 900000),
+      trend('t/plug', 'A Claude Code plugin marketplace', 500000),
+      trend('t/mcp', 'bridge via MCP for databases', 400000),
+    ],
+  });
+  const cards = kitCards(raw, config);
+  assert.deepEqual(cards.map((c) => c.fullName), ['s/search', 't/plug', 't/mcp']);
 });
 
 test('kitCards kind order: MCP before SKILL, CLI/AGENT/OTHER', () => {
@@ -174,4 +193,60 @@ test('buildDailyReport output passes schema and keeps top 30 issues, no placehol
   assert.deepEqual(counts, [...counts].sort((a, b) => b - a));
   assert.ok(r.issues.every((i) => i.title_ko === null && i.summary_ko === null && i.check_ko === null));
   assert.ok(r.keywords.every((k) => k.avg7 === null));
+});
+
+test('analyzeDate: prev raw, scanNo, 7-daily cap, raw-based keywords, writes file, no history', () => {
+  const dir = mkdtempSync(join(tmpdir(), 'vr-analyze-'));
+  try {
+    mkdirSync(join(dir, 'raw'));
+    mkdirSync(join(dir, 'daily'));
+    const putRaw = (date: string, p: Partial<RawSnapshot>) =>
+      writeFileSync(join(dir, 'raw', `${date}.json`), JSON.stringify({ ...fixtureRaw, date, ...p }));
+    const gone = { fullName: 'zz/gone', url: 'https://github.com/zz/gone', description: null, language: null, stars: 5, starsInPeriod: 1, period: 'daily' as const };
+    const dropped = fixtureRaw.trending[0]!;
+    putRaw('2026-10-21', {});
+    putRaw('2026-10-22', { trending: [...fixtureRaw.trending.slice(1), gone] });
+    putRaw('2026-10-23', {
+      hn: [...fixtureRaw.hn, hn(999001, 'Zyxquark released today', 'https://e.test/zyx', 5)],
+    });
+    // 9 earlier dailies + one dated after the target (must be ignored)
+    const dailyDates = [1, 2, 3, 4, 5, 6, 7, 8, 9].map((d) => `2026-10-0${d}`);
+    dailyDates.forEach((d, i) => {
+      const r = { ...prevDaily(d, (i + 1) * 5) };
+      writeFileSync(join(dir, 'daily', `${d}.json`), JSON.stringify(r));
+    });
+    writeFileSync(join(dir, 'daily', '2026-10-30.json'), JSON.stringify(prevDaily('2026-10-30', 100)));
+
+    const r = analyzeDate('2026-10-23', dir);
+    assert.equal(r.scanNo, 10);
+    assert.equal(r.gauge.daysOfHistory, 7);
+    assert.equal(r.gauge.avg7, 30); // last 7 of 5..45 step 5 → 15..45 mean 30
+    assert.deepEqual(r.droppedRepos.map((x) => x.fullName), ['zz/gone']);
+    assert.deepEqual(r.newRepos.map((x) => x.fullName), [dropped.fullName]);
+    const kw = new Map(r.keywords.map((k) => [k.term, k]));
+    assert.ok(r.keywords.length > 0);
+    assert.ok(!kw.get('claude')?.isNew);
+    const written = DailyReportSchema.parse(JSON.parse(readFileSync(join(dir, 'daily', '2026-10-23.json'), 'utf8')));
+    assert.equal(written.date, '2026-10-23');
+    assert.ok(written.rising.length > 0);
+    assert.ok(written.rising.every((x) => x.deltaSource === 'trending-weekly' && x.series.length === 0));
+  } finally {
+    rmSync(dir, { recursive: true, force: true });
+  }
+});
+
+test('analyzeDate: isNew keyword when absent from all previous raws', () => {
+  const dir = mkdtempSync(join(tmpdir(), 'vr-analyze-'));
+  try {
+    mkdirSync(join(dir, 'raw'));
+    writeFileSync(join(dir, 'raw', '2026-10-22.json'), JSON.stringify({ ...fixtureRaw, date: '2026-10-22' }));
+    writeFileSync(join(dir, 'raw', '2026-10-23.json'), JSON.stringify({
+      ...fixtureRaw, date: '2026-10-23', hn: [hn(999001, 'Zyxquark zyxquark', 'https://e.test/zyx', 5)], geeknews: [], reddit: [], trending: [], arxiv: [],
+    }));
+    const r = analyzeDate('2026-10-23', dir);
+    assert.equal(r.scanNo, 1);
+    assert.equal(r.keywords.find((k) => k.term === 'zyxquark')?.isNew, true);
+  } finally {
+    rmSync(dir, { recursive: true, force: true });
+  }
 });

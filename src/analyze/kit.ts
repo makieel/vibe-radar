@@ -2,7 +2,8 @@ import type { Config } from '../config.ts';
 import type { KitCard, KitRepo, RawSnapshot } from '../schema.ts';
 
 const NEW_DAYS_MS = 30 * 86_400_000;
-const MATCH_RE = /mcp|skill|agent|rules/i;
+// R14: generic "agent" alone does not qualify a trending repo.
+const MATCH_RE = /\bmcp\b|skill|rules|cursor-rules|claude\.md|agents\.md|plugin/i;
 
 // Checked in order; first match wins. Leading \b keeps "client" from reading as CLI.
 const KINDS: [RegExp, KitCard['kind']][] = [
@@ -19,18 +20,19 @@ function kindOf(text: string): KitCard['kind'] {
 
 export function kitCards(raw: RawSnapshot, config: Config, topN = 12): KitCard[] {
   const topics = config.kitTopics.map((t) => t.toLowerCase());
-  const byName = new Map<string, KitRepo>();
-  for (const k of raw.kit) byName.set(k.fullName.toLowerCase(), k);
-  for (const t of raw.trending) {
+  const search = [...raw.kit].sort((x, y) => y.stars - x.stars);
+  const seen = new Set(search.map((k) => k.fullName.toLowerCase()));
+  const matched: KitRepo[] = [];
+  for (const t of [...raw.trending].sort((x, y) => y.stars - x.stars)) {
     const key = t.fullName.toLowerCase();
-    if (byName.has(key) || !t.description) continue;
-    const desc = t.description.toLowerCase();
-    if (!MATCH_RE.test(desc) && !topics.some((x) => desc.includes(x))) continue;
-    byName.set(key, { fullName: t.fullName, url: t.url, description: t.description, stars: t.stars, createdAt: null, topics: [] });
+    if (seen.has(key)) continue;
+    const text = `${t.fullName} ${t.description ?? ''}`.toLowerCase();
+    if (!MATCH_RE.test(text) && !topics.some((x) => text.includes(x))) continue;
+    seen.add(key);
+    matched.push({ fullName: t.fullName, url: t.url, description: t.description, stars: t.stars, createdAt: null, topics: [] });
   }
   const now = Date.parse(raw.collectedAt);
-  return [...byName.values()]
-    .sort((a, b) => b.stars - a.stars)
+  return [...search, ...matched]
     .slice(0, topN)
     .map((k): KitCard => ({
       fullName: k.fullName,
