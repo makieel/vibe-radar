@@ -61,3 +61,14 @@ test('timeout aborts', async () => {
     });
   await assert.rejects(fetchText('https://x.test/a', { fetch: f as any, timeoutMs: 10 }));
 });
+
+test('fetchText forwards method and body', async () => {
+  let seen: RequestInit | undefined;
+  const f = async (_u: any, init?: RequestInit) => {
+    seen = init;
+    return new Response('ok');
+  };
+  await fetchText('https://x.test/a', { fetch: f as any, method: 'POST', body: '{"a":1}', headers: { 'Content-Type': 'application/json' } });
+  assert.equal(seen!.method, 'POST');
+  assert.equal(seen!.body, '{"a":1}');
+});

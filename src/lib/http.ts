@@ -5,6 +5,8 @@ export interface FetchOpts {
   timeoutMs?: number;
   token?: string | null;
   headers?: Record<string, string>;
+  method?: string;
+  body?: string;
 }
 
 export const USER_AGENT = 'vibe-radar/1.0 (+https://github.com)';
@@ -36,6 +38,8 @@ export async function fetchText(url: string, opts: FetchOpts = {}): Promise<stri
   if (opts.token && wantsToken(url)) headers['Authorization'] = `Bearer ${opts.token}`;
   const res = await doFetch(url, {
     headers,
+    ...(opts.method ? { method: opts.method } : {}),
+    ...(opts.body !== undefined ? { body: opts.body } : {}),
     signal: AbortSignal.timeout(opts.timeoutMs ?? DEFAULT_TIMEOUT_MS),
   });
   if (!res.ok) throw new HttpError(res.status, url);
