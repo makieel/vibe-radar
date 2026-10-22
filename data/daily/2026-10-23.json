@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "date": "2026-10-23",
-  "collectedAt": "2026-10-22T15:09:54.878Z",
+  "collectedAt": "2026-10-22T15:55:02.045Z",
   "mode": "reduced",
   "scanNo": 1,
   "sources": [
@@ -22,7 +22,7 @@
     {
       "id": "reddit",
       "ok": true,
-      "count": 25,
+      "count": 24,
       "error": null,
       "reduced": false
     },
@@ -50,7 +50,7 @@
     {
       "id": "tools",
       "ok": true,
-      "count": 3,
+      "count": 4,
       "error": null,
       "reduced": false
     },
@@ -77,42 +77,12 @@
     }
   ],
   "gauge": {
-    "value": 53,
+    "value": 51,
     "avg7": null,
     "label": null,
     "daysOfHistory": 0
   },
   "issues": [
-    {
-      "id": "b6b7083a4e",
-      "title": "Claude Duet",
-      "title_ko": null,
-      "summary_ko": null,
-      "check_ko": null,
-      "heat": 61,
-      "heatReason": "HN 487점 · 댓글 448 · 출처 2곳",
-      "sources": [
-        "hn",
-        "reddit"
-      ],
-      "url": "https://claude.com/product/claude-duet",
-      "items": [
-        {
-          "source": "hn",
-          "title": "Claude Duet",
-          "url": "https://claude.com/product/claude-duet",
-          "points": 487,
-          "comments": 448
-        },
-        {
-          "source": "reddit",
-          "title": "Anthropic just announced Claude Duet",
-          "url": "https://www.reddit.com/r/ClaudeAI/comments/1xbx2hk/anthropic_just_announced_claude_duet/",
-          "points": null,
-          "comments": null
-        }
-      ]
-    },
     {
       "id": "2909c9f58c",
       "title": "PingCap TiDB Leaks",
@@ -120,7 +90,7 @@
       "summary_ko": null,
       "check_ko": null,
       "heat": 55,
-      "heatReason": "HN 404점 · 댓글 66 · 출처 2곳",
+      "heatReason": "HN 407점 · 댓글 69 · 출처 2곳",
       "sources": [
         "hn",
         "geeknews"
@@ -131,8 +101,8 @@
           "source": "hn",
           "title": "PingCap TiDB Leaks",
           "url": "https://fulcrumsec.vg/pingcap/",
-          "points": 404,
-          "comments": 66
+          "points": 407,
+          "comments": 69
         },
         {
           "source": "geeknews",
@@ -144,24 +114,24 @@
       ]
     },
     {
-      "id": "9b87a6877c",
-      "title": "Meta ordered to pay $25B penalty in New Mexico Cambridge Analytica case",
+      "id": "b6b7083a4e",
+      "title": "Claude Duet",
       "title_ko": null,
       "summary_ko": null,
       "check_ko": null,
-      "heat": 52,
-      "heatReason": "HN 632점 · 댓글 364",
+      "heat": 51,
+      "heatReason": "HN 498점 · 댓글 458",
       "sources": [
         "hn"
       ],
-      "url": "https://www.cnbc.com/2026/10/21/meta-new-mexico-cambridge-analytica-penalty.html",
+      "url": "https://claude.com/product/claude-duet",
       "items": [
         {
           "source": "hn",
-          "title": "Meta ordered to pay $25B penalty in New Mexico Cambridge Analytica case",
-          "url": "https://www.cnbc.com/2026/10/21/meta-new-mexico-cambridge-analytica-penalty.html",
-          "points": 632,
-          "comments": 364
+          "title": "Claude Duet",
+          "url": "https://claude.com/product/claude-duet",
+          "points": 498,
+          "comments": 458
         }
       ]
     },
@@ -172,7 +142,7 @@
       "summary_ko": null,
       "check_ko": null,
       "heat": 50,
-      "heatReason": "HN 540점 · 댓글 313",
+      "heatReason": "HN 545점 · 댓글 316",
       "sources": [
         "hn"
       ],
@@ -182,8 +152,8 @@
           "source": "hn",
           "title": "Security Disclosure",
           "url": "https://blog.railway.com/p/security-disclosure-wednesday-october-21st",
-          "points": 540,
-          "comments": 313
+          "points": 545,
+          "comments": 316
         }
       ]
     },
@@ -194,7 +164,7 @@
       "summary_ko": null,
       "check_ko": null,
       "heat": 49,
-      "heatReason": "HN 569점 · 댓글 185",
+      "heatReason": "HN 571점 · 댓글 185",
       "sources": [
         "hn"
       ],
@@ -204,8 +174,30 @@
           "source": "hn",
           "title": "Compromised LiteLLM 1.107.0 on PyPI Installs a Credential Stealer and Backdoor",
           "url": "https://safedep.io/litellm-pypi-compromise-credential-stealer-backdoor/",
-          "points": 569,
+          "points": 571,
           "comments": 185
+        }
+      ]
+    },
+    {
+      "id": "d2039dacc2",
+      "title": "eMudhra to Exit Global SSL/TLS Certificate Business",
+      "title_ko": null,
+      "summary_ko": null,
+      "check_ko": null,
+      "heat": 48,
+      "heatReason": "HN 369점 · 댓글 247",
+      "sources": [
+        "hn"
+      ],
+      "url": "https://emudhra.com/en/press-release/emudhra-to-exit-global-ssl-tls-certificate-business",
+      "items": [
+        {
+          "source": "hn",
+          "title": "eMudhra to Exit Global SSL/TLS Certificate Business",
+          "url": "https://emudhra.com/en/press-release/emudhra-to-exit-global-ssl-tls-certificate-business",
+          "points": 369,
+          "comments": 247
         }
       ]
     },
@@ -216,7 +208,7 @@
       "summary_ko": null,
       "check_ko": null,
       "heat": 48,
-      "heatReason": "HN 411점 · 댓글 232",
+      "heatReason": "HN 420점 · 댓글 237",
       "sources": [
         "hn"
       ],
@@ -226,8 +218,30 @@
           "source": "hn",
           "title": "No more icons in every menu by default",
           "url": "https://blog.jim-nielsen.com/2026/icons-in-every-menu/",
-          "points": 411,
-          "comments": 232
+          "points": 420,
+          "comments": 237
+        }
+      ]
+    },
+    {
+      "id": "b69ed433fd",
+      "title": "Jailbreaking the Switch 2",
+      "title_ko": null,
+      "summary_ko": null,
+      "check_ko": null,
+      "heat": 47,
+      "heatReason": "HN 425점 · 댓글 158",
+      "sources": [
+        "hn"
+      ],
+      "url": "https://pepsipu.com/blog/2026-10-switch2-jailbreak-ns2jb/",
+      "items": [
+        {
+          "source": "hn",
+          "title": "Jailbreaking the Switch 2",
+          "url": "https://pepsipu.com/blog/2026-10-switch2-jailbreak-ns2jb/",
+          "points": 425,
+          "comments": 158
         }
       ]
     },
@@ -238,7 +252,7 @@
       "summary_ko": null,
       "check_ko": null,
       "heat": 47,
-      "heatReason": "HN 353점 · 댓글 209",
+      "heatReason": "HN 357점 · 댓글 218",
       "sources": [
         "hn"
       ],
@@ -248,30 +262,8 @@
           "source": "hn",
           "title": "Rust Style Guide",
           "url": "https://google.github.io/styleguide/rustguide.html",
-          "points": 353,
-          "comments": 209
-        }
-      ]
-    },
-    {
-      "id": "b69ed433fd",
-      "title": "Jailbreaking the Switch 2",
-      "title_ko": null,
-      "summary_ko": null,
-      "check_ko": null,
-      "heat": 46,
-      "heatReason": "HN 376점 · 댓글 143",
-      "sources": [
-        "hn"
-      ],
-      "url": "https://pepsipu.com/blog/2026-10-switch2-jailbreak-ns2jb/",
-      "items": [
-        {
-          "source": "hn",
-          "title": "Jailbreaking the Switch 2",
-          "url": "https://pepsipu.com/blog/2026-10-switch2-jailbreak-ns2jb/",
-          "points": 376,
-          "comments": 143
+          "points": 357,
+          "comments": 218
         }
       ]
     },
@@ -282,7 +274,7 @@
       "summary_ko": null,
       "check_ko": null,
       "heat": 46,
-      "heatReason": "HN 385점 · 댓글 116",
+      "heatReason": "HN 402점 · 댓글 123",
       "sources": [
         "hn"
       ],
@@ -292,8 +284,8 @@
           "source": "hn",
           "title": "WorldTUI: I trained a 360M model to pretend to be a terminal",
           "url": "https://simedw.com/2026/10/21/world-model-terminal/",
-          "points": 385,
-          "comments": 116
+          "points": 402,
+          "comments": 123
         }
       ]
     },
@@ -303,8 +295,8 @@
       "title_ko": null,
       "summary_ko": null,
       "check_ko": null,
-      "heat": 45,
-      "heatReason": "HN 265점 · 댓글 219",
+      "heat": 46,
+      "heatReason": "HN 272점 · 댓글 227",
       "sources": [
         "hn"
       ],
@@ -314,8 +306,8 @@
           "source": "hn",
           "title": "The recently proposed o(n log n) integer multiplication algorithm [pdf]",
           "url": "https://web.maths.unsw.edu.au/~davidharvey/research/subnlogn.pdf",
-          "points": 265,
-          "comments": 219
+          "points": 272,
+          "comments": 227
         }
       ]
     },
@@ -326,7 +318,7 @@
       "summary_ko": null,
       "check_ko": null,
       "heat": 45,
-      "heatReason": "HN 385점 · 댓글 88",
+      "heatReason": "HN 392점 · 댓글 89",
       "sources": [
         "hn"
       ],
@@ -336,74 +328,8 @@
           "source": "hn",
           "title": "GitLab critical patch release",
           "url": "https://docs.gitlab.com/releases/patches/patch-release-gitlab-19-5-1-released/",
-          "points": 385,
-          "comments": 88
-        }
-      ]
-    },
-    {
-      "id": "d2039dacc2",
-      "title": "eMudhra to Exit Global SSL/TLS Certificate Business",
-      "title_ko": null,
-      "summary_ko": null,
-      "check_ko": null,
-      "heat": 44,
-      "heatReason": "HN 249점 · 댓글 147",
-      "sources": [
-        "hn"
-      ],
-      "url": "https://emudhra.com/en/press-release/emudhra-to-exit-global-ssl-tls-certificate-business",
-      "items": [
-        {
-          "source": "hn",
-          "title": "eMudhra to Exit Global SSL/TLS Certificate Business",
-          "url": "https://emudhra.com/en/press-release/emudhra-to-exit-global-ssl-tls-certificate-business",
-          "points": 249,
-          "comments": 147
-        }
-      ]
-    },
-    {
-      "id": "f23d56f924",
-      "title": "OpenAI CLI",
-      "title_ko": null,
-      "summary_ko": null,
-      "check_ko": null,
-      "heat": 42,
-      "heatReason": "HN 196점 · 댓글 93",
-      "sources": [
-        "hn"
-      ],
-      "url": "https://github.com/openai/openai-cli",
-      "items": [
-        {
-          "source": "hn",
-          "title": "OpenAI CLI",
-          "url": "https://github.com/openai/openai-cli",
-          "points": 196,
-          "comments": 93
-        }
-      ]
-    },
-    {
-      "id": "be77bdcafc",
-      "title": "Tiny possum and glider thought extinct for 6000 years found in remote West Papua",
-      "title_ko": null,
-      "summary_ko": null,
-      "check_ko": null,
-      "heat": 42,
-      "heatReason": "HN 251점 · 댓글 60",
-      "sources": [
-        "hn"
-      ],
-      "url": "https://www.bbc.com/news/articles/cp814l80pw2o",
-      "items": [
-        {
-          "source": "hn",
-          "title": "Tiny possum and glider thought extinct for 6000 years found in remote West Papua",
-          "url": "https://www.bbc.com/news/articles/cp814l80pw2o",
-          "points": 251,
-          "comments": 60
+          "points": 392,
+          "comments": 89
         }
       ]
     },
@@ -413,8 +339,8 @@
       "title_ko": null,
       "summary_ko": null,
       "check_ko": null,
-      "heat": 40,
-      "heatReason": "HN 173점 · 댓글 59",
+      "heat": 42,
+      "heatReason": "HN 207점 · 댓글 88",
       "sources": [
         "hn"
       ],
@@ -424,8 +350,30 @@
           "source": "hn",
           "title": "What Is Gridifcation",
           "url": "https://musicalform.substack.com/p/what-is-gridifcation",
-          "points": 173,
-          "comments": 59
+          "points": 207,
+          "comments": 88
+        }
+      ]
+    },
+    {
+      "id": "f390391ca4",
+      "title": "Several Linux kernel vulnerabilities accidentally posted to public mailing list",
+      "title_ko": null,
+      "summary_ko": null,
+      "check_ko": null,
+      "heat": 40,
+      "heatReason": "HN 185점 · 댓글 50",
+      "sources": [
+        "hn"
+      ],
+      "url": "https://www.phoronix.com/news/LKML-New-Trend-Vulnerabilities",
+      "items": [
+        {
+          "source": "hn",
+          "title": "Several Linux kernel vulnerabilities accidentally posted to public mailing list",
+          "url": "https://www.phoronix.com/news/LKML-New-Trend-Vulnerabilities",
+          "points": 185,
+          "comments": 50
         }
       ]
     },
@@ -436,7 +384,7 @@
       "summary_ko": null,
       "check_ko": null,
       "heat": 40,
-      "heatReason": "HN 145점 · 댓글 86",
+      "heatReason": "HN 157점 · 댓글 91",
       "sources": [
         "hn"
       ],
@@ -446,30 +394,8 @@
           "source": "hn",
           "title": "Using LLM for confidence scoring is a bad idea",
           "url": "https://rumple.github.io/blog/2026/10/20/asking-llm-for-confidence.html",
-          "points": 145,
-          "comments": 86
-        }
-      ]
-    },
-    {
-      "id": "f390391ca4",
-      "title": "Several Linux kernel vulnerabilities accidentally posted to public mailing list",
-      "title_ko": null,
-      "summary_ko": null,
-      "check_ko": null,
-      "heat": 39,
-      "heatReason": "HN 164점 · 댓글 41",
-      "sources": [
-        "hn"
-      ],
-      "url": "https://www.phoronix.com/news/LKML-New-Trend-Vulnerabilities",
-      "items": [
-        {
-          "source": "hn",
-          "title": "Several Linux kernel vulnerabilities accidentally posted to public mailing list",
-          "url": "https://www.phoronix.com/news/LKML-New-Trend-Vulnerabilities",
-          "points": 164,
-          "comments": 41
+          "points": 157,
+          "comments": 91
         }
       ]
     },
@@ -479,8 +405,8 @@
       "title_ko": null,
       "summary_ko": null,
       "check_ko": null,
-      "heat": 37,
-      "heatReason": "HN 147점 · 댓글 31",
+      "heat": 39,
+      "heatReason": "HN 164점 · 댓글 45",
       "sources": [
         "hn"
       ],
@@ -490,8 +416,52 @@
           "source": "hn",
           "title": "Amazon identifies Oct 17 PHP2Shell exploitation prior to public disclosure",
           "url": "https://aws.amazon.com/blogs/security/amazon-threat-intelligence-identifies-php2shell-exploitation-prior-to-public-disclosure-in-madpot/",
-          "points": 147,
-          "comments": 31
+          "points": 164,
+          "comments": 45
+        }
+      ]
+    },
+    {
+      "id": "c39c9039ab",
+      "title": "Quad9 (DNS Resolver) to Exit France",
+      "title_ko": null,
+      "summary_ko": null,
+      "check_ko": null,
+      "heat": 37,
+      "heatReason": "HN 129점 · 댓글 33",
+      "sources": [
+        "hn"
+      ],
+      "url": "https://quad9.net/news/blog/au-revoir-france/",
+      "items": [
+        {
+          "source": "hn",
+          "title": "Quad9 (DNS Resolver) to Exit France",
+          "url": "https://quad9.net/news/blog/au-revoir-france/",
+          "points": 129,
+          "comments": 33
+        }
+      ]
+    },
+    {
+      "id": "c818d890c6",
+      "title": "What's Getting Pwned",
+      "title_ko": null,
+      "summary_ko": null,
+      "check_ko": null,
+      "heat": 37,
+      "heatReason": "HN 107점 · 댓글 71",
+      "sources": [
+        "hn"
+      ],
+      "url": "https://pwn.watch/",
+      "items": [
+        {
+          "source": "hn",
+          "title": "What's Getting Pwned",
+          "url": "https://pwn.watch/",
+          "points": 107,
+          "comments": 71
         }
       ]
     },
@@ -501,8 +471,8 @@
       "title_ko": null,
       "summary_ko": null,
       "check_ko": null,
-      "heat": 36,
-      "heatReason": "HN 130점 · 댓글 22",
+      "heat": 37,
+      "heatReason": "HN 139점 · 댓글 26",
       "sources": [
         "hn"
       ],
@@ -512,8 +482,30 @@
           "source": "hn",
           "title": "Faster than earcut: triangulating 3.7M map polygons in 489 ms",
           "url": "https://globus.software/blog/2026/10/16/cutting-map-polygons/",
-          "points": 130,
-          "comments": 22
+          "points": 139,
+          "comments": 26
+        }
+      ]
+    },
+    {
+      "id": "1753b4547e",
+      "title": "Crystal 1.22.0",
+      "title_ko": null,
+      "summary_ko": null,
+      "check_ko": null,
+      "heat": 35,
+      "heatReason": "HN 88점 · 댓글 41",
+      "sources": [
+        "hn"
+      ],
+      "url": "https://crystal-lang.org/2026/10/12/1.22.0-released/",
+      "items": [
+        {
+          "source": "hn",
+          "title": "Crystal 1.22.0",
+          "url": "https://crystal-lang.org/2026/10/12/1.22.0-released/",
+          "points": 88,
+          "comments": 41
         }
       ]
     },
@@ -524,7 +516,7 @@
       "summary_ko": null,
       "check_ko": null,
       "heat": 33,
-      "heatReason": "HN 67점 · 댓글 29",
+      "heatReason": "HN 74점 · 댓글 29",
       "sources": [
         "hn"
       ],
@@ -534,52 +526,8 @@
           "source": "hn",
           "title": "Startup taps underwater volcano as energy source in \"proof point\" test",
           "url": "https://arstechnica.com/science/2026/10/startup-taps-underwater-volcano-as-energy-source-in-proof-point-test/",
-          "points": 67,
+          "points": 74,
           "comments": 29
-        }
-      ]
-    },
-    {
-      "id": "c818d890c6",
-      "title": "What's Getting Pwned",
-      "title_ko": null,
-      "summary_ko": null,
-      "check_ko": null,
-      "heat": 32,
-      "heatReason": "HN 63점 · 댓글 26",
-      "sources": [
-        "hn"
-      ],
-      "url": "https://pwn.watch/",
-      "items": [
-        {
-          "source": "hn",
-          "title": "What's Getting Pwned",
-          "url": "https://pwn.watch/",
-          "points": 63,
-          "comments": 26
-        }
-      ]
-    },
-    {
-      "id": "1753b4547e",
-      "title": "Crystal 1.22.0 Is Released",
-      "title_ko": null,
-      "summary_ko": null,
-      "check_ko": null,
-      "heat": 32,
-      "heatReason": "HN 66점 · 댓글 20",
-      "sources": [
-        "hn"
-      ],
-      "url": "https://crystal-lang.org/2026/10/12/1.22.0-released/",
-      "items": [
-        {
-          "source": "hn",
-          "title": "Crystal 1.22.0 Is Released",
-          "url": "https://crystal-lang.org/2026/10/12/1.22.0-released/",
-          "points": 66,
-          "comments": 20
         }
       ]
     },
@@ -589,8 +537,8 @@
       "title_ko": null,
       "summary_ko": null,
       "check_ko": null,
-      "heat": 32,
-      "heatReason": "HN 51점 · 댓글 35",
+      "heat": 33,
+      "heatReason": "HN 60점 · 댓글 38",
       "sources": [
         "hn"
       ],
@@ -600,30 +548,8 @@
           "source": "hn",
           "title": "The Robot I Didn't Expect to Build",
           "url": "https://spectrum.ieee.org/agility-robotics-digit-5-redesign",
-          "points": 51,
-          "comments": 35
-        }
-      ]
-    },
-    {
-      "id": "835a28000c",
-      "title": "What Is the Karakoram Anomaly?",
-      "title_ko": null,
-      "summary_ko": null,
-      "check_ko": null,
-      "heat": 32,
-      "heatReason": "HN 70점 · 댓글 17",
-      "sources": [
-        "hn"
-      ],
-      "url": "https://nsidc.org/learn/ask-scientist/karakoram-anomaly-it-real",
-      "items": [
-        {
-          "source": "hn",
-          "title": "What Is the Karakoram Anomaly?",
-          "url": "https://nsidc.org/learn/ask-scientist/karakoram-anomaly-it-real",
-          "points": 70,
-          "comments": 17
+          "points": 60,
+          "comments": 38
         }
       ]
     },
@@ -633,8 +559,8 @@
       "title_ko": null,
       "summary_ko": null,
       "check_ko": null,
-      "heat": 26,
-      "heatReason": "HN 34점 · 댓글 9",
+      "heat": 28,
+      "heatReason": "HN 44점 · 댓글 11",
       "sources": [
         "hn"
       ],
@@ -644,8 +570,8 @@
           "source": "hn",
           "title": "Eigenmoon: linear algebra puzzles by moonlight",
           "url": "https://eigenmoon.vercel.app/",
-          "points": 34,
-          "comments": 9
+          "points": 44,
+          "comments": 11
         }
       ]
     },
@@ -655,8 +581,8 @@
       "title_ko": null,
       "summary_ko": null,
       "check_ko": null,
-      "heat": 23,
-      "heatReason": "HN 23점 · 댓글 6",
+      "heat": 27,
+      "heatReason": "HN 37점 · 댓글 9",
       "sources": [
         "hn"
       ],
@@ -666,8 +592,74 @@
           "source": "hn",
           "title": "The Last Museum: Semantic search across 5.8M artworks from major museums",
           "url": "https://lastmuseum.com/",
-          "points": 23,
-          "comments": 6
+          "points": 37,
+          "comments": 9
+        }
+      ]
+    },
+    {
+      "id": "a04d9a792d",
+      "title": "SBD: We Have a Filesystem at Home",
+      "title_ko": null,
+      "summary_ko": null,
+      "check_ko": null,
+      "heat": 26,
+      "heatReason": "HN 26점 · 댓글 19",
+      "sources": [
+        "hn"
+      ],
+      "url": "https://fly.io/blog/sprites-block-device/",
+      "items": [
+        {
+          "source": "hn",
+          "title": "SBD: We Have a Filesystem at Home",
+          "url": "https://fly.io/blog/sprites-block-device/",
+          "points": 26,
+          "comments": 19
+        }
+      ]
+    },
+    {
+      "id": "4f6dcdfc7c",
+      "title": "Pentulive (Puppy Live) [video]",
+      "title_ko": null,
+      "summary_ko": null,
+      "check_ko": null,
+      "heat": 24,
+      "heatReason": "HN 29점 · 댓글 4",
+      "sources": [
+        "hn"
+      ],
+      "url": "https://yle.fi/t/18-332106/fi",
+      "items": [
+        {
+          "source": "hn",
+          "title": "Pentulive (Puppy Live) [video]",
+          "url": "https://yle.fi/t/18-332106/fi",
+          "points": 29,
+          "comments": 4
+        }
+      ]
+    },
+    {
+      "id": "9b84d6282c",
+      "title": "The painter behind Manhattan’s Gilded Age interiors",
+      "title_ko": null,
+      "summary_ko": null,
+      "check_ko": null,
+      "heat": 23,
+      "heatReason": "HN 29점 · 댓글 3",
+      "sources": [
+        "hn"
+      ],
+      "url": "https://engelsbergideas.com/notebook/the-unknown-painter-behind-manhattans-gilded-age-interiors/",
+      "items": [
+        {
+          "source": "hn",
+          "title": "The painter behind Manhattan’s Gilded Age interiors",
+          "url": "https://engelsbergideas.com/notebook/the-unknown-painter-behind-manhattans-gilded-age-interiors/",
+          "points": 29,
+          "comments": 3
         }
       ]
     },
@@ -716,46 +708,46 @@
       ]
     },
     {
-      "id": "9b84d6282c",
-      "title": "The painter behind Manhattan’s Gilded Age interiors",
+      "id": "71e7eb3570",
+      "title": "VMMouse for NT 3.x: QEMU/VMware mouse integration driver",
       "title_ko": null,
       "summary_ko": null,
       "check_ko": null,
       "heat": 21,
-      "heatReason": "HN 26점 · 댓글 1",
+      "heatReason": "HN 19점 · 댓글 4",
       "sources": [
         "hn"
       ],
-      "url": "https://engelsbergideas.com/notebook/the-unknown-painter-behind-manhattans-gilded-age-interiors/",
+      "url": "https://github.com/rhargreaves/vmmouse-nt3",
       "items": [
         {
           "source": "hn",
-          "title": "The painter behind Manhattan’s Gilded Age interiors",
-          "url": "https://engelsbergideas.com/notebook/the-unknown-painter-behind-manhattans-gilded-age-interiors/",
-          "points": 26,
-          "comments": 1
+          "title": "VMMouse for NT 3.x: QEMU/VMware mouse integration driver",
+          "url": "https://github.com/rhargreaves/vmmouse-nt3",
+          "points": 19,
+          "comments": 4
         }
       ]
     },
     {
-      "id": "e5cd45cd72",
-      "title": "Graphify-Labs/graphify",
+      "id": "278c6c1d55",
+      "title": "MPs moving to restrict gambling ads in Canada amid mounting harms",
       "title_ko": null,
       "summary_ko": null,
       "check_ko": null,
       "heat": 21,
-      "heatReason": "스타 +1407",
+      "heatReason": "HN 19점 · 댓글 4",
       "sources": [
-        "trending"
+        "hn"
       ],
-      "url": "https://github.com/Graphify-Labs/graphify",
+      "url": "https://www.cbc.ca/news/investigates/gambling-ads-restrictions-canada-9.7388888",
       "items": [
         {
-          "source": "trending",
-          "title": "Graphify-Labs/graphify",
-          "url": "https://github.com/Graphify-Labs/graphify",
-          "points": null,
-          "comments": null
+          "source": "hn",
+          "title": "MPs moving to restrict gambling ads in Canada amid mounting harms",
+          "url": "https://www.cbc.ca/news/investigates/gambling-ads-restrictions-canada-9.7388888",
+          "points": 19,
+          "comments": 4
         }
       ]
     }
@@ -790,6 +782,16 @@
     }
   ],
   "tools": [
+    {
+      "tool": "claude-code",
+      "name": "Claude Code",
+      "version": "v2.1.308",
+      "publishedAt": "2026-10-22T04:34:55Z",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.308",
+      "note": "Bug fixes and reliability improvements",
+      "note_ko": null,
+      "isRecent": true
+    },
     {
       "tool": "gemini-cli",
       "name": "Gemini CLI",
@@ -827,14 +829,14 @@
       "url": "https://github.com/morluto/rea",
       "description": "Reverse engineer anything with agents, from app behavior down to native binaries.",
       "description_ko": null,
-      "stars": 363546,
+      "stars": 363848,
       "delta7": 129417,
       "deltaSource": "trending-weekly",
       "isNew": false,
       "series": [
         {
           "date": "2026-10-23",
-          "stars": 363546
+          "stars": 363848
         }
       ]
     },
@@ -843,14 +845,14 @@
       "url": "https://github.com/debpalash/VoiceStudio",
       "description": "VoiceStudio is the open-source, fully-local ElevenLabs alternative — voice cloning, voice design, video dubbing, dictation, transcription & audiobook creation in 646 languages.",
       "description_ko": null,
-      "stars": 81316,
+      "stars": 81372,
       "delta7": 15125,
       "deltaSource": "trending-weekly",
       "isNew": false,
       "series": [
         {
           "date": "2026-10-23",
-          "stars": 81316
+          "stars": 81372
         }
       ]
     },
@@ -859,14 +861,14 @@
       "url": "https://github.com/stablyai/orca",
       "description": "Orca is the place for working with a fleet of agents (e.g. Grok Bot, Claude Code). Run any coding agent with your own subscription. Available on desktop, mobile and remote runtime.",
       "description_ko": null,
-      "stars": 102401,
+      "stars": 102449,
       "delta7": 8705,
       "deltaSource": "trending-weekly",
       "isNew": false,
       "series": [
         {
           "date": "2026-10-23",
-          "stars": 102401
+          "stars": 102449
         }
       ]
     },
@@ -875,14 +877,14 @@
       "url": "https://github.com/anomalyco/opencode",
       "description": "The open source coding agent.",
       "description_ko": null,
-      "stars": 220031,
+      "stars": 220046,
       "delta7": 6545,
       "deltaSource": "trending-weekly",
       "isNew": false,
       "series": [
         {
           "date": "2026-10-23",
-          "stars": 220031
+          "stars": 220046
         }
       ]
     },
@@ -891,14 +893,14 @@
       "url": "https://github.com/NationalSecurityAgency/ghidra",
       "description": "Ghidra is a software reverse engineering (SRE) framework",
       "description_ko": null,
-      "stars": 92963,
+      "stars": 92983,
       "delta7": 5769,
       "deltaSource": "trending-weekly",
       "isNew": false,
       "series": [
         {
           "date": "2026-10-23",
-          "stars": 92963
+          "stars": 92983
         }
       ]
     },
@@ -907,14 +909,14 @@
       "url": "https://github.com/heygen-com/hyperframes",
       "description": "Write HTML. Render video. Built for agents.",
       "description_ko": null,
-      "stars": 69755,
+      "stars": 69775,
       "delta7": 5740,
       "deltaSource": "trending-weekly",
       "isNew": false,
       "series": [
         {
           "date": "2026-10-23",
-          "stars": 69755
+          "stars": 69775
         }
       ]
     },
@@ -923,14 +925,14 @@
       "url": "https://github.com/anthropics/claude-plugins-official",
       "description": "Official, Anthropic-managed directory of high quality Claude Code Plugins.",
       "description_ko": null,
-      "stars": 43796,
+      "stars": 43803,
       "delta7": 5703,
       "deltaSource": "trending-weekly",
       "isNew": false,
       "series": [
         {
           "date": "2026-10-23",
-          "stars": 43796
+          "stars": 43803
         }
       ]
     },
@@ -939,14 +941,14 @@
       "url": "https://github.com/K-Dense-AI/scientific-agent-skills",
       "description": "Turn any AI agent into an AI Scientist. The #1 Agent Skills library for science, used by 250,000+ scientists worldwide. 177 ready-to-use validated skills plus 100+ scientific databases covering biology, chemistry, medicine, and drug discovery. Compatible with Cursor, Claude Code, Codex, Pi, Antigravity, and the open Agent Skills standard.",
       "description_ko": null,
-      "stars": 53823,
+      "stars": 53834,
       "delta7": 4719,
       "deltaSource": "trending-weekly",
       "isNew": false,
       "series": [
         {
           "date": "2026-10-23",
-          "stars": 53823
+          "stars": 53834
         }
       ]
     },
@@ -955,14 +957,14 @@
       "url": "https://github.com/Comfy-Org/ComfyUI",
       "description": "The most powerful and modular diffusion model GUI, api and backend with a graph/nodes interface. The fastest local inference engine in the world.",
       "description_ko": null,
-      "stars": 141925,
+      "stars": 141943,
       "delta7": 3948,
       "deltaSource": "trending-weekly",
       "isNew": false,
       "series": [
         {
           "date": "2026-10-23",
-          "stars": 141925
+          "stars": 141943
         }
       ]
     },
@@ -971,14 +973,14 @@
       "url": "https://github.com/HKUDS/CLI-Anything",
       "description": "\"CLI-Anything: Making ALL Software Agent-Native\" -- CLI-Hub: https://clianything.cc/",
       "description_ko": null,
-      "stars": 56142,
+      "stars": 56152,
       "delta7": 3681,
       "deltaSource": "trending-weekly",
       "isNew": false,
       "series": [
         {
           "date": "2026-10-23",
-          "stars": 56142
+          "stars": 56152
         }
       ]
     }
@@ -991,7 +993,7 @@
       "url": "https://github.com/tangency-labs/solidcraft",
       "description": "SolidCraft: an open-source parametric 3D CAD application built in pure Rust. Desktop, web, and automation through MCP.",
       "description_ko": null,
-      "stars": 9149,
+      "stars": 9162,
       "kind": "MCP",
       "isNew": true
     },
@@ -1000,7 +1002,7 @@
       "url": "https://github.com/rehan-remade/universal-modder",
       "description": "Point Claude at any game. Skills, tools and the fal MCP that let Claude Code mod almost any PC game you own: recon, reverse engineering, fal-generated art/3D/audio, in-game testing, showcase videos.",
       "description_ko": null,
-      "stars": 8697,
+      "stars": 8700,
       "kind": "MCP",
       "isNew": true
     },
@@ -1009,7 +1011,7 @@
       "url": "https://github.com/KKKKhazix/AIHOT",
       "description": "一个自己找热点、自己写日报的网站框架。把信源和精选标准换成你的，它就是你的行业热点站。",
       "description_ko": null,
-      "stars": 8418,
+      "stars": 8419,
       "kind": "MCP",
       "isNew": true
     },
@@ -1018,7 +1020,7 @@
       "url": "https://github.com/shader-effects-inc/shaders",
       "description": "WebGPU components for React, Vue, Svelte, Solid, JS & Framer",
       "description_ko": null,
-      "stars": 5318,
+      "stars": 5320,
       "kind": "MCP",
       "isNew": true
     },
@@ -1027,7 +1029,7 @@
       "url": "https://github.com/Leonxlnx/earshot",
       "description": "Ears for coding agents: let AI hear, review and make sound. CPU-only, open source.",
       "description_ko": null,
-      "stars": 2101,
+      "stars": 2104,
       "kind": "MCP",
       "isNew": true
     },
@@ -1036,7 +1038,7 @@
       "url": "https://github.com/trhhubsd/ARTEX",
       "description": "ARTEX · AI autonomous penetration testing system (multi-agent LLM, Go + Next.js) · AI 自主渗透测试系统 · 百度 agent+ 攻防挑战赛冠军",
       "description_ko": null,
-      "stars": 1683,
+      "stars": 1687,
       "kind": "MCP",
       "isNew": true
     },
@@ -1045,7 +1047,7 @@
       "url": "https://github.com/zhuyansen/new-term-radar",
       "description": "Daily radar for new AI terms: names of new models, products and repos, caught on X, Hugging Face, GitHub and sitemaps before keyword tools list them.",
       "description_ko": null,
-      "stars": 1669,
+      "stars": 1671,
       "kind": "MCP",
       "isNew": true
     },
@@ -1054,7 +1056,7 @@
       "url": "https://github.com/marclou/mailcheap",
       "description": "Newsletters where you pay for the emails you send, not for dormant subscribers, at a fraction of the price of beehiiv and the like. Open source: self-host it, or use mailcheap.ai.",
       "description_ko": null,
-      "stars": 1301,
+      "stars": 1302,
       "kind": "MCP",
       "isNew": true
     },
@@ -1063,7 +1065,7 @@
       "url": "https://github.com/jwuthri-cloud/Tracely-ai",
       "description": "Trace-native CI/CD for AI agents: grade production traces, cluster failures, freeze them into replayable regression tests, and block PRs that regress. Self-hostable.",
       "description_ko": null,
-      "stars": 1145,
+      "stars": 1146,
       "kind": "MCP",
       "isNew": true
     },
@@ -1072,7 +1074,7 @@
       "url": "https://github.com/morluto/awesome-reverse-engineering",
       "description": "Curated reverse-engineering tools and learning resources for binaries, apps, firmware, formats, and protocols.",
       "description_ko": null,
-      "stars": 1104,
+      "stars": 1105,
       "kind": "MCP",
       "isNew": true
     },
@@ -1097,8 +1099,8 @@
   ],
   "keywords": [
     {
-      "term": "claude",
-      "today": 26,
+      "term": "models",
+      "today": 19,
       "avg7": null,
       "delta": null,
       "isNew": false
@@ -1111,50 +1113,43 @@
       "isNew": false
     },
     {
-      "term": "models",
-      "today": 18,
-      "avg7": null,
-      "delta": null,
-      "isNew": false
-    },
-    {
-      "term": "code",
-      "today": 15,
-      "avg7": null,
-      "delta": null,
-      "isNew": false
-    },
-    {
-      "term": "agent",
+      "term": "learning",
       "today": 14,
       "avg7": null,
       "delta": null,
       "isNew": false
     },
     {
-      "term": "learning",
+      "term": "agent",
       "today": 13,
       "avg7": null,
       "delta": null,
       "isNew": false
     },
     {
-      "term": "claude code",
-      "today": 12,
+      "term": "code",
+      "today": 13,
       "avg7": null,
       "delta": null,
       "isNew": false
     },
     {
       "term": "llm",
+      "today": 13,
+      "avg7": null,
+      "delta": null,
+      "isNew": false
+    },
+    {
+      "term": "claude",
       "today": 12,
       "avg7": null,
       "delta": null,
       "isNew": false
     },
     {
-      "term": "model",
-      "today": 12,
+      "term": "coding",
+      "today": 11,
       "avg7": null,
       "delta": null,
       "isNew": false
@@ -1167,14 +1162,14 @@
       "isNew": false
     },
     {
-      "term": "coding",
-      "today": 10,
+      "term": "video",
+      "today": 11,
       "avg7": null,
       "delta": null,
       "isNew": false
     },
     {
-      "term": "video",
+      "term": "model",
       "today": 10,
       "avg7": null,
       "delta": null,
@@ -1182,13 +1177,6 @@
     },
     {
       "term": "llms",
-      "today": 8,
-      "avg7": null,
-      "delta": null,
-      "isNew": false
-    },
-    {
-      "term": "php",
       "today": 8,
       "avg7": null,
       "delta": null,
@@ -1203,6 +1191,13 @@
     },
     {
       "term": "benchmarking",
+      "today": 7,
+      "avg7": null,
+      "delta": null,
+      "isNew": false
+    },
+    {
+      "term": "claude code",
       "today": 7,
       "avg7": null,
       "delta": null,
@@ -1231,6 +1226,13 @@
     },
     {
       "term": "memory",
+      "today": 7,
+      "avg7": null,
+      "delta": null,
+      "isNew": false
+    },
+    {
+      "term": "networks",
       "today": 7,
       "avg7": null,
       "delta": null,
@@ -2797,14 +2799,14 @@
     {
       "id": "deepseek-ai/DeepSeek-V4.1-Flash-1017",
       "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017",
-      "likes": 2301,
+      "likes": 2308,
       "downloads": 51911,
       "pipeline": "image-text-to-text"
     },
     {
       "id": "black-forest-labs/flux-3-image-klein-comfy",
       "url": "https://huggingface.co/black-forest-labs/flux-3-image-klein-comfy",
-      "likes": 1256,
+      "likes": 1261,
       "downloads": 512524,
       "pipeline": "image-to-image"
     },
@@ -2816,18 +2818,18 @@
       "pipeline": "image-text-to-text"
     },
     {
-      "id": "black-forest-labs/flux-3-image-klein",
-      "url": "https://huggingface.co/black-forest-labs/flux-3-image-klein",
-      "likes": 624,
-      "downloads": 102903,
-      "pipeline": "image-to-image"
-    },
-    {
       "id": "OpenMOSS-Team/MOSS-Image-SFT",
       "url": "https://huggingface.co/OpenMOSS-Team/MOSS-Image-SFT",
-      "likes": 554,
+      "likes": 555,
       "downloads": 6890,
       "pipeline": "text-to-image"
+    },
+    {
+      "id": "black-forest-labs/flux-3-image-klein",
+      "url": "https://huggingface.co/black-forest-labs/flux-3-image-klein",
+      "likes": 625,
+      "downloads": 102903,
+      "pipeline": "image-to-image"
     },
     {
       "id": "fishaudio/drama-3",
@@ -2839,35 +2841,35 @@
     {
       "id": "OpenMOSS-Team/MOSS-Image-Base",
       "url": "https://huggingface.co/OpenMOSS-Team/MOSS-Image-Base",
-      "likes": 479,
+      "likes": 481,
       "downloads": 5013,
       "pipeline": "text-to-image"
     },
     {
       "id": "RecursiveSI/flint",
       "url": "https://huggingface.co/RecursiveSI/flint",
-      "likes": 436,
+      "likes": 448,
       "downloads": 420,
       "pipeline": "text-generation"
     },
     {
       "id": "Lightricks/LTX-2.5",
       "url": "https://huggingface.co/Lightricks/LTX-2.5",
-      "likes": 8837,
+      "likes": 8843,
       "downloads": 2054990,
       "pipeline": "image-to-video"
     },
     {
       "id": "google/embeddinggemma-2",
       "url": "https://huggingface.co/google/embeddinggemma-2",
-      "likes": 2832,
+      "likes": 2834,
       "downloads": 185259,
       "pipeline": "feature-extraction"
     },
     {
       "id": "jialinyyzz/humanizer",
       "url": "https://huggingface.co/jialinyyzz/humanizer",
-      "likes": 2082,
+      "likes": 2083,
       "downloads": 124773,
       "pipeline": "text-generation"
     },
@@ -2881,14 +2883,14 @@
     {
       "id": "abenzerps/Qwen-Image-2.1-Uncensored-Quantized",
       "url": "https://huggingface.co/abenzerps/Qwen-Image-2.1-Uncensored-Quantized",
-      "likes": 4808,
+      "likes": 4809,
       "downloads": 2665585,
       "pipeline": "text-to-image"
     },
     {
       "id": "Qwen/Qwen3.8-27B",
       "url": "https://huggingface.co/Qwen/Qwen3.8-27B",
-      "likes": 18185,
+      "likes": 18187,
       "downloads": 7758670,
       "pipeline": "image-text-to-text"
     },
@@ -2907,18 +2909,18 @@
       "pipeline": "text-generation"
     },
     {
-      "id": "mistralai/Timestral-209M",
-      "url": "https://huggingface.co/mistralai/Timestral-209M",
-      "likes": 276,
-      "downloads": 6194,
-      "pipeline": "time-series-forecasting"
-    },
-    {
       "id": "datalab-to/indra-ocr",
       "url": "https://huggingface.co/datalab-to/indra-ocr",
-      "likes": 359,
+      "likes": 360,
       "downloads": 3823,
       "pipeline": "image-to-text"
+    },
+    {
+      "id": "mistralai/Timestral-209M",
+      "url": "https://huggingface.co/mistralai/Timestral-209M",
+      "likes": 277,
+      "downloads": 6194,
+      "pipeline": "time-series-forecasting"
     },
     {
       "id": "dealignai/DeepSeek-V4.1-Flash-1017-UNCENSORED-FP8",
@@ -2938,20 +2940,11 @@
   "feeds": {
     "hn": [
       {
-        "id": 50184820,
-        "title": "Meta ordered to pay $25B penalty in New Mexico Cambridge Analytica case",
-        "url": "https://www.cnbc.com/2026/10/21/meta-new-mexico-cambridge-analytica-penalty.html",
-        "domain": "cnbc.com",
-        "points": 632,
-        "comments": 364,
-        "hnUrl": "https://news.ycombinator.com/item?id=50184820"
-      },
-      {
         "id": 50181114,
         "title": "Compromised LiteLLM 1.107.0 on PyPI Installs a Credential Stealer and Backdoor",
         "url": "https://safedep.io/litellm-pypi-compromise-credential-stealer-backdoor/",
         "domain": "safedep.io",
-        "points": 569,
+        "points": 571,
         "comments": 185,
         "hnUrl": "https://news.ycombinator.com/item?id=50181114"
       },
@@ -2960,8 +2953,8 @@
         "title": "Security Disclosure",
         "url": "https://blog.railway.com/p/security-disclosure-wednesday-october-21st",
         "domain": "blog.railway.com",
-        "points": 540,
-        "comments": 313,
+        "points": 545,
+        "comments": 316,
         "hnUrl": "https://news.ycombinator.com/item?id=50188228"
       },
       {
@@ -2969,17 +2962,26 @@
         "title": "Claude Duet",
         "url": "https://claude.com/product/claude-duet",
         "domain": "claude.com",
-        "points": 487,
-        "comments": 448,
+        "points": 498,
+        "comments": 458,
         "hnUrl": "https://news.ycombinator.com/item?id=50186037"
+      },
+      {
+        "id": 50192536,
+        "title": "Jailbreaking the Switch 2",
+        "url": "https://pepsipu.com/blog/2026-10-switch2-jailbreak-ns2jb/",
+        "domain": "pepsipu.com",
+        "points": 425,
+        "comments": 158,
+        "hnUrl": "https://news.ycombinator.com/item?id=50192536"
       },
       {
         "id": 50161346,
         "title": "No more icons in every menu by default",
         "url": "https://blog.jim-nielsen.com/2026/icons-in-every-menu/",
         "domain": "blog.jim-nielsen.com",
-        "points": 411,
-        "comments": 232,
+        "points": 420,
+        "comments": 237,
         "hnUrl": "https://news.ycombinator.com/item?id=50161346"
       },
       {
@@ -2987,8 +2989,8 @@
         "title": "PingCap TiDB Leaks",
         "url": "https://fulcrumsec.vg/pingcap/",
         "domain": "fulcrumsec.vg",
-        "points": 404,
-        "comments": 66,
+        "points": 407,
+        "comments": 69,
         "hnUrl": "https://news.ycombinator.com/item?id=50173716"
       },
       {
@@ -2996,8 +2998,8 @@
         "title": "WorldTUI: I trained a 360M model to pretend to be a terminal",
         "url": "https://simedw.com/2026/10/21/world-model-terminal/",
         "domain": "simedw.com",
-        "points": 385,
-        "comments": 116,
+        "points": 402,
+        "comments": 123,
         "hnUrl": "https://news.ycombinator.com/item?id=50190363"
       },
       {
@@ -3005,26 +3007,26 @@
         "title": "GitLab critical patch release",
         "url": "https://docs.gitlab.com/releases/patches/patch-release-gitlab-19-5-1-released/",
         "domain": "docs.gitlab.com",
-        "points": 385,
-        "comments": 88,
+        "points": 392,
+        "comments": 89,
         "hnUrl": "https://news.ycombinator.com/item?id=50185869"
       },
       {
-        "id": 50192536,
-        "title": "Jailbreaking the Switch 2",
-        "url": "https://pepsipu.com/blog/2026-10-switch2-jailbreak-ns2jb/",
-        "domain": "pepsipu.com",
-        "points": 376,
-        "comments": 143,
-        "hnUrl": "https://news.ycombinator.com/item?id=50192536"
+        "id": 50195110,
+        "title": "eMudhra to Exit Global SSL/TLS Certificate Business",
+        "url": "https://emudhra.com/en/press-release/emudhra-to-exit-global-ssl-tls-certificate-business",
+        "domain": "emudhra.com",
+        "points": 369,
+        "comments": 247,
+        "hnUrl": "https://news.ycombinator.com/item?id=50195110"
       },
       {
         "id": 50186010,
         "title": "Rust Style Guide",
         "url": "https://google.github.io/styleguide/rustguide.html",
         "domain": "google.github.io",
-        "points": 353,
-        "comments": 209,
+        "points": 357,
+        "comments": 218,
         "hnUrl": "https://news.ycombinator.com/item?id=50186010"
       },
       {
@@ -3032,44 +3034,17 @@
         "title": "The recently proposed o(n log n) integer multiplication algorithm [pdf]",
         "url": "https://web.maths.unsw.edu.au/~davidharvey/research/subnlogn.pdf",
         "domain": "web.maths.unsw.edu.au",
-        "points": 265,
-        "comments": 219,
+        "points": 272,
+        "comments": 227,
         "hnUrl": "https://news.ycombinator.com/item?id=50190455"
-      },
-      {
-        "id": 50162044,
-        "title": "Tiny possum and glider thought extinct for 6000 years found in remote West Papua",
-        "url": "https://www.bbc.com/news/articles/cp814l80pw2o",
-        "domain": "bbc.com",
-        "points": 251,
-        "comments": 60,
-        "hnUrl": "https://news.ycombinator.com/item?id=50162044"
-      },
-      {
-        "id": 50195110,
-        "title": "eMudhra to Exit Global SSL/TLS Certificate Business",
-        "url": "https://emudhra.com/en/press-release/emudhra-to-exit-global-ssl-tls-certificate-business",
-        "domain": "emudhra.com",
-        "points": 249,
-        "comments": 147,
-        "hnUrl": "https://news.ycombinator.com/item?id=50195110"
-      },
-      {
-        "id": 50191507,
-        "title": "OpenAI CLI",
-        "url": "https://github.com/openai/openai-cli",
-        "domain": "github.com",
-        "points": 196,
-        "comments": 93,
-        "hnUrl": "https://news.ycombinator.com/item?id=50191507"
       },
       {
         "id": 50150163,
         "title": "What Is Gridifcation",
         "url": "https://musicalform.substack.com/p/what-is-gridifcation",
         "domain": "musicalform.substack.com",
-        "points": 173,
-        "comments": 59,
+        "points": 207,
+        "comments": 88,
         "hnUrl": "https://news.ycombinator.com/item?id=50150163"
       },
       {
@@ -3077,8 +3052,8 @@
         "title": "Several Linux kernel vulnerabilities accidentally posted to public mailing list",
         "url": "https://www.phoronix.com/news/LKML-New-Trend-Vulnerabilities",
         "domain": "phoronix.com",
-        "points": 164,
-        "comments": 41,
+        "points": 185,
+        "comments": 50,
         "hnUrl": "https://news.ycombinator.com/item?id=50193804"
       },
       {
@@ -3086,8 +3061,8 @@
         "title": "Amazon identifies Oct 17 PHP2Shell exploitation prior to public disclosure",
         "url": "https://aws.amazon.com/blogs/security/amazon-threat-intelligence-identifies-php2shell-exploitation-prior-to-public-disclosure-in-madpot/",
         "domain": "aws.amazon.com",
-        "points": 147,
-        "comments": 31,
+        "points": 164,
+        "comments": 45,
         "hnUrl": "https://news.ycombinator.com/item?id=50194070"
       },
       {
@@ -3095,8 +3070,8 @@
         "title": "Using LLM for confidence scoring is a bad idea",
         "url": "https://rumple.github.io/blog/2026/10/20/asking-llm-for-confidence.html",
         "domain": "rumple.github.io",
-        "points": 145,
-        "comments": 86,
+        "points": 157,
+        "comments": 91,
         "hnUrl": "https://news.ycombinator.com/item?id=50176082"
       },
       {
@@ -3104,53 +3079,53 @@
         "title": "Faster than earcut: triangulating 3.7M map polygons in 489 ms",
         "url": "https://globus.software/blog/2026/10/16/cutting-map-polygons/",
         "domain": "globus.software",
-        "points": 130,
-        "comments": 22,
+        "points": 139,
+        "comments": 26,
         "hnUrl": "https://news.ycombinator.com/item?id=50193170"
       },
       {
-        "id": 50160241,
-        "title": "What Is the Karakoram Anomaly?",
-        "url": "https://nsidc.org/learn/ask-scientist/karakoram-anomaly-it-real",
-        "domain": "nsidc.org",
-        "points": 70,
-        "comments": 17,
-        "hnUrl": "https://news.ycombinator.com/item?id=50160241"
-      },
-      {
-        "id": 50157456,
-        "title": "Startup taps underwater volcano as energy source in \"proof point\" test",
-        "url": "https://arstechnica.com/science/2026/10/startup-taps-underwater-volcano-as-energy-source-in-proof-point-test/",
-        "domain": "arstechnica.com",
-        "points": 67,
-        "comments": 29,
-        "hnUrl": "https://news.ycombinator.com/item?id=50157456"
-      },
-      {
-        "id": 50194938,
-        "title": "Crystal 1.22.0 Is Released",
-        "url": "https://crystal-lang.org/2026/10/12/1.22.0-released/",
-        "domain": "crystal-lang.org",
-        "points": 66,
-        "comments": 20,
-        "hnUrl": "https://news.ycombinator.com/item?id=50194938"
+        "id": 50195959,
+        "title": "Quad9 (DNS Resolver) to Exit France",
+        "url": "https://quad9.net/news/blog/au-revoir-france/",
+        "domain": "quad9.net",
+        "points": 129,
+        "comments": 33,
+        "hnUrl": "https://news.ycombinator.com/item?id=50195959"
       },
       {
         "id": 50195543,
         "title": "What's Getting Pwned",
         "url": "https://pwn.watch/",
         "domain": "pwn.watch",
-        "points": 63,
-        "comments": 26,
+        "points": 107,
+        "comments": 71,
         "hnUrl": "https://news.ycombinator.com/item?id=50195543"
+      },
+      {
+        "id": 50194938,
+        "title": "Crystal 1.22.0",
+        "url": "https://crystal-lang.org/2026/10/12/1.22.0-released/",
+        "domain": "crystal-lang.org",
+        "points": 88,
+        "comments": 41,
+        "hnUrl": "https://news.ycombinator.com/item?id=50194938"
+      },
+      {
+        "id": 50157456,
+        "title": "Startup taps underwater volcano as energy source in \"proof point\" test",
+        "url": "https://arstechnica.com/science/2026/10/startup-taps-underwater-volcano-as-energy-source-in-proof-point-test/",
+        "domain": "arstechnica.com",
+        "points": 74,
+        "comments": 29,
+        "hnUrl": "https://news.ycombinator.com/item?id=50157456"
       },
       {
         "id": 50155616,
         "title": "The Robot I Didn't Expect to Build",
         "url": "https://spectrum.ieee.org/agility-robotics-digit-5-redesign",
         "domain": "spectrum.ieee.org",
-        "points": 51,
-        "comments": 35,
+        "points": 60,
+        "comments": 38,
         "hnUrl": "https://news.ycombinator.com/item?id=50155616"
       },
       {
@@ -3158,57 +3133,120 @@
         "title": "Eigenmoon: linear algebra puzzles by moonlight",
         "url": "https://eigenmoon.vercel.app/",
         "domain": "eigenmoon.vercel.app",
-        "points": 34,
-        "comments": 9,
+        "points": 44,
+        "comments": 11,
         "hnUrl": "https://news.ycombinator.com/item?id=50157316"
-      },
-      {
-        "id": 50173944,
-        "title": "The painter behind Manhattan’s Gilded Age interiors",
-        "url": "https://engelsbergideas.com/notebook/the-unknown-painter-behind-manhattans-gilded-age-interiors/",
-        "domain": "engelsbergideas.com",
-        "points": 26,
-        "comments": 1,
-        "hnUrl": "https://news.ycombinator.com/item?id=50173944"
-      },
-      {
-        "id": 50195959,
-        "title": "Quad9 (DNS Resolver) to Exit France",
-        "url": "https://quad9.net/news/blog/au-revoir-france/",
-        "domain": "quad9.net",
-        "points": 24,
-        "comments": 0,
-        "hnUrl": "https://news.ycombinator.com/item?id=50195959"
       },
       {
         "id": 50194522,
         "title": "The Last Museum: Semantic search across 5.8M artworks from major museums",
         "url": "https://lastmuseum.com/",
         "domain": "lastmuseum.com",
-        "points": 23,
-        "comments": 6,
+        "points": 37,
+        "comments": 9,
         "hnUrl": "https://news.ycombinator.com/item?id=50194522"
       },
       {
-        "id": 50144727,
-        "title": "VMMouse for NT 3.x: QEMU/VMware mouse integration driver",
-        "url": "https://github.com/rhargreaves/vmmouse-nt3",
-        "domain": "github.com",
-        "points": 12,
-        "comments": 2,
-        "hnUrl": "https://news.ycombinator.com/item?id=50144727"
+        "id": 50173944,
+        "title": "The painter behind Manhattan’s Gilded Age interiors",
+        "url": "https://engelsbergideas.com/notebook/the-unknown-painter-behind-manhattans-gilded-age-interiors/",
+        "domain": "engelsbergideas.com",
+        "points": 29,
+        "comments": 3,
+        "hnUrl": "https://news.ycombinator.com/item?id=50173944"
+      },
+      {
+        "id": 50154147,
+        "title": "Pentulive (Puppy Live) [video]",
+        "url": "https://yle.fi/t/18-332106/fi",
+        "domain": "yle.fi",
+        "points": 29,
+        "comments": 4,
+        "hnUrl": "https://news.ycombinator.com/item?id=50154147"
       },
       {
         "id": 50194824,
         "title": "SBD: We Have a Filesystem at Home",
         "url": "https://fly.io/blog/sprites-block-device/",
         "domain": "fly.io",
-        "points": 11,
-        "comments": 8,
+        "points": 26,
+        "comments": 19,
         "hnUrl": "https://news.ycombinator.com/item?id=50194824"
+      },
+      {
+        "id": 50144727,
+        "title": "VMMouse for NT 3.x: QEMU/VMware mouse integration driver",
+        "url": "https://github.com/rhargreaves/vmmouse-nt3",
+        "domain": "github.com",
+        "points": 19,
+        "comments": 4,
+        "hnUrl": "https://news.ycombinator.com/item?id=50144727"
+      },
+      {
+        "id": 50195873,
+        "title": "MPs moving to restrict gambling ads in Canada amid mounting harms",
+        "url": "https://www.cbc.ca/news/investigates/gambling-ads-restrictions-canada-9.7388888",
+        "domain": "cbc.ca",
+        "points": 19,
+        "comments": 4,
+        "hnUrl": "https://news.ycombinator.com/item?id=50195873"
+      },
+      {
+        "id": 50196837,
+        "title": "Google cleared 300 hectares of Finnish forest",
+        "url": "https://www.techspot.com/news/114100-google-cleared-300-hectares-finnish-forest-data-center.html",
+        "domain": "techspot.com",
+        "points": 8,
+        "comments": 1,
+        "hnUrl": "https://news.ycombinator.com/item?id=50196837"
+      },
+      {
+        "id": 50180257,
+        "title": "Show HN: Uberblok – an interactive museum of ZFS internals",
+        "url": "https://uberblok.storagebits.workers.dev/",
+        "domain": "uberblok.storagebits.workers.dev",
+        "points": 6,
+        "comments": 0,
+        "hnUrl": "https://news.ycombinator.com/item?id=50180257"
       }
     ],
     "geeknews": [
+      {
+        "id": "https://news.hada.io/topic?id=35820",
+        "source": "geeknews",
+        "title": "개설한 적 없는 Cash App 계정 때문에 징역 6년 위기에 놓인 여성",
+        "url": "https://news.hada.io/topic?id=35820",
+        "domain": "news.hada.io",
+        "sub": null,
+        "publishedAt": "2026-10-23T00:51:53+09:00"
+      },
+      {
+        "id": "https://news.hada.io/topic?id=35819",
+        "source": "geeknews",
+        "title": "오리건주 의회, Redfin에 매물로 나온 폭포 매입에 약 32억원 승인",
+        "url": "https://news.hada.io/topic?id=35819",
+        "domain": "news.hada.io",
+        "sub": null,
+        "publishedAt": "2026-10-23T00:48:53+09:00"
+      },
+      {
+        "id": "https://news.hada.io/topic?id=35818",
+        "source": "geeknews",
+        "title": "OpenAI CLI - OpenAI REST API를 위한 공식 명령줄 도구",
+        "url": "https://news.hada.io/topic?id=35818",
+        "domain": "news.hada.io",
+        "sub": null,
+        "publishedAt": "2026-10-23T00:45:53+09:00"
+      },
+      {
+        "id": "https://news.hada.io/topic?id=35817",
+        "source": "geeknews",
+        "title": "eMudhra, 글로벌 SSL/TLS 인증서 사업에서 철수 예정",
+        "url": "https://news.hada.io/topic?id=35817",
+        "domain": "news.hada.io",
+        "sub": null,
+        "publishedAt": "2026-10-23T00:42:53+09:00"
+      },
       {
         "id": "https://news.hada.io/topic?id=35816",
         "source": "geeknews",
@@ -3622,269 +3660,224 @@
         "domain": "news.hada.io",
         "sub": null,
         "publishedAt": "2026-10-21T19:00:19+09:00"
-      },
-      {
-        "id": "https://news.hada.io/topic?id=35750",
-        "source": "geeknews",
-        "title": "또 다른 유행병: 벤조디아제핀을 끊으려는 시도",
-        "url": "https://news.hada.io/topic?id=35750",
-        "domain": "news.hada.io",
-        "sub": null,
-        "publishedAt": "2026-10-21T18:37:18+09:00"
-      },
-      {
-        "id": "https://news.hada.io/topic?id=35749",
-        "source": "geeknews",
-        "title": "Show HN: VoidAccess - 검색 질의에서 그래프까지, 오픈소스 다크웹 OSINT",
-        "url": "https://news.hada.io/topic?id=35749",
-        "domain": "news.hada.io",
-        "sub": null,
-        "publishedAt": "2026-10-21T17:31:18+09:00"
-      },
-      {
-        "id": "https://news.hada.io/topic?id=35748",
-        "source": "geeknews",
-        "title": "PHP, 중대 취약점 대응 보안 릴리스 예정",
-        "url": "https://news.hada.io/topic?id=35748",
-        "domain": "news.hada.io",
-        "sub": null,
-        "publishedAt": "2026-10-21T17:01:01+09:00"
-      },
-      {
-        "id": "https://news.hada.io/topic?id=35747",
-        "source": "geeknews",
-        "title": "미 연방 수사당국, 몸값 협상가의 ShinyHunters 갈취 사이트 운영 관여 의심",
-        "url": "https://news.hada.io/topic?id=35747",
-        "domain": "news.hada.io",
-        "sub": null,
-        "publishedAt": "2026-10-21T16:37:45+09:00"
       }
     ],
     "reddit": [
       {
-        "id": "t3_1xbzlih",
+        "id": "t3_1xcd8xc",
         "source": "reddit",
-        "title": "I replaced my Samsung TV’s home screen with Claude Code",
-        "url": "https://www.reddit.com/r/ClaudeAI/comments/1xbzlih/i_replaced_my_samsung_tvs_home_screen_with_claude/",
+        "title": "😶",
+        "url": "https://www.reddit.com/r/vibecoding/comments/1xcd8xc/_/",
         "domain": "reddit.com",
-        "sub": "ClaudeAI",
-        "publishedAt": "2026-10-21T21:11:42+00:00"
+        "sub": "vibecoding",
+        "publishedAt": "2026-10-22T08:48:37+00:00"
       },
       {
-        "id": "t3_1xce2vu",
+        "id": "t3_1xc0inu",
         "source": "reddit",
-        "title": "Claude is Like a Senior Now",
-        "url": "https://www.reddit.com/r/ClaudeAI/comments/1xce2vu/claude_is_like_a_senior_now/",
+        "title": "Alright, this is serious now. If it's true, railway users are basically cooked. It's been 14+ hours already.",
+        "url": "https://www.reddit.com/r/vibecoding/comments/1xc0inu/alright_this_is_serious_now_if_its_true_railway/",
         "domain": "reddit.com",
-        "sub": "ClaudeAI",
-        "publishedAt": "2026-10-22T09:40:55+00:00"
+        "sub": "vibecoding",
+        "publishedAt": "2026-10-21T21:48:19+00:00"
       },
       {
-        "id": "t3_1xbwkgf",
+        "id": "t3_1xcdknv",
         "source": "reddit",
-        "title": "Claude Duet: Anthropic just casually dropped the personal assistant calling it a proactive agent. This is the response to Muses, Bots and Dots",
-        "url": "https://www.reddit.com/r/ClaudeAI/comments/1xbwkgf/claude_duet_anthropic_just_casually_dropped_the/",
+        "title": "How many unfinished projects do you have?",
+        "url": "https://www.reddit.com/r/vibecoding/comments/1xcdknv/how_many_unfinished_projects_do_you_have/",
         "domain": "reddit.com",
-        "sub": "ClaudeAI",
-        "publishedAt": "2026-10-21T19:17:05+00:00"
+        "sub": "vibecoding",
+        "publishedAt": "2026-10-22T09:09:08+00:00"
       },
       {
-        "id": "t3_1xcdwdx",
+        "id": "t3_1xc6w5r",
         "source": "reddit",
-        "title": "I got tired of checking whether Claude Code needs me. So I gave it a physical status light.",
-        "url": "https://www.reddit.com/r/ClaudeAI/comments/1xcdwdx/i_got_tired_of_checking_whether_claude_code_needs/",
+        "title": "Apparently the find command is \"pretty shocking\" AI behavior now",
+        "url": "https://www.reddit.com/r/vibecoding/comments/1xc6w5r/apparently_the_find_command_is_pretty_shocking_ai/",
         "domain": "reddit.com",
-        "sub": "ClaudeAI",
-        "publishedAt": "2026-10-22T09:29:24+00:00"
+        "sub": "vibecoding",
+        "publishedAt": "2026-10-22T02:41:14+00:00"
       },
       {
-        "id": "t3_1xc31hj",
+        "id": "t3_1xbramx",
         "source": "reddit",
-        "title": "Aside from hacking TVs to remove ads, what’s another cool/innovative way you’ve used claude to boost your quality of life",
-        "url": "https://www.reddit.com/r/ClaudeAI/comments/1xc31hj/aside_from_hacking_tvs_to_remove_ads_whats/",
+        "title": "I created a skill that lets you understand understand your codebase using visualizations without reading the code",
+        "url": "https://www.reddit.com/r/vibecoding/comments/1xbramx/i_created_a_skill_that_lets_you_understand/",
         "domain": "reddit.com",
-        "sub": "ClaudeAI",
-        "publishedAt": "2026-10-21T23:38:18+00:00"
+        "sub": "vibecoding",
+        "publishedAt": "2026-10-21T16:06:37+00:00"
       },
       {
-        "id": "t3_1xbroz9",
+        "id": "t3_1xcdrwd",
         "source": "reddit",
-        "title": "Man arrested after telling AI chatbot about ‘plans for mass shooting’ | A 29-year-old man has been remanded in custody after Interpol flagged his conversation with Claude",
-        "url": "https://www.reddit.com/r/ClaudeAI/comments/1xbroz9/man_arrested_after_telling_ai_chatbot_about_plans/",
+        "title": "The end of the non-technical engineering manager",
+        "url": "https://www.reddit.com/r/vibecoding/comments/1xcdrwd/the_end_of_the_nontechnical_engineering_manager/",
         "domain": "reddit.com",
-        "sub": "ClaudeAI",
-        "publishedAt": "2026-10-21T16:20:50+00:00"
+        "sub": "vibecoding",
+        "publishedAt": "2026-10-22T09:21:54+00:00"
       },
       {
-        "id": "t3_1xbrzo0",
+        "id": "t3_1xc2flf",
         "source": "reddit",
-        "title": "I gave Claude Code my parents' TV model number. It found the TV on Wi-Fi and cleaned out the ads. The interesting part: the prompt is mostly a list of things it must NOT do",
-        "url": "https://www.reddit.com/r/ClaudeAI/comments/1xbrzo0/i_gave_claude_code_my_parents_tv_model_number_it/",
+        "title": "This sub needs to internalize this: less skill != more better. Vibecoding has its uses, very much so but really don't let it get to your heads. good large codebase design takes skilled human effort and the assumption that llm code is perfect is really just an ego thing from a position of ignorance.",
+        "url": "https://www.reddit.com/r/vibecoding/comments/1xc2flf/this_sub_needs_to_internalize_this_less_skill/",
         "domain": "reddit.com",
-        "sub": "ClaudeAI",
-        "publishedAt": "2026-10-21T16:31:35+00:00"
+        "sub": "vibecoding",
+        "publishedAt": "2026-10-21T23:10:44+00:00"
       },
       {
-        "id": "t3_1xbsxxm",
+        "id": "t3_1xbz6aq",
         "source": "reddit",
-        "title": "Exploring Opus 5.5’s potential in real-time VFX",
-        "url": "https://www.reddit.com/r/ClaudeAI/comments/1xbsxxm/exploring_opus_55s_potential_in_realtime_vfx/",
+        "title": "Built a bunch of quizzes for learning about AI and Open Weights featuring my cat",
+        "url": "https://www.reddit.com/r/vibecoding/comments/1xbz6aq/built_a_bunch_of_quizzes_for_learning_about_ai/",
         "domain": "reddit.com",
-        "sub": "ClaudeAI",
-        "publishedAt": "2026-10-21T17:06:23+00:00"
+        "sub": "vibecoding",
+        "publishedAt": "2026-10-21T20:56:04+00:00"
       },
       {
-        "id": "t3_1xc357k",
+        "id": "t3_1xcionb",
         "source": "reddit",
-        "title": "Building an Online Pixel RPG with Claude",
-        "url": "https://www.reddit.com/r/ClaudeAI/comments/1xc357k/building_an_online_pixel_rpg_with_claude/",
+        "title": "I made an online playground for Claude to make SNES games",
+        "url": "https://www.reddit.com/r/vibecoding/comments/1xcionb/i_made_an_online_playground_for_claude_to_make/",
         "domain": "reddit.com",
-        "sub": "ClaudeAI",
-        "publishedAt": "2026-10-21T23:43:17+00:00"
+        "sub": "vibecoding",
+        "publishedAt": "2026-10-22T13:32:34+00:00"
       },
       {
-        "id": "t3_1xbtjtr",
+        "id": "t3_1xcl6wk",
         "source": "reddit",
-        "title": "The REA: Reverse Engineer Anything dream has been cut down at the source",
-        "url": "https://www.reddit.com/r/ClaudeAI/comments/1xbtjtr/the_rea_reverse_engineer_anything_dream_has_been/",
+        "title": "Had a banked reset on Claude Code that expires today, might want to double check yours",
+        "url": "https://www.reddit.com/r/vibecoding/comments/1xcl6wk/had_a_banked_reset_on_claude_code_that_expires/",
         "domain": "reddit.com",
-        "sub": "ClaudeAI",
-        "publishedAt": "2026-10-21T17:28:17+00:00"
+        "sub": "vibecoding",
+        "publishedAt": "2026-10-22T15:09:46+00:00"
       },
       {
-        "id": "t3_1xcfgop",
+        "id": "t3_1xckkby",
         "source": "reddit",
-        "title": "Turn a 12-year-old Kindle into a clock & weather display",
-        "url": "https://www.reddit.com/r/ClaudeAI/comments/1xcfgop/turn_a_12yearold_kindle_into_a_clock_weather/",
+        "title": "My vibecoded spooky skeleton dancer is ready for Halloween",
+        "url": "https://www.reddit.com/r/vibecoding/comments/1xckkby/my_vibecoded_spooky_skeleton_dancer_is_ready_for/",
         "domain": "reddit.com",
-        "sub": "ClaudeAI",
-        "publishedAt": "2026-10-22T11:00:42+00:00"
+        "sub": "vibecoding",
+        "publishedAt": "2026-10-22T14:45:54+00:00"
       },
       {
-        "id": "t3_1xc0tzw",
+        "id": "t3_1xcigj5",
         "source": "reddit",
-        "title": "Show us what you've created with Claude!",
-        "url": "https://www.reddit.com/r/ClaudeAI/comments/1xc0tzw/show_us_what_youve_created_with_claude/",
+        "title": "I build this tool for understanding Open source projects !!!",
+        "url": "https://www.reddit.com/r/vibecoding/comments/1xcigj5/i_build_this_tool_for_understanding_open_source/",
         "domain": "reddit.com",
-        "sub": "ClaudeAI",
-        "publishedAt": "2026-10-21T22:00:52+00:00"
+        "sub": "vibecoding",
+        "publishedAt": "2026-10-22T13:23:24+00:00"
       },
       {
-        "id": "t3_1xbx2hk",
+        "id": "t3_1xc4l9m",
         "source": "reddit",
-        "title": "Anthropic just announced Claude Duet",
-        "url": "https://www.reddit.com/r/ClaudeAI/comments/1xbx2hk/anthropic_just_announced_claude_duet/",
+        "title": "Rooms - App in development",
+        "url": "https://www.reddit.com/r/vibecoding/comments/1xc4l9m/rooms_app_in_development/",
         "domain": "reddit.com",
-        "sub": "ClaudeAI",
-        "publishedAt": "2026-10-21T19:35:38+00:00"
+        "sub": "vibecoding",
+        "publishedAt": "2026-10-22T00:50:32+00:00"
       },
       {
-        "id": "t3_1xcgebb",
+        "id": "t3_1xbv6nr",
         "source": "reddit",
-        "title": "I'm building a cyberpunk pixel-art action adventure with Claude Code",
-        "url": "https://www.reddit.com/r/ClaudeAI/comments/1xcgebb/im_building_a_cyberpunk_pixelart_action_adventure/",
+        "title": "Anyone up for a race? Got it on itch.io... finally 😭",
+        "url": "https://www.reddit.com/r/vibecoding/comments/1xbv6nr/anyone_up_for_a_race_got_it_on_itchio_finally/",
         "domain": "reddit.com",
-        "sub": "ClaudeAI",
-        "publishedAt": "2026-10-22T11:49:44+00:00"
+        "sub": "vibecoding",
+        "publishedAt": "2026-10-21T18:26:59+00:00"
       },
       {
-        "id": "t3_1xbxgq4",
+        "id": "t3_1xbs4zy",
         "source": "reddit",
-        "title": "PSA - Buyer beware! Usage credit limits aren’t real limits.",
-        "url": "https://www.reddit.com/r/ClaudeAI/comments/1xbxgq4/psa_buyer_beware_usage_credit_limits_arent_real/",
+        "title": "DeepSeek-chan dominando todos os jogos",
+        "url": "https://www.reddit.com/r/vibecoding/comments/1xbs4zy/deepseekchan_dominando_todos_os_jogos/",
         "domain": "reddit.com",
-        "sub": "ClaudeAI",
-        "publishedAt": "2026-10-21T19:50:37+00:00"
+        "sub": "vibecoding",
+        "publishedAt": "2026-10-21T16:37:06+00:00"
       },
       {
-        "id": "t3_1xcjta0",
+        "id": "t3_1xbrmwn",
         "source": "reddit",
-        "title": "Better than s*x",
-        "url": "https://www.reddit.com/r/ClaudeAI/comments/1xcjta0/better_than_sx/",
+        "title": "A fun interaction from another pilot squading up! Liftline (my vibed game so far)",
+        "url": "https://www.reddit.com/r/vibecoding/comments/1xbrmwn/a_fun_interaction_from_another_pilot_squading_up/",
         "domain": "reddit.com",
-        "sub": "ClaudeAI",
-        "publishedAt": "2026-10-22T14:16:44+00:00"
+        "sub": "vibecoding",
+        "publishedAt": "2026-10-21T16:18:42+00:00"
       },
       {
-        "id": "t3_1xch4lh",
+        "id": "t3_1xckt6r",
         "source": "reddit",
-        "title": "Real",
-        "url": "https://www.reddit.com/r/ClaudeAI/comments/1xch4lh/real/",
+        "title": "Playing around with Opus animations",
+        "url": "https://www.reddit.com/r/vibecoding/comments/1xckt6r/playing_around_with_opus_animations/",
         "domain": "reddit.com",
-        "sub": "ClaudeAI",
-        "publishedAt": "2026-10-22T12:24:33+00:00"
+        "sub": "vibecoding",
+        "publishedAt": "2026-10-22T14:55:25+00:00"
       },
       {
-        "id": "t3_1xc049i",
+        "id": "t3_1xch9ve",
         "source": "reddit",
-        "title": "Every new model made my MMORPG better, so I never released it. Finally Open-sourcing it today before Fable 5.5 drops or I will be doomed.",
-        "url": "https://www.reddit.com/r/ClaudeAI/comments/1xc049i/every_new_model_made_my_mmorpg_better_so_i_never/",
+        "title": "What happens when two AI coding tools disagree about how your app should be built?",
+        "url": "https://www.reddit.com/r/vibecoding/comments/1xch9ve/what_happens_when_two_ai_coding_tools_disagree/",
         "domain": "reddit.com",
-        "sub": "ClaudeAI",
-        "publishedAt": "2026-10-21T21:32:14+00:00"
+        "sub": "vibecoding",
+        "publishedAt": "2026-10-22T12:31:31+00:00"
       },
       {
-        "id": "t3_1xcag8t",
+        "id": "t3_1xca9rm",
         "source": "reddit",
-        "title": "Claude Code: Are you still in the terminal or using the Claude app?",
-        "url": "https://www.reddit.com/r/ClaudeAI/comments/1xcag8t/claude_code_are_you_still_in_the_terminal_or/",
+        "title": "SuperGhidra: an improvised agent-first RE tool on top of Ghidra",
+        "url": "https://www.reddit.com/r/vibecoding/comments/1xca9rm/superghidra_an_improvised_agentfirst_re_tool_on/",
         "domain": "reddit.com",
-        "sub": "ClaudeAI",
-        "publishedAt": "2026-10-22T05:53:10+00:00"
+        "sub": "vibecoding",
+        "publishedAt": "2026-10-22T05:42:36+00:00"
       },
       {
-        "id": "t3_1xc6beb",
+        "id": "t3_1xbwr81",
         "source": "reddit",
-        "title": "Claude Duet research preview: what you get, what it won’t do, and who is excluded (US Pro/Max only, waitlist)",
-        "url": "https://www.reddit.com/r/ClaudeAI/comments/1xc6beb/claude_duet_research_preview_what_you_get_what_it/",
+        "title": "Im working on nyota",
+        "url": "https://www.reddit.com/r/vibecoding/comments/1xbwr81/im_working_on_nyota/",
         "domain": "reddit.com",
-        "sub": "ClaudeAI",
-        "publishedAt": "2026-10-22T02:13:44+00:00"
+        "sub": "vibecoding",
+        "publishedAt": "2026-10-21T19:24:06+00:00"
       },
       {
-        "id": "t3_1xbqih1",
+        "id": "t3_1xcc9g0",
         "source": "reddit",
-        "title": "A place where Claude truly shines.",
-        "url": "https://www.reddit.com/r/ClaudeAI/comments/1xbqih1/a_place_where_claude_truly_shines/",
+        "title": "my llama.cpp frontend somehow hit 100 stars lol, here’s what changed since i posted it",
+        "url": "https://www.reddit.com/r/vibecoding/comments/1xcc9g0/my_llamacpp_frontend_somehow_hit_100_stars_lol/",
         "domain": "reddit.com",
-        "sub": "ClaudeAI",
-        "publishedAt": "2026-10-21T15:37:55+00:00"
+        "sub": "vibecoding",
+        "publishedAt": "2026-10-22T07:44:16+00:00"
       },
       {
-        "id": "t3_1xccu1d",
+        "id": "t3_1xc6t60",
         "source": "reddit",
-        "title": "Watermarking is getting on my nerve - am I alone?",
-        "url": "https://www.reddit.com/r/ClaudeAI/comments/1xccu1d/watermarking_is_getting_on_my_nerve_am_i_alone/",
+        "title": "Built a daily NBA game with Codex. Curious if anyone here would play it",
+        "url": "https://www.reddit.com/r/vibecoding/comments/1xc6t60/built_a_daily_nba_game_with_codex_curious_if/",
         "domain": "reddit.com",
-        "sub": "ClaudeAI",
-        "publishedAt": "2026-10-22T08:21:11+00:00"
+        "sub": "vibecoding",
+        "publishedAt": "2026-10-22T02:37:01+00:00"
       },
       {
-        "id": "t3_1xc1l52",
+        "id": "t3_1xbsb7l",
         "source": "reddit",
-        "title": "If you use Railway for Claude Hosted Apps, Disable you API Keys used there, they are being harvested.",
-        "url": "https://www.reddit.com/r/ClaudeAI/comments/1xc1l52/if_you_use_railway_for_claude_hosted_apps_disable/",
+        "title": "One of my fave software finds: for when Claude keeps writing code for an old version of your library",
+        "url": "https://www.reddit.com/r/vibecoding/comments/1xbsb7l/one_of_my_fave_software_finds_for_when_claude/",
         "domain": "reddit.com",
-        "sub": "ClaudeAI",
-        "publishedAt": "2026-10-21T22:32:51+00:00"
+        "sub": "vibecoding",
+        "publishedAt": "2026-10-21T16:43:29+00:00"
       },
       {
-        "id": "t3_1xc30xk",
+        "id": "t3_1xcc1vo",
         "source": "reddit",
-        "title": "I built 5 Claude Code skills that make game assets as code: pixel art, vector art, 3D, textures and sound (one scene made with all of them)",
-        "url": "https://www.reddit.com/r/ClaudeAI/comments/1xc30xk/i_built_5_claude_code_skills_that_make_game/",
+        "title": "One GPU, four models, no eye contact.",
+        "url": "https://www.reddit.com/r/vibecoding/comments/1xcc1vo/one_gpu_four_models_no_eye_contact/",
         "domain": "reddit.com",
-        "sub": "ClaudeAI",
-        "publishedAt": "2026-10-21T23:37:34+00:00"
-      },
-      {
-        "id": "t3_1xcem8l",
-        "source": "reddit",
-        "title": "Claude's royal court...",
-        "url": "https://www.reddit.com/r/ClaudeAI/comments/1xcem8l/claudes_royal_court/",
-        "domain": "reddit.com",
-        "sub": "ClaudeAI",
-        "publishedAt": "2026-10-22T10:12:53+00:00"
+        "sub": "vibecoding",
+        "publishedAt": "2026-10-22T07:30:26+00:00"
       }
     ]
   }
