@@ -1,0 +1,11 @@
+:root, [data-mode="dark"] { --bg: #070814; --text: #eaf2ff; --link: #67e8f9; --line: rgba(165,243,252,.14); }
+[data-mode="light"] { --bg: #f3f5fc; --text: #0f172a; --link: #0e7490; --line: rgba(8,145,178,.2); }
+body { margin: 0; background: var(--bg); color: var(--text); font-family: system-ui, sans-serif; }
+.plain { max-width: 720px; margin: 0 auto; padding: 24px 16px; }
+.plain header { display: flex; gap: 12px; align-items: center; flex-wrap: wrap; border-bottom: 1px solid var(--line); padding-bottom: 12px; }
+.plain h1 { font-size: 20px; margin: 0 auto 0 0; }
+.plain small { font-weight: 400; opacity: .8; }
+.plain a { color: var(--link); }
+.plain li { margin: 6px 0; }
+.plain .notice { border: 1px solid var(--line); padding: 8px 12px; }
+.plain select, .plain button { background: transparent; color: var(--text); border: 1px solid var(--line); padding: 4px 10px; }

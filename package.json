@@ -7,7 +7,7 @@
     "node": ">=24"
   },
   "scripts": {
-    "test": "node --test \"test/**/*.test.ts\"",
+    "test": "node --test \"test/**/*.test.ts\" \"web/**/*.test.js\"",
     "typecheck": "tsc --noEmit",
     "collect": "node src/cli/collect.ts",
     "analyze": "node src/cli/analyze.ts",
