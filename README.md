@@ -30,13 +30,13 @@ npm run collect && npm run analyze && npm run build && npm run serve
 
 1. GitHub 웹에서 새 **공개(Public)** 저장소를 만든다. README나 .gitignore는 추가하지 않는다.
 2. 저장소 **Settings → Pages → Source**를 **GitHub Actions**로 먼저 설정한다.
-3. 로컬에서 원격을 연결하고 push한다. 작업은 `feat/vibe-radar` 브랜치에 있으므로 원격 `main`으로 올린다(또는 먼저 `main`에 병합한 뒤 `git push -u origin main`).
+3. 로컬 `main` 브랜치에서 원격을 연결하고 push한다.
    ```
    git remote add origin https://github.com/<사용자>/<저장소>.git
-   git push -u origin feat/vibe-radar:main
+   git push -u origin main
    ```
 4. **Actions** 탭에서 `daily` 워크플로를 열고 **Run workflow**로 한 번 수동 실행한다.
-5. 실행이 끝나면 배포 URL이 job 요약에 표시된다.
+5. 실행이 끝나면 `deploy` job의 환경 링크(github-pages)에 배포 URL이 표시된다.
 
 GitHub는 저장소에 60일 동안 활동이 없으면 예약(schedule) 워크플로를 끈다. 그러면 **Actions** 탭에서 `daily`를 다시 켠다.
 
