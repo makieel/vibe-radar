@@ -162,10 +162,10 @@ test('source status counts ok sources and names failures in title', () => {
   assert.match(html, /title="[^"]*Reddit[^"]*"/);
 });
 
-test('menu marks the current view and other views show a placeholder', () => {
+test('menu marks the current view', () => {
   const html = draw(clone(), { route: { view: 'repos', date: '2026-10-23', params: {} } });
   assert.match(html, /<a class="on" href="#\/repos\?d=2026-10-23"/);
-  assert.ok(html.includes('준비 중이에요'));
+  assert.ok(!html.includes('준비 중이에요'));
   assert.ok(!html.includes('class="hud lead'));
 });
 
@@ -201,4 +201,199 @@ test('never throws on sparse or broken data', () => {
   r.sources = null;
   assert.doesNotThrow(() => draw(r));
   assert.doesNotThrow(() => draw(r, { index: null, route: null }));
+});
+
+// ---- Task 13: 보조 화면 ----
+const at = (view, params = {}, date = null) => ({ route: { view, date, params } });
+const page = (r, view, params, date) => draw(r, at(view, params, date));
+const HOSTILE = '<img src=x onerror=alert(1)>';
+
+test('tools view: cards with version, ago, note, release link, NEW badge', () => {
+  const r = clone();
+  for (const t of r.tools) t.isRecent = false;
+  r.tools[0].isRecent = true;
+  r.tools[1].version = null;
+  r.tools[1].note_ko = '한국어 노트';
+  const html = page(r, 'tools');
+  assert.equal((html.match(/class="card"/g) ?? []).length, r.tools.length);
+  assert.ok(html.includes(fmt.esc(r.tools[0].version)));
+  assert.equal((html.match(/>NEW</g) ?? []).length, 1);
+  assert.ok(html.includes('한국어 노트'));
+  assert.ok(html.includes(fmt.ago(r.tools[1].publishedAt)));
+  assert.ok(html.includes('릴리즈 보기'));
+  assert.ok(html.includes(`href="${fmt.esc(r.tools[0].url)}" target="_blank" rel="noopener"`));
+  r.tools = [];
+  assert.ok(page(r, 'tools').includes('아직 모인 도구 소식이 없어요'));
+});
+
+test('kit filter by kind', () => {
+  const r = clone();
+  r.kit[0].kind = 'SKILL';
+  r.kit[0].fullName = 'a/only-skill';
+  const html = page(r, 'kit', { kind: 'SKILL' }, '2026-10-22');
+  assert.ok(html.includes('a/only-skill'));
+  assert.equal((html.match(/class="card"/g) ?? []).length, 1);
+  assert.ok(html.includes('class="chip on" aria-current="true" href="#/kit?kind=SKILL&amp;d=2026-10-22"'));
+  assert.ok(html.includes('href="#/kit?kind=MCP&amp;d=2026-10-22"'));
+  assert.ok(html.includes('href="#/kit?d=2026-10-22"')); // 전체
+  const all = page(r, 'kit');
+  assert.equal((all.match(/class="card"/g) ?? []).length, r.kit.length);
+  assert.ok(all.includes('>신규<'));
+  assert.ok(page(r, 'kit', { kind: 'RULES' }).includes('RULES 재료는 오늘 없어요'));
+});
+
+test('kit unknown kind falls back to 전체', () => {
+  const r = clone();
+  const html = page(r, 'kit', { kind: 'XYZ' });
+  assert.equal((html.match(/class="card"/g) ?? []).length, r.kit.length);
+  assert.ok(html.includes('class="chip on" aria-current="true" href="#/kit"'));
+});
+
+test('papers filter by cat', () => {
+  const r = clone();
+  const cat = r.paperCategories[0].category;
+  const expected = r.papers.filter((p) => p.category === cat).length;
+  const html = page(r, 'papers', { cat }, '2026-10-22');
+  const [list, hf] = html.split('Hugging Face');
+  assert.equal((list.match(/class="row"/g) ?? []).length, Math.min(expected, 60));
+  assert.ok(html.includes(`href="#/papers?cat=${encodeURIComponent(cat)}&amp;d=2026-10-22"`));
+  const other = r.papers.find((p) => p.category !== cat);
+  assert.ok(!html.includes(fmt.esc(other.title)));
+  assert.ok(html.includes(fmt.esc(r.hfModels[0].id)));
+  assert.ok(html.includes(fmt.count(r.hfModels[0].likes)));
+  assert.equal((hf.match(/class="row"/g) ?? []).length, 10);
+});
+
+test('papers unknown cat falls back to 전체', () => {
+  const r = clone();
+  const html = page(r, 'papers', { cat: 'zz.ZZ' });
+  assert.ok(html.includes('class="chip on" aria-current="true" href="#/papers"'));
+  assert.ok(html.includes(fmt.esc(r.papers[0].title)));
+});
+
+test('repos view: rising rows with sparkline and signed delta', () => {
+  const r = clone();
+  r.rising[0].series = [{ date: '2026-10-22', stars: 10 }, { date: '2026-10-23', stars: 30 }, { date: '2026-10-24', stars: 20 }];
+  r.rising[1].series = [{ date: '2026-10-23', stars: 10 }];
+  const html = page(r, 'repos');
+  assert.ok(html.includes(fmt.signed(r.rising[0].delta7)));
+  const sparks = html.match(/<svg class="spark"[^>]*aria-hidden="true"/g) ?? [];
+  assert.equal(sparks.length, r.rising.slice(0, 10).filter((x) => x.series.length >= 2).length);
+  assert.match(html, /<polyline points="[\d., ]+" fill="none" stroke="var\(--green\)"/);
+});
+
+test('sparkline omitted when series < 2 points', () => {
+  const r = clone();
+  r.rising = r.rising.slice(0, 2);
+  r.rising[0].series = [{ date: '2026-10-23', stars: 5 }];
+  r.rising[1].series = [];
+  assert.ok(!page(r, 'repos').includes('class="spark"'));
+  r.rising[0].series = [{ date: 'a', stars: 5 }, { date: 'b', stars: 9 }];
+  assert.equal((page(r, 'repos').match(/class="spark"/g) ?? []).length, 1);
+});
+
+test('repos with no previous shows 비교할 이전 기록이 아직 없어요', () => {
+  const r = clone();
+  r.newRepos = [];
+  r.droppedRepos = [];
+  assert.equal((page(r, 'repos').match(/비교할 이전 기록이 아직 없어요/g) ?? []).length, 2);
+  r.newRepos = [{ fullName: 'n/new', url: 'https://github.com/n/new', description: null, language: 'Go', stars: 12 }];
+  const html = page(r, 'repos');
+  assert.ok(html.includes('n/new'));
+  assert.equal((html.match(/비교할 이전 기록이 아직 없어요/g) ?? []).length, 1);
+});
+
+test('keyword chips: delta arrows, 신규, or today frequency', () => {
+  const r = clone();
+  r.keywords = [
+    { term: 'up', today: 9, avg7: 3, delta: 6, isNew: false },
+    { term: 'down', today: 1, avg7: 4, delta: -3, isNew: false },
+    { term: 'fresh', today: 4, avg7: null, delta: null, isNew: true },
+    { term: 'plain', today: 26, avg7: null, delta: null, isNew: false },
+  ];
+  const html = page(r, 'repos');
+  assert.ok(html.includes('up<b>▲6</b>'));
+  assert.ok(html.includes('down<b>▼3</b>'));
+  assert.ok(html.includes('fresh<b>신규</b>'));
+  assert.ok(html.includes('plain<b>26</b>'));
+});
+
+test('sources view: three columns with metadata', () => {
+  const r = clone();
+  const html = page(r, 'sources');
+  assert.equal((html.match(/class="hud t[234]"/g) ?? []).length, 3);
+  assert.equal((html.match(/class="row"/g) ?? []).length, r.feeds.hn.length + r.feeds.geeknews.length + r.feeds.reddit.length);
+  const h = r.feeds.hn[0];
+  assert.ok(html.includes(`${fmt.count(h.points)}점 · 댓글 ${fmt.count(h.comments)} · ${fmt.esc(h.domain)}`));
+  assert.ok(html.includes('r/ClaudeAI'));
+});
+
+test('sources shows failure message for failed reddit', () => {
+  const r = clone();
+  r.sources.find((s) => s.id === 'reddit').ok = false;
+  const html = page(r, 'sources');
+  assert.equal((html.match(/오늘은 이 출처를 가져오지 못했어요/g) ?? []).length, 1);
+  assert.ok(!html.includes('r/ClaudeAI'));
+  assert.ok(html.includes(fmt.esc(r.feeds.hn[0].title)));
+});
+
+test('empty data shows empty states on every secondary view', () => {
+  const bare = { date: '2026-10-23' };
+  const expected = {
+    tools: '아직 모인 도구 소식이 없어요',
+    kit: '아직 모인 재료가 없어요',
+    repos: '아직 모인 급상승 레포가 없어요',
+    papers: '아직 모인 논문이 없어요',
+    sources: '아직 모인 글이 없어요',
+  };
+  for (const [view, msg] of Object.entries(expected)) assert.ok(page(bare, view).includes(msg), view);
+});
+
+test('unknown date notice renders on any view', () => {
+  for (const view of VIEWS) {
+    const html = draw(clone(), { ...at(view), notice: '그 날짜 기록이 없어요. 최신 브리핑을 보여드려요.' });
+    assert.ok(html.includes('class="notice"'), view);
+  }
+});
+
+test('hostile strings are escaped on every secondary view', () => {
+  const r = clone();
+  r.tools[0].name = HOSTILE;
+  r.tools[0].note_ko = HOSTILE;
+  r.kit[0].fullName = HOSTILE;
+  r.kit[0].description = HOSTILE;
+  r.rising[0].fullName = HOSTILE;
+  r.rising[0].url = 'javascript:alert(1)';
+  r.keywords[0].term = HOSTILE;
+  r.newRepos = [{ fullName: HOSTILE, url: 'javascript:alert(2)', description: null, language: HOSTILE, stars: 1 }];
+  r.papers[0].title = HOSTILE;
+  r.papers[0].url = 'javascript:alert(3)';
+  r.paperCategories[0].category = HOSTILE;
+  r.hfModels[0].id = HOSTILE;
+  r.feeds.hn[0].title = HOSTILE;
+  r.feeds.hn[0].domain = HOSTILE;
+  r.feeds.reddit[0].sub = HOSTILE;
+  for (const view of ['tools', 'kit', 'repos', 'papers', 'sources']) {
+    const html = page(r, view, view === 'papers' ? { cat: HOSTILE } : {});
+    assert.ok(!html.includes('<img'), view);
+    assert.ok(!html.includes('javascript:'), view);
+    assert.ok(html.includes('&lt;img'), view);
+  }
+});
+
+test('secondary views never throw on broken data', () => {
+  const r = clone();
+  r.tools = [null, { name: null, isRecent: true }];
+  r.kit = [{ fullName: null, kind: 'MCP', stars: 'x' }];
+  r.rising = [{ fullName: 'a/b', series: [null, { stars: 'x' }, { stars: 3 }], delta7: null }];
+  r.keywords = [{ term: null }, { term: 'k', delta: 'x', today: 'y' }];
+  r.newRepos = 'nope';
+  r.papers = [{ title: null, category: null, url: null }];
+  r.paperCategories = [{ category: null, count: 'x' }, { category: 'cs.AI' }];
+  r.hfModels = [{ id: null, likes: 'x' }];
+  r.feeds = { hn: [{ title: null }], geeknews: null, reddit: 5 };
+  for (const view of ['tools', 'kit', 'repos', 'papers', 'sources']) {
+    assert.doesNotThrow(() => page(r, view, { kind: 'MCP', cat: 'cs.AI' }), view);
+    assert.doesNotThrow(() => draw(r, { route: null }), view);
+  }
 });

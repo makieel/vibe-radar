@@ -25,10 +25,28 @@ const DATE_RE = /^\d{4}-\d{2}-\d{2}$/;
 /** 배열이 아니면 [], 객체가 아닌 항목은 걸러낸다. 데이터가 비어도 테마가 throw하지 않게 한다. */
 export const list = (v) => (Array.isArray(v) ? v.filter((x) => x && typeof x === 'object') : []);
 
-/** 앱 안 이동 링크. 날짜를 보고 있으면 d= 를 유지한다. */
-export function hashFor(view, date) {
+/** 앱 안 이동 링크. 필터 params를 먼저, 날짜를 보고 있으면 d= 를 뒤에 붙인다(router.toHash와 같은 순서). */
+export function hashFor(view, date, params) {
   const path = view === 'briefing' ? '#/' : `#/${view}`;
-  return typeof date === 'string' && DATE_RE.test(date) ? `${path}?d=${date}` : path;
+  const parts = Object.entries(params && typeof params === 'object' ? params : {}).map(
+    ([k, v]) => `${encodeURIComponent(k)}=${encodeURIComponent(v)}`,
+  );
+  if (typeof date === 'string' && DATE_RE.test(date)) parts.push(`d=${date}`);
+  return parts.length ? `${path}?${parts.join('&')}` : path;
+}
+
+export const isNum = (n) => typeof n === 'number' && Number.isFinite(n);
+export const text = (v) => (typeof v === 'string' ? v : '');
+
+/** 필터 칩 한 줄. items: [[값, 라벨]], 값이 null이면 '전체'. */
+export function chips(fmt, view, date, key, items, current) {
+  return `<nav class="chips" aria-label="필터">${items
+    .map(([value, label]) => {
+      const on = value === current;
+      const href = hashFor(view, date, value === null ? null : { [key]: value });
+      return `<a class="chip${on ? ' on' : ''}"${on ? ' aria-current="true"' : ''} href="${fmt.esc(href)}">${fmt.esc(label)}</a>`;
+    })
+    .join('')}</nav>`;
 }
 
 /** 외부 링크 속성. href는 safeUrl을 거친 뒤 escape한다. */
