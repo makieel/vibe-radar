@@ -11,7 +11,6 @@ interface Node extends IssueItem {
 
 const JACCARD_MIN = 0.35;
 const COMMON_MIN = 2;
-const SHORT_TITLE_COMMON_MIN = 3; // R11: a short title must not bridge unrelated stories
 const TRENDING_TOP = 10;
 
 function buildNodes(raw: RawSnapshot): Node[] {
@@ -48,10 +47,10 @@ function related(a: Node, b: Node): boolean {
   if (normalizeUrl(a.url) === normalizeUrl(b.url)) return true;
   if (b.repo && urlMentionsRepo(a.url, b.repo)) return true;
   if (a.repo && urlMentionsRepo(b.url, a.repo)) return true;
+  if (a.source === b.source) return false; // R12: title overlap links different sources only
   let common = 0;
   for (const t of a.tokens) if (b.tokens.has(t)) common++;
-  const minCommon = a.tokens.size < 4 || b.tokens.size < 4 ? SHORT_TITLE_COMMON_MIN : COMMON_MIN;
-  if (common < minCommon) return false;
+  if (common < COMMON_MIN) return false;
   return common / (a.tokens.size + b.tokens.size - common) >= JACCARD_MIN;
 }
 

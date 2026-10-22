@@ -20,11 +20,11 @@ const repo = (fullName: string, starsInPeriod: number, period: 'daily' | 'weekly
 test('clusterIssues merges two HN posts and GeekNews about PHP security release', () => {
   const raw = makeRaw({
     hn: [
-      hn(1, 'PHP 8.2.35 security release fixes vulnerabilities', 'https://thephp.foundation/blog/2026/php-8-2-35/?utm_source=hn', 120, 40),
+      hn(1, 'PHP 8.2.35 security release', 'https://thephp.foundation/blog/2026/php-8-2-35/?utm_source=hn', 120, 40),
       hn(2, "Today's PHP security release, and how we're strengthening it", 'https://www.thephp.foundation/blog/2026/php-8-2-35', 974, 535),
       hn(3, 'Unrelated Zig compiler benchmarks', 'https://example.com/zig', 50, 5),
     ],
-    geeknews: [news('g1', 'PHP 8.2.35 보안 패치 security fixes 발표', 'https://news.hada.io/topic?id=1')],
+    geeknews: [news('g1', 'PHP 8.2.35 보안 릴리즈', 'https://news.hada.io/topic?id=1')],
   });
   const issues = clusterIssues(raw);
   const php = issues.find((i) => i.sources.includes('geeknews'))!;
@@ -78,4 +78,13 @@ test('rule (b) anchors github.com to the hostname', () => {
   assert.equal(clusterIssues(mk('https://notgithub.com/foo/bar')).length, 2);
   assert.equal(clusterIssues(mk('https://github.com/foo/barbaz')).length, 2);
   assert.equal(clusterIssues(mk('https://www.github.com/Foo/Bar/issues/1')).length, 1);
+});
+test('rule (c) merges across different sources only', () => {
+  const raw = makeRaw({
+    hn: [hn(1, 'Claude Duet', 'https://a.com/1', 487, 448)],
+    reddit: [{ id: 'r1', source: 'reddit', title: 'Anthropic just announced Claude Duet', url: 'https://reddit.com/r/x/1', domain: 'reddit.com', sub: 'x', publishedAt: null }],
+  });
+  const issues = clusterIssues(raw);
+  assert.equal(issues.length, 1);
+  assert.deepEqual(issues[0]!.sources, ['hn', 'reddit']);
 });
