@@ -1,17 +1,12 @@
 // 브리핑 화면: 게이지, 1면, 보안 경보 띠, 3열 패널(도구·급상승·재료).
-import { ext, hashFor, sourceName } from './shell.js';
+import { ext, hashFor, list, sourceName, validIso } from './shell.js';
 
 const RING = 314; // 2πr, r=50
 const LABELS = { hot: '평소보다 뜨거움', normal: '평소 수준', calm: '조용한 편' };
 const SEVERITY = { critical: '심각', high: '높음' };
 
-const list = (v) => (Array.isArray(v) ? v.filter((x) => x && typeof x === 'object') : []);
 const isNum = (n) => typeof n === 'number' && Number.isFinite(n);
 const text = (v) => (typeof v === 'string' ? v : '');
-
-function validIso(iso) {
-  return typeof iso === 'string' && !Number.isNaN(new Date(iso).getTime());
-}
 
 function host(url) {
   try {

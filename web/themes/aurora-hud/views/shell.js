@@ -22,7 +22,8 @@ export const SOURCE_NAMES = {
 };
 
 const DATE_RE = /^\d{4}-\d{2}-\d{2}$/;
-const list = (v) => (Array.isArray(v) ? v.filter((x) => x && typeof x === 'object') : []);
+/** 배열이 아니면 [], 객체가 아닌 항목은 걸러낸다. 데이터가 비어도 테마가 throw하지 않게 한다. */
+export const list = (v) => (Array.isArray(v) ? v.filter((x) => x && typeof x === 'object') : []);
 
 /** 앱 안 이동 링크. 날짜를 보고 있으면 d= 를 유지한다. */
 export function hashFor(view, date) {
@@ -39,7 +40,7 @@ export function sourceName(id) {
   return SOURCE_NAMES[id] ?? String(id ?? '');
 }
 
-function validIso(iso) {
+export function validIso(iso) {
   return typeof iso === 'string' && !Number.isNaN(new Date(iso).getTime());
 }
 
@@ -70,6 +71,7 @@ function sourceStatus(ctx) {
   return `<a class="src${failed.length ? ' warn' : ''}" href="${fmt.esc(hashFor('sources', route?.date))}" title="${fmt.esc(title)}">● ${sources.length - failed.length}/${sources.length} 출처</a>`;
 }
 
+// 의도적으로 상태를 둔다: 토글 직후 다시 그려질 때만 손잡이 애니메이션(.flip)을 켜기 위해서다.
 let lastMode = null;
 
 function toggle(mode) {
