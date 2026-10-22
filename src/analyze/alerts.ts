@@ -37,15 +37,18 @@ function advisoryAlerts(raw: RawSnapshot, config: Config): Alert[] {
   return out;
 }
 
+/** News first, then advisories; when a watchlist advisory qualifies, the last slot is kept for it. */
 export function pickAlerts(raw: RawSnapshot, config: Config): Alert[] {
   const seen = new Set<string>();
-  const out: Alert[] = [];
+  const unique: Alert[] = [];
   for (const a of [...newsAlerts(raw, config), ...advisoryAlerts(raw, config)]) {
     const key = normalizeUrl(a.url);
     if (seen.has(key)) continue;
     seen.add(key);
-    out.push(a);
-    if (out.length >= MAX_ALERTS) break;
+    unique.push(a);
   }
-  return out;
+  const news = unique.filter((a) => a.origin === 'news');
+  const advisories = unique.filter((a) => a.origin === 'advisory');
+  const newsSlots = advisories.length > 0 ? MAX_ALERTS - 1 : MAX_ALERTS;
+  return [...news.slice(0, newsSlots), ...advisories].slice(0, MAX_ALERTS);
 }

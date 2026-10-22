@@ -59,6 +59,9 @@ const ref = (t: TrendingRepo): RepoRef => ({
 
 export function repoChanges(raw: RawSnapshot, prevRaw: RawSnapshot | null): { newRepos: RepoRef[]; droppedRepos: RepoRef[] } {
   if (!prevRaw) return { newRepos: [], droppedRepos: [] };
+  // A failed trending fetch would make every repo look new or dropped.
+  const failed = (r: RawSnapshot) => r.sources.some((s) => s.id === 'trending' && !s.ok);
+  if (failed(raw) || failed(prevRaw)) return { newRepos: [], droppedRepos: [] };
   const today = uniqueTrending(raw);
   const prev = uniqueTrending(prevRaw);
   const todaySet = new Set(today.map((t) => t.fullName.toLowerCase()));

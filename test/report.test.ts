@@ -107,6 +107,16 @@ test('pickAlerts puts news before advisories', () => {
   assert.deepEqual(pickAlerts(raw, config).map((a) => a.origin), ['news', 'advisory']);
 });
 
+test('pickAlerts reserves the last slot for a qualifying watchlist advisory', () => {
+  const news = [1, 2, 3, 4].map((i) => hn(i, `Backdoor found in pkg ${i}`, `https://e.test/${i}`, i));
+  const withAdv = pickAlerts(makeRaw({ hn: news, advisories: [adv('GHSA-ok-1')] }), config);
+  assert.deepEqual(withAdv.map((a) => a.id), ['hn-4', 'hn-3', 'GHSA-ok-1']);
+  const twoAdv = pickAlerts(makeRaw({ hn: news.slice(0, 1), advisories: [adv('GHSA-ok-1'), adv('GHSA-ok-2')] }), config);
+  assert.deepEqual(twoAdv.map((a) => a.id), ['hn-1', 'GHSA-ok-1', 'GHSA-ok-2']);
+  const noAdv = pickAlerts(makeRaw({ hn: news, advisories: [adv('GHSA-mal', { type: 'malware' })] }), config);
+  assert.deepEqual(noAdv.map((a) => a.id), ['hn-4', 'hn-3', 'hn-2']);
+});
+
 test('toolCards: recent first, then newest first', () => {
   const t = (tool: string, publishedAt: string | null) => ({ tool, name: tool, version: null, publishedAt, url: `https://e.test/${tool}`, note: null });
   const cards = toolCards(makeRaw({ tools: [t('old', '2026-09-01T00:00:00Z'), t('none', null), t('a', '2026-10-20T00:00:00Z'), t('b', '2026-10-22T00:00:00Z')] }), { ...config, tools: [] });
@@ -165,6 +175,18 @@ test('repoChanges compares trending sets; null prev → empty', () => {
   assert.deepEqual(ch.newRepos.map((x) => x.fullName), ['a/a']);
   assert.deepEqual(ch.droppedRepos.map((x) => x.fullName), ['c/c']);
   assert.deepEqual(repoChanges(today, null), { newRepos: [], droppedRepos: [] });
+});
+
+test('repoChanges: empty lists when today or previous trending source failed', () => {
+  const r = (fullName: string) =>
+    ({ fullName, url: `https://github.com/${fullName}`, description: null, language: null, stars: 1, starsInPeriod: 1, period: 'daily' as const });
+  const st = (ok: boolean) => [{ id: 'trending' as const, ok, count: ok ? 1 : 0, error: ok ? null : 'boom', reduced: false }];
+  const empty = { newRepos: [], droppedRepos: [] };
+  assert.deepEqual(repoChanges(makeRaw({ sources: st(false), trending: [] }), makeRaw({ sources: st(true), trending: [r('c/c')] })), empty);
+  assert.deepEqual(repoChanges(makeRaw({ sources: st(true), trending: [r('a/a')] }), makeRaw({ sources: st(false), trending: [] })), empty);
+  const ok = repoChanges(makeRaw({ sources: st(true), trending: [r('a/a')] }), makeRaw({ sources: st(true), trending: [r('c/c')] }));
+  assert.deepEqual(ok.newRepos.map((x) => x.fullName), ['a/a']);
+  assert.deepEqual(ok.droppedRepos.map((x) => x.fullName), ['c/c']);
 });
 
 test('kitCards classifies cloudflare/security-audit-skill as SKILL', () => {

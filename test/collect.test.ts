@@ -44,11 +44,17 @@ test('trending returning [] is recorded as parsed 0 items', async () => {
   assert.equal(snapshot.sources[0].error, 'parsed 0 items');
 });
 
-test('empty arxiv is still ok (rule applies to trending/hn/tools only)', async () => {
-  const arxiv: Collector<'arxiv'> = { id: 'arxiv', key: 'arxiv', run: async () => ({ data: [], reduced: false }) };
-  const { snapshot } = await runCollectors([arxiv], ctx(), {});
-  assert.equal(snapshot.sources[0].ok, true);
-  assert.equal(snapshot.sources[0].count, 0);
+test('empty arxiv, geeknews and huggingface are failures; empty reddit is still ok', async () => {
+  const empty = <K extends 'arxiv' | 'geeknews' | 'hfModels' | 'reddit'>(id: Collector<K>['id'], key: K): Collector<K> =>
+    ({ id, key, run: async () => ({ data: [] as never, reduced: false }) });
+  const { snapshot } = await runCollectors([empty('arxiv', 'arxiv'), empty('geeknews', 'geeknews'), empty('huggingface', 'hfModels'), empty('reddit', 'reddit')], ctx(), {});
+  const by = (id: string) => snapshot.sources.find(s => s.id === id)!;
+  for (const id of ['arxiv', 'geeknews', 'huggingface']) {
+    assert.equal(by(id).ok, false, id);
+    assert.equal(by(id).error, 'parsed 0 items', id);
+  }
+  assert.equal(by('reddit').ok, true);
+  assert.equal(by('reddit').count, 0);
 });
 
 test('timeout marks collector failed', async () => {

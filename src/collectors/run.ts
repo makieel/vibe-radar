@@ -5,7 +5,8 @@ import type { CollectCtx, Collector, StarHistory } from './types.ts';
 export const COLLECTOR_TIMEOUT_MS = 30_000;
 /** `stars` manages its own time budget; this outer timeout is only a safety net. */
 export const STARS_SAFETY_TIMEOUT_MS = STARS_BUDGET_MS + 30_000;
-const NON_EMPTY_IDS = new Set<SourceId>(['trending', 'hn', 'tools']);
+/** Sources that always have items on a normal day: 0 parsed items means the fetch or parser broke. */
+const NON_EMPTY_IDS = new Set<SourceId>(['trending', 'hn', 'tools', 'arxiv', 'geeknews', 'huggingface']);
 
 export interface RunOpts {
   failIds?: Set<SourceId>;
