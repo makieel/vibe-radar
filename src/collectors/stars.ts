@@ -1,6 +1,5 @@
 import { daysBetween } from '../lib/dates.ts';
-import { fetchJson, fetchText } from '../lib/http.ts';
-import { parseTrendingHtml } from './trending.ts';
+import { fetchJson } from '../lib/http.ts';
 import type { Collector, StarHistory } from './types.ts';
 
 const CONCURRENCY = 5;
@@ -16,14 +15,8 @@ export const starsCollector: Collector<'stars'> = {
   id: 'stars',
   key: 'stars',
   async run(ctx) {
-    if (ctx.mode === 'reduced') {
-      // 0 API calls: stars of today's trending repos come from the github.com trending page itself.
-      if (ctx.trendingToday.size === 0) return { data: {}, reduced: true };
-      const html = await fetchText('https://github.com/trending?since=daily', { fetch: ctx.fetch });
-      const data: Record<string, number> = {};
-      for (const r of parseTrendingHtml(html, 'daily')) if (ctx.trendingToday.has(r.fullName)) data[r.fullName] = r.stars;
-      return { data, reduced: true };
-    }
+    // Reduced mode: no requests at all; the runner falls back to the trending entry stars.
+    if (ctx.mode === 'reduced') return { data: {}, reduced: true };
     const targets = starsTargets(ctx.history, ctx.date, ctx.config.trackDays, ctx.trendingToday);
     const data: Record<string, number> = {};
     let failures = 0;

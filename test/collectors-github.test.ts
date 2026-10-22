@@ -207,16 +207,12 @@ test('starsTargets keeps only repos trending within trackDays and excludes today
   assert.deepEqual(starsTargets(h, '2026-10-22', 30, new Set(['c/z'])), ['b/y']);
 });
 
-test('stars collector in reduced mode makes 0 API calls and uses the daily trending page', async () => {
+test('stars collector in reduced mode makes no requests and returns {}', async () => {
   const { f, urls } = counting(() => ok(read('trending-daily.html')));
   const { data, reduced } = await starsCollector.run(ctxWith(f, { trendingToday: new Set(['php/php-src', 'nope/none']) }));
   assert.equal(reduced, true);
-  assert.equal(urls.filter(u => u.includes('api.github.com')).length, 0);
-  assert.deepEqual(urls, ['https://github.com/trending?since=daily']);
-  assert.deepEqual(data, { 'php/php-src': 40909 });
-  const none = counting(() => ok(''));
-  assert.deepEqual((await starsCollector.run(ctxWith(none.f))).data, {});
-  assert.equal(none.urls.length, 0);
+  assert.equal(urls.length, 0);
+  assert.deepEqual(data, {});
 });
 
 test('stars collector in full mode fetches each target once with concurrency ≤5, skips failures', async () => {
