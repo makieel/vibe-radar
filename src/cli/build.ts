@@ -24,6 +24,16 @@ function datesIn(dir: string): string[] {
   }
 }
 
+/** JSON 파일의 collectedAt. 읽을 수 없거나 없으면 null. */
+function collectedAtOf(file: string): string | null {
+  try {
+    const v = (JSON.parse(readFileSync(file, 'utf8')) as { collectedAt?: unknown }).collectedAt;
+    return typeof v === 'string' ? v : null;
+  } catch {
+    return null;
+  }
+}
+
 export function exportSite(opts: ExportOpts): SiteIndex {
   const { dataDir, outDir, today, keepDays = 90 } = opts;
   const recent = (d: string): boolean => {
@@ -31,10 +41,13 @@ export function exportSite(opts: ExportOpts): SiteIndex {
     return n >= 0 && n <= keepDays - 1;
   };
 
-  // 1. raw만 있고 daily가 없는 날은 오래된 날부터 분석한다(뒤 날짜가 앞 날짜 daily를 쓴다).
+  // 1. daily가 없거나 raw보다 오래된(collectedAt이 다른) 날은 오래된 날부터 분석한다
+  //    (뒤 날짜가 앞 날짜 daily를 쓴다). summarize는 collectedAt을 바꾸지 않으므로 요약은 보존된다.
   const haveDaily = new Set(datesIn(join(dataDir, 'daily')));
   for (const d of datesIn(join(dataDir, 'raw')).filter(recent)) {
-    if (!haveDaily.has(d)) analyzeDate(d, dataDir);
+    if (!haveDaily.has(d) || collectedAtOf(join(dataDir, 'daily', `${d}.json`)) !== collectedAtOf(join(dataDir, 'raw', `${d}.json`))) {
+      analyzeDate(d, dataDir);
+    }
   }
 
   // 2. 최근 daily를 검증하고 복사한다.

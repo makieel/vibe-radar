@@ -50,17 +50,39 @@ test('exportSite with no daily writes empty index and no latest.json', () => {
   } finally { t.cleanup(); }
 });
 
-test('exportSite does not overwrite existing daily (keeps summary_ko)', () => {
+test('exportSite does not overwrite a daily with the same collectedAt as its raw (keeps summary_ko)', () => {
   const t = setup([]);
   try {
     mkdirSync(join(t.dataDir, 'raw'), { recursive: true });
     copyFileSync(REAL_RAW, join(t.dataDir, 'raw', '2026-10-23.json'));
-    const base = JSON.parse(dailyFor('2026-10-23'));
+    const base = JSON.parse(dailyFor('2026-10-23', { collectedAt: JSON.parse(readFileSync(REAL_RAW, 'utf8')).collectedAt }));
     const marked = { ...base, issues: base.issues.map((i: object, n: number) => (n === 0 ? { ...i, summary_ko: '보존되어야 하는 요약' } : i)) };
     writeFileSync(join(t.dataDir, 'daily', '2026-10-23.json'), JSON.stringify(marked));
     exportSite({ dataDir: t.dataDir, outDir: t.outDir, today: '2026-10-23' });
     const out = JSON.parse(readFileSync(join(t.outDir, 'days', '2026-10-23.json'), 'utf8'));
     assert.equal(out.issues[0].summary_ko, '보존되어야 하는 요약');
+  } finally { t.cleanup(); }
+});
+
+test('exportSite re-analyzes a daily whose collectedAt differs from its raw (same-day re-collect)', () => {
+  const t = setup([]);
+  try {
+    mkdirSync(join(t.dataDir, 'raw'), { recursive: true });
+    copyFileSync(REAL_RAW, join(t.dataDir, 'raw', '2026-10-23.json'));
+    const rawAt = JSON.parse(readFileSync(REAL_RAW, 'utf8')).collectedAt;
+    const base = JSON.parse(dailyFor('2026-10-23'));
+    const stale = {
+      ...base,
+      collectedAt: '2026-10-22T00:00:00.000Z',
+      issues: base.issues.map((i: object, n: number) => (n === 0 ? { ...i, summary_ko: '옛 수집의 요약' } : i)),
+    };
+    writeFileSync(join(t.dataDir, 'daily', '2026-10-23.json'), JSON.stringify(stale));
+    exportSite({ dataDir: t.dataDir, outDir: t.outDir, today: '2026-10-23' });
+    const daily = JSON.parse(readFileSync(join(t.dataDir, 'daily', '2026-10-23.json'), 'utf8'));
+    assert.equal(daily.collectedAt, rawAt);
+    assert.ok(daily.issues.every((i: { summary_ko: unknown }) => i.summary_ko === null));
+    const out = JSON.parse(readFileSync(join(t.outDir, 'days', '2026-10-23.json'), 'utf8'));
+    assert.equal(out.collectedAt, rawAt);
   } finally { t.cleanup(); }
 });
 
