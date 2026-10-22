@@ -40,7 +40,7 @@ export function stripMarkdown(s: string): string {
 }
 
 // ---- tokenizing ----
-const TOKEN_RE = /[a-z0-9][a-z0-9._+#-]*|[가-힣]+/g;
+const TOKEN_RE = /[a-z0-9][a-z0-9._+#-]*(?:'[a-z]+)?|[가-힣]+/g;
 const KO_PARTICLES = new Set(['은', '는', '이', '가', '을', '를', '의', '에', '도', '로', '와', '과']);
 
 export interface TermToken {
@@ -52,16 +52,16 @@ export interface TermToken {
 // filters. Dropped tokens stay in the sequence so bigrams never span them.
 export function tokenSequence(s: string): TermToken[] {
   const out: TermToken[] = [];
-  for (const m of s.toLowerCase().matchAll(TOKEN_RE)) {
+  for (const m of s.toLowerCase().replace(/[‘’]/g, "'").matchAll(TOKEN_RE)) {
     let t = m[0];
     const hangul = /^[가-힣]/.test(t);
     if (hangul) {
       if (t.length >= 3 && KO_PARTICLES.has(t[t.length - 1]!)) t = t.slice(0, -1);
     } else {
-      t = t.replace(/[._+#-]+$/, '');
+      t = t.replace(/'s$/, '').replace(/[._+#-]+$/, '');
     }
     const minLen = hangul ? 2 : 3;
-    const keep = t.length >= minLen && !/^\d+$/.test(t) && !STOPWORDS.has(t);
+    const keep = t.length >= minLen && !/^\d+$/.test(t) && !t.includes("'") && !STOPWORDS.has(t);
     out.push({ token: t, keep });
   }
   return out;

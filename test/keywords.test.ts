@@ -41,3 +41,8 @@ test('keywordTrends isNew false with no history, and honors topN', () => {
   assert.deepEqual(out.map((t) => t.term), ['a1x', 'b1x']);
   assert.equal(out[0]!.isNew, false);
 });
+test('tokenize handles contractions and curly apostrophes', () => {
+  assert.deepEqual(tokenize("Why we don't use it; Rust isn't dead, doesn’t matter"), ['rust', 'dead', 'matter']);
+  assert.ok(!tokenize("Today's PHP security release").includes('today'));
+  assert.deepEqual(tokenize("Rust's borrow checker"), ['rust', 'borrow', 'checker']);
+});

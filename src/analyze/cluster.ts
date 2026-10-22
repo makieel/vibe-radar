@@ -11,6 +11,7 @@ interface Node extends IssueItem {
 
 const JACCARD_MIN = 0.35;
 const COMMON_MIN = 2;
+const SHORT_TITLE_COMMON_MIN = 3; // R11: a short title must not bridge unrelated stories
 const TRENDING_TOP = 10;
 
 function buildNodes(raw: RawSnapshot): Node[] {
@@ -31,15 +32,16 @@ function buildNodes(raw: RawSnapshot): Node[] {
 }
 
 function urlMentionsRepo(url: string, repo: string): boolean {
-  const u = url.toLowerCase();
-  const key = `github.com/${repo}`;
-  let i = u.indexOf(key);
-  while (i !== -1) {
-    const end = u[i + key.length];
-    if (end === undefined || /[/?#]/.test(end)) return true;
-    i = u.indexOf(key, i + 1);
+  let parsed: URL;
+  try {
+    parsed = new URL(url);
+  } catch {
+    return false;
   }
-  return false;
+  const host = parsed.hostname.toLowerCase();
+  if (host !== 'github.com' && host !== 'www.github.com') return false;
+  const [owner, name] = parsed.pathname.toLowerCase().split('/').filter(Boolean);
+  return `${owner}/${name}` === repo;
 }
 
 function related(a: Node, b: Node): boolean {
@@ -48,7 +50,8 @@ function related(a: Node, b: Node): boolean {
   if (a.repo && urlMentionsRepo(b.url, a.repo)) return true;
   let common = 0;
   for (const t of a.tokens) if (b.tokens.has(t)) common++;
-  if (common < COMMON_MIN) return false;
+  const minCommon = a.tokens.size < 4 || b.tokens.size < 4 ? SHORT_TITLE_COMMON_MIN : COMMON_MIN;
+  if (common < minCommon) return false;
   return common / (a.tokens.size + b.tokens.size - common) >= JACCARD_MIN;
 }
 
