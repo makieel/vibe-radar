@@ -1,0 +1,666 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<feed xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/" xmlns:arxiv="http://arxiv.org/schemas/atom" xmlns="http://www.w3.org/2005/Atom">
+  <id>https://arxiv.org/api/OD658glaehaDPmCJUdjHOB4FACE</id>
+  <title>arXiv Query: search_query=cat:cs.* OR cat:stat.ML&amp;id_list=&amp;start=0&amp;max_results=20</title>
+  <updated>2026-10-22T14:56:04Z</updated>
+  <link href="https://arxiv.org/api/query?search_query=cat:cs.*+OR+cat:stat.ML&amp;start=0&amp;max_results=20&amp;id_list=" type="application/atom+xml"/>
+  <opensearch:itemsPerPage>20</opensearch:itemsPerPage>
+  <opensearch:totalResults>975764</opensearch:totalResults>
+  <opensearch:startIndex>0</opensearch:startIndex>
+  <entry>
+    <id>http://arxiv.org/abs/2610.30136v1</id>
+    <title>Agentic World Action Models</title>
+    <updated>2026-10-21T17:59:56Z</updated>
+    <link href="https://arxiv.org/abs/2610.30136v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2610.30136v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Recent world action models provide visual foresight and future prediction for robot manipulation, but lack explicit mechanisms for compositional skill reuse. Agentic robotics combines code-based planning and reasoning with reusable skills, but often lacks predictive grounding in physical dynamics. We introduce AW-0, an agentic world action model framework that integrates code-based planning with joint video and action prediction. We jointly model code, future video, and robot actions as three coupled generative streams within a unified mixture-of-transformers architecture. Within this architecture a code expert generates parameterized skill routines and control logic while video and action experts generate future visual states and low-level motor commands. Code serves two complementary roles: it structures multi-step prediction and control within the world model and represents skills as reusable programs for subsequent agentic execution. We further introduce an automated curation pipeline that labels robot and human video trajectories with aligned programs and consolidates recurring routines into reusable skill libraries. Evaluations on RoboTwin 2.0 and physical bimanual manipulation tasks show improved task performance over VLA and WAM baselines, alongside gains in language following, semantic reasoning and robustness, demonstrating that agentic code enables connection between planning, prediction and execution within WAMs.</summary>
+    <category term="cs.RO" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-10-21T17:59:56Z</published>
+    <arxiv:comment>Project page: https://agentic-wam.github.io/</arxiv:comment>
+    <arxiv:primary_category term="cs.RO"/>
+    <author>
+      <name>Zhuoyang Liu</name>
+    </author>
+    <author>
+      <name>Dantong Niu</name>
+    </author>
+    <author>
+      <name>Botong Zhang</name>
+    </author>
+    <author>
+      <name>Boning Shao</name>
+    </author>
+    <author>
+      <name>Jing Wang</name>
+    </author>
+    <author>
+      <name>Ruijie Zheng</name>
+    </author>
+    <author>
+      <name>Yuvan Sharma</name>
+    </author>
+    <author>
+      <name>Runyu Lu</name>
+    </author>
+    <author>
+      <name>Jiaming Liu</name>
+    </author>
+    <author>
+      <name>Renrui Zhang</name>
+    </author>
+    <author>
+      <name>Roei Herzig</name>
+    </author>
+    <author>
+      <name>Yutong Bai</name>
+    </author>
+    <author>
+      <name>Ken Goldberg</name>
+    </author>
+    <author>
+      <name>Danfei Xu</name>
+    </author>
+    <author>
+      <name>Yuke Zhu</name>
+    </author>
+    <author>
+      <name>Guanzhi Wang</name>
+    </author>
+    <author>
+      <name>Linxi "Jim" Fan</name>
+    </author>
+    <author>
+      <name>Trevor Darrell</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2610.30132v1</id>
+    <title>LongZero: Enhancing Long-Context Reasoning in LLMs from Zero Data</title>
+    <updated>2026-10-21T17:59:14Z</updated>
+    <link href="https://arxiv.org/abs/2610.30132v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2610.30132v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Reinforcement learning (RL) is an effective way to strengthen the long-context reasoning of large language models (LLMs), but it needs training data that are long, diverse, challenging, and verifiable. Human annotation of such data is expensive, naturally occurring data are too scarce to sustain RL, and existing synthesis methods depend on external corpora or stronger teacher models, which become harder to obtain as the trained models get stronger. Recently, RL from zero data, in which a model learns from tasks it proposes itself, has achieved excellent performance, but existing methods target short-context tasks. Therefore, we propose $\textbf{LongZero}$, a method that lets an LLM improve its own long-context reasoning without any external data. Instead of writing questions and answers over existing documents, LongZero first has the model synthesize the question and answer with its supporting evidence in a compact structured form, and only then separately expands the evidence into a long multi-document context. LongZero combines these self-written multi-hop reasoning tasks with self-written multi-round retrieval tasks and trains the model with GRPO. We evaluate LongZero on two LLMs across five long-context reasoning benchmarks and compare it with RL on data synthesized from external corpora. Experimental results show that LongZero can generalize to real tasks, and outperforms both baselines, suggesting a viable and promising path to improving long-context reasoning of LLMs.</summary>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-10-21T17:59:14Z</published>
+    <arxiv:comment>Code and data are available at https://github.com/zhennan1/LongZero</arxiv:comment>
+    <arxiv:primary_category term="cs.CL"/>
+    <author>
+      <name>Zhennan Wan</name>
+    </author>
+    <author>
+      <name>Jianfei Chen</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2610.30129v1</id>
+    <title>Rethinking Video Autoencoders for Interactive World Models</title>
+    <updated>2026-10-21T17:58:11Z</updated>
+    <link href="https://arxiv.org/abs/2610.30129v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2610.30129v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Video world models predict future frames from past frames and actions. They serve as simulators in which agents train, plan or are evaluated, and that humans can control interactively. They generate in the latent space of a video autoencoder, whose compression sets their cost per frame and how long each action waits to take effect. Yet world models often reuse the autoencoders of text-to-video generators, built for offline generation with no agent waiting and, without their training data and code, not retrainable at another compression. We therefore ask how, where and how much a world model should compress. We build CADRE, an open family of causal diffusion representation autoencoders spanning multiple spatio-temporal compressions. Its members differ only in a small bottleneck on frozen features and share a diffusion decoder self-distilled to one or a few steps. We train the same world model on each autoencoder in two domains, manipulation and navigation, with two environments each. CADRE forms most of the latency-quality frontier, especially with a moving camera. Our study also leads to four findings. At strong compression, a diffusion decoder is sharper than perceptual regression. In robot manipulation, temporal compression is more effective in the autoencoder than in the world model. Manipulation and navigation call for opposite compressions: temporal compression costs little when the camera is still, and spatial compression when it moves. Surprisingly, with a still camera, coarser spatial tokens hurt motion far more than image quality. Code, models and a live demo are at https://kyutai.org/blog/2026-10-21-cadre</summary>
+    <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-10-21T17:58:11Z</published>
+    <arxiv:primary_category term="cs.CV"/>
+    <author>
+      <name>Adrien Ramanana Rahary</name>
+    </author>
+    <author>
+      <name>Yutong Bai</name>
+    </author>
+    <author>
+      <name>Nicolas Dufour</name>
+    </author>
+    <author>
+      <name>Patrick Pérez</name>
+    </author>
+    <author>
+      <name>David Picard</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2610.30128v1</id>
+    <title>Think Harder Where It Matters: Item-Level Adaptive Recursion for Sequential Recommendation</title>
+    <updated>2026-10-21T17:58:06Z</updated>
+    <link href="https://arxiv.org/abs/2610.30128v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2610.30128v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Existing sequential recommenders usually allocate a fixed computational budget to every item in a user's interaction history, regardless of the item's contribution to the final prediction. We challenge this de facto design with two diagnostic findings. (1) Non-uniform computational need: items within the same sequence vary drastically in how much computation they require. Most converge after shallow processing while a critical minority only stabilizes at full depth. (2) Suboptimality of fixed allocation: given oracle access to the target item, a non-uniform depth assignment consistently outranks the fixed one, indicating that existing uniform computation both wastes capacity on already-converged items and sacrifices overall recommendation quality. These observations motivate a shift from fixed-depth computation to item-level adaptive reasoning. To this end, we propose LoopRec. LoopRec recursively applies a single weight-shared block and introduces a lightweight gate at each recursion boundary that makes a binary exit-or-continue decision for every item independently. Items whose representations have sufficiently matured exit early, while those requiring deeper reasoning continue to subsequent recursions. This design converts the fixed global depth into a learned, per-item property without auxiliary depth labels, and is readily adaptable to diverse backbone architectures. Extensive experiments on public benchmarks with four backbone families demonstrate that LoopRec consistently outperforms matched fixed-depth counterparts. Further analysis reveals that LoopRec's learned allocation exhibits interpretable patterns aligned with our post-hoc oracle analysis: lower-frequency items and more recent interactions naturally receive deeper computation. Our code is available at https://github.com/Elpmis117/LoopRec.</summary>
+    <category term="cs.IR" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-10-21T17:58:06Z</published>
+    <arxiv:primary_category term="cs.IR"/>
+    <author>
+      <name>Zhanshuo Cao</name>
+    </author>
+    <author>
+      <name>Jiakai Tang</name>
+    </author>
+    <author>
+      <name>Yuqi Zhou</name>
+    </author>
+    <author>
+      <name>Sunhao Dai</name>
+    </author>
+    <author>
+      <name>Jun Xu</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2610.30127v1</id>
+    <title>VoxProg: 3D Spatial Reasoning through Voxel Programming</title>
+    <updated>2026-10-21T17:58:05Z</updated>
+    <link href="https://arxiv.org/abs/2610.30127v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2610.30127v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Language models' abilities to interpret tasks and generate programs offer a promising basis for 3D spatial reasoning. Yet following spatial instructions in 3D scenes requires programs to construct geometric references that language leaves implicit. In this work, we introduce VoxProg, which formulates 3D object placement through voxel programming: a language model translates task interpretations into executable programs over local voxel views of scene surfaces. Because these views index surface geometry on regular grids with explicit coordinates and neighborhood relations, an evidence program can isolate task-relevant regions and boundaries directly from scene meshes, and a downstream pose program can measure the resulting geometry to compute a target $SE(3)$ pose. Visual and numerical feedback from execution lets the model inspect intermediate selections and candidate placements to iteratively revise its code. To evaluate open-ended placement across functional use, geometric fit, and contextual arrangements, we introduce the 71-task VoxProg-Bench benchmark along with an evaluation suite pairing perceptual Intent Alignment and 3D Physical Validity. Across VoxProg-Bench and external benchmarks, VoxProg consistently outperforms relation-based, keypoint-based, and mesh-based baselines.</summary>
+    <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-10-21T17:58:05Z</published>
+    <arxiv:comment>Project page: https://voxprog.github.io</arxiv:comment>
+    <arxiv:primary_category term="cs.CV"/>
+    <author>
+      <name>Zhichao Zhai</name>
+    </author>
+    <author>
+      <name>Menglei Zhao</name>
+    </author>
+    <author>
+      <name>Guikun Chen</name>
+    </author>
+    <author>
+      <name>Zihao Yan</name>
+    </author>
+    <author>
+      <name>Kanzhi Wu</name>
+    </author>
+    <author>
+      <name>Wenguan Wang</name>
+    </author>
+    <author>
+      <name>Jun Xiao</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2610.30125v1</id>
+    <title>PhysiCalWorld: In-Context Physics Calibration for World Models</title>
+    <updated>2026-10-21T17:57:59Z</updated>
+    <link href="https://arxiv.org/abs/2610.30125v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2610.30125v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Existing world models typically perceive a scene through current visual frame or a narrow history window. However, these observations may not reveal the physics properties that determine transition dynamics, such as an object's mass distribution, joint damping, or surface friction. Without calibrating these physics factors for world models, predictions tend to regress toward an empirical prior and induce severe drift in novel test scenes. To this end, we propose PhysiCalWorld, which calibrates action-conditioned world models to the instance-specific dynamics via in-context prompting, without fine-tuning or analytical physics modeling. Our method encodes an exploratory interaction clip collected within the test scene into a compact physics descriptor token, which grounds subsequent predictions in the scene's actual physical behavior. PhysiCalWorld is trained end-to-end with the latent prediction loss alone, without physics labels. At inference time, the descriptor token is extracted once and can be reused across rollouts with negligible compute overhead. We evaluate PhysiCalWorld across four environments covering diverse physics variations and show that it substantially improves rollout prediction accuracy and visual planning success rate. The learned descriptors also form a physically structured latent space and generalize beyond the physics ranges seen during training.</summary>
+    <category term="cs.RO" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-10-21T17:57:59Z</published>
+    <arxiv:comment>Project page: https://physical-world.github.io/</arxiv:comment>
+    <arxiv:primary_category term="cs.RO"/>
+    <author>
+      <name>Yunhao Luo</name>
+    </author>
+    <author>
+      <name>Wentao He</name>
+    </author>
+    <author>
+      <name>Yinpei Dai</name>
+    </author>
+    <author>
+      <name>Hyelin Nam</name>
+    </author>
+    <author>
+      <name>Hongze Fu</name>
+    </author>
+    <author>
+      <name>Joyce Chai</name>
+    </author>
+    <author>
+      <name>Nima Fazeli</name>
+    </author>
+    <author>
+      <name>Jeong Joon Park</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2610.30123v1</id>
+    <title>Temporal Exploration and Rendezvous via Weisfeiler-Leman Colorings</title>
+    <updated>2026-10-21T17:57:42Z</updated>
+    <link href="https://arxiv.org/abs/2610.30123v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2610.30123v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Temporal graphs are graphs whose edge relation changes in discrete time steps. The Temporal Exploration Problem (TEXP) asks for a temporal walk that visits all vertices. We show that every connected temporal graph with $n$ vertices can be explored in $O(qn\log^3(n))$ time steps, where $q$ is the number of vertex color classes induced by the 2-dimensional Weisfeiler-Leman (2-WL) coloring. For small $q$, our bound substantially improves on the known worst-case bound of $Θ(n^2)$ in general connected temporal graphs. A corresponding walk can be constructed in deterministic polynomial time. The upper bound is complemented by lower bounds of $Ω(n\log(n))$ when $q$ is constant and $Ω(qn)$ when $1 \leq q \leq n$.
+  We also apply our techniques to the Temporal Rendezvous Problem (TRP), in which two agents that do not communicate have to meet on a vertex of the temporal graph. Our exploration algorithm yields that, with only polynomial-time computational power, the agents can meet in $O(n\log^3(n))$ time steps, leaving a gap of only $\log^2(n)$ to the known lower bound.
+  Dogeas, Erlebach, Kammer, Meintrup, and Moses Jr. [ICALP'24] have shown an $O(rn^{1+ε})$ bound for TEXP, for every fixed $ε&gt; 0$, where $r$ is the number of orbits, and an $O(n^{1+ε})$ bound for TRP. Both results require superpolynomial computation time. Our contribution improves upon these results in several ways. First, the dependence on $n$ in the upper bounds on the number of time steps is decreased from $n^{1+ε}$ to $n\log^3(n)$ for both TEXP and TRP. Second, for TEXP, we bound the number of time steps linearly by the parameter q, which is efficiently computable and upper bounded by $r$. Third, we provide novel deterministic polynomial-time algorithms for both TEXP and TRP.</summary>
+    <category term="cs.DS" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CC" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.DM" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="math.CO" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-10-21T17:57:42Z</published>
+    <arxiv:comment>Full version of a paper accepted for publication at SODA 2027. 37 pages, 3 figures</arxiv:comment>
+    <arxiv:primary_category term="cs.DS"/>
+    <author>
+      <name>Frank Kammer</name>
+    </author>
+    <author>
+      <name>Sandra Kiefer</name>
+    </author>
+    <author>
+      <name>Johannes Meintrup</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2610.30122v1</id>
+    <title>A Quasipolynomial Algorithm for $\ell_\infty$ Contractions</title>
+    <updated>2026-10-21T17:57:19Z</updated>
+    <link href="https://arxiv.org/abs/2610.30122v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2610.30122v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>We give an algorithm for computing an $\eps$-approximate fixed point of any $d$-dimensional nonexpansion with respect to the $\ell_\infty$ norm in time $\log(1/\eps)^{O(\log^2 d)}$. At its core, our method uses a boosting argument to geometrically shrink a search region. Among other consequences, our algorithm implies that simple stochastic games can be solved in quasipolynomial time.</summary>
+    <category term="cs.GT" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CC" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="math.OC" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-10-21T17:57:19Z</published>
+    <arxiv:primary_category term="cs.GT"/>
+    <author>
+      <name>Ashkan Soleymani</name>
+    </author>
+    <author>
+      <name>Gabriele Farina</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2610.30121v1</id>
+    <title>Geometric Algebra for Neural Networks: A Survey</title>
+    <updated>2026-10-21T17:57:13Z</updated>
+    <link href="https://arxiv.org/abs/2610.30121v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2610.30121v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Geometric algebra (GA) unifies geometric primitives and transformations in a single algebraic framework. Neural networks designed around this framework often represent features as multivectors and constrain layer operations to respect the algebraic structure, enabling principled treatment of geometric transformations and, in many cases, built-in equivariance. This survey reviews geometric algebra neural networks, including their building blocks, equivariant properties, application domains, empirical performance, and software support. We provide an algebra-selection guide, an empirical comparison of GA-based and other equivariant architectures, and a failure-mode analysis covering training pathologies, deployment constraints, and performance limitations. Across the surveyed literature, the strongest evidence for GA-based architectures appears in settings with explicit geometric symmetries and heterogeneous geometric entities; evidence for broader advantages in parameter efficiency, interpretability, and dense prediction is comparatively limited and uneven. We therefore conclude that geometric algebra neural networks are not universally superior to well-tuned non-GA equivariant baselines, and outline open problems in algebra selection, numerical stability, scalable implementation, and reproducible evaluation.</summary>
+    <category term="eess.IV" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="stat.ML" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-10-21T17:57:13Z</published>
+    <arxiv:comment>38 pages, 5 figures</arxiv:comment>
+    <arxiv:primary_category term="eess.IV"/>
+    <author>
+      <name>Tao Zhong</name>
+    </author>
+    <author>
+      <name>Kaison Fong</name>
+    </author>
+    <author>
+      <name>Keqin Wang</name>
+    </author>
+    <author>
+      <name>Christine Allen-Blanchette</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2610.30120v1</id>
+    <title>ALPS: Visual State Encoders for World Models</title>
+    <updated>2026-10-21T17:57:11Z</updated>
+    <link href="https://arxiv.org/abs/2610.30120v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2610.30120v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>World models turn visual representations into predictions and actions. We argue that their visual foundation should combine physical-state information, native language alignment, and pixel reconstruction, so that a single representation can support prediction, instruction, and inspection. However, existing encoders typically specialize in only one or two of these capabilities; we therefore introduce ALPS, a pretrained visual state encoder that unifies all three in a single set of patch tokens. Using only still images and text, we pretrain a ViT-B/16 from scratch with language, reconstruction, and spatial correspondence objectives, and then refine it via cross-view self-distillation. In a unified evaluation across fifteen public encoders, ALPS achieves the lowest aggregate LIBERO state-probe error among ViT-B models (matching the 3.5x larger V-JEPA 2-L) while maintaining strong language alignment and accurate pixel reconstruction. Downstream, frozen ALPS tokens reach the highest mean policy success on LIBERO (85.5%) when paired with our native text tower, match or exceed leading encoders on world-model planning across PushT, Wall, and Granular, and allow predicted future tokens to be decoded directly into pixels for visual inspection. We hope this work helps establish visual pretraining as a shared foundation for understanding, prediction, and action in world models.</summary>
+    <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-10-21T17:57:11Z</published>
+    <arxiv:comment>35 pages (15 main + 20 supplementary), 13 figures, 26 tables. Project page: https://ucsc-vlaa.github.io/ALPS/ Code: https://github.com/UCSC-VLAA/ALPS</arxiv:comment>
+    <arxiv:primary_category term="cs.CV"/>
+    <author>
+      <name>Yanqing Liu</name>
+    </author>
+    <author>
+      <name>Letian Zhang</name>
+    </author>
+    <author>
+      <name>Chengzhi Liu</name>
+    </author>
+    <author>
+      <name>Zijun Wang</name>
+    </author>
+    <author>
+      <name>Jieru Mei</name>
+    </author>
+    <author>
+      <name>Hongliang Fei</name>
+    </author>
+    <author>
+      <name>Yuyin Zhou</name>
+    </author>
+    <author>
+      <name>Cihang Xie</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2610.30119v1</id>
+    <title>Self-normalized Bernstein Inequalities for Regenerative Processes and Applications to Learning Without Independence</title>
+    <updated>2026-10-21T17:56:37Z</updated>
+    <link href="https://arxiv.org/abs/2610.30119v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2610.30119v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>We prove a self-normalized Bernstein inequality for bounded functions of a regenerative process with independent, identically distributed marked cycles of finite mean length. The bound uses observed cycle lengths and retains explicit terms for truncation and the cycle ending after the observation horizon. Selecting a tuning parameter from a finite deterministic collection gives a version of Bernstein inequality where all terms are empirical but one, related to the tails of the regeneration times. We then study this term in many regimes: it turns out that it is of second-order in many cases of interest. This is important for applications in machine learning: we prove generalization error bounds for classification with non-i.i.d., regenerative data. These bounds can be used to define learning objectives: by minimizing the first-order term only in the bound, we define agnostic classifiers that still satisfy oracle inequalities. We also show that the bound on the average deviation provided by our results is minimax-optimal in the sample size and in the expected regeneration time. Finally, we combine the Bernstein inequality with a regenerative strong approximation to obtain a Gaussian approximation using an observable block variance estimator.</summary>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="math.PR" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="math.ST" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-10-21T17:56:37Z</published>
+    <arxiv:comment>44 pages</arxiv:comment>
+    <arxiv:primary_category term="cs.LG"/>
+    <author>
+      <name>Imon Banerjee</name>
+    </author>
+    <author>
+      <name>Pierre Alquier</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2610.30118v1</id>
+    <title>The role of locality and weight sharing in convolutional neural networks</title>
+    <updated>2026-10-21T17:56:22Z</updated>
+    <link href="https://arxiv.org/abs/2610.30118v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2610.30118v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>The success of convolutional neural networks is often attributed to locality and weight sharing. However, how these two properties separately shape learning, and how their effects depend on the spatial correlations of natural images, remain poorly understood. We address these questions in a teacher-student model with a convolutional teacher acting on $P$ input positions with correlation $c$ between positions. We compare convolutional and locally connected students trained by online stochastic gradient descent, and derive ordinary differential equations that describe their dynamics exactly in the limit of large feature dimension $D$. For uncorrelated positions ($c = 0$), the two students follow the same learning trajectory, with the convolutional student learning exactly $P$ times faster. We also find that locality affects the sample complexity: a student that matches the kernel size of the teacher recovers it from $\mathcal{O}_{D}(D)$ samples, whereas $\mathcal{O}_{D}(D\log(D))$ samples are needed with a larger kernel. For $c &gt; 0$, spatial correlations can reduce the advantage of weight sharing. The asymptotic error of the convolutional student grows with $c$, whereas that of the locally connected student is independent of $c$ and overall lower when evaluated at the same learning rate. When the learning rate is instead tuned to the training horizon, however, the locally connected student wins at early times and the convolutional student at late times, with a transition that we predict analytically.</summary>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cond-mat.dis-nn" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cond-mat.stat-mech" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="stat.ML" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-10-21T17:56:22Z</published>
+    <arxiv:comment>39 pages, 11 figures, including appendices</arxiv:comment>
+    <arxiv:primary_category term="cs.LG"/>
+    <author>
+      <name>Francesco Mori</name>
+    </author>
+    <author>
+      <name>Melanie Weber</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2610.30117v1</id>
+    <title>CW-WAM: A Structured Contact-Wrench World Action Model for Force-Sensitive Manipulation</title>
+    <updated>2026-10-21T17:55:53Z</updated>
+    <link href="https://arxiv.org/abs/2610.30117v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2610.30117v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Force-sensitive manipulation requires contact and load information that is not provided explicitly by visual observations. We present CW-WAM, a world action model that jointly predicts video, motion, and contact wrench. Inspired by hybrid motion-force control, it contains a unified interaction module that treats both motion and contact wrench as modeling targets and predicts time-aligned motion-wrench chunks as control references. A pair-causal attention mechanism structures the motion-wrench dependencies, while a long fixed-length wrench memory retains past interaction information. The predicted wrench chunk acts as a force reference for a 20-Hz outer-loop admittance controller within a slow-fast control system that maintains force feedback and smooth motion between model queries. CW-WAM improves contact prediction and increases the insertion success rate from 25% to 70% for square pegs with 1-mm clearance per side and from 40% to 95% for power adapters, compared with WAM without wrench input. It also improves lifting-height accuracy across different loads. Our framework with an admittance controller reduces force-reference RMSE from 4.8 to 2.7 N for peg insertion and from 2.0 to 1.3 N for wiping, respectively, with smaller force fluctuations during successful execution. Project website: https://cw-wam-project.github.io/</summary>
+    <category term="cs.RO" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-10-21T17:55:53Z</published>
+    <arxiv:comment>Project website: https://cw-wam-project.github.io/</arxiv:comment>
+    <arxiv:primary_category term="cs.RO"/>
+    <author>
+      <name>Houzhu Ding</name>
+    </author>
+    <author>
+      <name>Xinda Qi</name>
+    </author>
+    <author>
+      <name>Luqi Wang</name>
+    </author>
+    <author>
+      <name>Ming Yang</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2610.30116v1</id>
+    <title>Environment Duels: A Microcosm of LLM Co-Evolution</title>
+    <updated>2026-10-21T17:55:31Z</updated>
+    <link href="https://arxiv.org/abs/2610.30116v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2610.30116v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Through a tangle of real-world interactions, from synthetic training pipelines to data shared on the open web, frontier LLMs absorb what their predecessors and competitors create. How well does each model play its role in this ecosystem, as a creator and as a solver? We introduce Environment Duels, a dynamic agentic benchmark that evaluates both capabilities on interactive environments. Each model writes environments, each with a privileged hint, aiming for tasks that capable solvers fail without the hint and pass with it. Across nine frontier LLMs, solving and authoring prove to be distinct skills: the strongest solvers are not the strongest authors, while smaller models learn more from how others played and write the hardest environments and the most useful hints. Beyond the scores, the pairwise interactions form a microcosm of how models affect one another. Head-to-head outcomes are transitive and so yield a stable ranking; independent authors converge on the same designs; and in a reinforcement-learning study with Qwen3.8-27B, the learner's hint lift on an author's environments tracks how much training on those environments improves it on held-out reasoning and agentic benchmarks, whether the environments are its own or another model's. Each of these patterns has a counterpart in how models shape one another outside the duel. By staging these interactions under controlled conditions, Environment Duels offers a window onto how LLMs teach, challenge and learn from one another. Code is available at https://github.com/LLM-Duels/EnvDuels.</summary>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-10-21T17:55:31Z</published>
+    <arxiv:primary_category term="cs.CL"/>
+    <author>
+      <name>Shibo Jin</name>
+    </author>
+    <author>
+      <name>Zhiqiu Xu</name>
+    </author>
+    <author>
+      <name>Yiling Zou</name>
+    </author>
+    <author>
+      <name>Shangyu Gong</name>
+    </author>
+    <author>
+      <name>Mayur Naik</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2610.30114v1</id>
+    <title>The End of Consensus Research?</title>
+    <updated>2026-10-21T17:55:19Z</updated>
+    <link href="https://arxiv.org/abs/2610.30114v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2610.30114v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Consensus is a fundamental problem in distributed computing and at the core of state machine replication (SMR). Despite decades of active human research, discovering practical low-latency solutions to the problem is still open, as it requires combining protocol knowledge, correctness reasoning, implementation, and experimental evaluation. We report on how AI helped us discover A-greement, a new consensus protocol for geo-replicated state machines that significantly outperforms state-of-the-art solutions. Averaged across six deployments with 5 or 9 replicas, A-greement reduces the mean latency of a geo-distributed key-value store over the fastest baseline by 12.2% and 33.3% on write-heavy and read-heavy workloads, respectively, and matches the fastest baseline on read-only workloads. A-greement combines lease-authorized local reads, direct client learning for leader-ordered writes, and a fast fixed-quorum per-key write path, selected according to network topology and workload. At the heart of our discovery lies AI-greement, an agent harness for the "autonomous" discovery, implementation, experimentation, and verification of candidate protocols. AI-greement integrates (1) a concept-oriented protocol knowledge base, (2) a modular implementation skeleton, and (3) a Lean-based verification framework with reusable safety definitions, reference specifications, and proofs. AI-greement is of independent interest: its Lean formalization uncovers several previously unreported vulnerabilities in existing consensus protocols, and it provides guidelines on how domain-specific harnesses can turn general-purpose coding agents into effective tools for (distributed) computing research. Yet we argue that human consensus experts remain essential before, during, and after the search: agents reshape the researcher's role rather than end consensus research.</summary>
+    <category term="cs.DC" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-10-21T17:55:19Z</published>
+    <arxiv:comment>39 pages</arxiv:comment>
+    <arxiv:primary_category term="cs.DC"/>
+    <author>
+      <name>Clément Burgelin</name>
+    </author>
+    <author>
+      <name>Rachid Guerraoui</name>
+    </author>
+    <author>
+      <name>Zicong Hong</name>
+    </author>
+    <author>
+      <name>Yinan Hu</name>
+    </author>
+    <author>
+      <name>Anne-Marie Kermarrec</name>
+    </author>
+    <author>
+      <name>Rafael Pires</name>
+    </author>
+    <author>
+      <name>Rasmus Moorits Veski</name>
+    </author>
+    <author>
+      <name>Martijn de Vos</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2610.30113v1</id>
+    <title>Quant-Arena: Benchmarking LLM Agents for Quantitative Trading Research</title>
+    <updated>2026-10-21T17:54:01Z</updated>
+    <link href="https://arxiv.org/abs/2610.30113v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2610.30113v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Quantitative research is an iterative loop: a researcher proposes a market hypothesis, implements it as an executable signal, tests it on historical data, and decides what to keep. Existing benchmarks score formulas, code, or individual trading decisions, leaving open whether large language models (LLMs) can complete this loop and produce strategies that work beyond the research period. We introduce Quant-Arena, a benchmark and public leaderboard for end-to-end quantitative research on real A-share market data. A model constructs features and stock-scoring code, receives feedback only on 2022--2023, and freezes one strategy for assessment on the sealed year 2024. A cash-account evaluator applies trading constraints and costs, including market impact estimated from a simulated order book. Scores are dominated by realized excess return and complemented by signal quality and the diversity of features used by the strategy. We evaluate nine frontier models, among which GPT-6 Astra scores highest; yet no model beats the equal-weight market in 2024. Quant-Arena is open to submissions from any model or agent harness.</summary>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CE" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-10-21T17:54:01Z</published>
+    <arxiv:comment>Project page: https://lab.einsia.ai/quant-arena</arxiv:comment>
+    <arxiv:primary_category term="cs.CL"/>
+    <author>
+      <name>Houde Qian</name>
+    </author>
+    <author>
+      <name>Zheng Jiang</name>
+    </author>
+    <author>
+      <name>Wenyi Li</name>
+    </author>
+    <author>
+      <name>Chenxi Xu</name>
+    </author>
+    <author>
+      <name>Xinjie Lin</name>
+    </author>
+    <author>
+      <name>Yuzhao Peng</name>
+    </author>
+    <author>
+      <name>Ruoyu Han</name>
+    </author>
+    <author>
+      <name>Youjie Zheng</name>
+    </author>
+    <author>
+      <name>Kaisen Yang</name>
+    </author>
+    <author>
+      <name>Qinhuai Na</name>
+    </author>
+    <author>
+      <name>You Fu</name>
+    </author>
+    <author>
+      <name>Calvin Xiao</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2610.30109v1</id>
+    <title>Minimax Optimality of the NPMLE for Gaussian Mixtures in Hellinger Distance</title>
+    <updated>2026-10-21T17:53:10Z</updated>
+    <link href="https://arxiv.org/abs/2610.30109v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2610.30109v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>We analyze the problem of estimating univariate Gaussian mixture densities using the nonparametric maximum likelihood estimator (NPMLE) based on $n$ independent and identically distributed samples. We show that the unconstrained NPMLE achieves the minimax optimal rate $\log(n)/n$ in squared Hellinger distance, when the true mixing measure is sub-Gaussian. In addition, we show that when the true mixing measure has compact support, the NMPLE constrained to a compact interval also achieves the minimax optimal rate, which is slightly faster and of order $\log(n)/(n \log \log n)$. Our proof consists of sharply characterizing the local Hellinger bracketing entropy of the class of finite Gaussian mixtures. One of our key technical innovations is to sharply bound the $L^2$ bracketing entropy of balls of bounded-degree polynomials, which may be of independent interest. As an application, we establish the regret-optimality of $g$-modeling procedures based on the NPMLE in the Gaussian Empirical Bayes problem with bounded priors.</summary>
+    <category term="math.ST" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.IT" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-10-21T17:53:10Z</published>
+    <arxiv:primary_category term="math.ST"/>
+    <author>
+      <name>Shayan Hundrieser</name>
+    </author>
+    <author>
+      <name>Tudor Manole</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2610.30108v1</id>
+    <title>Multimodal Embodied Agents: A Unified Capability-centric Perspective from Computer-Use to Robot-Use</title>
+    <updated>2026-10-21T17:52:48Z</updated>
+    <link href="https://arxiv.org/abs/2610.30108v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2610.30108v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Multimodal agents (MMAs) sustain interaction through reasoning, memory, tools, and feedback, most visibly as computer-use agents, while robotic systems (RSs) couple sensing and actuation under physical dynamics. We define multimodal embodied agents (MMEAs) as goal-directed systems that couple multimodal task reasoning with physical action and revise decisions from the resulting feedback. This raises a central question: what changes when a multimodal agent moves from computer-use to robot-use? We introduce PAPAV, a unified capability-centric framework of five recurring functions: Perceive the current state, Anticipate action effects, Plan a feasible course, Act through an interface or body, and Verify the outcome. Defined by function rather than architecture, these capabilities let PAPAV identify what all three share and then compare MMEAs with MMAs and with RSs. Five physical constraints, from partial observability to unverifiable outcomes, leave fewer choices fixed in advance and less room to reverse errors. Across 64 benchmarks, explicit evaluation centers on Act; only 5 assess Anticipate and 3 assess Verify, leaving both largely hidden behind task success. These constraints also frame the open challenges we identify. PAPAV therefore provides a common basis for designing reliable physical agents and measuring progress across all five capabilities rather than task success alone.</summary>
+    <category term="cs.RO" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.MA" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.MM" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-10-21T17:52:48Z</published>
+    <arxiv:comment>Project website: https://showlab.github.io/Awesome-Multimodal-Embodied-Agent/</arxiv:comment>
+    <arxiv:primary_category term="cs.RO"/>
+    <author>
+      <name>Yanzhe Chen</name>
+    </author>
+    <author>
+      <name>Ziyi Yang</name>
+    </author>
+    <author>
+      <name>Jifeng Zhu</name>
+    </author>
+    <author>
+      <name>Qiming Huang</name>
+    </author>
+    <author>
+      <name>Ruihe An</name>
+    </author>
+    <author>
+      <name>Peiyao Xu</name>
+    </author>
+    <author>
+      <name>Hesen Yang</name>
+    </author>
+    <author>
+      <name>Runda Liu</name>
+    </author>
+    <author>
+      <name>Chang Gong</name>
+    </author>
+    <author>
+      <name>Zhijun Cao</name>
+    </author>
+    <author>
+      <name>Zechen Bai</name>
+    </author>
+    <author>
+      <name>Wenzheng Zeng</name>
+    </author>
+    <author>
+      <name>Yiqi Lin</name>
+    </author>
+    <author>
+      <name>Guoqiang Liang</name>
+    </author>
+    <author>
+      <name>Kevin Yuchen Ma</name>
+    </author>
+    <author>
+      <name>Kevin Qinghong Lin</name>
+    </author>
+    <author>
+      <name>Mike Zheng Shou</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2610.30107v1</id>
+    <title>Velocity Ambiguity Profiles: Time-Resolved Bayes-Risk Diagnostics for Flow Matching</title>
+    <updated>2026-10-21T17:52:40Z</updated>
+    <link href="https://arxiv.org/abs/2610.30107v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2610.30107v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Flow matching trains a continuum of velocity regression problems but usually reports a loss averaged over interpolation time, obscuring which regions are limited by intrinsic ambiguity and which remain data-limited. We introduce the Velocity Ambiguity Profile (VAP), $\mathcal{A}_v(t)$, the time-local Bayes-risk floor of velocity prediction, and decompose time-resolved loss as $L_N(t)=\mathcal{A}_v(t)+R(t;N)$, where only the excess term $R(t;N)$ is reducible by more data or a different estimator. For $N$ training samples and a $K$-component mixture in the structured example, we prove two statistical benchmarks. In an intrinsic local-regression benchmark, $\mathcal{A}_v(t)$ enters the time-dependent noise factor of the standard nonparametric rate. In separated isotropic Gaussian mixtures, the Bayes velocity becomes locally affine, and a label-oracle residual-regression benchmark has parametric excess-risk scale $K\mathcal{A}_v(t)/N$, matched within the same separated residual Gaussian-location subproblem. Controlled Gaussian-mixture experiments validate this diagnostic through a dense transition sweep, calibrated oracle-to-blind and empirical-proxy audits, and a local controlled time-sampler stress test in which a frozen reducible-error proxy reduces reducible loss while cross-cell sensitivity delimits aggressive sampling. On CIFAR-100 DINOv2 feature flow, guided time sampling reduces uniformly evaluated velocity loss by $6.78\%$ and global feature Fréchet distance (FD) by $23.6\%$, while class-conditional kernel inception distance (KID) shows no improvement. VAP turns an averaged flow-matching objective into a time-resolved diagnostic for locating ambiguity-limited and data-limited regions.</summary>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-10-21T17:52:40Z</published>
+    <arxiv:comment>Accepted at NeurIPS 2026</arxiv:comment>
+    <arxiv:primary_category term="cs.LG"/>
+    <author>
+      <name>Yunpeng Mei</name>
+    </author>
+    <author>
+      <name>Xiaowen Zhu</name>
+    </author>
+    <author>
+      <name>Chenyu Wang</name>
+    </author>
+    <author>
+      <name>Chenbo Xin</name>
+    </author>
+    <author>
+      <name>Hongjie Cao</name>
+    </author>
+    <author>
+      <name>Jiamin Wang</name>
+    </author>
+    <author>
+      <name>Jie Chen</name>
+    </author>
+    <author>
+      <name>Gang Wang</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2610.30105v1</id>
+    <title>Asymmetric On-Policy Distillation Learns In-Context Exploration</title>
+    <updated>2026-10-21T17:50:31Z</updated>
+    <link href="https://arxiv.org/abs/2610.30105v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2610.30105v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Sequential decision-making under partial observability is difficult because agents must explore to infer hidden, task-relevant information before acting effectively. Learning such information-gathering behaviors tabula rasa via online reinforcement learning is sample-inefficient, whereas offline imitation averages expert actions across hidden states and fails to learn exploration. In this work, we propose ASTEROID, a simple and effective student--teacher supervised learning framework that can learn test-time exploration. Although a privileged expert never needs to explore, we demonstrate that a history-conditioned student can learn to do so when trained with on-policy contexts: the student first collects on-policy context under partial observability, and the privileged expert provides action labels conditioned on that context. By distilling expert actions directly conditioned on the student's on-policy history, the student learns to systematically resolve partial observability, i.e., search while uncertain and exploit once the hidden state is revealed. This enables efficient test-time exploration (similar to Bayesian posterior sampling) without incurring the impractical training-data costs of reinforcement learning. Across a diverse range of eleven different environments, including discrete exploration benchmarks, robotic manipulation, navigation, and Procgen environments, ASTEROID achieves ~2x higher returns under fixed exploration budgets, uses ~100x fewer interactions than RL baselines, and outperforms frontier models at exploration. Finally, our method transfers policies trained in simulation to vision-denied real-world robot manipulation, exhibiting efficient exploration and increasing success by +40% over standard distillation. Overall, it provides a simple yet surprisingly effective framework to learn efficient test-time exploration.</summary>
+    <category term="cs.RO" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-10-21T17:50:31Z</published>
+    <arxiv:primary_category term="cs.RO"/>
+    <author>
+      <name>Sriyash Poddar</name>
+    </author>
+    <author>
+      <name>Yanda Bao</name>
+    </author>
+    <author>
+      <name>Jacob Krantz</name>
+    </author>
+    <author>
+      <name>Matthew Chang</name>
+    </author>
+    <author>
+      <name>Xavier Puig</name>
+    </author>
+    <author>
+      <name>Roozbeh Mottaghi</name>
+    </author>
+    <author>
+      <name>Natasha Jaques</name>
+    </author>
+    <author>
+      <name>Abhishek Gupta</name>
+    </author>
+  </entry>
+</feed>

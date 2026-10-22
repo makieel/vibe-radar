@@ -1,0 +1,416 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Archive: 2026 - GitHub Changelog</title>
+	<atom:link href="https://github.blog/changelog/feed/" rel="self" type="application/rss+xml" />
+	<link>https://github.blog/changelog/</link>
+	<description>Updates, ideas, and inspiration from GitHub to help developers build and design software.</description>
+	<lastBuildDate>Wed, 21 Oct 2026 23:54:02 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=7.1.3</generator>
+
+<image>
+	<url>https://github.blog/wp-content/uploads/2019/01/cropped-github-favicon-512.png?fit=32%2C32</url>
+	<title>Archive: 2026 - GitHub Changelog</title>
+	<link>https://github.blog/changelog/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+<site xmlns="com-wordpress:feed-additions:1">153214340</site>	<item>
+		<title>GitHub CLI: Opt in to expiring, auto-refreshing OAuth tokens</title>
+		<link>https://github.blog/changelog/2026-10-21-github-cli-opt-in-to-expiring-auto-refreshing-oauth-tokens</link>
+		
+		<dc:creator><![CDATA[Allison]]></dc:creator>
+		<pubDate>Wed, 21 Oct 2026 16:43:23 +0000</pubDate>
+				<guid isPermaLink="false">https://github.blog/changelog/2026-10-21-github-cli-opt-in-to-expiring-auto-refreshing-oauth-tokens</guid>
+
+					<description><![CDATA[<p>You can now use expiring, automatically refreshing OAuth credentials in GitHub CLI as part of a public preview. When you opt in, gh stores an expiring access token alongside a&#8230;</p>
+<p>The post <a href="https://github.blog/changelog/2026-10-21-github-cli-opt-in-to-expiring-auto-refreshing-oauth-tokens">GitHub CLI: Opt in to expiring, auto-refreshing OAuth tokens</a> appeared first on <a href="https://github.blog">The GitHub Blog</a>.</p>
+]]></description>
+										<content:encoded><![CDATA[<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html><body><p>You can now use expiring, automatically refreshing OAuth credentials in GitHub CLI as part of a public preview. When you opt in, <code>gh</code> stores an expiring access token alongside a rotating refresh token and automatically refreshes the token whenever it is needed. You stay authenticated without reauthenticating, and a leaked access token becomes unusable within hours instead of lasting indefinitely.</p>
+<h2 id="opting-in-at-login" id="opting-in-at-login" ><a class="heading-link" href="#opting-in-at-login">Opting in at login<span class="heading-hash pl-2 text-italic text-bold" aria-hidden="true"></span></a></h2>
+<p>Starting with v2.103.0, pass the new <code>--expiring</code> flag when you log in with <code>gh auth login --expiring</code>. To opt in for every sign-in without passing the flag each time, run <code>gh config set expiring_credentials enabled</code>. From then on, there is nothing new to run day to day: <code>gh</code> refreshes the credential for you in the background. To check the state of an expiring credential, including when the current access token expires, run <code>gh auth status</code>.</p>
+<h2 id="using-expiring-tokens-with-git" id="using-expiring-tokens-with-git" ><a class="heading-link" href="#using-expiring-tokens-with-git">Using expiring tokens with git<span class="heading-hash pl-2 text-italic text-bold" aria-hidden="true"></span></a></h2>
+<p>If you authenticate to git over HTTPS and want to use expiring tokens, we strongly recommend configuring <code>gh</code> as your git credential helper by running <code>gh auth setup-git</code>. This lets <code>gh</code> serve and refresh the credential for git, so your expiring token is correctly handled.</p>
+<p>We also strongly recommend upgrading to git 2.46 or newer, which lets <code>gh</code> mark expiring credentials so they are not cached past their lifetime. On older git versions, <code>gh</code> still works but prints a one-time recommendation to upgrade.</p>
+<h2 id="good-to-know" id="good-to-know" ><a class="heading-link" href="#good-to-know">Good to know<span class="heading-hash pl-2 text-italic text-bold" aria-hidden="true"></span></a></h2>
+<ul>
+<li><strong>It&rsquo;s opt-in and backward compatible.</strong> If you don&rsquo;t opt in through the flag or configuration setting, nothing changes. Existing sign-ins and manually supplied tokens keep working exactly as before.</li>
+<li><strong>You get whatever the server issues.</strong> <code>--expiring</code> requests refreshable credentials. If a server does not support them, <code>gh</code> falls back cleanly to a normal nonexpiring token.</li>
+<li><strong>It will become the default over time.</strong> Expiring credentials are opt-in today. In a future release, we plan to make them the default for new sign-ins.</li>
+</ul>
+<h2 id="things-to-watch-out-for" id="things-to-watch-out-for" ><a class="heading-link" href="#things-to-watch-out-for">Things to watch out for<span class="heading-hash pl-2 text-italic text-bold" aria-hidden="true"></span></a></h2>
+<p>Expiring access tokens are short-lived, so anything that captures a token once and reuses it later can break. Scripts and extensions that run <code>gh auth token</code> and store the result, or copy the token into another tool, will eventually be left holding an expired token.</p>
+<p>If you consume the token outside of <code>gh</code>, read it fresh each time with <code>gh auth token</code>. This refreshes it when needed rather than caching the value. If a workflow depends on a token that stays valid for a long time, hold off on opting in for that workflow. When <code>gh</code> is configured as your git credential helper, it refreshes the credential for you, so git operations over HTTPS keep working.</p>
+<h2 id="who-can-use-it" id="who-can-use-it" ><a class="heading-link" href="#who-can-use-it">Who can use it<span class="heading-hash pl-2 text-italic text-bold" aria-hidden="true"></span></a></h2>
+<p>Expiring tokens are available on github.com and ghe.com today. GitHub Enterprise Server issues them starting with GHES 3.23. On earlier versions, opting in falls back to today&rsquo;s nonexpiring behavior.</p>
+<p>For more on authenticating with GitHub CLI, including expiring tokens, see <a href="https://docs.github.com/github-cli/github-cli/authenticating-with-github-cli#using-expiring-refreshable-tokens">Authenticating with GitHub CLI</a>.</p>
+<p><a href="https://github.com/cli/cli?tab=readme-ov-file#installation">Install or upgrade</a> to <a href="https://github.com/cli/cli/releases/tag/v2.103.0">GitHub CLI v2.103.0</a> today to get started.</p>
+<p>Have feedback or found an issue? <a href="https://github.com/cli/cli/issues">Open an issue in the <code>cli/cli</code> repository</a>.</p>
+</body></html>
+<p>The post <a href="https://github.blog/changelog/2026-10-21-github-cli-opt-in-to-expiring-auto-refreshing-oauth-tokens">GitHub CLI: Opt in to expiring, auto-refreshing OAuth tokens</a> appeared first on <a href="https://github.blog">The GitHub Blog</a>.</p>
+]]></content:encoded>
+					
+		
+		
+		<category domain="changelog-type"><![CDATA[Release]]></category>
+<category domain="changelog-label"><![CDATA[application security]]></category>
+<category domain="changelog-label"><![CDATA[client apps]]></category>
+<post-id xmlns="com-wordpress:feed-additions:1">99641</post-id>	</item>
+		<item>
+		<title>Bulk migrate branch protections to rulesets for a repository</title>
+		<link>https://github.blog/changelog/2026-10-20-bulk-migrate-branch-protections-to-rulesets-for-a-repository</link>
+		
+		<dc:creator><![CDATA[Allison]]></dc:creator>
+		<pubDate>Tue, 20 Oct 2026 18:06:21 +0000</pubDate>
+				<guid isPermaLink="false">https://github.blog/changelog/2026-10-20-bulk-migrate-branch-protections-to-rulesets-for-a-repository</guid>
+
+					<description><![CDATA[<p>You can now convert all branch protection rules of a repository to rulesets in a single action. This is an extension of the ability to convert a single branch protection&#8230;</p>
+<p>The post <a href="https://github.blog/changelog/2026-10-20-bulk-migrate-branch-protections-to-rulesets-for-a-repository">Bulk migrate branch protections to rulesets for a repository</a> appeared first on <a href="https://github.blog">The GitHub Blog</a>.</p>
+]]></description>
+										<content:encoded><![CDATA[<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html><body><p>You can now convert all branch protection rules of a repository to rulesets in a single action. This is an extension of the ability to convert a single branch protection rule to a ruleset that we released previously, now allowing for at-scale conversions.</p>
+<h3 id="how-it-works" id="how-it-works" ><a class="heading-link" href="#how-it-works">How it works<span class="heading-hash pl-2 text-italic text-bold" aria-hidden="true"></span></a></h3>
+<p>Navigate to <strong>Settings &rarr; Rulesets</strong> in your repository and click <strong>Import branch protection rules</strong>. In the Review import dialog, you can:</p>
+<ul>
+<li>Preview the rulesets that will be created before you confirm the conversion.</li>
+<li>See which branch protection rules are already covered by an existing ruleset.</li>
+<li>Review cases where one branch protection rule produces multiple rulesets to preserve its original behavior.</li>
+<li>Choose an enforcement status (e.g., <strong>Active</strong>, <strong>Evaluate</strong>, or <strong>Disabled</strong>) and select which rulesets to create.</li>
+</ul>
+<p>After you click <strong>Create rulesets</strong>, choose whether to keep or delete the original branch protection rules.</p>
+<h3 id="why-migrate-to-rulesets" id="why-migrate-to-rulesets" ><a class="heading-link" href="#why-migrate-to-rulesets">Why migrate to rulesets?<span class="heading-hash pl-2 text-italic text-bold" aria-hidden="true"></span></a></h3>
+<p>Rulesets offer several advantages over classic branch protections:</p>
+<ul>
+<li>Apply rules across multiple branches with pattern matching</li>
+<li>Layer multiple rulesets for granular policy control</li>
+<li>Manage rulesets at the organization or enterprise level</li>
+<li>Configure fine-grained bypass permissions for users, teams, and apps</li>
+</ul>
+<h3 id="availability" id="availability" ><a class="heading-link" href="#availability">Availability<span class="heading-hash pl-2 text-italic text-bold" aria-hidden="true"></span></a></h3>
+<p>This feature is available for all repositories where rulesets are available. <a href="https://docs.github.com/repositories/configuring-branches-and-merges-in-your-repository/managing-rulesets/converting-branch-protections-to-rulesets">Learn more about converting your branch protections to repository rulesets</a>.</p>
+<p>Join the discussion within <a href="https://github.com/orgs/community/discussions/categories/repositories">GitHub Community</a>.</p>
+</body></html>
+<p>The post <a href="https://github.blog/changelog/2026-10-20-bulk-migrate-branch-protections-to-rulesets-for-a-repository">Bulk migrate branch protections to rulesets for a repository</a> appeared first on <a href="https://github.blog">The GitHub Blog</a>.</p>
+]]></content:encoded>
+					
+		
+		
+		<category domain="changelog-type"><![CDATA[Improvement]]></category>
+<category domain="changelog-label"><![CDATA[platform governance]]></category>
+<post-id xmlns="com-wordpress:feed-additions:1">99618</post-id>	</item>
+		<item>
+		<title>Updates to GitHub secret scanning</title>
+		<link>https://github.blog/changelog/2026-10-20-updates-to-github-secret-scanning</link>
+		
+		<dc:creator><![CDATA[Allison]]></dc:creator>
+		<pubDate>Tue, 20 Oct 2026 18:03:55 +0000</pubDate>
+				<guid isPermaLink="false">https://github.blog/changelog/2026-10-20-updates-to-github-secret-scanning</guid>
+
+					<description><![CDATA[<p>This update covers improvements and bug fixes for GitHub secret scanning. Update to audit log events On November 12, 2026, the business field in affected secret_scanning_alert.* and secret_scanning_push_protection.bypass audit log&#8230;</p>
+<p>The post <a href="https://github.blog/changelog/2026-10-20-updates-to-github-secret-scanning">Updates to GitHub secret scanning</a> appeared first on <a href="https://github.blog">The GitHub Blog</a>.</p>
+]]></description>
+										<content:encoded><![CDATA[<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html><body><p>This update covers improvements and bug fixes for GitHub secret scanning.</p>
+<h2 id="update-to-audit-log-events" id="update-to-audit-log-events" ><a class="heading-link" href="#update-to-audit-log-events">Update to audit log events<span class="heading-hash pl-2 text-italic text-bold" aria-hidden="true"></span></a></h2>
+<p>On <strong>November 12, 2026</strong>, the <code>business</code> field in affected <code>secret_scanning_alert.*</code> and <code>secret_scanning_push_protection.bypass</code> <strong>audit log events</strong> will change from the <strong>enterprise display name</strong> to the <strong>enterprise slug</strong>.</p>
+<p>To avoid disruption to any automated workflows, you should update integrations that filter by display name before rollout to accept both formats or use <code>business_id</code> instead. The <code>business</code> field remains a string. Event names and numeric <code>business_id</code> values are unchanged.</p>
+<h2 id="recent-improvements-and-bug-fixes" id="recent-improvements-and-bug-fixes" ><a class="heading-link" href="#recent-improvements-and-bug-fixes">Recent improvements and bug fixes<span class="heading-hash pl-2 text-italic text-bold" aria-hidden="true"></span></a></h2>
+<ul>
+<li><strong>Custom pattern alerts:</strong> Existing open alerts stay open when a rescan finds that they still match an edited custom pattern, rather than being closed and reopened.</li>
+<li><strong>Base64-encoded GitHub tokens:</strong> In private and internal repositories on github.com with secret scanning enabled, the existing revocation action (public preview) now supports encoded personal access tokens (classic), fine-grained personal access tokens, OAuth access tokens, and GitHub App user access tokens. GitHub automatically decodes the value.</li>
+<li><strong>Dismissal-request webhooks:</strong> Payloads now include <code>exemption_request.number</code>, the repository-scoped request number also available in the REST API. Use the repository and request number together to correlate requests across integrations.</li>
+<li><strong>Accessibility:</strong> The <code>Request pending</code> status on an alert is now keyboard-focusable without activating an action. The revocation flow announces progress to screen readers and moves focus to its completion panel when that panel appears.</li>
+<li><strong>Bypass-request metadata:</strong> Fixed empty secret-type and location details in bypass-request API responses and webhook payloads for command-line pushes when another repository rule ran after secret scanning.</li>
+<li><strong>Delegated bypass:</strong> Fixed push failures caused by existing organization-role entries in reviewer lists, and <code>500</code> errors when setting valid reviewer configurations for organization-owned repositories through the REST API.</li>
+<li><strong>Custom pattern API:</strong> Requests rejected by the scanning service for invalid arguments now return <code>422</code> instead of <code>500</code>, so your integration can distinguish these input errors from server failures.</li>
+</ul>
+<h2 id="learn-more" id="learn-more" ><a class="heading-link" href="#learn-more">Learn more<span class="heading-hash pl-2 text-italic text-bold" aria-hidden="true"></span></a></h2>
+<p>Learn more about <a href="https://docs.github.com/enterprise-cloud@latest/admin/monitoring-activity-in-your-enterprise/reviewing-audit-logs-for-your-enterprise/audit-log-events-for-your-enterprise">enterprise audit log events</a> and the <a href="https://docs.github.com/rest/secret-scanning">secret scanning REST API</a>. Share your feedback in <a href="https://gh.io/community-secret-scanning">GitHub Community</a>.</p>
+</body></html>
+<p>The post <a href="https://github.blog/changelog/2026-10-20-updates-to-github-secret-scanning">Updates to GitHub secret scanning</a> appeared first on <a href="https://github.blog">The GitHub Blog</a>.</p>
+]]></content:encoded>
+					
+		
+		
+		<category domain="changelog-type"><![CDATA[Improvement]]></category>
+<category domain="changelog-label"><![CDATA[application security]]></category>
+<post-id xmlns="com-wordpress:feed-additions:1">99616</post-id>	</item>
+		<item>
+		<title>Dependabot alerts REST API now includes dependency versions</title>
+		<link>https://github.blog/changelog/2026-10-20-dependabot-alerts-rest-api-now-includes-dependency-versions</link>
+		
+		<dc:creator><![CDATA[Allison]]></dc:creator>
+		<pubDate>Tue, 20 Oct 2026 17:13:40 +0000</pubDate>
+				<guid isPermaLink="false">https://github.blog/changelog/2026-10-20-dependabot-alerts-rest-api-now-includes-dependency-versions</guid>
+
+					<description><![CDATA[<p>You can now get the version of a vulnerable dependency directly from Dependabot alert responses in the REST API. Each alert&#8217;s dependency object includes a new version_requirement field with the&#8230;</p>
+<p>The post <a href="https://github.blog/changelog/2026-10-20-dependabot-alerts-rest-api-now-includes-dependency-versions">Dependabot alerts REST API now includes dependency versions</a> appeared first on <a href="https://github.blog">The GitHub Blog</a>.</p>
+]]></description>
+										<content:encoded><![CDATA[<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html><body><p>You can now get the version of a vulnerable dependency directly from Dependabot alert responses in the REST API. Each alert&rsquo;s <code>dependency</code> object includes a new <code>version_requirement</code> field with the version or version constraint that Dependabot last recorded for the alert.</p>
+<p>Alert responses already included the advisory&rsquo;s vulnerable version range, but not the version in your repository. If you sync alerts to other security tools, you no longer need to parse lockfiles or make a separate GraphQL request for <code>vulnerableRequirements</code> to get that version.</p>
+<p>The value depends on how Dependabot detected the dependency:</p>
+<ul>
+<li><strong>Lockfiles:</strong> The resolved version.</li>
+<li><strong>Manifests without a lockfile:</strong> The version or version constraint declared in the manifest.</li>
+<li><strong>Dependency submission API:</strong> The resolved version submitted by your build tooling.</li>
+</ul>
+<p>The field is <code>null</code> when no value is available. If an alert covers more than one vulnerable version of a dependency, the field holds one recorded value and may not represent all of them. Long version constraints may also be truncated.</p>
+<p>You&rsquo;ll find <code>version_requirement</code> in responses for individual alerts, in repository, organization, and enterprise alert lists, and in <code>dependabot_alert</code> webhook payloads.</p>
+<p>This field is available now on github.com and GitHub Enterprise Cloud with data residency, and will be included in GitHub Enterprise Server 3.24.</p>
+<p>Learn more about the <a href="https://docs.github.com/rest/dependabot/alerts">REST API endpoints for Dependabot alerts</a> and the <a href="https://docs.github.com/webhooks/webhook-events-and-payloads#dependabot_alert"><code>dependabot_alert</code> webhook event</a>.</p>
+</body></html>
+<p>The post <a href="https://github.blog/changelog/2026-10-20-dependabot-alerts-rest-api-now-includes-dependency-versions">Dependabot alerts REST API now includes dependency versions</a> appeared first on <a href="https://github.blog">The GitHub Blog</a>.</p>
+]]></content:encoded>
+					
+		
+		
+		<category domain="changelog-type"><![CDATA[Improvement]]></category>
+<category domain="changelog-label"><![CDATA[supply chain security]]></category>
+<post-id xmlns="com-wordpress:feed-additions:1">99612</post-id>	</item>
+		<item>
+		<title>GitHub package firewall in public preview</title>
+		<link>https://github.blog/changelog/2026-10-20-github-package-firewall-in-public-preview</link>
+		
+		<dc:creator><![CDATA[Allison]]></dc:creator>
+		<pubDate>Tue, 20 Oct 2026 16:11:53 +0000</pubDate>
+				<guid isPermaLink="false">https://github.blog/changelog/2026-10-16-github-package-firewall-in-public-preview</guid>
+
+					<description><![CDATA[<p>Editor&#8217;s note (October 21, 2026): Rewrote the changelog for clarity and added imagery. There&#8217;s been a recent flood of malware attacks that exploit systems at package installation time. Agents and&#8230;</p>
+<p>The post <a href="https://github.blog/changelog/2026-10-20-github-package-firewall-in-public-preview">GitHub package firewall in public preview</a> appeared first on <a href="https://github.blog">The GitHub Blog</a>.</p>
+]]></description>
+										<content:encoded><![CDATA[<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html><body><p><em>Editor&rsquo;s note (October 21, 2026): Rewrote the changelog for clarity and added imagery.</em></p>
+<p>There&rsquo;s been a recent flood of malware attacks that exploit systems at package installation time. Agents and CI runners are particularly vulnerable to these attacks because they install dependencies to accomplish a task or complete a build without a human in the loop. To stem this tide, GitHub is introducing a new package firewall, which sits between endpoints or internal registries and the upstream package repositories. The firewall inspects both metadata requests and package downloads for signs of malicious activity, acting as an install-time policy gate. The package firewall is available today in public preview for all GitHub Enterprise Cloud customers, including data-resident GitHub Enterprise Cloud.</p>
+<h2 id="how-it-works" id="how-it-works" ><a class="heading-link" href="#how-it-works">How it works<span class="heading-hash pl-2 text-italic text-bold" aria-hidden="true"></span></a></h2>
+<p>First, administrators set policy controls for their enterprise. The controls available today include a configurable cooldown period, checking the GitHub Advisory Database for malware or vulnerability advisories, and supply-chain checks like attestation downgrades.</p>
+<p>Then, endpoints like coding agents and CI/CD hosts use the firewall for their requests instead of pointing directly at the upstream package registries. Metadata requests for package lists as well as the actual package downloads flow through the firewall, which evaluates them against the policy. If a package is blocked erroneously, the user can request an exception with a workflow similar to other GitHub Advanced Security features.</p>
+<p><img decoding="async" src="https://github.com/user-attachments/assets/25f153fb-3256-4d82-8191-624bb6c51c18" alt="Screen recording showing a package being blocked due to cooldown. The error message contains a URL which, when opened in a browser, brings up a web form to request an exception"></p>
+<h2 id="availability-and-limitations" id="availability-and-limitations" ><a class="heading-link" href="#availability-and-limitations">Availability and limitations<span class="heading-hash pl-2 text-italic text-bold" aria-hidden="true"></span></a></h2>
+<p>The package firewall is available in public preview as we scale up the infrastructure behind it and continue to add features based on customer demand. It is available to GitHub Enterprise Cloud customers, including GitHub Enterprise Cloud with data residency. The service is free while in the preview period. When it reaches general availability, it will be charged based on metered usage, similar to Actions billing.</p>
+<p>Currently the package firewall only supports npm packages.</p>
+<h2 id="how-to-use-it" id="how-to-use-it" ><a class="heading-link" href="#how-to-use-it">How to use it<span class="heading-hash pl-2 text-italic text-bold" aria-hidden="true"></span></a></h2>
+<p>For detailed setup instructions, see <a href="https://docs.github.com/enterprise-cloud@latest/code-security/how-tos/secure-your-supply-chain/secure-your-dependencies/protecting-endpoints-with-package-firewall">Protecting endpoints with package firewall</a>. Join the discussion in <a href="https://github.com/orgs/community/discussions/210809">GitHub Community</a>.</p>
+</body></html>
+<p>The post <a href="https://github.blog/changelog/2026-10-20-github-package-firewall-in-public-preview">GitHub package firewall in public preview</a> appeared first on <a href="https://github.blog">The GitHub Blog</a>.</p>
+]]></content:encoded>
+					
+		
+		
+		<category domain="changelog-type"><![CDATA[Release]]></category>
+<category domain="changelog-label"><![CDATA[supply chain security]]></category>
+<category domain="changelog-label"><![CDATA[universe26]]></category>
+<post-id xmlns="com-wordpress:feed-additions:1">99575</post-id>	</item>
+		<item>
+		<title>Dependabot now supports npm 12, pnpm 11 and 12, and Bun 1.4</title>
+		<link>https://github.blog/changelog/2026-10-20-dependabot-now-supports-npm-12-pnpm-11-and-12-and-bun-1-4</link>
+		
+		<dc:creator><![CDATA[Allison]]></dc:creator>
+		<pubDate>Tue, 20 Oct 2026 13:52:38 +0000</pubDate>
+				<guid isPermaLink="false">https://github.blog/changelog/2026-10-19-dependabot-now-supports-npm-12-pnpm-11-and-12-and-bun-1-4</guid>
+
+					<description><![CDATA[<p>You can now upgrade your projects to npm 12, pnpm 11 or 12, or Bun 1.4 and keep receiving Dependabot updates. Support for these package manager versions is available to&#8230;</p>
+<p>The post <a href="https://github.blog/changelog/2026-10-20-dependabot-now-supports-npm-12-pnpm-11-and-12-and-bun-1-4">Dependabot now supports npm 12, pnpm 11 and 12, and Bun 1.4</a> appeared first on <a href="https://github.blog">The GitHub Blog</a>.</p>
+]]></description>
+										<content:encoded><![CDATA[<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html><body><p>You can now upgrade your projects to npm 12, pnpm 11 or 12, or Bun 1.4 and keep receiving Dependabot updates. Support for these package manager versions is available to all github.com users and will be included in GitHub Enterprise Server 3.24.</p>
+<p>For the full list of package manager versions that Dependabot supports, see <a href="https://docs.github.com/code-security/reference/supply-chain-security/supported-ecosystems-and-repositories#supported-ecosystems-maintained-by-github">Dependabot supported ecosystems and repositories</a>.</p>
+<p><strong>Known limitation:</strong> When pnpm writes <code>pnpm-lock.yaml</code> as two YAML documents (the pnpm 12 default for projects that pin a pnpm version), the dependency graph doesn&rsquo;t detect the dependencies in that file yet. Dependabot version updates still work, but Dependabot alerts and security updates won&rsquo;t be created for those dependencies, and existing alerts for them may close. We&rsquo;re working on adding support.</p>
+<p><img decoding="async" src="https://github.com/user-attachments/assets/e9abaf25-6852-4b4a-a7f5-e6e8d1dcdbbd" alt="social"></p>
+</body></html>
+<p>The post <a href="https://github.blog/changelog/2026-10-20-dependabot-now-supports-npm-12-pnpm-11-and-12-and-bun-1-4">Dependabot now supports npm 12, pnpm 11 and 12, and Bun 1.4</a> appeared first on <a href="https://github.blog">The GitHub Blog</a>.</p>
+]]></content:encoded>
+					
+		
+		
+		<category domain="changelog-type"><![CDATA[Improvement]]></category>
+<category domain="changelog-label"><![CDATA[supply chain security]]></category>
+<post-id xmlns="com-wordpress:feed-additions:1">99601</post-id>	</item>
+		<item>
+		<title>Copilot model policy API for enterprise, orgs, and teams</title>
+		<link>https://github.blog/changelog/2026-10-19-copilot-model-policy-api-for-enterprise-orgs-and-teams</link>
+		
+		<dc:creator><![CDATA[Allison]]></dc:creator>
+		<pubDate>Mon, 19 Oct 2026 21:32:18 +0000</pubDate>
+				<guid isPermaLink="false">https://github.blog/changelog/2026-10-19-copilot-model-policy-api-for-enterprise-orgs-and-teams</guid>
+
+					<description><![CDATA[<p>You can now use the REST API to retrieve and update Copilot model policies for enterprises, enterprise teams, agent apps, and organizations. What&#8217;s new GET and PATCH endpoints are now&#8230;</p>
+<p>The post <a href="https://github.blog/changelog/2026-10-19-copilot-model-policy-api-for-enterprise-orgs-and-teams">Copilot model policy API for enterprise, orgs, and teams</a> appeared first on <a href="https://github.blog">The GitHub Blog</a>.</p>
+]]></description>
+										<content:encoded><![CDATA[<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html><body><p>You can now use the REST API to retrieve and update Copilot model policies for enterprises, enterprise teams, agent apps, and organizations.</p>
+<h1 id="whats-new" id="whats-new" ><a class="heading-link" href="#whats-new">What&rsquo;s new<span class="heading-hash pl-2 text-italic text-bold" aria-hidden="true"></span></a></h1>
+<p>GET and PATCH endpoints are now generally available for model policies at four levels:</p>
+<ul>
+<li>Enterprise: <code>/enterprises/{enterprise}/copilot/model-policies</code> </li>
+<li>Enterprise teams: <code>/enterprises/{enterprise}/teams/{team_slug}/copilot/model-policies</code> </li>
+<li>Agent apps: <code>/enterprises/{enterprise}/copilot/apps/model-policies</code> </li>
+<li>Organization: <code>/orgs/{org}/copilot/model-policies</code></li>
+</ul>
+<p>Together, these endpoints make it easier to manage Copilot model availability across your enterprise. Enterprise policies can delegate model control to organizations in organization mode, or to teams and apps in enterprise teams mode. Reference our documentation on <a href="https://docs.github.com/enterprise-cloud@latest/copilot/how-tos/administer-copilot/manage-for-enterprise/manage-availability-of-default-models">managing availability of models in your enterprise </a> and our <a href="https://docs.github.com/enterprise-cloud@latest/rest/enterprise-admin/ai-controls">REST API documentation</a> to get started.</p>
+</body></html>
+<p>The post <a href="https://github.blog/changelog/2026-10-19-copilot-model-policy-api-for-enterprise-orgs-and-teams">Copilot model policy API for enterprise, orgs, and teams</a> appeared first on <a href="https://github.blog">The GitHub Blog</a>.</p>
+]]></content:encoded>
+					
+		
+		
+		<category domain="changelog-type"><![CDATA[Improvement]]></category>
+<category domain="changelog-label"><![CDATA[copilot]]></category>
+<category domain="changelog-label"><![CDATA[enterprise management tools]]></category>
+<post-id xmlns="com-wordpress:feed-additions:1">99606</post-id>	</item>
+		<item>
+		<title>GitHub Copilot models deprecated on October 19, 2026</title>
+		<link>https://github.blog/changelog/2026-10-19-github-copilot-models-deprecated-on-october-19-2026</link>
+		
+		<dc:creator><![CDATA[Allison]]></dc:creator>
+		<pubDate>Mon, 19 Oct 2026 21:27:10 +0000</pubDate>
+				<guid isPermaLink="false">https://github.blog/changelog/2026-10-19-github-copilot-models-deprecated-on-october-19-2026</guid>
+
+					<description><![CDATA[<p>As of today, October 19, 2026, we have deprecated the following models across most GitHub Copilot experiences (including Copilot Chat, inline edits, ask and agent modes, and code completions). These&#8230;</p>
+<p>The post <a href="https://github.blog/changelog/2026-10-19-github-copilot-models-deprecated-on-october-19-2026">GitHub Copilot models deprecated on October 19, 2026</a> appeared first on <a href="https://github.blog">The GitHub Blog</a>.</p>
+]]></description>
+										<content:encoded><![CDATA[<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html><body><p>As of today, October 19, 2026, we have deprecated the following models across most GitHub Copilot experiences (including Copilot Chat, inline edits, ask and agent modes, and code completions).</p>
+<p>These deprecations were <a href="https://github.blog/changelog/2026-09-18-upcoming-deprecation-of-selected-github-copilot-models-in-mid-october/">announced on September 18, 2026</a>.</p>
+<div data-target="content-table-wrap.container" class="content-table-wrap"><content-table-wrap><table>
+<thead>
+<tr>
+<th>Model</th>
+<th>Deprecation date</th>
+<th>Suggested alternative</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Gemini 3.7 Flash</td>
+<td>2026-10-19</td>
+<td>Gemini 3.8 Flash</td>
+</tr>
+<tr>
+<td>GPT-5.5</td>
+<td>2026-10-19</td>
+<td>GPT-6.1 Sol</td>
+</tr>
+<tr>
+<td>GPT-5.4</td>
+<td>2026-10-19</td>
+<td>GPT-6.1 Sol</td>
+</tr>
+<tr>
+<td>GPT-5.4 mini</td>
+<td>2026-10-19</td>
+<td>GPT-6 Luna</td>
+</tr>
+<tr>
+<td>GPT-5 mini</td>
+<td>2026-10-19</td>
+<td>GPT-6 Luna</td>
+</tr>
+<tr>
+<td>Grok 4.5</td>
+<td>2026-10-19</td>
+<td>Grok 4.7</td>
+</tr>
+</tbody>
+</table></content-table-wrap></div>
+<p>Please update your workflows and integrations to use supported models. Copilot Enterprise administrators may need to enable access to alternative models through their model policies in Copilot settings. As an administrator, you can verify availability by checking your individual Copilot settings and confirming that the policy is enabled for the specific model. Once enabled, you&rsquo;ll see the model in the Copilot Chat model selector in VS Code and on github.com. No action is required to remove the deprecated models.</p>
+<p>GitHub Enterprise customers with questions or concerns are encouraged to reach out to their account manager for further assistance.</p>
+<h3 id="share-your-feedback" id="share-your-feedback" ><a class="heading-link" href="#share-your-feedback">Share your feedback<span class="heading-hash pl-2 text-italic text-bold" aria-hidden="true"></span></a></h3>
+<p>To learn more about the models available in Copilot, see <a href="https://docs.github.com/copilot/reference/ai-models/supported-models?utm_source=model-release-announcement&amp;utm_medium=changelog&amp;utm_campaign=newmodels">our documentation on models</a> and get started with Copilot today.</p>
+<p>Join the <a href="https://github.com/orgs/community/discussions/categories/copilot-conversations?utm_source=model-release-announcement&amp;utm_medium=changelog&amp;utm_campaign=newmodels">GitHub Community</a> to share your feedback.</p>
+</body></html>
+<p>The post <a href="https://github.blog/changelog/2026-10-19-github-copilot-models-deprecated-on-october-19-2026">GitHub Copilot models deprecated on October 19, 2026</a> appeared first on <a href="https://github.blog">The GitHub Blog</a>.</p>
+]]></content:encoded>
+					
+		
+		
+		<category domain="changelog-type"><![CDATA[Retired]]></category>
+<category domain="changelog-label"><![CDATA[copilot]]></category>
+<post-id xmlns="com-wordpress:feed-additions:1">99604</post-id>	</item>
+		<item>
+		<title>Some Git over HTTPS may temporarily require authentication</title>
+		<link>https://github.blog/changelog/2026-10-19-some-git-over-https-may-temporarily-require-authentication</link>
+		
+		<dc:creator><![CDATA[Allison]]></dc:creator>
+		<pubDate>Mon, 19 Oct 2026 10:37:30 +0000</pubDate>
+				<guid isPermaLink="false">https://github.blog/changelog/2026-10-15-some-git-over-https-may-temporarily-require-authentication</guid>
+
+					<description><![CDATA[<p>During periods of unusual traffic, GitHub may temporarily require authentication for some clones and fetches of public repositories over HTTPS to help protect github.com&#8217;s availability. If an operation is affected,&#8230;</p>
+<p>The post <a href="https://github.blog/changelog/2026-10-19-some-git-over-https-may-temporarily-require-authentication">Some Git over HTTPS may temporarily require authentication</a> appeared first on <a href="https://github.blog">The GitHub Blog</a>.</p>
+]]></description>
+										<content:encoded><![CDATA[<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html><body><p>During periods of unusual traffic, GitHub may temporarily require authentication for some clones and fetches of public repositories over HTTPS to help protect github.com&rsquo;s availability. If an operation is affected, it will fail with a message indicating that authentication is required.</p>
+<p>To continue, authenticate and retry the operation. You can also wait and retry without authentication after the temporary protection has been lifted.</p>
+<p>GitHub applies this protection as narrowly as possible using signals associated with anomalous traffic. Because legitimate and anomalous traffic can sometimes share those signals, legitimate unauthenticated operations may occasionally be affected. This is not a general authentication requirement for public repositories.</p>
+<p><strong>The following operations are unaffected:</strong></p>
+<ul>
+<li>Authenticated Git operations over HTTPS</li>
+<li>Git operations over SSH</li>
+<li>Pushes</li>
+<li>Unrelated GitHub web and API traffic</li>
+</ul>
+<p>For more reliable automated clones and fetches, configure authentication:</p>
+<ul>
+<li><strong>GitHub Actions:</strong> Use the built-in <code>GITHUB_TOKEN</code>.</li>
+<li><strong>Other CI systems:</strong> Prefer a GitHub App installation access token. A personal access token can also be used.</li>
+<li><strong>Operations that cannot authenticate:</strong> Retry after the temporary protection has been lifted.</li>
+</ul>
+<p>This protection applies to repositories on github.com across all plans.</p>
+<p>For setup instructions, see <a href="https://docs.github.com/authentication/keeping-your-account-and-data-secure/about-authentication-to-github">about authentication to GitHub</a> and <a href="https://docs.github.com/get-started/git-basics/managing-remote-repositories">managing remote repositories</a>.</p>
+</body></html>
+<p>The post <a href="https://github.blog/changelog/2026-10-19-some-git-over-https-may-temporarily-require-authentication">Some Git over HTTPS may temporarily require authentication</a> appeared first on <a href="https://github.blog">The GitHub Blog</a>.</p>
+]]></content:encoded>
+					
+		
+		
+		<category domain="changelog-type"><![CDATA[Improvement]]></category>
+<category domain="changelog-label"><![CDATA[account management]]></category>
+<post-id xmlns="com-wordpress:feed-additions:1">99552</post-id>	</item>
+		<item>
+		<title>CodeQL changes for macOS 27, Xcode 27, and Swift 6.4</title>
+		<link>https://github.blog/changelog/2026-10-19-codeql-changes-for-macos-27-xcode-27-and-swift-6-4</link>
+		
+		<dc:creator><![CDATA[Allison]]></dc:creator>
+		<pubDate>Mon, 19 Oct 2026 10:29:09 +0000</pubDate>
+				<guid isPermaLink="false">https://github.blog/changelog/2026-10-19-codeql-changes-for-macos-27-xcode-27-and-swift-6-4</guid>
+
+					<description><![CDATA[<p>Starting with macOS 27 and Xcode 27, Apple no longer includes Intel (x86_64) code in some of the system binaries and libraries that CodeQL relies on to trace builds. As&#8230;</p>
+<p>The post <a href="https://github.blog/changelog/2026-10-19-codeql-changes-for-macos-27-xcode-27-and-swift-6-4">CodeQL changes for macOS 27, Xcode 27, and Swift 6.4</a> appeared first on <a href="https://github.blog">The GitHub Blog</a>.</p>
+]]></description>
+										<content:encoded><![CDATA[<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html><body><p>Starting with macOS 27 and Xcode 27, Apple no longer includes Intel (x86_64) code in some of the system binaries and libraries that CodeQL relies on to trace builds. As a result, CodeQL can&rsquo;t support traced scans on these versions or analyze Swift 6.4.</p>
+<h2 id="whats-affected" id="whats-affected" ><a class="heading-link" href="#whats-affected">What&rsquo;s affected<span class="heading-hash pl-2 text-italic text-bold" aria-hidden="true"></span></a></h2>
+<ul>
+<li><strong>Xcode 27:</strong> When Xcode 27 is installed, traced extraction isn&rsquo;t available for C/C++, C#, Go, Java, Kotlin, or Swift.</li>
+<li><strong>macOS 27:</strong> Traced extraction may not be available for the previously mentioned languages.</li>
+<li><strong>Swift 6.4:</strong> CodeQL doesn&rsquo;t support Swift 6.4 on any platform. </li>
+<li><strong>Intel-based Macs:</strong> CodeQL support for Intel-based Macs will be deprecated in mid-December 2026.</li>
+</ul>
+<h2 id="how-to-keep-your-scans-running" id="how-to-keep-your-scans-running" ><a class="heading-link" href="#how-to-keep-your-scans-running">How to keep your scans running<span class="heading-hash pl-2 text-italic text-bold" aria-hidden="true"></span></a></h2>
+<p>If you scan Swift or use traced builds for other languages, pin your workflows to macOS 26 or earlier and Xcode 26 or earlier. If you use GitHub Actions, pin the runner image and toolchain in your workflow rather than relying on the latest versions.</p>
+<p>For C/C++, C#, and Java, you can switch to <a href="https://docs.github.com/code-security/how-tos/find-and-fix-code-vulnerabilities/manage-your-configuration/codeql-for-compiled-languages#use-none-build-mode-for-codeql">build mode none</a>, which doesn&rsquo;t require tracing a build.</p>
+<p>Join the discussion within <a href="https://github.com/orgs/community/discussions/210464">GitHub Community</a>.</p>
+</body></html>
+<p>The post <a href="https://github.blog/changelog/2026-10-19-codeql-changes-for-macos-27-xcode-27-and-swift-6-4">CodeQL changes for macOS 27, Xcode 27, and Swift 6.4</a> appeared first on <a href="https://github.blog">The GitHub Blog</a>.</p>
+]]></content:encoded>
+					
+		
+		
+		<category domain="changelog-type"><![CDATA[Retired]]></category>
+<category domain="changelog-label"><![CDATA[application security]]></category>
+<post-id xmlns="com-wordpress:feed-additions:1">99587</post-id>	</item>
+	</channel>
+</rss>
