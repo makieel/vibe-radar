@@ -109,9 +109,20 @@ test('pickAlerts puts news before advisories', () => {
 
 test('toolCards: recent first, then newest first', () => {
   const t = (tool: string, publishedAt: string | null) => ({ tool, name: tool, version: null, publishedAt, url: `https://e.test/${tool}`, note: null });
-  const cards = toolCards(makeRaw({ tools: [t('old', '2026-09-01T00:00:00Z'), t('none', null), t('a', '2026-10-20T00:00:00Z'), t('b', '2026-10-22T00:00:00Z')] }));
+  const cards = toolCards(makeRaw({ tools: [t('old', '2026-09-01T00:00:00Z'), t('none', null), t('a', '2026-10-20T00:00:00Z'), t('b', '2026-10-22T00:00:00Z')] }), { ...config, tools: [] });
   assert.deepEqual(cards.map((c) => c.tool), ['b', 'a', 'old', 'none']);
   assert.deepEqual(cards.map((c) => c.isRecent), [true, true, false, false]);
+});
+
+test('toolCards: every configured tool gets a card; a tool without a release is all-null and last', () => {
+  const rel = (tool: string, name: string, publishedAt: string | null) => ({ tool, name, version: 'v1', publishedAt, url: `https://e.test/${tool}`, note: null });
+  const raw = makeRaw({ tools: [rel('claude-code', 'Claude Code', '2026-09-01T00:00:00Z'), rel('copilot', 'GitHub Copilot', null), rel('cursor', 'Cursor', '2026-10-22T00:00:00Z'), rel('gemini-cli', 'Gemini CLI', '2026-10-01T00:00:00Z')] });
+  const cards = toolCards(raw, config);
+  assert.deepEqual(cards.map((c) => c.tool).sort(), config.tools.map((t) => t.id).sort());
+  const codex = cards.at(-1)!;
+  assert.deepEqual(codex, { tool: 'codex', name: 'Codex CLI', version: null, publishedAt: null, url: null, note: null, note_ko: null, isRecent: false });
+  assert.equal(cards[0]!.tool, 'cursor');
+  assert.equal(cards.at(-2)!.tool, 'copilot');
 });
 
 test('risingRepos prefers history delta when 7-day-old point exists', () => {

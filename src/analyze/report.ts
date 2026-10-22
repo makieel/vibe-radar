@@ -53,7 +53,7 @@ export function buildDailyReport(input: ReportInput): DailyReport {
     gauge: computeGauge(issues, previous),
     issues,
     alerts: pickAlerts(raw, config),
-    tools: toolCards(raw),
+    tools: toolCards(raw, config),
     rising: risingRepos(raw, history),
     newRepos,
     droppedRepos,

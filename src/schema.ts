@@ -164,7 +164,7 @@ export const ToolCardSchema = z.object({
   name: z.string(),
   version: z.string().nullable(),
   publishedAt: z.string().nullable(),
-  url: z.string(),
+  url: z.string().nullable(),
   note: z.string().nullable(),
   note_ko: z.string().nullable(),
   isRecent: z.boolean(),

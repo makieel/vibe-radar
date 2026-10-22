@@ -226,6 +226,18 @@ test('tools view: cards with version, ago, note, release link, NEW badge', () =>
   assert.ok(page(r, 'tools').includes('아직 모인 도구 소식이 없어요'));
 });
 
+test('tool without release: name only, no link, failure note (tools view and briefing)', () => {
+  const r = clone();
+  r.tools = [{ tool: 'codex', name: 'Codex CLI', version: null, publishedAt: null, url: null, note: null, note_ko: null, isRecent: false }];
+  for (const view of ['tools', 'briefing']) {
+    const html = page(r, view);
+    assert.ok(html.includes('Codex CLI'), view);
+    assert.ok(html.includes('최근 릴리즈 정보를 가져오지 못했어요'), view);
+    assert.ok(!html.includes('href="#" target="_blank"'), view);
+  }
+  assert.ok(!page(r, 'tools').includes('릴리즈 보기'));
+});
+
 test('kit filter by kind', () => {
   const r = clone();
   r.kit[0].kind = 'SKILL';

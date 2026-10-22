@@ -122,18 +122,40 @@ test('parseCursorChangelog returns first article title/date or null, never throw
   assert.equal(v?.url, 'https://cursor.com/changelog/2-0');
 });
 
-test('toolsCollector: one failing tool is skipped; reduced mode makes exactly 3 API calls', async () => {
+test('toolsCollector: one failing tool is skipped with a warning; reduced mode makes exactly 3 API calls', async (t) => {
+  const warn = t.mock.method(console, 'warn', () => {});
+  const latest = JSON.stringify(JSON.parse(read('gh-releases-claude-code.json'))[0]);
   const { f, urls } = counting(u => {
     if (u.includes('openai/codex')) return fail();
-    if (u.startsWith('https://api.github.com/repos/')) return ok(read('gh-releases-claude-code.json'));
+    if (u.startsWith('https://api.github.com/repos/')) return ok(latest);
     if (u.includes('github.blog')) return ok(read('copilot-feed.xml'));
     return ok(read('cursor-changelog.html'));
   });
   const { data } = await toolsCollector.run(ctxWith(f));
-  assert.equal(urls.filter(u => u.startsWith('https://api.github.com/')).length, 3);
+  const api = urls.filter(u => u.startsWith('https://api.github.com/'));
+  assert.equal(api.length, 3);
+  assert.ok(api.every(u => /^https:\/\/api\.github\.com\/repos\/[^/]+\/[^/]+\/releases\/latest$/.test(u)), api.join());
   assert.equal(urls.length, 5);
   assert.deepEqual(data.map(d => d.tool).sort(), ['claude-code', 'copilot', 'cursor', 'gemini-cli']);
+  assert.equal(warn.mock.callCount(), 1);
+  assert.match(String(warn.mock.calls[0].arguments.join(' ')), /Codex CLI/);
   await assert.rejects(toolsCollector.run(ctxWith(async () => fail())));
+});
+
+test('toolsCollector: a tool whose latest release is unusable is omitted with a warning, no invented values', async (t) => {
+  const warn = t.mock.method(console, 'warn', () => {});
+  const latest = JSON.stringify(JSON.parse(read('gh-releases-claude-code.json'))[0]);
+  const { f } = counting(u => {
+    if (u.includes('openai/codex')) return ok(JSON.stringify({ tag_name: 'rust-v0.164.0-alpha.3', prerelease: true, html_url: 'https://github.com/openai/codex/releases/tag/x' }));
+    if (u.startsWith('https://api.github.com/repos/')) return ok(latest);
+    if (u.includes('github.blog')) return ok(read('copilot-feed.xml'));
+    return ok(read('cursor-changelog.html'));
+  });
+  const { data } = await toolsCollector.run(ctxWith(f));
+  assert.ok(!data.some(d => d.tool === 'codex'));
+  assert.equal(data.length, 4);
+  assert.equal(warn.mock.callCount(), 1);
+  assert.match(String(warn.mock.calls[0].arguments.join(' ')), /Codex CLI/);
 });
 
 test('parseAdvisories maps fields and skips malformed entries', () => {

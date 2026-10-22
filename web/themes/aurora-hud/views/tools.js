@@ -1,7 +1,13 @@
 // 도구 화면: 릴리즈 카드 그리드.
-import { ext, list, validIso, text } from './shell.js';
+import { ext, list, NO_RELEASE, validIso, text } from './shell.js';
 
 function card(t, fmt) {
+  if (!text(t.url)) {
+    return `<article class="card">
+      <h3>${fmt.esc(text(t.name))}</h3>
+      <p>${NO_RELEASE}</p>
+    </article>`;
+  }
   const version = text(t.version);
   const when = validIso(t.publishedAt) ? fmt.ago(t.publishedAt) : '';
   const note = fmt.koOr(text(t.note_ko), text(t.note));

@@ -35,6 +35,9 @@ export function hashFor(view, date, params) {
   return parts.length ? `${path}?${parts.join('&')}` : path;
 }
 
+/** 릴리즈를 못 가져온 도구(url 없음)에 붙이는 문구. */
+export const NO_RELEASE = '최근 릴리즈 정보를 가져오지 못했어요';
+
 export const isNum = (n) => typeof n === 'number' && Number.isFinite(n);
 export const text = (v) => (typeof v === 'string' ? v : '');
 

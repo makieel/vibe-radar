@@ -1,5 +1,5 @@
 // 브리핑 화면: 게이지, 1면, 보안 경보 띠, 3열 패널(도구·급상승·재료).
-import { ext, hashFor, list, sourceName, validIso } from './shell.js';
+import { ext, hashFor, list, NO_RELEASE, sourceName, validIso } from './shell.js';
 
 const RING = 314; // 2πr, r=50
 const LABELS = { hot: '평소보다 뜨거움', normal: '평소 수준', calm: '조용한 편' };
@@ -110,6 +110,9 @@ function toolRows(report, fmt) {
   return list(report.tools)
     .slice(0, 5)
     .map((t) => {
+      if (!text(t.url)) {
+        return `<div class="row"><div>${fmt.esc(text(t.name))}<small>${NO_RELEASE}</small></div><span class="m">—</span></div>`;
+      }
       const right = text(t.version) || (validIso(t.publishedAt) ? fmt.ago(t.publishedAt) : '—');
       const note = text(t.note_ko) || text(t.note);
       return `<a class="row" ${ext(fmt, t.url)}><div>${fmt.esc(t.name)}${note ? `<small>${fmt.esc(note)}</small>` : ''}</div><span class="m">${fmt.esc(right)}</span></a>`;

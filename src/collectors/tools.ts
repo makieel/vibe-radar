@@ -21,7 +21,7 @@ function firstBullet(body: unknown): string | null {
   return m ? clip(stripMarkdown(m[1])) : null;
 }
 
-/** Accepts the releases array (first non-draft, non-prerelease wins) or a single release object. */
+/** Accepts a single release object (`/releases/latest`) or a releases array; drafts and prereleases are skipped. */
 export function parseGhRelease(json: unknown, tool: ToolDef): ToolRelease | null {
   const list = Array.isArray(json) ? json : [json];
   for (const r of list) {
@@ -109,7 +109,8 @@ export const toolsCollector: Collector<'tools'> = {
     const jobs = ctx.config.tools.map(async (t): Promise<ToolRelease | null> => {
       if (t.kind === 'github-release') {
         if (!t.repo) return null;
-        return parseGhRelease(await fetchJson<unknown>(`https://api.github.com/repos/${t.repo}/releases?per_page=5`, opts), t);
+        // `/releases/latest` is GitHub's newest non-draft, non-prerelease release (1 call per tool).
+        return parseGhRelease(await fetchJson<unknown>(`https://api.github.com/repos/${t.repo}/releases/latest`, opts), t);
       }
       if (t.kind === 'copilot-feed') return parseCopilotFeed(await fetchText(COPILOT_FEED, opts));
       return parseCursorChangelog(await fetchText(CURSOR_PAGE, opts));
@@ -118,14 +119,17 @@ export const toolsCollector: Collector<'tools'> = {
     const data: ToolRelease[] = [];
     let failures = 0;
     let firstError: unknown;
-    for (const r of results) {
+    results.forEach((r, i) => {
+      const name = ctx.config.tools[i]!.name;
       if (r.status === 'fulfilled') {
         if (r.value) data.push(r.value);
+        else console.warn(`tools: no release found for ${name}; omitted`);
       } else {
         failures++;
         firstError ??= r.reason;
+        console.warn(`tools: ${name} failed (${r.reason instanceof Error ? r.reason.message : String(r.reason)}); omitted`);
       }
-    }
+    });
     if (results.length > 0 && failures === results.length) throw firstError instanceof Error ? firstError : new Error('all tool fetches failed');
     return { data, reduced: false };
   },
