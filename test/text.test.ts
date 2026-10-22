@@ -16,3 +16,6 @@ test('domainOf returns host without www, empty on garbage', () => {
 test('stripMarkdown removes syntax', () => {
   assert.equal(stripMarkdown('# Title\n\n**bold** and [link](http://x.y) `code`\n- item'), 'Title bold and link code item');
 });
+test('stripMarkdown keeps snake_case identifiers', () => {
+  assert.equal(stripMarkdown('use max_tokens and top_p with _emphasis_ here'), 'use max_tokens and top_p with emphasis here');
+});

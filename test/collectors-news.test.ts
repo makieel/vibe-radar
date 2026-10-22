@@ -90,18 +90,74 @@ test('hnCollector.run fetches top 30 via injected fetch', async () => {
   assert.equal(data.length, 3);
 });
 
-test('redditCollector.run uses top/.rss?t=day per sub and tolerates one failure', async () => {
-  const cfg = loadConfig();
+test('redditCollector.run: one failing sub keeps only the successful sub items', async () => {
   const urls: string[] = [];
   const fake = async (url: string) => {
     urls.push(url);
-    if (url.includes(`/r/${cfg.redditSubs[0]}/`)) return new Response('no', { status: 500 });
+    if (url.includes('/r/vibecoding/')) return new Response('no', { status: 500 });
     return new Response(read('reddit-claudeai.xml'));
   };
+  const expected = parseRedditRss(read('reddit-claudeai.xml'), 'ClaudeAI').length;
   const { data } = await redditCollector.run(ctxWith(fake));
-  assert.equal(urls.length, cfg.redditSubs.length);
-  assert.ok(urls.every(u => u.endsWith('/top/.rss?t=day')));
-  assert.ok(data.length > 0 || cfg.redditSubs.length === 1);
+  assert.deepEqual(urls.sort(), [
+    'https://www.reddit.com/r/ClaudeAI/top/.rss?t=day',
+    'https://www.reddit.com/r/vibecoding/top/.rss?t=day',
+  ]);
+  assert.equal(data.length, expected);
+  assert.ok(data.every(i => i.sub === 'ClaudeAI'));
+});
+
+test('redditCollector.run throws when every sub fails', async () => {
+  const fake = async () => new Response('no', { status: 500 });
+  await assert.rejects(redditCollector.run(ctxWith(fake)));
+});
+
+test('hnCollector.run survives one failing item fetch', async () => {
+  const fake = async (url: string) => {
+    if (url.endsWith('topstories.json')) return new Response(JSON.stringify([1, 2, 3]));
+    if (url.endsWith('/2.json')) return new Response('boom', { status: 500 });
+    if (url.endsWith('/3.json')) return new Response('not json');
+    return new Response(JSON.stringify({ type: 'story', id: 1, title: 'ok', url: 'https://a.example/x', score: 1, descendants: 0 }));
+  };
+  const { data } = await hnCollector.run(ctxWith(fake));
+  assert.deepEqual(data.map(d => d.id), [1]);
+});
+
+test('hnCollector.run throws when topstories or every item fails', async () => {
+  await assert.rejects(hnCollector.run(ctxWith(async () => new Response('x', { status: 500 }))));
+  const fake = async (url: string) =>
+    url.endsWith('topstories.json') ? new Response('[1,2]') : new Response('x', { status: 500 });
+  await assert.rejects(hnCollector.run(ctxWith(fake)));
+});
+
+test('parseHnItem falls back to hnUrl for non-http url', () => {
+  const s = parseHnItem({ type: 'story', id: 9, title: 't', url: 'javascript:alert(1)' })!;
+  assert.equal(s.url, 'https://news.ycombinator.com/item?id=9');
+});
+
+const atom = (entries: string) => '<feed xmlns="http://www.w3.org/2005/Atom">' + entries + '</feed>';
+const BAD = [
+  '<entry><id>a</id><title>no link</title></entry>',
+  '<entry><id>b</id><link href="https://x.example/b"/></entry>',
+  '<entry><id>c</id><title>bad scheme</title><link href="javascript:alert(1)"/></entry>',
+].join('');
+const GOOD = '<entry><id>g</id><title>good</title><link href="https://x.example/g"/></entry>';
+
+test('GeekNews/Reddit parsers skip malformed entries', () => {
+  assert.deepEqual(parseGeekNewsRss(atom(BAD + GOOD)).map(i => i.title), ['good']);
+  assert.deepEqual(parseRedditRss(atom(BAD + GOOD), 'S').map(i => i.title), ['good']);
+});
+
+test('parseArxivAtom skips entries without id/title and fixes non-http link', () => {
+  const xml = atom(
+    '<entry><id>http://arxiv.org/abs/2610.00001v1</id><link href="ftp://x"/></entry>' +
+    '<entry><id>http://arxiv.org/abs/2610.00002v1</id><title>t2</title><link href="ftp://x"/><published>2026-10-21T00:00:00Z</published></entry>' +
+    '<entry><id>junk</id><title>t3</title></entry>',
+  );
+  const p = parseArxivAtom(xml);
+  assert.equal(p.length, 1);
+  assert.equal(p[0].id, '2610.00002');
+  assert.equal(p[0].url, 'https://arxiv.org/abs/2610.00002');
 });
 
 test('arxivCollector.run builds the expected query', async () => {

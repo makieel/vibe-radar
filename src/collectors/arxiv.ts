@@ -11,11 +11,12 @@ export function parseArxivAtom(xml: string): Paper[] {
     if (!m || !title) continue;
     const id = m[1];
     const category = e['arxiv:primary_category']?.['@_term'];
+    const href = linkHref(e.link);
     out.push({
       id,
       title,
       category: typeof category === 'string' ? category : '',
-      url: linkHref(e.link) || `https://arxiv.org/abs/${id}`,
+      url: /^https?:\/\//i.test(href) ? href : `https://arxiv.org/abs/${id}`,
       publishedAt: textOf(e.published),
     });
   }
