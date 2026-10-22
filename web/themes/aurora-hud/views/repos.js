@@ -50,6 +50,13 @@ function keywordChip(k, fmt) {
   return `<span class="kw${cls}">${fmt.esc(text(k.term))}${tail ? `<b>${fmt.esc(tail)}</b>` : ''}</span>`;
 }
 
+/** avg7이 하나도 없으면(기록 7일 미만) 오늘 빈도 기준임을, 있으면 7일 평균 대비 증가 기준임을 밝힌다. */
+function keywordCaption(report, keywords) {
+  if (keywords.some((k) => isNum(k.avg7))) return '지난 7일 평균보다 늘어난 단어';
+  const days = isNum(report.gauge?.daysOfHistory) ? report.gauge.daysOfHistory : 0;
+  return `기록 쌓는 중 (${days}/7일) · 오늘 많이 나온 단어`;
+}
+
 export function repos(ctx) {
   const { fmt } = ctx;
   const report = ctx.report ?? {};
@@ -66,7 +73,7 @@ export function repos(ctx) {
     </div>
     <section class="hud t2 span3">
       <div class="lab">오늘의 키워드</div>
-      ${keywords.length ? `<div class="kws">${keywords.map((k) => keywordChip(k, fmt)).join('')}</div>` : '<p class="empty">아직 모인 키워드가 없어요</p>'}
+      ${keywords.length ? `<p class="cap">${fmt.esc(keywordCaption(report, keywords))}</p><div class="kws">${keywords.map((k) => keywordChip(k, fmt)).join('')}</div>` : '<p class="empty">아직 모인 키워드가 없어요</p>'}
     </section>
   </div>`;
 }

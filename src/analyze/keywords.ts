@@ -1,18 +1,25 @@
 import type { KeywordTrend } from '../schema.ts';
 import { tokenSequence } from '../lib/text.ts';
 
-// Document frequency of unigrams and adjacent-token bigrams ("a b").
+/**
+ * Document frequency of unigrams and adjacent-token bigrams ("a b").
+ * A plural token `xs` is folded into `x` only when `x` itself occurs in the same document set
+ * (agents → agent when "agent" appears; "kubernetes" stays).
+ */
 export function extractTerms(docs: string[]): Map<string, number> {
+  const seqs = docs.map((doc) => tokenSequence(doc));
+  const vocab = new Set<string>();
+  for (const seq of seqs) for (const t of seq) if (t.keep) vocab.add(t.token);
+  const fold = (t: string): string => (t.length > 2 && t.endsWith('s') && !t.endsWith('ss') && vocab.has(t.slice(0, -1)) ? t.slice(0, -1) : t);
   const counts = new Map<string, number>();
-  for (const doc of docs) {
-    const seq = tokenSequence(doc);
+  for (const seq of seqs) {
     const terms = new Set<string>();
     for (let i = 0; i < seq.length; i++) {
       const cur = seq[i]!;
       if (!cur.keep) continue;
-      terms.add(cur.token);
+      terms.add(fold(cur.token));
       const next = seq[i + 1];
-      if (next?.keep) terms.add(`${cur.token} ${next.token}`);
+      if (next?.keep) terms.add(`${fold(cur.token)} ${fold(next.token)}`);
     }
     for (const t of terms) counts.set(t, (counts.get(t) ?? 0) + 1);
   }
@@ -40,6 +47,8 @@ export function keywordTrends(
       isNew: previous.length >= 1 && previous.every((m) => !m.has(term)),
     });
   }
-  trends.sort((a, b) => b.today - a.today || (b.delta ?? 0) - (a.delta ?? 0) || a.term.localeCompare(b.term));
+  // With 7 days of history the list is "rising" words (delta desc); before that, today's most frequent words.
+  if (previous.length >= 7) trends.sort((a, b) => b.delta! - a.delta! || b.today - a.today || a.term.localeCompare(b.term));
+  else trends.sort((a, b) => b.today - a.today || a.term.localeCompare(b.term));
   return trends.slice(0, topN);
 }

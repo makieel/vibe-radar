@@ -36,6 +36,32 @@ test('keywordTrends computes avg7, delta and isNew', () => {
   assert.equal(rust.isNew, false);
   assert.equal(out.find((t) => t.term === 'zig')!.isNew, true);
 });
+test('keywordTrends with avg7 orders by delta desc (then today desc) before cutting topN', () => {
+  const prev = Array.from({ length: 7 }, () => new Map([['big', 10], ['mid', 2]]));
+  const today = new Map([['big', 11], ['mid', 5], ['fresh', 3], ['fresh2', 3], ['tiny', 1]]);
+  const out = keywordTrends(today, prev, 3);
+  assert.deepEqual(out.map((t) => t.term), ['mid', 'fresh', 'fresh2']);
+  assert.deepEqual(out.map((t) => t.delta), [3, 3, 3]);
+  const deltaWins = keywordTrends(new Map([['a1x', 3], ['b1x', 4]]), Array.from({ length: 7 }, () => new Map([['b1x', 2]])));
+  assert.deepEqual(deltaWins.map((t) => t.term), ['a1x', 'b1x']);
+  const byToday = keywordTrends(new Map([['c1x', 6], ['d1x', 7]]), Array.from({ length: 7 }, () => new Map([['c1x', 1], ['d1x', 2]])));
+  assert.deepEqual(byToday.map((t) => t.term), ['d1x', 'c1x']);
+});
+test('keywordTrends without avg7 orders by today desc', () => {
+  const out = keywordTrends(new Map([['low', 1], ['high', 9], ['mid', 4]]), [new Map([['high', 9]])]);
+  assert.deepEqual(out.map((t) => t.term), ['high', 'mid', 'low']);
+});
+test('extractTerms folds a plural into its singular only when the singular occurs too', () => {
+  const m = extractTerms(['coding agents everywhere', 'agent loop', 'agents agent', 'kubernetes rollout']);
+  assert.equal(m.get('agent'), 3);
+  assert.equal(m.has('agents'), false);
+  assert.equal(m.get('coding agent'), 1);
+  assert.equal(m.get('kubernetes'), 1);
+  assert.equal(m.has('kubernete'), false);
+  const alone = extractTerms(['many agents here']);
+  assert.equal(alone.get('agents'), 1);
+  assert.equal(alone.has('agent'), false);
+});
 test('keywordTrends isNew false with no history, and honors topN', () => {
   const out = keywordTrends(new Map([['a1x', 3], ['b1x', 2], ['c1x', 1]]), [], 2);
   assert.deepEqual(out.map((t) => t.term), ['a1x', 'b1x']);

@@ -25,14 +25,13 @@ export interface ReportInput {
   scanNo: number;
 }
 
-/** Same document set for today and for previous days. */
+/** Same document set for today and for previous days. arXiv titles are left out (papers have their own view). */
 export function keywordDocs(raw: RawSnapshot): string[] {
   return [
     ...raw.hn.map((x) => x.title),
     ...raw.geeknews.map((x) => x.title),
     ...raw.reddit.map((x) => x.title),
     ...raw.trending.flatMap((x) => (x.description ? [x.description] : [])),
-    ...raw.arxiv.map((x) => x.title),
   ];
 }
 

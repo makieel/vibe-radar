@@ -330,6 +330,19 @@ test('keyword chips: delta arrows, 신규, or today frequency', () => {
   assert.ok(html.includes('plain<b>26</b>'));
 });
 
+test('keyword caption: history-building note without avg7, rising note with avg7', () => {
+  const r = clone();
+  r.gauge = { ...r.gauge, daysOfHistory: 3 };
+  r.keywords = [{ term: 'k', today: 5, avg7: null, delta: null, isNew: false }];
+  let html = page(r, 'repos');
+  assert.ok(html.includes('기록 쌓는 중 (3/7일) · 오늘 많이 나온 단어'));
+  assert.ok(!html.includes('지난 7일 평균보다 늘어난 단어'));
+  r.keywords = [{ term: 'k', today: 5, avg7: 2, delta: 3, isNew: false }];
+  html = page(r, 'repos');
+  assert.ok(html.includes('지난 7일 평균보다 늘어난 단어'));
+  assert.ok(!html.includes('기록 쌓는 중'));
+});
+
 test('sources view: three columns with metadata', () => {
   const r = clone();
   const html = page(r, 'sources');

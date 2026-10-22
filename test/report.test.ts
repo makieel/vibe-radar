@@ -7,7 +7,7 @@ import { readFileSync } from 'node:fs';
 import { loadConfig } from '../src/config.ts';
 import { DailyReportSchema, RawSnapshotSchema, type DailyReport, type Issue, type RawSnapshot } from '../src/schema.ts';
 import type { StarHistory } from '../src/collectors/types.ts';
-import { analyzeDate, buildDailyReport } from '../src/analyze/report.ts';
+import { analyzeDate, buildDailyReport, keywordDocs } from '../src/analyze/report.ts';
 import { computeGauge } from '../src/analyze/gauge.ts';
 import { pickAlerts } from '../src/analyze/alerts.ts';
 import { risingRepos, repoChanges } from '../src/analyze/repos.ts';
@@ -123,6 +123,18 @@ test('toolCards: every configured tool gets a card; a tool without a release is 
   assert.deepEqual(codex, { tool: 'codex', name: 'Codex CLI', version: null, publishedAt: null, url: null, note: null, note_ko: null, isRecent: false });
   assert.equal(cards[0]!.tool, 'cursor');
   assert.equal(cards.at(-2)!.tool, 'copilot');
+});
+
+test('keywordDocs: HN, GeekNews, Reddit titles and trending descriptions, never arXiv titles', () => {
+  const news = (id: string, source: 'geeknews' | 'reddit', title: string) => ({ id, source, title, url: `https://e.test/${id}`, domain: 'e.test', sub: null, publishedAt: null });
+  const raw = makeRaw({
+    hn: [hn(1, 'hn title', 'https://e.test/1', 1)],
+    geeknews: [news('g', 'geeknews', 'gn title')],
+    reddit: [news('r', 'reddit', 'rd title')],
+    trending: [{ fullName: 'a/b', url: 'https://github.com/a/b', description: 'repo desc', language: null, stars: 1, starsInPeriod: 1, period: 'daily' }],
+    arxiv: [{ id: 'p', title: 'paper title', category: 'cs.AI', url: 'https://arxiv.org/abs/p', publishedAt: '2026-10-22' }],
+  });
+  assert.deepEqual(keywordDocs(raw).sort(), ['gn title', 'hn title', 'rd title', 'repo desc']);
 });
 
 test('risingRepos prefers history delta when 7-day-old point exists', () => {
