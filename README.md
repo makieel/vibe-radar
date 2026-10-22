@@ -15,10 +15,10 @@
 
 ```
 npm install
-npm run collect
-npm run build
-npm run serve
+npm run collect && npm run analyze && npm run build && npm run serve
 ```
+
+`npm run build`도 raw가 daily보다 새로우면(같은 날 다시 수집했으면) 그날을 자동으로 다시 분석하지만, 분석 단계를 분명히 하려고 `npm run analyze`를 따로 적어 둔다.
 
 브라우저에서 http://localhost:4173 을 연다. 테스트는 `npm test`, 타입 검사는 `npm run typecheck`다.
 
@@ -26,17 +26,19 @@ npm run serve
 
 `.github/workflows/daily.yml`이 매일 00:00 UTC(한국 시간 09:00)에 수집·분석·요약·빌드를 돌리고, `data/`를 커밋한 뒤 Pages에 배포한다. `main`에 `web/**`나 `src/**` 변경이 push되면 수집 없이 빌드와 배포만 한다.
 
-새 공개 저장소에 올리는 절차는 다음과 같다.
+새 공개 저장소에 올리는 절차는 다음과 같다. **Pages 설정을 push보다 먼저** 해야 한다. 그러지 않으면 첫 push로 시작된 워크플로가 배포 단계에서 실패한다.
 
 1. GitHub 웹에서 새 **공개(Public)** 저장소를 만든다. README나 .gitignore는 추가하지 않는다.
-2. 로컬에서 원격을 연결하고 push한다.
+2. 저장소 **Settings → Pages → Source**를 **GitHub Actions**로 먼저 설정한다.
+3. 로컬에서 원격을 연결하고 push한다. 작업은 `feat/vibe-radar` 브랜치에 있으므로 원격 `main`으로 올린다(또는 먼저 `main`에 병합한 뒤 `git push -u origin main`).
    ```
    git remote add origin https://github.com/<사용자>/<저장소>.git
-   git push -u origin main
+   git push -u origin feat/vibe-radar:main
    ```
-3. 저장소 **Settings → Pages → Source**를 **GitHub Actions**로 설정한다.
 4. **Actions** 탭에서 `daily` 워크플로를 열고 **Run workflow**로 한 번 수동 실행한다.
 5. 실행이 끝나면 배포 URL이 job 요약에 표시된다.
+
+GitHub는 저장소에 60일 동안 활동이 없으면 예약(schedule) 워크플로를 끈다. 그러면 **Actions** 탭에서 `daily`를 다시 켠다.
 
 ## 축소 모드(reduced)
 
