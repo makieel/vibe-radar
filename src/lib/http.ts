@@ -7,6 +7,8 @@ export interface FetchOpts {
   headers?: Record<string, string>;
   method?: string;
   body?: string;
+  /** Extra abort signal (e.g. a caller's time budget), combined with the per-request timeout. */
+  signal?: AbortSignal;
 }
 
 export const USER_AGENT = 'vibe-radar/1.0 (+https://github.com)';
@@ -40,7 +42,9 @@ export async function fetchText(url: string, opts: FetchOpts = {}): Promise<stri
     headers,
     ...(opts.method ? { method: opts.method } : {}),
     ...(opts.body !== undefined ? { body: opts.body } : {}),
-    signal: AbortSignal.timeout(opts.timeoutMs ?? DEFAULT_TIMEOUT_MS),
+    signal: opts.signal
+      ? AbortSignal.any([opts.signal, AbortSignal.timeout(opts.timeoutMs ?? DEFAULT_TIMEOUT_MS)])
+      : AbortSignal.timeout(opts.timeoutMs ?? DEFAULT_TIMEOUT_MS),
   });
   if (!res.ok) throw new HttpError(res.status, url);
   return await res.text();

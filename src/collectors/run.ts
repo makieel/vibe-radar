@@ -1,11 +1,15 @@
 import type { RawSnapshot, SourceId, SourceStatus } from '../schema.ts';
+import { STARS_BUDGET_MS } from './stars.ts';
 import type { CollectCtx, Collector, StarHistory } from './types.ts';
 
 export const COLLECTOR_TIMEOUT_MS = 30_000;
+/** `stars` manages its own time budget; this outer timeout is only a safety net. */
+export const STARS_SAFETY_TIMEOUT_MS = STARS_BUDGET_MS + 30_000;
 const NON_EMPTY_IDS = new Set<SourceId>(['trending', 'hn', 'tools']);
 
 export interface RunOpts {
   failIds?: Set<SourceId>;
+  /** Per-collector timeout; does not apply to `stars` (see STARS_SAFETY_TIMEOUT_MS). */
   timeoutMs?: number;
 }
 
@@ -48,7 +52,8 @@ function failure(c: Collector<any>, error: string): Outcome {
 async function runOne(c: Collector<any>, ctx: CollectCtx, opts: RunOpts): Promise<Outcome> {
   if (opts.failIds?.has(c.id)) return failure(c, 'forced failure');
   try {
-    const { data, reduced } = await withTimeout(Promise.resolve().then(() => c.run(ctx)), opts.timeoutMs ?? COLLECTOR_TIMEOUT_MS);
+    const ms = c.id === 'stars' ? STARS_SAFETY_TIMEOUT_MS : (opts.timeoutMs ?? COLLECTOR_TIMEOUT_MS);
+    const { data, reduced } = await withTimeout(Promise.resolve().then(() => c.run(ctx)), ms);
     const count = countOf(data);
     if (count === 0 && NON_EMPTY_IDS.has(c.id)) {
       return { status: { id: c.id, ok: false, count: 0, error: 'parsed 0 items', reduced }, key: c.key, data: emptyValue(c.key) };

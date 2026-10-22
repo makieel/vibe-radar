@@ -58,6 +58,15 @@ test('timeout marks collector failed', async () => {
   assert.match(snapshot.sources[0].error!, /timeout/);
 });
 
+test('stars is not cut by the per-collector timeout (it has its own budget)', async () => {
+  const stars: Collector<'stars'> = { id: 'stars', key: 'stars', run: () => new Promise(r => setTimeout(() => r({ data: { 'x/y': 1 }, reduced: true }), 60)) };
+  const { snapshot } = await runCollectors([stars], ctx(), { timeoutMs: 20 });
+  const s = snapshot.sources[0];
+  assert.equal(s.ok, true);
+  assert.equal(s.reduced, true);
+  assert.deepEqual(snapshot.stars, { 'x/y': 1 });
+});
+
 test('stars runs last with trendingToday filled and count = key count', async () => {
   let seen: string[] = [];
   const trending: Collector<'trending'> = { id: 'trending', key: 'trending', run: async () => ({ data: [repo('a/b', 10)], reduced: false }) };

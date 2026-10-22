@@ -5,7 +5,7 @@ import { parseTrendingHtml, trendingCollector } from '../src/collectors/trending
 import { parseGhRelease, parseCopilotFeed, parseCursorChangelog, toolsCollector } from '../src/collectors/tools.ts';
 import { parseAdvisories, advisoriesCollector } from '../src/collectors/advisories.ts';
 import { parseSearch, kitCollector } from '../src/collectors/kit.ts';
-import { starsTargets, starsCollector } from '../src/collectors/stars.ts';
+import { starsTargets, starsCollector, makeStarsCollector, STARS_BUDGET_MS } from '../src/collectors/stars.ts';
 import { ALL_COLLECTORS } from '../src/collectors/index.ts';
 import { loadConfig } from '../src/config.ts';
 import type { CollectCtx, StarHistory } from '../src/collectors/types.ts';
@@ -264,6 +264,28 @@ test('stars collector in full mode fetches each target once with concurrency ≤
   assert.equal('o/r3' in data, false);
   await assert.rejects(starsCollector.run(ctxWith(async () => fail(), { mode: 'full', history })));
   assert.deepEqual((await starsCollector.run(ctxWith(async () => { throw new Error('no'); }, { mode: 'full' }))).data, {});
+});
+
+test('stars collector stops at its time budget and returns what it has with reduced:true', async () => {
+  assert.equal(STARS_BUDGET_MS, 240_000);
+  const history: StarHistory = {};
+  for (let i = 0; i < 40; i++) history[`o/r${i}`] = { firstSeen: '2026-10-01', lastTrending: '2026-10-15', series: {} };
+  const urls: string[] = [];
+  const f = async (input: unknown, init?: { signal?: AbortSignal }) => {
+    urls.push(String(input));
+    // First wave answers fast; later requests hang until aborted.
+    if (urls.length <= 5) return ok(JSON.stringify({ stargazers_count: 7 }));
+    return new Promise<Response>((_, reject) => {
+      init?.signal?.addEventListener('abort', () => reject(init.signal!.reason), { once: true });
+    });
+  };
+  const started = Date.now();
+  const { data, reduced } = await makeStarsCollector(50).run(ctxWith(f, { mode: 'full', token: 't', history }));
+  assert.ok(Date.now() - started < 2_000, 'returns promptly after the budget');
+  assert.equal(reduced, true);
+  assert.equal(Object.keys(data).length, 5);
+  assert.ok(Object.values(data).every(v => v === 7));
+  assert.ok(urls.length < 40, `stopped dispatching (made ${urls.length})`);
 });
 
 test('ALL_COLLECTORS has the 10 sources, stars last', () => {
