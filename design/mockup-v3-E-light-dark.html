@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="ko" data-mode="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>E · 오로라 HUD — 라이트/다크</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+<style>
+  :root, [data-mode="dark"] {
+    --bg: #070814;
+    --au1: rgba(124,58,237,.55); --au2: rgba(6,182,212,.45); --au3: rgba(236,72,153,.35);
+    --panel: rgba(10,12,30,.55); --line: rgba(165,243,252,.14); --row: rgba(255,255,255,.06); --chip: rgba(255,255,255,.05);
+    --text: #eaf2ff; --text2: #c7d2fe; --text3: #8b9bc4; --nav: #b6c2e0; --navon: rgba(255,255,255,.12);
+    --cyan: #67e8f9; --violet: #c4b5fd; --pink: #f0abfc; --green: #86efac; --amber: #fcd34d; --red: #fb7185;
+    --alertbg: rgba(80,10,30,.55); --alerttext: #fecdd3; --whybg: rgba(240,171,252,.08); --whytext: #f5d0fe;
+    --g1: #fff; --g2: #f0abfc; --ringbg: rgba(255,255,255,.08); --scan: rgba(103,232,249,.18);
+    --shadow: none;
+  }
+  [data-mode="light"] {
+    --bg: #f3f5fc;
+    --au1: rgba(167,139,250,.38); --au2: rgba(34,211,238,.30); --au3: rgba(244,114,182,.26);
+    --panel: rgba(255,255,255,.72); --line: rgba(8,145,178,.20); --row: rgba(15,23,42,.07); --chip: rgba(255,255,255,.8);
+    --text: #0f172a; --text2: #334155; --text3: #64748b; --nav: #475569; --navon: rgba(15,23,42,.08);
+    --cyan: #0e7490; --violet: #6d28d9; --pink: #a21caf; --green: #047857; --amber: #b45309; --red: #e11d48;
+    --alertbg: rgba(255,241,243,.9); --alerttext: #9f1239; --whybg: rgba(192,38,211,.07); --whytext: #86198f;
+    --g1: #4c1d95; --g2: #c026d3; --ringbg: rgba(15,23,42,.07); --scan: rgba(8,145,178,.12);
+    --shadow: 0 10px 30px rgba(76,29,149,.08);
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: Pretendard, system-ui, sans-serif; min-height: 100vh; color: var(--text);
+    background: radial-gradient(900px 520px at 0% 0%, var(--au1), transparent 60%),
+                radial-gradient(800px 500px at 100% 10%, var(--au2), transparent 60%),
+                radial-gradient(900px 600px at 60% 110%, var(--au3), transparent 60%), var(--bg);
+    background-attachment: fixed; transition: background-color .4s, color .4s; }
+  @keyframes blink { 50% { opacity: .25; } }
+  @keyframes scan { 0% { transform: translateY(-100%); } 100% { transform: translateY(100%); } }
+
+  .note { font-size: 12px; text-align: center; padding: 8px; background: rgba(0,0,0,.75); color: #ddd; }
+  .note b { color: #fff; }
+  .wrap { max-width: 1200px; margin: 0 auto; padding: 26px 24px 60px; }
+  .nav { display: flex; align-items: center; gap: 18px; margin-bottom: 28px; }
+  .logo { font-family: "Space Grotesk"; font-weight: 700; font-size: 21px; letter-spacing: -.5px; }
+  .logo span { color: var(--cyan); }
+  .menu { display: flex; gap: 4px; margin-left: 20px; }
+  .menu span { font-size: 13px; padding: 7px 12px; border-radius: 8px; color: var(--nav); }
+  .menu span.on { background: var(--navon); color: var(--text); font-weight: 700; }
+  .clock { margin-left: auto; font-family: "JetBrains Mono"; font-size: 12px; color: var(--cyan); border: 1px solid var(--line); padding: 6px 10px; border-radius: 6px; }
+
+  /* 토글 */
+  .mode { position: relative; width: 64px; height: 32px; border-radius: 999px; border: 1px solid var(--line); background: var(--panel); cursor: pointer; flex: none; box-shadow: var(--shadow); }
+  .mode .knob { position: absolute; top: 3px; left: 3px; width: 24px; height: 24px; border-radius: 50%; display: grid; place-items: center; font-size: 14px;
+    background: linear-gradient(135deg, #fde68a, #f59e0b); transition: transform .35s cubic-bezier(.4,1.4,.6,1), background .35s; }
+  [data-mode="dark"] .mode .knob { transform: translateX(32px); background: linear-gradient(135deg, #c4b5fd, #6d28d9); }
+  .mode .ico { position: absolute; top: 50%; transform: translateY(-50%); font-size: 12px; opacity: .55; }
+  .mode .ico.sun { left: 9px; } .mode .ico.moon { right: 9px; }
+
+  .hud { position: relative; padding: 20px; background: var(--panel); backdrop-filter: blur(16px); border: 1px solid var(--line); box-shadow: var(--shadow);
+    clip-path: polygon(0 0, calc(100% - 18px) 0, 100% 18px, 100% 100%, 18px 100%, 0 calc(100% - 18px)); transition: background .4s, border-color .4s; }
+  .hud::before, .hud::after { content: ""; position: absolute; width: 14px; height: 14px; border: 2px solid var(--ac, var(--cyan)); }
+  .hud::before { top: 6px; left: 6px; border-right: 0; border-bottom: 0; }
+  .hud::after { bottom: 6px; right: 6px; border-left: 0; border-top: 0; }
+  .lab { font-family: "JetBrains Mono"; font-size: 11px; letter-spacing: 2px; color: var(--ac, var(--cyan)); text-transform: uppercase; margin-bottom: 12px; font-weight: 600; }
+  .top { display: grid; grid-template-columns: 340px 1fr; gap: 16px; margin-bottom: 16px; }
+  .gauge { --ac: var(--pink); text-align: center; display: flex; flex-direction: column; align-items: center; justify-content: center; }
+  .ring { position: relative; width: 210px; height: 210px; }
+  .ring svg { width: 100%; height: 100%; transform: rotate(-90deg); }
+  .ring .bgc { stroke: var(--ringbg); }
+  .ring .dash { stroke: var(--line); }
+  .ring .val { position: absolute; inset: 0; display: grid; place-items: center; align-content: center; }
+  .ring .val b { font-family: "Space Grotesk"; font-size: 64px; line-height: 1; background: linear-gradient(180deg, var(--g1), var(--g2)); -webkit-background-clip: text; color: transparent; }
+  .ring .val small { font-size: 12px; color: var(--violet); margin-top: 6px; font-weight: 600; }
+  .gauge p { font-size: 13px; color: var(--text2); margin-top: 14px; line-height: 1.55; }
+  .lead { --ac: var(--cyan); overflow: hidden; }
+  .lead .scanl { position: absolute; inset: 0; background: linear-gradient(180deg, transparent 48%, var(--scan) 50%, transparent 52%); animation: scan 5s linear infinite; pointer-events: none; }
+  .lead h3 { font-size: 32px; font-weight: 900; letter-spacing: -1px; line-height: 1.22; margin-bottom: 12px; }
+  .lead h3 em { font-style: normal; color: var(--cyan); }
+  .lead p { font-size: 14.5px; color: var(--text2); line-height: 1.7; max-width: 640px; }
+  .lead .why { margin-top: 14px; border-left: 3px solid var(--pink); padding: 8px 14px; background: var(--whybg); font-size: 13.5px; color: var(--whytext); }
+  .lead .more { display: flex; gap: 10px; margin-top: 16px; }
+  .lead .more div { flex: 1; padding: 10px 12px; background: var(--chip); border: 1px solid var(--row); font-size: 13px; }
+  .lead .more b { font-family: "JetBrains Mono"; color: var(--cyan); margin-right: 6px; }
+  .grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+  .alert { --ac: var(--red); grid-column: span 3; display: flex; align-items: center; gap: 16px; background: var(--alertbg); border-color: color-mix(in srgb, var(--red) 45%, transparent); }
+  .alert .lab { margin: 0; }
+  .alert .dot { width: 12px; height: 12px; border-radius: 50%; background: var(--red); animation: blink 1s infinite; flex: none; }
+  .alert b { font-size: 16px; }
+  .alert .s { color: var(--alerttext); font-size: 13px; margin-left: auto; }
+  .row { display: flex; justify-content: space-between; align-items: center; padding: 9px 0; border-bottom: 1px solid var(--row); font-size: 13.5px; }
+  .row:last-child { border: 0; }
+  .row small { display: block; color: var(--text3); font-size: 12px; }
+  .row .m { font-family: "JetBrains Mono"; font-size: 12px; color: var(--cyan); font-weight: 600; }
+  .row .up { font-family: "JetBrains Mono"; font-size: 12px; color: var(--green); font-weight: 600; }
+  .t2 { --ac: var(--violet); } .t3 { --ac: var(--green); } .t4 { --ac: var(--amber); }
+  .sample { font-size: 10px; padding: 1px 6px; border-radius: 4px; background: rgba(245,197,66,.22); color: #b7791f; margin-left: 6px; font-weight: 600; letter-spacing: 0; text-transform: none; font-family: Pretendard; }
+  [data-mode="dark"] .sample { color: #f5c542; }
+
+  @media (prefers-reduced-motion: reduce) { .lead .scanl, .alert .dot { animation: none; } .mode .knob { transition: none; } }
+  @media (max-width: 900px) {
+    .top, .grid { grid-template-columns: 1fr; }
+    .alert { grid-column: auto; flex-wrap: wrap; }
+    .menu, .clock { display: none; }
+    .mode { margin-left: auto; }
+    .lead h3 { font-size: 26px; }
+    .lead .more { flex-direction: column; }
+  }
+</style>
+</head>
+<body>
+<div class="note">E · 오로라 HUD 라이트/다크 시안 — 오른쪽 위 <b>토글 버튼</b>을 눌러 보세요. 처음에는 기기의 라이트/다크 설정을 따라가요.</div>
+<div class="wrap">
+  <div class="nav">
+    <div class="logo">vibe<span>/</span>radar</div>
+    <div class="menu"><span class="on">브리핑</span><span>도구</span><span>재료</span><span>레포</span><span>논문</span></div>
+    <div class="clock">2026.10.22 THU · 09:08 KST · SCAN #003</div>
+    <button class="mode" id="mode" aria-label="라이트/다크 전환" title="라이트/다크 전환">
+      <span class="ico sun">☀</span><span class="ico moon">☾</span><span class="knob" id="knob">☀</span>
+    </button>
+  </div>
+
+  <div class="top">
+    <div class="hud gauge">
+      <div class="lab">오늘의 개발판 열기</div>
+      <div class="ring">
+        <svg viewBox="0 0 120 120"><defs><linearGradient id="rg" x1="0" x2="1"><stop offset="0" stop-color="#22d3ee"/><stop offset=".5" stop-color="#8b5cf6"/><stop offset="1" stop-color="#e879f9"/></linearGradient></defs>
+          <circle class="bgc" cx="60" cy="60" r="50" fill="none" stroke-width="10"/>
+          <circle cx="60" cy="60" r="50" fill="none" stroke="url(#rg)" stroke-width="10" stroke-linecap="round" stroke-dasharray="314" stroke-dashoffset="41"/>
+          <circle class="dash" cx="60" cy="60" r="38" fill="none" stroke-width="1" stroke-dasharray="2 4"/></svg>
+        <div class="val"><b>87</b><small>평소보다 뜨거움</small></div>
+      </div>
+      <p>보안 이슈 2건이 동시에 터져 평소보다 높아요. 지난 7일 평균 64.</p>
+    </div>
+    <div class="hud lead">
+      <div class="scanl"></div>
+      <div class="lab">● Top signal · AI 요약</div>
+      <h3>PHP 긴급 보안 릴리즈,<br><em>HN 1·2위 동시 점령</em></h3>
+      <p>PHP 8.2.35가 공개되며 Hacker News 974점과 682점을 나란히 기록했어요. PHP 재단은 같은 날 보안 대응 체계 개편을 발표했어요. 두 글의 댓글은 합쳐서 870개를 넘었어요.</p>
+      <div class="why">바이브코더 체크 — AI가 만든 PHP 백엔드를 공유 호스팅에 올렸다면 런타임 버전을 직접 확인하세요.</div>
+      <div class="more"><div><b>02</b>LiteLLM 공급망 공격</div><div><b>03</b>Claude Duet 공개</div><div><b>04</b>CLI-Anything 급부상</div></div>
+    </div>
+  </div>
+
+  <div class="grid">
+    <div class="hud alert"><div class="dot"></div><div class="lab">Threat</div><b>LiteLLM 1.107.0 PyPI 배포판에 자격증명 탈취 백도어</b><span class="s">safedep.io · HN 440pt</span></div>
+    <div class="hud t2">
+      <div class="lab">AI 코딩 도구 <span class="sample">예시</span></div>
+      <div class="row"><div>Claude Code<small>서브에이전트 병렬화</small></div><span class="m">v3.4.1</span></div>
+      <div class="row"><div>Cursor<small>Background Agent 요금</small></div><span class="m">v2.9</span></div>
+      <div class="row"><div>Codex CLI<small>MCP 자동 탐색</small></div><span class="m">v0.61</span></div>
+      <div class="row"><div>Gemini CLI<small>컨텍스트 캐싱</small></div><span class="m">v1.2.0</span></div>
+    </div>
+    <div class="hud t3">
+      <div class="lab">급상승 레포 · 7일</div>
+      <div class="row"><div>morluto/rea<small>★358K</small></div><span class="up">+16.0K</span></div>
+      <div class="row"><div>HKUDS/CLI-Anything<small>★56.0K · 신규</small></div><span class="up">+3,681</span></div>
+      <div class="row"><div>cloudflare/security-audit-skill<small>★36.6K</small></div><span class="up">+3,630</span></div>
+      <div class="row"><div>DietrichGebert/ponytail<small>★172K</small></div><span class="up">+3,163</span></div>
+    </div>
+    <div class="hud t4">
+      <div class="lab">바이브코딩 재료</div>
+      <div class="row"><div>security-audit-skill<small>Claude Code 보안 점검 스킬</small></div><span class="m">SKILL</span></div>
+      <div class="row"><div>ai-memory<small>에이전트 간 장기 기억</small></div><span class="m">RUST</span></div>
+      <div class="row"><div>text-to-cad<small>에이전트에게 CAD 능력을</small></div><span class="m">PY</span></div>
+      <div class="row"><div>MCP 신규 12개 <span class="sample">예시</span><small>이번 주 새 MCP 서버</small></div><span class="m">MCP</span></div>
+    </div>
+  </div>
+</div>
+<script>
+  const root = document.documentElement, knob = document.getElementById('knob');
+  const apply = m => { root.dataset.mode = m; knob.textContent = m === 'dark' ? '☾' : '☀'; };
+  apply(matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+  document.getElementById('mode').onclick = () => {
+    const m = root.dataset.mode === 'dark' ? 'light' : 'dark';
+    apply(m);
+    if (window.brainstorm) window.brainstorm.choice(m);
+  };
+</script>
+</body>
+</html>

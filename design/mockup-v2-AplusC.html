@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>디자인 시안 v2 — A+C 결합</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: Pretendard, system-ui, sans-serif; background: #111; color: #eee; }
+  .mono { font-family: "JetBrains Mono", monospace; }
+
+  /* ===== 선택 바 ===== */
+  .picker { position: sticky; top: 0; z-index: 50; background: #0b0b0c; border-bottom: 1px solid #2a2a2e; padding: 14px 24px; display: flex; gap: 10px; align-items: center; flex-wrap: wrap; }
+  .picker h1 { font-size: 15px; font-weight: 700; margin-right: 8px; }
+  .picker .hint { font-size: 12px; color: #888; flex-basis: 100%; }
+  .tab { background: #1c1c20; border: 1px solid #333; color: #ccc; padding: 8px 14px; border-radius: 999px; cursor: pointer; font: inherit; font-size: 13px; }
+  .tab.on { background: #fff; color: #000; border-color: #fff; font-weight: 700; }
+  .pick { margin-left: auto; background: #3b82f6; color: #fff; border: 0; padding: 9px 16px; border-radius: 8px; font: inherit; font-weight: 700; font-size: 13px; cursor: pointer; }
+  .pick.done { background: #22c55e; }
+  .stage { display: none; }
+  .stage.on { display: block; }
+  .sample { font-size: 10px; padding: 1px 6px; border-radius: 4px; background: rgba(255,200,0,.18); color: #f5c542; margin-left: 6px; vertical-align: middle; font-weight: 600; font-family: Pretendard, sans-serif; letter-spacing: 0; text-transform: none; }
+  @keyframes blink { 50% { opacity: .25; } }
+  @keyframes tick { to { transform: translateX(-100%); } }
+  @keyframes scan { 0% { transform: translateY(-100%); } 100% { transform: translateY(100%); } }
+  @keyframes caret { 50% { opacity: 0; } }
+  .ticker { overflow: hidden; white-space: nowrap; font-family: "JetBrains Mono", monospace; font-size: 12px; padding: 7px 0; }
+  .ticker span { display: inline-block; animation: tick 45s linear infinite; padding-left: 100%; }
+
+  /* ===================== D. 네온 벤토 ===================== */
+  #D { background: #05070b; color: #d6e6f5; min-height: 100vh; position: relative; overflow: hidden; }
+  #D .bg { position: absolute; inset: 0; pointer-events: none;
+    background-image: linear-gradient(rgba(0,255,170,.05) 1px, transparent 1px), linear-gradient(90deg, rgba(0,255,170,.05) 1px, transparent 1px);
+    background-size: 36px 36px; mask-image: radial-gradient(ellipse at 50% 0%, #000 25%, transparent 70%); }
+  #D .glow { position: absolute; width: 700px; height: 500px; border-radius: 50%; filter: blur(120px); opacity: .35; pointer-events: none; }
+  #D .ticker { color: #7dffc8; background: rgba(0,255,170,.05); border-bottom: 1px solid rgba(0,255,170,.2); position: relative; }
+  #D .wrap { max-width: 1200px; margin: 0 auto; padding: 24px 24px 60px; position: relative; }
+  #D .nav { display: flex; align-items: center; gap: 16px; margin-bottom: 30px; }
+  #D .logo { font-family: "JetBrains Mono"; font-weight: 800; font-size: 18px; color: #00ffaa; text-shadow: 0 0 14px rgba(0,255,170,.6); }
+  #D .logo b { color: #ff3ea5; text-shadow: 0 0 14px rgba(255,62,165,.6); }
+  #D .search { margin-left: auto; display: flex; align-items: center; gap: 10px; border: 1px solid rgba(255,255,255,.12); background: rgba(255,255,255,.04); border-radius: 10px; padding: 8px 12px; width: 300px; color: #6b7f93; font-size: 13px; }
+  #D .search kbd { margin-left: auto; font-family: "JetBrains Mono"; font-size: 11px; border: 1px solid #334; border-radius: 4px; padding: 1px 6px; }
+  #D .live { font-family: "JetBrains Mono"; font-size: 12px; color: #7dffc8; }
+  #D .live i { display: inline-block; width: 8px; height: 8px; border-radius: 50%; background: #00ffaa; box-shadow: 0 0 10px #00ffaa; margin-right: 6px; animation: blink 1.4s infinite; }
+  #D h2 { font-size: 44px; font-weight: 900; letter-spacing: -1.5px; line-height: 1.12; }
+  #D h2 em { font-style: normal; background: linear-gradient(90deg, #00ffaa, #00c2ff 50%, #ff3ea5); -webkit-background-clip: text; color: transparent; }
+  #D .sub { color: #6f8399; margin: 10px 0 26px; font-size: 14.5px; }
+  #D .bento { display: grid; grid-template-columns: repeat(4, 1fr); grid-auto-rows: 132px; gap: 14px; }
+  #D .c { border-radius: 18px; padding: 18px; background: linear-gradient(180deg, rgba(255,255,255,.055), rgba(255,255,255,.02)); border: 1px solid rgba(255,255,255,.09); backdrop-filter: blur(12px); position: relative; overflow: hidden; transition: border-color .2s, transform .2s; }
+  #D .c:hover { transform: translateY(-2px); border-color: rgba(0,255,170,.45); }
+  #D .c::before { content: ""; position: absolute; top: 0; left: 20px; right: 20px; height: 1px; background: linear-gradient(90deg, transparent, var(--ac, #00ffaa), transparent); box-shadow: 0 0 12px var(--ac, #00ffaa); }
+  #D .lab { font-family: "JetBrains Mono"; font-size: 11px; letter-spacing: 1.2px; color: var(--ac, #00ffaa); margin-bottom: 10px; text-transform: uppercase; display: flex; align-items: center; gap: 6px; }
+  #D .hot { grid-column: span 2; grid-row: span 3; --ac: #00ffaa; }
+  #D .iss { display: grid; grid-template-columns: 38px 1fr; gap: 10px; padding: 13px 0; border-bottom: 1px dashed rgba(255,255,255,.08); }
+  #D .iss:last-child { border: 0; }
+  #D .iss .n { font-family: "JetBrains Mono"; font-weight: 800; font-size: 24px; color: #00ffaa; text-shadow: 0 0 10px rgba(0,255,170,.5); }
+  #D .iss h4 { font-size: 16px; color: #fff; }
+  #D .iss p { font-size: 12.5px; color: #8aa0b6; line-height: 1.55; margin-top: 4px; }
+  #D .heat { display: flex; align-items: center; gap: 8px; margin-top: 8px; font-family: "JetBrains Mono"; font-size: 11px; color: #6f8399; }
+  #D .heat .hb { flex: 1; max-width: 140px; height: 4px; border-radius: 2px; background: rgba(255,255,255,.08); overflow: hidden; }
+  #D .heat .hb i { display: block; height: 100%; background: linear-gradient(90deg, #00ffaa, #ff3ea5); }
+  #D .tg { font-family: "JetBrains Mono"; font-size: 10px; padding: 1px 6px; border-radius: 3px; border: 1px solid; margin-left: 4px; }
+  #D .hn { color: #ff8a3d; border-color: #ff8a3d55; } #D .gh { color: #c8a8ff; border-color: #c8a8ff55; } #D .gn { color: #00ffaa; border-color: #00ffaa55; } #D .rd { color: #ff5e7e; border-color: #ff5e7e55; }
+  #D .alert { grid-column: span 2; --ac: #ff3e5e; background: linear-gradient(120deg, rgba(255,62,94,.22), rgba(255,62,94,.04)); border-color: rgba(255,62,94,.4); box-shadow: 0 0 30px rgba(255,62,94,.12) inset; }
+  #D .alert .lab::after { content: "LIVE"; background: #ff3e5e; color: #fff; padding: 1px 5px; border-radius: 3px; animation: blink 1.2s infinite; }
+  #D .alert h4 { font-size: 18px; color: #fff; }
+  #D .alert p { font-size: 12.5px; color: #ffb3c0; margin-top: 6px; }
+  #D .st { --ac: #00c2ff; }
+  #D .st .v { font-size: 36px; font-weight: 900; letter-spacing: -1px; color: #fff; }
+  #D .st .v small { font-size: 13px; color: #00ffaa; font-family: "JetBrains Mono"; margin-left: 6px; }
+  #D .st svg { position: absolute; left: 0; right: 0; bottom: 0; width: 100%; height: 44px; }
+  #D .tools { grid-column: span 2; grid-row: span 2; --ac: #c8a8ff; }
+  #D .tr { display: flex; align-items: center; gap: 12px; padding: 9px 0; border-bottom: 1px dashed rgba(255,255,255,.08); }
+  #D .tr:last-child { border: 0; }
+  #D .ic { width: 32px; height: 32px; border-radius: 9px; display: grid; place-items: center; font-weight: 900; font-size: 14px; color: #fff; flex: none; }
+  #D .tr b { font-size: 14px; color: #fff; }
+  #D .tr small { display: block; font-size: 12px; color: #7f93a8; }
+  #D .tr .ver { margin-left: auto; font-family: "JetBrains Mono"; font-size: 11.5px; color: #c8a8ff; text-align: right; }
+  #D .tr .ver em { display: block; font-style: normal; color: #55667a; font-size: 10.5px; }
+  #D .rise { grid-column: span 2; grid-row: span 2; --ac: #00c2ff; }
+  #D .bar { display: grid; grid-template-columns: 1fr auto; gap: 4px 10px; font-size: 13px; margin-bottom: 9px; }
+  #D .bar .d { font-family: "JetBrains Mono"; color: #00ffaa; font-size: 12px; }
+  #D .bar .t { grid-column: 1 / 3; height: 6px; border-radius: 3px; background: linear-gradient(90deg, #00c2ff, #00ffaa); box-shadow: 0 0 10px rgba(0,255,170,.4); }
+  #D .mat { grid-column: span 2; --ac: #ffcf3e; }
+  #D .chips { display: flex; flex-wrap: wrap; gap: 7px; }
+  #D .chips span { font-size: 12.5px; padding: 6px 10px; border-radius: 8px; background: rgba(255,255,255,.06); border: 1px solid rgba(255,255,255,.08); }
+  #D .chips span b { font-family: "JetBrains Mono"; font-size: 10.5px; color: #ffcf3e; margin-right: 5px; }
+  #D .kw { grid-column: span 2; --ac: #ff3ea5; }
+  #D .kw .chips span { border-color: rgba(255,62,165,.25); }
+  #D .kw .chips span em { font-style: normal; font-family: "JetBrains Mono"; font-size: 11px; color: #00ffaa; margin-left: 5px; }
+
+  /* ===================== E. 오로라 HUD ===================== */
+  #E { min-height: 100vh; color: #eaf2ff; position: relative; overflow: hidden;
+    background: radial-gradient(900px 520px at 0% 0%, rgba(124,58,237,.55), transparent 60%),
+                radial-gradient(800px 500px at 100% 10%, rgba(6,182,212,.45), transparent 60%),
+                radial-gradient(900px 600px at 60% 110%, rgba(236,72,153,.35), transparent 60%), #070814; }
+  #E .wrap { max-width: 1200px; margin: 0 auto; padding: 26px 24px 60px; position: relative; }
+  #E .nav { display: flex; align-items: center; gap: 18px; margin-bottom: 28px; }
+  #E .logo { font-family: "Space Grotesk"; font-weight: 700; font-size: 21px; letter-spacing: -.5px; }
+  #E .logo span { color: #67e8f9; }
+  #E .menu { display: flex; gap: 4px; margin-left: 20px; }
+  #E .menu span { font-size: 13px; padding: 7px 12px; border-radius: 8px; color: #b6c2e0; }
+  #E .menu span.on { background: rgba(255,255,255,.12); color: #fff; font-weight: 700; }
+  #E .clock { margin-left: auto; font-family: "JetBrains Mono"; font-size: 12px; color: #a5f3fc; border: 1px solid rgba(165,243,252,.3); padding: 6px 10px; border-radius: 6px; }
+  #E .hud { position: relative; padding: 20px; background: rgba(10,12,30,.55); backdrop-filter: blur(16px); border: 1px solid rgba(165,243,252,.14);
+    clip-path: polygon(0 0, calc(100% - 18px) 0, 100% 18px, 100% 100%, 18px 100%, 0 calc(100% - 18px)); }
+  #E .hud::before, #E .hud::after { content: ""; position: absolute; width: 14px; height: 14px; border: 2px solid var(--ac, #67e8f9); }
+  #E .hud::before { top: 6px; left: 6px; border-right: 0; border-bottom: 0; }
+  #E .hud::after { bottom: 6px; right: 6px; border-left: 0; border-top: 0; }
+  #E .lab { font-family: "JetBrains Mono"; font-size: 11px; letter-spacing: 2px; color: var(--ac, #67e8f9); text-transform: uppercase; margin-bottom: 12px; }
+  #E .top { display: grid; grid-template-columns: 340px 1fr; gap: 16px; margin-bottom: 16px; }
+  #E .gauge { --ac: #f0abfc; text-align: center; display: flex; flex-direction: column; align-items: center; justify-content: center; }
+  #E .gauge .ring { position: relative; width: 210px; height: 210px; }
+  #E .gauge .ring svg { width: 100%; height: 100%; transform: rotate(-90deg); }
+  #E .gauge .ring .val { position: absolute; inset: 0; display: grid; place-items: center; align-content: center; }
+  #E .gauge .ring .val b { font-family: "Space Grotesk"; font-size: 64px; line-height: 1; background: linear-gradient(180deg, #fff, #f0abfc); -webkit-background-clip: text; color: transparent; }
+  #E .gauge .ring .val small { font-size: 12px; color: #c4b5fd; margin-top: 6px; }
+  #E .gauge p { font-size: 13px; color: #c7d2fe; margin-top: 14px; line-height: 1.55; }
+  #E .lead { --ac: #67e8f9; overflow: hidden; }
+  #E .lead .scanl { position: absolute; left: 0; right: 0; top: 0; height: 100%; background: linear-gradient(180deg, transparent 0%, rgba(103,232,249,.07) 48%, rgba(103,232,249,.18) 50%, transparent 52%); animation: scan 5s linear infinite; pointer-events: none; }
+  #E .lead h3 { font-size: 32px; font-weight: 900; letter-spacing: -1px; line-height: 1.22; margin-bottom: 12px; }
+  #E .lead h3 em { font-style: normal; color: #67e8f9; }
+  #E .lead p { font-size: 14.5px; color: #c7d2fe; line-height: 1.7; max-width: 640px; }
+  #E .lead .why { margin-top: 14px; border-left: 3px solid #f0abfc; padding: 8px 14px; background: rgba(240,171,252,.08); font-size: 13.5px; color: #f5d0fe; }
+  #E .lead .more { display: flex; gap: 10px; margin-top: 16px; }
+  #E .lead .more div { flex: 1; padding: 10px 12px; background: rgba(255,255,255,.05); border: 1px solid rgba(255,255,255,.08); font-size: 13px; }
+  #E .lead .more b { font-family: "JetBrains Mono"; color: #67e8f9; margin-right: 6px; }
+  #E .grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+  #E .alert { --ac: #fb7185; grid-column: span 3; display: flex; align-items: center; gap: 16px; background: rgba(80,10,30,.55); border-color: rgba(251,113,133,.4); }
+  #E .alert .lab { margin: 0; }
+  #E .alert .dot { width: 12px; height: 12px; border-radius: 50%; background: #fb7185; box-shadow: 0 0 0 0 rgba(251,113,133,.7); animation: blink 1s infinite; flex: none; }
+  #E .alert b { font-size: 16px; }
+  #E .alert span.s { color: #fecdd3; font-size: 13px; margin-left: auto; }
+  #E .row { display: flex; justify-content: space-between; align-items: center; padding: 9px 0; border-bottom: 1px solid rgba(255,255,255,.06); font-size: 13.5px; }
+  #E .row:last-child { border: 0; }
+  #E .row small { display: block; color: #8b9bc4; font-size: 12px; }
+  #E .row .m { font-family: "JetBrains Mono"; font-size: 12px; color: #a5f3fc; }
+  #E .row .up { font-family: "JetBrains Mono"; font-size: 12px; color: #86efac; }
+  #E .t2 { --ac: #c4b5fd; } #E .t3 { --ac: #86efac; } #E .t4 { --ac: #fcd34d; }
+
+  /* ===================== F. 터미널 데스크톱 ===================== */
+  #F { min-height: 100vh; color: #e5e7eb; position: relative;
+    background: radial-gradient(1000px 600px at 15% 0%, #4c1d95 0%, transparent 60%),
+                radial-gradient(900px 600px at 100% 30%, #0f766e 0%, transparent 60%),
+                radial-gradient(700px 500px at 40% 110%, #9d174d 0%, transparent 60%), #0b0b16; }
+  #F .menubar { display: flex; align-items: center; gap: 18px; padding: 7px 18px; background: rgba(0,0,0,.45); backdrop-filter: blur(18px); font-size: 12.5px; color: #d1d5db; border-bottom: 1px solid rgba(255,255,255,.08); }
+  #F .menubar b { color: #fff; }
+  #F .menubar .r { margin-left: auto; display: flex; gap: 16px; font-family: "JetBrains Mono"; font-size: 12px; }
+  #F .menubar .r .on { color: #34d399; }
+  #F .wrap { max-width: 1240px; margin: 0 auto; padding: 26px 24px 90px; }
+  #F .hello { font-family: "JetBrains Mono"; font-size: 13px; color: #a7f3d0; margin-bottom: 6px; }
+  #F h2 { font-size: 40px; font-weight: 900; letter-spacing: -1.2px; margin-bottom: 24px; }
+  #F h2 span { background: linear-gradient(90deg, #a78bfa, #34d399); -webkit-background-clip: text; color: transparent; }
+  #F .desk { display: grid; grid-template-columns: repeat(12, 1fr); gap: 16px; }
+  #F .win { background: rgba(13,14,24,.82); border: 1px solid rgba(255,255,255,.1); border-radius: 12px; overflow: hidden; box-shadow: 0 24px 60px rgba(0,0,0,.45); backdrop-filter: blur(10px); }
+  #F .bar { display: flex; align-items: center; gap: 7px; padding: 9px 12px; background: rgba(255,255,255,.05); border-bottom: 1px solid rgba(255,255,255,.07); }
+  #F .bar i { width: 11px; height: 11px; border-radius: 50%; display: inline-block; }
+  #F .bar i:nth-child(1) { background: #ff5f57; } #F .bar i:nth-child(2) { background: #febc2e; } #F .bar i:nth-child(3) { background: #28c840; }
+  #F .bar span { margin: 0 auto; font-family: "JetBrains Mono"; font-size: 11.5px; color: #9ca3af; transform: translateX(-20px); }
+  #F .body { padding: 14px 16px; font-family: "JetBrains Mono"; font-size: 12.5px; line-height: 1.75; }
+  #F .p { color: #34d399; } #F .p::before { content: "❯ "; color: #a78bfa; }
+  #F .dim { color: #6b7280; }
+  #F .y { color: #fcd34d; } #F .g { color: #34d399; } #F .r { color: #f87171; } #F .c { color: #67e8f9; } #F .m { color: #f0abfc; }
+  #F .w1 { grid-column: span 7; } #F .w2 { grid-column: span 5; } #F .w3 { grid-column: span 5; } #F .w4 { grid-column: span 7; } #F .w5 { grid-column: span 12; }
+  #F .issue { font-family: Pretendard, sans-serif; margin: 10px 0 4px; padding: 12px 14px; border-radius: 10px; background: linear-gradient(135deg, rgba(167,139,250,.18), rgba(52,211,153,.06)); border: 1px solid rgba(167,139,250,.25); }
+  #F .issue h4 { font-size: 16px; color: #fff; }
+  #F .issue p { font-size: 13px; color: #c4c9d4; line-height: 1.6; margin-top: 4px; }
+  #F .issue .t { font-family: "JetBrains Mono"; font-size: 10.5px; margin-top: 8px; color: #a78bfa; }
+  #F .warn { font-family: Pretendard, sans-serif; margin-top: 8px; padding: 12px 14px; border-radius: 10px; background: rgba(248,113,113,.14); border: 1px solid rgba(248,113,113,.45); }
+  #F .warn b { color: #fecaca; font-size: 15px; }
+  #F .warn p { color: #fca5a5; font-size: 12.5px; margin-top: 3px; }
+  #F table { width: 100%; border-collapse: collapse; }
+  #F td { padding: 4px 0; }
+  #F td:last-child { text-align: right; }
+  #F .spark { vertical-align: middle; }
+  #F .cur { display: inline-block; width: 8px; height: 15px; background: #34d399; vertical-align: middle; animation: caret 1s steps(1) infinite; }
+  #F .dock { position: fixed; bottom: 14px; left: 50%; transform: translateX(-50%); display: flex; gap: 10px; padding: 8px 12px; border-radius: 18px; background: rgba(255,255,255,.1); backdrop-filter: blur(20px); border: 1px solid rgba(255,255,255,.15); z-index: 10; }
+  #F .dock span { width: 42px; height: 42px; border-radius: 11px; display: grid; place-items: center; font-size: 19px; background: rgba(0,0,0,.35); }
+  #F .stage-hidden .dock { display: none; }
+
+  /* ===== 좁은 화면 ===== */
+  @media (max-width: 900px) {
+    #D .bento { grid-template-columns: 1fr 1fr; grid-auto-rows: auto; }
+    #D .c { grid-column: span 2 !important; grid-row: auto !important; }
+    #D .c.st { grid-column: span 1 !important; min-height: 130px; }
+    #D .search { display: none; }
+    #D h2, #E .lead h3, #F h2 { font-size: 30px; }
+    #E .top, #E .grid { grid-template-columns: 1fr; }
+    #E .alert { grid-column: auto; flex-wrap: wrap; }
+    #E .menu { display: none; }
+    #F .win { grid-column: span 12 !important; }
+  }
+</style>
+</head>
+<body>
+
+<div class="picker">
+  <h1>시안 v2 · A+C 결합</h1>
+  <button class="tab on" data-t="D">D · 네온 벤토</button>
+  <button class="tab" data-t="E">E · 오로라 HUD</button>
+  <button class="tab" data-t="F">F · 터미널 데스크톱</button>
+  <button class="pick" id="pick">이 방향으로 선택</button>
+  <div class="hint">A의 네온·터미널·경보 + C의 벤토 카드·그라데이션·유리 질감을 서로 다르게 섞었어요. <span class="sample">예시</span>는 아직 없는 데이터를 꾸며 넣은 거예요.</div>
+</div>
+
+<!-- ===================== D ===================== -->
+<section class="stage on" id="D">
+  <div class="bg"></div>
+  <div class="glow" style="background:#00ffaa;top:-200px;left:-200px"></div>
+  <div class="glow" style="background:#ff3ea5;top:-150px;right:-250px;opacity:.22"></div>
+  <div class="ticker"><span>▲ morluto/rea +16.0K★ &nbsp;·&nbsp; HN #1 PHP 8.2.35 974pt &nbsp;·&nbsp; ⚠ LiteLLM 1.107.0 PyPI 백도어 &nbsp;·&nbsp; ▲ HKUDS/CLI-Anything +3,681★ &nbsp;·&nbsp; DuckDB 2.0.0 LTS &nbsp;·&nbsp; Claude Duet 318pt &nbsp;·&nbsp; ▲ cloudflare/security-audit-skill +3,630★ &nbsp;·&nbsp; arXiv 200편 · cs.CV 33</span></div>
+  <div class="wrap">
+    <div class="nav">
+      <div class="logo">TREND<b>://</b>OPS</div>
+      <div class="live"><i></i>LIVE · 10/22 09:08 KST</div>
+      <div class="search">⌕ 레포, 키워드, 논문 검색<kbd>⌘K</kbd></div>
+    </div>
+    <h2>오늘 개발판에서 <em>무슨 일이 터졌나</em></h2>
+    <p class="sub">HN · GitHub · GeekNews · Reddit · arXiv · Hugging Face 6곳을 매일 아침 스캔해요</p>
+
+    <div class="bento">
+      <div class="c hot">
+        <div class="lab">● Hot issues · AI 요약</div>
+        <div class="iss"><div class="n">01</div><div><h4>PHP 긴급 보안 릴리즈 8.2.35 <span class="tg hn">HN</span><span class="tg gn">GN</span></h4><p>HN 1·2위 동시 점령. PHP 재단이 보안 체계 개편을 발표했어요. 8.2 계열 서버는 오늘 업데이트하세요.</p><div class="heat">열기<div class="hb"><i style="width:96%"></i></div>96</div></div></div>
+        <div class="iss"><div class="n">02</div><div><h4>LiteLLM PyPI 공급망 공격 <span class="tg hn">HN</span><span class="tg rd">r/</span></h4><p>1.107.0 배포판에 자격증명 탈취 코드. LLM 프록시로 많이 쓰여서 파급이 커요.</p><div class="heat">열기<div class="hb"><i style="width:82%"></i></div>82</div></div></div>
+        <div class="iss"><div class="n">03</div><div><h4>Claude Duet 공개 <span class="tg hn">HN</span><span class="tg rd">r/</span></h4><p>댓글 278개. 바이브코딩 워크플로에 바로 영향이 있는 소식이에요.</p><div class="heat">열기<div class="hb"><i style="width:71%"></i></div>71</div></div></div>
+        <div class="iss"><div class="n">04</div><div><h4>"모든 소프트웨어를 에이전트로" CLI-Anything <span class="tg gh">GH</span></h4><p>트렌딩 첫 진입, 7일 +3,681★.</p><div class="heat">열기<div class="hb"><i style="width:58%"></i></div>58</div></div></div>
+      </div>
+      <div class="c alert">
+        <div class="lab">⚠ Security alert</div>
+        <h4>LiteLLM 1.107.0 PyPI에 백도어</h4>
+        <p>pip 최근 설치분 버전 확인 · AI가 의존성을 자동 설치한다면 lock 파일 점검 · safedep.io</p>
+      </div>
+      <div class="c st">
+        <div class="lab">New repos</div>
+        <div class="v">6<small>▲2</small></div>
+        <svg viewBox="0 0 100 30" preserveAspectRatio="none"><defs><linearGradient id="g1" x1="0" x2="0" y1="0" y2="1"><stop offset="0" stop-color="#00c2ff" stop-opacity=".5"/><stop offset="1" stop-color="#00c2ff" stop-opacity="0"/></linearGradient></defs><path d="M0 24 L20 18 L40 21 L60 12 L80 14 L100 6 L100 30 L0 30Z" fill="url(#g1)"/><path d="M0 24 L20 18 L40 21 L60 12 L80 14 L100 6" fill="none" stroke="#00c2ff" stroke-width="1.5"/></svg>
+      </div>
+      <div class="c st" style="--ac:#ff8a3d">
+        <div class="lab">HN top score</div>
+        <div class="v">974<small>pt</small></div>
+        <svg viewBox="0 0 100 30" preserveAspectRatio="none"><defs><linearGradient id="g2" x1="0" x2="0" y1="0" y2="1"><stop offset="0" stop-color="#ff8a3d" stop-opacity=".5"/><stop offset="1" stop-color="#ff8a3d" stop-opacity="0"/></linearGradient></defs><path d="M0 20 L20 22 L40 16 L60 19 L80 10 L100 3 L100 30 L0 30Z" fill="url(#g2)"/><path d="M0 20 L20 22 L40 16 L60 19 L80 10 L100 3" fill="none" stroke="#ff8a3d" stroke-width="1.5"/></svg>
+      </div>
+      <div class="c tools">
+        <div class="lab">AI coding tools <span class="sample">예시</span></div>
+        <div class="tr"><div class="ic" style="background:#d97757">C</div><div><b>Claude Code</b><small>서브에이전트 병렬 실행 개선</small></div><div class="ver">v3.4.1<em>2시간 전</em></div></div>
+        <div class="tr"><div class="ic" style="background:#222;border:1px solid #444">⌘</div><div><b>Cursor</b><small>Background Agent 요금 변경</small></div><div class="ver">v2.9<em>어제</em></div></div>
+        <div class="tr"><div class="ic" style="background:#10a37f">O</div><div><b>Codex CLI</b><small>MCP 서버 자동 탐색</small></div><div class="ver">v0.61<em>어제</em></div></div>
+        <div class="tr"><div class="ic" style="background:#4285f4">G</div><div><b>Gemini CLI</b><small>컨텍스트 캐싱 기본값 on</small></div><div class="ver">v1.2.0<em>3일 전</em></div></div>
+      </div>
+      <div class="c rise">
+        <div class="lab">Star velocity · 7d</div>
+        <div class="bar"><span>morluto/rea</span><span class="d">+16.0K</span><div class="t" style="width:100%"></div></div>
+        <div class="bar"><span>HKUDS/CLI-Anything</span><span class="d">+3,681</span><div class="t" style="width:23%"></div></div>
+        <div class="bar"><span>cloudflare/security-audit-skill</span><span class="d">+3,630</span><div class="t" style="width:22.7%"></div></div>
+        <div class="bar"><span>DietrichGebert/ponytail</span><span class="d">+3,163</span><div class="t" style="width:19.8%"></div></div>
+        <div class="bar"><span>akitaonrails/ai-memory</span><span class="d">+2,833</span><div class="t" style="width:17.7%"></div></div>
+      </div>
+      <div class="c mat">
+        <div class="lab">Vibe-coding kit · 스킬 · MCP</div>
+        <div class="chips"><span><b>SKILL</b>security-audit-skill</span><span><b>MEM</b>ai-memory</span><span><b>CLI</b>CLI-Anything</span><span><b>CAD</b>text-to-cad</span><span><b>MCP</b>신규 12개 <span class="sample">예시</span></span></div>
+      </div>
+      <div class="c kw">
+        <div class="lab">Rising keywords</div>
+        <div class="chips"><span>security<em>▲1.5</em></span><span>agents<em>▲2.0</em></span><span>PHP<em>▲3.5</em></span><span>world model<em>신규</em></span><span>supply chain<em>신규</em></span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== E ===================== -->
+<section class="stage" id="E">
+  <div class="wrap">
+    <div class="nav">
+      <div class="logo">vibe<span>/</span>radar</div>
+      <div class="menu"><span class="on">브리핑</span><span>도구</span><span>재료</span><span>레포</span><span>논문</span></div>
+      <div class="clock">2026.10.22 THU · 09:08 KST · SCAN #003</div>
+    </div>
+
+    <div class="top">
+      <div class="hud gauge">
+        <div class="lab">오늘의 개발판 열기</div>
+        <div class="ring">
+          <svg viewBox="0 0 120 120"><defs><linearGradient id="rg" x1="0" x2="1"><stop offset="0" stop-color="#67e8f9"/><stop offset=".5" stop-color="#a78bfa"/><stop offset="1" stop-color="#f0abfc"/></linearGradient></defs>
+            <circle cx="60" cy="60" r="50" fill="none" stroke="rgba(255,255,255,.08)" stroke-width="10"/>
+            <circle cx="60" cy="60" r="50" fill="none" stroke="url(#rg)" stroke-width="10" stroke-linecap="round" stroke-dasharray="314" stroke-dashoffset="41"/>
+            <circle cx="60" cy="60" r="38" fill="none" stroke="rgba(103,232,249,.25)" stroke-width="1" stroke-dasharray="2 4"/></svg>
+          <div class="val"><b>87</b><small>평소보다 뜨거움</small></div>
+        </div>
+        <p>보안 이슈 2건이 동시에 터져 평소보다 높아요. 지난 7일 평균 64.</p>
+      </div>
+      <div class="hud lead">
+        <div class="scanl"></div>
+        <div class="lab">● Top signal · AI 요약</div>
+        <h3>PHP 긴급 보안 릴리즈,<br><em>HN 1·2위 동시 점령</em></h3>
+        <p>PHP 8.2.35가 공개되며 Hacker News 974점과 682점을 나란히 기록했어요. PHP 재단은 같은 날 보안 대응 체계 개편을 발표했어요. 두 글의 댓글은 합쳐서 870개를 넘었어요.</p>
+        <div class="why">바이브코더 체크 — AI가 만든 PHP 백엔드를 공유 호스팅에 올렸다면 런타임 버전을 직접 확인하세요.</div>
+        <div class="more"><div><b>02</b>LiteLLM 공급망 공격</div><div><b>03</b>Claude Duet 공개</div><div><b>04</b>CLI-Anything 급부상</div></div>
+      </div>
+    </div>
+
+    <div class="grid">
+      <div class="hud alert"><div class="dot"></div><div class="lab">Threat</div><b>LiteLLM 1.107.0 PyPI 배포판에 자격증명 탈취 백도어</b><span class="s">safedep.io · HN 440pt</span></div>
+      <div class="hud t2">
+        <div class="lab">AI 코딩 도구 <span class="sample">예시</span></div>
+        <div class="row"><div>Claude Code<small>서브에이전트 병렬화</small></div><span class="m">v3.4.1</span></div>
+        <div class="row"><div>Cursor<small>Background Agent 요금</small></div><span class="m">v2.9</span></div>
+        <div class="row"><div>Codex CLI<small>MCP 자동 탐색</small></div><span class="m">v0.61</span></div>
+        <div class="row"><div>Gemini CLI<small>컨텍스트 캐싱</small></div><span class="m">v1.2.0</span></div>
+      </div>
+      <div class="hud t3">
+        <div class="lab">급상승 레포 · 7일</div>
+        <div class="row"><div>morluto/rea<small>★358K</small></div><span class="up">+16.0K</span></div>
+        <div class="row"><div>HKUDS/CLI-Anything<small>★56.0K · 신규</small></div><span class="up">+3,681</span></div>
+        <div class="row"><div>cloudflare/security-audit-skill<small>★36.6K</small></div><span class="up">+3,630</span></div>
+        <div class="row"><div>DietrichGebert/ponytail<small>★172K</small></div><span class="up">+3,163</span></div>
+      </div>
+      <div class="hud t4">
+        <div class="lab">바이브코딩 재료</div>
+        <div class="row"><div>security-audit-skill<small>Claude Code 보안 점검 스킬</small></div><span class="m">SKILL</span></div>
+        <div class="row"><div>ai-memory<small>에이전트 간 장기 기억</small></div><span class="m">RUST</span></div>
+        <div class="row"><div>text-to-cad<small>에이전트에게 CAD 능력을</small></div><span class="m">PY</span></div>
+        <div class="row"><div>MCP 신규 12개 <span class="sample">예시</span><small>이번 주 새 MCP 서버</small></div><span class="m">MCP</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== F ===================== -->
+<section class="stage" id="F">
+  <div class="menubar"><b> trends</b><span>파일</span><span>보기</span><span>출처</span><span>도움말</span><div class="r"><span class="on">● 6 sources</span><span>day 3</span><span>목 09:08</span></div></div>
+  <div class="wrap">
+    <div class="hello">~/trends $ brief --today</div>
+    <h2>좋은 아침이에요, <span>오늘의 개발판 브리핑</span></h2>
+    <div class="desk">
+      <div class="win w1">
+        <div class="bar"><i></i><i></i><i></i><span>~/hot-issues — zsh</span></div>
+        <div class="body">
+          <div class="p">trends hot --top 3 --summarize ko</div>
+          <div class="dim">scanning hn, github, geeknews, reddit… 3 clusters found</div>
+          <div class="issue"><h4>🔥 PHP 긴급 보안 릴리즈 8.2.35</h4><p>HN 1·2위 동시 점령(974·682점). 재단이 보안 체계 개편을 발표했어요. 8.2 계열 서버는 오늘 업데이트하세요.</p><div class="t">HN ×2 · GeekNews <span class="sample">예시</span> · heat 96</div></div>
+          <div class="issue"><h4>🤝 Claude Duet 공개</h4><p>댓글 278개. 바이브코딩 워크플로에 바로 영향이 있는 소식.</p><div class="t">HN · r/ClaudeAI · heat 71</div></div>
+          <div class="p" style="margin-top:8px">&nbsp;<span class="cur"></span></div>
+        </div>
+      </div>
+      <div class="win w2">
+        <div class="bar"><i></i><i></i><i></i><span>~/security — audit</span></div>
+        <div class="body">
+          <div class="p">npm audit --global-feed</div>
+          <div class="r">✖ 1 critical advisory today</div>
+          <div class="warn"><b>LiteLLM 1.107.0 · PyPI 백도어</b><p>자격증명 탈취 코드 포함. pip 최근 설치분과 lock 파일을 확인하세요. — safedep.io</p></div>
+          <div style="margin-top:10px"><span class="y">⚠</span> PHP 8.2 &lt; 8.2.35 <span class="dim">— 보안 패치</span></div>
+          <div><span class="y">⚠</span> GitLab critical patch <span class="dim">— docs.gitlab.com</span></div>
+          <div><span class="y">⚠</span> Railway disclosure <span class="dim">— blog.railway.com</span></div>
+        </div>
+      </div>
+      <div class="win w3">
+        <div class="bar"><i></i><i></i><i></i><span>~/tools — changelog</span></div>
+        <div class="body">
+          <div class="p">tools outdated <span class="sample">예시</span></div>
+          <table>
+            <tr><td class="m">claude-code</td><td class="dim">3.3.8 →</td><td class="g">3.4.1</td></tr>
+            <tr><td class="m">cursor</td><td class="dim">2.8 →</td><td class="g">2.9</td></tr>
+            <tr><td class="m">codex</td><td class="dim">0.59 →</td><td class="g">0.61</td></tr>
+            <tr><td class="m">gemini-cli</td><td class="dim">1.1.4 →</td><td class="g">1.2.0</td></tr>
+          </table>
+          <div class="dim" style="margin-top:6px">↳ claude-code: 서브에이전트 병렬 실행 개선</div>
+        </div>
+      </div>
+      <div class="win w4">
+        <div class="bar"><i></i><i></i><i></i><span>~/repos — star velocity</span></div>
+        <div class="body">
+          <div class="p">gh trending --window 7d --top 5</div>
+          <table>
+            <tr><td class="c">morluto/rea</td><td><svg class="spark" width="90" height="18"><polyline points="0,15 30,12 60,8 90,2" fill="none" stroke="#34d399" stroke-width="2"/></svg></td><td class="g">+16.0K</td></tr>
+            <tr><td class="c">HKUDS/CLI-Anything <span class="y">NEW</span></td><td><svg class="spark" width="90" height="18"><polyline points="0,16 30,14 60,7 90,4" fill="none" stroke="#34d399" stroke-width="2"/></svg></td><td class="g">+3,681</td></tr>
+            <tr><td class="c">cloudflare/security-audit-skill</td><td><svg class="spark" width="90" height="18"><polyline points="0,14 30,13 60,9 90,5" fill="none" stroke="#34d399" stroke-width="2"/></svg></td><td class="g">+3,630</td></tr>
+            <tr><td class="c">DietrichGebert/ponytail</td><td><svg class="spark" width="90" height="18"><polyline points="0,12 30,11 60,9 90,6" fill="none" stroke="#34d399" stroke-width="2"/></svg></td><td class="g">+3,163</td></tr>
+            <tr><td class="c">akitaonrails/ai-memory <span class="y">NEW</span></td><td><svg class="spark" width="90" height="18"><polyline points="0,16 30,15 60,10 90,7" fill="none" stroke="#34d399" stroke-width="2"/></svg></td><td class="g">+2,833</td></tr>
+          </table>
+        </div>
+      </div>
+      <div class="win w5">
+        <div class="bar"><i></i><i></i><i></i><span>~/kit — skills · mcp · rules</span></div>
+        <div class="body" style="display:flex;gap:28px;flex-wrap:wrap">
+          <div><span class="m">skill</span> security-audit-skill <span class="g">+3.6K</span></div>
+          <div><span class="m">memory</span> ai-memory <span class="g">+2.8K</span></div>
+          <div><span class="m">cli</span> CLI-Anything <span class="g">+3.7K</span></div>
+          <div><span class="m">cad</span> text-to-cad <span class="g">+2.0K</span></div>
+          <div><span class="m">mcp</span> 신규 12개 <span class="sample">예시</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="dock"><span>🔥</span><span>🛡</span><span>🛠</span><span>🚀</span><span>🧩</span><span>📄</span></div>
+</section>
+
+<script>
+  let cur = 'D';
+  const pick = document.getElementById('pick');
+  const dock = document.querySelector('#F .dock');
+  document.querySelectorAll('.tab').forEach(b => b.onclick = () => {
+    cur = b.dataset.t;
+    document.querySelectorAll('.tab').forEach(x => x.classList.toggle('on', x === b));
+    document.querySelectorAll('.stage').forEach(s => s.classList.toggle('on', s.id === cur));
+    dock.style.display = cur === 'F' ? 'flex' : 'none';
+    pick.classList.remove('done'); pick.textContent = '이 방향으로 선택';
+    window.scrollTo(0, 0);
+  });
+  dock.style.display = 'none';
+  pick.onclick = () => {
+    if (window.brainstorm) window.brainstorm.choice(cur, { text: document.querySelector('.tab.on').textContent });
+    pick.classList.add('done'); pick.textContent = '✓ ' + cur + ' 선택됨';
+  };
+</script>
+</body>
+</html>

@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>디자인 방향 시안</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;800&family=Noto+Serif+KR:wght@500;700;900&display=swap" rel="stylesheet">
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: Pretendard, system-ui, sans-serif; background: #111; color: #eee; }
+
+  /* ===== 선택 바 ===== */
+  .picker { position: sticky; top: 0; z-index: 50; background: #0b0b0c; border-bottom: 1px solid #2a2a2e; padding: 14px 24px; display: flex; gap: 16px; align-items: center; flex-wrap: wrap; }
+  .picker h1 { font-size: 15px; font-weight: 700; margin-right: 8px; }
+  .picker .hint { font-size: 12px; color: #888; flex-basis: 100%; }
+  .tab { background: #1c1c20; border: 1px solid #333; color: #ccc; padding: 8px 14px; border-radius: 999px; cursor: pointer; font: inherit; font-size: 13px; }
+  .tab.on { background: #fff; color: #000; border-color: #fff; font-weight: 700; }
+  .pick { margin-left: auto; background: #3b82f6; color: #fff; border: 0; padding: 9px 16px; border-radius: 8px; font: inherit; font-weight: 700; font-size: 13px; cursor: pointer; }
+  .pick.done { background: #22c55e; }
+  .stage { display: none; }
+  .stage.on { display: block; }
+  .sample { font-size: 10px; padding: 1px 6px; border-radius: 4px; background: rgba(255,200,0,.18); color: #f5c542; margin-left: 6px; vertical-align: middle; font-weight: 600; }
+
+  /* ===================== A. 관제실 (네온 터미널) ===================== */
+  #A { background: #05070a; color: #cfe8ff; font-family: Pretendard, sans-serif; min-height: 100vh; position: relative; overflow: hidden; }
+  #A::before { content: ""; position: absolute; inset: 0; background: repeating-linear-gradient(0deg, rgba(255,255,255,.025) 0 1px, transparent 1px 3px); pointer-events: none; }
+  #A .grid-bg { position: absolute; inset: 0; background-image: linear-gradient(rgba(0,255,170,.06) 1px, transparent 1px), linear-gradient(90deg, rgba(0,255,170,.06) 1px, transparent 1px); background-size: 40px 40px; mask-image: radial-gradient(ellipse at 50% 0%, #000 30%, transparent 75%); pointer-events: none; }
+  #A .mono { font-family: "JetBrains Mono", monospace; }
+  #A .ticker { border-bottom: 1px solid rgba(0,255,170,.25); background: rgba(0,255,170,.05); overflow: hidden; white-space: nowrap; font-family: "JetBrains Mono", monospace; font-size: 12px; padding: 7px 0; color: #7dffc8; }
+  #A .ticker span { display: inline-block; animation: tick 40s linear infinite; padding-left: 100%; }
+  @keyframes tick { to { transform: translateX(-100%); } }
+  #A .wrap { max-width: 1180px; margin: 0 auto; padding: 28px 24px 60px; position: relative; }
+  #A .nav { display: flex; justify-content: space-between; align-items: center; margin-bottom: 36px; }
+  #A .logo { font-family: "JetBrains Mono"; font-weight: 800; font-size: 18px; color: #00ffaa; text-shadow: 0 0 12px rgba(0,255,170,.6); }
+  #A .logo b { color: #ff3ea5; text-shadow: 0 0 12px rgba(255,62,165,.6); }
+  #A .nav .live { font-family: "JetBrains Mono"; font-size: 12px; color: #7dffc8; }
+  #A .nav .live i { display: inline-block; width: 8px; height: 8px; border-radius: 50%; background: #00ffaa; box-shadow: 0 0 10px #00ffaa; margin-right: 6px; animation: blink 1.4s infinite; }
+  @keyframes blink { 50% { opacity: .2; } }
+  #A h2 { font-size: 46px; font-weight: 900; line-height: 1.1; letter-spacing: -1.5px; }
+  #A h2 em { font-style: normal; background: linear-gradient(90deg, #00ffaa, #00c2ff, #ff3ea5); -webkit-background-clip: text; color: transparent; }
+  #A .sub { color: #7f93a8; margin: 12px 0 28px; font-size: 15px; }
+  #A .alert { border: 1px solid #ff3e5e; background: linear-gradient(90deg, rgba(255,62,94,.18), rgba(255,62,94,.03)); border-radius: 10px; padding: 14px 18px; display: flex; gap: 14px; align-items: center; margin-bottom: 26px; box-shadow: 0 0 24px rgba(255,62,94,.15); }
+  #A .alert .tag { font-family: "JetBrains Mono"; font-size: 11px; font-weight: 800; color: #fff; background: #ff3e5e; padding: 4px 8px; border-radius: 4px; animation: blink 1.2s infinite; }
+  #A .alert b { color: #ffd0d8; }
+  #A .alert small { color: #ff9aac; display: block; font-size: 12px; margin-top: 2px; }
+  #A .row { display: grid; grid-template-columns: 1.4fr 1fr; gap: 18px; margin-bottom: 18px; }
+  #A .panel { border: 1px solid rgba(0,194,255,.22); background: rgba(8,16,26,.8); border-radius: 12px; padding: 18px; position: relative; }
+  #A .panel::after { content: ""; position: absolute; top: -1px; left: 18px; width: 60px; height: 2px; background: #00ffaa; box-shadow: 0 0 10px #00ffaa; }
+  #A .ph { font-family: "JetBrains Mono"; font-size: 12px; color: #00c2ff; margin-bottom: 14px; letter-spacing: 1px; }
+  #A .issue { padding: 12px 0; border-bottom: 1px dashed rgba(0,194,255,.15); display: grid; grid-template-columns: 34px 1fr auto; gap: 12px; align-items: start; }
+  #A .issue:last-child { border: 0; }
+  #A .issue .n { font-family: "JetBrains Mono"; font-weight: 800; font-size: 22px; color: #00ffaa; }
+  #A .issue h4 { font-size: 15px; color: #fff; }
+  #A .issue p { font-size: 12.5px; color: #8aa0b6; margin-top: 4px; line-height: 1.5; }
+  #A .src { display: flex; gap: 4px; }
+  #A .src i { font-style: normal; font-family: "JetBrains Mono"; font-size: 10px; padding: 2px 6px; border-radius: 3px; border: 1px solid; }
+  #A .hn { color: #ff8a3d; border-color: #ff8a3d55; }
+  #A .gh { color: #c8a8ff; border-color: #c8a8ff55; }
+  #A .gn { color: #00ffaa; border-color: #00ffaa55; }
+  #A .rd { color: #ff5e7e; border-color: #ff5e7e55; }
+  #A .tool { display: flex; justify-content: space-between; align-items: center; padding: 10px 0; border-bottom: 1px dashed rgba(0,194,255,.15); font-size: 13.5px; }
+  #A .tool:last-child { border: 0; }
+  #A .ver { font-family: "JetBrains Mono"; color: #00ffaa; font-size: 12px; }
+  #A .tool small { display: block; color: #7f93a8; font-size: 11.5px; }
+  #A .bars { display: grid; gap: 8px; }
+  #A .bar { display: grid; grid-template-columns: 170px 1fr 70px; gap: 10px; align-items: center; font-family: "JetBrains Mono"; font-size: 12px; }
+  #A .bar .t { height: 10px; border-radius: 2px; background: linear-gradient(90deg, #00ffaa, #00c2ff); box-shadow: 0 0 10px rgba(0,255,170,.5); }
+  #A .bar .v { color: #00ffaa; text-align: right; }
+
+  /* ===================== B. 에디토리얼 (신문) ===================== */
+  #B { background: #f4efe6; color: #1a1712; min-height: 100vh; font-family: Pretendard, sans-serif; }
+  #B .wrap { max-width: 1180px; margin: 0 auto; padding: 22px 32px 60px; }
+  #B .mast { text-align: center; border-bottom: 4px double #1a1712; padding-bottom: 14px; }
+  #B .mast .meta { display: flex; justify-content: space-between; font-size: 12px; color: #6b6253; border-bottom: 1px solid #1a1712; padding-bottom: 8px; margin-bottom: 14px; }
+  #B .mast h2 { font-family: "Noto Serif KR", serif; font-weight: 900; font-size: 58px; letter-spacing: -2px; }
+  #B .mast p { font-family: "Noto Serif KR"; font-style: italic; color: #6b6253; margin-top: 4px; }
+  #B .sections { display: flex; justify-content: center; gap: 22px; font-size: 13px; font-weight: 700; padding: 10px 0; border-bottom: 1px solid #1a1712; }
+  #B .sections span:hover { color: #c0392b; }
+  #B .front { display: grid; grid-template-columns: 2fr 1fr; gap: 32px; padding: 26px 0; border-bottom: 1px solid #1a1712; }
+  #B .kicker { color: #c0392b; font-weight: 800; font-size: 12px; letter-spacing: 1px; }
+  #B .lead h3 { font-family: "Noto Serif KR"; font-weight: 900; font-size: 40px; line-height: 1.2; letter-spacing: -1px; margin: 8px 0 14px; }
+  #B .lead .deck { font-size: 17px; line-height: 1.7; color: #3b352b; }
+  #B .lead .why { margin-top: 16px; background: #1a1712; color: #f4efe6; padding: 16px 18px; font-size: 14px; line-height: 1.7; }
+  #B .lead .why b { color: #ffcf6e; }
+  #B .lead .refs { margin-top: 12px; font-size: 12.5px; color: #6b6253; }
+  #B .side { border-left: 1px solid #1a1712; padding-left: 28px; }
+  #B .side h5 { font-family: "Noto Serif KR"; font-size: 15px; border-bottom: 2px solid #1a1712; padding-bottom: 6px; margin-bottom: 10px; }
+  #B .side .item { padding: 10px 0; border-bottom: 1px dotted #9b917f; }
+  #B .side .item h6 { font-family: "Noto Serif KR"; font-size: 17px; font-weight: 700; line-height: 1.35; }
+  #B .side .item p { font-size: 12.5px; color: #6b6253; margin-top: 4px; }
+  #B .alertbox { border: 2px solid #c0392b; padding: 12px 14px; margin-bottom: 16px; }
+  #B .alertbox .kicker { margin-bottom: 4px; }
+  #B .alertbox h6 { font-family: "Noto Serif KR"; font-size: 17px; }
+  #B .cols { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0; padding-top: 22px; }
+  #B .col { padding: 0 22px; border-left: 1px solid #c9bfae; }
+  #B .col:first-child { border: 0; padding-left: 0; }
+  #B .col h5 { font-family: "Noto Serif KR"; font-size: 20px; font-weight: 900; margin-bottom: 10px; }
+  #B .col li { list-style: none; padding: 9px 0; border-bottom: 1px dotted #9b917f; font-size: 14px; line-height: 1.45; }
+  #B .col li b { font-family: "JetBrains Mono"; font-size: 12px; color: #c0392b; float: right; margin-left: 8px; }
+  #B .col li small { display: block; color: #6b6253; font-size: 12px; }
+  #B .spark { display: block; margin-top: 4px; }
+
+  /* ===================== C. 벤토 그리드 ===================== */
+  #C { min-height: 100vh; background: radial-gradient(1200px 600px at 10% -10%, #3b1d8f 0%, transparent 60%), radial-gradient(900px 500px at 100% 0%, #0e5d7a 0%, transparent 55%), radial-gradient(800px 600px at 50% 120%, #7a1d5c 0%, transparent 60%), #0a0a14; color: #fff; font-family: Pretendard, sans-serif; }
+  #C .wrap { max-width: 1180px; margin: 0 auto; padding: 26px 24px 60px; }
+  #C .nav { display: flex; justify-content: space-between; align-items: center; margin-bottom: 30px; }
+  #C .logo { font-weight: 900; font-size: 20px; letter-spacing: -.5px; }
+  #C .logo span { background: linear-gradient(90deg, #a78bfa, #22d3ee); -webkit-background-clip: text; color: transparent; }
+  #C .pills { display: flex; gap: 6px; }
+  #C .pills span { font-size: 12.5px; padding: 7px 12px; border-radius: 999px; background: rgba(255,255,255,.08); border: 1px solid rgba(255,255,255,.12); }
+  #C .pills span.on { background: #fff; color: #000; font-weight: 700; }
+  #C .hello { font-size: 14px; color: #c4b5fd; margin-bottom: 6px; }
+  #C h2 { font-size: 44px; font-weight: 900; letter-spacing: -1.5px; line-height: 1.15; margin-bottom: 26px; }
+  #C .bento { display: grid; grid-template-columns: repeat(4, 1fr); grid-auto-rows: 150px; gap: 14px; }
+  #C .b { border-radius: 22px; padding: 20px; background: rgba(255,255,255,.06); border: 1px solid rgba(255,255,255,.12); backdrop-filter: blur(14px); position: relative; overflow: hidden; transition: transform .2s; }
+  #C .b:hover { transform: translateY(-3px); }
+  #C .lab { font-size: 12px; color: rgba(255,255,255,.65); font-weight: 600; margin-bottom: 8px; display: flex; align-items: center; gap: 6px; }
+  #C .big { grid-column: span 2; grid-row: span 2; background: linear-gradient(145deg, rgba(139,92,246,.45), rgba(34,211,238,.18)); }
+  #C .big h3 { font-size: 28px; font-weight: 900; line-height: 1.25; letter-spacing: -.5px; margin: 6px 0 12px; }
+  #C .big p { font-size: 14px; line-height: 1.65; color: rgba(255,255,255,.85); }
+  #C .chips { display: flex; gap: 6px; margin-top: 14px; flex-wrap: wrap; }
+  #C .chips span { font-size: 11.5px; padding: 4px 9px; border-radius: 999px; background: rgba(0,0,0,.3); }
+  #C .danger { grid-column: span 2; background: linear-gradient(135deg, rgba(244,63,94,.55), rgba(244,63,94,.12)); border-color: rgba(244,63,94,.5); }
+  #C .danger h4 { font-size: 19px; font-weight: 800; }
+  #C .danger p { font-size: 12.5px; color: #ffe1e7; margin-top: 6px; }
+  #C .stat .num { font-size: 40px; font-weight: 900; letter-spacing: -1px; }
+  #C .stat .num small { font-size: 15px; color: #86efac; margin-left: 4px; }
+  #C .stat .cap { font-size: 12px; color: rgba(255,255,255,.6); }
+  #C .s1 { background: linear-gradient(160deg, rgba(34,197,94,.35), rgba(34,197,94,.05)); }
+  #C .s2 { background: linear-gradient(160deg, rgba(251,146,60,.35), rgba(251,146,60,.05)); }
+  #C .tools { grid-column: span 2; grid-row: span 2; }
+  #C .trow { display: flex; align-items: center; gap: 12px; padding: 10px 0; border-bottom: 1px solid rgba(255,255,255,.08); }
+  #C .trow:last-child { border: 0; }
+  #C .ic { width: 34px; height: 34px; border-radius: 10px; display: grid; place-items: center; font-weight: 900; font-size: 15px; flex: none; }
+  #C .trow b { font-size: 14px; }
+  #C .trow small { display: block; font-size: 12px; color: rgba(255,255,255,.6); }
+  #C .trow .v { margin-left: auto; font-family: "JetBrains Mono"; font-size: 12px; padding: 3px 8px; border-radius: 6px; background: rgba(255,255,255,.1); }
+  #C .rise { grid-column: span 2; grid-row: span 2; }
+  #C .rr { display: grid; grid-template-columns: 22px 1fr auto; gap: 10px; align-items: center; padding: 7px 0; font-size: 13.5px; }
+  #C .rr .k { color: rgba(255,255,255,.4); font-weight: 800; }
+  #C .rr .d { font-family: "JetBrains Mono"; font-size: 12px; color: #86efac; }
+  #C .rr .tb { grid-column: 2 / 4; height: 5px; border-radius: 3px; background: linear-gradient(90deg, #a78bfa, #22d3ee); margin-top: -2px; }
+  #C .mcp { grid-column: span 2; }
+  #C .mcp .list { display: flex; gap: 8px; flex-wrap: wrap; margin-top: 4px; }
+  #C .mcp .list span { font-size: 12.5px; padding: 7px 11px; border-radius: 10px; background: rgba(255,255,255,.1); }
+  #C .mcp .list span b { color: #86efac; font-family: "JetBrains Mono"; font-size: 11px; margin-left: 4px; }
+</style>
+</head>
+<body>
+
+<div class="picker">
+  <h1>디자인 방향 3가지</h1>
+  <button class="tab on" data-t="A">A · 관제실</button>
+  <button class="tab" data-t="B">B · 신문 1면</button>
+  <button class="tab" data-t="C">C · 벤토 그리드</button>
+  <button class="pick" id="pick">이 방향으로 선택</button>
+  <div class="hint">탭으로 바꿔 보세요. 내용은 오늘(10/22) 실제 수집분을 썼고, <span class="sample">예시</span> 표시는 아직 없는 데이터를 꾸며 넣은 거예요.</div>
+</div>
+
+<!-- ===================== A ===================== -->
+<section class="stage on" id="A">
+  <div class="grid-bg"></div>
+  <div class="ticker"><span>▲ morluto/rea +16.0K ★ &nbsp;·&nbsp; HN #1 PHP 8.2.35 974pt &nbsp;·&nbsp; ⚠ LiteLLM 1.107.0 PyPI 악성코드 &nbsp;·&nbsp; ▲ HKUDS/CLI-Anything +3,681 ★ &nbsp;·&nbsp; DuckDB 2.0.0 LTS 출시 &nbsp;·&nbsp; Claude Duet 공개 318pt &nbsp;·&nbsp; ▲ cloudflare/security-audit-skill +3,630 ★ &nbsp;·&nbsp; arXiv 오늘 200편 · cs.CV 33</span></div>
+  <div class="wrap">
+    <div class="nav"><div class="logo">TREND<b>://</b>OPS</div><div class="live mono"><i></i>LIVE · 2026-10-22 09:08 KST · day 3</div></div>
+    <h2>오늘 개발판에서<br><em>무슨 일이 터졌나</em></h2>
+    <p class="sub">HN · GitHub · GeekNews · Reddit · arXiv · Hugging Face를 매일 아침 스캔해요</p>
+
+    <div class="alert"><span class="tag">SECURITY</span><div><b>LiteLLM 1.107.0 PyPI 패키지에 자격증명 탈취 백도어</b><small>pip로 최근 설치했다면 버전 확인 · AI가 의존성을 자동 설치하는 환경이면 특히 주의 · 출처 safedep.io (HN 440pt)</small></div></div>
+
+    <div class="row">
+      <div class="panel">
+        <div class="ph">// TODAY'S HOT ISSUES — AI 요약</div>
+        <div class="issue"><div class="n">01</div><div><h4>PHP 보안 비상 — 8.2.35 긴급 릴리즈</h4><p>HN 1·2위를 동시에 차지. PHP 재단이 보안 프로세스 개편을 발표했어요. 8.2 계열 서버는 바로 업데이트.</p></div><div class="src"><i class="hn">HN</i><i class="gn">GN</i></div></div>
+        <div class="issue"><div class="n">02</div><div><h4>Claude Duet 공개</h4><p>댓글 278개로 토론이 뜨거워요. 바이브코딩 워크플로에 바로 영향이 있는 소식.</p></div><div class="src"><i class="hn">HN</i><i class="rd">r/</i></div></div>
+        <div class="issue"><div class="n">03</div><div><h4>에이전트를 CLI로 — CLI-Anything 급부상</h4><p>"모든 소프트웨어를 에이전트 네이티브로". 하루 만에 트렌딩 진입, 7일 +3,681★.</p></div><div class="src"><i class="gh">GH</i><i class="hn">HN</i></div></div>
+      </div>
+      <div class="panel">
+        <div class="ph">// AI CODING TOOLS <span class="sample">예시</span></div>
+        <div class="tool"><div>Claude Code<small>서브에이전트 병렬 실행 개선</small></div><span class="ver">v3.4.1 · 2h</span></div>
+        <div class="tool"><div>Cursor<small>Background Agent 요금 변경</small></div><span class="ver">v2.9 · 1d</span></div>
+        <div class="tool"><div>Codex CLI<small>MCP 서버 자동 탐색</small></div><span class="ver">v0.61 · 1d</span></div>
+        <div class="tool"><div>Gemini CLI<small>컨텍스트 캐싱 기본값 on</small></div><span class="ver">v1.2.0 · 3d</span></div>
+      </div>
+    </div>
+    <div class="panel">
+      <div class="ph">// STAR VELOCITY — 7D</div>
+      <div class="bars">
+        <div class="bar"><span>morluto/rea</span><div class="t" style="width:100%"></div><span class="v">+16.0K</span></div>
+        <div class="bar"><span>HKUDS/CLI-Anything</span><div class="t" style="width:23%"></div><span class="v">+3,681</span></div>
+        <div class="bar"><span>cloudflare/security-audit…</span><div class="t" style="width:22.7%"></div><span class="v">+3,630</span></div>
+        <div class="bar"><span>DietrichGebert/ponytail</span><div class="t" style="width:19.8%"></div><span class="v">+3,163</span></div>
+        <div class="bar"><span>akitaonrails/ai-memory</span><div class="t" style="width:17.7%"></div><span class="v">+2,833</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== B ===================== -->
+<section class="stage" id="B">
+  <div class="wrap">
+    <div class="mast">
+      <div class="meta"><span>2026년 10월 22일 목요일 · 제3호</span><span>매일 아침 9시 발행</span><span>HN · GitHub · GeekNews · arXiv</span></div>
+      <h2>개발자 조간</h2>
+      <p>바이브코더를 위한 오늘의 개발 뉴스</p>
+    </div>
+    <div class="sections"><span>1면</span><span>도구 소식</span><span>재료 창고</span><span>급상승 레포</span><span>논문</span><span>키워드</span></div>
+    <div class="front">
+      <div class="lead">
+        <div class="kicker">오늘의 핫이슈 · 보안</div>
+        <h3>PHP, 긴급 보안 릴리즈…<br>재단 "보안 체계 전면 강화"</h3>
+        <p class="deck">PHP 8.2.35가 공개되며 Hacker News 1위(974점)와 2위(682점)를 나란히 차지했다. PHP 재단은 같은 날 보안 대응 프로세스를 강화하겠다고 밝혔다. 댓글은 두 글 합쳐 870개를 넘었다.</p>
+        <div class="why"><b>바이브코더에게 왜 중요한가</b> — AI가 만든 PHP 백엔드를 공유 호스팅에 올려뒀다면 런타임 버전을 직접 확인해야 한다. 생성 코드는 보통 버전을 고정하지 않는다.</div>
+        <div class="refs">관련: github.com · thephp.foundation · GeekNews 토론 <span class="sample">예시</span></div>
+      </div>
+      <div class="side">
+        <div class="alertbox"><div class="kicker">⚠ 보안 경보</div><h6>LiteLLM 1.107.0 PyPI 배포판에 백도어</h6><p style="font-size:12.5px;color:#6b6253;margin-top:4px">자격증명 탈취 코드 포함 · safedep.io</p></div>
+        <h5>도구 소식 <span class="sample">예시</span></h5>
+        <div class="item"><h6>Claude Code 3.4 — 서브에이전트 병렬화</h6><p>릴리즈 노트 요약 · 2시간 전</p></div>
+        <div class="item"><h6>Cursor, Background Agent 요금제 손본다</h6><p>공식 changelog · 어제</p></div>
+        <div class="item"><h6>Claude Duet 공개, HN 댓글 278개</h6><p>claude.com · 318점</p></div>
+      </div>
+    </div>
+    <div class="cols">
+      <div class="col"><h5>급상승 레포</h5><ul>
+        <li>morluto/rea<b>+16.0K</b><small>누적 ★358K</small></li>
+        <li>HKUDS/CLI-Anything<b>+3,681</b><small>모든 소프트웨어를 에이전트 네이티브로</small></li>
+        <li>cloudflare/security-audit-skill<b>+3,630</b><small>보안 감사용 에이전트 스킬</small></li>
+        <li>DietrichGebert/ponytail<b>+3,163</b><small>누적 ★172K</small></li>
+      </ul></div>
+      <div class="col"><h5>바이브코딩 재료</h5><ul>
+        <li>akitaonrails/ai-memory<b>Rust</b><small>에이전트 CLI 간 장기 기억·인수인계</small></li>
+        <li>earthtojake/text-to-cad<b>Python</b><small>에이전트에게 CAD 능력을</small></li>
+        <li>cloudflare/security-audit-skill<b>Skill</b><small>Claude Code용 보안 점검 스킬</small></li>
+        <li>MCP 서버 신규 12개<b>MCP</b><small>이번 주 새로 뜬 MCP 서버 모음 <span class="sample">예시</span></small></li>
+      </ul></div>
+      <div class="col"><h5>오늘의 논문</h5><ul>
+        <li>Agentic World Action Models<b>cs.RO</b><small>arXiv:2610.30136</small></li>
+        <li>LongZero: 데이터 없이 긴 문맥 추론 강화<b>cs.CL</b><small>arXiv:2610.30132</small></li>
+        <li>Rethinking Video Autoencoders for Interactive World Models<b>cs.CV</b><small>arXiv:2610.30129</small></li>
+        <li>VoxProg: 복셀 프로그래밍으로 3D 공간 추론<b>cs.CV</b><small>arXiv:2610.30127</small></li>
+      </ul></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== C ===================== -->
+<section class="stage" id="C">
+  <div class="wrap">
+    <div class="nav"><div class="logo">vibe<span>.trends</span></div><div class="pills"><span class="on">오늘</span><span>이번 주</span><span>도구</span><span>재료</span><span>논문</span></div></div>
+    <div class="hello">10월 22일 목요일 · 아침 브리핑</div>
+    <h2>오늘 놓치면 안 되는 것들 ✦</h2>
+    <div class="bento">
+      <div class="b big">
+        <div class="lab">🔥 오늘의 핫이슈 · AI 요약</div>
+        <h3>PHP 긴급 보안 릴리즈,<br>HN 1·2위 동시 점령</h3>
+        <p>PHP 8.2.35가 공개되고 재단이 보안 체계 개편을 발표했어요. 8.2 계열을 쓰는 서버라면 오늘 안에 업데이트하세요. 댓글 870개 이상이 달리며 하루 종일 화제였어요.</p>
+        <div class="chips"><span>HN 974점</span><span>HN 682점</span><span>GeekNews <span class="sample">예시</span></span></div>
+      </div>
+      <div class="b danger">
+        <div class="lab">⚠ 보안 경보</div>
+        <h4>LiteLLM 1.107.0 PyPI에 백도어</h4>
+        <p>자격증명 탈취 코드 포함 · AI가 의존성을 자동 설치한다면 lock 파일 확인</p>
+      </div>
+      <div class="b stat s1"><div class="lab">새로 뜬 레포</div><div class="num">6<small>▲ 어제 대비</small></div><div class="cap">추적 중 34개</div></div>
+      <div class="b stat s2"><div class="lab">HN 최고점</div><div class="num">974</div><div class="cap">PHP 8.2.35</div></div>
+      <div class="b tools">
+        <div class="lab">🛠 AI 코딩 도구 업데이트 <span class="sample">예시</span></div>
+        <div class="trow"><div class="ic" style="background:#d97757">C</div><div><b>Claude Code</b><small>서브에이전트 병렬 실행 개선</small></div><span class="v">v3.4.1</span></div>
+        <div class="trow"><div class="ic" style="background:#111;border:1px solid #444">⌘</div><div><b>Cursor</b><small>Background Agent 요금 변경</small></div><span class="v">v2.9</span></div>
+        <div class="trow"><div class="ic" style="background:#10a37f">O</div><div><b>Codex CLI</b><small>MCP 서버 자동 탐색</small></div><span class="v">v0.61</span></div>
+        <div class="trow"><div class="ic" style="background:#4285f4">G</div><div><b>Gemini CLI</b><small>컨텍스트 캐싱 기본값 on</small></div><span class="v">v1.2.0</span></div>
+      </div>
+      <div class="b rise">
+        <div class="lab">🚀 급상승 레포 · 7일 스타</div>
+        <div class="rr"><span class="k">1</span><span>morluto/rea</span><span class="d">+16.0K</span><div class="tb" style="width:100%"></div></div>
+        <div class="rr"><span class="k">2</span><span>HKUDS/CLI-Anything</span><span class="d">+3,681</span><div class="tb" style="width:23%"></div></div>
+        <div class="rr"><span class="k">3</span><span>cloudflare/security-audit-skill</span><span class="d">+3,630</span><div class="tb" style="width:22.7%"></div></div>
+        <div class="rr"><span class="k">4</span><span>DietrichGebert/ponytail</span><span class="d">+3,163</span><div class="tb" style="width:19.8%"></div></div>
+        <div class="rr"><span class="k">5</span><span>akitaonrails/ai-memory</span><span class="d">+2,833</span><div class="tb" style="width:17.7%"></div></div>
+      </div>
+      <div class="b mcp">
+        <div class="lab">🧩 바이브코딩 재료 · 스킬 · MCP</div>
+        <div class="list"><span>security-audit-skill<b>+3.6K</b></span><span>ai-memory<b>+2.8K</b></span><span>text-to-cad<b>+2.0K</b></span><span>CLI-Anything<b>+3.7K</b></span></div>
+      </div>
+      <div class="b mcp">
+        <div class="lab">📄 오늘의 논문 · arXiv 200편</div>
+        <div class="list"><span>Agentic World Action Models</span><span>LongZero</span><span>VoxProg</span><span>PhysiCalWorld</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+  let cur = 'A';
+  const pick = document.getElementById('pick');
+  document.querySelectorAll('.tab').forEach(b => b.onclick = () => {
+    cur = b.dataset.t;
+    document.querySelectorAll('.tab').forEach(x => x.classList.toggle('on', x === b));
+    document.querySelectorAll('.stage').forEach(s => s.classList.toggle('on', s.id === cur));
+    pick.classList.remove('done'); pick.textContent = '이 방향으로 선택';
+    window.scrollTo(0, 0);
+  });
+  pick.onclick = () => {
+    if (window.brainstorm) window.brainstorm.choice(cur, { text: document.querySelector('.tab.on').textContent });
+    pick.classList.add('done'); pick.textContent = '✓ ' + cur + ' 선택됨';
+  };
+</script>
+</body>
+</html>
