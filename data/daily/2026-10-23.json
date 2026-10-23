@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "date": "2026-10-23",
-  "collectedAt": "2026-10-23T08:09:04.506Z",
+  "collectedAt": "2026-10-23T08:19:31.275Z",
   "mode": "full",
   "scanNo": 1,
   "sources": [
@@ -86,11 +86,11 @@
     {
       "id": "d2039dacc2",
       "title": "eMudhra to exit global SSL/TLS certificate business",
-      "title_ko": null,
-      "summary_ko": null,
-      "check_ko": null,
+      "title_ko": "이무드라(eMudhra), 글로벌 SSL/TLS 인증서 사업 철수",
+      "summary_ko": "글로벌 인증 기관인 이무드라가 글로벌 SSL/TLS 인증서 사업에서 철수한다고 밝혔습니다. 관련 시장과 고객들에게 적지 않은 영향이 있을 것으로 보입니다.",
+      "check_ko": "사용 중인 SSL/TLS 인증서 발급처가 이무드라와 연관되어 있는지 확인해 보세요.",
       "heat": 55,
-      "heatReason": "HN 1030점 · 댓글 671",
+      "heatReason": "HN 1035점 · 댓글 671",
       "sources": [
         "hn"
       ],
@@ -100,7 +100,7 @@
           "source": "hn",
           "title": "eMudhra to exit global SSL/TLS certificate business",
           "url": "https://emudhra.com/en/press-release/emudhra-to-exit-global-ssl-tls-certificate-business",
-          "points": 1030,
+          "points": 1035,
           "comments": 671
         }
       ]
@@ -108,11 +108,11 @@
     {
       "id": "c39c9039ab",
       "title": "Quad9 to exit France",
-      "title_ko": null,
-      "summary_ko": null,
-      "check_ko": null,
+      "title_ko": "쿼드9(Quad9), 프랑스 시장 철수",
+      "summary_ko": "공공 DNS 서비스인 쿼드9이 프랑스 시장에서 철수한다고 밝혔습니다. 현지 규제 및 운영 환경 변화가 원인으로 언급되었습니다.",
+      "check_ko": "프랑스 지역 대상 인프라에서 쿼드9 DNS를 사용하고 있는지 점검해 보세요.",
       "heat": 54,
-      "heatReason": "HN 1163점 · 댓글 395",
+      "heatReason": "HN 1168점 · 댓글 396",
       "sources": [
         "hn"
       ],
@@ -122,19 +122,19 @@
           "source": "hn",
           "title": "Quad9 to exit France",
           "url": "https://quad9.net/news/blog/au-revoir-france/",
-          "points": 1163,
-          "comments": 395
+          "points": 1168,
+          "comments": 396
         }
       ]
     },
     {
       "id": "ab26d40a7d",
       "title": "Every AI model has the same \"controversial\" take on humans",
-      "title_ko": null,
-      "summary_ko": null,
-      "check_ko": null,
+      "title_ko": "모든 AI 모델이 인간에 대해 동일한 '논란의 여지가 있는' 시각을 공유하다",
+      "summary_ko": "다양한 AI 모델들이 인간에 대해 공통적으로 특정한 관점과 성향을 드러낸다는 분석이 제기되었습니다. AI의 학습 데이터와 정렬(Alignment) 과정에서 기인한 현상으로 주목받고 있습니다.",
+      "check_ko": "현재 사용하는 주요 AI 모델들이 인간 관련 질문에 어떤 공통적 답변을 내놓는지 테스트해 보세요.",
       "heat": 49,
-      "heatReason": "HN 378점 · 댓글 400",
+      "heatReason": "HN 386점 · 댓글 401",
       "sources": [
         "hn"
       ],
@@ -144,17 +144,17 @@
           "source": "hn",
           "title": "Every AI model has the same \"controversial\" take on humans",
           "url": "https://www.modelcompare.ai/blog/ai-models-controversial-take-on-humans",
-          "points": 378,
-          "comments": 400
+          "points": 386,
+          "comments": 401
         }
       ]
     },
     {
       "id": "7dbfe49270",
       "title": "WorldTUI: I trained a 360M model to pretend to be a terminal",
-      "title_ko": null,
-      "summary_ko": null,
-      "check_ko": null,
+      "title_ko": "WorldTUI: 터미널인 척하는 3억 6천만 파라미터 모델 학습기",
+      "summary_ko": "개발자가 터미널 환경을 모방하도록 3억 6천만(360M) 개의 매개변수를 가진 경량 모델을 직접 학습시켰습니다. 작고 효율적인 모델로 특정 인터페이스를 흉내 내는 실험입니다.",
+      "check_ko": "경량화된 소형 언어 모델(sLLM)을 활용해 특정 인터페이스 에뮬레이션을 구현하는 방식을 살펴보세요.",
       "heat": 49,
       "heatReason": "HN 537점 · 댓글 166",
       "sources": [
@@ -174,11 +174,11 @@
     {
       "id": "cf2457bd3a",
       "title": "Tell HN: I unknowingly broke the PHP RCE embargo. I am sorry.",
-      "title_ko": null,
-      "summary_ko": null,
-      "check_ko": null,
+      "title_ko": "HN 제안: 의도치 않게 PHP RCE 엠바고를 깨버렸습니다. 죄송합니다.",
+      "summary_ko": "한 개발자가 PHP 원격 코드 실행(RCE) 취약점과 관련된 보안 엠바고(공개 유예) 기간을 실수로 위반했다고 해명하고 사과했습니다. 보안 취약점 공개 절차와 관련된 주의사항이 논의되고 있습니다.",
+      "check_ko": "오픈소스 취약점 정보를 다룰 때 보안 엠바고 규정을 준수하고 있는지 확인해 보세요.",
       "heat": 49,
-      "heatReason": "HN 523점 · 댓글 207",
+      "heatReason": "HN 524점 · 댓글 209",
       "sources": [
         "hn"
       ],
@@ -188,8 +188,8 @@
           "source": "hn",
           "title": "Tell HN: I unknowingly broke the PHP RCE embargo. I am sorry.",
           "url": "https://news.ycombinator.com/item?id=50193416",
-          "points": 523,
-          "comments": 207
+          "points": 524,
+          "comments": 209
         }
       ]
     },
@@ -200,7 +200,7 @@
       "summary_ko": null,
       "check_ko": null,
       "heat": 48,
-      "heatReason": "HN 412점 · 댓글 197",
+      "heatReason": "HN 423점 · 댓글 201",
       "sources": [
         "hn"
       ],
@@ -210,8 +210,8 @@
           "source": "hn",
           "title": "Docker is weird",
           "url": "https://codeandcake.dev/posts/2026-10-22-docker-is-weird",
-          "points": 412,
-          "comments": 197
+          "points": 423,
+          "comments": 201
         }
       ]
     },
@@ -222,7 +222,7 @@
       "summary_ko": null,
       "check_ko": null,
       "heat": 47,
-      "heatReason": "HN 380점 · 댓글 187",
+      "heatReason": "HN 382점 · 댓글 188",
       "sources": [
         "hn"
       ],
@@ -232,8 +232,8 @@
           "source": "hn",
           "title": "OpenShell – A safe, private runtime for fleets of autonomous AI agents",
           "url": "https://github.com/NVIDIA/OpenShell",
-          "points": 380,
-          "comments": 187
+          "points": 382,
+          "comments": 188
         }
       ]
     },
@@ -244,7 +244,7 @@
       "summary_ko": null,
       "check_ko": null,
       "heat": 47,
-      "heatReason": "HN 417점 · 댓글 142",
+      "heatReason": "HN 418점 · 댓글 142",
       "sources": [
         "hn"
       ],
@@ -254,7 +254,7 @@
           "source": "hn",
           "title": "Run full iOS 16.5 firmware on Android Devices",
           "url": "https://github.com/oosexgang/hackios-xnu-kernel",
-          "points": 417,
+          "points": 418,
           "comments": 142
         }
       ]
@@ -266,7 +266,7 @@
       "summary_ko": null,
       "check_ko": null,
       "heat": 46,
-      "heatReason": "HN 327점 · 댓글 177",
+      "heatReason": "HN 328점 · 댓글 182",
       "sources": [
         "hn"
       ],
@@ -276,8 +276,8 @@
           "source": "hn",
           "title": "LLMs are making formal software verification feasible at a much larger scale",
           "url": "https://www.anthropic.com/research/formal-verification",
-          "points": 327,
-          "comments": 177
+          "points": 328,
+          "comments": 182
         }
       ]
     },
@@ -288,7 +288,7 @@
       "summary_ko": null,
       "check_ko": null,
       "heat": 46,
-      "heatReason": "HN 287점 · 댓글 255",
+      "heatReason": "HN 289점 · 댓글 257",
       "sources": [
         "hn"
       ],
@@ -298,8 +298,8 @@
           "source": "hn",
           "title": "Xbox wants you to pay 24 to 40 cents per hour to stream games you bought",
           "url": "https://arstechnica.com/gaming/2026/10/xbox-wants-you-to-pay-24-to-40-cents-per-hour-to-stream-games-you-already-bought/",
-          "points": 287,
-          "comments": 255
+          "points": 289,
+          "comments": 257
         }
       ]
     },
@@ -310,7 +310,7 @@
       "summary_ko": null,
       "check_ko": null,
       "heat": 44,
-      "heatReason": "HN 276점 · 댓글 114",
+      "heatReason": "HN 278점 · 댓글 115",
       "sources": [
         "hn"
       ],
@@ -320,8 +320,8 @@
           "source": "hn",
           "title": "Getting ready to operate GNU Taler in Germany",
           "url": "https://www.taler.net/en/news/2026-13.html",
-          "points": 276,
-          "comments": 114
+          "points": 278,
+          "comments": 115
         }
       ]
     },
@@ -331,8 +331,8 @@
       "title_ko": null,
       "summary_ko": null,
       "check_ko": null,
-      "heat": 41,
-      "heatReason": "HN 236점 · 댓글 53",
+      "heat": 42,
+      "heatReason": "HN 252점 · 댓글 62",
       "sources": [
         "hn"
       ],
@@ -342,8 +342,8 @@
           "source": "hn",
           "title": "Local Wikipedia: Wikipedia, but only for things a half hour walk from you",
           "url": "https://edjefferson.com/localwiki/",
-          "points": 236,
-          "comments": 53
+          "points": 252,
+          "comments": 62
         }
       ]
     },
@@ -354,7 +354,7 @@
       "summary_ko": null,
       "check_ko": null,
       "heat": 39,
-      "heatReason": "HN 138점 · 댓글 84",
+      "heatReason": "HN 139점 · 댓글 85",
       "sources": [
         "hn"
       ],
@@ -364,8 +364,8 @@
           "source": "hn",
           "title": "The foolishness of \"natural language programming\" (1978)",
           "url": "https://www.cs.utexas.edu/~EWD/transcriptions/EWD06xx/EWD667.html",
-          "points": 138,
-          "comments": 84
+          "points": 139,
+          "comments": 85
         }
       ]
     },
@@ -392,13 +392,35 @@
       ]
     },
     {
+      "id": "072416064c",
+      "title": "Ask HN: If the models are so good, why doesn't OpenAI just start 100 companies?",
+      "title_ko": null,
+      "summary_ko": null,
+      "check_ko": null,
+      "heat": 38,
+      "heatReason": "HN 105점 · 댓글 98",
+      "sources": [
+        "hn"
+      ],
+      "url": "https://news.ycombinator.com/item?id=50200997",
+      "items": [
+        {
+          "source": "hn",
+          "title": "Ask HN: If the models are so good, why doesn't OpenAI just start 100 companies?",
+          "url": "https://news.ycombinator.com/item?id=50200997",
+          "points": 105,
+          "comments": 98
+        }
+      ]
+    },
+    {
       "id": "f968218428",
       "title": "The same AI request emits 8.5 times more CO2 in Texas than in Sweden",
       "title_ko": null,
       "summary_ko": null,
       "check_ko": null,
-      "heat": 35,
-      "heatReason": "HN 80점 · 댓글 57",
+      "heat": 36,
+      "heatReason": "HN 85점 · 댓글 74",
       "sources": [
         "hn"
       ],
@@ -408,8 +430,8 @@
           "source": "hn",
           "title": "The same AI request emits 8.5 times more CO2 in Texas than in Sweden",
           "url": "https://berget.ai/en/blog/per-request-co2-press-release",
-          "points": 80,
-          "comments": 57
+          "points": 85,
+          "comments": 74
         }
       ]
     },
@@ -420,7 +442,7 @@
       "summary_ko": null,
       "check_ko": null,
       "heat": 34,
-      "heatReason": "HN 94점 · 댓글 23",
+      "heatReason": "HN 96점 · 댓글 23",
       "sources": [
         "hn"
       ],
@@ -430,7 +452,7 @@
           "source": "hn",
           "title": "Railpass",
           "url": "https://train.samismith.com/",
-          "points": 94,
+          "points": 96,
           "comments": 23
         }
       ]
@@ -442,7 +464,7 @@
       "summary_ko": null,
       "check_ko": null,
       "heat": 33,
-      "heatReason": "HN 70점 · 댓글 25",
+      "heatReason": "HN 72점 · 댓글 25",
       "sources": [
         "hn"
       ],
@@ -452,7 +474,7 @@
           "source": "hn",
           "title": "This I Believe (1952)",
           "url": "https://www.awakin.org/v2/read/view.php?tid=468",
-          "points": 70,
+          "points": 72,
           "comments": 25
         }
       ]
@@ -464,7 +486,7 @@
       "summary_ko": null,
       "check_ko": null,
       "heat": 31,
-      "heatReason": "HN 88점 · 댓글 7",
+      "heatReason": "HN 89점 · 댓글 7",
       "sources": [
         "hn"
       ],
@@ -474,7 +496,7 @@
           "source": "hn",
           "title": "Jank – The native Clojure dialect with seamless C++ interop",
           "url": "https://jank-lang.org/",
-          "points": 88,
+          "points": 89,
           "comments": 7
         }
       ]
@@ -507,8 +529,8 @@
       "title_ko": null,
       "summary_ko": null,
       "check_ko": null,
-      "heat": 29,
-      "heatReason": "HN 59점 · 댓글 10",
+      "heat": 30,
+      "heatReason": "HN 60점 · 댓글 10",
       "sources": [
         "hn"
       ],
@@ -518,7 +540,7 @@
           "source": "hn",
           "title": "Color Names",
           "url": "https://names.color.pizza",
-          "points": 59,
+          "points": 60,
           "comments": 10
         }
       ]
@@ -529,8 +551,8 @@
       "title_ko": null,
       "summary_ko": null,
       "check_ko": null,
-      "heat": 28,
-      "heatReason": "HN 51점 · 댓글 8",
+      "heat": 29,
+      "heatReason": "HN 56점 · 댓글 9",
       "sources": [
         "hn"
       ],
@@ -540,8 +562,8 @@
           "source": "hn",
           "title": "How does Fable 5.1 hide messages in images?",
           "url": "https://www.lesswrong.com/posts/WHEQps5PK8LrrcTAb/how-does-fable-5-1-hide-messages-in-images",
-          "points": 51,
-          "comments": 8
+          "points": 56,
+          "comments": 9
         }
       ]
     },
@@ -552,7 +574,7 @@
       "summary_ko": null,
       "check_ko": null,
       "heat": 28,
-      "heatReason": "HN 38점 · 댓글 17",
+      "heatReason": "HN 39점 · 댓글 18",
       "sources": [
         "hn"
       ],
@@ -562,8 +584,8 @@
           "source": "hn",
           "title": "Show HN: OnKey – I'm a bad singer, so I built an app to show where I'm off-key",
           "url": "https://github.com/dsmurrell/onkey",
-          "points": 38,
-          "comments": 17
+          "points": 39,
+          "comments": 18
         }
       ]
     },
@@ -573,8 +595,8 @@
       "title_ko": null,
       "summary_ko": null,
       "check_ko": null,
-      "heat": 26,
-      "heatReason": "HN 33점 · 댓글 10",
+      "heat": 27,
+      "heatReason": "HN 33점 · 댓글 12",
       "sources": [
         "hn"
       ],
@@ -585,7 +607,7 @@
           "title": "A lost Schrödinger manuscript reveals a twist in quantum physics",
           "url": "https://www.sciencealert.com/a-lost-schrdinger-manuscript-reveals-a-surprising-twist-in-quantum-physics",
           "points": 33,
-          "comments": 10
+          "comments": 12
         }
       ]
     },
@@ -618,7 +640,7 @@
       "summary_ko": null,
       "check_ko": null,
       "heat": 25,
-      "heatReason": "HN 27점 · 댓글 9",
+      "heatReason": "HN 28점 · 댓글 10",
       "sources": [
         "hn"
       ],
@@ -628,8 +650,8 @@
           "source": "hn",
           "title": "The HTML-in-Canvas API origin trial",
           "url": "https://developer.chrome.com/blog/html-in-canvas-origin-trial",
-          "points": 27,
-          "comments": 9
+          "points": 28,
+          "comments": 10
         }
       ]
     },
@@ -639,8 +661,8 @@
       "title_ko": null,
       "summary_ko": null,
       "check_ko": null,
-      "heat": 23,
-      "heatReason": "HN 29점 · 댓글 3",
+      "heat": 24,
+      "heatReason": "HN 33점 · 댓글 3",
       "sources": [
         "hn"
       ],
@@ -650,7 +672,7 @@
           "source": "hn",
           "title": "The alien space of science: Coherent but cognitively unavailable directions",
           "url": "https://arxiv.org/abs/2603.01092",
-          "points": 29,
+          "points": 33,
           "comments": 3
         }
       ]
@@ -720,35 +742,13 @@
           "comments": null
         }
       ]
-    },
-    {
-      "id": "00b34280df",
-      "title": "supabase/supabase",
-      "title_ko": null,
-      "summary_ko": null,
-      "check_ko": null,
-      "heat": 19,
-      "heatReason": "스타 +693",
-      "sources": [
-        "trending"
-      ],
-      "url": "https://github.com/supabase/supabase",
-      "items": [
-        {
-          "source": "trending",
-          "title": "supabase/supabase",
-          "url": "https://github.com/supabase/supabase",
-          "points": null,
-          "comments": null
-        }
-      ]
     }
   ],
   "alerts": [
     {
       "id": "geeknews-https://news.hada.io/topic?id=35844",
       "title": "Jared Kushner의 해킹된 휴대전화에서 드러난 비밀 협상과 수백만 달러 규모 거래",
-      "title_ko": null,
+      "title_ko": "Jared Kushner의 해킹된 휴대전화에서 드러난 비밀 협상과 수백만 달러 규모 거래",
       "url": "https://news.hada.io/topic?id=35844",
       "origin": "news",
       "severity": null,
@@ -757,7 +757,7 @@
     {
       "id": "geeknews-https://news.hada.io/topic?id=35826",
       "title": "PHP session.upload_progress의 힙 UAF(CVE-2026-109618 / -109619)",
-      "title_ko": null,
+      "title_ko": "PHP session.upload_progress의 힙 UAF(CVE-2026-109618 / -109619)",
       "url": "https://news.hada.io/topic?id=35826",
       "origin": "news",
       "severity": null,
@@ -766,7 +766,7 @@
     {
       "id": "GHSA-673q-mjm6-r5xr",
       "title": "Next.js: Unauthenticated Remote Code Execution in `use cache` functions returning typed arrays",
-      "title_ko": null,
+      "title_ko": "Next.js: typed array를 반환하는 `use cache` 함수의 인증되지 않은 원격 코드 실행 취약점",
       "url": "https://github.com/advisories/GHSA-673q-mjm6-r5xr",
       "origin": "advisory",
       "severity": "critical",
@@ -783,7 +783,7 @@
       "publishedAt": "2026-10-23T04:48:10Z",
       "url": "https://github.com/openai/codex/releases/tag/rust-v0.164.0",
       "note": "Save reusable prompts and slash commands in ten numbered /presets slots, with a keyboard menu for quick access. (#54380,",
-      "note_ko": null,
+      "note_ko": "재사용 가능한 프롬프트와 슬래시 명령어를 10개의 번호가 매겨진 /presets 슬롯에 저장하고, 키보드 메뉴로 빠르게 접근할 수 있습니다.",
       "isRecent": true
     },
     {
@@ -793,7 +793,7 @@
       "publishedAt": "2026-10-23T00:17:51.000Z",
       "url": "https://github.blog/changelog/2026-10-22-github-copilot-in-visual-studio-september-update-2",
       "note": "GitHub Copilot in Visual Studio — September update",
-      "note_ko": null,
+      "note_ko": "Visual Studio용 GitHub Copilot 9월 업데이트",
       "isRecent": true
     },
     {
@@ -803,7 +803,7 @@
       "publishedAt": "2026-10-22T22:18:57Z",
       "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.309",
       "note": "Fixed sandboxed Bash commands on macOS and Linux running the shell's startup files outside the sandbox before each comma",
-      "note_ko": null,
+      "note_ko": "macOS 및 Linux에서 샌드박스 외부의 쉘 시작 파일을 실행하던 샌드박스 내 Bash 명령어 버그를 수정했습니다.",
       "isRecent": true
     },
     {
@@ -813,7 +813,7 @@
       "publishedAt": "2026-10-20T21:17:57Z",
       "url": "https://github.com/google-gemini/gemini-cli/releases/tag/v0.65.0",
       "note": "fix(cli): enforce read-only workspace settings in untrusted folders by @jvargassanchez-dot in https://github.com/google-",
-      "note_ko": null,
+      "note_ko": "신뢰할 수 없는 폴더에서 읽기 전용 워크스페이스 설정을 강제하도록 수정했습니다.",
       "isRecent": true
     },
     {
@@ -823,7 +823,7 @@
       "publishedAt": "2026-10-16",
       "url": "https://cursor.com/changelog/cloud-agent-canvases-and-environments",
       "note": "Cloud Agent Canvases and Environment Improvements",
-      "note_ko": null,
+      "note_ko": "클라우드 에이전트 캔버스 및 환경 개선",
       "isRecent": false
     }
   ],
@@ -832,15 +832,15 @@
       "fullName": "morluto/rea",
       "url": "https://github.com/morluto/rea",
       "description": "Reverse engineer anything with agents, from app behavior down to native binaries.",
-      "description_ko": null,
-      "stars": 368732,
+      "description_ko": "앱 동작부터 네이티브 바이너리까지, 에이전트로 모든 것을 리버스 엔지니어링하세요.",
+      "stars": 368805,
       "delta7": 106341,
       "deltaSource": "trending-weekly",
       "isNew": false,
       "series": [
         {
           "date": "2026-10-23",
-          "stars": 368732
+          "stars": 368805
         }
       ]
     },
@@ -848,15 +848,15 @@
       "fullName": "debpalash/VoiceStudio",
       "url": "https://github.com/debpalash/VoiceStudio",
       "description": "VoiceStudio is the open-source, fully-local ElevenLabs alternative — voice cloning, voice design, video dubbing, dictation, transcription & audiobook creation in 646 languages.",
-      "description_ko": null,
-      "stars": 82151,
+      "description_ko": "VoiceStudio는 오픈소스이자 완전 로컬 기반의 ElevenLabs 대안으로, 646개 언어로 음성 복제, 음성 디자인, 비디오 더빙, 받아쓰기, 전사 및 오디오북 생성을 지원합니다.",
+      "stars": 82160,
       "delta7": 13581,
       "deltaSource": "trending-weekly",
       "isNew": false,
       "series": [
         {
           "date": "2026-10-23",
-          "stars": 82151
+          "stars": 82160
         }
       ]
     },
@@ -864,15 +864,15 @@
       "fullName": "stablyai/orca",
       "url": "https://github.com/stablyai/orca",
       "description": "Orca is the place for working with a fleet of agents (e.g. Grok Bot, Claude Code). Run any coding agent with your own subscription. Available on desktop, mobile and remote runtime.",
-      "description_ko": null,
-      "stars": 103174,
+      "description_ko": "Orca는 Grok Bot, Claude Code 등 다양한 에이전트 군단을 활용해 작업할 수 있는 공간입니다. 데스크톱, 모바일, 원격 런타임에서 자신만의 구독으로 모든 코딩 에이전트를 실행하세요.",
+      "stars": 103185,
       "delta7": 9401,
       "deltaSource": "trending-weekly",
       "isNew": false,
       "series": [
         {
           "date": "2026-10-23",
-          "stars": 103174
+          "stars": 103185
         }
       ]
     },
@@ -880,15 +880,15 @@
       "fullName": "anomalyco/opencode",
       "url": "https://github.com/anomalyco/opencode",
       "description": "The open source coding agent.",
-      "description_ko": null,
-      "stars": 220342,
+      "description_ko": "오픈소스 코딩 에이전트입니다.",
+      "stars": 220353,
       "delta7": 6750,
       "deltaSource": "trending-weekly",
       "isNew": false,
       "series": [
         {
           "date": "2026-10-23",
-          "stars": 220342
+          "stars": 220353
         }
       ]
     },
@@ -896,15 +896,15 @@
       "fullName": "heygen-com/hyperframes",
       "url": "https://github.com/heygen-com/hyperframes",
       "description": "Write HTML. Render video. Built for agents.",
-      "description_ko": null,
-      "stars": 70245,
+      "description_ko": "HTML을 작성하고 비디오를 렌더링하세요. 에이전트를 위해 만들어졌습니다.",
+      "stars": 70253,
       "delta7": 5669,
       "deltaSource": "trending-weekly",
       "isNew": false,
       "series": [
         {
           "date": "2026-10-23",
-          "stars": 70245
+          "stars": 70253
         }
       ]
     },
@@ -912,15 +912,15 @@
       "fullName": "anthropics/claude-plugins-official",
       "url": "https://github.com/anthropics/claude-plugins-official",
       "description": "Official, Anthropic-managed directory of high quality Claude Code Plugins.",
-      "description_ko": null,
-      "stars": 43985,
+      "description_ko": "Anthropic이 관리하는 고품질 Claude Code 플러그인의 공식 디렉토리입니다.",
+      "stars": 43987,
       "delta7": 5649,
       "deltaSource": "trending-weekly",
       "isNew": false,
       "series": [
         {
           "date": "2026-10-23",
-          "stars": 43985
+          "stars": 43987
         }
       ]
     },
@@ -928,15 +928,15 @@
       "fullName": "NationalSecurityAgency/ghidra",
       "url": "https://github.com/NationalSecurityAgency/ghidra",
       "description": "Ghidra is a software reverse engineering (SRE) framework",
-      "description_ko": null,
-      "stars": 93321,
+      "description_ko": "Ghidra는 소프트웨어 리버스 엔지니어링(SRE) 프레임워크입니다.",
+      "stars": 93323,
       "delta7": 4892,
       "deltaSource": "trending-weekly",
       "isNew": false,
       "series": [
         {
           "date": "2026-10-23",
-          "stars": 93321
+          "stars": 93323
         }
       ]
     },
@@ -944,15 +944,15 @@
       "fullName": "Comfy-Org/ComfyUI",
       "url": "https://github.com/Comfy-Org/ComfyUI",
       "description": "The most powerful and modular diffusion model GUI, api and backend with a graph/nodes interface. The fastest local inference engine in the world.",
-      "description_ko": null,
-      "stars": 142129,
+      "description_ko": "그래프/노드 인터페이스를 갖춘 가장 강력하고 모듈화된 확산 모델 GUI, API 및 백엔드이며, 세계에서 가장 빠른 로컬 추론 엔진입니다.",
+      "stars": 142134,
       "delta7": 4375,
       "deltaSource": "trending-weekly",
       "isNew": false,
       "series": [
         {
           "date": "2026-10-23",
-          "stars": 142129
+          "stars": 142134
         }
       ]
     },
@@ -960,15 +960,15 @@
       "fullName": "K-Dense-AI/scientific-agent-skills",
       "url": "https://github.com/K-Dense-AI/scientific-agent-skills",
       "description": "Turn any AI agent into an AI Scientist. The #1 Agent Skills library for science, used by 250,000+ scientists worldwide. 177 ready-to-use validated skills plus 100+ scientific databases covering biology, chemistry, medicine, and drug discovery. Compatible with Cursor, Claude Code, Codex, Pi, Antigravity, and the open Agent Skills standard.",
-      "description_ko": null,
-      "stars": 53999,
+      "description_ko": "어떤 AI 에이전트든 AI 과학자로 변환하세요. 전 세계 25만 명 이상의 과학자가 사용하는 최고의 과학용 에이전트 스킬 라이브러리로, 생물학, 화학, 의학, 신약 개발을 아우르는 177개의 검증된 즉시 사용 가능한 스킬과 100개 이상의 과학 데이터베이스를 제공합니다. Cursor, Claude Code, Codex, Pi, Antigravity 및 오픈",
+      "stars": 54006,
       "delta7": 3967,
       "deltaSource": "trending-weekly",
       "isNew": false,
       "series": [
         {
           "date": "2026-10-23",
-          "stars": 53999
+          "stars": 54006
         }
       ]
     },
@@ -976,15 +976,15 @@
       "fullName": "ruvnet/ruflo",
       "url": "https://github.com/ruvnet/ruflo",
       "description": "🌊 The original agent harness. Deploy intelligent multi-player swarms, coordinate autonomous workflows, and build conversational AI systems. Features adaptive memory, self-learning intelligence, federation, vector RAG integration, and native Claude Code / Codex / Hermes and many more Integrated",
-      "description_ko": null,
-      "stars": 78580,
+      "description_ko": "🌊 오리지널 에이전트 하네스입니다. 지능형 멀티플레이어 스웜을 배포하고, 자율 워크플로우를 조율하며, 대화형 AI 시스템을 구축하세요. 적응형 메모리, 자기 학습 지능, 연합, 벡터 RAG 통합, 그리고 네이티브 Claude Code / Codex / Hermes 등과의 다양한 통합 기능을 제공합니다.",
+      "stars": 78583,
       "delta7": 3708,
       "deltaSource": "trending-weekly",
       "isNew": false,
       "series": [
         {
           "date": "2026-10-23",
-          "stars": 78580
+          "stars": 78583
         }
       ]
     }
@@ -996,8 +996,8 @@
       "fullName": "Gathin23/cleanyourtv",
       "url": "https://github.com/Gathin23/cleanyourtv",
       "description": "Debloat any Android or Google TV over Wi-Fi and get an Apple TV-style home.",
-      "description_ko": null,
-      "stars": 25621,
+      "description_ko": "Wi-Fi를 통해 모든 안드로이드 또는 구글 TV의 불필요한 앱을 제거하고 애플 TV 스타일의 홈 화면을 만드세요.",
+      "stars": 25650,
       "kind": "OTHER",
       "isNew": true
     },
@@ -1005,8 +1005,8 @@
       "fullName": "tangency-labs/solidcraft",
       "url": "https://github.com/tangency-labs/solidcraft",
       "description": "SolidCraft: an open-source parametric 3D CAD application built in pure Rust. Desktop, web, and automation through MCP.",
-      "description_ko": null,
-      "stars": 9450,
+      "description_ko": "SolidCraft: 순수 Rust로 구축된 오픈소스 파라메트릭 3D CAD 애플리케이션입니다. 데스크톱, 웹, 그리고 MCP를 통한 자동화를 지원합니다.",
+      "stars": 9451,
       "kind": "MCP",
       "isNew": true
     },
@@ -1014,7 +1014,7 @@
       "fullName": "rehan-remade/universal-modder",
       "url": "https://github.com/rehan-remade/universal-modder",
       "description": "Point Claude at any game. Skills, tools and the fal MCP that let Claude Code mod almost any PC game you own: recon, reverse engineering, fal-generated art/3D/audio, in-game testing, showcase videos.",
-      "description_ko": null,
+      "description_ko": "Claude를 모든 게임에 연결하세요. 정찰, 리버스 엔지니어링, fal로 생성된 아트/3D/오디오, 인게임 테스트, 쇼케이스 비디오 등 Claude Code가 소유한 거의 모든 PC 게임을 모딩할 수 있게 해주는 스킬, 도구 및 fal MCP입니다.",
       "stars": 8742,
       "kind": "MCP",
       "isNew": true
@@ -1023,8 +1023,8 @@
       "fullName": "KKKKhazix/AIHOT",
       "url": "https://github.com/KKKKhazix/AIHOT",
       "description": "一个自己找热点、自己写日报的网站框架。把信源和精选标准换成你的，它就是你的行业热点站。",
-      "description_ko": null,
-      "stars": 8476,
+      "description_ko": "핫토픽을 스스로 찾아 일일 브리핑을 작성하는 웹 사이트 프레임워크입니다. 소스 정보와 선정 기준을 변경하면 자신만의 업계 핫토픽 사이트가 됩니다.",
+      "stars": 8477,
       "kind": "MCP",
       "isNew": true
     },
@@ -1032,7 +1032,7 @@
       "fullName": "Louis-CFM/coucou",
       "url": "https://github.com/Louis-CFM/coucou",
       "description": "A tiny friend in your Mac's notch and on your iPhone that keeps an eye on your AI coding agents: Claude Code, Codex, Cursor, Gemini CLI, Antigravity and more. Approve from the notch or your Lock Screen.",
-      "description_ko": null,
+      "description_ko": "맥의 노치와 아이폰 화면에서 AI 코딩 에이전트(Claude Code, Codex, Cursor, Gemini CLI, Antigravity 등)를 모니터링하는 작은 친구입니다. 노치나 잠금 화면에서 바로 승인하세요.",
       "stars": 6257,
       "kind": "CLI",
       "isNew": true
@@ -1041,8 +1041,8 @@
       "fullName": "lemomo-ai/lemo-opuscar",
       "url": "https://github.com/lemomo-ai/lemo-opuscar",
       "description": "A toolbox of film styles made in code for Claude Code: 59 ready to use, and your own. Each style is a style prompt plus a demo film made entirely in code by Claude Opus 5.5, with no video model. By Lemomo. · 一套用代码做片的风格工具箱：59 种现成风格，也能做出你自己的",
-      "description_ko": null,
-      "stars": 5854,
+      "description_ko": "Claude Code를 위해 코드로 제작된 영화 스타일 툴박스입니다. 59가지의 바로 사용 가능한 스타일과 나만의 스타일을 제공합니다. 각 스타일은 스타일 프롬프트와 비디오 모델 없이 Claude Opus 5.5가 온전히 코드로 만든 데모 영화로 구성되어 있습니다.",
+      "stars": 5861,
       "kind": "SKILL",
       "isNew": true
     },
@@ -1050,7 +1050,7 @@
       "fullName": "shader-effects-inc/shaders",
       "url": "https://github.com/shader-effects-inc/shaders",
       "description": "WebGPU components for React, Vue, Svelte, Solid, JS & Framer",
-      "description_ko": null,
+      "description_ko": "React, Vue, Svelte, Solid, JS 및 Framer를 위한 WebGPU 컴포넌트",
       "stars": 5342,
       "kind": "MCP",
       "isNew": true
@@ -1059,8 +1059,8 @@
       "fullName": "Jakeschincariol/replica-skill",
       "url": "https://github.com/Jakeschincariol/replica-skill",
       "description": "Eleven free Claude skills that clone any app: reverse-engineer it, rebuild it, test it for bugs, then fix what its users hate. Free, MIT.",
-      "description_ko": null,
-      "stars": 4817,
+      "description_ko": "어떤 앱이든 복제할 수 있는 11가지 무료 Claude 스킬: 리버스 엔지니어링, 재구축, 버그 테스트 및 사용자가 싫어하는 부분 수정. 무료, MIT 라이선스.",
+      "stars": 4822,
       "kind": "SKILL",
       "isNew": true
     },
@@ -1068,8 +1068,8 @@
       "fullName": "QingYunA/answer-me-with-html",
       "url": "https://github.com/QingYunA/answer-me-with-html",
       "description": "Answer me with HTML — an agent skill that answers hard questions with a one-page HTML you can actually read. 让 AI Agent 用一页 HTML 回答复杂问题。",
-      "description_ko": null,
-      "stars": 4277,
+      "description_ko": "HTML로 답변해 드립니다 — 읽기 쉬운 한 페이지 분량의 HTML로 어려운 질문에 답해주는 에이전트 스킬입니다.",
+      "stars": 4278,
       "kind": "SKILL",
       "isNew": true
     },
@@ -1077,7 +1077,7 @@
       "fullName": "kaankiziltug/logo-design-skill",
       "url": "https://github.com/kaankiziltug/logo-design-skill",
       "description": "A comprehensive logo-design skill for Claude, Gemini CLI, Codex and other AI agents: principles, process, SVG craft, testing tools and a 1,400+ logo reference library.",
-      "description_ko": null,
+      "description_ko": "Claude, Gemini CLI, Codex 및 기타 AI 에이전트를 위한 포괄적인 로고 디자인 스킬입니다. 원칙, 프로세스, SVG 제작, 테스트 도구 및 1,400개 이상의 로고 레퍼런스 라이브러리를 제공합니다.",
       "stars": 4206,
       "kind": "SKILL",
       "isNew": true
@@ -1086,8 +1086,8 @@
       "fullName": "simbasjungles/free-my-tv",
       "url": "https://github.com/simbasjungles/free-my-tv",
       "description": "A fast, ad-free home screen for Google TV. Open source, built with Claude Code. One button to undo.",
-      "description_ko": null,
-      "stars": 3614,
+      "description_ko": "구글 TV를 위한 빠르고 광고 없는 홈 화면입니다. 오픈소스이며 Claude Code로 제작되었습니다. 버튼 하나로 실행 취소가 가능합니다.",
+      "stars": 3619,
       "kind": "OTHER",
       "isNew": true
     },
@@ -1095,7 +1095,7 @@
       "fullName": "dzhng/jevgrep",
       "url": "https://github.com/dzhng/jevgrep",
       "description": "Find code by asking what it does. A CLI for coding agents that uses Jev to discover relevant files and source context.",
-      "description_ko": null,
+      "description_ko": "코드가 하는 일을 물어보아 코드를 찾으세요. 관련 파일과 소스 컨텍스트를 찾기 위해 Jev를 사용하는 코딩 에이전트용 CLI입니다.",
       "stars": 2856,
       "kind": "CLI",
       "isNew": true
@@ -1131,6 +1131,13 @@
       "isNew": false
     },
     {
+      "term": "model",
+      "today": 6,
+      "avg7": null,
+      "delta": null,
+      "isNew": false
+    },
+    {
       "term": "api",
       "today": 5,
       "avg7": null,
@@ -1139,13 +1146,6 @@
     },
     {
       "term": "codex",
-      "today": 5,
-      "avg7": null,
-      "delta": null,
-      "isNew": false
-    },
-    {
-      "term": "model",
       "today": 5,
       "avg7": null,
       "delta": null,
@@ -2791,28 +2791,28 @@
     {
       "id": "deepseek-ai/DeepSeek-V4.1-Flash-1017",
       "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017",
-      "likes": 2431,
+      "likes": 2435,
       "downloads": 51911,
       "pipeline": "image-text-to-text"
     },
     {
       "id": "black-forest-labs/flux-3-image-klein-comfy",
       "url": "https://huggingface.co/black-forest-labs/flux-3-image-klein-comfy",
-      "likes": 1327,
+      "likes": 1328,
       "downloads": 512524,
       "pipeline": "image-to-image"
     },
     {
       "id": "RecursiveSI/flint",
       "url": "https://huggingface.co/RecursiveSI/flint",
-      "likes": 591,
+      "likes": 592,
       "downloads": 420,
       "pipeline": "text-generation"
     },
     {
       "id": "OpenMOSS-Team/MOSS-Image-SFT",
       "url": "https://huggingface.co/OpenMOSS-Team/MOSS-Image-SFT",
-      "likes": 604,
+      "likes": 605,
       "downloads": 6890,
       "pipeline": "text-to-image"
     },
@@ -2826,7 +2826,7 @@
     {
       "id": "Lightricks/LTX-2.5",
       "url": "https://huggingface.co/Lightricks/LTX-2.5",
-      "likes": 8934,
+      "likes": 8936,
       "downloads": 2054990,
       "pipeline": "image-to-video"
     },
@@ -2868,7 +2868,7 @@
     {
       "id": "Qwen/Qwen3.8-27B",
       "url": "https://huggingface.co/Qwen/Qwen3.8-27B",
-      "likes": 18236,
+      "likes": 18238,
       "downloads": 7758670,
       "pipeline": "image-text-to-text"
     },
@@ -2880,18 +2880,18 @@
       "pipeline": "text-generation"
     },
     {
+      "id": "tencent/Hy-Memory-30B-A3B",
+      "url": "https://huggingface.co/tencent/Hy-Memory-30B-A3B",
+      "likes": 293,
+      "downloads": 2966,
+      "pipeline": "text-generation"
+    },
+    {
       "id": "meta-models/Muse-Spark-Open-816B-A42B",
       "url": "https://huggingface.co/meta-models/Muse-Spark-Open-816B-A42B",
       "likes": 665,
       "downloads": 3163,
       "pipeline": "image-text-to-text"
-    },
-    {
-      "id": "tencent/Hy-Memory-30B-A3B",
-      "url": "https://huggingface.co/tencent/Hy-Memory-30B-A3B",
-      "likes": 292,
-      "downloads": 2966,
-      "pipeline": "text-generation"
     },
     {
       "id": "black-forest-labs/flux-3-image-klein",
@@ -2910,7 +2910,7 @@
     {
       "id": "mistralai/Timestral-209M",
       "url": "https://huggingface.co/mistralai/Timestral-209M",
-      "likes": 292,
+      "likes": 293,
       "downloads": 6194,
       "pipeline": "time-series-forecasting"
     },
@@ -2936,8 +2936,8 @@
         "title": "Quad9 to exit France",
         "url": "https://quad9.net/news/blog/au-revoir-france/",
         "domain": "quad9.net",
-        "points": 1163,
-        "comments": 395,
+        "points": 1168,
+        "comments": 396,
         "hnUrl": "https://news.ycombinator.com/item?id=50195959"
       },
       {
@@ -2945,7 +2945,7 @@
         "title": "eMudhra to exit global SSL/TLS certificate business",
         "url": "https://emudhra.com/en/press-release/emudhra-to-exit-global-ssl-tls-certificate-business",
         "domain": "emudhra.com",
-        "points": 1030,
+        "points": 1035,
         "comments": 671,
         "hnUrl": "https://news.ycombinator.com/item?id=50195110"
       },
@@ -2963,53 +2963,53 @@
         "title": "Tell HN: I unknowingly broke the PHP RCE embargo. I am sorry.",
         "url": "https://news.ycombinator.com/item?id=50193416",
         "domain": "news.ycombinator.com",
-        "points": 523,
-        "comments": 207,
+        "points": 524,
+        "comments": 209,
         "hnUrl": "https://news.ycombinator.com/item?id=50193416"
-      },
-      {
-        "id": 50196718,
-        "title": "Run full iOS 16.5 firmware on Android Devices",
-        "url": "https://github.com/oosexgang/hackios-xnu-kernel",
-        "domain": "github.com",
-        "points": 417,
-        "comments": 142,
-        "hnUrl": "https://news.ycombinator.com/item?id=50196718"
       },
       {
         "id": 50202681,
         "title": "Docker is weird",
         "url": "https://codeandcake.dev/posts/2026-10-22-docker-is-weird",
         "domain": "codeandcake.dev",
-        "points": 412,
-        "comments": 197,
+        "points": 423,
+        "comments": 201,
         "hnUrl": "https://news.ycombinator.com/item?id=50202681"
       },
       {
-        "id": 50198675,
-        "title": "OpenShell – A safe, private runtime for fleets of autonomous AI agents",
-        "url": "https://github.com/NVIDIA/OpenShell",
+        "id": 50196718,
+        "title": "Run full iOS 16.5 firmware on Android Devices",
+        "url": "https://github.com/oosexgang/hackios-xnu-kernel",
         "domain": "github.com",
-        "points": 380,
-        "comments": 187,
-        "hnUrl": "https://news.ycombinator.com/item?id=50198675"
+        "points": 418,
+        "comments": 142,
+        "hnUrl": "https://news.ycombinator.com/item?id=50196718"
       },
       {
         "id": 50197313,
         "title": "Every AI model has the same \"controversial\" take on humans",
         "url": "https://www.modelcompare.ai/blog/ai-models-controversial-take-on-humans",
         "domain": "modelcompare.ai",
-        "points": 378,
-        "comments": 400,
+        "points": 386,
+        "comments": 401,
         "hnUrl": "https://news.ycombinator.com/item?id=50197313"
+      },
+      {
+        "id": 50198675,
+        "title": "OpenShell – A safe, private runtime for fleets of autonomous AI agents",
+        "url": "https://github.com/NVIDIA/OpenShell",
+        "domain": "github.com",
+        "points": 382,
+        "comments": 188,
+        "hnUrl": "https://news.ycombinator.com/item?id=50198675"
       },
       {
         "id": 50202217,
         "title": "LLMs are making formal software verification feasible at a much larger scale",
         "url": "https://www.anthropic.com/research/formal-verification",
         "domain": "anthropic.com",
-        "points": 327,
-        "comments": 177,
+        "points": 328,
+        "comments": 182,
         "hnUrl": "https://news.ycombinator.com/item?id=50202217"
       },
       {
@@ -3017,8 +3017,8 @@
         "title": "Xbox wants you to pay 24 to 40 cents per hour to stream games you bought",
         "url": "https://arstechnica.com/gaming/2026/10/xbox-wants-you-to-pay-24-to-40-cents-per-hour-to-stream-games-you-already-bought/",
         "domain": "arstechnica.com",
-        "points": 287,
-        "comments": 255,
+        "points": 289,
+        "comments": 257,
         "hnUrl": "https://news.ycombinator.com/item?id=50194009"
       },
       {
@@ -3026,8 +3026,8 @@
         "title": "Getting ready to operate GNU Taler in Germany",
         "url": "https://www.taler.net/en/news/2026-13.html",
         "domain": "taler.net",
-        "points": 276,
-        "comments": 114,
+        "points": 278,
+        "comments": 115,
         "hnUrl": "https://news.ycombinator.com/item?id=50197404"
       },
       {
@@ -3035,8 +3035,8 @@
         "title": "Local Wikipedia: Wikipedia, but only for things a half hour walk from you",
         "url": "https://edjefferson.com/localwiki/",
         "domain": "edjefferson.com",
-        "points": 236,
-        "comments": 53,
+        "points": 252,
+        "comments": 62,
         "hnUrl": "https://news.ycombinator.com/item?id=50202285"
       },
       {
@@ -3053,16 +3053,25 @@
         "title": "The foolishness of \"natural language programming\" (1978)",
         "url": "https://www.cs.utexas.edu/~EWD/transcriptions/EWD06xx/EWD667.html",
         "domain": "cs.utexas.edu",
-        "points": 138,
-        "comments": 84,
+        "points": 139,
+        "comments": 85,
         "hnUrl": "https://news.ycombinator.com/item?id=50203161"
+      },
+      {
+        "id": 50200997,
+        "title": "Ask HN: If the models are so good, why doesn't OpenAI just start 100 companies?",
+        "url": "https://news.ycombinator.com/item?id=50200997",
+        "domain": "news.ycombinator.com",
+        "points": 105,
+        "comments": 98,
+        "hnUrl": "https://news.ycombinator.com/item?id=50200997"
       },
       {
         "id": 50201414,
         "title": "Railpass",
         "url": "https://train.samismith.com/",
         "domain": "train.samismith.com",
-        "points": 94,
+        "points": 96,
         "comments": 23,
         "hnUrl": "https://news.ycombinator.com/item?id=50201414"
       },
@@ -3071,7 +3080,7 @@
         "title": "Jank – The native Clojure dialect with seamless C++ interop",
         "url": "https://jank-lang.org/",
         "domain": "jank-lang.org",
-        "points": 88,
+        "points": 89,
         "comments": 7,
         "hnUrl": "https://news.ycombinator.com/item?id=50202762"
       },
@@ -3080,8 +3089,8 @@
         "title": "The same AI request emits 8.5 times more CO2 in Texas than in Sweden",
         "url": "https://berget.ai/en/blog/per-request-co2-press-release",
         "domain": "berget.ai",
-        "points": 80,
-        "comments": 57,
+        "points": 85,
+        "comments": 74,
         "hnUrl": "https://news.ycombinator.com/item?id=50205229"
       },
       {
@@ -3089,7 +3098,7 @@
         "title": "This I Believe (1952)",
         "url": "https://www.awakin.org/v2/read/view.php?tid=468",
         "domain": "awakin.org",
-        "points": 70,
+        "points": 72,
         "comments": 25,
         "hnUrl": "https://news.ycombinator.com/item?id=50203759"
       },
@@ -3098,7 +3107,7 @@
         "title": "Color Names",
         "url": "https://names.color.pizza",
         "domain": "names.color.pizza",
-        "points": 59,
+        "points": 60,
         "comments": 10,
         "hnUrl": "https://news.ycombinator.com/item?id=50168850"
       },
@@ -3107,8 +3116,8 @@
         "title": "How does Fable 5.1 hide messages in images?",
         "url": "https://www.lesswrong.com/posts/WHEQps5PK8LrrcTAb/how-does-fable-5-1-hide-messages-in-images",
         "domain": "lesswrong.com",
-        "points": 51,
-        "comments": 8,
+        "points": 56,
+        "comments": 9,
         "hnUrl": "https://news.ycombinator.com/item?id=50201445"
       },
       {
@@ -3121,6 +3130,15 @@
         "hnUrl": "https://news.ycombinator.com/item?id=50166272"
       },
       {
+        "id": 50195488,
+        "title": "Show HN: OnKey – I'm a bad singer, so I built an app to show where I'm off-key",
+        "url": "https://github.com/dsmurrell/onkey",
+        "domain": "github.com",
+        "points": 39,
+        "comments": 18,
+        "hnUrl": "https://news.ycombinator.com/item?id=50195488"
+      },
+      {
         "id": 50188614,
         "title": "Postgres recovery_prefetch can cause outages",
         "url": "https://ardentperf.com/2026/10/20/postgres-recovery_prefetch-considered-harmful-and-causing-outages/",
@@ -3130,13 +3148,13 @@
         "hnUrl": "https://news.ycombinator.com/item?id=50188614"
       },
       {
-        "id": 50195488,
-        "title": "Show HN: OnKey – I'm a bad singer, so I built an app to show where I'm off-key",
-        "url": "https://github.com/dsmurrell/onkey",
-        "domain": "github.com",
-        "points": 38,
-        "comments": 17,
-        "hnUrl": "https://news.ycombinator.com/item?id=50195488"
+        "id": 50195002,
+        "title": "The alien space of science: Coherent but cognitively unavailable directions",
+        "url": "https://arxiv.org/abs/2603.01092",
+        "domain": "arxiv.org",
+        "points": 33,
+        "comments": 3,
+        "hnUrl": "https://news.ycombinator.com/item?id=50195002"
       },
       {
         "id": 50192396,
@@ -3144,25 +3162,16 @@
         "url": "https://www.sciencealert.com/a-lost-schrdinger-manuscript-reveals-a-surprising-twist-in-quantum-physics",
         "domain": "sciencealert.com",
         "points": 33,
-        "comments": 10,
+        "comments": 12,
         "hnUrl": "https://news.ycombinator.com/item?id=50192396"
-      },
-      {
-        "id": 50195002,
-        "title": "The alien space of science: Coherent but cognitively unavailable directions",
-        "url": "https://arxiv.org/abs/2603.01092",
-        "domain": "arxiv.org",
-        "points": 29,
-        "comments": 3,
-        "hnUrl": "https://news.ycombinator.com/item?id=50195002"
       },
       {
         "id": 50200164,
         "title": "The HTML-in-Canvas API origin trial",
         "url": "https://developer.chrome.com/blog/html-in-canvas-origin-trial",
         "domain": "developer.chrome.com",
-        "points": 27,
-        "comments": 9,
+        "points": 28,
+        "comments": 10,
         "hnUrl": "https://news.ycombinator.com/item?id=50200164"
       },
       {
@@ -3170,8 +3179,8 @@
         "title": "We have traits at home",
         "url": "https://www.axelmagn.com/blog/202610-zig-traits/",
         "domain": "axelmagn.com",
-        "points": 11,
-        "comments": 0,
+        "points": 13,
+        "comments": 1,
         "hnUrl": "https://news.ycombinator.com/item?id=50202482"
       },
       {
@@ -3184,20 +3193,11 @@
         "hnUrl": "https://news.ycombinator.com/item?id=50197692"
       },
       {
-        "id": 50201842,
-        "title": "Rule 30: one black cell",
-        "url": "https://www.wolframcollatzmahler.com/rule30/index.html",
-        "domain": "wolframcollatzmahler.com",
-        "points": 11,
-        "comments": 0,
-        "hnUrl": "https://news.ycombinator.com/item?id=50201842"
-      },
-      {
         "id": 50202865,
         "title": "Show HN: Making a smart TV dumb and then smart",
         "url": "https://github.com/anubhavmalhotra/r2d2-tv",
         "domain": "github.com",
-        "points": 8,
+        "points": 9,
         "comments": 0,
         "hnUrl": "https://news.ycombinator.com/item?id=50202865"
       }
