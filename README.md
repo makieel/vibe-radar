@@ -54,7 +54,7 @@ GitHub는 저장소에 60일 동안 활동이 없으면 예약(schedule) 워크�
 - `securityTerms`: 보안 알림으로 분류할 단어
 - `redditSubs`: 수집할 서브레딧
 - `arxivMax`, `trackDays`: arXiv 수집 상한과 추적 일수
-- `ai`: AI 요약에 쓸 OpenAI 호환 API. `baseUrl`(주소), `keyEnv`(API 키를 담을 환경변수 이름), `models`(앞에서부터 시도할 모델 이름 목록)
+- `ai`: AI 요약에 쓸 OpenAI 호환 API. `baseUrl`(주소), `keyEnv`(API 키를 담을 환경변수 이름), `models`(앞에서부터 시도할 모델 이름 목록. 이름이 없거나 응답이 제한 시간을 넘으면 다음 모델로 넘어간다), `timeoutMs`(요청 한 번의 제한 시간)
 
 ## AI 요약 (Gemini 무료 API)
 

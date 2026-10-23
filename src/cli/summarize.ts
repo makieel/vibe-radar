@@ -44,7 +44,7 @@ async function main(): Promise<void> {
   }
   const file = new URL(`daily/${date}.json`, ROOT);
   const report = DailyReportSchema.parse(JSON.parse(readFileSync(file, 'utf8')));
-  const client = makeChatFn({ apiKey, baseUrl: ai.baseUrl, models: ai.models });
+  const client = makeChatFn({ apiKey, baseUrl: ai.baseUrl, models: ai.models, timeoutMs: ai.timeoutMs });
   const { report: updated, cache } = await summarizeReport(report, loadCache(), client.chat);
   const valid = DailyReportSchema.parse(updated);
   mkdirSync(new URL('cache/', ROOT), { recursive: true });

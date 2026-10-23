@@ -60,6 +60,28 @@ test('makeChatFn falls through unavailable models and remembers the working one'
   assert.equal(ai.model(), 'new');
 });
 
+test('makeChatFn moves on when a model times out on the first call', async () => {
+  const seen: string[] = [];
+  const f = async (_u: any, i?: RequestInit) => {
+    const model = JSON.parse(String(i!.body)).model;
+    seen.push(model);
+    if (model === 'slow') {
+      return new Promise<Response>((_res, rej) => i!.signal!.addEventListener('abort', () => rej(i!.signal!.reason)));
+    }
+    return reply('{"x":1}');
+  };
+  const ai = makeChatFn({ apiKey: 'key', baseUrl: BASE, models: ['slow', 'fast'], timeoutMs: 20, fetch: f as any });
+  assert.equal(await ai.chat([]), '{"x":1}');
+  assert.deepEqual(seen, ['slow', 'fast']);
+  assert.equal(ai.model(), 'fast');
+});
+
+test('chat uses the given timeout', async () => {
+  const f = async (_u: any, i?: RequestInit) =>
+    new Promise<Response>((_res, rej) => i!.signal!.addEventListener('abort', () => rej(i!.signal!.reason)));
+  await assert.rejects(chat([], { apiKey: 'key', baseUrl: BASE, model: 'm', timeoutMs: 20, fetch: f as any }), /timeout|abort/i);
+});
+
 test('makeChatFn throws when every model is unavailable', async () => {
   const f = async () => new Response('nope', { status: 404 });
   const ai = makeChatFn({ apiKey: 'key', baseUrl: BASE, models: ['a', 'b'], fetch: f as any });

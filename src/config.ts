@@ -18,6 +18,7 @@ export const ConfigSchema = z.object({
     baseUrl: z.string().url(),
     keyEnv: z.string().min(1),
     models: z.array(z.string().min(1)).min(1),
+    timeoutMs: z.number().int().positive().optional(),
   }),
 });
 export type Config = z.infer<typeof ConfigSchema>;

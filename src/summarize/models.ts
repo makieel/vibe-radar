@@ -7,6 +7,9 @@ export interface ChatMessage {
 
 export type ChatFn = (messages: ChatMessage[]) => Promise<string>;
 
+/** Reasoning-heavy models can take minutes on a long prompt. */
+export const DEFAULT_TIMEOUT_MS = 150_000;
+
 interface ChatResponse {
   choices?: { message?: { content?: unknown } }[];
 }
@@ -14,7 +17,7 @@ interface ChatResponse {
 /** One request to an OpenAI-compatible `/chat/completions` endpoint (config.json `ai.baseUrl`). */
 export async function chat(
   messages: ChatMessage[],
-  opts: { apiKey: string; baseUrl: string; model: string; fetch?: FetchLike },
+  opts: { apiKey: string; baseUrl: string; model: string; timeoutMs?: number; fetch?: FetchLike },
 ): Promise<string> {
   const base = new URL(opts.baseUrl.replace(/\/+$/, '') + '/chat/completions');
   if (base.protocol !== 'https:') throw new Error(`ai: refusing non-https endpoint ${base.origin}`);
@@ -23,7 +26,7 @@ export async function chat(
     method: 'POST',
     headers: { 'Content-Type': 'application/json', Accept: 'application/json', Authorization: `Bearer ${opts.apiKey}` },
     body: JSON.stringify({ model: opts.model, messages, temperature: 0.2 }),
-    timeoutMs: 60_000,
+    timeoutMs: opts.timeoutMs ?? DEFAULT_TIMEOUT_MS,
   });
   const content = res.choices?.[0]?.message?.content;
   if (typeof content !== 'string') throw new Error('ai: empty response');
@@ -32,16 +35,16 @@ export async function chat(
 
 /**
  * ChatFn over a list of candidate models: on the first call it tries them in order, skipping
- * ones the provider rejects as unknown/unavailable (HTTP 400/404), then sticks with the first
- * that answers. Model names change often, so config.json lists several.
+ * ones the provider rejects as unknown/unavailable (HTTP 400/404) or that time out, then sticks
+ * with the first that answers. Model names change often, so config.json lists several.
  */
-export function makeChatFn(opts: { apiKey: string; baseUrl: string; models: string[]; fetch?: FetchLike }): {
+export function makeChatFn(opts: { apiKey: string; baseUrl: string; models: string[]; timeoutMs?: number; fetch?: FetchLike }): {
   chat: ChatFn;
   model: () => string | null;
 } {
   let chosen: string | null = null;
   const call = (model: string, messages: ChatMessage[]) =>
-    chat(messages, { apiKey: opts.apiKey, baseUrl: opts.baseUrl, model, fetch: opts.fetch });
+    chat(messages, { apiKey: opts.apiKey, baseUrl: opts.baseUrl, model, timeoutMs: opts.timeoutMs, fetch: opts.fetch });
   return {
     model: () => chosen,
     async chat(messages) {
@@ -54,6 +57,10 @@ export function makeChatFn(opts: { apiKey: string; baseUrl: string; models: stri
         } catch (e) {
           if (e instanceof HttpError && (e.status === 400 || e.status === 404)) {
             console.warn(`ai: model ${model} unavailable (HTTP ${e.status}), trying next`);
+            continue;
+          }
+          if (e instanceof Error && e.name === 'TimeoutError') {
+            console.warn(`ai: model ${model} timed out, trying next`);
             continue;
           }
           throw e;
