@@ -9,6 +9,18 @@ const MAX_SOURCE = 600;
 const TRANSLATE_SYSTEM =
   '너는 개발 뉴스 번역가다. 입력은 {"키":"영어 원문"} JSON이다. 각 원문을 자연스러운 한국어 한 문장(해요체 또는 명사형)으로 번역한다. 고유명사와 제품명은 그대로 둔다. 원문에 없는 내용은 덧붙이지 않는다. 같은 키를 쓴 {"키":"번역"} JSON만 출력한다.';
 
+const numberTokens = (s: string) => (s.match(/\d+(?:[.,]\d+)*/g) ?? []).map((n) => n.replace(/,/g, ''));
+
+/**
+ * A translation must not change numbers: every number in `translated` has to appear exactly
+ * (as a whole token) in `original`. Catches "360M" → "3M" style slips, which nobody reviews
+ * because translations are published automatically.
+ */
+export function numbersPreserved(translated: string, original: string): boolean {
+  const orig = new Set(numberTokens(original));
+  return numberTokens(translated).every((n) => orig.has(n));
+}
+
 export async function translateBatch(
   items: { key: string; text: string }[],
   cache: TranslationCache,
@@ -33,7 +45,9 @@ export async function translateBatch(
       if (!parsed) continue;
       for (const b of batch) {
         const t = cleanText(parsed[b.key], MAX_TRANSLATION);
-        if (t) out[b.key] = t;
+        if (!t) continue;
+        if (numbersPreserved(t, b.text)) out[b.key] = t;
+        else console.warn(`translate: dropped ${b.key} (numbers changed)`);
       }
     } catch (e) {
       console.warn(`translate: batch ${i / BATCH_SIZE + 1} skipped (${(e as Error).message})`);

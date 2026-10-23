@@ -2,7 +2,7 @@ import { test } from 'node:test';
 import assert from 'node:assert/strict';
 import { readFileSync } from 'node:fs';
 import { chat, makeChatFn } from '../src/summarize/models.ts';
-import { translateBatch } from '../src/summarize/translate.ts';
+import { translateBatch, numbersPreserved } from '../src/summarize/translate.ts';
 import { summarizeReport, SYSTEM_PROMPT, VERIFY_PROMPT, FORMAT_HINT, ungrounded } from '../src/summarize/summarize.ts';
 import { extractExcerpt, fetchExcerpt } from '../src/summarize/excerpt.ts';
 import { DailyReportSchema, type DailyReport } from '../src/schema.ts';
@@ -283,4 +283,35 @@ test('fetchExcerpt returns null for non-http urls and failed fetches', async () 
   assert.equal(calls, 0);
   assert.equal(await fetchExcerpt('https://x.test/a', { fetch: f as any }), null);
   assert.equal(calls, 1);
+});
+
+test('numbersPreserved requires every number in a translation to appear exactly in the original', () => {
+  assert.equal(numbersPreserved('WorldTUI: 3M 파라미터 모델', 'WorldTUI: I trained a 360M model'), false);
+  assert.equal(numbersPreserved('WorldTUI: 360M 모델', 'WorldTUI: I trained a 360M model'), true);
+  assert.equal(numbersPreserved('1,200개 항목', '1200 items'), true);
+  assert.equal(numbersPreserved('PHP 8.2 출시', 'PHP 8.2.35 released'), false);
+  assert.equal(numbersPreserved('숫자 없는 번역', 'Released 3 tools'), true); // dropping a number is not inventing one
+});
+
+test('a title translation that changes a number is dropped', async () => {
+  const chatFn = async (m: any) => {
+    if (m[0].content === VERIFY_PROMPT) return '{"unsupported":[]}';
+    if (m[0].content === SYSTEM_PROMPT) return issuesReply([{ id: 'a', title_ko: '이슈 3M개', summary_ko: '', check_ko: '' }]);
+    return '{}';
+  };
+  const s = sample(); s.issues[0].title = 'Issue 360M';
+  const { report } = await summarizeReport(s, {}, chatFn);
+  assert.equal(report.issues[0].title_ko, null);
+});
+
+test('translations (fresh or cached) that change a number are not used', async () => {
+  const chatFn = async () => JSON.stringify({ 'repo:a/x': '3M 파라미터 모델', 'repo:b/y': '360M 파라미터 모델' });
+  const out = await translateBatch([{ key: 'repo:a/x', text: 'A 360M model' }, { key: 'repo:b/y', text: 'A 360M model' }], {}, chatFn);
+  assert.equal(out['repo:a/x'], undefined);
+  assert.equal(out['repo:b/y'], '360M 파라미터 모델');
+
+  const s = sample(); s.issues = []; s.tools = [];
+  s.rising[0].description = 'A 360M model';
+  const { report } = await summarizeReport(s, { 'repo:a/x': '3M 모델' }, async () => '{}');
+  assert.equal(report.rising[0].description_ko, null);
 });

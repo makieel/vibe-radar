@@ -1,7 +1,7 @@
 import type { DailyReport } from '../schema.ts';
 import { normalizeUrl } from '../lib/text.ts';
 import { cleanText, parseJsonObject, type ChatFn } from './models.ts';
-import { translateBatch, type TranslationCache } from './translate.ts';
+import { numbersPreserved, translateBatch, type TranslationCache } from './translate.ts';
 
 export const SYSTEM_PROMPT =
   '너는 한국 개발자, 특히 AI로 코딩하는 바이브코더를 위한 뉴스 편집자다. 과장 없이, 사실만, 존댓말 해요체로 쓴다. 주어진 정보에 없는 사실은 만들지 않는다.';
@@ -106,7 +106,9 @@ async function fillIssues(report: DailyReport, chatFn: ChatFn, excerpts: Excerpt
     const issue = typeof e.id === 'string' ? byId.get(e.id) : undefined;
     const src = typeof e.id === 'string' ? srcById.get(e.id) : undefined;
     if (!issue || !src) continue;
-    issue.title_ko = cleanText(e.title_ko, MAX_TITLE) ?? issue.title_ko;
+    const titleKo = cleanText(e.title_ko, MAX_TITLE);
+    if (titleKo && numbersPreserved(titleKo, issue.title)) issue.title_ko = titleKo;
+    else if (titleKo) console.warn(`summarize: dropped title for ${src.id} (numbers changed)`);
     const summary = cleanText(e.summary_ko, MAX_SUMMARY);
     if (!summary) continue;
     const check = cleanText(e.check_ko, MAX_CHECK);
@@ -174,12 +176,16 @@ export async function summarizeReport(
   for (const a of next.alerts) items.push({ key: alertKey(a), text: a.title });
 
   const newCache = await translateBatch(items, cache, chatFn);
-  const ko = (k: string | null) => (k ? newCache[k] ?? null : null);
+  // Cached entries are re-checked too, so a bad translation from an older run is never reused.
+  const ko = (k: string | null, original: string | null) => {
+    const t = k ? newCache[k] ?? null : null;
+    return t && original && numbersPreserved(t, original) ? t : null;
+  };
 
-  for (const t of next.tools) t.note_ko = ko(releaseKey(t)) ?? t.note_ko;
-  for (const r of next.rising) r.description_ko = ko(repoKey(r.fullName)) ?? r.description_ko;
-  for (const k of next.kit) k.description_ko = ko(repoKey(k.fullName)) ?? k.description_ko;
-  for (const a of next.alerts) a.title_ko = ko(alertKey(a)) ?? a.title_ko;
+  for (const t of next.tools) t.note_ko = ko(releaseKey(t), t.note) ?? t.note_ko;
+  for (const r of next.rising) r.description_ko = ko(repoKey(r.fullName), r.description) ?? r.description_ko;
+  for (const k of next.kit) k.description_ko = ko(repoKey(k.fullName), k.description) ?? k.description_ko;
+  for (const a of next.alerts) a.title_ko = ko(alertKey(a), a.title) ?? a.title_ko;
 
   return { report: next, cache: newCache };
 }
