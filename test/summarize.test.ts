@@ -1,7 +1,7 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
 import { readFileSync } from 'node:fs';
-import { chat } from '../src/summarize/models.ts';
+import { chat, makeChatFn } from '../src/summarize/models.ts';
 import { translateBatch } from '../src/summarize/translate.ts';
 import { summarizeReport, SYSTEM_PROMPT } from '../src/summarize/summarize.ts';
 import { DailyReportSchema, type DailyReport } from '../src/schema.ts';
@@ -25,21 +25,53 @@ function sample(): DailyReport {
   return DailyReportSchema.parse(r);
 }
 
-test('chat posts to GitHub Models with JSON mode and returns content', async () => {
+const BASE = 'https://ai.test/v1beta/openai';
+const reply = (content: string) => new Response(JSON.stringify({ choices: [{ message: { content } }] }));
+
+test('chat posts to the configured OpenAI-compatible endpoint with the API key', async () => {
   let url = ''; let init: RequestInit | undefined;
-  const f = async (u: any, i?: RequestInit) => {
-    url = String(u); init = i;
-    return new Response(JSON.stringify({ choices: [{ message: { content: '{"ok":1}' } }] }));
-  };
-  const out = await chat([{ role: 'user', content: 'hi' }], { token: 'tok', fetch: f as any });
+  const f = async (u: any, i?: RequestInit) => { url = String(u); init = i; return reply('{"ok":1}'); };
+  const out = await chat([{ role: 'user', content: 'hi' }], { apiKey: 'key', baseUrl: BASE + '/', model: 'm-1', fetch: f as any });
   assert.equal(out, '{"ok":1}');
-  assert.equal(url, 'https://models.github.ai/inference/chat/completions');
+  assert.equal(url, 'https://ai.test/v1beta/openai/chat/completions');
   assert.equal(init!.method, 'POST');
-  assert.equal(new Headers(init!.headers).get('authorization'), 'Bearer tok');
+  assert.equal(new Headers(init!.headers).get('authorization'), 'Bearer key');
   const body = JSON.parse(String(init!.body));
-  assert.equal(body.model, 'openai/gpt-4.1-mini');
+  assert.equal(body.model, 'm-1');
   assert.equal(body.temperature, 0.2);
-  assert.deepEqual(body.response_format, { type: 'json_object' });
+});
+
+test('chat refuses a non-https endpoint', async () => {
+  const f = async () => reply('{}');
+  await assert.rejects(chat([], { apiKey: 'key', baseUrl: 'http://ai.test', model: 'm', fetch: f as any }));
+});
+
+test('makeChatFn falls through unavailable models and remembers the working one', async () => {
+  const seen: string[] = [];
+  const f = async (_u: any, i?: RequestInit) => {
+    const model = JSON.parse(String(i!.body)).model;
+    seen.push(model);
+    return model === 'old' ? new Response('not found', { status: 404 }) : reply('{"x":1}');
+  };
+  const ai = makeChatFn({ apiKey: 'key', baseUrl: BASE, models: ['old', 'new', 'other'], fetch: f as any });
+  assert.equal(await ai.chat([{ role: 'user', content: 'a' }]), '{"x":1}');
+  assert.equal(await ai.chat([{ role: 'user', content: 'b' }]), '{"x":1}');
+  assert.deepEqual(seen, ['old', 'new', 'new']);
+  assert.equal(ai.model(), 'new');
+});
+
+test('makeChatFn throws when every model is unavailable', async () => {
+  const f = async () => new Response('nope', { status: 404 });
+  const ai = makeChatFn({ apiKey: 'key', baseUrl: BASE, models: ['a', 'b'], fetch: f as any });
+  await assert.rejects(ai.chat([]), /no usable model/);
+});
+
+test('makeChatFn does not try other models on a non-JSON 200 (e.g. a retired endpoint answering "OK")', async () => {
+  let calls = 0;
+  const f = async () => { calls++; return new Response('OK\n'); };
+  const ai = makeChatFn({ apiKey: 'key', baseUrl: BASE, models: ['a', 'b'], fetch: f as any });
+  await assert.rejects(ai.chat([]));
+  assert.equal(calls, 1);
 });
 
 test('translateBatch only sends uncached keys', async () => {

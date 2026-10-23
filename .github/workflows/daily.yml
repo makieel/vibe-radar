@@ -18,7 +18,6 @@ jobs:
     timeout-minutes: 20
     permissions:
       contents: write
-      models: read
       pages: read
     steps:
       - uses: actions/checkout@v7
@@ -26,14 +25,18 @@ jobs:
         with:
           node-version: '24'
       - run: npm ci
-      - name: Collect, analyze, summarize
+      - name: Collect and analyze
         if: github.event_name != 'push'
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           npm run collect
           npm run analyze
-          npm run summarize
+      - name: Summarize (AI, skipped without GEMINI_API_KEY secret)
+        if: github.event_name != 'push'
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        run: npm run summarize
       - name: Build site
         run: npm run build
       - name: Commit data

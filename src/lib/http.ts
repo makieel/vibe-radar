@@ -13,7 +13,7 @@ export interface FetchOpts {
 
 export const USER_AGENT = 'vibe-radar/1.0 (+https://github.com)';
 const DEFAULT_TIMEOUT_MS = 20_000;
-const TOKEN_HOSTS = new Set(['api.github.com', 'models.github.ai']);
+const TOKEN_HOSTS = new Set(['api.github.com']);
 
 export class HttpError extends Error {
   status: number;

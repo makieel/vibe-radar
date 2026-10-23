@@ -39,7 +39,7 @@ test('token header only for GitHub API hosts', async () => {
     await fetchText(url, { fetch: f as any, token: 'tok' });
   }
   assert.equal(auth['https://api.github.com/x'], 'Bearer tok');
-  assert.equal(auth['https://models.github.ai/x'], 'Bearer tok');
+  assert.equal(auth['https://models.github.ai/x'], null);
   assert.equal(auth['https://www.reddit.com/r/a/.rss'], null);
   assert.equal(auth['https://api.github.com.evil.test/x'], null);
 });

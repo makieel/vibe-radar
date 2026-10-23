@@ -42,7 +42,7 @@ GitHub는 저장소에 60일 동안 활동이 없으면 예약(schedule) 워크�
 
 ## 축소 모드(reduced)
 
-`GITHUB_TOKEN`이 없으면 축소 모드로 동작한다. 로컬 실행이 이 모드이며 `npm run collect` 출력에 `mode: reduced`가 나온다. 이 모드에서는 AI 요약과 번역, 별 수 추적용 추가 요청을 하지 않는다. Actions에서는 토큰이 자동으로 주어져 전체 모드로 돈다.
+`GITHUB_TOKEN`이 없으면 축소 모드로 동작한다. 로컬 실행이 이 모드이며 `npm run collect` 출력에 `mode: reduced`가 나온다. 이 모드에서는 별 수 추적용 추가 요청을 하지 않는다. Actions에서는 토큰이 자동으로 주어져 전체 모드로 돈다. AI 요약은 이와 별개로 `GEMINI_API_KEY`가 있을 때만 돈다(아래 참고).
 
 ## 설정
 
@@ -54,9 +54,18 @@ GitHub는 저장소에 60일 동안 활동이 없으면 예약(schedule) 워크�
 - `securityTerms`: 보안 알림으로 분류할 단어
 - `redditSubs`: 수집할 서브레딧
 - `arxivMax`, `trackDays`: arXiv 수집 상한과 추적 일수
+- `ai`: AI 요약에 쓸 OpenAI 호환 API. `baseUrl`(주소), `keyEnv`(API 키를 담을 환경변수 이름), `models`(앞에서부터 시도할 모델 이름 목록)
 
-## GitHub Models 요약
+## AI 요약 (Gemini 무료 API)
 
-AI 요약은 GitHub Models를 쓰며 Actions에서만 나타난다. 워크플로에 `models: read` 권한과 `GITHUB_TOKEN`이 주어지기 때문이다. 요약이 끝내 나타나지 않으면 Actions 실행 로그에서 `summarize:`로 시작하는 줄을 확인한다.
+AI 한국어 요약과 번역은 Google Gemini API의 무료 등급을 쓴다. (GitHub Models는 2026년 7월 30일에 종료됐다.)
+
+1. https://aistudio.google.com/apikey 에서 API 키를 만든다.
+2. 저장소 **Settings → Secrets and variables → Actions → New repository secret**에서 이름을 `GEMINI_API_KEY`로, 값에 키를 넣어 저장한다.
+3. Actions에서 `daily`를 다시 실행한다.
+
+키가 없으면 요약 단계만 건너뛰고 나머지는 정상으로 돈다. 로컬에서도 환경변수 `GEMINI_API_KEY`를 설정하면 `npm run summarize`로 요약할 수 있다. 모델 이름이 바뀌면 `config.json`의 `ai.models`만 고치면 된다. 다른 OpenAI 호환 서비스로 바꾸려면 `ai.baseUrl`과 `ai.keyEnv`를 바꾼다. 무료 등급에 보낸 내용(공개 뉴스 제목 등)은 Google이 서비스 개선에 쓸 수 있다.
+
+요약이 나타나지 않으면 Actions 실행 로그에서 `summarize:`, `ai:`로 시작하는 줄을 확인한다.
 
 아이디어 출처: jihoo12/trends

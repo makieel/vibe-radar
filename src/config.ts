@@ -14,6 +14,11 @@ export const ConfigSchema = z.object({
   redditSubs: z.array(z.string()),
   arxivMax: z.number(),
   trackDays: z.number(),
+  ai: z.object({
+    baseUrl: z.string().url(),
+    keyEnv: z.string().min(1),
+    models: z.array(z.string().min(1)).min(1),
+  }),
 });
 export type Config = z.infer<typeof ConfigSchema>;
 

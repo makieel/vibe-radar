@@ -5,6 +5,8 @@
 디자인 시안: `design/mockup-v2-AplusC.html`의 **E · 오로라 HUD** 탭
 논의 기록: `design/notes.md`
 
+> **변경 (2026-10-23):** GitHub Models가 2026-07-30에 종료되어, AI 요약·번역은 Google Gemini API 무료 등급(OpenAI 호환 엔드포인트)으로 바꿨다. 사용자 결정이다. API 키는 저장소 Secret `GEMINI_API_KEY`로 넣고, 주소·키 이름·모델 후보는 `config.json`의 `ai`에서 바꾼다. 아래 본문의 "GitHub Models", "`models: read`" 언급은 이 변경으로 대체된다.
+
 ## 1. 왜 만드는가
 
 원본 사이트는 Hacker News, GitHub Trending, arXiv를 매일 수집해 보여주는 정적 대시보드다. 사용자가 느낀 문제는 두 가지다.

@@ -1,7 +1,8 @@
 import { existsSync, mkdirSync, readFileSync, readdirSync, writeFileSync } from 'node:fs';
 import { isIsoDate, kstDate } from '../lib/dates.ts';
 import { DailyReportSchema } from '../schema.ts';
-import { chat } from '../summarize/models.ts';
+import { loadConfig } from '../config.ts';
+import { makeChatFn } from '../summarize/models.ts';
 import { summarizeReport } from '../summarize/summarize.ts';
 import type { TranslationCache } from '../summarize/translate.ts';
 
@@ -25,9 +26,10 @@ function loadCache(): TranslationCache {
 }
 
 async function main(): Promise<void> {
-  const token = process.env.GITHUB_TOKEN;
-  if (!token) {
-    console.log('summarize: skipped (no GITHUB_TOKEN)');
+  const { ai } = loadConfig();
+  const apiKey = process.env[ai.keyEnv];
+  if (!apiKey) {
+    console.log(`summarize: skipped (no ${ai.keyEnv})`);
     return;
   }
   const i = process.argv.indexOf('--date');
@@ -42,12 +44,13 @@ async function main(): Promise<void> {
   }
   const file = new URL(`daily/${date}.json`, ROOT);
   const report = DailyReportSchema.parse(JSON.parse(readFileSync(file, 'utf8')));
-  const { report: updated, cache } = await summarizeReport(report, loadCache(), (m) => chat(m, { token }));
+  const client = makeChatFn({ apiKey, baseUrl: ai.baseUrl, models: ai.models });
+  const { report: updated, cache } = await summarizeReport(report, loadCache(), client.chat);
   const valid = DailyReportSchema.parse(updated);
   mkdirSync(new URL('cache/', ROOT), { recursive: true });
   writeFileSync(CACHE, JSON.stringify(cache, null, 2) + '\n');
   writeFileSync(file, JSON.stringify(valid, null, 2) + '\n');
-  console.log(`summarize: updated data/daily/${date}.json (cache ${Object.keys(cache).length} entries)`);
+  console.log(`summarize: updated data/daily/${date}.json with model ${client.model() ?? 'none'} (cache ${Object.keys(cache).length} entries)`);
 }
 
 main().catch((e) => {

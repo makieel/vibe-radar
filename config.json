@@ -14,5 +14,10 @@
   "securityTerms": ["backdoor", "compromised", "malware", "credential stealer", "supply chain", "CVE-", "vulnerability", "exploit", "취약점", "악성", "보안 패치", "해킹"],
   "redditSubs": ["ClaudeAI", "vibecoding"],
   "arxivMax": 200,
-  "trackDays": 30
+  "trackDays": 30,
+  "ai": {
+    "baseUrl": "https://generativelanguage.googleapis.com/v1beta/openai",
+    "keyEnv": "GEMINI_API_KEY",
+    "models": ["gemini-3.8-flash", "gemini-3.6-flash", "gemini-3.5-flash-lite", "gemini-2.5-flash"]
+  }
 }

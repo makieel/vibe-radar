@@ -1,4 +1,4 @@
-import { fetchJson, type FetchLike } from '../lib/http.ts';
+import { fetchJson, HttpError, type FetchLike } from '../lib/http.ts';
 
 export interface ChatMessage {
   role: 'system' | 'user';
@@ -7,33 +7,61 @@ export interface ChatMessage {
 
 export type ChatFn = (messages: ChatMessage[]) => Promise<string>;
 
-export const MODELS_URL = 'https://models.github.ai/inference/chat/completions';
-export const DEFAULT_MODEL = 'openai/gpt-4.1-mini';
-
 interface ChatResponse {
   choices?: { message?: { content?: unknown } }[];
 }
 
+/** One request to an OpenAI-compatible `/chat/completions` endpoint (config.json `ai.baseUrl`). */
 export async function chat(
   messages: ChatMessage[],
-  opts: { token: string; fetch?: FetchLike; model?: string },
+  opts: { apiKey: string; baseUrl: string; model: string; fetch?: FetchLike },
 ): Promise<string> {
-  const res = await fetchJson<ChatResponse>(MODELS_URL, {
+  const base = new URL(opts.baseUrl.replace(/\/+$/, '') + '/chat/completions');
+  if (base.protocol !== 'https:') throw new Error(`ai: refusing non-https endpoint ${base.origin}`);
+  const res = await fetchJson<ChatResponse>(base.href, {
     fetch: opts.fetch,
-    token: opts.token,
     method: 'POST',
-    headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
-    body: JSON.stringify({
-      model: opts.model ?? DEFAULT_MODEL,
-      messages,
-      temperature: 0.2,
-      response_format: { type: 'json_object' },
-    }),
+    headers: { 'Content-Type': 'application/json', Accept: 'application/json', Authorization: `Bearer ${opts.apiKey}` },
+    body: JSON.stringify({ model: opts.model, messages, temperature: 0.2 }),
     timeoutMs: 60_000,
   });
   const content = res.choices?.[0]?.message?.content;
-  if (typeof content !== 'string') throw new Error('models: empty response');
+  if (typeof content !== 'string') throw new Error('ai: empty response');
   return content;
+}
+
+/**
+ * ChatFn over a list of candidate models: on the first call it tries them in order, skipping
+ * ones the provider rejects as unknown/unavailable (HTTP 400/404), then sticks with the first
+ * that answers. Model names change often, so config.json lists several.
+ */
+export function makeChatFn(opts: { apiKey: string; baseUrl: string; models: string[]; fetch?: FetchLike }): {
+  chat: ChatFn;
+  model: () => string | null;
+} {
+  let chosen: string | null = null;
+  const call = (model: string, messages: ChatMessage[]) =>
+    chat(messages, { apiKey: opts.apiKey, baseUrl: opts.baseUrl, model, fetch: opts.fetch });
+  return {
+    model: () => chosen,
+    async chat(messages) {
+      if (chosen) return call(chosen, messages);
+      for (const model of opts.models) {
+        try {
+          const out = await call(model, messages);
+          chosen = model;
+          return out;
+        } catch (e) {
+          if (e instanceof HttpError && (e.status === 400 || e.status === 404)) {
+            console.warn(`ai: model ${model} unavailable (HTTP ${e.status}), trying next`);
+            continue;
+          }
+          throw e;
+        }
+      }
+      throw new Error(`ai: no usable model among ${opts.models.join(', ')}`);
+    },
+  };
 }
 
 /** 모델 응답에서 JSON 객체를 꺼낸다. ```json 울타리가 있으면 벗기고, 객체가 아니면 null. */
