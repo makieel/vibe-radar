@@ -66,6 +66,8 @@ AI 한국어 요약과 번역은 Google Gemini API의 무료 등급을 쓴다. (
 
 키가 없으면 요약 단계만 건너뛰고 나머지는 정상으로 돈다. 로컬에서도 환경변수 `GEMINI_API_KEY`를 설정하면 `npm run summarize`로 요약할 수 있다. 모델 이름이 바뀌면 `config.json`의 `ai.models`만 고치면 된다. 다른 OpenAI 호환 서비스로 바꾸려면 `ai.baseUrl`과 `ai.keyEnv`를 바꾼다. 무료 등급에 보낸 내용(공개 뉴스 제목 등)은 Google이 서비스 개선에 쓸 수 있다.
 
+지어낸 내용을 막기 위해 요약은 기사 본문 발췌를 근거로만 쓰고, 출처에 없는 숫자나 문장이 있으면 규칙 검사와 AI 재검증에서 버린다. 버려진 이슈는 한국어 제목과 원문 목록만 보인다. 로그의 `summarize: N summaries kept, M dropped` 줄에서 몇 건이 버려졌는지 볼 수 있다.
+
 요약이 나타나지 않으면 Actions 실행 로그에서 `summarize:`, `ai:`로 시작하는 줄을 확인한다.
 
 아이디어 출처: jihoo12/trends
