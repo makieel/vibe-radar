@@ -2,6 +2,7 @@ import { existsSync, mkdirSync, readFileSync, readdirSync, writeFileSync } from 
 import { isIsoDate, kstDate } from '../lib/dates.ts';
 import { DailyReportSchema } from '../schema.ts';
 import { loadConfig } from '../config.ts';
+import { fetchExcerpt } from '../summarize/excerpt.ts';
 import { makeChatFn } from '../summarize/models.ts';
 import { summarizeReport } from '../summarize/summarize.ts';
 import type { TranslationCache } from '../summarize/translate.ts';
@@ -45,7 +46,9 @@ async function main(): Promise<void> {
   const file = new URL(`daily/${date}.json`, ROOT);
   const report = DailyReportSchema.parse(JSON.parse(readFileSync(file, 'utf8')));
   const client = makeChatFn({ apiKey, baseUrl: ai.baseUrl, models: ai.models, timeoutMs: ai.timeoutMs });
-  const { report: updated, cache } = await summarizeReport(report, loadCache(), client.chat);
+  const { report: updated, cache } = await summarizeReport(report, loadCache(), client.chat, {
+    excerpts: (url) => fetchExcerpt(url),
+  });
   const valid = DailyReportSchema.parse(updated);
   mkdirSync(new URL('cache/', ROOT), { recursive: true });
   writeFileSync(CACHE, JSON.stringify(cache, null, 2) + '\n');

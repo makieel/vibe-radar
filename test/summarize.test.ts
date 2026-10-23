@@ -3,7 +3,8 @@ import assert from 'node:assert/strict';
 import { readFileSync } from 'node:fs';
 import { chat, makeChatFn } from '../src/summarize/models.ts';
 import { translateBatch } from '../src/summarize/translate.ts';
-import { summarizeReport, SYSTEM_PROMPT } from '../src/summarize/summarize.ts';
+import { summarizeReport, SYSTEM_PROMPT, VERIFY_PROMPT, FORMAT_HINT, ungrounded } from '../src/summarize/summarize.ts';
+import { extractExcerpt, fetchExcerpt } from '../src/summarize/excerpt.ts';
 import { DailyReportSchema, type DailyReport } from '../src/schema.ts';
 
 const real = DailyReportSchema.parse(JSON.parse(readFileSync(new URL('../data/daily/2026-10-23.json', import.meta.url), 'utf8')));
@@ -136,13 +137,10 @@ test('translateBatch ignores unknown keys, non-strings, trims and caps', async (
 });
 
 test('summarizeReport fills top 5 issues and keeps others null', async () => {
-  const sys: string[] = [];
   const chatFn = async (m: any) => {
-    sys.push(m[0].content);
-    if (m[1].content.includes('"issues"') || m[0].content === SYSTEM_PROMPT) {
-      if (sys.length === 1) {
-        return JSON.stringify({ issues: ['a', 'b', 'c', 'd', 'e', 'f'].map((id) => ({ id, title_ko: `제목 ${id}`, summary_ko: `요약 ${id}`, check_ko: `확인 ${id}` })) });
-      }
+    if (m[0].content === VERIFY_PROMPT) return '{"unsupported":[]}';
+    if (m[0].content === SYSTEM_PROMPT) {
+      return JSON.stringify({ issues: ['a', 'b', 'c', 'd', 'e', 'f'].map((id) => ({ id, title_ko: `제목 ${id}`, summary_ko: `요약 ${id}`, check_ko: `확인 ${id}` })) });
     }
     return JSON.stringify({ 'repo:a/x': '설명', 'release:t:1.0': '노트' });
   };
@@ -166,7 +164,7 @@ test('chat failure leaves report unchanged and does not throw', async () => {
 });
 
 test('model returning ids not in report are ignored; fields capped', async () => {
-  const chatFn = async () => JSON.stringify({
+  const chatFn = async (m: any) => m[0].content === VERIFY_PROMPT ? '{"unsupported":[]}' : JSON.stringify({
     issues: [
       { id: 'ghost', title_ko: 'x', summary_ko: 'y', check_ko: 'z' },
       { id: 'a', title_ko: 'T'.repeat(500), summary_ko: 'S'.repeat(900), check_ko: 42 },
@@ -180,4 +178,109 @@ test('model returning ids not in report are ignored; fields capped', async () =>
   assert.equal(report.issues[0].summary_ko!.length, 400);
   assert.equal(report.issues[0].check_ko, null);
   assert.equal(report.issues[1].title_ko, null);
+});
+
+// ---- grounding: summaries must not invent facts (runs unattended every day) ----
+
+function issuesReply(entries: Record<string, unknown>[]) {
+  return JSON.stringify({ issues: entries });
+}
+
+test('the issue prompt forbids adding causes, numbers or outlooks not in the source', () => {
+  for (const phrase of ['원인', '수치', '전망', 'excerpt']) assert.ok(FORMAT_HINT.includes(phrase), phrase);
+});
+
+test('ungrounded flags numbers that are not in the source', () => {
+  const src = 'PHP 8.2.35 released · HN 974점';
+  assert.equal(ungrounded('PHP 8.2.35가 공개됐어요.', src, true), null);
+  assert.match(ungrounded('사용자 25%가 영향을 받아요.', src, true)!, /25/);
+  assert.equal(ungrounded('974점을 받았어요.', 'HN 974 points', true), null);
+});
+
+test('ungrounded allows only one sentence when there is no article excerpt', () => {
+  assert.equal(ungrounded('쿼드9이 프랑스에서 철수해요.', 'Quad9 to exit France', false), null);
+  assert.ok(ungrounded('쿼드9이 프랑스에서 철수해요. 현지 규제가 원인이에요.', 'Quad9 to exit France', false));
+  assert.equal(ungrounded('쿼드9이 철수해요. 이유도 밝혔어요.', 'Quad9 to exit France', true), null);
+});
+
+test('summaries rejected by the rule check or by the verifier are dropped; titles stay', async () => {
+  const verifyCalls: string[] = [];
+  const chatFn = async (m: any) => {
+    if (m[0].content === VERIFY_PROMPT) {
+      verifyCalls.push(m[1].content);
+      return '{"unsupported":["b"]}';
+    }
+    if (m[0].content === SYSTEM_PROMPT) {
+      return issuesReply([
+        { id: 'a', title_ko: '제목 a', summary_ko: '요약 a예요.', check_ko: '확인 a' },
+        { id: 'b', title_ko: '제목 b', summary_ko: '요약 b예요.', check_ko: '확인 b' },
+        { id: 'c', title_ko: '제목 c', summary_ko: '요약 c예요. 원인은 규제예요.', check_ko: '확인 c' },
+        { id: 'd', title_ko: '제목 d', summary_ko: '피해자가 300명이에요.', check_ko: '확인 d' },
+      ]);
+    }
+    return '{}';
+  };
+  const s = sample(); s.tools = []; s.rising = [];
+  const { report } = await summarizeReport(s, {}, chatFn);
+  const by = Object.fromEntries(report.issues.map((i) => [i.id, i]));
+  assert.equal(by.a.summary_ko, '요약 a예요.');
+  assert.equal(by.a.check_ko, '확인 a');
+  assert.equal(by.b.summary_ko, null); // verifier said unsupported
+  assert.equal(by.b.check_ko, null);
+  assert.equal(by.c.summary_ko, null); // two sentences without an excerpt
+  assert.equal(by.d.summary_ko, null); // number not in source
+  for (const id of ['a', 'b', 'c', 'd']) assert.equal(by[id].title_ko, `제목 ${id}`);
+  assert.equal(verifyCalls.length, 1);
+  assert.ok(verifyCalls[0].includes('"a"') && verifyCalls[0].includes('"b"'));
+  assert.ok(!verifyCalls[0].includes('"d"')); // already rejected by rules
+});
+
+test('if the verifier fails, every summary is dropped (fail closed)', async () => {
+  const chatFn = async (m: any) => {
+    if (m[0].content === VERIFY_PROMPT) throw new Error('timeout');
+    if (m[0].content === SYSTEM_PROMPT) return issuesReply([{ id: 'a', title_ko: '제목 a', summary_ko: '요약 a예요.', check_ko: '확인 a' }]);
+    return '{}';
+  };
+  const { report } = await summarizeReport(sample(), {}, chatFn);
+  assert.equal(report.issues[0].title_ko, '제목 a');
+  assert.equal(report.issues[0].summary_ko, null);
+  assert.equal(report.issues[0].check_ko, null);
+});
+
+test('article excerpts are sent to the model and allow a longer summary', async () => {
+  let prompt = '';
+  const chatFn = async (m: any) => {
+    if (m[0].content === VERIFY_PROMPT) return '{"unsupported":[]}';
+    if (m[0].content === SYSTEM_PROMPT) {
+      prompt = m[1].content;
+      return issuesReply([{ id: 'a', title_ko: '제목 a', summary_ko: '첫 문장이에요. 둘째 문장이에요.', check_ko: '확인 a' }]);
+    }
+    return '{}';
+  };
+  const excerpts = async (url: string) => (url === 'https://x.test/0' ? 'The article body says two things.' : null);
+  const { report } = await summarizeReport(sample(), {}, chatFn, { excerpts });
+  assert.ok(prompt.includes('The article body says two things.'));
+  assert.equal(report.issues[0].summary_ko, '첫 문장이에요. 둘째 문장이에요.');
+});
+
+test('extractExcerpt prefers og/meta description and paragraph text, strips tags', () => {
+  const html = `<html><head><meta property="og:description" content="Quad9 announced it will stop serving France.">
+    <script>var x = "<p>no</p>";</script></head>
+    <body><nav><p>Menu</p></nav><article><p>Due to a court order, the resolver leaves.</p><p>Second <b>para</b>.</p></article></body></html>`;
+  const t = extractExcerpt(html)!;
+  assert.ok(t.startsWith('Quad9 announced it will stop serving France.'));
+  assert.ok(t.includes('Due to a court order, the resolver leaves.'));
+  assert.ok(t.includes('Second para.'));
+  assert.ok(!t.includes('no</p>') && !t.includes('Menu'));
+  assert.ok(extractExcerpt('<html><body>hi</body></html>') === null); // too short to be useful
+  assert.ok(extractExcerpt(`<p>${'word '.repeat(1000)}</p>`)!.length <= 1200);
+});
+
+test('fetchExcerpt returns null for non-http urls and failed fetches', async () => {
+  let calls = 0;
+  const f = async () => { calls++; return new Response('gone', { status: 404 }); };
+  assert.equal(await fetchExcerpt('javascript:alert(1)', { fetch: f as any }), null);
+  assert.equal(calls, 0);
+  assert.equal(await fetchExcerpt('https://x.test/a', { fetch: f as any }), null);
+  assert.equal(calls, 1);
 });
