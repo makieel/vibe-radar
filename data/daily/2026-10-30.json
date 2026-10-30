@@ -1,0 +1,2603 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-30",
+  "collectedAt": "2026-10-30T00:43:07.200Z",
+  "mode": "full",
+  "scanNo": 8,
+  "sources": [
+    {
+      "id": "hn",
+      "ok": true,
+      "count": 30,
+      "error": null,
+      "reduced": false
+    },
+    {
+      "id": "geeknews",
+      "ok": true,
+      "count": 50,
+      "error": null,
+      "reduced": false
+    },
+    {
+      "id": "reddit",
+      "ok": true,
+      "count": 25,
+      "error": null,
+      "reduced": false
+    },
+    {
+      "id": "arxiv",
+      "ok": false,
+      "count": 0,
+      "error": "The operation was aborted due to timeout",
+      "reduced": false
+    },
+    {
+      "id": "huggingface",
+      "ok": true,
+      "count": 20,
+      "error": null,
+      "reduced": false
+    },
+    {
+      "id": "trending",
+      "ok": true,
+      "count": 23,
+      "error": null,
+      "reduced": false
+    },
+    {
+      "id": "tools",
+      "ok": true,
+      "count": 5,
+      "error": null,
+      "reduced": false
+    },
+    {
+      "id": "advisories",
+      "ok": true,
+      "count": 60,
+      "error": null,
+      "reduced": false
+    },
+    {
+      "id": "kit",
+      "ok": true,
+      "count": 41,
+      "error": null,
+      "reduced": false
+    },
+    {
+      "id": "stars",
+      "ok": true,
+      "count": 46,
+      "error": null,
+      "reduced": false
+    }
+  ],
+  "gauge": {
+    "value": 51,
+    "avg7": 51.86,
+    "label": "normal",
+    "daysOfHistory": 7
+  },
+  "issues": [
+    {
+      "id": "0389c49e7e",
+      "title": "Patrick Stewart has died",
+      "title_ko": "패트릭 스튜어트 부고 소식",
+      "summary_ko": "패트릭 스튜어트가 사망했습니다.",
+      "check_ko": "관련 공식 보도나 부고 내용을 확인해 보세요.",
+      "heat": 55,
+      "heatReason": "HN 2274점 · 댓글 472",
+      "sources": [
+        "hn"
+      ],
+      "url": "https://www.nytimes.com/2026/10/29/arts/television/patrick-stewart-dead.html",
+      "items": [
+        {
+          "source": "hn",
+          "title": "Patrick Stewart has died",
+          "url": "https://www.nytimes.com/2026/10/29/arts/television/patrick-stewart-dead.html",
+          "points": 2274,
+          "comments": 472
+        }
+      ]
+    },
+    {
+      "id": "32c270bdcf",
+      "title": "We're releasing the weights of Mistral Large 4",
+      "title_ko": "미스트랄, 미스트랄 라지 4 가중치 공개",
+      "summary_ko": "미스트랄이 1조 파라미터 규모의 멀티모달 모델인 미스트랄 라지 4(Le Chonk)의 가중치를 공개했습니다. 코딩, 사이버 보안, 추론 효율성이 향상되었으며 오픈 웨이트 벤치마크를 선도합니다.",
+      "check_ko": "공개된 모델의 라이선스와 세부 사양을 문서에서 확인해 보세요.",
+      "heat": 54,
+      "heatReason": "HN 1164점 · 댓글 332",
+      "sources": [
+        "hn"
+      ],
+      "url": "https://mistral.ai/news/mistral-large-4-oss/",
+      "items": [
+        {
+          "source": "hn",
+          "title": "We're releasing the weights of Mistral Large 4",
+          "url": "https://mistral.ai/news/mistral-large-4-oss/",
+          "points": 1164,
+          "comments": 332
+        }
+      ]
+    },
+    {
+      "id": "8cc2539335",
+      "title": "Binance-hacker-1029 – $5.6B stolen from Binance",
+      "title_ko": "바이낸스 해킹 관련 이슈",
+      "summary_ko": null,
+      "check_ko": null,
+      "heat": 51,
+      "heatReason": "HN 613점 · 댓글 369",
+      "sources": [
+        "hn"
+      ],
+      "url": "https://arkm.com/explorer/entity/21a94755-f604-45e5-9501-6542e23005e8",
+      "items": [
+        {
+          "source": "hn",
+          "title": "Binance-hacker-1029 – $5.6B stolen from Binance",
+          "url": "https://arkm.com/explorer/entity/21a94755-f604-45e5-9501-6542e23005e8",
+          "points": 613,
+          "comments": 369
+        }
+      ]
+    },
+    {
+      "id": "4896c84a7a",
+      "title": "DoorDash to acquire Instacart",
+      "title_ko": "도어대시, 인스타카트 인수 발표",
+      "summary_ko": null,
+      "check_ko": null,
+      "heat": 50,
+      "heatReason": "HN 409점 · 댓글 593",
+      "sources": [
+        "hn"
+      ],
+      "url": "https://about.doordash.com/en-us/news/doordash-to-acquire-instacart",
+      "items": [
+        {
+          "source": "hn",
+          "title": "DoorDash to acquire Instacart",
+          "url": "https://about.doordash.com/en-us/news/doordash-to-acquire-instacart",
+          "points": 409,
+          "comments": 593
+        }
+      ]
+    },
+    {
+      "id": "32aa5b7adc",
+      "title": "LLM Voice",
+      "title_ko": "LLM 보이스와 산문",
+      "summary_ko": "마틴 파울러가 LLM이 작성한 산문에서 느껴지는 불쾌한 골짜기와 독서 경험에 대한 생각을 공유했습니다. LLM 작성 글을 판별하는 도구에 대한 회의감과 언어 변화에 대한 단상을 다룹니다.",
+      "check_ko": "글에서 지적하는 LLM 글쓰기의 특징에 공감하는지 직접 읽고 확인해 보세요.",
+      "heat": 46,
+      "heatReason": "HN 331점 · 댓글 169",
+      "sources": [
+        "hn"
+      ],
+      "url": "https://martinfowler.com/bliki/LLM-Voice.html",
+      "items": [
+        {
+          "source": "hn",
+          "title": "LLM Voice",
+          "url": "https://martinfowler.com/bliki/LLM-Voice.html",
+          "points": 331,
+          "comments": 169
+        }
+      ]
+    },
+    {
+      "id": "6a923b4340",
+      "title": "H.264 Is Magic (2016)",
+      "title_ko": null,
+      "summary_ko": null,
+      "check_ko": null,
+      "heat": 45,
+      "heatReason": "HN 316점 · 댓글 120",
+      "sources": [
+        "hn"
+      ],
+      "url": "https://sidbala.com/h-264-is-magic/",
+      "items": [
+        {
+          "source": "hn",
+          "title": "H.264 Is Magic (2016)",
+          "url": "https://sidbala.com/h-264-is-magic/",
+          "points": 316,
+          "comments": 120
+        }
+      ]
+    },
+    {
+      "id": "e244f1de25",
+      "title": "If IPv4 were land",
+      "title_ko": null,
+      "summary_ko": null,
+      "check_ko": null,
+      "heat": 45,
+      "heatReason": "HN 224점 · 댓글 294",
+      "sources": [
+        "hn"
+      ],
+      "url": "https://iptrust.co/blog/if-ipv4-were-land",
+      "items": [
+        {
+          "source": "hn",
+          "title": "If IPv4 were land",
+          "url": "https://iptrust.co/blog/if-ipv4-were-land",
+          "points": 224,
+          "comments": 294
+        }
+      ]
+    },
+    {
+      "id": "7776162c8a",
+      "title": "Alleged Chinese spy had 'close relationship' with Nvidia boss Jensen Huang",
+      "title_ko": null,
+      "summary_ko": null,
+      "check_ko": null,
+      "heat": 45,
+      "heatReason": "HN 275점 · 댓글 189",
+      "sources": [
+        "hn"
+      ],
+      "url": "https://nypost.com/2026/10/29/business/alleged-chinese-spy-had-close-relationship-with-nvidia-boss-jensen-huang-report/",
+      "items": [
+        {
+          "source": "hn",
+          "title": "Alleged Chinese spy had 'close relationship' with Nvidia boss Jensen Huang",
+          "url": "https://nypost.com/2026/10/29/business/alleged-chinese-spy-had-close-relationship-with-nvidia-boss-jensen-huang-report/",
+          "points": 275,
+          "comments": 189
+        }
+      ]
+    },
+    {
+      "id": "22f292a8fd",
+      "title": "Chained PHP2Shell exploit roots 25 servers, including US Government servers",
+      "title_ko": null,
+      "summary_ko": null,
+      "check_ko": null,
+      "heat": 44,
+      "heatReason": "HN 276점 · 댓글 137",
+      "sources": [
+        "hn"
+      ],
+      "url": "https://dreamgroup.com/blog/chained-php2shell-exploit-roots-25-servers",
+      "items": [
+        {
+          "source": "hn",
+          "title": "Chained PHP2Shell exploit roots 25 servers, including US Government servers",
+          "url": "https://dreamgroup.com/blog/chained-php2shell-exploit-roots-25-servers",
+          "points": 276,
+          "comments": 137
+        }
+      ]
+    },
+    {
+      "id": "6e991989f8",
+      "title": "What we know so far about Spain train crash",
+      "title_ko": null,
+      "summary_ko": null,
+      "check_ko": null,
+      "heat": 43,
+      "heatReason": "HN 145점 · 댓글 296",
+      "sources": [
+        "hn"
+      ],
+      "url": "https://www.bbc.com/news/articles/cm8xz7pkd0jjo",
+      "items": [
+        {
+          "source": "hn",
+          "title": "What we know so far about Spain train crash",
+          "url": "https://www.bbc.com/news/articles/cm8xz7pkd0jjo",
+          "points": 145,
+          "comments": 296
+        }
+      ]
+    },
+    {
+      "id": "66d6870e93",
+      "title": "NetBSD adds a new text editor called atto",
+      "title_ko": null,
+      "summary_ko": null,
+      "check_ko": null,
+      "heat": 41,
+      "heatReason": "HN 161점 · 댓글 131",
+      "sources": [
+        "hn"
+      ],
+      "url": "https://mastodon.sdf.org/@netbsd/117518160563539748",
+      "items": [
+        {
+          "source": "hn",
+          "title": "NetBSD adds a new text editor called atto",
+          "url": "https://mastodon.sdf.org/@netbsd/117518160563539748",
+          "points": 161,
+          "comments": 131
+        }
+      ]
+    },
+    {
+      "id": "363049a013",
+      "title": "Zombie stats: Where the numbers AI quotes come from",
+      "title_ko": null,
+      "summary_ko": null,
+      "check_ko": null,
+      "heat": 39,
+      "heatReason": "HN 139점 · 댓글 61",
+      "sources": [
+        "hn"
+      ],
+      "url": "https://trakkr.ai/trakkr-research/zombie-stats",
+      "items": [
+        {
+          "source": "hn",
+          "title": "Zombie stats: Where the numbers AI quotes come from",
+          "url": "https://trakkr.ai/trakkr-research/zombie-stats",
+          "points": 139,
+          "comments": 61
+        }
+      ]
+    },
+    {
+      "id": "9b211f67fb",
+      "title": "We ran AI agent swarms in Minecraft and Mindustry",
+      "title_ko": null,
+      "summary_ko": null,
+      "check_ko": null,
+      "heat": 37,
+      "heatReason": "HN 126점 · 댓글 47",
+      "sources": [
+        "hn"
+      ],
+      "url": "https://labs.ycombinator.com/projects/games/index.html",
+      "items": [
+        {
+          "source": "hn",
+          "title": "We ran AI agent swarms in Minecraft and Mindustry",
+          "url": "https://labs.ycombinator.com/projects/games/index.html",
+          "points": 126,
+          "comments": 47
+        }
+      ]
+    },
+    {
+      "id": "a2dc327800",
+      "title": "Show HN: Auto Dismiss Mac OS \"Allow <app> to find devices on local networks?\"",
+      "title_ko": null,
+      "summary_ko": null,
+      "check_ko": null,
+      "heat": 37,
+      "heatReason": "HN 91점 · 댓글 74",
+      "sources": [
+        "hn"
+      ],
+      "url": "https://github.com/johncassil/dontallow",
+      "items": [
+        {
+          "source": "hn",
+          "title": "Show HN: Auto Dismiss Mac OS \"Allow <app> to find devices on local networks?\"",
+          "url": "https://github.com/johncassil/dontallow",
+          "points": 91,
+          "comments": 74
+        }
+      ]
+    },
+    {
+      "id": "82bb59db8c",
+      "title": "Claude Duet is the first personal-assistant-type harness that feels useful",
+      "title_ko": null,
+      "summary_ko": null,
+      "check_ko": null,
+      "heat": 37,
+      "heatReason": "HN 100점 · 댓글 79",
+      "sources": [
+        "hn"
+      ],
+      "url": "https://fig.blue/posts/duet-is-the-future/",
+      "items": [
+        {
+          "source": "hn",
+          "title": "Claude Duet is the first personal-assistant-type harness that feels useful",
+          "url": "https://fig.blue/posts/duet-is-the-future/",
+          "points": 100,
+          "comments": 79
+        }
+      ]
+    },
+    {
+      "id": "8b5ad7140a",
+      "title": "Grace Blackwell needs a new scheduler: 27% more usable GPUs from the same racks",
+      "title_ko": null,
+      "summary_ko": null,
+      "check_ko": null,
+      "heat": 36,
+      "heatReason": "HN 126점 · 댓글 21",
+      "sources": [
+        "hn"
+      ],
+      "url": "https://skypilot.ai/blog/grace-blackwell-needs-a-new-scheduler",
+      "items": [
+        {
+          "source": "hn",
+          "title": "Grace Blackwell needs a new scheduler: 27% more usable GPUs from the same racks",
+          "url": "https://skypilot.ai/blog/grace-blackwell-needs-a-new-scheduler",
+          "points": 126,
+          "comments": 21
+        }
+      ]
+    },
+    {
+      "id": "393940cb66",
+      "title": "Proton goes all in on using AI",
+      "title_ko": null,
+      "summary_ko": null,
+      "check_ko": null,
+      "heat": 33,
+      "heatReason": "HN 60점 · 댓글 36",
+      "sources": [
+        "hn"
+      ],
+      "url": "https://convo.casa/@b/117525936178835007",
+      "items": [
+        {
+          "source": "hn",
+          "title": "Proton goes all in on using AI",
+          "url": "https://convo.casa/@b/117525936178835007",
+          "points": 60,
+          "comments": 36
+        }
+      ]
+    },
+    {
+      "id": "42edf9bd3d",
+      "title": "A tiny world model running games on a Raspberry Pi Pico 2 W",
+      "title_ko": null,
+      "summary_ko": null,
+      "check_ko": null,
+      "heat": 32,
+      "heatReason": "HN 106점 · 댓글 7",
+      "sources": [
+        "hn"
+      ],
+      "url": "https://github.com/SheepSeb/tinyworldformer",
+      "items": [
+        {
+          "source": "hn",
+          "title": "A tiny world model running games on a Raspberry Pi Pico 2 W",
+          "url": "https://github.com/SheepSeb/tinyworldformer",
+          "points": 106,
+          "comments": 7
+        }
+      ]
+    },
+    {
+      "id": "03cbd4a3cf",
+      "title": "Scattered thoughts on how doing math feels these days",
+      "title_ko": null,
+      "summary_ko": null,
+      "check_ko": null,
+      "heat": 32,
+      "heatReason": "HN 55점 · 댓글 38",
+      "sources": [
+        "hn"
+      ],
+      "url": "https://dynomight.net/math/",
+      "items": [
+        {
+          "source": "hn",
+          "title": "Scattered thoughts on how doing math feels these days",
+          "url": "https://dynomight.net/math/",
+          "points": 55,
+          "comments": 38
+        }
+      ]
+    },
+    {
+      "id": "d8fdae0129",
+      "title": "16colo.rs – ANSI/ASCII art archive",
+      "title_ko": null,
+      "summary_ko": null,
+      "check_ko": null,
+      "heat": 31,
+      "heatReason": "HN 84점 · 댓글 7",
+      "sources": [
+        "hn"
+      ],
+      "url": "https://16colo.rs/",
+      "items": [
+        {
+          "source": "hn",
+          "title": "16colo.rs – ANSI/ASCII art archive",
+          "url": "https://16colo.rs/",
+          "points": 84,
+          "comments": 7
+        }
+      ]
+    },
+    {
+      "id": "04443f9dbc",
+      "title": "El Niño Is Flooding California's Coasts with the Highest Tides to Come",
+      "title_ko": null,
+      "summary_ko": null,
+      "check_ko": null,
+      "heat": 30,
+      "heatReason": "HN 55점 · 댓글 13",
+      "sources": [
+        "hn"
+      ],
+      "url": "https://gizmodo.com/el-nino-is-already-flooding-californias-coasts-and-the-years-highest-tides-havent-arrived-2000832574",
+      "items": [
+        {
+          "source": "hn",
+          "title": "El Niño Is Flooding California's Coasts with the Highest Tides to Come",
+          "url": "https://gizmodo.com/el-nino-is-already-flooding-californias-coasts-and-the-years-highest-tides-havent-arrived-2000832574",
+          "points": 55,
+          "comments": 13
+        }
+      ]
+    },
+    {
+      "id": "d9431a9fdf",
+      "title": "ElementaryUI – Swift, in the Browser",
+      "title_ko": null,
+      "summary_ko": null,
+      "check_ko": null,
+      "heat": 29,
+      "heatReason": "HN 51점 · 댓글 10",
+      "sources": [
+        "hn"
+      ],
+      "url": "https://elementary.codes",
+      "items": [
+        {
+          "source": "hn",
+          "title": "ElementaryUI – Swift, in the Browser",
+          "url": "https://elementary.codes",
+          "points": 51,
+          "comments": 10
+        }
+      ]
+    },
+    {
+      "id": "dd3c992be7",
+      "title": "IgE disruptor for food allergy with Claude-enabled antibody design [pdf]",
+      "title_ko": null,
+      "summary_ko": null,
+      "check_ko": null,
+      "heat": 29,
+      "heatReason": "HN 36점 · 댓글 23",
+      "sources": [
+        "hn"
+      ],
+      "url": "https://divergencelabs.com/publications/ige-preprint.pdf",
+      "items": [
+        {
+          "source": "hn",
+          "title": "IgE disruptor for food allergy with Claude-enabled antibody design [pdf]",
+          "url": "https://divergencelabs.com/publications/ige-preprint.pdf",
+          "points": 36,
+          "comments": 23
+        }
+      ]
+    },
+    {
+      "id": "6f7e00599c",
+      "title": "Launch HN: Simantic (YC F26) – Firmware Simulation for AI Agents",
+      "title_ko": null,
+      "summary_ko": null,
+      "check_ko": null,
+      "heat": 29,
+      "heatReason": "HN 48점 · 댓글 14",
+      "sources": [
+        "hn"
+      ],
+      "url": "https://news.ycombinator.com/item?id=50291116",
+      "items": [
+        {
+          "source": "hn",
+          "title": "Launch HN: Simantic (YC F26) – Firmware Simulation for AI Agents",
+          "url": "https://news.ycombinator.com/item?id=50291116",
+          "points": 48,
+          "comments": 14
+        }
+      ]
+    },
+    {
+      "id": "53d320a32a",
+      "title": "Sylphide OS: a general-purpose OS for microcontroller-based computers",
+      "title_ko": null,
+      "summary_ko": null,
+      "check_ko": null,
+      "heat": 26,
+      "heatReason": "HN 32점 · 댓글 9",
+      "sources": [
+        "hn"
+      ],
+      "url": "https://projects.freehackers.org/sylphide-os/",
+      "items": [
+        {
+          "source": "hn",
+          "title": "Sylphide OS: a general-purpose OS for microcontroller-based computers",
+          "url": "https://projects.freehackers.org/sylphide-os/",
+          "points": 32,
+          "comments": 9
+        }
+      ]
+    },
+    {
+      "id": "268bccf1e1",
+      "title": "The Great American Rascal: Tom Sawyer at 150",
+      "title_ko": null,
+      "summary_ko": null,
+      "check_ko": null,
+      "heat": 25,
+      "heatReason": "HN 30점 · 댓글 8",
+      "sources": [
+        "hn"
+      ],
+      "url": "https://claremontreviewofbooks.com/the-great-american-rascal/",
+      "items": [
+        {
+          "source": "hn",
+          "title": "The Great American Rascal: Tom Sawyer at 150",
+          "url": "https://claremontreviewofbooks.com/the-great-american-rascal/",
+          "points": 30,
+          "comments": 8
+        }
+      ]
+    },
+    {
+      "id": "f1278cee46",
+      "title": "A Pig, the State, and War: Porco Rosso (Kurenai No Buta) (2014)",
+      "title_ko": null,
+      "summary_ko": null,
+      "check_ko": null,
+      "heat": 23,
+      "heatReason": "HN 32점 · 댓글 2",
+      "sources": [
+        "hn"
+      ],
+      "url": "https://journal.animationstudies.org/article/id/66/",
+      "items": [
+        {
+          "source": "hn",
+          "title": "A Pig, the State, and War: Porco Rosso (Kurenai No Buta) (2014)",
+          "url": "https://journal.animationstudies.org/article/id/66/",
+          "points": 32,
+          "comments": 2
+        }
+      ]
+    },
+    {
+      "id": "fa50ebc2e9",
+      "title": "pbakaus/impeccable",
+      "title_ko": null,
+      "summary_ko": null,
+      "check_ko": null,
+      "heat": 23,
+      "heatReason": "스타 +2870",
+      "sources": [
+        "trending"
+      ],
+      "url": "https://github.com/pbakaus/impeccable",
+      "items": [
+        {
+          "source": "trending",
+          "title": "pbakaus/impeccable",
+          "url": "https://github.com/pbakaus/impeccable",
+          "points": null,
+          "comments": null
+        }
+      ]
+    },
+    {
+      "id": "ca58171e99",
+      "title": "HKUDS/DeepTutor",
+      "title_ko": null,
+      "summary_ko": null,
+      "check_ko": null,
+      "heat": 22,
+      "heatReason": "스타 +1930",
+      "sources": [
+        "trending"
+      ],
+      "url": "https://github.com/HKUDS/DeepTutor",
+      "items": [
+        {
+          "source": "trending",
+          "title": "HKUDS/DeepTutor",
+          "url": "https://github.com/HKUDS/DeepTutor",
+          "points": null,
+          "comments": null
+        }
+      ]
+    },
+    {
+      "id": "61edff4305",
+      "title": "togg53192-cmd/jailbreaks",
+      "title_ko": null,
+      "summary_ko": null,
+      "check_ko": null,
+      "heat": 22,
+      "heatReason": "스타 +1594",
+      "sources": [
+        "trending"
+      ],
+      "url": "https://github.com/togg53192-cmd/jailbreaks",
+      "items": [
+        {
+          "source": "trending",
+          "title": "togg53192-cmd/jailbreaks",
+          "url": "https://github.com/togg53192-cmd/jailbreaks",
+          "points": null,
+          "comments": null
+        }
+      ]
+    }
+  ],
+  "alerts": [
+    {
+      "id": "hn-50286987",
+      "title": "Chained PHP2Shell exploit roots 25 servers, including US Government servers",
+      "title_ko": "연쇄된 PHP2Shell 취약점 공격으로 미국 정부 서버를 포함한 25대의 서버가 해킹당했습니다.",
+      "url": "https://dreamgroup.com/blog/chained-php2shell-exploit-roots-25-servers",
+      "origin": "news",
+      "severity": null,
+      "packages": []
+    },
+    {
+      "id": "geeknews-https://news.hada.io/topic?id=36222",
+      "title": "GitLab 보안 사고: CVE-2026-97229 악용 시도",
+      "title_ko": "GitLab 보안 사고: CVE-2026-97229 악용 시도",
+      "url": "https://news.hada.io/topic?id=36222",
+      "origin": "news",
+      "severity": null,
+      "packages": []
+    }
+  ],
+  "tools": [
+    {
+      "tool": "codex",
+      "name": "Codex CLI",
+      "version": "rust-v0.166.0",
+      "publishedAt": "2026-10-29T19:47:53Z",
+      "url": "https://github.com/openai/codex/releases/tag/rust-v0.166.0",
+      "note": "Added keyboard-driven transcript selection with word, line, and page motions, integrated search, and configurable shortc",
+      "note_ko": "단어, 줄, 페이지 이동 기능과 통합 검색, 설정 가능한 단축키를 갖춘 키보드 기반 트랜스크립트 선택 기능이 추가되었습니다.",
+      "isRecent": true
+    },
+    {
+      "tool": "copilot",
+      "name": "GitHub Copilot",
+      "version": null,
+      "publishedAt": "2026-10-28T16:00:00.000Z",
+      "url": "https://github.blog/changelog/2026-10-28-route-and-orchestrate-models-with-github-copilot-fusion",
+      "note": "Route and orchestrate models with GitHub Copilot Fusion",
+      "note_ko": "GitHub Copilot Fusion으로 모델을 라우팅하고 오케스트레이션하세요",
+      "isRecent": true
+    },
+    {
+      "tool": "gemini-cli",
+      "name": "Gemini CLI",
+      "version": "v0.66.0",
+      "publishedAt": "2026-10-27T20:26:28Z",
+      "url": "https://github.com/google-gemini/gemini-cli/releases/tag/v0.66.0",
+      "note": "Update ROADMAP.md to no longer reference outdated 2025 roadmap by @DavidAPierce in https://github.com/google-gemini/gemi",
+      "note_ko": "ROADMAP.md를 업데이트하여 오래된 2025년 로드맵 참조를 제거했습니다.",
+      "isRecent": true
+    },
+    {
+      "tool": "claude-code",
+      "name": "Claude Code",
+      "version": "v2.1.312",
+      "publishedAt": "2026-10-27T20:24:20Z",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.312",
+      "note": "Added oidc.user_id_claim to the Claude apps gateway, to identify people by an id_token claim other than sub, such as Mic",
+      "note_ko": "sub 외의 id_token 클레임으로 사용자를 식별할 수 있도록 Claude 앱 게이트웨이에 oidc.user_id_claim이 추가되었습니다.",
+      "isRecent": true
+    },
+    {
+      "tool": "cursor",
+      "name": "Cursor",
+      "version": null,
+      "publishedAt": "2026-10-20",
+      "url": "https://cursor.com/changelog/agent-sdk",
+      "note": "Agent SDK",
+      "note_ko": "Agent SDK",
+      "isRecent": false
+    }
+  ],
+  "rising": [
+    {
+      "fullName": "cloudflare/security-audit-skill",
+      "url": "https://github.com/cloudflare/security-audit-skill",
+      "description": "A coding-agent skill for multi-phase security audits with independently verified, machine-readable findings",
+      "description_ko": "독립적으로 검증되고 기계 판독 가능한 감사 결과를 제공하는 다단계 보안 감사용 코딩 에이전트 스킬입니다.",
+      "stars": 52856,
+      "delta7": 12518,
+      "deltaSource": "history",
+      "isNew": false,
+      "series": [
+        {
+          "date": "2026-10-23",
+          "stars": 40338
+        },
+        {
+          "date": "2026-10-24",
+          "stars": 42131
+        },
+        {
+          "date": "2026-10-25",
+          "stars": 44541
+        },
+        {
+          "date": "2026-10-26",
+          "stars": 46878
+        },
+        {
+          "date": "2026-10-27",
+          "stars": 48555
+        },
+        {
+          "date": "2026-10-28",
+          "stars": 50187
+        },
+        {
+          "date": "2026-10-29",
+          "stars": 51664
+        },
+        {
+          "date": "2026-10-30",
+          "stars": 52856
+        }
+      ]
+    },
+    {
+      "fullName": "pbakaus/impeccable",
+      "url": "https://github.com/pbakaus/impeccable",
+      "description": "The design vocabulary for your coding agent. Steer with polish and bolder, review with critique and audit, catch AI slop before it ships.",
+      "description_ko": "코딩 에이전트를 위한 디자인 어휘로, 세련되게 유도하고 감사를 거쳐 배포 전 AI의 저품질 코드를 잡아냅니다.",
+      "stars": 95316,
+      "delta7": 9713,
+      "deltaSource": "trending-weekly",
+      "isNew": false,
+      "series": [
+        {
+          "date": "2026-10-25",
+          "stars": 86397
+        },
+        {
+          "date": "2026-10-26",
+          "stars": 87693
+        },
+        {
+          "date": "2026-10-27",
+          "stars": 89185
+        },
+        {
+          "date": "2026-10-28",
+          "stars": 90510
+        },
+        {
+          "date": "2026-10-29",
+          "stars": 92650
+        },
+        {
+          "date": "2026-10-30",
+          "stars": 95316
+        }
+      ]
+    },
+    {
+      "fullName": "TauricResearch/TradingAgents",
+      "url": "https://github.com/TauricResearch/TradingAgents",
+      "description": "TradingAgents: Multi-Agents LLM Financial Trading Framework",
+      "description_ko": "TradingAgents: 멀티 에이전트 LLM 금융 트레이딩 프레임워크",
+      "stars": 118328,
+      "delta7": 5557,
+      "deltaSource": "trending-weekly",
+      "isNew": false,
+      "series": [
+        {
+          "date": "2026-10-26",
+          "stars": 114598
+        },
+        {
+          "date": "2026-10-27",
+          "stars": 116080
+        },
+        {
+          "date": "2026-10-28",
+          "stars": 117323
+        },
+        {
+          "date": "2026-10-29",
+          "stars": 117889
+        },
+        {
+          "date": "2026-10-30",
+          "stars": 118328
+        }
+      ]
+    },
+    {
+      "fullName": "hugohe3/ppt-master",
+      "url": "https://github.com/hugohe3/ppt-master",
+      "description": "AI turns documents or topics into real, native PowerPoint decks—with native shapes, transitions and animations, data-backed charts and tables on demand, audio narration from speaker notes, and support for your own .pptx templates. · by Hugo He",
+      "description_ko": "AI가 문서나 주제를 실제 네이티브 PowerPoint 슬라이드로 변환해 주며, 네이티브 도형, 전환 및 애니메이션, 데이터 기반 차트와 표, 발표자 노트를 활용한 오디오 내레이션, 자체 .pptx 템플릿 지원 기능을 제공합니다.",
+      "stars": 70825,
+      "delta7": 4980,
+      "deltaSource": "trending-weekly",
+      "isNew": false,
+      "series": [
+        {
+          "date": "2026-10-30",
+          "stars": 70825
+        }
+      ]
+    },
+    {
+      "fullName": "obra/superpowers",
+      "url": "https://github.com/obra/superpowers",
+      "description": "An agentic skills framework & software development methodology that works.",
+      "description_ko": "실제로 작동하는 에이전틱 스킬 프레임워크이자 소프트웨어 개발 방법론입니다.",
+      "stars": 308541,
+      "delta7": 4894,
+      "deltaSource": "trending-weekly",
+      "isNew": false,
+      "series": [
+        {
+          "date": "2026-10-28",
+          "stars": 306436
+        },
+        {
+          "date": "2026-10-29",
+          "stars": 307437
+        },
+        {
+          "date": "2026-10-30",
+          "stars": 308541
+        }
+      ]
+    },
+    {
+      "fullName": "Leonxlnx/taste-skill",
+      "url": "https://github.com/Leonxlnx/taste-skill",
+      "description": "Agent skills that give coding agents taste: art direction, reference images and a browser check instead of generic AI pages",
+      "description_ko": "일반적인 AI 페이지 대신 아트 디렉션, 레퍼런스 이미지, 브라우저 검사를 통해 코딩 에이전트에 감각을 부여하는 에이전트 스킬입니다.",
+      "stars": 105547,
+      "delta7": 4359,
+      "deltaSource": "trending-weekly",
+      "isNew": false,
+      "series": [
+        {
+          "date": "2026-10-29",
+          "stars": 104471
+        },
+        {
+          "date": "2026-10-30",
+          "stars": 105547
+        }
+      ]
+    },
+    {
+      "fullName": "multica-ai/andrej-karpathy-skills",
+      "url": "https://github.com/multica-ai/andrej-karpathy-skills",
+      "description": "A single CLAUDE.md file to improve Claude Code behavior, derived from Andrej Karpathy's observations on LLM coding pitfalls.",
+      "description_ko": "Andrej Karpathy의 LLM 코딩 함정 관찰을 바탕으로 Claude Code 동작을 개선하는 단일 CLAUDE.md 파일입니다.",
+      "stars": 226435,
+      "delta7": 4250,
+      "deltaSource": "trending-weekly",
+      "isNew": false,
+      "series": [
+        {
+          "date": "2026-10-26",
+          "stars": 223843
+        },
+        {
+          "date": "2026-10-27",
+          "stars": 224641
+        },
+        {
+          "date": "2026-10-28",
+          "stars": 225495
+        },
+        {
+          "date": "2026-10-29",
+          "stars": 225986
+        },
+        {
+          "date": "2026-10-30",
+          "stars": 226435
+        }
+      ]
+    },
+    {
+      "fullName": "AgriciDaniel/claude-seo",
+      "url": "https://github.com/AgriciDaniel/claude-seo",
+      "description": "Universal SEO skill for Claude Code. 26 sub-skills + 19 sub-agents covering technical SEO, E-E-A-T, schema, GEO/AEO, agent readiness (Lighthouse Agentic Browsing, WebMCP, llms.txt), backlinks, local SEO, e-commerce, international SEO, Google APIs, and PDF/Excel reporting. 9 optional extensions for live SEO data.",
+      "description_ko": "Claude Code를 위한 범용 SEO 스킬입니다.",
+      "stars": 24000,
+      "delta7": 4110,
+      "deltaSource": "trending-weekly",
+      "isNew": false,
+      "series": [
+        {
+          "date": "2026-10-26",
+          "stars": 20857
+        },
+        {
+          "date": "2026-10-27",
+          "stars": 22139
+        },
+        {
+          "date": "2026-10-28",
+          "stars": 22747
+        },
+        {
+          "date": "2026-10-29",
+          "stars": 23378
+        },
+        {
+          "date": "2026-10-30",
+          "stars": 24000
+        }
+      ]
+    },
+    {
+      "fullName": "anthropics/knowledge-work-plugins",
+      "url": "https://github.com/anthropics/knowledge-work-plugins",
+      "description": "Open source repository of plugins primarily intended for knowledge workers to use in Claude Cowork",
+      "description_ko": "Claude Cowork에서 지식 노동자가 주로 사용할 수 있도록 설계된 오픈소스 플러그인 리포지토리입니다.",
+      "stars": 33850,
+      "delta7": 2015,
+      "deltaSource": "history",
+      "isNew": false,
+      "series": [
+        {
+          "date": "2026-10-23",
+          "stars": 31835
+        },
+        {
+          "date": "2026-10-24",
+          "stars": 32207
+        },
+        {
+          "date": "2026-10-25",
+          "stars": 32623
+        },
+        {
+          "date": "2026-10-26",
+          "stars": 32978
+        },
+        {
+          "date": "2026-10-27",
+          "stars": 33209
+        },
+        {
+          "date": "2026-10-28",
+          "stars": 33429
+        },
+        {
+          "date": "2026-10-29",
+          "stars": 33651
+        },
+        {
+          "date": "2026-10-30",
+          "stars": 33850
+        }
+      ]
+    },
+    {
+      "fullName": "ruvnet/ruflo",
+      "url": "https://github.com/ruvnet/ruflo",
+      "description": "🌊 The original agent harness. Deploy intelligent multi-player swarms, coordinate autonomous workflows, and build conversational AI systems. Features adaptive memory, self-learning intelligence, federation, vector RAG integration, and native Claude Code / Codex / Hermes and many more Integrated",
+      "description_ko": "🌊 오리지널 에이전트 하네스입니다. 지능형 멀티플레이어 스웜을 배포하고, 자율 워크플로우를 조율하며, 대화형 AI 시스템을 구축하세요. 적응형 메모리, 자기 학습 지능, 연합, 벡터 RAG 통합, 그리고 네이티브 Claude Code / Codex / Hermes 등과의 다양한 통합 기능을 제공합니다.",
+      "stars": 80149,
+      "delta7": 1563,
+      "deltaSource": "history",
+      "isNew": false,
+      "series": [
+        {
+          "date": "2026-10-23",
+          "stars": 78586
+        },
+        {
+          "date": "2026-10-24",
+          "stars": 78783
+        },
+        {
+          "date": "2026-10-25",
+          "stars": 79049
+        },
+        {
+          "date": "2026-10-26",
+          "stars": 79281
+        },
+        {
+          "date": "2026-10-27",
+          "stars": 79537
+        },
+        {
+          "date": "2026-10-28",
+          "stars": 79796
+        },
+        {
+          "date": "2026-10-29",
+          "stars": 79975
+        },
+        {
+          "date": "2026-10-30",
+          "stars": 80149
+        }
+      ]
+    }
+  ],
+  "newRepos": [
+    {
+      "fullName": "milind-soni/OpenMausBot",
+      "url": "https://github.com/milind-soni/OpenMausBot",
+      "description": "Open-source Grok Bot alternative with a virtual machine that bots can use",
+      "language": "TypeScript",
+      "stars": 7472
+    },
+    {
+      "fullName": "thedotmack/claude-mem",
+      "url": "https://github.com/thedotmack/claude-mem",
+      "description": "Persistent Context Across Sessions for Every Agent – Captures everything your agent does during sessions, compresses it with AI, and injects relevant context back into future sessions. Works with Claude Code, OpenClaw, Codex, Gemini, Hermes, Copilot, OpenCode + More",
+      "language": "TypeScript",
+      "stars": 104793
+    },
+    {
+      "fullName": "CopilotKit/OpenBot",
+      "url": "https://github.com/CopilotKit/OpenBot",
+      "description": "Open-source AI coworkers that each get a computer of their own: a browser, files and tools, with every action decided before it happens and recorded after. Bring any AG-UI agent.",
+      "language": "TypeScript",
+      "stars": 8145
+    },
+    {
+      "fullName": "Donchitos/Claude-Code-Game-Studios",
+      "url": "https://github.com/Donchitos/Claude-Code-Game-Studios",
+      "description": "Turn Claude Code into a full game dev studio — 49 AI agents, 72 workflow skills, and a complete coordination system mirroring real studio hierarchy.",
+      "language": "Shell",
+      "stars": 29189
+    },
+    {
+      "fullName": "php/php-src",
+      "url": "https://github.com/php/php-src",
+      "description": "The PHP Interpreter",
+      "language": "C",
+      "stars": 41720
+    },
+    {
+      "fullName": "hugohe3/ppt-master",
+      "url": "https://github.com/hugohe3/ppt-master",
+      "description": "AI turns documents or topics into real, native PowerPoint decks—with native shapes, transitions and animations, data-backed charts and tables on demand, audio narration from speaker notes, and support for your own .pptx templates. · by Hugo He",
+      "language": "Python",
+      "stars": 70825
+    }
+  ],
+  "droppedRepos": [
+    {
+      "fullName": "macro-inc/macro",
+      "url": "https://github.com/macro-inc/macro",
+      "description": "Macro is a unified workspace for teams: email, chat, docs, tasks, agents, calls, and CRM — @-linked together with shared AI memory.",
+      "language": "Rust",
+      "stars": 5416
+    },
+    {
+      "fullName": "Nutlope/hallmark",
+      "url": "https://github.com/Nutlope/hallmark",
+      "description": "Anti-AI-slop design skill for Claude Code, Cursor, and Codex.",
+      "language": "CSS",
+      "stars": 40713
+    },
+    {
+      "fullName": "makecindy/cindy",
+      "url": "https://github.com/makecindy/cindy",
+      "description": "Consider it done. The open-source AI agent that works out of the box · 想到，就能做到。开源、开箱即用的 AI Agent。",
+      "language": "TypeScript",
+      "stars": 8096
+    },
+    {
+      "fullName": "hmjz100/LinkSwift",
+      "url": "https://github.com/hmjz100/LinkSwift",
+      "description": "一个基于 JavaScript 的网盘文件下载地址获取工具。基于【网盘直链下载助手】修改 ，支持 百度网盘 / 阿里云盘 / 中国移动云盘 / 天翼云盘 / 迅雷云盘 / 夸克网盘 / UC网盘 / 123云盘 八大网盘",
+      "language": "JavaScript",
+      "stars": 34641
+    },
+    {
+      "fullName": "expo/skills",
+      "url": "https://github.com/expo/skills",
+      "description": "A collection of AI agent skills for working with Expo projects and Expo Application Services",
+      "language": "Shell",
+      "stars": 3573
+    },
+    {
+      "fullName": "ruvnet/RuView",
+      "url": "https://github.com/ruvnet/RuView",
+      "description": "π RuView turns commodity WiFi signals into real-time spatial intelligence, vital sign monitoring, and presence detection — all without a single pixel of video.",
+      "language": "Rust",
+      "stars": 101050
+    },
+    {
+      "fullName": "xiaolai/the-craft-of-selfteaching",
+      "url": "https://github.com/xiaolai/the-craft-of-selfteaching",
+      "description": "One has no future if one couldn't teach themself.",
+      "language": "Jupyter Notebook",
+      "stars": 18496
+    },
+    {
+      "fullName": "Graphify-Labs/graphify",
+      "url": "https://github.com/Graphify-Labs/graphify",
+      "description": "Turn any codebase, with its docs, SQL schemas, configs, and PDFs, into a queryable knowledge graph. A /graphify skill for Claude Code, Cursor, Codex, and Gemini CLI: local deterministic AST parsing, every edge explained, no vector store.",
+      "language": "Python",
+      "stars": 137849
+    },
+    {
+      "fullName": "anomalyco/opencode",
+      "url": "https://github.com/anomalyco/opencode",
+      "description": "The open source coding agent.",
+      "language": "TypeScript",
+      "stars": 222758
+    }
+  ],
+  "kit": [
+    {
+      "fullName": "Gathin23/cleanyourtv",
+      "url": "https://github.com/Gathin23/cleanyourtv",
+      "description": "Debloat any Android or Google TV over Wi-Fi and get an Apple TV-style home.",
+      "description_ko": "Wi-Fi를 통해 모든 안드로이드 또는 구글 TV의 불필요한 앱을 제거하고 애플 TV 스타일의 홈 화면을 만드세요.",
+      "stars": 45501,
+      "kind": "OTHER",
+      "isNew": true
+    },
+    {
+      "fullName": "tangency-labs/solidcraft",
+      "url": "https://github.com/tangency-labs/solidcraft",
+      "description": "SolidCraft: an open-source parametric 3D CAD application built in pure Rust. Desktop, web, and automation through MCP.",
+      "description_ko": "SolidCraft: 순수 Rust로 구축된 오픈소스 파라메트릭 3D CAD 애플리케이션입니다. 데스크톱, 웹, 그리고 MCP를 통한 자동화를 지원합니다.",
+      "stars": 12053,
+      "kind": "MCP",
+      "isNew": true
+    },
+    {
+      "fullName": "Jakeschincariol/replica-skill",
+      "url": "https://github.com/Jakeschincariol/replica-skill",
+      "description": "Eleven free Claude skills that clone any app: reverse-engineer it, rebuild it, test it for bugs, then fix what its users hate. Free, MIT.",
+      "description_ko": null,
+      "stars": 6486,
+      "kind": "SKILL",
+      "isNew": true
+    },
+    {
+      "fullName": "simbasjungles/free-my-tv",
+      "url": "https://github.com/simbasjungles/free-my-tv",
+      "description": "A fast, ad-free home screen for Google TV, LG webOS and Samsung Tizen. One button to undo.",
+      "description_ko": "구글 TV를 위한 빠르고 광고 없는 홈 화면입니다. 오픈소스이며 Claude Code로 제작되었습니다. 버튼 하나로 실행 취소가 가능합니다.",
+      "stars": 5393,
+      "kind": "OTHER",
+      "isNew": true
+    },
+    {
+      "fullName": "QingYunA/answer-me-with-html",
+      "url": "https://github.com/QingYunA/answer-me-with-html",
+      "description": "Answer me with HTML — an agent skill that answers hard questions with a one-page HTML you can actually read. 让 AI Agent 用一页 HTML 回答复杂问题。",
+      "description_ko": "HTML로 답변해 드립니다 — 읽기 쉬운 한 페이지 분량의 HTML로 어려운 질문에 답해주는 에이전트 스킬입니다.",
+      "stars": 4742,
+      "kind": "SKILL",
+      "isNew": true
+    },
+    {
+      "fullName": "Folkbench/folkbench",
+      "url": "https://github.com/Folkbench/folkbench",
+      "description": "AI API 中转站评测排行与切换工具：实测可用率、延迟与价格 · Open-source AI API relay benchmark, rankings & switcher for Claude Code / Codex",
+      "description_ko": "AI API 중전환(릴레이) 벤치마크, 가용성·지연 시간·가격 실측 기반 순위 및 스위처",
+      "stars": 3938,
+      "kind": "OTHER",
+      "isNew": true
+    },
+    {
+      "fullName": "openfilm/openfilm",
+      "url": "https://github.com/openfilm/openfilm",
+      "description": "The open source AI video agent: turns any coding agent into a video agent, with an editor to change anything it makes.",
+      "description_ko": "모든 코딩 에이전트를 비디오 에이전트로 전환하고 제작된 모든 것을 수정할 수 있는 편집기를 제공하는 오픈소스 AI 비디오 에이전트입니다.",
+      "stars": 3598,
+      "kind": "AGENT",
+      "isNew": true
+    },
+    {
+      "fullName": "Leonxlnx/earshot",
+      "url": "https://github.com/Leonxlnx/earshot",
+      "description": "Ears for coding agents: let AI hear, review and make sound. CPU-only, open source.",
+      "description_ko": "코딩 에이전트를 위한 귀: AI가 소리를 듣고 검토하며 만들 수 있게 해주는 CPU 전용 오픈소스 도구입니다.",
+      "stars": 3239,
+      "kind": "MCP",
+      "isNew": true
+    },
+    {
+      "fullName": "trhhubsd/ARTEX",
+      "url": "https://github.com/trhhubsd/ARTEX",
+      "description": "ARTEX · AI autonomous penetration testing system (multi-agent LLM, Go + Next.js) · AI 自主渗透测试系统 · 百度 agent+ 攻防挑战赛冠军",
+      "description_ko": "ARTEX는 멀티 에이전트 LLM과 Go 및 Next.js로 구축된 AI 자율 침투 테스트 시스템이자 바이두 에이전트+ 공방 챌린지 우승작입니다.",
+      "stars": 2217,
+      "kind": "MCP",
+      "isNew": true
+    },
+    {
+      "fullName": "Jakeschincariol/founder-skill",
+      "url": "https://github.com/Jakeschincariol/founder-skill",
+      "description": "Eleven free Claude skills that test a business before you launch it: a board trained on Hormozi, Thiel and Jobs, a marketing director, a CFO, and a consumer panel of 100 buyer agents. Free, MIT.",
+      "description_ko": null,
+      "stars": 2184,
+      "kind": "SKILL",
+      "isNew": true
+    },
+    {
+      "fullName": "zhuyansen/new-term-radar",
+      "url": "https://github.com/zhuyansen/new-term-radar",
+      "description": "Daily radar for new AI terms: names of new models, products and repos, caught on X, Hugging Face, GitHub and sitemaps before keyword tools list them.",
+      "description_ko": "키워드 도구에 나타나기 전에 X, Hugging Face, GitHub, 사이트맵에서 포착한 새로운 AI 용어(신규 모델, 제품, 저장소 이름)를 매일 레이더처럼 탐색합니다.",
+      "stars": 1964,
+      "kind": "MCP",
+      "isNew": true
+    },
+    {
+      "fullName": "shaongitbd/doory",
+      "url": "https://github.com/shaongitbd/doory",
+      "description": "Open source canva alternative",
+      "description_ko": "오픈 소스 Canva 대안입니다.",
+      "stars": 1908,
+      "kind": "MCP",
+      "isNew": true
+    }
+  ],
+  "keywords": [
+    {
+      "term": "claude",
+      "today": 31,
+      "avg7": 21.86,
+      "delta": 9.14,
+      "isNew": false
+    },
+    {
+      "term": "browser",
+      "today": 6,
+      "avg7": 1.29,
+      "delta": 4.71,
+      "isNew": false
+    },
+    {
+      "term": "work",
+      "today": 6,
+      "avg7": 2,
+      "delta": 4,
+      "isNew": false
+    },
+    {
+      "term": "agent",
+      "today": 14,
+      "avg7": 11,
+      "delta": 3,
+      "isNew": false
+    },
+    {
+      "term": "skill",
+      "today": 9,
+      "avg7": 6,
+      "delta": 3,
+      "isNew": false
+    },
+    {
+      "term": "real",
+      "today": 4,
+      "avg7": 1.14,
+      "delta": 2.86,
+      "isNew": false
+    },
+    {
+      "term": "day",
+      "today": 3,
+      "avg7": 0.14,
+      "delta": 2.86,
+      "isNew": false
+    },
+    {
+      "term": "claude code",
+      "today": 13,
+      "avg7": 10.29,
+      "delta": 2.71,
+      "isNew": false
+    },
+    {
+      "term": "thing",
+      "today": 3,
+      "avg7": 0.29,
+      "delta": 2.71,
+      "isNew": false
+    },
+    {
+      "term": "미국",
+      "today": 4,
+      "avg7": 1.43,
+      "delta": 2.57,
+      "isNew": false
+    },
+    {
+      "term": "audit",
+      "today": 3,
+      "avg7": 0.43,
+      "delta": 2.57,
+      "isNew": false
+    },
+    {
+      "term": "nvidia",
+      "today": 3,
+      "avg7": 0.57,
+      "delta": 2.43,
+      "isNew": false
+    },
+    {
+      "term": "need",
+      "today": 3,
+      "avg7": 0.71,
+      "delta": 2.29,
+      "isNew": false
+    },
+    {
+      "term": "atto",
+      "today": 2,
+      "avg7": 0,
+      "delta": 2,
+      "isNew": true
+    },
+    {
+      "term": "binance",
+      "today": 2,
+      "avg7": 0,
+      "delta": 2,
+      "isNew": true
+    },
+    {
+      "term": "binance-hacker-1029",
+      "today": 2,
+      "avg7": 0,
+      "delta": 2,
+      "isNew": true
+    },
+    {
+      "term": "claude sonnet",
+      "today": 2,
+      "avg7": 0,
+      "delta": 2,
+      "isNew": true
+    },
+    {
+      "term": "doordash",
+      "today": 2,
+      "avg7": 0,
+      "delta": 2,
+      "isNew": true
+    },
+    {
+      "term": "feels",
+      "today": 2,
+      "avg7": 0,
+      "delta": 2,
+      "isNew": true
+    },
+    {
+      "term": "h.264",
+      "today": 2,
+      "avg7": 0,
+      "delta": 2,
+      "isNew": true
+    }
+  ],
+  "papers": [],
+  "paperCategories": [],
+  "hfModels": [
+    {
+      "id": "deepseek-ai/DeepSeek-V4.1-Flash-1017",
+      "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017",
+      "likes": 3772,
+      "downloads": 131062,
+      "pipeline": "image-text-to-text"
+    },
+    {
+      "id": "Nanbeige/Nanbeige4.3-33B",
+      "url": "https://huggingface.co/Nanbeige/Nanbeige4.3-33B",
+      "likes": 775,
+      "downloads": 9655,
+      "pipeline": "text-generation"
+    },
+    {
+      "id": "RecursiveSI/flint",
+      "url": "https://huggingface.co/RecursiveSI/flint",
+      "likes": 1244,
+      "downloads": 16598,
+      "pipeline": "text-generation"
+    },
+    {
+      "id": "LiquidAI/LFM3-1.7B",
+      "url": "https://huggingface.co/LiquidAI/LFM3-1.7B",
+      "likes": 482,
+      "downloads": 15885,
+      "pipeline": "text-generation"
+    },
+    {
+      "id": "XHToken/Spark-X2.6-4B",
+      "url": "https://huggingface.co/XHToken/Spark-X2.6-4B",
+      "likes": 906,
+      "downloads": 10163,
+      "pipeline": "text-generation"
+    },
+    {
+      "id": "MiniMaxAI/MiniMax-M3.1-Flash",
+      "url": "https://huggingface.co/MiniMaxAI/MiniMax-M3.1-Flash",
+      "likes": 489,
+      "downloads": 15738,
+      "pipeline": "image-text-to-text"
+    },
+    {
+      "id": "ISTA-DASLab/DeepSeek-V4.1-Flash-1017-GSQ-RCO-GGUF",
+      "url": "https://huggingface.co/ISTA-DASLab/DeepSeek-V4.1-Flash-1017-GSQ-RCO-GGUF",
+      "likes": 471,
+      "downloads": 1578937,
+      "pipeline": "text-generation"
+    },
+    {
+      "id": "nvidia/NVIDIA-Nemotron-3.5-Transcribe-30B-A4B",
+      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Transcribe-30B-A4B",
+      "likes": 409,
+      "downloads": 4276,
+      "pipeline": "automatic-speech-recognition"
+    },
+    {
+      "id": "Lightricks/LTX-2.5",
+      "url": "https://huggingface.co/Lightricks/LTX-2.5",
+      "likes": 9848,
+      "downloads": 2269999,
+      "pipeline": "image-to-video"
+    },
+    {
+      "id": "baidu/Unlimited-OCR-2",
+      "url": "https://huggingface.co/baidu/Unlimited-OCR-2",
+      "likes": 382,
+      "downloads": 18141,
+      "pipeline": "image-text-to-text"
+    },
+    {
+      "id": "black-forest-labs/flux-3-image-klein-comfy",
+      "url": "https://huggingface.co/black-forest-labs/flux-3-image-klein-comfy",
+      "likes": 2050,
+      "downloads": 832197,
+      "pipeline": "image-to-image"
+    },
+    {
+      "id": "Qwen/Qwen3.8-27B",
+      "url": "https://huggingface.co/Qwen/Qwen3.8-27B",
+      "likes": 18687,
+      "downloads": 7509924,
+      "pipeline": "image-text-to-text"
+    },
+    {
+      "id": "abenzerps/Qwen-Image-2.1-Uncensored-Quantized",
+      "url": "https://huggingface.co/abenzerps/Qwen-Image-2.1-Uncensored-Quantized",
+      "likes": 5317,
+      "downloads": 2172670,
+      "pipeline": "text-to-image"
+    },
+    {
+      "id": "mistralai/Mistral-Large-4-1T-A52B",
+      "url": "https://huggingface.co/mistralai/Mistral-Large-4-1T-A52B",
+      "likes": 1214,
+      "downloads": 278,
+      "pipeline": "image-text-to-text"
+    },
+    {
+      "id": "orcarouter/DeepSeek-V4.1-Flash-1017-abliterated-GGUF",
+      "url": "https://huggingface.co/orcarouter/DeepSeek-V4.1-Flash-1017-abliterated-GGUF",
+      "likes": 341,
+      "downloads": 28763,
+      "pipeline": "text-generation"
+    },
+    {
+      "id": "ccore/Qwen3.5-4B-3D-Coder",
+      "url": "https://huggingface.co/ccore/Qwen3.5-4B-3D-Coder",
+      "likes": 279,
+      "downloads": 12237,
+      "pipeline": null
+    },
+    {
+      "id": "nvidia/NVIDIA-Nemotron-3.5-Bolt-E4B-4GB",
+      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-E4B-4GB",
+      "likes": 256,
+      "downloads": 57228,
+      "pipeline": "text-generation"
+    },
+    {
+      "id": "LiquidAI/LFM3-Omni-2B",
+      "url": "https://huggingface.co/LiquidAI/LFM3-Omni-2B",
+      "likes": 205,
+      "downloads": 1814,
+      "pipeline": "any-to-any"
+    },
+    {
+      "id": "OpenMOSS-Team/MOSS-Image-SFT",
+      "url": "https://huggingface.co/OpenMOSS-Team/MOSS-Image-SFT",
+      "likes": 824,
+      "downloads": 14950,
+      "pipeline": "text-to-image"
+    },
+    {
+      "id": "openbmb/MiniCPM-OCR-1.0",
+      "url": "https://huggingface.co/openbmb/MiniCPM-OCR-1.0",
+      "likes": 319,
+      "downloads": 1597,
+      "pipeline": "image-text-to-text"
+    }
+  ],
+  "feeds": {
+    "hn": [
+      {
+        "id": 50294702,
+        "title": "Patrick Stewart has died",
+        "url": "https://www.nytimes.com/2026/10/29/arts/television/patrick-stewart-dead.html",
+        "domain": "nytimes.com",
+        "points": 2274,
+        "comments": 472,
+        "hnUrl": "https://news.ycombinator.com/item?id=50294702"
+      },
+      {
+        "id": 50289418,
+        "title": "We're releasing the weights of Mistral Large 4",
+        "url": "https://mistral.ai/news/mistral-large-4-oss/",
+        "domain": "mistral.ai",
+        "points": 1164,
+        "comments": 332,
+        "hnUrl": "https://news.ycombinator.com/item?id=50289418"
+      },
+      {
+        "id": 50296470,
+        "title": "Binance-hacker-1029 – $5.6B stolen from Binance",
+        "url": "https://arkm.com/explorer/entity/21a94755-f604-45e5-9501-6542e23005e8",
+        "domain": "arkm.com",
+        "points": 613,
+        "comments": 369,
+        "hnUrl": "https://news.ycombinator.com/item?id=50296470"
+      },
+      {
+        "id": 50287919,
+        "title": "DoorDash to acquire Instacart",
+        "url": "https://about.doordash.com/en-us/news/doordash-to-acquire-instacart",
+        "domain": "about.doordash.com",
+        "points": 409,
+        "comments": 593,
+        "hnUrl": "https://news.ycombinator.com/item?id=50287919"
+      },
+      {
+        "id": 50290177,
+        "title": "LLM Voice",
+        "url": "https://martinfowler.com/bliki/LLM-Voice.html",
+        "domain": "martinfowler.com",
+        "points": 331,
+        "comments": 169,
+        "hnUrl": "https://news.ycombinator.com/item?id=50290177"
+      },
+      {
+        "id": 50291054,
+        "title": "H.264 Is Magic (2016)",
+        "url": "https://sidbala.com/h-264-is-magic/",
+        "domain": "sidbala.com",
+        "points": 316,
+        "comments": 120,
+        "hnUrl": "https://news.ycombinator.com/item?id=50291054"
+      },
+      {
+        "id": 50286987,
+        "title": "Chained PHP2Shell exploit roots 25 servers, including US Government servers",
+        "url": "https://dreamgroup.com/blog/chained-php2shell-exploit-roots-25-servers",
+        "domain": "dreamgroup.com",
+        "points": 276,
+        "comments": 137,
+        "hnUrl": "https://news.ycombinator.com/item?id=50286987"
+      },
+      {
+        "id": 50293047,
+        "title": "Alleged Chinese spy had 'close relationship' with Nvidia boss Jensen Huang",
+        "url": "https://nypost.com/2026/10/29/business/alleged-chinese-spy-had-close-relationship-with-nvidia-boss-jensen-huang-report/",
+        "domain": "nypost.com",
+        "points": 275,
+        "comments": 189,
+        "hnUrl": "https://news.ycombinator.com/item?id=50293047"
+      },
+      {
+        "id": 50287775,
+        "title": "If IPv4 were land",
+        "url": "https://iptrust.co/blog/if-ipv4-were-land",
+        "domain": "iptrust.co",
+        "points": 224,
+        "comments": 294,
+        "hnUrl": "https://news.ycombinator.com/item?id=50287775"
+      },
+      {
+        "id": 50287599,
+        "title": "NetBSD adds a new text editor called atto",
+        "url": "https://mastodon.sdf.org/@netbsd/117518160563539748",
+        "domain": "mastodon.sdf.org",
+        "points": 161,
+        "comments": 131,
+        "hnUrl": "https://news.ycombinator.com/item?id=50287599"
+      },
+      {
+        "id": 50286197,
+        "title": "What we know so far about Spain train crash",
+        "url": "https://www.bbc.com/news/articles/cm8xz7pkd0jjo",
+        "domain": "bbc.com",
+        "points": 145,
+        "comments": 296,
+        "hnUrl": "https://news.ycombinator.com/item?id=50286197"
+      },
+      {
+        "id": 50290283,
+        "title": "Zombie stats: Where the numbers AI quotes come from",
+        "url": "https://trakkr.ai/trakkr-research/zombie-stats",
+        "domain": "trakkr.ai",
+        "points": 139,
+        "comments": 61,
+        "hnUrl": "https://news.ycombinator.com/item?id=50290283"
+      },
+      {
+        "id": 50296486,
+        "title": "We ran AI agent swarms in Minecraft and Mindustry",
+        "url": "https://labs.ycombinator.com/projects/games/index.html",
+        "domain": "labs.ycombinator.com",
+        "points": 126,
+        "comments": 47,
+        "hnUrl": "https://news.ycombinator.com/item?id=50296486"
+      },
+      {
+        "id": 50290912,
+        "title": "Grace Blackwell needs a new scheduler: 27% more usable GPUs from the same racks",
+        "url": "https://skypilot.ai/blog/grace-blackwell-needs-a-new-scheduler",
+        "domain": "skypilot.ai",
+        "points": 126,
+        "comments": 21,
+        "hnUrl": "https://news.ycombinator.com/item?id=50290912"
+      },
+      {
+        "id": 50295450,
+        "title": "A tiny world model running games on a Raspberry Pi Pico 2 W",
+        "url": "https://github.com/SheepSeb/tinyworldformer",
+        "domain": "github.com",
+        "points": 106,
+        "comments": 7,
+        "hnUrl": "https://news.ycombinator.com/item?id=50295450"
+      },
+      {
+        "id": 50292727,
+        "title": "Claude Duet is the first personal-assistant-type harness that feels useful",
+        "url": "https://fig.blue/posts/duet-is-the-future/",
+        "domain": "fig.blue",
+        "points": 100,
+        "comments": 79,
+        "hnUrl": "https://news.ycombinator.com/item?id=50292727"
+      },
+      {
+        "id": 50294506,
+        "title": "Show HN: Auto Dismiss Mac OS \"Allow <app> to find devices on local networks?\"",
+        "url": "https://github.com/johncassil/dontallow",
+        "domain": "github.com",
+        "points": 91,
+        "comments": 74,
+        "hnUrl": "https://news.ycombinator.com/item?id=50294506"
+      },
+      {
+        "id": 50291421,
+        "title": "16colo.rs – ANSI/ASCII art archive",
+        "url": "https://16colo.rs/",
+        "domain": "16colo.rs",
+        "points": 84,
+        "comments": 7,
+        "hnUrl": "https://news.ycombinator.com/item?id=50291421"
+      },
+      {
+        "id": 50296602,
+        "title": "Proton goes all in on using AI",
+        "url": "https://convo.casa/@b/117525936178835007",
+        "domain": "convo.casa",
+        "points": 60,
+        "comments": 36,
+        "hnUrl": "https://news.ycombinator.com/item?id=50296602"
+      },
+      {
+        "id": 50296585,
+        "title": "El Niño Is Flooding California's Coasts with the Highest Tides to Come",
+        "url": "https://gizmodo.com/el-nino-is-already-flooding-californias-coasts-and-the-years-highest-tides-havent-arrived-2000832574",
+        "domain": "gizmodo.com",
+        "points": 55,
+        "comments": 13,
+        "hnUrl": "https://news.ycombinator.com/item?id=50296585"
+      },
+      {
+        "id": 50245199,
+        "title": "Scattered thoughts on how doing math feels these days",
+        "url": "https://dynomight.net/math/",
+        "domain": "dynomight.net",
+        "points": 55,
+        "comments": 38,
+        "hnUrl": "https://news.ycombinator.com/item?id=50245199"
+      },
+      {
+        "id": 50295821,
+        "title": "ElementaryUI – Swift, in the Browser",
+        "url": "https://elementary.codes",
+        "domain": "elementary.codes",
+        "points": 51,
+        "comments": 10,
+        "hnUrl": "https://news.ycombinator.com/item?id=50295821"
+      },
+      {
+        "id": 50291116,
+        "title": "Launch HN: Simantic (YC F26) – Firmware Simulation for AI Agents",
+        "url": "https://news.ycombinator.com/item?id=50291116",
+        "domain": "news.ycombinator.com",
+        "points": 48,
+        "comments": 14,
+        "hnUrl": "https://news.ycombinator.com/item?id=50291116"
+      },
+      {
+        "id": 50294486,
+        "title": "IgE disruptor for food allergy with Claude-enabled antibody design [pdf]",
+        "url": "https://divergencelabs.com/publications/ige-preprint.pdf",
+        "domain": "divergencelabs.com",
+        "points": 36,
+        "comments": 23,
+        "hnUrl": "https://news.ycombinator.com/item?id=50294486"
+      },
+      {
+        "id": 50297089,
+        "title": "A Pig, the State, and War: Porco Rosso (Kurenai No Buta) (2014)",
+        "url": "https://journal.animationstudies.org/article/id/66/",
+        "domain": "journal.animationstudies.org",
+        "points": 32,
+        "comments": 2,
+        "hnUrl": "https://news.ycombinator.com/item?id=50297089"
+      },
+      {
+        "id": 50295868,
+        "title": "Sylphide OS: a general-purpose OS for microcontroller-based computers",
+        "url": "https://projects.freehackers.org/sylphide-os/",
+        "domain": "projects.freehackers.org",
+        "points": 32,
+        "comments": 9,
+        "hnUrl": "https://news.ycombinator.com/item?id=50295868"
+      },
+      {
+        "id": 50296947,
+        "title": "The Great American Rascal: Tom Sawyer at 150",
+        "url": "https://claremontreviewofbooks.com/the-great-american-rascal/",
+        "domain": "claremontreviewofbooks.com",
+        "points": 30,
+        "comments": 8,
+        "hnUrl": "https://news.ycombinator.com/item?id=50296947"
+      },
+      {
+        "id": 50264368,
+        "title": "Partitioning my digital life into security domains (2011)",
+        "url": "https://blog.invisiblethings.org/2011/03/13/partitioning-my-digital-life-into.html",
+        "domain": "blog.invisiblethings.org",
+        "points": 21,
+        "comments": 0,
+        "hnUrl": "https://news.ycombinator.com/item?id=50264368"
+      },
+      {
+        "id": 50297697,
+        "title": "Show HN: I Turned DOOM into a Transformer",
+        "url": "https://github.com/mottopanikeiku/doomformer",
+        "domain": "github.com",
+        "points": 18,
+        "comments": 2,
+        "hnUrl": "https://news.ycombinator.com/item?id=50297697"
+      },
+      {
+        "id": 50267380,
+        "title": "Historical Scientific Instruments",
+        "url": "https://nealstephenson.substack.com/p/historical-scientific-instruments",
+        "domain": "nealstephenson.substack.com",
+        "points": 10,
+        "comments": 0,
+        "hnUrl": "https://news.ycombinator.com/item?id=50267380"
+      }
+    ],
+    "geeknews": [
+      {
+        "id": "https://news.hada.io/topic?id=36256",
+        "source": "geeknews",
+        "title": "Show GN: 데드라인 렌즈 - 고지서 사진에서 납부기한을 찾아 알림을 거는 온디바이스 Android 앱",
+        "url": "https://news.hada.io/topic?id=36256",
+        "domain": "news.hada.io",
+        "sub": null,
+        "publishedAt": "2026-10-30T08:26:41+09:00"
+      },
+      {
+        "id": "https://news.hada.io/topic?id=36255",
+        "source": "geeknews",
+        "title": "Show GN: 반토막 - 매일 다른 물건을 반으로 자르는 웹 퍼즐",
+        "url": "https://news.hada.io/topic?id=36255",
+        "domain": "news.hada.io",
+        "sub": null,
+        "publishedAt": "2026-10-30T08:25:39+09:00"
+      },
+      {
+        "id": "https://news.hada.io/topic?id=36254",
+        "source": "geeknews",
+        "title": "좀비 통계: AI가 인용하는 숫자는 어디에서 오는가",
+        "url": "https://news.hada.io/topic?id=36254",
+        "domain": "news.hada.io",
+        "sub": null,
+        "publishedAt": "2026-10-30T07:44:46+09:00"
+      },
+      {
+        "id": "https://news.hada.io/topic?id=36253",
+        "source": "geeknews",
+        "title": "9비트 AES 키 사건",
+        "url": "https://news.hada.io/topic?id=36253",
+        "domain": "news.hada.io",
+        "sub": null,
+        "publishedAt": "2026-10-30T07:41:46+09:00"
+      },
+      {
+        "id": "https://news.hada.io/topic?id=36252",
+        "source": "geeknews",
+        "title": "Show GN: DevFit - 채용공고와 내 GitHub 커밋으로 기술면접 예상 질문을 만들어 주는 서비스",
+        "url": "https://news.hada.io/topic?id=36252",
+        "domain": "news.hada.io",
+        "sub": null,
+        "publishedAt": "2026-10-30T07:39:43+09:00"
+      },
+      {
+        "id": "https://news.hada.io/topic?id=36251",
+        "source": "geeknews",
+        "title": "Binance-hacker-1029 - Binance에서 56억 달러 도난",
+        "url": "https://news.hada.io/topic?id=36251",
+        "domain": "news.hada.io",
+        "sub": null,
+        "publishedAt": "2026-10-30T07:38:45+09:00"
+      },
+      {
+        "id": "https://news.hada.io/topic?id=36250",
+        "source": "geeknews",
+        "title": "정보 유출 사이트의 미국 국토안보부(DHS) 직원 정보 공개",
+        "url": "https://news.hada.io/topic?id=36250",
+        "domain": "news.hada.io",
+        "sub": null,
+        "publishedAt": "2026-10-30T06:42:42+09:00"
+      },
+      {
+        "id": "https://news.hada.io/topic?id=36249",
+        "source": "geeknews",
+        "title": "Tomáš Mikolov, 체코 대통령에게 공로 메달 수훈",
+        "url": "https://news.hada.io/topic?id=36249",
+        "domain": "news.hada.io",
+        "sub": null,
+        "publishedAt": "2026-10-30T06:39:42+09:00"
+      },
+      {
+        "id": "https://news.hada.io/topic?id=36248",
+        "source": "geeknews",
+        "title": "중국 스파이 의혹 인물, Nvidia CEO Jensen Huang과 ‘긴밀한 관계’",
+        "url": "https://news.hada.io/topic?id=36248",
+        "domain": "news.hada.io",
+        "sub": null,
+        "publishedAt": "2026-10-30T06:36:42+09:00"
+      },
+      {
+        "id": "https://news.hada.io/topic?id=36247",
+        "source": "geeknews",
+        "title": "우리는 “그냥 어울려 지내지” 않을 것이다",
+        "url": "https://news.hada.io/topic?id=36247",
+        "domain": "news.hada.io",
+        "sub": null,
+        "publishedAt": "2026-10-30T05:41:50+09:00"
+      },
+      {
+        "id": "https://news.hada.io/topic?id=36246",
+        "source": "geeknews",
+        "title": "패트릭 스튜어트 별세",
+        "url": "https://news.hada.io/topic?id=36246",
+        "domain": "news.hada.io",
+        "sub": null,
+        "publishedAt": "2026-10-30T05:38:50+09:00"
+      },
+      {
+        "id": "https://news.hada.io/topic?id=36245",
+        "source": "geeknews",
+        "title": "NetBSD, 새로운 텍스트 편집기 atto 추가",
+        "url": "https://news.hada.io/topic?id=36245",
+        "domain": "news.hada.io",
+        "sub": null,
+        "publishedAt": "2026-10-30T04:39:51+09:00"
+      },
+      {
+        "id": "https://news.hada.io/topic?id=36244",
+        "source": "geeknews",
+        "title": "LLM 문체가 만드는 글의 불쾌한 골짜기",
+        "url": "https://news.hada.io/topic?id=36244",
+        "domain": "news.hada.io",
+        "sub": null,
+        "publishedAt": "2026-10-30T04:36:51+09:00"
+      },
+      {
+        "id": "https://news.hada.io/topic?id=36243",
+        "source": "geeknews",
+        "title": "H.264는 마법이다 (2016)",
+        "url": "https://news.hada.io/topic?id=36243",
+        "domain": "news.hada.io",
+        "sub": null,
+        "publishedAt": "2026-10-30T03:39:48+09:00"
+      },
+      {
+        "id": "https://news.hada.io/topic?id=36242",
+        "source": "geeknews",
+        "title": "Google 검색, 이제 Alphabet 매출의 절반 미만",
+        "url": "https://news.hada.io/topic?id=36242",
+        "domain": "news.hada.io",
+        "sub": null,
+        "publishedAt": "2026-10-30T03:36:47+09:00"
+      },
+      {
+        "id": "https://news.hada.io/topic?id=36241",
+        "source": "geeknews",
+        "title": "멕시코는 미국에서 살 수 없는 전기차의 전시장",
+        "url": "https://news.hada.io/topic?id=36241",
+        "domain": "news.hada.io",
+        "sub": null,
+        "publishedAt": "2026-10-30T02:43:37+09:00"
+      },
+      {
+        "id": "https://news.hada.io/topic?id=36240",
+        "source": "geeknews",
+        "title": "PHP2Shell 연쇄 공격으로 미국 정부 관련 서버 포함 25대의 루트 권한 탈취",
+        "url": "https://news.hada.io/topic?id=36240",
+        "domain": "news.hada.io",
+        "sub": null,
+        "publishedAt": "2026-10-30T02:40:37+09:00"
+      },
+      {
+        "id": "https://news.hada.io/topic?id=36239",
+        "source": "geeknews",
+        "title": "IPv4가 땅이라면",
+        "url": "https://news.hada.io/topic?id=36239",
+        "domain": "news.hada.io",
+        "sub": null,
+        "publishedAt": "2026-10-30T01:42:47+09:00"
+      },
+      {
+        "id": "https://news.hada.io/topic?id=36238",
+        "source": "geeknews",
+        "title": "Google이 Google Earth에서 수역의 이름을 정하는 방식 (2008)",
+        "url": "https://news.hada.io/topic?id=36238",
+        "domain": "news.hada.io",
+        "sub": null,
+        "publishedAt": "2026-10-30T01:39:47+09:00"
+      },
+      {
+        "id": "https://news.hada.io/topic?id=36237",
+        "source": "geeknews",
+        "title": "해커들, 미국 국토안보부 직원 4만 명 이상의 신원 공개",
+        "url": "https://news.hada.io/topic?id=36237",
+        "domain": "news.hada.io",
+        "sub": null,
+        "publishedAt": "2026-10-30T01:36:47+09:00"
+      },
+      {
+        "id": "https://news.hada.io/topic?id=36235",
+        "source": "geeknews",
+        "title": "DoorDash, 약 25.5조원에 Instacart 인수 추진",
+        "url": "https://news.hada.io/topic?id=36235",
+        "domain": "news.hada.io",
+        "sub": null,
+        "publishedAt": "2026-10-30T00:47:45+09:00"
+      },
+      {
+        "id": "https://news.hada.io/topic?id=36234",
+        "source": "geeknews",
+        "title": "FBI가 마틴 루서 킹 주니어의 자살을 유도하려 보낸 편지(2014)",
+        "url": "https://news.hada.io/topic?id=36234",
+        "domain": "news.hada.io",
+        "sub": null,
+        "publishedAt": "2026-10-30T00:44:45+09:00"
+      },
+      {
+        "id": "https://news.hada.io/topic?id=36233",
+        "source": "geeknews",
+        "title": "Mistral Large 4(Le Chonk), 가중치 공개",
+        "url": "https://news.hada.io/topic?id=36233",
+        "domain": "news.hada.io",
+        "sub": null,
+        "publishedAt": "2026-10-30T00:41:45+09:00"
+      },
+      {
+        "id": "https://news.hada.io/topic?id=36232",
+        "source": "geeknews",
+        "title": "Show GN: 만든 사람도 결과를 미리 모르는 사다리타기 (drand 예약 추첨)",
+        "url": "https://news.hada.io/topic?id=36232",
+        "domain": "news.hada.io",
+        "sub": null,
+        "publishedAt": "2026-10-29T23:49:24+09:00"
+      },
+      {
+        "id": "https://news.hada.io/topic?id=36231",
+        "source": "geeknews",
+        "title": "미국, 단 3개월 만에 역대 최대인 20.2GWh 배터리 저장 용량 추가",
+        "url": "https://news.hada.io/topic?id=36231",
+        "domain": "news.hada.io",
+        "sub": null,
+        "publishedAt": "2026-10-29T23:46:01+09:00"
+      },
+      {
+        "id": "https://news.hada.io/topic?id=36230",
+        "source": "geeknews",
+        "title": "논리 버그만으로 Microsoft Edge 전체 익스플로잇 체인 구축하기",
+        "url": "https://news.hada.io/topic?id=36230",
+        "domain": "news.hada.io",
+        "sub": null,
+        "publishedAt": "2026-10-29T23:43:01+09:00"
+      },
+      {
+        "id": "https://news.hada.io/topic?id=36229",
+        "source": "geeknews",
+        "title": "Gemini 4 Carbon, Artificial Analysis Intelligence Index v5에서 새로운 1위 기록",
+        "url": "https://news.hada.io/topic?id=36229",
+        "domain": "news.hada.io",
+        "sub": null,
+        "publishedAt": "2026-10-29T23:40:01+09:00"
+      },
+      {
+        "id": "https://news.hada.io/topic?id=36228",
+        "source": "geeknews",
+        "title": "스파이 활동 의혹을 받는 이스라엘 기업, Starlink 사용자를 표적으로 삼아",
+        "url": "https://news.hada.io/topic?id=36228",
+        "domain": "news.hada.io",
+        "sub": null,
+        "publishedAt": "2026-10-29T22:33:20+09:00"
+      },
+      {
+        "id": "https://news.hada.io/topic?id=36227",
+        "source": "geeknews",
+        "title": "Show GN: oh-my-ouroboros - 피드백과 점검으로 스스로 다듬어지는 Claude Code 하네스",
+        "url": "https://news.hada.io/topic?id=36227",
+        "domain": "news.hada.io",
+        "sub": null,
+        "publishedAt": "2026-10-29T22:29:10+09:00"
+      },
+      {
+        "id": "https://news.hada.io/topic?id=36225",
+        "source": "geeknews",
+        "title": "사용자 조작이나 알림 없이 발생하는 Android 원격 서비스 거부 공격",
+        "url": "https://news.hada.io/topic?id=36225",
+        "domain": "news.hada.io",
+        "sub": null,
+        "publishedAt": "2026-10-29T21:39:16+09:00"
+      },
+      {
+        "id": "https://news.hada.io/topic?id=36224",
+        "source": "geeknews",
+        "title": "Google AI, 2020년 선거 승자를 묻자 답변 회피",
+        "url": "https://news.hada.io/topic?id=36224",
+        "domain": "news.hada.io",
+        "sub": null,
+        "publishedAt": "2026-10-29T21:36:15+09:00"
+      },
+      {
+        "id": "https://news.hada.io/topic?id=36223",
+        "source": "geeknews",
+        "title": "Show GN: Specify - 코드베이스의 아키텍처와 기능 흐름을 시각화하는 도구",
+        "url": "https://news.hada.io/topic?id=36223",
+        "domain": "news.hada.io",
+        "sub": null,
+        "publishedAt": "2026-10-29T20:14:42+09:00"
+      },
+      {
+        "id": "https://news.hada.io/topic?id=36222",
+        "source": "geeknews",
+        "title": "GitLab 보안 사고: CVE-2026-97229 악용 시도",
+        "url": "https://news.hada.io/topic?id=36222",
+        "domain": "news.hada.io",
+        "sub": null,
+        "publishedAt": "2026-10-29T18:33:30+09:00"
+      },
+      {
+        "id": "https://news.hada.io/topic?id=36221",
+        "source": "geeknews",
+        "title": "Ask GN: 비개발자인데, AI가 써 준 메일이 딱 봐도 AI 같습니다. 어떻게 고치세요?",
+        "url": "https://news.hada.io/topic?id=36221",
+        "domain": "news.hada.io",
+        "sub": null,
+        "publishedAt": "2026-10-29T18:09:04+09:00"
+      },
+      {
+        "id": "https://news.hada.io/topic?id=36220",
+        "source": "geeknews",
+        "title": "Show GN: 팬스워리 Fanswery - 팬과 크리에이터를 잇는 Q&amp;A 플랫폼",
+        "url": "https://news.hada.io/topic?id=36220",
+        "domain": "news.hada.io",
+        "sub": null,
+        "publishedAt": "2026-10-29T17:49:11+09:00"
+      },
+      {
+        "id": "https://news.hada.io/topic?id=36218",
+        "source": "geeknews",
+        "title": "Formlabs Studio 1, 699달러 레진 3D 프린터",
+        "url": "https://news.hada.io/topic?id=36218",
+        "domain": "news.hada.io",
+        "sub": null,
+        "publishedAt": "2026-10-29T17:35:03+09:00"
+      },
+      {
+        "id": "https://news.hada.io/topic?id=36213",
+        "source": "geeknews",
+        "title": "Claude Code는 각 백그라운드 에이전트의 대화 기록을 주기적으로 해당 모델에 전송함",
+        "url": "https://news.hada.io/topic?id=36213",
+        "domain": "news.hada.io",
+        "sub": null,
+        "publishedAt": "2026-10-29T15:33:51+09:00"
+      },
+      {
+        "id": "https://news.hada.io/topic?id=36211",
+        "source": "geeknews",
+        "title": "Show GN: knock - 클로드 코드로 일하는 척하면서 친구랑 점심 메뉴 정하기",
+        "url": "https://news.hada.io/topic?id=36211",
+        "domain": "news.hada.io",
+        "sub": null,
+        "publishedAt": "2026-10-29T15:17:33+09:00"
+      },
+      {
+        "id": "https://news.hada.io/topic?id=36210",
+        "source": "geeknews",
+        "title": "Show GN: anti-stuck - Claude Code가 멈춘 명령·서브에이전트를 영원히 기다리지 않게 하는 플러그인",
+        "url": "https://news.hada.io/topic?id=36210",
+        "domain": "news.hada.io",
+        "sub": null,
+        "publishedAt": "2026-10-29T15:00:51+09:00"
+      },
+      {
+        "id": "https://news.hada.io/topic?id=36209",
+        "source": "geeknews",
+        "title": "건강 근황",
+        "url": "https://news.hada.io/topic?id=36209",
+        "domain": "news.hada.io",
+        "sub": null,
+        "publishedAt": "2026-10-29T14:33:39+09:00"
+      },
+      {
+        "id": "https://news.hada.io/topic?id=36208",
+        "source": "geeknews",
+        "title": "GOTO는 정말 끝내준다(C 오류 처리에서)",
+        "url": "https://news.hada.io/topic?id=36208",
+        "domain": "news.hada.io",
+        "sub": null,
+        "publishedAt": "2026-10-29T14:01:46+09:00"
+      },
+      {
+        "id": "https://news.hada.io/topic?id=36207",
+        "source": "geeknews",
+        "title": "StackOverflow의 월간 질문 수, 이제 1,000건 미만",
+        "url": "https://news.hada.io/topic?id=36207",
+        "domain": "news.hada.io",
+        "sub": null,
+        "publishedAt": "2026-10-29T13:32:53+09:00"
+      },
+      {
+        "id": "https://news.hada.io/topic?id=36206",
+        "source": "geeknews",
+        "title": "Qwenputer: Qwen3.5 내부에서 작동하는 결정론적 RISC-V CPU",
+        "url": "https://news.hada.io/topic?id=36206",
+        "domain": "news.hada.io",
+        "sub": null,
+        "publishedAt": "2026-10-29T12:32:48+09:00"
+      },
+      {
+        "id": "https://news.hada.io/topic?id=36205",
+        "source": "geeknews",
+        "title": "Show GN: 생성형 LLM 없이 만든 실시간 음성 예약 봇 데모 - jev 활용기",
+        "url": "https://news.hada.io/topic?id=36205",
+        "domain": "news.hada.io",
+        "sub": null,
+        "publishedAt": "2026-10-29T11:39:59+09:00"
+      },
+      {
+        "id": "https://news.hada.io/topic?id=36204",
+        "source": "geeknews",
+        "title": "Show GN: Ferryx - Windows·Linux에서도 쓸 수 있는 코딩 에이전트용 네이티브 터미널",
+        "url": "https://news.hada.io/topic?id=36204",
+        "domain": "news.hada.io",
+        "sub": null,
+        "publishedAt": "2026-10-29T11:06:32+09:00"
+      },
+      {
+        "id": "https://news.hada.io/topic?id=36202",
+        "source": "geeknews",
+        "title": "Nanbeige4.3 33B, 한국어 문서 RAG 299문항 직접 채점: 공식 벤치마크에선 qwen3.8 27B를 이겼지만 한국...",
+        "url": "https://news.hada.io/topic?id=36202",
+        "domain": "news.hada.io",
+        "sub": null,
+        "publishedAt": "2026-10-29T10:33:07+09:00"
+      },
+      {
+        "id": "https://news.hada.io/topic?id=36201",
+        "source": "geeknews",
+        "title": "온라인 게임 개발자가 말하는 렉과 서버비",
+        "url": "https://news.hada.io/topic?id=36201",
+        "domain": "news.hada.io",
+        "sub": null,
+        "publishedAt": "2026-10-29T10:12:58+09:00"
+      },
+      {
+        "id": "https://news.hada.io/topic?id=36200",
+        "source": "geeknews",
+        "title": "kern - AI 생성 코드를 매번 새 컨테이너에서 실행하는 경량 루트리스 런타임",
+        "url": "https://news.hada.io/topic?id=36200",
+        "domain": "news.hada.io",
+        "sub": null,
+        "publishedAt": "2026-10-29T09:30:03+09:00"
+      },
+      {
+        "id": "https://news.hada.io/topic?id=36197",
+        "source": "geeknews",
+        "title": "AAII v5 공개 - 비공개 평가 비중을 60%로 높인 AI 모델 역량 지수",
+        "url": "https://news.hada.io/topic?id=36197",
+        "domain": "news.hada.io",
+        "sub": null,
+        "publishedAt": "2026-10-29T09:10:15+09:00"
+      },
+      {
+        "id": "https://news.hada.io/topic?id=36196",
+        "source": "geeknews",
+        "title": "NVIDIA Nemotron 3.5 Transcribe - 한국어 포함 40개 언어를 지원하는 공개 음성 인식 모델",
+        "url": "https://news.hada.io/topic?id=36196",
+        "domain": "news.hada.io",
+        "sub": null,
+        "publishedAt": "2026-10-29T09:06:36+09:00"
+      }
+    ],
+    "reddit": [
+      {
+        "id": "t3_1xiixew",
+        "source": "reddit",
+        "title": "Meet Claude's standards... or else.",
+        "url": "https://www.reddit.com/r/ClaudeAI/comments/1xiixew/meet_claudes_standards_or_else/",
+        "domain": "reddit.com",
+        "sub": "ClaudeAI",
+        "publishedAt": "2026-10-29T12:43:17+00:00"
+      },
+      {
+        "id": "t3_1xigpgr",
+        "source": "reddit",
+        "title": "We used Claude to get a full PS2 emulator running in a browser tab: TabStationToo",
+        "url": "https://www.reddit.com/r/ClaudeAI/comments/1xigpgr/we_used_claude_to_get_a_full_ps2_emulator_running/",
+        "domain": "reddit.com",
+        "sub": "ClaudeAI",
+        "publishedAt": "2026-10-29T10:52:51+00:00"
+      },
+      {
+        "id": "t3_1xid1o2",
+        "source": "reddit",
+        "title": "👍",
+        "url": "https://www.reddit.com/r/ClaudeAI/comments/1xid1o2/_/",
+        "domain": "reddit.com",
+        "sub": "ClaudeAI",
+        "publishedAt": "2026-10-29T07:08:42+00:00"
+      },
+      {
+        "id": "t3_1xiks9w",
+        "source": "reddit",
+        "title": "My 6 year old daughter designed a fully-fledged unicorn game and Claude Sonnet built it in under a month. Every sprite, sound and map is made from scratch",
+        "url": "https://www.reddit.com/r/ClaudeAI/comments/1xiks9w/my_6_year_old_daughter_designed_a_fullyfledged/",
+        "domain": "reddit.com",
+        "sub": "ClaudeAI",
+        "publishedAt": "2026-10-29T14:00:20+00:00"
+      },
+      {
+        "id": "t3_1xin15e",
+        "source": "reddit",
+        "title": "Claude helped me unbrick my friend's Pixel 10 without losing any data (Opus 5.5, Claude Code)",
+        "url": "https://www.reddit.com/r/ClaudeAI/comments/1xin15e/claude_helped_me_unbrick_my_friends_pixel_10/",
+        "domain": "reddit.com",
+        "sub": "ClaudeAI",
+        "publishedAt": "2026-10-29T15:25:24+00:00"
+      },
+      {
+        "id": "t3_1xi8549",
+        "source": "reddit",
+        "title": "Casual AI Use Is Exactly Where You Need the Best Models",
+        "url": "https://www.reddit.com/r/ClaudeAI/comments/1xi8549/casual_ai_use_is_exactly_where_you_need_the_best/",
+        "domain": "reddit.com",
+        "sub": "ClaudeAI",
+        "publishedAt": "2026-10-29T02:33:14+00:00"
+      },
+      {
+        "id": "t3_1xin646",
+        "source": "reddit",
+        "title": "Claude Code burns ~15-20% of your tokens on a 3-word status line",
+        "url": "https://www.reddit.com/r/ClaudeAI/comments/1xin646/claude_code_burns_1520_of_your_tokens_on_a_3word/",
+        "domain": "reddit.com",
+        "sub": "ClaudeAI",
+        "publishedAt": "2026-10-29T15:30:26+00:00"
+      },
+      {
+        "id": "t3_1xixhv8",
+        "source": "reddit",
+        "title": "AI agents (run by Claude Sonnet 5) did brain surgery on a mouse [Spoilers: it recovered]",
+        "url": "https://www.reddit.com/r/ClaudeAI/comments/1xixhv8/ai_agents_run_by_claude_sonnet_5_did_brain/",
+        "domain": "reddit.com",
+        "sub": "ClaudeAI",
+        "publishedAt": "2026-10-29T21:56:29+00:00"
+      },
+      {
+        "id": "t3_1xi7j4z",
+        "source": "reddit",
+        "title": "How did you guys learn how to build cool stuff with Claude ?",
+        "url": "https://www.reddit.com/r/ClaudeAI/comments/1xi7j4z/how_did_you_guys_learn_how_to_build_cool_stuff/",
+        "domain": "reddit.com",
+        "sub": "ClaudeAI",
+        "publishedAt": "2026-10-29T02:03:39+00:00"
+      },
+      {
+        "id": "t3_1xifp04",
+        "source": "reddit",
+        "title": "Claude Desktop: Is Opus 5.5 Extra High using up my 5-hour limit almost as fast as my weekly limit?",
+        "url": "https://www.reddit.com/r/ClaudeAI/comments/1xifp04/claude_desktop_is_opus_55_extra_high_using_up_my/",
+        "domain": "reddit.com",
+        "sub": "ClaudeAI",
+        "publishedAt": "2026-10-29T09:57:27+00:00"
+      },
+      {
+        "id": "t3_1xidsu3",
+        "source": "reddit",
+        "title": "Monopoly written by Claude in 1 day",
+        "url": "https://www.reddit.com/r/ClaudeAI/comments/1xidsu3/monopoly_written_by_claude_in_1_day/",
+        "domain": "reddit.com",
+        "sub": "ClaudeAI",
+        "publishedAt": "2026-10-29T07:57:27+00:00"
+      },
+      {
+        "id": "t3_1xid9y6",
+        "source": "reddit",
+        "title": "Day 1 vs Day 52 of my social resort game built with Claude Code",
+        "url": "https://www.reddit.com/r/ClaudeAI/comments/1xid9y6/day_1_vs_day_52_of_my_social_resort_game_built/",
+        "domain": "reddit.com",
+        "sub": "ClaudeAI",
+        "publishedAt": "2026-10-29T07:23:05+00:00"
+      },
+      {
+        "id": "t3_1xiaofs",
+        "source": "reddit",
+        "title": "How Can I Get the Most Out of Claude? Looking for Skills, Automations, and MCP Recommendations",
+        "url": "https://www.reddit.com/r/ClaudeAI/comments/1xiaofs/how_can_i_get_the_most_out_of_claude_looking_for/",
+        "domain": "reddit.com",
+        "sub": "ClaudeAI",
+        "publishedAt": "2026-10-29T04:45:40+00:00"
+      },
+      {
+        "id": "t3_1xikxsa",
+        "source": "reddit",
+        "title": "Almost out of my weekly usage, so I asked Claude to calculate how much it would cost to buy an equivalent amount in credits. Surely this can't be accurate, right?? ~$8000 to buy the equivalent of what you get for a $200 subscription? What assumptions are wrong here?",
+        "url": "https://www.reddit.com/r/ClaudeAI/comments/1xikxsa/almost_out_of_my_weekly_usage_so_i_asked_claude/",
+        "domain": "reddit.com",
+        "sub": "ClaudeAI",
+        "publishedAt": "2026-10-29T14:05:31+00:00"
+      },
+      {
+        "id": "t3_1xig90m",
+        "source": "reddit",
+        "title": "I made a Claude Code skill to generate hand-drawn Anthropic-inspired editorial SVG",
+        "url": "https://www.reddit.com/r/ClaudeAI/comments/1xig90m/i_made_a_claude_code_skill_to_generate_handdrawn/",
+        "domain": "reddit.com",
+        "sub": "ClaudeAI",
+        "publishedAt": "2026-10-29T10:28:23+00:00"
+      },
+      {
+        "id": "t3_1xim6c1",
+        "source": "reddit",
+        "title": "What's the craziest things have you created with Claude?",
+        "url": "https://www.reddit.com/r/ClaudeAI/comments/1xim6c1/whats_the_craziest_things_have_you_created_with/",
+        "domain": "reddit.com",
+        "sub": "ClaudeAI",
+        "publishedAt": "2026-10-29T14:53:37+00:00"
+      },
+      {
+        "id": "t3_1xir1s1",
+        "source": "reddit",
+        "title": "What was the most concerning thing Claude has ever said to you?",
+        "url": "https://www.reddit.com/r/ClaudeAI/comments/1xir1s1/what_was_the_most_concerning_thing_claude_has/",
+        "domain": "reddit.com",
+        "sub": "ClaudeAI",
+        "publishedAt": "2026-10-29T17:51:56+00:00"
+      },
+      {
+        "id": "t3_1xi7aj1",
+        "source": "reddit",
+        "title": "pixtuoid got a new look 👀 (real 2.5D pixel office for your AI agents)",
+        "url": "https://www.reddit.com/r/ClaudeAI/comments/1xi7aj1/pixtuoid_got_a_new_look_real_25d_pixel_office_for/",
+        "domain": "reddit.com",
+        "sub": "ClaudeAI",
+        "publishedAt": "2026-10-29T01:52:33+00:00"
+      },
+      {
+        "id": "t3_1xiqe4z",
+        "source": "reddit",
+        "title": "If Claude can explain my own work better than I can, do I really understand it?",
+        "url": "https://www.reddit.com/r/ClaudeAI/comments/1xiqe4z/if_claude_can_explain_my_own_work_better_than_i/",
+        "domain": "reddit.com",
+        "sub": "ClaudeAI",
+        "publishedAt": "2026-10-29T17:27:35+00:00"
+      },
+      {
+        "id": "t3_1xihqwn",
+        "source": "reddit",
+        "title": "I miss the ''You're absolutely right!'' era",
+        "url": "https://www.reddit.com/r/ClaudeAI/comments/1xihqwn/i_miss_the_youre_absolutely_right_era/",
+        "domain": "reddit.com",
+        "sub": "ClaudeAI",
+        "publishedAt": "2026-10-29T11:47:52+00:00"
+      },
+      {
+        "id": "t3_1xijj1w",
+        "source": "reddit",
+        "title": "I added screen sharing to my Claude Code agents monitor: each agent shows its tasks, tests, diffs and browser live",
+        "url": "https://www.reddit.com/r/ClaudeAI/comments/1xijj1w/i_added_screen_sharing_to_my_claude_code_agents/",
+        "domain": "reddit.com",
+        "sub": "ClaudeAI",
+        "publishedAt": "2026-10-29T13:09:42+00:00"
+      },
+      {
+        "id": "t3_1xiz1vy",
+        "source": "reddit",
+        "title": "Using Claude to put all Global Law into Git",
+        "url": "https://www.reddit.com/r/ClaudeAI/comments/1xiz1vy/using_claude_to_put_all_global_law_into_git/",
+        "domain": "reddit.com",
+        "sub": "ClaudeAI",
+        "publishedAt": "2026-10-29T23:00:29+00:00"
+      },
+      {
+        "id": "t3_1xi65wx",
+        "source": "reddit",
+        "title": "I built a website that visualizes your Spotify and Apple Music extended listening history",
+        "url": "https://www.reddit.com/r/ClaudeAI/comments/1xi65wx/i_built_a_website_that_visualizes_your_spotify/",
+        "domain": "reddit.com",
+        "sub": "ClaudeAI",
+        "publishedAt": "2026-10-29T01:00:24+00:00"
+      },
+      {
+        "id": "t3_1xigl44",
+        "source": "reddit",
+        "title": "I use Claude at work as my dev team: I write the brief and review. I tried the same thing with my new 3D printer, and it worked.",
+        "url": "https://www.reddit.com/r/ClaudeAI/comments/1xigl44/i_use_claude_at_work_as_my_dev_team_i_write_the/",
+        "domain": "reddit.com",
+        "sub": "ClaudeAI",
+        "publishedAt": "2026-10-29T10:46:07+00:00"
+      },
+      {
+        "id": "t3_1xizopf",
+        "source": "reddit",
+        "title": "Tried Claude/AI for the first time",
+        "url": "https://www.reddit.com/r/ClaudeAI/comments/1xizopf/tried_claudeai_for_the_first_time/",
+        "domain": "reddit.com",
+        "sub": "ClaudeAI",
+        "publishedAt": "2026-10-29T23:27:12+00:00"
+      }
+    ]
+  }
+}
