@@ -1,0 +1,4383 @@
+{
+  "date": "2026-11-17",
+  "collectedAt": "2026-11-17T07:17:59.587Z",
+  "mode": "full",
+  "sources": [
+    {
+      "id": "hn",
+      "ok": true,
+      "count": 30,
+      "error": null,
+      "reduced": false
+    },
+    {
+      "id": "geeknews",
+      "ok": true,
+      "count": 20,
+      "error": null,
+      "reduced": false
+    },
+    {
+      "id": "reddit",
+      "ok": true,
+      "count": 25,
+      "error": null,
+      "reduced": false
+    },
+    {
+      "id": "arxiv",
+      "ok": true,
+      "count": 200,
+      "error": null,
+      "reduced": false
+    },
+    {
+      "id": "huggingface",
+      "ok": true,
+      "count": 20,
+      "error": null,
+      "reduced": false
+    },
+    {
+      "id": "trending",
+      "ok": true,
+      "count": 29,
+      "error": null,
+      "reduced": false
+    },
+    {
+      "id": "tools",
+      "ok": true,
+      "count": 5,
+      "error": null,
+      "reduced": false
+    },
+    {
+      "id": "advisories",
+      "ok": true,
+      "count": 60,
+      "error": null,
+      "reduced": false
+    },
+    {
+      "id": "kit",
+      "ok": true,
+      "count": 41,
+      "error": null,
+      "reduced": false
+    },
+    {
+      "id": "stars",
+      "ok": true,
+      "count": 148,
+      "error": null,
+      "reduced": false
+    }
+  ],
+  "hn": [
+    {
+      "id": 50522980,
+      "title": "Carnegie Mellon is putting computer science courses on YouTube for free",
+      "url": "https://www.cs.cmu.edu/learn/",
+      "domain": "cs.cmu.edu",
+      "points": 1250,
+      "comments": 179,
+      "hnUrl": "https://news.ycombinator.com/item?id=50522980"
+    },
+    {
+      "id": 50524736,
+      "title": "Windows 11 Is Collecting Data on Which Coding Agents and Developer Tools You Use",
+      "url": "https://xusheng.dev/posts/windows-coding-agent-telemetry/",
+      "domain": "xusheng.dev",
+      "points": 497,
+      "comments": 334,
+      "hnUrl": "https://news.ycombinator.com/item?id=50524736"
+    },
+    {
+      "id": 50523601,
+      "title": "BugMeNot has closed",
+      "url": "https://www.bugmenot.com/",
+      "domain": "bugmenot.com",
+      "points": 473,
+      "comments": 218,
+      "hnUrl": "https://news.ycombinator.com/item?id=50523601"
+    },
+    {
+      "id": 50524767,
+      "title": "Optimizely compromised, served malware on Zoom, GitLab",
+      "url": "https://blog.report-uri.com/worlds-largest-brands-infected-with-malware-via-optimizely/",
+      "domain": "blog.report-uri.com",
+      "points": 269,
+      "comments": 115,
+      "hnUrl": "https://news.ycombinator.com/item?id=50524767"
+    },
+    {
+      "id": 50512576,
+      "title": "The Fossils That Haunted Lovecraft",
+      "url": "https://paleonerdish.wordpress.com/2026/10/30/halloween-special-xiv-the-fossils-that-haunted-lovecraft/",
+      "domain": "paleonerdish.wordpress.com",
+      "points": 14,
+      "comments": 2,
+      "hnUrl": "https://news.ycombinator.com/item?id=50512576"
+    },
+    {
+      "id": 50526560,
+      "title": "If an App Asks for Full Disk Access or System and App Protection Override",
+      "url": "https://support.apple.com/en-us/149699",
+      "domain": "support.apple.com",
+      "points": 85,
+      "comments": 50,
+      "hnUrl": "https://news.ycombinator.com/item?id=50526560"
+    },
+    {
+      "id": 50523459,
+      "title": "OpenCode Browse",
+      "url": "https://opencode.ai/product/browse",
+      "domain": "opencode.ai",
+      "points": 214,
+      "comments": 111,
+      "hnUrl": "https://news.ycombinator.com/item?id=50523459"
+    },
+    {
+      "id": 50525575,
+      "title": "Why 3dfx 1 cards had such a washed out color output?",
+      "url": "https://twitter.com/id_aa_carmack/status/2122478083319992513",
+      "domain": "twitter.com",
+      "points": 89,
+      "comments": 12,
+      "hnUrl": "https://news.ycombinator.com/item?id=50525575"
+    },
+    {
+      "id": 50526152,
+      "title": "Running coding agents without handing them my credentials",
+      "url": "https://blog.antonio.cx/running-agents-with-lend",
+      "domain": "blog.antonio.cx",
+      "points": 94,
+      "comments": 51,
+      "hnUrl": "https://news.ycombinator.com/item?id=50526152"
+    },
+    {
+      "id": 50515035,
+      "title": "Test/verification technique effectiveness with Astra",
+      "url": "https://danluu.com/astra-testing/",
+      "domain": "danluu.com",
+      "points": 21,
+      "comments": 5,
+      "hnUrl": "https://news.ycombinator.com/item?id=50515035"
+    },
+    {
+      "id": 50522643,
+      "title": "Chemistry is Actually Geometry",
+      "url": "https://chillphysicsenjoyer.substack.com/p/chemistry-is-actually-geometry",
+      "domain": "chillphysicsenjoyer.substack.com",
+      "points": 195,
+      "comments": 100,
+      "hnUrl": "https://news.ycombinator.com/item?id=50522643"
+    },
+    {
+      "id": 50519354,
+      "title": "Frame – 31.5\" color ePaper display",
+      "url": "https://trmnl.com/blog/introducing-frame",
+      "domain": "trmnl.com",
+      "points": 379,
+      "comments": 268,
+      "hnUrl": "https://news.ycombinator.com/item?id=50519354"
+    },
+    {
+      "id": 50519744,
+      "title": "Jiff 1.0: A datetime library for Rust",
+      "url": "https://burntsushi.net/jiff/",
+      "domain": "burntsushi.net",
+      "points": 359,
+      "comments": 80,
+      "hnUrl": "https://news.ycombinator.com/item?id=50519744"
+    },
+    {
+      "id": 50526537,
+      "title": "Mem Is Shutting Down",
+      "url": "https://get.mem.ai/blog/mem-is-shutting-down",
+      "domain": "get.mem.ai",
+      "points": 43,
+      "comments": 56,
+      "hnUrl": "https://news.ycombinator.com/item?id=50526537"
+    },
+    {
+      "id": 50523025,
+      "title": "Comcast's \"fiber-powered Wi-Fi\" is cable, AT&T says in false advertising case",
+      "url": "https://arstechnica.com/tech-policy/2026/11/comcast-falsely-advertises-cable-internet-as-fiber-powered-att-lawsuit-says/",
+      "domain": "arstechnica.com",
+      "points": 118,
+      "comments": 106,
+      "hnUrl": "https://news.ycombinator.com/item?id=50523025"
+    },
+    {
+      "id": 50517602,
+      "title": "What is w2rt6byl5nf1opmc-a.com?",
+      "url": "https://jack.cab/blog/siterate",
+      "domain": "jack.cab",
+      "points": 323,
+      "comments": 142,
+      "hnUrl": "https://news.ycombinator.com/item?id=50517602"
+    },
+    {
+      "id": 50497621,
+      "title": "Formal Verification Is Not Verifiable",
+      "url": "https://alperenkeles.com/posts/formal-verification-is-not-verifiable/",
+      "domain": "alperenkeles.com",
+      "points": 104,
+      "comments": 36,
+      "hnUrl": "https://news.ycombinator.com/item?id=50497621"
+    },
+    {
+      "id": 50514093,
+      "title": "Stop Filming in Log?",
+      "url": "https://digitalfilms.wordpress.com/2026/11/15/stop-filming-in-log/",
+      "domain": "digitalfilms.wordpress.com",
+      "points": 65,
+      "comments": 72,
+      "hnUrl": "https://news.ycombinator.com/item?id=50514093"
+    },
+    {
+      "id": 50520182,
+      "title": "Grazing sheep in fields with solar arrays",
+      "url": "https://news.cornell.edu/stories/2026/10/sheep-grazing-solar-fields-offers-farmers-economic-ecological-gains",
+      "domain": "news.cornell.edu",
+      "points": 257,
+      "comments": 246,
+      "hnUrl": "https://news.ycombinator.com/item?id=50520182"
+    },
+    {
+      "id": 50510969,
+      "title": "Why did modems have speakers? (2019)",
+      "url": "https://retrocomputing.stackexchange.com/questions/11765",
+      "domain": "retrocomputing.stackexchange.com",
+      "points": 44,
+      "comments": 25,
+      "hnUrl": "https://news.ycombinator.com/item?id=50510969"
+    },
+    {
+      "id": 50522776,
+      "title": "Launch HN: Axonnic (YC F26) – Sleeves that track fingers and estimate force",
+      "url": "https://news.ycombinator.com/item?id=50522776",
+      "domain": "news.ycombinator.com",
+      "points": 37,
+      "comments": 19,
+      "hnUrl": "https://news.ycombinator.com/item?id=50522776"
+    },
+    {
+      "id": 50516689,
+      "title": "Do Repeat Yourself",
+      "url": "https://arcentry.com/blog/do-repeat-yourself/",
+      "domain": "arcentry.com",
+      "points": 74,
+      "comments": 23,
+      "hnUrl": "https://news.ycombinator.com/item?id=50516689"
+    },
+    {
+      "id": 50524225,
+      "title": "How to Break into Security, Ptacek Edition (2012)",
+      "url": "https://krebsonsecurity.com/2012/06/how-to-break-into-security-ptacek-edition/",
+      "domain": "krebsonsecurity.com",
+      "points": 100,
+      "comments": 24,
+      "hnUrl": "https://news.ycombinator.com/item?id=50524225"
+    },
+    {
+      "id": 50517321,
+      "title": "Microsoft blames monster email outage on software defect introduced in July fix",
+      "url": "https://www.theregister.com/saas/2026/11/16/microsoft-blames-monster-email-outage-on-software-defect-introduced-in-july-fix/5310026",
+      "domain": "theregister.com",
+      "points": 293,
+      "comments": 203,
+      "hnUrl": "https://news.ycombinator.com/item?id=50517321"
+    },
+    {
+      "id": 50521045,
+      "title": "Technical issue at JPMorgan Chase triggers online banking delays for US banks",
+      "url": "https://apnews.com/article/bank-outage-chase-wells-fargo-truist-50fee2693c22f597fa6ca51a97ef2cda",
+      "domain": "apnews.com",
+      "points": 755,
+      "comments": 630,
+      "hnUrl": "https://news.ycombinator.com/item?id=50521045"
+    },
+    {
+      "id": 50523784,
+      "title": "Spamhaus new email sender requirements in November",
+      "url": "https://www.spamhaus.org/sender-guidelines/",
+      "domain": "spamhaus.org",
+      "points": 96,
+      "comments": 85,
+      "hnUrl": "https://news.ycombinator.com/item?id=50523784"
+    },
+    {
+      "id": 50526584,
+      "title": "Tokendoctor – the same Claude Code for up to 38% less",
+      "url": "https://github.com/localixai/tokendoctor",
+      "domain": "github.com",
+      "points": 20,
+      "comments": 8,
+      "hnUrl": "https://news.ycombinator.com/item?id=50526584"
+    },
+    {
+      "id": 50515151,
+      "title": "Squircles",
+      "url": "https://linebender.org/wiki/curves/squircle/",
+      "domain": "linebender.org",
+      "points": 175,
+      "comments": 46,
+      "hnUrl": "https://news.ycombinator.com/item?id=50515151"
+    },
+    {
+      "id": 50523291,
+      "title": "My Quest to push native Three.js quality match AAA Game Engines",
+      "url": "https://ben3d.ca/blog/building-the-aaa-lighting-pipeline-in-threejs",
+      "domain": "ben3d.ca",
+      "points": 132,
+      "comments": 53,
+      "hnUrl": "https://news.ycombinator.com/item?id=50523291"
+    },
+    {
+      "id": 50522563,
+      "title": "Rust changed me as a developer",
+      "url": "https://blog.startifact.com/posts/how-rust-changed-me/",
+      "domain": "blog.startifact.com",
+      "points": 250,
+      "comments": 152,
+      "hnUrl": "https://news.ycombinator.com/item?id=50522563"
+    }
+  ],
+  "trending": [
+    {
+      "fullName": "ag-ui-protocol/ag-ui",
+      "url": "https://github.com/ag-ui-protocol/ag-ui",
+      "description": "AG-UI: the Agent-User Interaction Protocol. Bring Agents into Frontend Applications.",
+      "language": "TypeScript",
+      "stars": 19477,
+      "starsInPeriod": 791,
+      "period": "daily"
+    },
+    {
+      "fullName": "backnotprop/plannotator",
+      "url": "https://github.com/backnotprop/plannotator",
+      "description": "The workspace to stay in the loop and on top of agents - shape, decide, plan, annotate, review code, share with team, and send all feedback to agents with one click.",
+      "language": "TypeScript",
+      "stars": 12779,
+      "starsInPeriod": 696,
+      "period": "daily"
+    },
+    {
+      "fullName": "dream-num/univer",
+      "url": "https://github.com/dream-num/univer",
+      "description": "Build your own AI office with Univer Office SDK. Bring editing, calculation, collaboration, and file processing into your product for people and AI agents. Built on an extensible open-source core.",
+      "language": "TypeScript",
+      "stars": 28322,
+      "starsInPeriod": 1828,
+      "period": "daily"
+    },
+    {
+      "fullName": "tradermonty/claude-trading-skills",
+      "url": "https://github.com/tradermonty/claude-trading-skills",
+      "description": "Claude Code skills for equity investors and traders — market analysis, technical charting, economic calendars, screeners, and trading strategy development.",
+      "language": "Python",
+      "stars": 6550,
+      "starsInPeriod": 837,
+      "period": "daily"
+    },
+    {
+      "fullName": "elementalsouls/Claude-BugHunter",
+      "url": "https://github.com/elementalsouls/Claude-BugHunter",
+      "description": "A Claude Code skill bundle for bug hunting and external red-team work - 82 skills, 15 slash commands, 681 disclosed-report patterns curated across 24 core vulnerability classes, plus enterprise identity + infrastructure attack matrices.",
+      "language": "Python",
+      "stars": 7756,
+      "starsInPeriod": 1094,
+      "period": "daily"
+    },
+    {
+      "fullName": "getarcaneapp/arcane",
+      "url": "https://github.com/getarcaneapp/arcane",
+      "description": "Modern Docker Management, Designed for Everyone",
+      "language": "Go",
+      "stars": 8923,
+      "starsInPeriod": 46,
+      "period": "daily"
+    },
+    {
+      "fullName": "DeanChensj/jiangshan-map",
+      "url": "https://github.com/DeanChensj/jiangshan-map",
+      "description": "江山时序 · 中国历史交互地图时间轴 (403 BCE – Present) | Interactive Historical Atlas of China across 18 dynasties, 198 territory snapshots, ancient-to-modern place genealogy & classical poetry routes",
+      "language": "JavaScript",
+      "stars": 7272,
+      "starsInPeriod": 288,
+      "period": "daily"
+    },
+    {
+      "fullName": "google-labs-code/stitch-skills",
+      "url": "https://github.com/google-labs-code/stitch-skills",
+      "description": "A library of Agent Skills designed to work with the Stitch MCP server. Each skill follows the Agent Skills open standard, for compatibility with coding agents such as Antigravity, Gemini CLI, Claude Code, Cursor.",
+      "language": "TypeScript",
+      "stars": 9835,
+      "starsInPeriod": 529,
+      "period": "daily"
+    },
+    {
+      "fullName": "mvanhorn/last30days-skill",
+      "url": "https://github.com/mvanhorn/last30days-skill",
+      "description": "AI agent skill that researches any topic across Reddit, X, YouTube, HN, Polymarket, and the web - then synthesizes a grounded summary",
+      "language": "Python",
+      "stars": 68367,
+      "starsInPeriod": 135,
+      "period": "daily"
+    },
+    {
+      "fullName": "NVIDIA/SkillEvaluator",
+      "url": "https://github.com/NVIDIA/SkillEvaluator",
+      "description": "Multi-tier framework for evaluating AI agent skills and plugins with quality gates, semantic overlap detection, synthetic evaluation dataset generation, and live agent evaluation that measures how skills affect agent behavior.",
+      "language": "Python",
+      "stars": 2990,
+      "starsInPeriod": 873,
+      "period": "daily"
+    },
+    {
+      "fullName": "alibaba/open-code-review",
+      "url": "https://github.com/alibaba/open-code-review",
+      "description": "Secure, fast, efficient, battle-tested at Alibaba's scale. Hybrid architecture code review tool: deterministic pipelines + LLM Agent, precise line-level comments, built-in multi-language ruleset (NPE, thread-safety, XSS, SQL injection), OpenAI & Anthropic compatible.",
+      "language": "Go",
+      "stars": 53188,
+      "starsInPeriod": 951,
+      "period": "daily"
+    },
+    {
+      "fullName": "google-research/paper-orchestra",
+      "url": "https://github.com/google-research/paper-orchestra",
+      "description": "PaperOrchestra is a multi-agent framework for automated AI research paper writing.",
+      "language": "Python",
+      "stars": 1835,
+      "starsInPeriod": 313,
+      "period": "daily"
+    },
+    {
+      "fullName": "ChromeDevTools/chrome-devtools-mcp",
+      "url": "https://github.com/ChromeDevTools/chrome-devtools-mcp",
+      "description": "Chrome DevTools for coding agents",
+      "language": "TypeScript",
+      "stars": 57824,
+      "starsInPeriod": 841,
+      "period": "daily"
+    },
+    {
+      "fullName": "sveltejs/svelte",
+      "url": "https://github.com/sveltejs/svelte",
+      "description": "web development for the rest of us",
+      "language": "JavaScript",
+      "stars": 89113,
+      "starsInPeriod": 115,
+      "period": "daily"
+    },
+    {
+      "fullName": "kajisho5/ffmpeg-skill",
+      "url": "https://github.com/kajisho5/ffmpeg-skill",
+      "description": "Local video editor for coding agents: 42 FFmpeg tools with a machine-readable contract and an MCP server, for Claude Code, Cursor and Codex. Cut, captions, reframe, loudness, platform exports. No cloud, no API keys.",
+      "language": "Python",
+      "stars": 7212,
+      "starsInPeriod": 367,
+      "period": "daily"
+    },
+    {
+      "fullName": "GoogleChrome/modern-web-guidance-src",
+      "url": "https://github.com/GoogleChrome/modern-web-guidance-src",
+      "description": "Keep your coding agent up to date with the latest web best practices",
+      "language": "TypeScript",
+      "stars": 8138,
+      "starsInPeriod": 6542,
+      "period": "weekly"
+    },
+    {
+      "fullName": "meta/astryx",
+      "url": "https://github.com/meta/astryx",
+      "description": "An open source design system that's fully customizable and agent ready",
+      "language": "TypeScript",
+      "stars": 29796,
+      "starsInPeriod": 10939,
+      "period": "weekly"
+    },
+    {
+      "fullName": "backnotprop/plannotator",
+      "url": "https://github.com/backnotprop/plannotator",
+      "description": "The workspace to stay in the loop and on top of agents - shape, decide, plan, annotate, review code, share with team, and send all feedback to agents with one click.",
+      "language": "TypeScript",
+      "stars": 12779,
+      "starsInPeriod": 2325,
+      "period": "weekly"
+    },
+    {
+      "fullName": "anthropics/skills",
+      "url": "https://github.com/anthropics/skills",
+      "description": "Public repository for Agent Skills",
+      "language": "Python",
+      "stars": 196244,
+      "starsInPeriod": 5666,
+      "period": "weekly"
+    },
+    {
+      "fullName": "vercel-labs/agent-browser",
+      "url": "https://github.com/vercel-labs/agent-browser",
+      "description": "Browser automation CLI for AI agents",
+      "language": "Rust",
+      "stars": 52145,
+      "starsInPeriod": 3760,
+      "period": "weekly"
+    },
+    {
+      "fullName": "we-promise/sure",
+      "url": "https://github.com/we-promise/sure",
+      "description": "The personal finance app for everyone (by everyone)",
+      "language": "Ruby",
+      "stars": 16079,
+      "starsInPeriod": 4679,
+      "period": "weekly"
+    },
+    {
+      "fullName": "ZhuLinsen/daily_stock_analysis",
+      "url": "https://github.com/ZhuLinsen/daily_stock_analysis",
+      "description": "LLM 驱动的多市场股票智能分析系统：多源行情、实时新闻、决策看板与自动推送，支持零成本定时运行。 LLM-powered multi-market stock analysis system with multi-source market data, real-time news, decision dashboard, automated notifications, and cost-free scheduled runs.",
+      "language": "Python",
+      "stars": 72910,
+      "starsInPeriod": 4355,
+      "period": "weekly"
+    },
+    {
+      "fullName": "sherlock-project/sherlock",
+      "url": "https://github.com/sherlock-project/sherlock",
+      "description": "Hunt down social media accounts by username across social networks",
+      "language": "Python",
+      "stars": 113352,
+      "starsInPeriod": 7067,
+      "period": "weekly"
+    },
+    {
+      "fullName": "google/elephant-goldfish-model",
+      "url": "https://github.com/google/elephant-goldfish-model",
+      "description": "Open-source plugin for designing and reviewing software with agents",
+      "language": "Python",
+      "stars": 20500,
+      "starsInPeriod": 4249,
+      "period": "weekly"
+    },
+    {
+      "fullName": "google-deepmind/mujoco",
+      "url": "https://github.com/google-deepmind/mujoco",
+      "description": "Multi-Joint dynamics with Contact. A general purpose physics simulator.",
+      "language": "C++",
+      "stars": 18212,
+      "starsInPeriod": 1448,
+      "period": "weekly"
+    },
+    {
+      "fullName": "alibaba/open-code-review",
+      "url": "https://github.com/alibaba/open-code-review",
+      "description": "Secure, fast, efficient, battle-tested at Alibaba's scale. Hybrid architecture code review tool: deterministic pipelines + LLM Agent, precise line-level comments, built-in multi-language ruleset (NPE, thread-safety, XSS, SQL injection), OpenAI & Anthropic compatible.",
+      "language": "Go",
+      "stars": 53188,
+      "starsInPeriod": 3056,
+      "period": "weekly"
+    },
+    {
+      "fullName": "addyosmani/agent-skills",
+      "url": "https://github.com/addyosmani/agent-skills",
+      "description": "Production-grade engineering skills for AI coding agents.",
+      "language": "JavaScript",
+      "stars": 118431,
+      "starsInPeriod": 3960,
+      "period": "weekly"
+    },
+    {
+      "fullName": "openai/codex-security",
+      "url": "https://github.com/openai/codex-security",
+      "description": "OpenAI's Codex Security CLI and TypeScript SDK for finding, validating, and fixing security vulnerabilities. npm: https://www.npmjs.com/package/@openai/codex-security",
+      "language": "TypeScript",
+      "stars": 13824,
+      "starsInPeriod": 2352,
+      "period": "weekly"
+    },
+    {
+      "fullName": "QwenLM/qwen-code",
+      "url": "https://github.com/QwenLM/qwen-code",
+      "description": "An open-source AI coding agent that lives in your terminal.",
+      "language": "TypeScript",
+      "stars": 30687,
+      "starsInPeriod": 1497,
+      "period": "weekly"
+    }
+  ],
+  "arxiv": [
+    {
+      "id": "2611.21608",
+      "title": "Latent Lattice Language Models",
+      "category": "cs.LG",
+      "url": "https://arxiv.org/abs/2611.21608v1",
+      "publishedAt": "2026-11-16T18:59:38Z"
+    },
+    {
+      "id": "2611.21607",
+      "title": "ScaleVLA: Scaling Vision-Language-Action Models to 552 Billion Parameters",
+      "category": "cs.RO",
+      "url": "https://arxiv.org/abs/2611.21607v1",
+      "publishedAt": "2026-11-16T18:59:37Z"
+    },
+    {
+      "id": "2611.21605",
+      "title": "ViRA: Toward Ultra-High-Resolution Visual Agents via Cross-Input Relative Policy Optimization",
+      "category": "cs.CV",
+      "url": "https://arxiv.org/abs/2611.21605v1",
+      "publishedAt": "2026-11-16T18:59:04Z"
+    },
+    {
+      "id": "2611.21604",
+      "title": "FaceJev: Direct Visual Decisions for Face Forgery Detection",
+      "category": "cs.CV",
+      "url": "https://arxiv.org/abs/2611.21604v1",
+      "publishedAt": "2026-11-16T18:59:04Z"
+    },
+    {
+      "id": "2611.21602",
+      "title": "Quantifying the added value of human forecaster discussions for tropical cyclone intensity prediction",
+      "category": "cs.LG",
+      "url": "https://arxiv.org/abs/2611.21602v1",
+      "publishedAt": "2026-11-16T18:58:55Z"
+    },
+    {
+      "id": "2611.21600",
+      "title": "How VLMs Plan What's Next",
+      "category": "cs.CV",
+      "url": "https://arxiv.org/abs/2611.21600v1",
+      "publishedAt": "2026-11-16T18:58:30Z"
+    },
+    {
+      "id": "2611.21599",
+      "title": "Hyperlyve: Parallelized Enumeration and Exact Lyapunov Stability Certification for Deep ReLU Networks",
+      "category": "eess.SY",
+      "url": "https://arxiv.org/abs/2611.21599v1",
+      "publishedAt": "2026-11-16T18:58:29Z"
+    },
+    {
+      "id": "2611.21598",
+      "title": "Mitigating Catastrophic Forgetting with Physics-Indexed Specialist Memory: the Evolutionary Neuroplastic Agent",
+      "category": "cs.LG",
+      "url": "https://arxiv.org/abs/2611.21598v1",
+      "publishedAt": "2026-11-16T18:58:20Z"
+    },
+    {
+      "id": "2611.21597",
+      "title": "Optimal Autoregressive Chain-of-Thought Learning via Bagging",
+      "category": "cs.LG",
+      "url": "https://arxiv.org/abs/2611.21597v1",
+      "publishedAt": "2026-11-16T18:58:07Z"
+    },
+    {
+      "id": "2611.21596",
+      "title": "SADL: On the Demand-Supply Geometry of Representation Collapse",
+      "category": "cs.RO",
+      "url": "https://arxiv.org/abs/2611.21596v1",
+      "publishedAt": "2026-11-16T18:58:03Z"
+    },
+    {
+      "id": "2611.21594",
+      "title": "Surrogate-Assisted Compact-Model Extraction for SKY130 CMOS at 77 K",
+      "category": "physics.ins-det",
+      "url": "https://arxiv.org/abs/2611.21594v1",
+      "publishedAt": "2026-11-16T18:57:06Z"
+    },
+    {
+      "id": "2611.21590",
+      "title": "The Provenance-Privacy Paradox: Can Private Cloud Compute (PCC) Prove That Apple Reference Images Are Not Used for Learning?",
+      "category": "cs.CR",
+      "url": "https://arxiv.org/abs/2611.21590v1",
+      "publishedAt": "2026-11-16T18:56:06Z"
+    },
+    {
+      "id": "2611.21586",
+      "title": "Beyond Job Titles: Interpreting Early-Career Job Advertisements with Sparse Autoencoders and Semantic Clustering",
+      "category": "cs.CL",
+      "url": "https://arxiv.org/abs/2611.21586v1",
+      "publishedAt": "2026-11-16T18:54:40Z"
+    },
+    {
+      "id": "2611.21584",
+      "title": "CertiSum: Bitwise-Identical MXFP4 Training Across Platforms and Parallelism Layouts",
+      "category": "cs.LG",
+      "url": "https://arxiv.org/abs/2611.21584v1",
+      "publishedAt": "2026-11-16T18:54:07Z"
+    },
+    {
+      "id": "2611.21579",
+      "title": "ScenarioForge: Resource-Grounded Generation and Execution Validation of Cyber Exercises",
+      "category": "cs.CR",
+      "url": "https://arxiv.org/abs/2611.21579v1",
+      "publishedAt": "2026-11-16T18:49:56Z"
+    },
+    {
+      "id": "2611.21577",
+      "title": "When Tool Names Are Not Identities: Measuring Provider Misbinding in MCP-Based AI Agents",
+      "category": "cs.CR",
+      "url": "https://arxiv.org/abs/2611.21577v1",
+      "publishedAt": "2026-11-16T18:49:37Z"
+    },
+    {
+      "id": "2611.21571",
+      "title": "DynSurvX: Time-Resolved Explanations for Dynamic Survival Predictions",
+      "category": "cs.LG",
+      "url": "https://arxiv.org/abs/2611.21571v1",
+      "publishedAt": "2026-11-16T18:43:35Z"
+    },
+    {
+      "id": "2611.21570",
+      "title": "Trustworthy Numerical Software in the Age of AI: What Would Turing Do?",
+      "category": "math.NA",
+      "url": "https://arxiv.org/abs/2611.21570v1",
+      "publishedAt": "2026-11-16T18:42:50Z"
+    },
+    {
+      "id": "2611.21565",
+      "title": "When Do Histology Foundation Models Need Geometric Test-Time Augmentation?",
+      "category": "cs.CV",
+      "url": "https://arxiv.org/abs/2611.21565v1",
+      "publishedAt": "2026-11-16T18:41:01Z"
+    },
+    {
+      "id": "2611.21563",
+      "title": "Wildfire-SSR: Geolocation-Aware Multimodal Fusion for Structure-Level Wildfire Risk Assessment",
+      "category": "cs.CV",
+      "url": "https://arxiv.org/abs/2611.21563v1",
+      "publishedAt": "2026-11-16T18:40:49Z"
+    },
+    {
+      "id": "2611.21562",
+      "title": "Severe but Harmless: Stress-Testing Shift Severity for Frozen Time-Series Forecasters",
+      "category": "cs.LG",
+      "url": "https://arxiv.org/abs/2611.21562v1",
+      "publishedAt": "2026-11-16T18:40:35Z"
+    },
+    {
+      "id": "2611.21559",
+      "title": "Reference Forcing: Long Video Generation with Region-Guided Drift Correction",
+      "category": "cs.CV",
+      "url": "https://arxiv.org/abs/2611.21559v1",
+      "publishedAt": "2026-11-16T18:39:47Z"
+    },
+    {
+      "id": "2611.21558",
+      "title": "Benefits and Barriers to Human-AI Teaming for Crisis Counseling",
+      "category": "cs.HC",
+      "url": "https://arxiv.org/abs/2611.21558v1",
+      "publishedAt": "2026-11-16T18:38:15Z"
+    },
+    {
+      "id": "2611.21554",
+      "title": "Reading or Remembering? Measuring Temporal Contamination in Language Models",
+      "category": "cs.LG",
+      "url": "https://arxiv.org/abs/2611.21554v1",
+      "publishedAt": "2026-11-16T18:34:08Z"
+    },
+    {
+      "id": "2611.21553",
+      "title": "BLIP-Live: Balancing Timeliness & Firing Precision in Proactive Streaming Video Agents",
+      "category": "cs.CV",
+      "url": "https://arxiv.org/abs/2611.21553v1",
+      "publishedAt": "2026-11-16T18:33:47Z"
+    },
+    {
+      "id": "2611.21552",
+      "title": "Benchmarking memory and nonlinear processing capacity of quantum recurrent neural networks for time series prediction",
+      "category": "quant-ph",
+      "url": "https://arxiv.org/abs/2611.21552v1",
+      "publishedAt": "2026-11-16T18:32:05Z"
+    },
+    {
+      "id": "2611.21550",
+      "title": "ONAM: Fitting Orthogonal Neural Additive Models for Post-Hoc Interpretability of Black-Box Predictions",
+      "category": "stat.ML",
+      "url": "https://arxiv.org/abs/2611.21550v1",
+      "publishedAt": "2026-11-16T18:31:29Z"
+    },
+    {
+      "id": "2611.21549",
+      "title": "Axioms for relative entropy",
+      "category": "math.OA",
+      "url": "https://arxiv.org/abs/2611.21549v1",
+      "publishedAt": "2026-11-16T18:31:12Z"
+    },
+    {
+      "id": "2611.21548",
+      "title": "TRACE: Topological Representations for Anomaly detection through Contrastive Embeddings",
+      "category": "cs.CR",
+      "url": "https://arxiv.org/abs/2611.21548v1",
+      "publishedAt": "2026-11-16T18:31:11Z"
+    },
+    {
+      "id": "2611.21547",
+      "title": "Fundamental Tradeoffs in Sampling, Transmission and Information Freshness: Instantaneous Feedback",
+      "category": "cs.IT",
+      "url": "https://arxiv.org/abs/2611.21547v1",
+      "publishedAt": "2026-11-16T18:31:04Z"
+    },
+    {
+      "id": "2611.21545",
+      "title": "Right Reason, Wrong Advice: Evaluating Recourse in LLM Explanations of Denied Requests",
+      "category": "cs.AI",
+      "url": "https://arxiv.org/abs/2611.21545v1",
+      "publishedAt": "2026-11-16T18:30:11Z"
+    },
+    {
+      "id": "2611.21542",
+      "title": "The cost of enforcing long-run coverage: a phase transition in online conformal prediction",
+      "category": "math.ST",
+      "url": "https://arxiv.org/abs/2611.21542v1",
+      "publishedAt": "2026-11-16T18:28:22Z"
+    },
+    {
+      "id": "2611.21541",
+      "title": "SciResearch-Eval: Evaluating Scientific Judgment in Autonomous Experimental Agents",
+      "category": "cs.AI",
+      "url": "https://arxiv.org/abs/2611.21541v1",
+      "publishedAt": "2026-11-16T18:27:09Z"
+    },
+    {
+      "id": "2611.21540",
+      "title": "The Sum of Leaf Weights in the Minimum Spanning Tree of the Complete Graph",
+      "category": "cs.DM",
+      "url": "https://arxiv.org/abs/2611.21540v1",
+      "publishedAt": "2026-11-16T18:26:03Z"
+    },
+    {
+      "id": "2611.21539",
+      "title": "Seen but Unsaid: Locating and Repairing Cross-Image Comparison in Vision-Language Models",
+      "category": "cs.CV",
+      "url": "https://arxiv.org/abs/2611.21539v1",
+      "publishedAt": "2026-11-16T18:25:57Z"
+    },
+    {
+      "id": "2611.21538",
+      "title": "Optimistic Verifiers Get Hacked: Reward Hacking Under an Exact Process Oracle",
+      "category": "cs.LG",
+      "url": "https://arxiv.org/abs/2611.21538v1",
+      "publishedAt": "2026-11-16T18:25:42Z"
+    },
+    {
+      "id": "2611.21535",
+      "title": "Evaluating Cultural Reasoning and Robustness in LLMs for Spanish Political Discourse",
+      "category": "cs.CL",
+      "url": "https://arxiv.org/abs/2611.21535v1",
+      "publishedAt": "2026-11-16T18:24:48Z"
+    },
+    {
+      "id": "2611.21533",
+      "title": "Incentive Alignment for Electricity Data Assets in China: A Blockchain-Enabled Contribution-Credit Framework",
+      "category": "cs.CY",
+      "url": "https://arxiv.org/abs/2611.21533v1",
+      "publishedAt": "2026-11-16T18:23:49Z"
+    },
+    {
+      "id": "2611.21532",
+      "title": "How Much Does Saliency Accuracy Matter for Saliency-Guided 360-degree Image Compression?",
+      "category": "eess.IV",
+      "url": "https://arxiv.org/abs/2611.21532v1",
+      "publishedAt": "2026-11-16T18:23:46Z"
+    },
+    {
+      "id": "2611.21530",
+      "title": "DuoFlow: Towards Synchronized Speech and Motion Generation with Fine-Grained Control",
+      "category": "cs.CV",
+      "url": "https://arxiv.org/abs/2611.21530v1",
+      "publishedAt": "2026-11-16T18:22:22Z"
+    },
+    {
+      "id": "2611.21529",
+      "title": "Procedure without Judgment: What Small Language Models Learn under an Exact Verifier",
+      "category": "cs.AI",
+      "url": "https://arxiv.org/abs/2611.21529v1",
+      "publishedAt": "2026-11-16T18:20:09Z"
+    },
+    {
+      "id": "2611.21528",
+      "title": "Post-Quantum Migration of Wi-Fi Key Establishment: A Hybrid ML-KEM Design for OWE and FILS, Validated on OWE with hostapd",
+      "category": "cs.CR",
+      "url": "https://arxiv.org/abs/2611.21528v1",
+      "publishedAt": "2026-11-16T18:18:31Z"
+    },
+    {
+      "id": "2611.21524",
+      "title": "Algorithm Distillation for Safe In-Context Reinforcement Learning",
+      "category": "cs.LG",
+      "url": "https://arxiv.org/abs/2611.21524v1",
+      "publishedAt": "2026-11-16T18:16:28Z"
+    },
+    {
+      "id": "2611.21520",
+      "title": "Safe Resemblance, Silent Propagation: Limits of Text-Similarity Guardrails for AI Agent Safety",
+      "category": "cs.AI",
+      "url": "https://arxiv.org/abs/2611.21520v1",
+      "publishedAt": "2026-11-16T18:13:01Z"
+    },
+    {
+      "id": "2611.21519",
+      "title": "Embedding Cosine Measures Text Length Before It Measures Homogenization",
+      "category": "cs.CL",
+      "url": "https://arxiv.org/abs/2611.21519v1",
+      "publishedAt": "2026-11-16T18:12:15Z"
+    },
+    {
+      "id": "2611.21517",
+      "title": "Lazy-MOSAIC: Accelerating Skill-Centric Manipulation Planning with Learned Skill-Effect World Models",
+      "category": "cs.RO",
+      "url": "https://arxiv.org/abs/2611.21517v1",
+      "publishedAt": "2026-11-16T18:10:52Z"
+    },
+    {
+      "id": "2611.21515",
+      "title": "Beyond Leaderboard Ranks: Selecting Software Engineering Agents Under Budget Constraints",
+      "category": "cs.SE",
+      "url": "https://arxiv.org/abs/2611.21515v1",
+      "publishedAt": "2026-11-16T18:10:37Z"
+    },
+    {
+      "id": "2611.21514",
+      "title": "Tensorized Automata: Algebraically Informed Representation Learning for Sequential Decision Making",
+      "category": "cs.FL",
+      "url": "https://arxiv.org/abs/2611.21514v1",
+      "publishedAt": "2026-11-16T18:09:30Z"
+    },
+    {
+      "id": "2611.21511",
+      "title": "Lower Bounds for the Distributed Computation of Degeneracy and k-Core",
+      "category": "cs.DC",
+      "url": "https://arxiv.org/abs/2611.21511v1",
+      "publishedAt": "2026-11-16T18:08:20Z"
+    },
+    {
+      "id": "2611.21509",
+      "title": "Almost Controlled: The FDR of Benjamini-Hochberg on Weighted Conformal p-Values",
+      "category": "stat.ME",
+      "url": "https://arxiv.org/abs/2611.21509v1",
+      "publishedAt": "2026-11-16T18:07:43Z"
+    },
+    {
+      "id": "2611.21507",
+      "title": "GHySSeg: Real-Time Geometric Ground and Road Segmentation for Hybrid Solid-State LiDAR",
+      "category": "cs.RO",
+      "url": "https://arxiv.org/abs/2611.21507v1",
+      "publishedAt": "2026-11-16T18:04:36Z"
+    },
+    {
+      "id": "2611.21504",
+      "title": "Leverage-Enhanced Sampling Owen Method for Explainable Artificial Intelligence",
+      "category": "cs.GT",
+      "url": "https://arxiv.org/abs/2611.21504v1",
+      "publishedAt": "2026-11-16T18:02:53Z"
+    },
+    {
+      "id": "2611.21503",
+      "title": "Learning from Duality in Neural Network Field Theories",
+      "category": "hep-th",
+      "url": "https://arxiv.org/abs/2611.21503v1",
+      "publishedAt": "2026-11-16T18:02:49Z"
+    },
+    {
+      "id": "2611.21501",
+      "title": "Is This Code Mine? Student Ownership When AI Agents Write the Spec and the Code",
+      "category": "cs.SE",
+      "url": "https://arxiv.org/abs/2611.21501v1",
+      "publishedAt": "2026-11-16T18:02:10Z"
+    },
+    {
+      "id": "2611.21500",
+      "title": "Exponential Quantum Memory Advantage for Late-Graph Smoothness and Spectral Estimation",
+      "category": "quant-ph",
+      "url": "https://arxiv.org/abs/2611.21500v1",
+      "publishedAt": "2026-11-16T18:00:35Z"
+    },
+    {
+      "id": "2611.21498",
+      "title": "A Polynomial-Time Algorithm for Maximum Witness Set",
+      "category": "cs.CG",
+      "url": "https://arxiv.org/abs/2611.21498v1",
+      "publishedAt": "2026-11-16T18:00:27Z"
+    },
+    {
+      "id": "2611.21497",
+      "title": "The CYBER-BRIDGE project: An AI-Powered Platform for Cross-Border Cybersecurity, Compliance and Forensics in the EU",
+      "category": "cs.CR",
+      "url": "https://arxiv.org/abs/2611.21497v1",
+      "publishedAt": "2026-11-16T18:00:19Z"
+    },
+    {
+      "id": "2611.21488",
+      "title": "Detection-Efficient Watermarking for Vision--Language Agents via Risk-Constrained Strength Allocation",
+      "category": "cs.CR",
+      "url": "https://arxiv.org/abs/2611.21488v1",
+      "publishedAt": "2026-11-16T17:56:12Z"
+    },
+    {
+      "id": "2611.21486",
+      "title": "Differentiable Exact Learning",
+      "category": "cs.LG",
+      "url": "https://arxiv.org/abs/2611.21486v1",
+      "publishedAt": "2026-11-16T17:55:09Z"
+    },
+    {
+      "id": "2611.21485",
+      "title": "Lost in the Hallway: Benchmarking Persistent Spatial Memory Across Revisits",
+      "category": "cs.CV",
+      "url": "https://arxiv.org/abs/2611.21485v1",
+      "publishedAt": "2026-11-16T17:54:39Z"
+    },
+    {
+      "id": "2611.21480",
+      "title": "RESILAGENT: A Three-Pillar Architecture for Cyber-Physical Resilience in Electrical Power and Energy Systems",
+      "category": "cs.CR",
+      "url": "https://arxiv.org/abs/2611.21480v1",
+      "publishedAt": "2026-11-16T17:51:46Z"
+    },
+    {
+      "id": "2611.21479",
+      "title": "LynnReal-Hand: Unlocking World Interaction with Hand Control",
+      "category": "cs.CV",
+      "url": "https://arxiv.org/abs/2611.21479v1",
+      "publishedAt": "2026-11-16T17:51:44Z"
+    },
+    {
+      "id": "2611.21478",
+      "title": "Jetriever: Shifting Agent Memory Retrieval from Similarity to Utility",
+      "category": "cs.CL",
+      "url": "https://arxiv.org/abs/2611.21478v1",
+      "publishedAt": "2026-11-16T17:50:53Z"
+    },
+    {
+      "id": "2611.21477",
+      "title": "Knowledge Fermentation: Learning from Shared Variation in Few-Shot Classification",
+      "category": "cs.IT",
+      "url": "https://arxiv.org/abs/2611.21477v1",
+      "publishedAt": "2026-11-16T17:50:31Z"
+    },
+    {
+      "id": "2611.21476",
+      "title": "Generative AI and the Crisis of Higher Education Assessments: Examining 'AI-Proofing' Strategies for College-Level Assessments",
+      "category": "cs.AI",
+      "url": "https://arxiv.org/abs/2611.21476v1",
+      "publishedAt": "2026-11-16T17:50:14Z"
+    },
+    {
+      "id": "2611.21473",
+      "title": "Network Intrusion Detection Adaptability under Spurious Labels: A Noise-Aware Few-Shot Class-Incremental Learning Framework",
+      "category": "cs.NI",
+      "url": "https://arxiv.org/abs/2611.21473v1",
+      "publishedAt": "2026-11-16T17:49:45Z"
+    },
+    {
+      "id": "2611.21472",
+      "title": "Event-Triggered Visual Perception for Real-Time Harvest Outcome Estimation in Mechanical Blueberry Harvesting",
+      "category": "cs.CV",
+      "url": "https://arxiv.org/abs/2611.21472v1",
+      "publishedAt": "2026-11-16T17:49:24Z"
+    },
+    {
+      "id": "2611.21471",
+      "title": "Subprocess-Constrained Markov Decision Processes",
+      "category": "cs.AI",
+      "url": "https://arxiv.org/abs/2611.21471v1",
+      "publishedAt": "2026-11-16T17:48:54Z"
+    },
+    {
+      "id": "2611.21469",
+      "title": "Variationally correct physics-informed operator learning for nonlinear partial differential equations",
+      "category": "math.NA",
+      "url": "https://arxiv.org/abs/2611.21469v1",
+      "publishedAt": "2026-11-16T17:48:08Z"
+    },
+    {
+      "id": "2611.21467",
+      "title": "Generative Data Augmentation Without External Data: An Empirical and Theoretical Study on Deep Networks",
+      "category": "stat.ML",
+      "url": "https://arxiv.org/abs/2611.21467v1",
+      "publishedAt": "2026-11-16T17:47:45Z"
+    },
+    {
+      "id": "2611.21465",
+      "title": "Warm Starting Neural Dynamics Models From Few Jacobian Samples",
+      "category": "cs.LG",
+      "url": "https://arxiv.org/abs/2611.21465v1",
+      "publishedAt": "2026-11-16T17:46:39Z"
+    },
+    {
+      "id": "2611.21461",
+      "title": "ExRel: Learning Directed Reuse Relevance between Rich-Text K-12 Question Images with Executable Relation Contracts",
+      "category": "cs.IR",
+      "url": "https://arxiv.org/abs/2611.21461v1",
+      "publishedAt": "2026-11-16T17:44:10Z"
+    },
+    {
+      "id": "2611.21459",
+      "title": "Balanced Twin Weight Factorization for Efficient MLLMs",
+      "category": "cs.CV",
+      "url": "https://arxiv.org/abs/2611.21459v1",
+      "publishedAt": "2026-11-16T17:43:21Z"
+    },
+    {
+      "id": "2611.21458",
+      "title": "A Scalable Multi Task Learning Framework for Modeling Demographic Disagreements in Annotation Tasks",
+      "category": "cs.CL",
+      "url": "https://arxiv.org/abs/2611.21458v1",
+      "publishedAt": "2026-11-16T17:42:54Z"
+    },
+    {
+      "id": "2611.21457",
+      "title": "Out of Sight, Into Memory: Compact Visual Latents Retain Local Evidence in Ultra-High-Resolution Remote Sensing",
+      "category": "cs.CV",
+      "url": "https://arxiv.org/abs/2611.21457v1",
+      "publishedAt": "2026-11-16T17:42:12Z"
+    },
+    {
+      "id": "2611.21456",
+      "title": "Expertise capture in workplace AI",
+      "category": "cs.CR",
+      "url": "https://arxiv.org/abs/2611.21456v1",
+      "publishedAt": "2026-11-16T17:41:43Z"
+    },
+    {
+      "id": "2611.21455",
+      "title": "Synthetic Doubt and the Integrity of Digital Proof before the International Criminal Court",
+      "category": "cs.CY",
+      "url": "https://arxiv.org/abs/2611.21455v1",
+      "publishedAt": "2026-11-16T17:41:40Z"
+    },
+    {
+      "id": "2611.21454",
+      "title": "Comments on \"Deep Fréchet Regression\"",
+      "category": "stat.ML",
+      "url": "https://arxiv.org/abs/2611.21454v1",
+      "publishedAt": "2026-11-16T17:39:07Z"
+    },
+    {
+      "id": "2611.21453",
+      "title": "Reducing Asymmetric Path TSP to Asymmetric TSP",
+      "category": "cs.DS",
+      "url": "https://arxiv.org/abs/2611.21453v1",
+      "publishedAt": "2026-11-16T17:38:46Z"
+    },
+    {
+      "id": "2611.21452",
+      "title": "A Taxonomy and Taxonomy-Guided Benchmark Reduction for Spreadsheet Tasks",
+      "category": "cs.SE",
+      "url": "https://arxiv.org/abs/2611.21452v1",
+      "publishedAt": "2026-11-16T17:38:37Z"
+    },
+    {
+      "id": "2611.21449",
+      "title": "Replicating and Extending Weight-Space Programming: Frontier LLMs Compile Programs into Weights and Read Input Layers",
+      "category": "cs.CL",
+      "url": "https://arxiv.org/abs/2611.21449v1",
+      "publishedAt": "2026-11-16T17:35:18Z"
+    },
+    {
+      "id": "2611.21442",
+      "title": "The Bipartible Architecture Pattern: Transparently Directing HTTP Requests over InfiniBand",
+      "category": "cs.DC",
+      "url": "https://arxiv.org/abs/2611.21442v1",
+      "publishedAt": "2026-11-16T17:30:44Z"
+    },
+    {
+      "id": "2611.21441",
+      "title": "Learning to Reason with Predictive Gains for Generative Recommendation",
+      "category": "cs.AI",
+      "url": "https://arxiv.org/abs/2611.21441v1",
+      "publishedAt": "2026-11-16T17:28:45Z"
+    },
+    {
+      "id": "2611.21440",
+      "title": "[CLS] and [EOS] Tokens are not Enough for CLIP-based Class-Incremental Learning",
+      "category": "cs.CV",
+      "url": "https://arxiv.org/abs/2611.21440v1",
+      "publishedAt": "2026-11-16T17:28:17Z"
+    },
+    {
+      "id": "2611.21439",
+      "title": "A Reinforcement Learning Method to Navigate SMEFT Operator Space",
+      "category": "cs.LG",
+      "url": "https://arxiv.org/abs/2611.21439v1",
+      "publishedAt": "2026-11-16T17:28:12Z"
+    },
+    {
+      "id": "2611.21438",
+      "title": "Power Line Detection in Point Clouds with Point-SAM and RANSAC",
+      "category": "cs.CV",
+      "url": "https://arxiv.org/abs/2611.21438v1",
+      "publishedAt": "2026-11-16T17:25:02Z"
+    },
+    {
+      "id": "2611.21434",
+      "title": "Variational Monte Carlo for Quantum Excited States via Nested Low-Rank Approximation",
+      "category": "cs.LG",
+      "url": "https://arxiv.org/abs/2611.21434v1",
+      "publishedAt": "2026-11-16T17:22:03Z"
+    },
+    {
+      "id": "2611.21432",
+      "title": "Just sort it! A note on the LP behind rank-one anti-loop edits",
+      "category": "cs.LG",
+      "url": "https://arxiv.org/abs/2611.21432v1",
+      "publishedAt": "2026-11-16T17:21:35Z"
+    },
+    {
+      "id": "2611.21423",
+      "title": "Emergent Steering Beyond Endpoint Alignment in Chemical Reaction Models",
+      "category": "cs.LG",
+      "url": "https://arxiv.org/abs/2611.21423v1",
+      "publishedAt": "2026-11-16T17:13:17Z"
+    },
+    {
+      "id": "2611.21422",
+      "title": "Rubric-Based AES with LLM Ensembles: Scoring of Student Responses in Critical Online Reasoning Using Ensembles of LLMs",
+      "category": "cs.CL",
+      "url": "https://arxiv.org/abs/2611.21422v1",
+      "publishedAt": "2026-11-16T17:12:36Z"
+    },
+    {
+      "id": "2611.21421",
+      "title": "AuXSpec: Learning to Autoformalize Program Specifications via Executable Postconditions",
+      "category": "cs.SE",
+      "url": "https://arxiv.org/abs/2611.21421v1",
+      "publishedAt": "2026-11-16T17:11:59Z"
+    },
+    {
+      "id": "2611.21419",
+      "title": "Quality and Similarity Indicators for Video-Based Heart Rate and Respiratory Rate Fusion: A Controlled Evaluation",
+      "category": "cs.CV",
+      "url": "https://arxiv.org/abs/2611.21419v1",
+      "publishedAt": "2026-11-16T17:10:13Z"
+    },
+    {
+      "id": "2611.21416",
+      "title": "Polynomial bounds for quasiplanar graphs",
+      "category": "math.CO",
+      "url": "https://arxiv.org/abs/2611.21416v1",
+      "publishedAt": "2026-11-16T17:05:20Z"
+    },
+    {
+      "id": "2611.21412",
+      "title": "Flexible Multi-Stack Super-Resolution of Clinical Brain MRI Using Hetero-Orientation Variational Encoding: Expert Reader Evaluation in a Nigerian Cohort",
+      "category": "cs.CV",
+      "url": "https://arxiv.org/abs/2611.21412v1",
+      "publishedAt": "2026-11-16T17:02:48Z"
+    },
+    {
+      "id": "2611.21408",
+      "title": "Do Embedding-Map Distances Guide LLM Ideation? Four Tests Against What Came Next",
+      "category": "cs.LG",
+      "url": "https://arxiv.org/abs/2611.21408v1",
+      "publishedAt": "2026-11-16T17:00:27Z"
+    },
+    {
+      "id": "2611.21407",
+      "title": "Harness Leverage Across Model Size: A Ladder of Five Local Agent Harnesses from 0.75B to 4.7B",
+      "category": "cs.AI",
+      "url": "https://arxiv.org/abs/2611.21407v1",
+      "publishedAt": "2026-11-16T17:00:08Z"
+    },
+    {
+      "id": "2611.21406",
+      "title": "Do Apple M-Series Processors Enforce the Compound Memory Model? Sequential and Parallel Composition of Arm and TSO",
+      "category": "cs.AR",
+      "url": "https://arxiv.org/abs/2611.21406v1",
+      "publishedAt": "2026-11-16T17:00:02Z"
+    },
+    {
+      "id": "2611.21405",
+      "title": "Shaping AI's Beliefs Before It Generates: Human Sense of Agency in Creative AI",
+      "category": "cs.AI",
+      "url": "https://arxiv.org/abs/2611.21405v1",
+      "publishedAt": "2026-11-16T16:58:58Z"
+    },
+    {
+      "id": "2611.21404",
+      "title": "Efficient Modeling of Multi-Agent Systems via Structure-Aware Physics-Informed Learning",
+      "category": "cs.LG",
+      "url": "https://arxiv.org/abs/2611.21404v1",
+      "publishedAt": "2026-11-16T16:57:25Z"
+    },
+    {
+      "id": "2611.21403",
+      "title": "Portrait Fitness as a Pretext: Probing Implicit Demographic Bias in VLMs",
+      "category": "cs.CV",
+      "url": "https://arxiv.org/abs/2611.21403v1",
+      "publishedAt": "2026-11-16T16:55:21Z"
+    },
+    {
+      "id": "2611.21402",
+      "title": "Harmonic-Mean Aggregation of Continuous-Time Markov Chains with Reachability Error Bounds",
+      "category": "cs.LO",
+      "url": "https://arxiv.org/abs/2611.21402v1",
+      "publishedAt": "2026-11-16T16:54:29Z"
+    },
+    {
+      "id": "2611.21399",
+      "title": "MegNIST, A Benchmark for Non-Invasive Inner Speech Decoding",
+      "category": "cs.LG",
+      "url": "https://arxiv.org/abs/2611.21399v1",
+      "publishedAt": "2026-11-16T16:52:25Z"
+    },
+    {
+      "id": "2611.21398",
+      "title": "Self-attention is a Dyson equation for many-body machine learning",
+      "category": "cond-mat.str-el",
+      "url": "https://arxiv.org/abs/2611.21398v1",
+      "publishedAt": "2026-11-16T16:52:07Z"
+    },
+    {
+      "id": "2611.21396",
+      "title": "A counterexample to the soundness of the Flowering IOPP for codes on graphs",
+      "category": "cs.CR",
+      "url": "https://arxiv.org/abs/2611.21396v1",
+      "publishedAt": "2026-11-16T16:50:42Z"
+    },
+    {
+      "id": "2611.21395",
+      "title": "The Sample Complexity of Channel Coding",
+      "category": "cs.IT",
+      "url": "https://arxiv.org/abs/2611.21395v1",
+      "publishedAt": "2026-11-16T16:50:17Z"
+    },
+    {
+      "id": "2611.21394",
+      "title": "Beyond Bilingual: Studying Quadrilingual Code-Switching with Conversational AI",
+      "category": "cs.HC",
+      "url": "https://arxiv.org/abs/2611.21394v1",
+      "publishedAt": "2026-11-16T16:49:54Z"
+    },
+    {
+      "id": "2611.21393",
+      "title": "Train After You Measure: a Pre-Registered Learning Curve for Fine-Tuning Typed Decision Models on One User's Labels",
+      "category": "cs.CL",
+      "url": "https://arxiv.org/abs/2611.21393v1",
+      "publishedAt": "2026-11-16T16:49:35Z"
+    },
+    {
+      "id": "2611.21392",
+      "title": "VideoNexus: Video Perception Beyond the Reasoning Context",
+      "category": "cs.CV",
+      "url": "https://arxiv.org/abs/2611.21392v1",
+      "publishedAt": "2026-11-16T16:49:25Z"
+    },
+    {
+      "id": "2611.21391",
+      "title": "Nonparametric Instrumental Kernel Regression: The Well- and Misspecified Setting Under General Link Conditions",
+      "category": "math.ST",
+      "url": "https://arxiv.org/abs/2611.21391v1",
+      "publishedAt": "2026-11-16T16:49:05Z"
+    },
+    {
+      "id": "2611.21389",
+      "title": "Vanishing Relative Distance of Uniformly Random CSS LDPC Codes Built from Permutation Matrices",
+      "category": "quant-ph",
+      "url": "https://arxiv.org/abs/2611.21389v1",
+      "publishedAt": "2026-11-16T16:48:21Z"
+    },
+    {
+      "id": "2611.21387",
+      "title": "A Polynomial-Time Algorithm for Constant-Factor EFX Allocations of Chores",
+      "category": "cs.GT",
+      "url": "https://arxiv.org/abs/2611.21387v1",
+      "publishedAt": "2026-11-16T16:46:47Z"
+    },
+    {
+      "id": "2611.21384",
+      "title": "Stability-Compensated Threshold Calibration for Selection-Conditioned Risk Control in Large Language Models",
+      "category": "cs.CL",
+      "url": "https://arxiv.org/abs/2611.21384v1",
+      "publishedAt": "2026-11-16T16:45:29Z"
+    },
+    {
+      "id": "2611.21383",
+      "title": "The Mask Is Not the Object: Volumetric Supervision for 3D Gaussian Segmentation",
+      "category": "cs.CV",
+      "url": "https://arxiv.org/abs/2611.21383v1",
+      "publishedAt": "2026-11-16T16:44:07Z"
+    },
+    {
+      "id": "2611.21382",
+      "title": "VisualArtifactSpec 1.0: Evaluating Visual Artifacts under Task Specifications",
+      "category": "cs.AI",
+      "url": "https://arxiv.org/abs/2611.21382v1",
+      "publishedAt": "2026-11-16T16:42:59Z"
+    },
+    {
+      "id": "2611.21379",
+      "title": "What's the Difference? Voice Design and Confirmation Bias in AI-Assisted Self-Diagnosis: Anthropomorphic vs. Machine-Like Voice Output",
+      "category": "cs.HC",
+      "url": "https://arxiv.org/abs/2611.21379v1",
+      "publishedAt": "2026-11-16T16:40:38Z"
+    },
+    {
+      "id": "2611.21378",
+      "title": "Data-Driven Predictive Control for Autonomous Vehicle Racing under Varying Friction",
+      "category": "eess.SY",
+      "url": "https://arxiv.org/abs/2611.21378v1",
+      "publishedAt": "2026-11-16T16:38:06Z"
+    },
+    {
+      "id": "2611.21376",
+      "title": "A Crowd-Audited Atlas of Implicit Bias in LLM-Powered Agents",
+      "category": "cs.CY",
+      "url": "https://arxiv.org/abs/2611.21376v1",
+      "publishedAt": "2026-11-16T16:36:47Z"
+    },
+    {
+      "id": "2611.21375",
+      "title": "Proceedings Eighth International Workshop on Formal Methods for Autonomous Systems",
+      "category": "cs.LO",
+      "url": "https://arxiv.org/abs/2611.21375v1",
+      "publishedAt": "2026-11-16T16:36:30Z"
+    },
+    {
+      "id": "2611.21373",
+      "title": "WeVisForensics: Self-Evolving Agent for Omni AI-Generated Video Detection",
+      "category": "cs.CV",
+      "url": "https://arxiv.org/abs/2611.21373v1",
+      "publishedAt": "2026-11-16T16:36:14Z"
+    },
+    {
+      "id": "2611.21372",
+      "title": "Learning What Pairs Miss for Higher-Order Multimodal Alignment",
+      "category": "cs.LG",
+      "url": "https://arxiv.org/abs/2611.21372v1",
+      "publishedAt": "2026-11-16T16:36:07Z"
+    },
+    {
+      "id": "2611.21370",
+      "title": "Federated TD Learning in Heterogeneous Environments with Average Rewards: A Two-timescale Approach with Polyak-Ruppert Averaging",
+      "category": "cs.LG",
+      "url": "https://arxiv.org/abs/2611.21370v1",
+      "publishedAt": "2026-11-16T16:35:48Z"
+    },
+    {
+      "id": "2611.21367",
+      "title": "Premise Recovery in Software Design: What Does This Decision Rest On?",
+      "category": "cs.SE",
+      "url": "https://arxiv.org/abs/2611.21367v1",
+      "publishedAt": "2026-11-16T16:35:10Z"
+    },
+    {
+      "id": "2611.21366",
+      "title": "ALIVE: Making Streaming Video Models Interactive",
+      "category": "cs.CV",
+      "url": "https://arxiv.org/abs/2611.21366v1",
+      "publishedAt": "2026-11-16T16:35:01Z"
+    },
+    {
+      "id": "2611.21365",
+      "title": "Exploring the link between predictive uncertainty and the sim-to-real gap in deep learning models utilizing synthetic data",
+      "category": "cs.CV",
+      "url": "https://arxiv.org/abs/2611.21365v1",
+      "publishedAt": "2026-11-16T16:34:55Z"
+    },
+    {
+      "id": "2611.21363",
+      "title": "Symmetry Detection with Patch Embedding Models by Means of a Scalar Product Transform",
+      "category": "cs.CV",
+      "url": "https://arxiv.org/abs/2611.21363v1",
+      "publishedAt": "2026-11-16T16:33:56Z"
+    },
+    {
+      "id": "2611.21362",
+      "title": "What You Post Is What You Symptom: Estimating Psychometric Networks from Social Media Discourse",
+      "category": "cs.CL",
+      "url": "https://arxiv.org/abs/2611.21362v1",
+      "publishedAt": "2026-11-16T16:33:33Z"
+    },
+    {
+      "id": "2611.21359",
+      "title": "K-out-of-N Oblivious Transfer over Erasure Channels: Capacity and Reductions",
+      "category": "cs.IT",
+      "url": "https://arxiv.org/abs/2611.21359v1",
+      "publishedAt": "2026-11-16T16:31:13Z"
+    },
+    {
+      "id": "2611.21352",
+      "title": "Specificity-Guided Knowledge Diversion for Decomposable Generative Models",
+      "category": "cs.LG",
+      "url": "https://arxiv.org/abs/2611.21352v1",
+      "publishedAt": "2026-11-16T16:28:31Z"
+    },
+    {
+      "id": "2611.21348",
+      "title": "Representational Change Under Self-Consuming Training: A Sparse Autoencoder Analysis",
+      "category": "cs.LG",
+      "url": "https://arxiv.org/abs/2611.21348v1",
+      "publishedAt": "2026-11-16T16:27:02Z"
+    },
+    {
+      "id": "2611.21344",
+      "title": "TEMPO: Regime-Aware Operator Learning with Locally Adapted POD Bases",
+      "category": "cs.LG",
+      "url": "https://arxiv.org/abs/2611.21344v1",
+      "publishedAt": "2026-11-16T16:24:13Z"
+    },
+    {
+      "id": "2611.21339",
+      "title": "MovieRoll: A Systematic Framework for Rolling Out Long-Form Videos",
+      "category": "cs.CV",
+      "url": "https://arxiv.org/abs/2611.21339v1",
+      "publishedAt": "2026-11-16T16:21:07Z"
+    },
+    {
+      "id": "2611.21335",
+      "title": "Anchoring Motion, Refining Trajectories: Generalizable Continuous Neural Decoding",
+      "category": "q-bio.NC",
+      "url": "https://arxiv.org/abs/2611.21335v1",
+      "publishedAt": "2026-11-16T16:19:41Z"
+    },
+    {
+      "id": "2611.21334",
+      "title": "Real-world Polarimetric Environment Map Dataset",
+      "category": "cs.GR",
+      "url": "https://arxiv.org/abs/2611.21334v1",
+      "publishedAt": "2026-11-16T16:19:35Z"
+    },
+    {
+      "id": "2611.21331",
+      "title": "TRIAGE-CPG: A Cross-Model Study of Budgeted Static Malware Triage with Large Language Models",
+      "category": "cs.CR",
+      "url": "https://arxiv.org/abs/2611.21331v1",
+      "publishedAt": "2026-11-16T16:19:01Z"
+    },
+    {
+      "id": "2611.21330",
+      "title": "An Alternative to Crawlers: Scalable P2P Network Monitoring Using the Network Scale-Up Method",
+      "category": "cs.NI",
+      "url": "https://arxiv.org/abs/2611.21330v1",
+      "publishedAt": "2026-11-16T16:18:26Z"
+    },
+    {
+      "id": "2611.21319",
+      "title": "Wavelet-Energy-Driven Dynamic Patching for Time Series Forecasting",
+      "category": "cs.LG",
+      "url": "https://arxiv.org/abs/2611.21319v1",
+      "publishedAt": "2026-11-16T16:13:20Z"
+    },
+    {
+      "id": "2611.21315",
+      "title": "Benchleaking Is Accelerating: Benchmark contamination has worsened sharply in the past month -- from post-training down to pre-training base models",
+      "category": "cs.AI",
+      "url": "https://arxiv.org/abs/2611.21315v1",
+      "publishedAt": "2026-11-16T16:10:16Z"
+    },
+    {
+      "id": "2611.21312",
+      "title": "PointZip: Statistically Lossless Compression for Climate Data with Pointwise Error Bounds",
+      "category": "cs.CE",
+      "url": "https://arxiv.org/abs/2611.21312v1",
+      "publishedAt": "2026-11-16T16:08:59Z"
+    },
+    {
+      "id": "2611.21311",
+      "title": "A2A-UAV: A Multimodal Air-to-Air Dataset for UAV Detection and Identification",
+      "category": "cs.CV",
+      "url": "https://arxiv.org/abs/2611.21311v1",
+      "publishedAt": "2026-11-16T16:07:59Z"
+    },
+    {
+      "id": "2611.21310",
+      "title": "Can AI Mature a Model's Geometry? Training-Free Weight Baking in LLMs",
+      "category": "cs.LG",
+      "url": "https://arxiv.org/abs/2611.21310v1",
+      "publishedAt": "2026-11-16T16:07:43Z"
+    },
+    {
+      "id": "2611.21309",
+      "title": "Safe Physical Interaction of All-Electric Heavy-Duty Robotic Manipulators via Control Barrier Functions and Variable Impedance Control",
+      "category": "cs.RO",
+      "url": "https://arxiv.org/abs/2611.21309v1",
+      "publishedAt": "2026-11-16T16:07:01Z"
+    },
+    {
+      "id": "2611.21308",
+      "title": "Rotation-Invariant Machine Learning for Highly Symmetric Molecular Configurations",
+      "category": "physics.chem-ph",
+      "url": "https://arxiv.org/abs/2611.21308v1",
+      "publishedAt": "2026-11-16T16:06:47Z"
+    },
+    {
+      "id": "2611.21307",
+      "title": "Programmable Semantic Interventions: Learning Causal Carriers from Behavioral Programs",
+      "category": "cs.LG",
+      "url": "https://arxiv.org/abs/2611.21307v1",
+      "publishedAt": "2026-11-16T16:05:53Z"
+    },
+    {
+      "id": "2611.21306",
+      "title": "Share your Screen and Talk to Gemini: How Young Learners Interact with Multimodal GenAI While Solving Scratch Tasks",
+      "category": "cs.AI",
+      "url": "https://arxiv.org/abs/2611.21306v1",
+      "publishedAt": "2026-11-16T16:05:51Z"
+    },
+    {
+      "id": "2611.21305",
+      "title": "High-probability Uniform Mixing via Dobrushin Contraction and Accelerated Hamiltonian Monte Carlo",
+      "category": "math.PR",
+      "url": "https://arxiv.org/abs/2611.21305v1",
+      "publishedAt": "2026-11-16T16:05:19Z"
+    },
+    {
+      "id": "2611.21304",
+      "title": "Fix, Don't Retake: Physics-Simulated Training for Correcting Patient Positioning Errors in Dental Panoramic Radiographs",
+      "category": "cs.CV",
+      "url": "https://arxiv.org/abs/2611.21304v1",
+      "publishedAt": "2026-11-16T16:04:54Z"
+    },
+    {
+      "id": "2611.21303",
+      "title": "Syllable- and Word-Level Evaluation of Tibetan OCR",
+      "category": "cs.CL",
+      "url": "https://arxiv.org/abs/2611.21303v1",
+      "publishedAt": "2026-11-16T16:03:52Z"
+    },
+    {
+      "id": "2611.21302",
+      "title": "Déjà-Events: Multi-view 3D Geometry with Event Cameras via Sparsity-Aware Adaptive Gating",
+      "category": "cs.CV",
+      "url": "https://arxiv.org/abs/2611.21302v1",
+      "publishedAt": "2026-11-16T16:03:42Z"
+    },
+    {
+      "id": "2611.21301",
+      "title": "Latent Bridge: Asking for Help Without Words",
+      "category": "cs.CL",
+      "url": "https://arxiv.org/abs/2611.21301v1",
+      "publishedAt": "2026-11-16T16:03:17Z"
+    },
+    {
+      "id": "2611.21300",
+      "title": "LATTE-WordSeg-Lite: Multi-Granularity Thai Word Segmentation on a CPU, with a Reproducible Benchmark",
+      "category": "cs.CL",
+      "url": "https://arxiv.org/abs/2611.21300v1",
+      "publishedAt": "2026-11-16T16:03:17Z"
+    },
+    {
+      "id": "2611.21299",
+      "title": "Turing Agent: Agentic Formal Verification for Mathematical Research",
+      "category": "cs.AI",
+      "url": "https://arxiv.org/abs/2611.21299v1",
+      "publishedAt": "2026-11-16T16:02:37Z"
+    },
+    {
+      "id": "2611.21298",
+      "title": "Agent-Native by Design: A Programming Language for Agentic Applications",
+      "category": "cs.PL",
+      "url": "https://arxiv.org/abs/2611.21298v1",
+      "publishedAt": "2026-11-16T16:01:06Z"
+    },
+    {
+      "id": "2611.21295",
+      "title": "Deep Learning for Physicists: From Linear Regression to Reasoning Models",
+      "category": "cs.LG",
+      "url": "https://arxiv.org/abs/2611.21295v1",
+      "publishedAt": "2026-11-16T15:56:53Z"
+    },
+    {
+      "id": "2611.21294",
+      "title": "Constant-Factor Matching-Size Estimation in Random-Order Streams",
+      "category": "cs.DS",
+      "url": "https://arxiv.org/abs/2611.21294v1",
+      "publishedAt": "2026-11-16T15:56:30Z"
+    },
+    {
+      "id": "2611.21292",
+      "title": "AnachroBench: Evaluating Historical Consistency in Large Vision-Language Models",
+      "category": "cs.CV",
+      "url": "https://arxiv.org/abs/2611.21292v1",
+      "publishedAt": "2026-11-16T15:55:56Z"
+    },
+    {
+      "id": "2611.21291",
+      "title": "Benchmarking Large Language Models for Linguistic Annotation",
+      "category": "cs.CL",
+      "url": "https://arxiv.org/abs/2611.21291v1",
+      "publishedAt": "2026-11-16T15:55:45Z"
+    },
+    {
+      "id": "2611.21290",
+      "title": "FM-Recon: Exploring Foundation Model Features for Accelerated Cardiac Cine MRI Reconstruction",
+      "category": "cs.CV",
+      "url": "https://arxiv.org/abs/2611.21290v1",
+      "publishedAt": "2026-11-16T15:55:34Z"
+    },
+    {
+      "id": "2611.21288",
+      "title": "GNoF: A Low-SM-Overhead GPU-Native NVMe-over-Fabrics Completion Path for Data-Intensive GPU Workloads",
+      "category": "cs.DC",
+      "url": "https://arxiv.org/abs/2611.21288v1",
+      "publishedAt": "2026-11-16T15:55:18Z"
+    },
+    {
+      "id": "2611.21287",
+      "title": "Connecting Extended Modal Dependence Logics",
+      "category": "cs.LO",
+      "url": "https://arxiv.org/abs/2611.21287v1",
+      "publishedAt": "2026-11-16T15:55:00Z"
+    },
+    {
+      "id": "2611.21286",
+      "title": "Compressed Simulation-Based Inference: Neural Posterior Estimation for Massive Data via Low-Dimensional Sketches",
+      "category": "stat.ML",
+      "url": "https://arxiv.org/abs/2611.21286v1",
+      "publishedAt": "2026-11-16T15:54:58Z"
+    },
+    {
+      "id": "2611.21285",
+      "title": "The Price of Not Planning: Parallel Sampling Depth Peaks at the Reconstruction Threshold",
+      "category": "cs.LG",
+      "url": "https://arxiv.org/abs/2611.21285v1",
+      "publishedAt": "2026-11-16T15:54:50Z"
+    },
+    {
+      "id": "2611.21283",
+      "title": "PLECTA: Overlap-aware instance segmentation of dense strand networks from binary masks",
+      "category": "cs.CV",
+      "url": "https://arxiv.org/abs/2611.21283v1",
+      "publishedAt": "2026-11-16T15:52:55Z"
+    },
+    {
+      "id": "2611.21277",
+      "title": "Even Loose Proximity Constraints Make Makespan-optimal Unlabeled Multi-agent Pathfinding Hard",
+      "category": "cs.MA",
+      "url": "https://arxiv.org/abs/2611.21277v1",
+      "publishedAt": "2026-11-16T15:46:15Z"
+    },
+    {
+      "id": "2611.21276",
+      "title": "Classical structural priors improve neural molecular representations in molecule language models",
+      "category": "cs.LG",
+      "url": "https://arxiv.org/abs/2611.21276v1",
+      "publishedAt": "2026-11-16T15:45:48Z"
+    },
+    {
+      "id": "2611.21275",
+      "title": "Optimal Ordering-Free Two-Dimensional Insdel Reed-Solomon Codes via Cross-Ratios",
+      "category": "cs.IT",
+      "url": "https://arxiv.org/abs/2611.21275v1",
+      "publishedAt": "2026-11-16T15:45:16Z"
+    },
+    {
+      "id": "2611.21274",
+      "title": "SURMA: Efficient Fine-Grained Communication Offload for SuperPOD",
+      "category": "cs.AR",
+      "url": "https://arxiv.org/abs/2611.21274v1",
+      "publishedAt": "2026-11-16T15:41:12Z"
+    },
+    {
+      "id": "2611.21273",
+      "title": "CAE-Bench: Benchmarking AI Agents for Reusable CAE Solver Development",
+      "category": "cs.AI",
+      "url": "https://arxiv.org/abs/2611.21273v1",
+      "publishedAt": "2026-11-16T15:40:43Z"
+    },
+    {
+      "id": "2611.21270",
+      "title": "SCOPE: A Physical Execution Latency-Guided Quantum Circuit Compilation Framework",
+      "category": "quant-ph",
+      "url": "https://arxiv.org/abs/2611.21270v1",
+      "publishedAt": "2026-11-16T15:39:01Z"
+    },
+    {
+      "id": "2611.21268",
+      "title": "In-Context Estimation and Prediction for Parametric ODEs",
+      "category": "cs.LG",
+      "url": "https://arxiv.org/abs/2611.21268v1",
+      "publishedAt": "2026-11-16T15:38:21Z"
+    },
+    {
+      "id": "2611.21267",
+      "title": "Conformal Expert Pools: Training-Free Probabilistic Time-Series Forecasting Beyond Seasonality",
+      "category": "cs.LG",
+      "url": "https://arxiv.org/abs/2611.21267v1",
+      "publishedAt": "2026-11-16T15:36:24Z"
+    },
+    {
+      "id": "2611.21266",
+      "title": "Variance-adaptive confidence regions for fixed-benchmark binomial mixtures, with application to LLM evaluation",
+      "category": "stat.ME",
+      "url": "https://arxiv.org/abs/2611.21266v1",
+      "publishedAt": "2026-11-16T15:35:24Z"
+    },
+    {
+      "id": "2611.21264",
+      "title": "Hybrid Optimization-Generative Motion Planning for Multiagent Affine Formations",
+      "category": "cs.RO",
+      "url": "https://arxiv.org/abs/2611.21264v1",
+      "publishedAt": "2026-11-16T15:35:10Z"
+    },
+    {
+      "id": "2611.21262",
+      "title": "Strategic Repayment and Latent Fragility in Financial Networks: Why Banks Withhold Payable Liquidity",
+      "category": "q-fin.RM",
+      "url": "https://arxiv.org/abs/2611.21262v1",
+      "publishedAt": "2026-11-16T15:34:18Z"
+    },
+    {
+      "id": "2611.21260",
+      "title": "Leveraging Binary Hashing for Scalable Index Assignment in Semantic Communications",
+      "category": "eess.SP",
+      "url": "https://arxiv.org/abs/2611.21260v1",
+      "publishedAt": "2026-11-16T15:33:57Z"
+    },
+    {
+      "id": "2611.21259",
+      "title": "Evaluating Authorization and Trust Boundaries in Agentic Orchestration Frameworks",
+      "category": "cs.MA",
+      "url": "https://arxiv.org/abs/2611.21259v1",
+      "publishedAt": "2026-11-16T15:33:50Z"
+    },
+    {
+      "id": "2611.21258",
+      "title": "ThinkWAM: Rethinking Latent Futures for Action Refinement",
+      "category": "cs.RO",
+      "url": "https://arxiv.org/abs/2611.21258v1",
+      "publishedAt": "2026-11-16T15:30:51Z"
+    },
+    {
+      "id": "2611.21256",
+      "title": "Odd faces as a parameter for maximum independent set in embedded graphs",
+      "category": "math.CO",
+      "url": "https://arxiv.org/abs/2611.21256v1",
+      "publishedAt": "2026-11-16T15:30:04Z"
+    },
+    {
+      "id": "2611.21254",
+      "title": "Dimension-free spectral laws and the risk of spectral filters",
+      "category": "math.ST",
+      "url": "https://arxiv.org/abs/2611.21254v1",
+      "publishedAt": "2026-11-16T15:29:43Z"
+    },
+    {
+      "id": "2611.21253",
+      "title": "QuantileGS: Quantile-Based Conformal Bounds on RGB Rendering Errors for Novel View Synthesis with 3D Gaussian Splatting",
+      "category": "cs.CV",
+      "url": "https://arxiv.org/abs/2611.21253v1",
+      "publishedAt": "2026-11-16T15:28:51Z"
+    },
+    {
+      "id": "2611.21251",
+      "title": "The Price of Choosing Examples: Context Overfitting in Adaptive In-Context Learning",
+      "category": "cs.LG",
+      "url": "https://arxiv.org/abs/2611.21251v1",
+      "publishedAt": "2026-11-16T15:28:39Z"
+    },
+    {
+      "id": "2611.21250",
+      "title": "Stream of Belief: Eliciting Collective Intelligence through Latent Belief Dynamics",
+      "category": "cs.AI",
+      "url": "https://arxiv.org/abs/2611.21250v1",
+      "publishedAt": "2026-11-16T15:28:04Z"
+    },
+    {
+      "id": "2611.21249",
+      "title": "Heteroscedastic Gaussian Process Q-learning for Sample Efficient Experimentation",
+      "category": "cs.LG",
+      "url": "https://arxiv.org/abs/2611.21249v1",
+      "publishedAt": "2026-11-16T15:26:52Z"
+    },
+    {
+      "id": "2611.21248",
+      "title": "Adaptive Wake-on-Radio Communication for Batteryless IoT Systems",
+      "category": "cs.NI",
+      "url": "https://arxiv.org/abs/2611.21248v1",
+      "publishedAt": "2026-11-16T15:26:51Z"
+    },
+    {
+      "id": "2611.21241",
+      "title": "Anytime-Valid PAC-Bayes Certificates for Adaptive Test-Time Scaling",
+      "category": "cs.LG",
+      "url": "https://arxiv.org/abs/2611.21241v1",
+      "publishedAt": "2026-11-16T15:23:44Z"
+    },
+    {
+      "id": "2611.21240",
+      "title": "How Developer Personality Shapes the Use of AI Coding Assistants",
+      "category": "cs.AI",
+      "url": "https://arxiv.org/abs/2611.21240v1",
+      "publishedAt": "2026-11-16T15:23:28Z"
+    },
+    {
+      "id": "2611.21238",
+      "title": "Recursive Spectral Graph Partitioning Coding for Index Assignment in Semantic Communications",
+      "category": "cs.IT",
+      "url": "https://arxiv.org/abs/2611.21238v1",
+      "publishedAt": "2026-11-16T15:23:07Z"
+    },
+    {
+      "id": "2611.21236",
+      "title": "Specifying & Verifying Quantum Error-Correcting Codes",
+      "category": "quant-ph",
+      "url": "https://arxiv.org/abs/2611.21236v1",
+      "publishedAt": "2026-11-16T15:20:32Z"
+    },
+    {
+      "id": "2611.21235",
+      "title": "Language-model agents' beliefs can be manipulated via truthful evidence in open channel",
+      "category": "cs.AI",
+      "url": "https://arxiv.org/abs/2611.21235v1",
+      "publishedAt": "2026-11-16T15:20:18Z"
+    },
+    {
+      "id": "2611.21233",
+      "title": "A Study on Performance Enhancement of a Webcam-Based Real-Time Eye-Tracking System",
+      "category": "cs.CV",
+      "url": "https://arxiv.org/abs/2611.21233v1",
+      "publishedAt": "2026-11-16T15:16:55Z"
+    },
+    {
+      "id": "2611.21232",
+      "title": "A Generative AI-Driven Architecture for Whole-Home Intelligent Services: Edge Models, Memory Management, and Household Applications",
+      "category": "cs.CL",
+      "url": "https://arxiv.org/abs/2611.21232v1",
+      "publishedAt": "2026-11-16T15:16:17Z"
+    },
+    {
+      "id": "2611.21229",
+      "title": "Investigating the Benefit of Transfer Learning from the Locus Coeruleus for Substantia Nigra Pars Compacta Segmentation",
+      "category": "eess.IV",
+      "url": "https://arxiv.org/abs/2611.21229v1",
+      "publishedAt": "2026-11-16T15:14:01Z"
+    },
+    {
+      "id": "2611.21223",
+      "title": "Oriented Semi-DETR for Semi-Supervised Aerial Object Detection",
+      "category": "cs.CV",
+      "url": "https://arxiv.org/abs/2611.21223v1",
+      "publishedAt": "2026-11-16T15:09:55Z"
+    },
+    {
+      "id": "2611.21222",
+      "title": "Verifiable Random Sampling of Private Data Without a Trusted Single Party",
+      "category": "cs.CR",
+      "url": "https://arxiv.org/abs/2611.21222v1",
+      "publishedAt": "2026-11-16T15:09:40Z"
+    },
+    {
+      "id": "2611.21218",
+      "title": "InclusionMed: Benchmarking AI for Inclusive Healthcare",
+      "category": "cs.AI",
+      "url": "https://arxiv.org/abs/2611.21218v1",
+      "publishedAt": "2026-11-16T15:08:25Z"
+    },
+    {
+      "id": "2611.21216",
+      "title": "MiSTiQ: MicroScaling Trellis Quantization for Extreme KV Cache Compression",
+      "category": "cs.LG",
+      "url": "https://arxiv.org/abs/2611.21216v1",
+      "publishedAt": "2026-11-16T15:07:41Z"
+    },
+    {
+      "id": "2611.21215",
+      "title": "Open-fMIND: A Large-Scale Open-Access fMRI Corpus for Pretraining Brain Foundation Models",
+      "category": "cs.LG",
+      "url": "https://arxiv.org/abs/2611.21215v1",
+      "publishedAt": "2026-11-16T15:07:27Z"
+    },
+    {
+      "id": "2611.21214",
+      "title": "Taking Time Out of TOCTOU: From Race Reproduction to Security Discovery",
+      "category": "cs.CR",
+      "url": "https://arxiv.org/abs/2611.21214v1",
+      "publishedAt": "2026-11-16T15:06:56Z"
+    },
+    {
+      "id": "2611.21211",
+      "title": "Teaching Language Models to Adapt Answer Granularity to Their Confidence",
+      "category": "cs.CL",
+      "url": "https://arxiv.org/abs/2611.21211v1",
+      "publishedAt": "2026-11-16T15:02:48Z"
+    },
+    {
+      "id": "2611.21210",
+      "title": "Full-Cover and Non-Overlapping Uni-domination in Graphs: Bounds and Complexity",
+      "category": "cs.DM",
+      "url": "https://arxiv.org/abs/2611.21210v1",
+      "publishedAt": "2026-11-16T15:02:00Z"
+    },
+    {
+      "id": "2611.21209",
+      "title": "BoBDeLaN: Bounded-Bandwidth Context Adaptation for Deep Lagrangian Robot Control",
+      "category": "cs.RO",
+      "url": "https://arxiv.org/abs/2611.21209v1",
+      "publishedAt": "2026-11-16T15:01:54Z"
+    }
+  ],
+  "geeknews": [
+    {
+      "id": "https://news.hada.io/topic?id=37337",
+      "source": "geeknews",
+      "title": "저작권으로는 이길 수 없다",
+      "url": "https://news.hada.io/topic?id=37337&utm_source=geeknews&utm_medium=rss&utm_campaign=news",
+      "domain": "news.hada.io",
+      "sub": null,
+      "publishedAt": "2026-11-17T15:02:54+09:00"
+    },
+    {
+      "id": "https://news.hada.io/topic?id=37336",
+      "source": "geeknews",
+      "title": "화학은 사실 기하학이다",
+      "url": "https://news.hada.io/topic?id=37336&utm_source=geeknews&utm_medium=rss&utm_campaign=news",
+      "domain": "news.hada.io",
+      "sub": null,
+      "publishedAt": "2026-11-17T13:35:21+09:00"
+    },
+    {
+      "id": "https://news.hada.io/topic?id=37333",
+      "source": "geeknews",
+      "title": "OpenCode Browse - 코딩 에이전트가 사용자의 실제 브라우저를 쓰게 하는 도구",
+      "url": "https://news.hada.io/topic?id=37333&utm_source=geeknews&utm_medium=rss&utm_campaign=news",
+      "domain": "news.hada.io",
+      "sub": null,
+      "publishedAt": "2026-11-17T12:33:45+09:00"
+    },
+    {
+      "id": "https://news.hada.io/topic?id=37332",
+      "source": "geeknews",
+      "title": "Squircles - 정사각형과 원 사이의 곡선, 구현 방식과 연속성 비교",
+      "url": "https://news.hada.io/topic?id=37332&utm_source=geeknews&utm_medium=rss&utm_campaign=news",
+      "domain": "news.hada.io",
+      "sub": null,
+      "publishedAt": "2026-11-17T11:33:51+09:00"
+    },
+    {
+      "id": "https://news.hada.io/topic?id=37328",
+      "source": "geeknews",
+      "title": "Show GN: Subscale - 여러 Tailscale 계정 중 주소별로 나눠 연결해주는 CLI 도구",
+      "url": "https://news.hada.io/topic?id=37328&utm_source=geeknews&utm_medium=rss&utm_campaign=news",
+      "domain": "news.hada.io",
+      "sub": null,
+      "publishedAt": "2026-11-17T10:47:28+09:00"
+    },
+    {
+      "id": "https://news.hada.io/topic?id=37327",
+      "source": "geeknews",
+      "title": "Windows 11, 사용하는 코딩 에이전트와 개발 도구 정보를 수집함",
+      "url": "https://news.hada.io/topic?id=37327&utm_source=geeknews&utm_medium=rss&utm_campaign=news",
+      "domain": "news.hada.io",
+      "sub": null,
+      "publishedAt": "2026-11-17T10:33:54+09:00"
+    },
+    {
+      "id": "https://news.hada.io/topic?id=37325",
+      "source": "geeknews",
+      "title": "Branchless Programming - CPU 분기 예측과 분기 없는 프로그래밍 이해하기",
+      "url": "https://news.hada.io/topic?id=37325&utm_source=geeknews&utm_medium=rss&utm_campaign=news",
+      "domain": "news.hada.io",
+      "sub": null,
+      "publishedAt": "2026-11-17T10:10:02+09:00"
+    },
+    {
+      "id": "https://news.hada.io/topic?id=37324",
+      "source": "geeknews",
+      "title": "Modern Web Guidance 1.0 - 코딩 에이전트에 최신 웹 개발 지침을 제공하는 스킬 모음",
+      "url": "https://news.hada.io/topic?id=37324&utm_source=geeknews&utm_medium=rss&utm_campaign=news",
+      "domain": "news.hada.io",
+      "sub": null,
+      "publishedAt": "2026-11-17T10:10:02+09:00"
+    },
+    {
+      "id": "https://news.hada.io/topic?id=37321",
+      "source": "geeknews",
+      "title": "백준 온라인 저지 (BOJ) 11월 20일 재오픈",
+      "url": "https://news.hada.io/topic?id=37321&utm_source=geeknews&utm_medium=rss&utm_campaign=news",
+      "domain": "news.hada.io",
+      "sub": null,
+      "publishedAt": "2026-11-17T10:01:16+09:00"
+    },
+    {
+      "id": "https://news.hada.io/topic?id=37320",
+      "source": "geeknews",
+      "title": "CI 시장은 세 갈래로 나뉘었다",
+      "url": "https://news.hada.io/topic?id=37320&utm_source=geeknews&utm_medium=rss&utm_campaign=news",
+      "domain": "news.hada.io",
+      "sub": null,
+      "publishedAt": "2026-11-17T09:40:01+09:00"
+    },
+    {
+      "id": "https://news.hada.io/topic?id=37319",
+      "source": "geeknews",
+      "title": "세계 최대 브랜드들, Optimizely를 통해 악성코드에 감염",
+      "url": "https://news.hada.io/topic?id=37319&utm_source=geeknews&utm_medium=rss&utm_campaign=news",
+      "domain": "news.hada.io",
+      "sub": null,
+      "publishedAt": "2026-11-17T09:39:50+09:00"
+    },
+    {
+      "id": "https://news.hada.io/topic?id=37318",
+      "source": "geeknews",
+      "title": "United Airlines, 광범위한 시스템 장애 발생했다고 밝혀",
+      "url": "https://news.hada.io/topic?id=37318&utm_source=geeknews&utm_medium=rss&utm_campaign=news",
+      "domain": "news.hada.io",
+      "sub": null,
+      "publishedAt": "2026-11-17T09:36:50+09:00"
+    },
+    {
+      "id": "https://news.hada.io/topic?id=37317",
+      "source": "geeknews",
+      "title": "AVA - AI 에이전트용 데이터 분석 및 시각화 프레임워크",
+      "url": "https://news.hada.io/topic?id=37317&utm_source=geeknews&utm_medium=rss&utm_campaign=news",
+      "domain": "news.hada.io",
+      "sub": null,
+      "publishedAt": "2026-11-17T09:30:02+09:00"
+    },
+    {
+      "id": "https://news.hada.io/topic?id=37316",
+      "source": "geeknews",
+      "title": "AI 슬롭은 왜 이렇게 읽기 짜증날까?",
+      "url": "https://news.hada.io/topic?id=37316&utm_source=geeknews&utm_medium=rss&utm_campaign=news",
+      "domain": "news.hada.io",
+      "sub": null,
+      "publishedAt": "2026-11-17T09:20:04+09:00"
+    },
+    {
+      "id": "https://news.hada.io/topic?id=37314",
+      "source": "geeknews",
+      "title": "GitHub에서 Codeberg로 이전하기",
+      "url": "https://news.hada.io/topic?id=37314&utm_source=geeknews&utm_medium=rss&utm_campaign=news",
+      "domain": "news.hada.io",
+      "sub": null,
+      "publishedAt": "2026-11-17T09:04:51+09:00"
+    },
+    {
+      "id": "https://news.hada.io/topic?id=37313",
+      "source": "geeknews",
+      "title": "Rust가 개발자로서의 나를 바꾼 방식",
+      "url": "https://news.hada.io/topic?id=37313&utm_source=geeknews&utm_medium=rss&utm_campaign=news",
+      "domain": "news.hada.io",
+      "sub": null,
+      "publishedAt": "2026-11-17T08:38:36+09:00"
+    },
+    {
+      "id": "https://news.hada.io/topic?id=37311",
+      "source": "geeknews",
+      "title": "BugMeNot 서비스 종료",
+      "url": "https://news.hada.io/topic?id=37311&utm_source=geeknews&utm_medium=rss&utm_campaign=news",
+      "domain": "news.hada.io",
+      "sub": null,
+      "publishedAt": "2026-11-17T08:35:36+09:00"
+    },
+    {
+      "id": "https://news.hada.io/topic?id=37307",
+      "source": "geeknews",
+      "title": "Carnegie Mellon, 컴퓨터 과학 강의를 YouTube에 무료 공개",
+      "url": "https://news.hada.io/topic?id=37307&utm_source=geeknews&utm_medium=rss&utm_campaign=news",
+      "domain": "news.hada.io",
+      "sub": null,
+      "publishedAt": "2026-11-17T07:31:22+09:00"
+    },
+    {
+      "id": "https://news.hada.io/topic?id=37306",
+      "source": "geeknews",
+      "title": "Microsoft, 대규모 이메일 장애 원인으로 7월 패치에 유입된 소프트웨어 결함 지목",
+      "url": "https://news.hada.io/topic?id=37306&utm_source=geeknews&utm_medium=rss&utm_campaign=news",
+      "domain": "news.hada.io",
+      "sub": null,
+      "publishedAt": "2026-11-17T06:32:18+09:00"
+    },
+    {
+      "id": "https://news.hada.io/topic?id=37305",
+      "source": "geeknews",
+      "title": "태양광 패널이 설치된 들판에서 양 방목하기",
+      "url": "https://news.hada.io/topic?id=37305&utm_source=geeknews&utm_medium=rss&utm_campaign=news",
+      "domain": "news.hada.io",
+      "sub": null,
+      "publishedAt": "2026-11-17T05:38:09+09:00"
+    }
+  ],
+  "reddit": [
+    {
+      "id": "t3_1xxptvv",
+      "source": "reddit",
+      "title": "How meetings will be in 2027:",
+      "url": "https://www.reddit.com/r/ClaudeAI/comments/1xxptvv/how_meetings_will_be_in_2027/",
+      "domain": "reddit.com",
+      "sub": "ClaudeAI",
+      "publishedAt": "2026-11-16T13:50:26+00:00"
+    },
+    {
+      "id": "t3_1xy3iuo",
+      "source": "reddit",
+      "title": "Started using Claude Meetings today",
+      "url": "https://www.reddit.com/r/ClaudeAI/comments/1xy3iuo/started_using_claude_meetings_today/",
+      "domain": "reddit.com",
+      "sub": "ClaudeAI",
+      "publishedAt": "2026-11-16T22:36:17+00:00"
+    },
+    {
+      "id": "t3_1xy2wpr",
+      "source": "reddit",
+      "title": "Nice try prompt injector!",
+      "url": "https://www.reddit.com/r/ClaudeAI/comments/1xy2wpr/nice_try_prompt_injector/",
+      "domain": "reddit.com",
+      "sub": "ClaudeAI",
+      "publishedAt": "2026-11-16T22:11:10+00:00"
+    },
+    {
+      "id": "t3_1xy03qy",
+      "source": "reddit",
+      "title": "Ask Claude: Any one else doing an AI powered quiet quitting?",
+      "url": "https://www.reddit.com/r/ClaudeAI/comments/1xy03qy/ask_claude_any_one_else_doing_an_ai_powered_quiet/",
+      "domain": "reddit.com",
+      "sub": "ClaudeAI",
+      "publishedAt": "2026-11-16T20:21:29+00:00"
+    },
+    {
+      "id": "t3_1xxodck",
+      "source": "reddit",
+      "title": "I was about to take a Blender course to learn how to make these videos… then Claude one-shotted this",
+      "url": "https://www.reddit.com/r/ClaudeAI/comments/1xxodck/i_was_about_to_take_a_blender_course_to_learn_how/",
+      "domain": "reddit.com",
+      "sub": "ClaudeAI",
+      "publishedAt": "2026-11-16T12:41:03+00:00"
+    },
+    {
+      "id": "t3_1xxtf0m",
+      "source": "reddit",
+      "title": "I gave Claude my grandfather’s 1945 WWII unit history book. It rebuilt his platoon’s war as an interactive 3D experience, and made all 2,655 men in the book searchable",
+      "url": "https://www.reddit.com/r/ClaudeAI/comments/1xxtf0m/i_gave_claude_my_grandfathers_1945_wwii_unit/",
+      "domain": "reddit.com",
+      "sub": "ClaudeAI",
+      "publishedAt": "2026-11-16T16:13:17+00:00"
+    },
+    {
+      "id": "t3_1xxqbuw",
+      "source": "reddit",
+      "title": "I'm a photogrammetry guy and this Eiffel Tower is not a scan: 3 days directing Fable 5.2 in Blender!",
+      "url": "https://www.reddit.com/r/ClaudeAI/comments/1xxqbuw/im_a_photogrammetry_guy_and_this_eiffel_tower_is/",
+      "domain": "reddit.com",
+      "sub": "ClaudeAI",
+      "publishedAt": "2026-11-16T14:11:36+00:00"
+    },
+    {
+      "id": "t3_1xy28dk",
+      "source": "reddit",
+      "title": "Inspired by the Abyssal Garden post, I gave Fable 5.2 the same kind of prompt and a critic subagent: a drivable Fiat Uno with a ladder on the roof, in one HTML file",
+      "url": "https://www.reddit.com/r/ClaudeAI/comments/1xy28dk/inspired_by_the_abyssal_garden_post_i_gave_fable/",
+      "domain": "reddit.com",
+      "sub": "ClaudeAI",
+      "publishedAt": "2026-11-16T21:43:47+00:00"
+    },
+    {
+      "id": "t3_1xxojbs",
+      "source": "reddit",
+      "title": "Claude refused a harmless security check. As an alternative, it leaked publicly accessible links to my private files on two third-party sites. After apologizing it executed the security check anyway, in a more dangerous way",
+      "url": "https://www.reddit.com/r/ClaudeAI/comments/1xxojbs/claude_refused_a_harmless_security_check_as_an/",
+      "domain": "reddit.com",
+      "sub": "ClaudeAI",
+      "publishedAt": "2026-11-16T12:49:51+00:00"
+    },
+    {
+      "id": "t3_1xy30gx",
+      "source": "reddit",
+      "title": "I gave Claude Fable 5.2 a lazy LiDAR scan of my disaster of a basement and one prompt. It found the actual room under the junk and designed 4 priced shelving plans",
+      "url": "https://www.reddit.com/r/ClaudeAI/comments/1xy30gx/i_gave_claude_fable_52_a_lazy_lidar_scan_of_my/",
+      "domain": "reddit.com",
+      "sub": "ClaudeAI",
+      "publishedAt": "2026-11-16T22:15:21+00:00"
+    },
+    {
+      "id": "t3_1xycau8",
+      "source": "reddit",
+      "title": "Well this is new",
+      "url": "https://www.reddit.com/r/ClaudeAI/comments/1xycau8/well_this_is_new/",
+      "domain": "reddit.com",
+      "sub": "ClaudeAI",
+      "publishedAt": "2026-11-17T05:35:21+00:00"
+    },
+    {
+      "id": "t3_1xxxadd",
+      "source": "reddit",
+      "title": "Doom scrolling with Claude",
+      "url": "https://www.reddit.com/r/ClaudeAI/comments/1xxxadd/doom_scrolling_with_claude/",
+      "domain": "reddit.com",
+      "sub": "ClaudeAI",
+      "publishedAt": "2026-11-16T18:36:56+00:00"
+    },
+    {
+      "id": "t3_1xxrijz",
+      "source": "reddit",
+      "title": "Anthropic IPO, Full Breakdown and Valuation.",
+      "url": "https://www.reddit.com/r/ClaudeAI/comments/1xxrijz/anthropic_ipo_full_breakdown_and_valuation/",
+      "domain": "reddit.com",
+      "sub": "ClaudeAI",
+      "publishedAt": "2026-11-16T15:00:00+00:00"
+    },
+    {
+      "id": "t3_1xxspbu",
+      "source": "reddit",
+      "title": "What is 'everyday' to you?",
+      "url": "https://www.reddit.com/r/ClaudeAI/comments/1xxspbu/what_is_everyday_to_you/",
+      "domain": "reddit.com",
+      "sub": "ClaudeAI",
+      "publishedAt": "2026-11-16T15:45:43+00:00"
+    },
+    {
+      "id": "t3_1xy3g5x",
+      "source": "reddit",
+      "title": "Fable helped me ship a 6-month-old project in a week as my first complete game",
+      "url": "https://www.reddit.com/r/ClaudeAI/comments/1xy3g5x/fable_helped_me_ship_a_6monthold_project_in_a/",
+      "domain": "reddit.com",
+      "sub": "ClaudeAI",
+      "publishedAt": "2026-11-16T22:33:08+00:00"
+    },
+    {
+      "id": "t3_1xxnddo",
+      "source": "reddit",
+      "title": "Fable 5.2 hard mogs GPT Astra in hardware design",
+      "url": "https://www.reddit.com/r/ClaudeAI/comments/1xxnddo/fable_52_hard_mogs_gpt_astra_in_hardware_design/",
+      "domain": "reddit.com",
+      "sub": "ClaudeAI",
+      "publishedAt": "2026-11-16T11:48:15+00:00"
+    },
+    {
+      "id": "t3_1xy9h4i",
+      "source": "reddit",
+      "title": "Why is Claude always telling me to go to sleep",
+      "url": "https://www.reddit.com/r/ClaudeAI/comments/1xy9h4i/why_is_claude_always_telling_me_to_go_to_sleep/",
+      "domain": "reddit.com",
+      "sub": "ClaudeAI",
+      "publishedAt": "2026-11-17T03:07:10+00:00"
+    },
+    {
+      "id": "t3_1xy2mrb",
+      "source": "reddit",
+      "title": "Claude Code helped me build an open-source Desk Buddy for ESP32-S3",
+      "url": "https://www.reddit.com/r/ClaudeAI/comments/1xy2mrb/claude_code_helped_me_build_an_opensource_desk/",
+      "domain": "reddit.com",
+      "sub": "ClaudeAI",
+      "publishedAt": "2026-11-16T22:00:06+00:00"
+    },
+    {
+      "id": "t3_1xxne9j",
+      "source": "reddit",
+      "title": "Preserving my family's history with Claude",
+      "url": "https://www.reddit.com/r/ClaudeAI/comments/1xxne9j/preserving_my_familys_history_with_claude/",
+      "domain": "reddit.com",
+      "sub": "ClaudeAI",
+      "publishedAt": "2026-11-16T11:49:48+00:00"
+    },
+    {
+      "id": "t3_1xy177a",
+      "source": "reddit",
+      "title": "What are some genuinely useful ways you’re using Claude agents?",
+      "url": "https://www.reddit.com/r/ClaudeAI/comments/1xy177a/what_are_some_genuinely_useful_ways_youre_using/",
+      "domain": "reddit.com",
+      "sub": "ClaudeAI",
+      "publishedAt": "2026-11-16T21:03:35+00:00"
+    },
+    {
+      "id": "t3_1xxt5ml",
+      "source": "reddit",
+      "title": "Claude burnout, the problem is context switching, does that mean chat is the wrong UX for AI?",
+      "url": "https://www.reddit.com/r/ClaudeAI/comments/1xxt5ml/claude_burnout_the_problem_is_context_switching/",
+      "domain": "reddit.com",
+      "sub": "ClaudeAI",
+      "publishedAt": "2026-11-16T16:03:15+00:00"
+    },
+    {
+      "id": "t3_1xxms7n",
+      "source": "reddit",
+      "title": "Do any educators use Claude to build lesson plans?",
+      "url": "https://www.reddit.com/r/ClaudeAI/comments/1xxms7n/do_any_educators_use_claude_to_build_lesson_plans/",
+      "domain": "reddit.com",
+      "sub": "ClaudeAI",
+      "publishedAt": "2026-11-16T11:13:20+00:00"
+    },
+    {
+      "id": "t3_1xxvrgt",
+      "source": "reddit",
+      "title": "How will future releases work?",
+      "url": "https://www.reddit.com/r/ClaudeAI/comments/1xxvrgt/how_will_future_releases_work/",
+      "domain": "reddit.com",
+      "sub": "ClaudeAI",
+      "publishedAt": "2026-11-16T17:40:03+00:00"
+    },
+    {
+      "id": "t3_1xxnwmf",
+      "source": "reddit",
+      "title": "Turning my repetitive daily prompts into reusable Skills saved me at least an hour a day",
+      "url": "https://www.reddit.com/r/ClaudeAI/comments/1xxnwmf/turning_my_repetitive_daily_prompts_into_reusable/",
+      "domain": "reddit.com",
+      "sub": "ClaudeAI",
+      "publishedAt": "2026-11-16T12:16:49+00:00"
+    },
+    {
+      "id": "t3_1xxm72a",
+      "source": "reddit",
+      "title": "What do the cool kids run their agents in?",
+      "url": "https://www.reddit.com/r/ClaudeAI/comments/1xxm72a/what_do_the_cool_kids_run_their_agents_in/",
+      "domain": "reddit.com",
+      "sub": "ClaudeAI",
+      "publishedAt": "2026-11-16T10:37:57+00:00"
+    }
+  ],
+  "hfModels": [
+    {
+      "id": "xtools-at/DeepSeek-V4-Pro-Qwen3.5-9B-UNCENSORED-heretic",
+      "url": "https://huggingface.co/xtools-at/DeepSeek-V4-Pro-Qwen3.5-9B-UNCENSORED-heretic",
+      "likes": 9377,
+      "downloads": 29567,
+      "pipeline": "text-generation"
+    },
+    {
+      "id": "MiniMaxAI/MiniMax-H3-Image",
+      "url": "https://huggingface.co/MiniMaxAI/MiniMax-H3-Image",
+      "likes": 1348,
+      "downloads": 609130,
+      "pipeline": "text-to-image"
+    },
+    {
+      "id": "Qwen/Qwen3.8-27B",
+      "url": "https://huggingface.co/Qwen/Qwen3.8-27B",
+      "likes": 20311,
+      "downloads": 6763402,
+      "pipeline": "image-text-to-text"
+    },
+    {
+      "id": "Lightricks/LTX-2.5",
+      "url": "https://huggingface.co/Lightricks/LTX-2.5",
+      "likes": 12293,
+      "downloads": 2789021,
+      "pipeline": "image-to-video"
+    },
+    {
+      "id": "Comfy-Org/MiniMax-H3-Image",
+      "url": "https://huggingface.co/Comfy-Org/MiniMax-H3-Image",
+      "likes": 503,
+      "downloads": 2294065,
+      "pipeline": "text-to-image"
+    },
+    {
+      "id": "Zyphra/ZONOS3-Mini",
+      "url": "https://huggingface.co/Zyphra/ZONOS3-Mini",
+      "likes": 496,
+      "downloads": 69946,
+      "pipeline": "text-to-speech"
+    },
+    {
+      "id": "higurashi-ai/Haru-4B",
+      "url": "https://huggingface.co/higurashi-ai/Haru-4B",
+      "likes": 449,
+      "downloads": 3372,
+      "pipeline": "audio-to-audio"
+    },
+    {
+      "id": "thinkingmachines/Inkling-2-Small",
+      "url": "https://huggingface.co/thinkingmachines/Inkling-2-Small",
+      "likes": 429,
+      "downloads": 16918,
+      "pipeline": "image-text-to-text"
+    },
+    {
+      "id": "unsloth/Qwen3.8-27B-GGUF",
+      "url": "https://huggingface.co/unsloth/Qwen3.8-27B-GGUF",
+      "likes": 6101,
+      "downloads": 6666734,
+      "pipeline": null
+    },
+    {
+      "id": "speridlabs/idol",
+      "url": "https://huggingface.co/speridlabs/idol",
+      "likes": 2433,
+      "downloads": 34752,
+      "pipeline": "image-to-3d"
+    },
+    {
+      "id": "moonshotai/Kimi-K3.1-Pro",
+      "url": "https://huggingface.co/moonshotai/Kimi-K3.1-Pro",
+      "likes": 2177,
+      "downloads": 49428,
+      "pipeline": "image-text-to-text"
+    },
+    {
+      "id": "black-forest-labs/flux-3-image-klein-comfy",
+      "url": "https://huggingface.co/black-forest-labs/flux-3-image-klein-comfy",
+      "likes": 3361,
+      "downloads": 1115161,
+      "pipeline": "image-to-image"
+    },
+    {
+      "id": "NousResearch/Arete-27B",
+      "url": "https://huggingface.co/NousResearch/Arete-27B",
+      "likes": 674,
+      "downloads": 9187,
+      "pipeline": "text-generation"
+    },
+    {
+      "id": "DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NEO-CODER-MAX-MTP-GGUF",
+      "url": "https://huggingface.co/DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NEO-CODER-MAX-MTP-GGUF",
+      "likes": 3253,
+      "downloads": 1746935,
+      "pipeline": "image-text-to-text"
+    },
+    {
+      "id": "facebook/sam3",
+      "url": "https://huggingface.co/facebook/sam3",
+      "likes": 6810,
+      "downloads": 1973300,
+      "pipeline": "mask-generation"
+    },
+    {
+      "id": "Cactus-Compute/mirage",
+      "url": "https://huggingface.co/Cactus-Compute/mirage",
+      "likes": 398,
+      "downloads": 32031,
+      "pipeline": "image-text-to-text"
+    },
+    {
+      "id": "deepseek-ai/DeepSeek-V4.1-Flash-1017",
+      "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017",
+      "likes": 5823,
+      "downloads": 467224,
+      "pipeline": "image-text-to-text"
+    },
+    {
+      "id": "Abiray/MiniMax-H3-Image-GGUF",
+      "url": "https://huggingface.co/Abiray/MiniMax-H3-Image-GGUF",
+      "likes": 291,
+      "downloads": 155475,
+      "pipeline": "text-to-image"
+    },
+    {
+      "id": "chatrlabs/Qwen-Image-2.1-Uncensored-Omni-Quantized",
+      "url": "https://huggingface.co/chatrlabs/Qwen-Image-2.1-Uncensored-Omni-Quantized",
+      "likes": 402,
+      "downloads": 142901,
+      "pipeline": "text-to-image"
+    },
+    {
+      "id": "IFM/PAN2",
+      "url": "https://huggingface.co/IFM/PAN2",
+      "likes": 208,
+      "downloads": 374,
+      "pipeline": "image-text-to-video"
+    }
+  ],
+  "tools": [
+    {
+      "tool": "claude-code",
+      "name": "Claude Code",
+      "version": "v2.1.326",
+      "publishedAt": "2026-11-16T22:11:05Z",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.326",
+      "note": "Added support for turning on Code Mode while agent teams are enabled; if you already turned it on, sessions with teams o"
+    },
+    {
+      "tool": "codex",
+      "name": "Codex CLI",
+      "version": "rust-v0.169.0",
+      "publishedAt": "2026-11-13T08:37:05Z",
+      "url": "https://github.com/openai/codex/releases/tag/rust-v0.169.0",
+      "note": "The opt-in terminal workspace supports multiple side-chat tabs. Switch between them with the keyboard or mouse, and reop"
+    },
+    {
+      "tool": "gemini-cli",
+      "name": "Gemini CLI",
+      "version": "v0.68.0",
+      "publishedAt": "2026-11-10T21:17:07Z",
+      "url": "https://github.com/google-gemini/gemini-cli/releases/tag/v0.68.0",
+      "note": "Changelog for v0.67.0-preview.0 by @gemini-cli-robot in https://github.com/google-gemini/gemini-cli/pull/29990"
+    },
+    {
+      "tool": "copilot",
+      "name": "GitHub Copilot",
+      "version": null,
+      "publishedAt": "2026-11-16T21:34:53.000Z",
+      "url": "https://github.blog/changelog/2026-11-16-github-copilot-weekly-releases-november-9",
+      "note": "GitHub Copilot weekly releases — November 9"
+    },
+    {
+      "tool": "cursor",
+      "name": "Cursor",
+      "version": null,
+      "publishedAt": "2026-11-06",
+      "url": "https://cursor.com/changelog/voice-chat",
+      "note": "Voice Chat with Agents"
+    }
+  ],
+  "advisories": [
+    {
+      "id": "GHSA-7h45-q5jx-7r87",
+      "summary": "Directus: Share update allows reassigning user_created and role",
+      "severity": "medium",
+      "type": "reviewed",
+      "ecosystem": "npm",
+      "packages": [
+        "directus"
+      ],
+      "url": "https://github.com/advisories/GHSA-7h45-q5jx-7r87",
+      "publishedAt": "2026-11-16T22:25:53Z"
+    },
+    {
+      "id": "GHSA-jq3q-62jc-fqq9",
+      "summary": "code-review-mcp-server: Command injection via unsanitized folderPath/baseBranch parameters",
+      "severity": "high",
+      "type": "reviewed",
+      "ecosystem": "npm",
+      "packages": [
+        "code-review-mcp-server"
+      ],
+      "url": "https://github.com/advisories/GHSA-jq3q-62jc-fqq9",
+      "publishedAt": "2026-11-16T22:09:06Z"
+    },
+    {
+      "id": "GHSA-mfr8-8qww-v76h",
+      "summary": "Next.js: Information disclosure across root params when a 'use cache' function is called through unstable_cache()",
+      "severity": "medium",
+      "type": "reviewed",
+      "ecosystem": "npm",
+      "packages": [
+        "next"
+      ],
+      "url": "https://github.com/advisories/GHSA-mfr8-8qww-v76h",
+      "publishedAt": "2026-11-16T18:51:22Z"
+    },
+    {
+      "id": "GHSA-hf59-9xwc-2g4p",
+      "summary": "Nuxt: Colliding island props can share one `/__nuxt_island` path (incomplete fix for CVE-2026-46342)",
+      "severity": "low",
+      "type": "reviewed",
+      "ecosystem": "npm",
+      "packages": [
+        "nuxt",
+        "@nuxt/nitro-server"
+      ],
+      "url": "https://github.com/advisories/GHSA-hf59-9xwc-2g4p",
+      "publishedAt": "2026-11-16T15:02:22Z"
+    },
+    {
+      "id": "GHSA-96x6-fvhx-49hg",
+      "summary": "Nuxt exposes the message and data of unhandled errors thrown during server rendering",
+      "severity": "medium",
+      "type": "reviewed",
+      "ecosystem": "npm",
+      "packages": [
+        "nuxt"
+      ],
+      "url": "https://github.com/advisories/GHSA-96x6-fvhx-49hg",
+      "publishedAt": "2026-11-16T15:01:26Z"
+    },
+    {
+      "id": "GHSA-r9jc-w898-3fv6",
+      "summary": "Nuxt payload URL generation has quadratic cost for repeated slashes in the request path",
+      "severity": "medium",
+      "type": "reviewed",
+      "ecosystem": "npm",
+      "packages": [
+        "nuxt"
+      ],
+      "url": "https://github.com/advisories/GHSA-r9jc-w898-3fv6",
+      "publishedAt": "2026-11-16T15:00:41Z"
+    },
+    {
+      "id": "GHSA-x2wv-5868-p7v2",
+      "summary": "@nuxt/webpack-builder and @nuxt/rspack-builder dev server serves built source to DNS rebinding pages",
+      "severity": "low",
+      "type": "reviewed",
+      "ecosystem": "npm",
+      "packages": [
+        "@nuxt/webpack-builder",
+        "@nuxt/rspack-builder"
+      ],
+      "url": "https://github.com/advisories/GHSA-x2wv-5868-p7v2",
+      "publishedAt": "2026-11-16T15:00:09Z"
+    },
+    {
+      "id": "GHSA-f3x9-2chm-73c8",
+      "summary": "Nuxt: Incomplete fix for GHSA-6gq8-jgmh-3ffp: an encoded slash (`%2F`) in the request path bypasses route rules on catch-all page routes",
+      "severity": "medium",
+      "type": "reviewed",
+      "ecosystem": "npm",
+      "packages": [
+        "nuxt",
+        "@nuxt/nitro-server",
+        "@nuxt/vite-server"
+      ],
+      "url": "https://github.com/advisories/GHSA-f3x9-2chm-73c8",
+      "publishedAt": "2026-11-16T14:59:45Z"
+    },
+    {
+      "id": "GHSA-m9j8-jcmv-hp69",
+      "summary": "SvelteKit: Build-time server-only module import guard could fail, resulting in server secrets being statically replaced in client bundle",
+      "severity": "high",
+      "type": "reviewed",
+      "ecosystem": "npm",
+      "packages": [
+        "@sveltejs/kit"
+      ],
+      "url": "https://github.com/advisories/GHSA-m9j8-jcmv-hp69",
+      "publishedAt": "2026-11-16T14:59:00Z"
+    },
+    {
+      "id": "GHSA-3r8g-jcqq-3p5j",
+      "summary": "SvelteKit: DoS while parsing form data from a remote functions `form`",
+      "severity": "high",
+      "type": "reviewed",
+      "ecosystem": "npm",
+      "packages": [
+        "@sveltejs/kit"
+      ],
+      "url": "https://github.com/advisories/GHSA-3r8g-jcqq-3p5j",
+      "publishedAt": "2026-11-16T14:57:35Z"
+    },
+    {
+      "id": "GHSA-6cf5-gc4q-fm3x",
+      "summary": "SvelteKit: Private `query.batch` functions could collide, producing unexpected parameter / function combinations",
+      "severity": "medium",
+      "type": "reviewed",
+      "ecosystem": "npm",
+      "packages": [
+        "@sveltejs/kit"
+      ],
+      "url": "https://github.com/advisories/GHSA-6cf5-gc4q-fm3x",
+      "publishedAt": "2026-11-16T14:49:03Z"
+    },
+    {
+      "id": "GHSA-rqp5-r3wg-vg35",
+      "summary": "SvelteKit: Protocol-relative module import during server-side route resolution allows cross-origin script execution",
+      "severity": "medium",
+      "type": "reviewed",
+      "ecosystem": "npm",
+      "packages": [
+        "@sveltejs/kit"
+      ],
+      "url": "https://github.com/advisories/GHSA-rqp5-r3wg-vg35",
+      "publishedAt": "2026-11-16T14:48:54Z"
+    },
+    {
+      "id": "GHSA-qfx6-q44v-9qqw",
+      "summary": "ag-psd can exhaust memory when parsing crafted PSD dimensions",
+      "severity": "high",
+      "type": "reviewed",
+      "ecosystem": "npm",
+      "packages": [
+        "ag-psd"
+      ],
+      "url": "https://github.com/advisories/GHSA-qfx6-q44v-9qqw",
+      "publishedAt": "2026-11-13T23:19:38Z"
+    },
+    {
+      "id": "GHSA-mw6w-2fmv-pvw3",
+      "summary": "SvelteKit: adapter-node crashes with an unhandled URIError when `reroute` rewrites malformed pathnames",
+      "severity": "medium",
+      "type": "reviewed",
+      "ecosystem": "npm",
+      "packages": [
+        "@sveltejs/kit"
+      ],
+      "url": "https://github.com/advisories/GHSA-mw6w-2fmv-pvw3",
+      "publishedAt": "2026-11-13T20:51:44Z"
+    },
+    {
+      "id": "GHSA-jf9x-2fg2-hx4w",
+      "summary": "SvelteKit: Prerendered paths are interpreted as regular expressions in Vercel route config generated by @sveltejs/adapter-vercel and @sveltejs/adapter-static",
+      "severity": "medium",
+      "type": "reviewed",
+      "ecosystem": "npm",
+      "packages": [
+        "@sveltejs/adapter-vercel",
+        "@sveltejs/adapter-static"
+      ],
+      "url": "https://github.com/advisories/GHSA-jf9x-2fg2-hx4w",
+      "publishedAt": "2026-11-13T20:43:23Z"
+    },
+    {
+      "id": "GHSA-5wg4-q3ww-283h",
+      "summary": "SvelteKit: Prerendered redirect paths can inject arbitrary rules into the `_redirects` file generated by `@sveltejs/adapter-cloudflare`",
+      "severity": "medium",
+      "type": "reviewed",
+      "ecosystem": "npm",
+      "packages": [
+        "@sveltejs/adapter-cloudflare"
+      ],
+      "url": "https://github.com/advisories/GHSA-5wg4-q3ww-283h",
+      "publishedAt": "2026-11-13T20:39:15Z"
+    },
+    {
+      "id": "GHSA-rqw3-x7hx-mm3p",
+      "summary": "SvelteKit: `@sveltejs/adapter-node` crashes when proxying certain requests via `fetch`",
+      "severity": "medium",
+      "type": "reviewed",
+      "ecosystem": "npm",
+      "packages": [
+        "@sveltejs/adapter-node"
+      ],
+      "url": "https://github.com/advisories/GHSA-rqw3-x7hx-mm3p",
+      "publishedAt": "2026-11-13T20:36:53Z"
+    },
+    {
+      "id": "GHSA-r99w-jh2x-3mg9",
+      "summary": "Nuxt: Incomplete fix for GHSA-9v7c-q64q-vv33: a leading `//` in the request path bypasses `server/middleware` path checks and server route rules on page routes",
+      "severity": "medium",
+      "type": "reviewed",
+      "ecosystem": "npm",
+      "packages": [
+        "@nuxt/nitro-server"
+      ],
+      "url": "https://github.com/advisories/GHSA-r99w-jh2x-3mg9",
+      "publishedAt": "2026-11-13T19:32:21Z"
+    },
+    {
+      "id": "GHSA-3v2p-hm54-8qcq",
+      "summary": "OpenTelemetry JavaScript: Insertion of Sensitive Information into Log File and Exposure of Sensitive Information to an Unauthorized Actor in @opentelemetry/instrumentation-http",
+      "severity": "medium",
+      "type": "reviewed",
+      "ecosystem": "npm",
+      "packages": [
+        "@opentelemetry/instrumentation-http"
+      ],
+      "url": "https://github.com/advisories/GHSA-3v2p-hm54-8qcq",
+      "publishedAt": "2026-11-13T19:29:20Z"
+    },
+    {
+      "id": "GHSA-mh32-jxcr-mh9f",
+      "summary": "Astro: XSS via attribute injection in dynamic tag names",
+      "severity": "low",
+      "type": "reviewed",
+      "ecosystem": "npm",
+      "packages": [
+        "astro"
+      ],
+      "url": "https://github.com/advisories/GHSA-mh32-jxcr-mh9f",
+      "publishedAt": "2026-11-13T18:39:54Z"
+    },
+    {
+      "id": "GHSA-r3h5-4585-7x3w",
+      "summary": "Astro: Image endpoint in @astrojs/node can read files from a case-variant sibling of the output directory on case-sensitive filesystems",
+      "severity": "medium",
+      "type": "reviewed",
+      "ecosystem": "npm",
+      "packages": [
+        "@astrojs/node",
+        "astro"
+      ],
+      "url": "https://github.com/advisories/GHSA-r3h5-4585-7x3w",
+      "publishedAt": "2026-11-13T18:35:59Z"
+    },
+    {
+      "id": "GHSA-mjrq-cffv-q4qc",
+      "summary": "Nuxt dev server serves files from a parent directory with a stray lockfile or workspace file",
+      "severity": "medium",
+      "type": "reviewed",
+      "ecosystem": "npm",
+      "packages": [
+        "@nuxt/schema"
+      ],
+      "url": "https://github.com/advisories/GHSA-mjrq-cffv-q4qc",
+      "publishedAt": "2026-11-13T18:11:49Z"
+    },
+    {
+      "id": "GHSA-46wx-v44x-9hh2",
+      "summary": "Hono: `csrf()` does not check requests sent by hyperlink auditing (`text/ping`)",
+      "severity": "medium",
+      "type": "reviewed",
+      "ecosystem": "npm",
+      "packages": [
+        "hono"
+      ],
+      "url": "https://github.com/advisories/GHSA-46wx-v44x-9hh2",
+      "publishedAt": "2026-11-12T23:31:25Z"
+    },
+    {
+      "id": "GHSA-4h7h-rv7c-7m2v",
+      "summary": "Hono: `validator('form')` skips validation for `multipart/form-data` requests with extra parameters",
+      "severity": "medium",
+      "type": "reviewed",
+      "ecosystem": "npm",
+      "packages": [
+        "hono"
+      ],
+      "url": "https://github.com/advisories/GHSA-4h7h-rv7c-7m2v",
+      "publishedAt": "2026-11-12T23:30:45Z"
+    },
+    {
+      "id": "GHSA-4m76-xfj5-7975",
+      "summary": "Hono: `mount()` and `app.mount()` can forward a path that bypasses middleware scoped inside the mount prefix",
+      "severity": "medium",
+      "type": "reviewed",
+      "ecosystem": "npm",
+      "packages": [
+        "hono"
+      ],
+      "url": "https://github.com/advisories/GHSA-4m76-xfj5-7975",
+      "publishedAt": "2026-11-12T23:24:11Z"
+    },
+    {
+      "id": "GHSA-h7mg-cq63-vhpq",
+      "summary": "Hono: RegExpRouter skips wildcard middleware for some route sets and for paths with an encoded line terminator",
+      "severity": "medium",
+      "type": "reviewed",
+      "ecosystem": "npm",
+      "packages": [
+        "hono"
+      ],
+      "url": "https://github.com/advisories/GHSA-h7mg-cq63-vhpq",
+      "publishedAt": "2026-11-12T23:23:30Z"
+    },
+    {
+      "id": "GHSA-3gg2-335m-rxc6",
+      "summary": "Hono: `css` helper does not escape a closing tag split between the template and an interpolated value, allowing HTML injection",
+      "severity": "low",
+      "type": "reviewed",
+      "ecosystem": "npm",
+      "packages": [
+        "hono"
+      ],
+      "url": "https://github.com/advisories/GHSA-3gg2-335m-rxc6",
+      "publishedAt": "2026-11-12T23:22:36Z"
+    },
+    {
+      "id": "GHSA-r7hq-q2xm-6c5m",
+      "summary": "@grpc/grpc-js: safe_regex incorrectly applies partial string matching for patterns with alternation",
+      "severity": "medium",
+      "type": "reviewed",
+      "ecosystem": "npm",
+      "packages": [
+        "@grpc/grpc-js-xds"
+      ],
+      "url": "https://github.com/advisories/GHSA-r7hq-q2xm-6c5m",
+      "publishedAt": "2026-11-12T23:21:57Z"
+    },
+    {
+      "id": "GHSA-gg5j-6742-v827",
+      "summary": "@grpc/grpc-js: RBAC override configs in VirtualHost and Route resources are not applied",
+      "severity": "medium",
+      "type": "reviewed",
+      "ecosystem": "npm",
+      "packages": [
+        "@grpc/grpc-js-xds"
+      ],
+      "url": "https://github.com/advisories/GHSA-gg5j-6742-v827",
+      "publishedAt": "2026-11-12T22:55:47Z"
+    },
+    {
+      "id": "GHSA-jmv2-qgxf-f995",
+      "summary": "Astro: Reflected XSS via unescaped slot names in @astrojs/solid-js",
+      "severity": "low",
+      "type": "reviewed",
+      "ecosystem": "npm",
+      "packages": [
+        "@astrojs/solid-js"
+      ],
+      "url": "https://github.com/advisories/GHSA-jmv2-qgxf-f995",
+      "publishedAt": "2026-11-12T22:34:44Z"
+    },
+    {
+      "id": "GHSA-8cgq-x343-p74c",
+      "summary": "mail-parser: One hostile attachment aborts `write_attachments()` and silently drops the rest of the batch",
+      "severity": "medium",
+      "type": "reviewed",
+      "ecosystem": "pip",
+      "packages": [
+        "mail-parser"
+      ],
+      "url": "https://github.com/advisories/GHSA-8cgq-x343-p74c",
+      "publishedAt": "2026-11-16T22:22:13Z"
+    },
+    {
+      "id": "GHSA-xhrq-2mqv-q8wx",
+      "summary": "mail-parser: Uncaught `OverflowError` / `OSError` on an out-of-range `Received` date",
+      "severity": "medium",
+      "type": "reviewed",
+      "ecosystem": "pip",
+      "packages": [
+        "mail-parser"
+      ],
+      "url": "https://github.com/advisories/GHSA-xhrq-2mqv-q8wx",
+      "publishedAt": "2026-11-16T22:20:32Z"
+    },
+    {
+      "id": "GHSA-24mq-4vc6-2prf",
+      "summary": "mail-parser: Uncaught exceptions and silent header loss in mail-parser on attacker-controlled input",
+      "severity": "medium",
+      "type": "reviewed",
+      "ecosystem": "pip",
+      "packages": [
+        "mail-parser"
+      ],
+      "url": "https://github.com/advisories/GHSA-24mq-4vc6-2prf",
+      "publishedAt": "2026-11-16T22:12:51Z"
+    },
+    {
+      "id": "GHSA-72px-j8gh-p79x",
+      "summary": "mail-parser: Sender IP address spoofing in get_server_ipaddress()",
+      "severity": "high",
+      "type": "reviewed",
+      "ecosystem": "pip",
+      "packages": [
+        "mail-parser"
+      ],
+      "url": "https://github.com/advisories/GHSA-72px-j8gh-p79x",
+      "publishedAt": "2026-11-16T22:11:54Z"
+    },
+    {
+      "id": "GHSA-r7w7-vpq8-c5vv",
+      "summary": "mail-parser is vulnerable to polynomial ReDoS in email header parsing",
+      "severity": "high",
+      "type": "reviewed",
+      "ecosystem": "pip",
+      "packages": [
+        "mail-parser"
+      ],
+      "url": "https://github.com/advisories/GHSA-r7w7-vpq8-c5vv",
+      "publishedAt": "2026-11-16T22:11:08Z"
+    },
+    {
+      "id": "GHSA-fr3h-cpq2-9496",
+      "summary": "mail-parser: Path Traversal vulnerability in attachment extraction",
+      "severity": "medium",
+      "type": "reviewed",
+      "ecosystem": "pip",
+      "packages": [
+        "mail-parser"
+      ],
+      "url": "https://github.com/advisories/GHSA-fr3h-cpq2-9496",
+      "publishedAt": "2026-11-16T22:10:55Z"
+    },
+    {
+      "id": "GHSA-259w-wmqg-fp76",
+      "summary": "termux-sync: Arbitrary file write during restore via attacker-controlled manifest source path",
+      "severity": "high",
+      "type": "reviewed",
+      "ecosystem": "pip",
+      "packages": [
+        "termux-sync"
+      ],
+      "url": "https://github.com/advisories/GHSA-259w-wmqg-fp76",
+      "publishedAt": "2026-11-16T22:09:24Z"
+    },
+    {
+      "id": "GHSA-7mxv-7h3q-9324",
+      "summary": "NLTK dot2img runs Graphviz 'dot' without the trusted-exec chokepoint, enabling local code execution via a writable PATH element",
+      "severity": "high",
+      "type": "reviewed",
+      "ecosystem": "pip",
+      "packages": [
+        "nltk"
+      ],
+      "url": "https://github.com/advisories/GHSA-7mxv-7h3q-9324",
+      "publishedAt": "2026-11-16T18:45:51Z"
+    },
+    {
+      "id": "GHSA-jm3w-gw2p-xjfj",
+      "summary": "AIOHTTP: Event loop stall in add_domain() wildcard matching",
+      "severity": "high",
+      "type": "reviewed",
+      "ecosystem": "pip",
+      "packages": [
+        "aiohttp"
+      ],
+      "url": "https://github.com/advisories/GHSA-jm3w-gw2p-xjfj",
+      "publishedAt": "2026-11-16T14:56:35Z"
+    },
+    {
+      "id": "GHSA-5pv8-vvhc-h7jv",
+      "summary": "AIOHTTP: Unbounded cookie storage in client CookieJar",
+      "severity": "medium",
+      "type": "reviewed",
+      "ecosystem": "pip",
+      "packages": [
+        "aiohttp"
+      ],
+      "url": "https://github.com/advisories/GHSA-5pv8-vvhc-h7jv",
+      "publishedAt": "2026-11-16T14:55:06Z"
+    },
+    {
+      "id": "GHSA-xgw8-8ccx-rmqh",
+      "summary": "AIOHTTP: Too many URL-encoded form fields block the event loop",
+      "severity": "high",
+      "type": "reviewed",
+      "ecosystem": "pip",
+      "packages": [
+        "aiohttp"
+      ],
+      "url": "https://github.com/advisories/GHSA-xgw8-8ccx-rmqh",
+      "publishedAt": "2026-11-16T14:54:10Z"
+    },
+    {
+      "id": "GHSA-24c4-3p7v-29cm",
+      "summary": "AIOHTTP: Base64 multipart parts bypass client_max_size",
+      "severity": "high",
+      "type": "reviewed",
+      "ecosystem": "pip",
+      "packages": [
+        "aiohttp"
+      ],
+      "url": "https://github.com/advisories/GHSA-24c4-3p7v-29cm",
+      "publishedAt": "2026-11-16T14:53:12Z"
+    },
+    {
+      "id": "GHSA-3rp8-rxj8-mvjw",
+      "summary": "AIOHTTP: WebSocket max_msg_size bypass via integer overflow",
+      "severity": "high",
+      "type": "reviewed",
+      "ecosystem": "pip",
+      "packages": [
+        "aiohttp"
+      ],
+      "url": "https://github.com/advisories/GHSA-3rp8-rxj8-mvjw",
+      "publishedAt": "2026-11-16T14:52:40Z"
+    },
+    {
+      "id": "GHSA-pw86-h8fm-j323",
+      "summary": "AIOHTTP: Unbounded buffering of data received during an upgrade request",
+      "severity": "high",
+      "type": "reviewed",
+      "ecosystem": "pip",
+      "packages": [
+        "aiohttp"
+      ],
+      "url": "https://github.com/advisories/GHSA-pw86-h8fm-j323",
+      "publishedAt": "2026-11-16T14:52:05Z"
+    },
+    {
+      "id": "GHSA-28qf-cpwq-vmc2",
+      "summary": "AIOHTTP: Pure-Python parser request replay and buffer growth behind a declined upgrade",
+      "severity": "high",
+      "type": "reviewed",
+      "ecosystem": "pip",
+      "packages": [
+        "aiohttp"
+      ],
+      "url": "https://github.com/advisories/GHSA-28qf-cpwq-vmc2",
+      "publishedAt": "2026-11-16T14:51:53Z"
+    },
+    {
+      "id": "GHSA-h4cc-hm5h-fmm9",
+      "summary": "AIOHTTP: Concatenated compressed streams cause excessive CPU use",
+      "severity": "high",
+      "type": "reviewed",
+      "ecosystem": "pip",
+      "packages": [
+        "aiohttp"
+      ],
+      "url": "https://github.com/advisories/GHSA-h4cc-hm5h-fmm9",
+      "publishedAt": "2026-11-16T14:51:27Z"
+    },
+    {
+      "id": "GHSA-5rmc-48h2-hvcm",
+      "summary": "AIOHTTP: WebSocket receive queue limits bypassed by small or compressed messages",
+      "severity": "high",
+      "type": "reviewed",
+      "ecosystem": "pip",
+      "packages": [
+        "aiohttp"
+      ],
+      "url": "https://github.com/advisories/GHSA-5rmc-48h2-hvcm",
+      "publishedAt": "2026-11-16T14:51:01Z"
+    },
+    {
+      "id": "GHSA-xmfg-f9cm-w86q",
+      "summary": "NLTK: Symlink escape in chat80.sql_query bypasses the pathsec data-root sandbox to read out-of-root SQLite databases",
+      "severity": "medium",
+      "type": "reviewed",
+      "ecosystem": "pip",
+      "packages": [
+        "nltk"
+      ],
+      "url": "https://github.com/advisories/GHSA-xmfg-f9cm-w86q",
+      "publishedAt": "2026-11-16T14:47:23Z"
+    },
+    {
+      "id": "GHSA-59f9-gqg8-mqpj",
+      "summary": "NLTK: Path Traversal in save_maxent_params / load_maxent_params Allow Arbitrary File READ/WRITE",
+      "severity": "medium",
+      "type": "reviewed",
+      "ecosystem": "pip",
+      "packages": [
+        "nltk"
+      ],
+      "url": "https://github.com/advisories/GHSA-59f9-gqg8-mqpj",
+      "publishedAt": "2026-11-16T14:46:25Z"
+    },
+    {
+      "id": "GHSA-89p3-fcch-88ph",
+      "summary": "NLTK: Quadratic-time CPU denial of service in CCG lexicon parser (fromstring) on wide bracket bodies and operator chains",
+      "severity": "high",
+      "type": "reviewed",
+      "ecosystem": "pip",
+      "packages": [
+        "nltk"
+      ],
+      "url": "https://github.com/advisories/GHSA-89p3-fcch-88ph",
+      "publishedAt": "2026-11-14T00:08:50Z"
+    },
+    {
+      "id": "GHSA-r53h-rw34-8h97",
+      "summary": "NLTK: Quadratic-time CPU denial of service in Tree.chomsky_normal_form right-factor binarization via list.pop(0)",
+      "severity": "high",
+      "type": "reviewed",
+      "ecosystem": "pip",
+      "packages": [
+        "nltk"
+      ],
+      "url": "https://github.com/advisories/GHSA-r53h-rw34-8h97",
+      "publishedAt": "2026-11-14T00:07:59Z"
+    },
+    {
+      "id": "GHSA-v8f3-6phw-6mh9",
+      "summary": "NLTK: Quadratic-time CPU denial of service in ConllCorpusReader SRL instance builder via nested span rescan",
+      "severity": "high",
+      "type": "reviewed",
+      "ecosystem": "pip",
+      "packages": [
+        "nltk"
+      ],
+      "url": "https://github.com/advisories/GHSA-v8f3-6phw-6mh9",
+      "publishedAt": "2026-11-14T00:05:57Z"
+    },
+    {
+      "id": "GHSA-fg9w-wfp5-j933",
+      "summary": "NLTK: BllipParser passes caller-supplied model paths to the bllipparser C extension with no pathsec check, enabling arbitrary read",
+      "severity": "medium",
+      "type": "reviewed",
+      "ecosystem": "pip",
+      "packages": [
+        "nltk"
+      ],
+      "url": "https://github.com/advisories/GHSA-fg9w-wfp5-j933",
+      "publishedAt": "2026-11-13T23:20:56Z"
+    },
+    {
+      "id": "GHSA-gpwc-27cw-rh9r",
+      "summary": "NLTK: Quadratic CPU exhaustion in LegalitySyllableTokenizer.tokenize via unguarded onset reversal loop",
+      "severity": "medium",
+      "type": "reviewed",
+      "ecosystem": "pip",
+      "packages": [
+        "nltk"
+      ],
+      "url": "https://github.com/advisories/GHSA-gpwc-27cw-rh9r",
+      "publishedAt": "2026-11-13T21:16:34Z"
+    },
+    {
+      "id": "GHSA-ffr9-mgrr-wcvr",
+      "summary": "NLTK: Quadratic CPU exhaustion in TreebankWordTokenizer.span_tokenize via list.pop(0) in quote-restore loop",
+      "severity": "medium",
+      "type": "reviewed",
+      "ecosystem": "pip",
+      "packages": [
+        "nltk"
+      ],
+      "url": "https://github.com/advisories/GHSA-ffr9-mgrr-wcvr",
+      "publishedAt": "2026-11-13T21:08:55Z"
+    },
+    {
+      "id": "GHSA-8fx7-8jr8-84rv",
+      "summary": "NLTK: Unbounded CPU consumption in SteppingRecursiveDescentParser.parse() with ambiguous or self-embedding grammars",
+      "severity": "high",
+      "type": "reviewed",
+      "ecosystem": "pip",
+      "packages": [
+        "nltk"
+      ],
+      "url": "https://github.com/advisories/GHSA-8fx7-8jr8-84rv",
+      "publishedAt": "2026-11-13T21:02:19Z"
+    },
+    {
+      "id": "GHSA-qg35-44qx-7vrr",
+      "summary": "NLTK: Symlink escape in YCOECorpusReader lets a psd/pos directory symlink read files outside the corpus root within the data sandbox",
+      "severity": "high",
+      "type": "reviewed",
+      "ecosystem": "pip",
+      "packages": [
+        "nltk"
+      ],
+      "url": "https://github.com/advisories/GHSA-qg35-44qx-7vrr",
+      "publishedAt": "2026-11-13T20:55:16Z"
+    },
+    {
+      "id": "GHSA-5cjw-f85j-cv6r",
+      "summary": "Tornado: Open redirect via triple-slash redirect paths",
+      "severity": "low",
+      "type": "reviewed",
+      "ecosystem": "pip",
+      "packages": [
+        "tornado"
+      ],
+      "url": "https://github.com/advisories/GHSA-5cjw-f85j-cv6r",
+      "publishedAt": "2026-11-13T20:31:22Z"
+    },
+    {
+      "id": "GHSA-vvf4-9x63-8xvv",
+      "summary": "dnspython has excessive memory and CPU use",
+      "severity": "high",
+      "type": "reviewed",
+      "ecosystem": "pip",
+      "packages": [
+        "dnspython"
+      ],
+      "url": "https://github.com/advisories/GHSA-vvf4-9x63-8xvv",
+      "publishedAt": "2026-11-13T20:19:13Z"
+    },
+    {
+      "id": "GHSA-jv6m-48w5-5rpr",
+      "summary": "envd: Host file disclosure through requirements path traversal and TOCTOU",
+      "severity": "medium",
+      "type": "reviewed",
+      "ecosystem": "pip",
+      "packages": [
+        "envd"
+      ],
+      "url": "https://github.com/advisories/GHSA-jv6m-48w5-5rpr",
+      "publishedAt": "2026-11-13T18:05:15Z"
+    }
+  ],
+  "kit": [
+    {
+      "fullName": "qybaihe/bla",
+      "url": "https://github.com/qybaihe/bla",
+      "description": "🛡️ BLA (bla-agents / Blind LLM Agents) — Open-source Blue Defense MCP server & CLI protecting JS/TS, Electron ASAR, WASM, Python, Native Binaries, SQLite, GGUF/Safetensors & Android DEX against AI reverse-engineering agents (REA).",
+      "stars": 5980,
+      "createdAt": "2026-10-25T05:25:45Z",
+      "topics": [
+        "adversarial-ai",
+        "ai-security",
+        "android-security",
+        "binary-protection",
+        "claude-code",
+        "codex",
+        "cursor",
+        "electron-security",
+        "gguf",
+        "ghidra",
+        "llm-security",
+        "mcp",
+        "mcp-server",
+        "obfuscation",
+        "python-security",
+        "reverse-engineering",
+        "safetensors",
+        "software-protection",
+        "webassembly"
+      ]
+    },
+    {
+      "fullName": "KKKKhazix/agent-autoloop",
+      "url": "https://github.com/KKKKhazix/agent-autoloop",
+      "description": "让你的命令行 Agent 在后台自己接活、自己跟进到底；平时不烦你，遇到拿不准的事才发卡片找你拍板。",
+      "stars": 5725,
+      "createdAt": "2026-11-03T08:02:11Z",
+      "topics": [
+        "ai-agents",
+        "automation",
+        "claude-code",
+        "cli",
+        "codex",
+        "event-driven",
+        "mcp",
+        "nodejs",
+        "self-hosted",
+        "typescript",
+        "workflow"
+      ]
+    },
+    {
+      "fullName": "vercel-labs/ui",
+      "url": "https://github.com/vercel-labs/ui",
+      "description": "A library of behaviors for agents to build the next generation of user interfaces.",
+      "stars": 5373,
+      "createdAt": "2026-10-26T17:39:27Z",
+      "topics": [
+        "accessibility",
+        "agent",
+        "agents",
+        "ai",
+        "aria",
+        "behaviors",
+        "component",
+        "component-library",
+        "headless",
+        "mcp",
+        "react",
+        "solid",
+        "svelte",
+        "vue",
+        "web-components",
+        "webmcp"
+      ]
+    },
+    {
+      "fullName": "DIYgod/pinky",
+      "url": "https://github.com/DIYgod/pinky",
+      "description": "Let AI use your iPhone or Android phone, with you in the loop: any MCP agent from macOS, Windows or Linux, or Pinky itself, right on the phone.",
+      "stars": 2322,
+      "createdAt": "2026-11-06T16:53:14Z",
+      "topics": [
+        "ai-agent",
+        "android",
+        "claude-code",
+        "ios",
+        "iphone",
+        "mcp",
+        "mcp-server",
+        "phone-automation"
+      ]
+    },
+    {
+      "fullName": "hitkeeen/blender-ai-mcp-addon",
+      "url": "https://github.com/hitkeeen/blender-ai-mcp-addon",
+      "description": "AI assistant and MCP server for Blender: visual chat, scene tools, multi-agent workflows. Works with ChatGPT/GPT, Claude, Gemini, Ollama, OpenCode. Blender AI addon, copilot for 3D, bpy Python scripting, MCP integration.",
+      "stars": 2305,
+      "createdAt": "2026-11-12T14:32:15Z",
+      "topics": [
+        "ai-agents",
+        "ai-assistant",
+        "blender",
+        "blender-addon",
+        "blender-ai",
+        "blender-automation",
+        "blender-mcp",
+        "blender-plugin",
+        "blender-scripting",
+        "bpy",
+        "chatgpt",
+        "claude",
+        "gemini",
+        "llm",
+        "mcp",
+        "mcp-for-blender",
+        "mcp-server",
+        "model-context-protocol",
+        "ollama",
+        "opencode"
+      ]
+    },
+    {
+      "fullName": "lexifina/global-law",
+      "url": "https://github.com/lexifina/global-law",
+      "description": "The world's law in git: any provision, any country, any date, and the law that wrote each word.",
+      "stars": 2075,
+      "createdAt": "2026-10-28T13:34:16Z",
+      "topics": [
+        "git",
+        "law",
+        "legal-tech",
+        "legislation",
+        "mcp",
+        "open-data"
+      ]
+    },
+    {
+      "fullName": "FrigadeHQ/yogurt",
+      "url": "https://github.com/FrigadeHQ/yogurt",
+      "description": "Private AI meeting notes that stay on your computer. A free, open-source alternative to Granola for Mac, Windows and Linux.",
+      "stars": 1916,
+      "createdAt": "2026-11-10T20:01:01Z",
+      "topics": [
+        "ai-meeting-assistant",
+        "ai-notetaker",
+        "electron",
+        "granola-alternative",
+        "linux",
+        "llama-cpp",
+        "local-ai",
+        "local-first",
+        "macos",
+        "mcp",
+        "meeting-minutes",
+        "meeting-notes",
+        "offline-first",
+        "open-source",
+        "privacy",
+        "speech-to-text",
+        "transcription",
+        "whisper",
+        "whisper-cpp",
+        "windows"
+      ]
+    },
+    {
+      "fullName": "yjid/kensaku",
+      "url": "https://github.com/yjid/kensaku",
+      "description": "Search inside documents, code, and even screenshots - instantly and locally. A free, open-source file launcher with OCR, semantic search, and MCP agent access.",
+      "stars": 1821,
+      "createdAt": "2026-10-24T21:00:26Z",
+      "topics": [
+        "ai-agents",
+        "desktop",
+        "desktop-search",
+        "file-search",
+        "full-text-search",
+        "launcher",
+        "local-first",
+        "mcp",
+        "ocr",
+        "open-source",
+        "privacy",
+        "rust",
+        "search",
+        "semantic-search",
+        "tauri",
+        "windows"
+      ]
+    },
+    {
+      "fullName": "agentes-chat/agentes-chat",
+      "url": "https://github.com/agentes-chat/agentes-chat",
+      "description": "Open-source, self-hosted Slack alternative where your team and AI agents work together in channels and DMs. Agents run on Claude, ChatGPT/Codex, Gemini or Grok, with MCP tools, their own computer and browser, routines, memory and approvals. Web, desktop and phone apps. Docker Compose + Postgres. AGPL-3.0.",
+      "stars": 1651,
+      "createdAt": "2026-11-09T00:50:28Z",
+      "topics": [
+        "agentic-ai",
+        "ai-agents",
+        "browser-automation",
+        "chat",
+        "claude",
+        "claude-code",
+        "codex",
+        "collaboration",
+        "computer-use",
+        "docker-compose",
+        "gemini",
+        "grok",
+        "human-in-the-loop",
+        "llm",
+        "mcp",
+        "multi-agent",
+        "openai",
+        "self-hosted",
+        "slack-alternative",
+        "team-chat"
+      ]
+    },
+    {
+      "fullName": "JosssphZhou/poki",
+      "url": "https://github.com/JosssphZhou/poki",
+      "description": "Poki uses your iPhone like you do. An open-source agent that sees your screen and taps, types, and swipes across any app on your real device. Runs locally, plugs right into Claude Code and any MCP agent.",
+      "stars": 1536,
+      "createdAt": "2026-11-05T15:04:31Z",
+      "topics": [
+        "ai-agents",
+        "automation",
+        "ios",
+        "iphone",
+        "mcp",
+        "model-context-protocol"
+      ]
+    },
+    {
+      "fullName": "emanuele-em/kanzo",
+      "url": "https://github.com/emanuele-em/kanzo",
+      "description": "Self-hosted, sharable kanban for humans and agents. One 4.7 MB binary, 5 MB of RAM, 10 to 60 tokens per agent reply, starts in 3 ms, zero setup.",
+      "stars": 1222,
+      "createdAt": "2026-10-25T11:14:03Z",
+      "topics": [
+        "ai-agents",
+        "claude-code",
+        "cli",
+        "codex",
+        "coding-agents",
+        "kanban",
+        "local-first",
+        "mcp",
+        "mcp-server",
+        "model-context-protocol",
+        "productivity",
+        "project-management",
+        "raspberry-pi",
+        "rust",
+        "self-hosted",
+        "sqlite",
+        "task-manager"
+      ]
+    },
+    {
+      "fullName": "phone-harness/mcp",
+      "url": "https://github.com/phone-harness/mcp",
+      "description": "Connect AI agents to real iPhones and Androids",
+      "stars": 812,
+      "createdAt": "2026-10-23T06:27:40Z",
+      "topics": [
+        "ai-agents",
+        "android",
+        "iphone",
+        "mcp",
+        "mcp-server",
+        "mobile-automation",
+        "model-context-protocol",
+        "phone-automation"
+      ]
+    },
+    {
+      "fullName": "stubbi/asm",
+      "url": "https://github.com/stubbi/asm",
+      "description": "The package registry and command-line tool for assembly projects.",
+      "stars": 586,
+      "createdAt": "2026-10-31T23:22:41Z",
+      "topics": [
+        "aarch64",
+        "assembly",
+        "cli",
+        "linux",
+        "macos",
+        "mcp-server",
+        "package-manager",
+        "package-registry",
+        "riscv",
+        "x86-64"
+      ]
+    },
+    {
+      "fullName": "credoksopho1984/blender-ai-copilot-studio",
+      "url": "https://github.com/credoksopho1984/blender-ai-copilot-studio",
+      "description": "An AI copilot and MCP server for Blender that turns plain-language briefs into scene operations—inside a visual chat studio with multi-agent teams, your choice of AI models, and 27 built-in scene tools. · blender-ai-copilot-studio · blender ai · ai for blender · blender copilot · blender ai copilot · blender ai assistant · blender mcp server",
+      "stars": 516,
+      "createdAt": "2026-11-12T19:30:32Z",
+      "topics": [
+        "3d-automation",
+        "3d-modeling",
+        "blender",
+        "blender-addon",
+        "blender-agents",
+        "blender-ai",
+        "blender-assistant",
+        "blender-automation",
+        "blender-chatgpt",
+        "blender-copilot",
+        "blender-extension",
+        "blender-llm",
+        "blender-mcp",
+        "blender-plugin",
+        "blender-scripting",
+        "blender3d",
+        "bpy",
+        "mcp",
+        "mcp-server",
+        "model-context-protocol"
+      ]
+    },
+    {
+      "fullName": "racdeufindurch198812/Blender-AI-MCP-Studio",
+      "url": "https://github.com/racdeufindurch198812/Blender-AI-MCP-Studio",
+      "description": "Blender AI MCP Studio is an AI assistant and built-in Model Context Protocol MCP server for Blender that turns plain-language briefs into inspected, approved and reversible 3D scene operations — with a visual chat workspace, multi-agent teams and your choice of AI models. · blender ai mcp studio · mcp-for-blender · mcp for blender pro",
+      "stars": 514,
+      "createdAt": "2026-11-12T19:28:20Z",
+      "topics": [
+        "3d-automation",
+        "3d-modeling",
+        "blender",
+        "blender-addon",
+        "blender-agents",
+        "blender-ai",
+        "blender-assistant",
+        "blender-automation",
+        "blender-chatgpt",
+        "blender-copilot",
+        "blender-extension",
+        "blender-llm",
+        "blender-mcp",
+        "blender-plugin",
+        "blender-scripting",
+        "blender3d",
+        "bpy",
+        "mcp",
+        "mcp-server",
+        "model-context-protocol"
+      ]
+    },
+    {
+      "fullName": "tiobeharxi1987/blender-ai-copilot-flow",
+      "url": "https://github.com/tiobeharxi1987/blender-ai-copilot-flow",
+      "description": "A controlled AI workflow for Blender: every copilot edit is a supervised tool call—proposed, approved, executed in sequence, cancellable after the current step and undoable by name—inside a visual studio with a built-in MCP server. · blender-ai-copilot-flow · blender · blender 3d · blender addon · blender plugin · blender extension",
+      "stars": 514,
+      "createdAt": "2026-11-12T19:38:53Z",
+      "topics": [
+        "3d-automation",
+        "3d-modeling",
+        "blender",
+        "blender-addon",
+        "blender-agents",
+        "blender-ai",
+        "blender-assistant",
+        "blender-automation",
+        "blender-chatgpt",
+        "blender-copilot",
+        "blender-extension",
+        "blender-llm",
+        "blender-mcp",
+        "blender-plugin",
+        "blender-scripting",
+        "blender3d",
+        "bpy",
+        "mcp",
+        "mcp-server",
+        "model-context-protocol"
+      ]
+    },
+    {
+      "fullName": "zovulrira1974/blender-ai-copilot-assets",
+      "url": "https://github.com/zovulrira1974/blender-ai-copilot-assets",
+      "description": "An asset-savvy AI copilot for Blender—search Poly Haven, Sketchfab and Poly Pizza mid-conversation, check what fits, import after your confirmation, with 27 scene tools and a built-in MCP server alongside. · blender-ai-copilot-assets · blender · blender 3d · blender addon · blender plugin · blender extension · blender scripting · blender automation",
+      "stars": 510,
+      "createdAt": "2026-11-12T19:39:54Z",
+      "topics": [
+        "3d-automation",
+        "3d-modeling",
+        "blender",
+        "blender-addon",
+        "blender-agents",
+        "blender-ai",
+        "blender-assistant",
+        "blender-automation",
+        "blender-chatgpt",
+        "blender-copilot",
+        "blender-extension",
+        "blender-llm",
+        "blender-mcp",
+        "blender-plugin",
+        "blender-scripting",
+        "blender3d",
+        "bpy",
+        "mcp",
+        "mcp-server",
+        "model-context-protocol"
+      ]
+    },
+    {
+      "fullName": "JuneYaooo/rea-video",
+      "url": "https://github.com/JuneYaooo/rea-video",
+      "description": "Reverse-engineer any video, shot by shot: filmed, AI-generated or coded, and how to remake it. Breakdowns in the open VIDEO.md format. 逆向一切视频，逐个镜头看是拍的、AI 生成的还是代码做的，再告诉你怎么复刻；拆解结果按 VIDEO.md 格式输出。",
+      "stars": 9874,
+      "createdAt": "2026-10-29T16:15:01Z",
+      "topics": [
+        "agent-skills",
+        "ai-video",
+        "aigc-detection",
+        "claude-code",
+        "codex",
+        "ffmpeg",
+        "prompt-engineering",
+        "remotion",
+        "reverse-engineering",
+        "short-video",
+        "shot-detection",
+        "subtitles",
+        "video-analysis",
+        "video-breakdown",
+        "video-editing",
+        "video-generation",
+        "videomd",
+        "vlm"
+      ]
+    },
+    {
+      "fullName": "simbasjungles/free-my-tv",
+      "url": "https://github.com/simbasjungles/free-my-tv",
+      "description": "A fast, ad-free home screen for Google TV, LG webOS and Samsung Tizen. One button to undo.",
+      "stars": 6464,
+      "createdAt": "2026-10-19T19:29:01Z",
+      "topics": [
+        "android-tv",
+        "claude-code",
+        "google-tv",
+        "home-screen",
+        "launcher",
+        "no-ads",
+        "open-source",
+        "samsung-tizen",
+        "tizen",
+        "tmdb",
+        "webos"
+      ]
+    },
+    {
+      "fullName": "haydenschmitty/floorplan",
+      "url": "https://github.com/haydenschmitty/floorplan",
+      "description": "See how your app actually fits together. An interactive, plain-English map of your codebase, drawn by Claude or Codex.",
+      "stars": 4650,
+      "createdAt": "2026-10-27T12:03:01Z",
+      "topics": [
+        "ai-coding",
+        "architecture-diagram",
+        "claude",
+        "claude-code",
+        "claude-code-plugin",
+        "codebase-visualization",
+        "codex",
+        "codex-plugin",
+        "developer-tools",
+        "onboarding",
+        "openai",
+        "vibe-coding"
+      ]
+    },
+    {
+      "fullName": "DenisSergeevitch/ex-ussr-kinship-research",
+      "url": "https://github.com/DenisSergeevitch/ex-ussr-kinship-research",
+      "description": "Evidence-first genealogy skill for AI agents (Codex, Claude Code): church books, civil, military, deportation and repression records across the former USSR. Replies in your language.",
+      "stars": 2577,
+      "createdAt": "2026-10-25T10:05:56Z",
+      "topics": [
+        "agent-skills",
+        "archives",
+        "claude-code",
+        "codex",
+        "family-history",
+        "familysearch",
+        "genealogy",
+        "ussr"
+      ]
+    },
+    {
+      "fullName": "caru-ini/stack-diagram",
+      "url": "https://github.com/caru-ini/stack-diagram",
+      "description": "Agent skill: describe your stack in a sentence, get an architecture diagram with official logos",
+      "stars": 2555,
+      "createdAt": "2026-11-01T05:35:12Z",
+      "topics": [
+        "agent-skills",
+        "architecture-diagram",
+        "claude-code",
+        "claude-skills",
+        "codex",
+        "diagram",
+        "system-architecture",
+        "tech-stack"
+      ]
+    },
+    {
+      "fullName": "N1nEmAn/sapper-v2",
+      "url": "https://github.com/N1nEmAn/sapper-v2",
+      "description": "The first fruit of the Nüwa tree — an autonomous AI pentest legion (634-team champion, 8h unattended, 1B tokens beat 4.5B). Not just a tool: evolvable by design. Grow your own fruit on the Nüwa Foundation (Create/Language/History).",
+      "stars": 2184,
+      "createdAt": "2026-10-30T15:12:35Z",
+      "topics": [
+        "agentic-workflows",
+        "ai-agents",
+        "ai-security",
+        "autonomous-agents",
+        "claude-code",
+        "ctf",
+        "cybersecurity",
+        "fact-graph",
+        "llm",
+        "multi-agent",
+        "pentest",
+        "swarm-intelligence"
+      ]
+    },
+    {
+      "fullName": "ersinkoc/phonebox",
+      "url": "https://github.com/ersinkoc/phonebox",
+      "description": "Turn an old Android phone into a customizable desk panel and touch control deck for Windows, Linux and macOS. 115 widgets for system stats, AI coding, media and automation. USB or paired Wi-Fi. No cloud required.",
+      "stars": 2072,
+      "createdAt": "2026-11-07T16:45:16Z",
+      "topics": [
+        "android",
+        "claude-code",
+        "codex",
+        "dashboard",
+        "desk-panel",
+        "dotnet",
+        "linux",
+        "macos",
+        "old-phone",
+        "smart-stack",
+        "stream-deck",
+        "system-monitor",
+        "tailscale",
+        "webhooks",
+        "widgets",
+        "windows"
+      ]
+    },
+    {
+      "fullName": "patch-gg/pixelfx",
+      "url": "https://github.com/patch-gg/pixelfx",
+      "description": "244 pixel art effects, every one a small piece of code. Plus a Claude Code skill to make your own.",
+      "stars": 7833,
+      "createdAt": "2026-10-30T06:43:25Z",
+      "topics": [
+        "agent-skills",
+        "animation",
+        "canvas",
+        "claude-code-plugin",
+        "gamedev",
+        "pixel-art",
+        "sprite-sheet",
+        "vfx"
+      ]
+    },
+    {
+      "fullName": "morganlinton/BeautifulRust",
+      "url": "https://github.com/morganlinton/BeautifulRust",
+      "description": "Agent Skills that teach coding agents to write, review, and port idiomatic Rust, plus a tested clippy config. Works with Claude Code, Codex, Copilot, Cursor, and Gemini CLI.",
+      "stars": 1983,
+      "createdAt": "2026-10-23T03:01:11Z",
+      "topics": [
+        "agent-skills",
+        "claude-code",
+        "claude-plugin",
+        "claude-skills",
+        "clippy",
+        "code-review",
+        "coding-agent",
+        "cursor",
+        "rust",
+        "style-guide"
+      ]
+    },
+    {
+      "fullName": "daveebbelaar/bama",
+      "url": "https://github.com/daveebbelaar/bama",
+      "description": "BAMA: Build Any Mac App. Agent skills to research, clone, design, build, optimize, and test native macOS apps with Swift and SwiftUI.",
+      "stars": 1875,
+      "createdAt": "2026-10-24T08:44:36Z",
+      "topics": [
+        "agent-skills",
+        "ai-agents",
+        "app-clone",
+        "claude-code",
+        "claude-code-plugin",
+        "codex",
+        "computer-use",
+        "liquid-glass",
+        "macos",
+        "macos-app",
+        "native-apps",
+        "skills",
+        "swift",
+        "swiftdata",
+        "swiftui"
+      ]
+    },
+    {
+      "fullName": "NiazMorshed2007/reanimate",
+      "url": "https://github.com/NiazMorshed2007/reanimate",
+      "description": "A Claude Code skill that reverse-engineers any animation frame by frame, then proves the copy moves the same.",
+      "stars": 1732,
+      "createdAt": "2026-10-29T06:20:59Z",
+      "topics": [
+        "agent-skills",
+        "animation",
+        "claude-code",
+        "claude-skills",
+        "frontend",
+        "motion",
+        "playwright"
+      ]
+    },
+    {
+      "fullName": "XiaoyeCodes/code-animation-prompts",
+      "url": "https://github.com/XiaoyeCodes/code-animation-prompts",
+      "description": "341 种代码动画风格提示词、196 张参考静帧与离线挑选器，封装为 Claude Code / Codex Skill，支持一键导入与 HTML 视频渲染。",
+      "stars": 1225,
+      "createdAt": "2026-10-29T10:45:47Z",
+      "topics": [
+        "agent-skills",
+        "animation",
+        "claude-code",
+        "codex",
+        "creative-coding",
+        "prompts",
+        "video-generation"
+      ]
+    },
+    {
+      "fullName": "dabingfy-dot/solo-to-team-skills",
+      "url": "https://github.com/dabingfy-dot/solo-to-team-skills",
+      "description": "Human-led MAS toolkit: 16 roles, 6 group templates, four platform bundles, evidence-based review and handoff. 一人成队：一个人统筹多智能体协作。",
+      "stars": 992,
+      "createdAt": "2026-11-07T01:36:28Z",
+      "topics": [
+        "agent-skills",
+        "ai-agents",
+        "collaboration",
+        "human-in-the-loop",
+        "workflow"
+      ]
+    },
+    {
+      "fullName": "EricJujianZou/rederive",
+      "url": "https://github.com/EricJujianZou/rederive",
+      "description": "Learn a codebase by re-deriving its design decisions yourself. A Claude Code skill.",
+      "stars": 988,
+      "createdAt": "2026-10-19T03:05:36Z",
+      "topics": [
+        "agent-skills",
+        "claude-code",
+        "claude-code-plugin",
+        "claude-skills",
+        "learning",
+        "socratic-method",
+        "system-design"
+      ]
+    },
+    {
+      "fullName": "mhfed/vn-law-check",
+      "url": "https://github.com/mhfed/vn-law-check",
+      "description": "Audit pháp lý website theo luật Việt Nam (BVDLCN 91/2025, TMĐT 122/2025, ANM 116/2025, AI 134/2025) cho Claude Code, Cursor, Copilot, Windsurf, Cline",
+      "stars": 506,
+      "createdAt": "2026-11-02T09:22:02Z",
+      "topics": [
+        "agent-md",
+        "agent-skills",
+        "claude-code",
+        "claude-plugin",
+        "claude-skills",
+        "compliance",
+        "copilot-instructions",
+        "cursor-rules",
+        "data-protection",
+        "ecommerce",
+        "legal-tech",
+        "pdpl",
+        "privacy",
+        "skills",
+        "vibe-coding",
+        "vietnam",
+        "vietnam-law"
+      ]
+    },
+    {
+      "fullName": "yucezerey/turkish-anti-ai-skill",
+      "url": "https://github.com/yucezerey/turkish-anti-ai-skill",
+      "description": "Türkçe metinlerdeki yapay zeka izlerini (AI slop, translationese, çeviri kokan cümle mimarisi ve TDK hatalarını) temizleyen Agent Skill ve Humanizer paketi.",
+      "stars": 326,
+      "createdAt": "2026-11-05T20:08:28Z",
+      "topics": [
+        "agent-skills",
+        "ai-skills",
+        "ai-writing",
+        "claude-code",
+        "codex",
+        "cursor-rules",
+        "de-slop",
+        "gemini-cli",
+        "humanizer",
+        "llm",
+        "prompt-engineering",
+        "tdk",
+        "turkish",
+        "turkish-nlp"
+      ]
+    },
+    {
+      "fullName": "harsh-aghara/underhood",
+      "url": "https://github.com/harsh-aghara/underhood",
+      "description": "Don't vibe-skim the code. See how it actually works under the hood and where it can break.",
+      "stars": 15,
+      "createdAt": "2026-10-30T20:54:08Z",
+      "topics": [
+        "agent-skill",
+        "agent-skills",
+        "antigravity-skills",
+        "claude-code-skill",
+        "claude-code-skills",
+        "claude-skills",
+        "codex-skill",
+        "cursor-rules",
+        "cursor-skills",
+        "opencode-skills",
+        "skills",
+        "skills-sh",
+        "windsurf-rules"
+      ]
+    },
+    {
+      "fullName": "rover-001/checkmate",
+      "url": "https://github.com/rover-001/checkmate",
+      "description": "Goal-driven mode for AI coding agents. Reach the user's win condition in the fewest moves.",
+      "stars": 9,
+      "createdAt": "2026-10-24T06:51:27Z",
+      "topics": [
+        "ai-agent",
+        "checkmate",
+        "claude-code",
+        "codex",
+        "coding-agent",
+        "cursor-rules",
+        "developer-tools",
+        "goal-driven",
+        "llm",
+        "opencode",
+        "prompt-engineering"
+      ]
+    },
+    {
+      "fullName": "Hero-all/repo-airgap",
+      "url": "https://github.com/Hero-all/repo-airgap",
+      "description": "帮你查出开源软件“偷偷联网”的地方（上报数据、偷偷下载、弹广告），让它能在断网的内部网络里放心使用。Find where open-source software quietly goes online, so it can run safely offline.",
+      "stars": 8,
+      "createdAt": "2026-11-04T08:42:28Z",
+      "topics": [
+        "agent-skill",
+        "air-gap",
+        "claude-code",
+        "cursor-rules",
+        "devsecops",
+        "offline-first",
+        "privacy-audit",
+        "python-cli",
+        "self-hosted",
+        "telemetry"
+      ]
+    },
+    {
+      "fullName": "digital-lake-ai/lognexus",
+      "url": "https://github.com/digital-lake-ai/lognexus",
+      "description": "Universal Git-powered persistent memory, context rules & native MCP server for AI coding agents. Prevents context amnesia with stateful workflows, Git Notes, and cross-model review gates across Claude, OpenAI, Gemini & DeepSeek in Cursor, Claude Code & VS Code.",
+      "stars": 6,
+      "createdAt": "2026-10-21T14:54:10Z",
+      "topics": [
+        "ai-agents",
+        "ai-coding",
+        "claude",
+        "claude-code",
+        "code-review",
+        "context-management",
+        "cursor",
+        "cursor-rules",
+        "deepseek",
+        "developer-tools",
+        "gemini",
+        "git",
+        "git-notes",
+        "github-workflow",
+        "knowledge-graph",
+        "mcp",
+        "mcp-server",
+        "model-context-protocol",
+        "skills",
+        "traceability"
+      ]
+    },
+    {
+      "fullName": "karefined-eng/information-is-beautiful-skill",
+      "url": "https://github.com/karefined-eng/information-is-beautiful-skill",
+      "description": "Beautiful, honest data visualization as an Agent Skill — five laws, a chart matcher, a 25-point beauty audit. For Claude Code, Codex, Cursor & friends. Fan tribute, MIT.",
+      "stars": 4,
+      "createdAt": "2026-10-24T13:35:21Z",
+      "topics": [
+        "agent-skills",
+        "ai-agents",
+        "claude",
+        "claude-code",
+        "claude-code-plugin",
+        "cursor-rules",
+        "data-visualization",
+        "design-tools",
+        "developer-tools",
+        "iib",
+        "infographics",
+        "information-design",
+        "llm",
+        "prompt-engineering",
+        "skills",
+        "yagni"
+      ]
+    },
+    {
+      "fullName": "PromptScale/saas-agent-blueprints",
+      "url": "https://github.com/PromptScale/saas-agent-blueprints",
+      "description": "Production-vetted .plan.md blueprints, PostgreSQL DDL schemas, CLAUDE.md, and .cursorrules to build self-hosted replacements for Harvest, Calendly, Typeform, Mermaid & Gumroad with Claude Code and Cursor.",
+      "stars": 4,
+      "createdAt": "2026-11-13T19:02:50Z",
+      "topics": [
+        "ai-agents",
+        "claude-code",
+        "cursor",
+        "cursor-rules",
+        "nextjs",
+        "postgresql",
+        "prompt-engineering",
+        "saas",
+        "self-hosted",
+        "windsurf"
+      ]
+    },
+    {
+      "fullName": "Yun-BaiBai/plain-to-meta",
+      "url": "https://github.com/Yun-BaiBai/plain-to-meta",
+      "description": "🔑 元知识与专业词提示词破译器 | Translate colloquial pain points into high-density domain jargon & Meta-Knowledge Keys (Progressive Disclosure, Ablation Study, Monte Carlo, Pyramid Principle) for AI Agents.",
+      "stars": 3,
+      "createdAt": "2026-11-09T07:01:56Z",
+      "topics": [
+        "agent-skills",
+        "claude-code",
+        "cursor-rules",
+        "llm",
+        "meta-knowledge",
+        "prompt-engineering",
+        "vibe-coding"
+      ]
+    },
+    {
+      "fullName": "gethrbr/deckhand",
+      "url": "https://github.com/gethrbr/deckhand",
+      "description": "Free skills for coding agents: audit CLAUDE.md and AGENTS.md against the code, check your diff against them, and turn repeated PR review comments into rules.",
+      "stars": 3,
+      "createdAt": "2026-11-12T07:44:37Z",
+      "topics": [
+        "agent-skills",
+        "agents-md",
+        "claude-code",
+        "claude-code-plugin",
+        "claude-md",
+        "claude-skills",
+        "codex",
+        "cursor-rules"
+      ]
+    }
+  ],
+  "stars": {
+    "anthropics/knowledge-work-plugins": 36335,
+    "DietrichGebert/ponytail": 192380,
+    "cloudflare/security-audit-skill": 74150,
+    "php/php-src": 41789,
+    "Graphify-Labs/graphify": 149182,
+    "luongnv89/claude-howto": 47334,
+    "fastapi/fastapi": 104828,
+    "morluto/rea": 464759,
+    "Meloong-Git/PCL": 9734,
+    "supabase/supabase": 115080,
+    "anthropics/claude-plugins-official": 47507,
+    "ruvnet/ruflo": 81905,
+    "anomalyco/opencode": 227399,
+    "android/skills": 10613,
+    "K-Dense-AI/scientific-agent-skills": 57504,
+    "HKUDS/CLI-Anything": 58880,
+    "cursor/plugins": 16695,
+    "akitaonrails/ai-memory": 16027,
+    "debpalash/VoiceStudio": 112139,
+    "heygen-com/hyperframes": 85412,
+    "NationalSecurityAgency/ghidra": 100383,
+    "stablyai/orca": 127044,
+    "Comfy-Org/ComfyUI": 147245,
+    "NVIDIA/OpenShell": 21704,
+    "mksglu/context-mode": 34198,
+    "Renhuai123/ziwei-doushu": 18514,
+    "OpenBMB/VoxCPM": 42571,
+    "SnailSploit/Claude-Red": 11148,
+    "elie222/rakazo": 8901,
+    "nodejs/node": 123757,
+    "Nutlope/hallmark": 56328,
+    "aws/agent-toolkit-for-aws": 3508,
+    "pbakaus/impeccable": 111577,
+    "pollen-robotics/microduck": 13860,
+    "google-gemini/gemini-cli": 108890,
+    "jbiaojerry/ebook-treasure-chest": 24173,
+    "makecindy/cindy": 10239,
+    "TauricResearch/TradingAgents": 122889,
+    "vllm-project/vllm": 97074,
+    "JetBrains/thinkrail": 8314,
+    "coollabsio/coolify": 66155,
+    "AgriciDaniel/claude-seo": 30144,
+    "multica-ai/andrej-karpathy-skills": 233815,
+    "affaan-m/ECC": 304810,
+    "pingdotgg/t3code": 63174,
+    "NVIDIA/SkillSpector": 26503,
+    "Panniantong/Agent-Reach": 112466,
+    "nightly-labs/openbot": 8363,
+    "alchaincyf/huashu-design": 29679,
+    "gitroomhq/postiz-app": 41766,
+    "wshobson/agents": 42595,
+    "elayadesign/ai-design-skills": 15738,
+    "obra/superpowers": 318814,
+    "togg53192-cmd/jailbreaks": 17820,
+    "HKUDS/DeepTutor": 59876,
+    "macro-inc/macro": 6352,
+    "hmjz100/LinkSwift": 40218,
+    "expo/skills": 4179,
+    "ruvnet/RuView": 104481,
+    "Leonxlnx/taste-skill": 117107,
+    "xiaolai/the-craft-of-selfteaching": 19332,
+    "jakubkrehel/skills": 12277,
+    "thedotmack/claude-mem": 117782,
+    "milind-soni/OpenMausBot": 24368,
+    "CopilotKit/OpenBot": 12640,
+    "Donchitos/Claude-Code-Game-Studios": 39825,
+    "hugohe3/ppt-master": 77664,
+    "mattpocock/skills": 326138,
+    "Orkas-AI/Orkas": 9417,
+    "lightpanda-io/browser": 42158,
+    "bregman-arie/devops-exercises": 86870,
+    "THU-MAIC/OpenMAIC": 43780,
+    "vorssaint/vorssaint-utils": 35012,
+    "shiyu-coder/Kronos": 47915,
+    "AstrBotDevs/AstrBot": 47079,
+    "public-apis/public-apis": 499682,
+    "cjpais/Handy": 39031,
+    "beenuar/AiSOC": 8014,
+    "kornia/kornia": 12392,
+    "anomalyco/hex": 7173,
+    "patchy631/ai-engineering-hub": 41942,
+    "FlashML-org/FreeToken": 17253,
+    "hyprwm/Hyprland": 40679,
+    "ghostty-org/ghostty": 64183,
+    "D4Vinci/Scrapling": 103735,
+    "vercel-labs/agent-desktop": 24728,
+    "JustVugg/colibri": 51623,
+    "max-sixty/worktrunk": 12578,
+    "paperclipai/paperclip": 114412,
+    "spotify/portal-ai-plugins": 3292,
+    "p-e-w/heretic": 40879,
+    "floci-io/floci": 31861,
+    "karpathy/nanochat": 60615,
+    "Usagi-org/ai-goofish-monitor": 20082,
+    "NVIDIA/auto-ontology": 13415,
+    "github/spec-kit": 150164,
+    "harry0703/MoneyPrinterTurbo": 144087,
+    "garrytan/gstack": 141841,
+    "The-PR-Agent/pr-agent": 16307,
+    "JiaFeiMiao-K-Cat/DiscImageStudio": 10184,
+    "FareedKhan-dev/kimi-k3-in-c": 12226,
+    "Thysrael/Horizon": 14516,
+    "MichaelCade/90DaysOfDevOps": 30913,
+    "scenario-labs/skills": 3846,
+    "lz4/lz4": 12789,
+    "ConardLi/garden-skills": 15324,
+    "google/skills": 24374,
+    "calesthio/OpenMontage": 81115,
+    "microsoft/VibeVoice": 57219,
+    "zed-industries/zed": 95190,
+    "rails/rails": 59050,
+    "mpv-player/mpv": 38163,
+    "rust-lang/rust": 122108,
+    "react/react": 252723,
+    "angular/angular": 101454,
+    "prometheus/prometheus": 67665,
+    "symfony/symfony": 31444,
+    "microsoft/vscode": 195516,
+    "nushell/nushell": 41022,
+    "etcd-io/etcd": 52614,
+    "openssl/openssl": 31469,
+    "astral-sh/ruff": 51258,
+    "tailwindlabs/tailwindcss": 98717,
+    "mbillow/localthings": 1383,
+    "ranxianglei/billion-context": 7705,
+    "dsx-ai-factory/nvke": 1234,
+    "anthropics/claude-quickstarts": 21076,
+    "blader/humanizer": 70036,
+    "garrytan/gbrain": 33178,
+    "tokio-rs/topcoat": 7244,
+    "homeassistant-ai/ha-mcp": 7917,
+    "shadcn/improve": 12005,
+    "TheAlgorithms/Java": 67264,
+    "herdrdev/herdr": 51462,
+    "nvm-sh/nvm": 96084,
+    "ashhart/TensorFold": 2291,
+    "pookjw/HermesEnabler": 2136,
+    "Alishahryar1/free-claude-code": 70916,
+    "louislam/uptime-kuma": 94516,
+    "ggml-org/llama.cpp": 135394,
+    "block/buzz": 37540,
+    "Likely7/Veyra-NRVideo": 3113,
+    "tailscale/tailcat": 10024,
+    "JuliusBrussee/caveman": 120826,
+    "lobehub/lobehub": 85671,
+    "martin-olivier/airgorah": 6532,
+    "Tencent/LoopForge": 2508,
+    "ggml-org/ggml": 16094
+  }
+}
