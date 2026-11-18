@@ -1,0 +1,2757 @@
+{
+  "date": "2026-11-18",
+  "collectedAt": "2026-11-18T06:42:47.124Z",
+  "mode": "full",
+  "sources": [
+    {
+      "id": "hn",
+      "ok": true,
+      "count": 29,
+      "error": null,
+      "reduced": false
+    },
+    {
+      "id": "geeknews",
+      "ok": true,
+      "count": 20,
+      "error": null,
+      "reduced": false
+    },
+    {
+      "id": "reddit",
+      "ok": false,
+      "count": 0,
+      "error": "HTTP 404 for https://www.reddit.com/r/ClaudeAI/top/.rss?t=day",
+      "reduced": false
+    },
+    {
+      "id": "arxiv",
+      "ok": false,
+      "count": 0,
+      "error": "HTTP 429 for https://export.arxiv.org/api/query?search_query=cat%3Acs.*%20OR%20cat%3Astat.ML&sortBy=submittedDate&sortOrder=descending&max_results=200",
+      "reduced": false
+    },
+    {
+      "id": "huggingface",
+      "ok": true,
+      "count": 20,
+      "error": null,
+      "reduced": false
+    },
+    {
+      "id": "trending",
+      "ok": true,
+      "count": 29,
+      "error": null,
+      "reduced": false
+    },
+    {
+      "id": "tools",
+      "ok": true,
+      "count": 5,
+      "error": null,
+      "reduced": false
+    },
+    {
+      "id": "advisories",
+      "ok": true,
+      "count": 60,
+      "error": null,
+      "reduced": false
+    },
+    {
+      "id": "kit",
+      "ok": true,
+      "count": 40,
+      "error": null,
+      "reduced": false
+    },
+    {
+      "id": "stars",
+      "ok": true,
+      "count": 151,
+      "error": null,
+      "reduced": false
+    }
+  ],
+  "hn": [
+    {
+      "id": 50538240,
+      "title": "Java4Shell: RCE in OpenJDK when processing Base64",
+      "url": "https://calif.io/java4shell/",
+      "domain": "calif.io",
+      "points": 759,
+      "comments": 201,
+      "hnUrl": "https://news.ycombinator.com/item?id=50538240"
+    },
+    {
+      "id": 50540437,
+      "title": "ID.me terms required for IRS sign-in",
+      "url": "https://consumerrights.wiki/w/ID.me_terms_required_for_IRS_sign-in",
+      "domain": "consumerrights.wiki",
+      "points": 286,
+      "comments": 121,
+      "hnUrl": "https://news.ycombinator.com/item?id=50540437"
+    },
+    {
+      "id": 50535230,
+      "title": "GPT‑6.2 Astra and Sol",
+      "url": "https://openai.com/index/introducing-gpt-6-2-astra-sol/",
+      "domain": "openai.com",
+      "points": 1205,
+      "comments": 754,
+      "hnUrl": "https://news.ycombinator.com/item?id=50535230"
+    },
+    {
+      "id": 50540178,
+      "title": "Google's AI answers reducing search traffic by 40%",
+      "url": "https://revscope.co/blog/search-seo-geo-2026/",
+      "domain": "revscope.co",
+      "points": 282,
+      "comments": 211,
+      "hnUrl": "https://news.ycombinator.com/item?id=50540178"
+    },
+    {
+      "id": 50538994,
+      "title": "Quad9's withdrawal from France: A canary in the coal mine",
+      "url": "https://blog.cloudflare.com/quad9-withdrawal-from-france/",
+      "domain": "blog.cloudflare.com",
+      "points": 452,
+      "comments": 142,
+      "hnUrl": "https://news.ycombinator.com/item?id=50538994"
+    },
+    {
+      "id": 50542135,
+      "title": "Interviewed at a YC startup, found out they used my LinkedIn without permission",
+      "url": "https://reddit.com/r/recruitinghell/comments/1xyr6ml/interviewed_at_a_yc_startup_spent_30_hours/",
+      "domain": "reddit.com",
+      "points": 160,
+      "comments": 16,
+      "hnUrl": "https://news.ycombinator.com/item?id=50542135"
+    },
+    {
+      "id": 50534631,
+      "title": "Nvidia stopped disclosing Singapore sales as revenues hit $104B",
+      "url": "https://www.ft.com/content/dbde7a30-548c-4f9d-a4be-7898a0c24dcf",
+      "domain": "ft.com",
+      "points": 484,
+      "comments": 222,
+      "hnUrl": "https://news.ycombinator.com/item?id=50534631"
+    },
+    {
+      "id": 50539610,
+      "title": "Microsoft's ONNX Runtime has disappeared from GitHub",
+      "url": "https://github.com/microsoft/onnxruntime",
+      "domain": "github.com",
+      "points": 250,
+      "comments": 59,
+      "hnUrl": "https://news.ycombinator.com/item?id=50539610"
+    },
+    {
+      "id": 50541790,
+      "title": "Why is Gemini 4 Carbon taking so long?",
+      "url": "https://kernel.dev/blog/why-is-gemini-4-carbon-taking-so-long/",
+      "domain": "kernel.dev",
+      "points": 36,
+      "comments": 18,
+      "hnUrl": "https://news.ycombinator.com/item?id=50541790"
+    },
+    {
+      "id": 50539747,
+      "title": "Archive Team is archiving the Apple Support Community (closes November 20, 2026)",
+      "url": "https://wiki.archiveteam.org/index.php/Apple_Discussions",
+      "domain": "wiki.archiveteam.org",
+      "points": 157,
+      "comments": 53,
+      "hnUrl": "https://news.ycombinator.com/item?id=50539747"
+    },
+    {
+      "id": 50532849,
+      "title": "Highly classified US national security communications network goes down",
+      "url": "https://www.cnn.com/2026/11/17/politics/highly-classified-national-security-communications-network-goes-down",
+      "domain": "cnn.com",
+      "points": 544,
+      "comments": 629,
+      "hnUrl": "https://news.ycombinator.com/item?id=50532849"
+    },
+    {
+      "id": 50542264,
+      "title": "Why Fibonacci?",
+      "url": "https://www.evilgeniuslabs.org/why-fibonacci",
+      "domain": "evilgeniuslabs.org",
+      "points": 10,
+      "comments": 1,
+      "hnUrl": "https://news.ycombinator.com/item?id=50542264"
+    },
+    {
+      "id": 50537156,
+      "title": "jQuery 4.1.0",
+      "url": "https://github.com/jquery/jquery/releases/tag/4.1.0",
+      "domain": "github.com",
+      "points": 300,
+      "comments": 159,
+      "hnUrl": "https://news.ycombinator.com/item?id=50537156"
+    },
+    {
+      "id": 50535885,
+      "title": "MAI Code 2 and Code 2 Flash",
+      "url": "https://microsoft.ai/news/introducing-mai-code-2-and-mai-code-2-flash/",
+      "domain": "microsoft.ai",
+      "points": 330,
+      "comments": 147,
+      "hnUrl": "https://news.ycombinator.com/item?id=50535885"
+    },
+    {
+      "id": 50536813,
+      "title": "350 years ago, Ole Rømer discovered that light has a finite speed",
+      "url": "https://www.sciencenorway.no/culture-history-history-of-science/350-years-ago-this-man-discovered-that-light-has-a-finite-speed/2737969",
+      "domain": "sciencenorway.no",
+      "points": 305,
+      "comments": 89,
+      "hnUrl": "https://news.ycombinator.com/item?id=50536813"
+    },
+    {
+      "id": 50535992,
+      "title": "Phrack 73 Released",
+      "url": "https://phrack.org/issues/73/introduction_md",
+      "domain": "phrack.org",
+      "points": 349,
+      "comments": 50,
+      "hnUrl": "https://news.ycombinator.com/item?id=50535992"
+    },
+    {
+      "id": 50538303,
+      "title": "Harvard researchers find AI coding agents shifted the bottleneck to code review",
+      "url": "https://complexdiscovery.com/harvard-researchers-find-ai-coding-agents-shifted-the-bottleneck-to-code-review/",
+      "domain": "complexdiscovery.com",
+      "points": 143,
+      "comments": 188,
+      "hnUrl": "https://news.ycombinator.com/item?id=50538303"
+    },
+    {
+      "id": 50541619,
+      "title": "Claude was trained on protein sequences at scale",
+      "url": "http://xinmingtu.cn/blog/2026/claude-opus-5-5-protein-sequences/",
+      "domain": "xinmingtu.cn",
+      "points": 16,
+      "comments": 1,
+      "hnUrl": "https://news.ycombinator.com/item?id=50541619"
+    },
+    {
+      "id": 50540472,
+      "title": "Cerebras Disaggregated Inference",
+      "url": "https://www.cerebras.ai/blog/cerebras-launches-disaggregated-inference",
+      "domain": "cerebras.ai",
+      "points": 63,
+      "comments": 15,
+      "hnUrl": "https://news.ycombinator.com/item?id=50540472"
+    },
+    {
+      "id": 50517410,
+      "title": "Show HN: Unref – A Python dead code finder built on Ruff's parser",
+      "url": "https://github.com/Apakottur/unref",
+      "domain": "github.com",
+      "points": 4,
+      "comments": 0,
+      "hnUrl": "https://news.ycombinator.com/item?id=50517410"
+    },
+    {
+      "id": 50541550,
+      "title": "H-1B Executive Actions in 2026 [pdf]",
+      "url": "https://www.everycrsreport.com/files/2026-10-14_IN12747_fcb1389788aa7b9102b795882af042e85d20532c.pdf",
+      "domain": "everycrsreport.com",
+      "points": 25,
+      "comments": 27,
+      "hnUrl": "https://news.ycombinator.com/item?id=50541550"
+    },
+    {
+      "id": 50503492,
+      "title": "Fun with Constrained Programming",
+      "url": "https://blog.cmpxchg8b.com/2012/09/fun-with-constrained-programming.html",
+      "domain": "blog.cmpxchg8b.com",
+      "points": 51,
+      "comments": 1,
+      "hnUrl": "https://news.ycombinator.com/item?id=50503492"
+    },
+    {
+      "id": 50536387,
+      "title": "Solid 2.0",
+      "url": "https://www.solidjs.com/blog/solid-2-0-the-long-hold/",
+      "domain": "solidjs.com",
+      "points": 279,
+      "comments": 80,
+      "hnUrl": "https://news.ycombinator.com/item?id=50536387"
+    },
+    {
+      "id": 50532191,
+      "title": "What is the best harness for each model?",
+      "url": "https://runta.com/blog/introducing-frontierharness-eval-v1-1/",
+      "domain": "runta.com",
+      "points": 358,
+      "comments": 125,
+      "hnUrl": "https://news.ycombinator.com/item?id=50532191"
+    },
+    {
+      "id": 50538184,
+      "title": "Tencent Hy4 Flash",
+      "url": "https://hy.tencent.ai/research/hy4-flash",
+      "domain": "hy.tencent.ai",
+      "points": 100,
+      "comments": 14,
+      "hnUrl": "https://news.ycombinator.com/item?id=50538184"
+    },
+    {
+      "id": 50541897,
+      "title": "Hex: Voice Dictation",
+      "url": "https://anoma.ly/hex/",
+      "domain": "anoma.ly",
+      "points": 11,
+      "comments": 2,
+      "hnUrl": "https://news.ycombinator.com/item?id=50541897"
+    },
+    {
+      "id": 50536468,
+      "title": "Launch HN: StarSling (YC P25) – Self-improving CI for agent-volume repos",
+      "url": "https://starsling.dev",
+      "domain": "starsling.dev",
+      "points": 64,
+      "comments": 37,
+      "hnUrl": "https://news.ycombinator.com/item?id=50536468"
+    },
+    {
+      "id": 50537290,
+      "title": "Web Browser Engineering (2021)",
+      "url": "https://browser.engineering/",
+      "domain": "browser.engineering",
+      "points": 152,
+      "comments": 20,
+      "hnUrl": "https://news.ycombinator.com/item?id=50537290"
+    },
+    {
+      "id": 50535238,
+      "title": "Apple Services Down",
+      "url": "https://developer.apple.com/system-status/",
+      "domain": "developer.apple.com",
+      "points": 676,
+      "comments": 377,
+      "hnUrl": "https://news.ycombinator.com/item?id=50535238"
+    }
+  ],
+  "trending": [
+    {
+      "fullName": "elementalsouls/Claude-BugHunter",
+      "url": "https://github.com/elementalsouls/Claude-BugHunter",
+      "description": "A Claude Code skill bundle for bug hunting and external red-team work - 82 skills, 15 slash commands, 681 disclosed-report patterns curated across 24 core vulnerability classes, plus enterprise identity + infrastructure attack matrices.",
+      "language": "Python",
+      "stars": 9818,
+      "starsInPeriod": 1005,
+      "period": "daily"
+    },
+    {
+      "fullName": "mvanhorn/last30days-skill",
+      "url": "https://github.com/mvanhorn/last30days-skill",
+      "description": "AI agent skill that researches any topic across Reddit, X, YouTube, HN, Polymarket, and the web - then synthesizes a grounded summary",
+      "language": "Python",
+      "stars": 69354,
+      "starsInPeriod": 696,
+      "period": "daily"
+    },
+    {
+      "fullName": "alibaba/open-code-review",
+      "url": "https://github.com/alibaba/open-code-review",
+      "description": "Secure, fast, efficient, battle-tested at Alibaba's scale. Hybrid architecture code review tool: deterministic pipelines + LLM Agent, precise line-level comments, built-in multi-language ruleset (NPE, thread-safety, XSS, SQL injection), OpenAI & Anthropic compatible.",
+      "language": "Go",
+      "stars": 53929,
+      "starsInPeriod": 763,
+      "period": "daily"
+    },
+    {
+      "fullName": "Tencent/LoopForge",
+      "url": "https://github.com/Tencent/LoopForge",
+      "description": "Self-hosted workflows for coding-agent delivery. Orchestrate CodeBuddy, Codex and Claude Code with scripts and human approval gates. Includes Local workflows for coding assistants.",
+      "language": "Go",
+      "stars": 3498,
+      "starsInPeriod": 591,
+      "period": "daily"
+    },
+    {
+      "fullName": "dream-num/univer",
+      "url": "https://github.com/dream-num/univer",
+      "description": "Build your own AI office with Univer Office SDK. Bring editing, calculation, collaboration, and file processing into your product for people and AI agents. Built on an extensible open-source core.",
+      "language": "TypeScript",
+      "stars": 29388,
+      "starsInPeriod": 1774,
+      "period": "daily"
+    },
+    {
+      "fullName": "getarcaneapp/arcane",
+      "url": "https://github.com/getarcaneapp/arcane",
+      "description": "Modern Docker Management, Designed for Everyone",
+      "language": "Go",
+      "stars": 9463,
+      "starsInPeriod": 618,
+      "period": "daily"
+    },
+    {
+      "fullName": "google-labs-code/stitch-skills",
+      "url": "https://github.com/google-labs-code/stitch-skills",
+      "description": "A library of Agent Skills designed to work with the Stitch MCP server. Each skill follows the Agent Skills open standard, for compatibility with coding agents such as Antigravity, Gemini CLI, Claude Code, Cursor.",
+      "language": "TypeScript",
+      "stars": 10198,
+      "starsInPeriod": 350,
+      "period": "daily"
+    },
+    {
+      "fullName": "cursor/plugins",
+      "url": "https://github.com/cursor/plugins",
+      "description": "Cursor plugin specification and official plugins",
+      "language": "TypeScript",
+      "stars": 16980,
+      "starsInPeriod": 201,
+      "period": "daily"
+    },
+    {
+      "fullName": "obra/superpowers",
+      "url": "https://github.com/obra/superpowers",
+      "description": "An agentic skills framework & software development methodology that works.",
+      "language": "Shell",
+      "stars": 319533,
+      "starsInPeriod": 1917,
+      "period": "daily"
+    },
+    {
+      "fullName": "ag-ui-protocol/ag-ui",
+      "url": "https://github.com/ag-ui-protocol/ag-ui",
+      "description": "AG-UI: the Agent-User Interaction Protocol. Bring Agents into Frontend Applications.",
+      "language": "TypeScript",
+      "stars": 20148,
+      "starsInPeriod": 1445,
+      "period": "daily"
+    },
+    {
+      "fullName": "backnotprop/plannotator",
+      "url": "https://github.com/backnotprop/plannotator",
+      "description": "The workspace to stay in the loop and on top of agents - shape, decide, plan, annotate, review code, share with team, and send all feedback to agents with one click.",
+      "language": "TypeScript",
+      "stars": 13172,
+      "starsInPeriod": 691,
+      "period": "daily"
+    },
+    {
+      "fullName": "sveltejs/svelte",
+      "url": "https://github.com/sveltejs/svelte",
+      "description": "web development for the rest of us",
+      "language": "JavaScript",
+      "stars": 89661,
+      "starsInPeriod": 477,
+      "period": "daily"
+    },
+    {
+      "fullName": "affaan-m/ECC",
+      "url": "https://github.com/affaan-m/ECC",
+      "description": "The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond.",
+      "language": "JavaScript",
+      "stars": 305793,
+      "starsInPeriod": 883,
+      "period": "daily"
+    },
+    {
+      "fullName": "jingyaogong/minimind",
+      "url": "https://github.com/jingyaogong/minimind",
+      "description": "🧠 Train a 64M-parameter LLM from scratch in just 2h!",
+      "language": "Python",
+      "stars": 66222,
+      "starsInPeriod": 192,
+      "period": "daily"
+    },
+    {
+      "fullName": "google-research/paper-orchestra",
+      "url": "https://github.com/google-research/paper-orchestra",
+      "description": "PaperOrchestra is a multi-agent framework for automated AI research paper writing.",
+      "language": "Python",
+      "stars": 3367,
+      "starsInPeriod": 1072,
+      "period": "daily"
+    },
+    {
+      "fullName": "GoogleChrome/modern-web-guidance-src",
+      "url": "https://github.com/GoogleChrome/modern-web-guidance-src",
+      "description": "Keep your coding agent up to date with the latest web best practices",
+      "language": "TypeScript",
+      "stars": 8548,
+      "starsInPeriod": 7015,
+      "period": "weekly"
+    },
+    {
+      "fullName": "backnotprop/plannotator",
+      "url": "https://github.com/backnotprop/plannotator",
+      "description": "The workspace to stay in the loop and on top of agents - shape, decide, plan, annotate, review code, share with team, and send all feedback to agents with one click.",
+      "language": "TypeScript",
+      "stars": 13173,
+      "starsInPeriod": 2926,
+      "period": "weekly"
+    },
+    {
+      "fullName": "meta/astryx",
+      "url": "https://github.com/meta/astryx",
+      "description": "An open source design system that's fully customizable and agent ready",
+      "language": "TypeScript",
+      "stars": 30286,
+      "starsInPeriod": 8700,
+      "period": "weekly"
+    },
+    {
+      "fullName": "we-promise/sure",
+      "url": "https://github.com/we-promise/sure",
+      "description": "The personal finance app for everyone (by everyone)",
+      "language": "Ruby",
+      "stars": 16321,
+      "starsInPeriod": 4786,
+      "period": "weekly"
+    },
+    {
+      "fullName": "ZhuLinsen/daily_stock_analysis",
+      "url": "https://github.com/ZhuLinsen/daily_stock_analysis",
+      "description": "LLM 驱动的多市场股票智能分析系统：多源行情、实时新闻、决策看板与自动推送，支持零成本定时运行。 LLM-powered multi-market stock analysis system with multi-source market data, real-time news, decision dashboard, automated notifications, and cost-free scheduled runs.",
+      "language": "Python",
+      "stars": 73165,
+      "starsInPeriod": 3653,
+      "period": "weekly"
+    },
+    {
+      "fullName": "anthropics/skills",
+      "url": "https://github.com/anthropics/skills",
+      "description": "Public repository for Agent Skills",
+      "language": "Python",
+      "stars": 196875,
+      "starsInPeriod": 4847,
+      "period": "weekly"
+    },
+    {
+      "fullName": "elementalsouls/Claude-BugHunter",
+      "url": "https://github.com/elementalsouls/Claude-BugHunter",
+      "description": "A Claude Code skill bundle for bug hunting and external red-team work - 82 skills, 15 slash commands, 681 disclosed-report patterns curated across 24 core vulnerability classes, plus enterprise identity + infrastructure attack matrices.",
+      "language": "Python",
+      "stars": 9818,
+      "starsInPeriod": 2508,
+      "period": "weekly"
+    },
+    {
+      "fullName": "alibaba/open-code-review",
+      "url": "https://github.com/alibaba/open-code-review",
+      "description": "Secure, fast, efficient, battle-tested at Alibaba's scale. Hybrid architecture code review tool: deterministic pipelines + LLM Agent, precise line-level comments, built-in multi-language ruleset (NPE, thread-safety, XSS, SQL injection), OpenAI & Anthropic compatible.",
+      "language": "Go",
+      "stars": 53930,
+      "starsInPeriod": 3675,
+      "period": "weekly"
+    },
+    {
+      "fullName": "vercel-labs/agent-browser",
+      "url": "https://github.com/vercel-labs/agent-browser",
+      "description": "Browser automation CLI for AI agents",
+      "language": "Rust",
+      "stars": 52453,
+      "starsInPeriod": 3429,
+      "period": "weekly"
+    },
+    {
+      "fullName": "ChromeDevTools/chrome-devtools-mcp",
+      "url": "https://github.com/ChromeDevTools/chrome-devtools-mcp",
+      "description": "Chrome DevTools for coding agents",
+      "language": "TypeScript",
+      "stars": 58103,
+      "starsInPeriod": 2948,
+      "period": "weekly"
+    },
+    {
+      "fullName": "tradermonty/claude-trading-skills",
+      "url": "https://github.com/tradermonty/claude-trading-skills",
+      "description": "Claude Code skills for equity investors and traders — market analysis, technical charting, economic calendars, screeners, and trading strategy development.",
+      "language": "Python",
+      "stars": 6932,
+      "starsInPeriod": 2985,
+      "period": "weekly"
+    },
+    {
+      "fullName": "google-labs-code/stitch-skills",
+      "url": "https://github.com/google-labs-code/stitch-skills",
+      "description": "A library of Agent Skills designed to work with the Stitch MCP server. Each skill follows the Agent Skills open standard, for compatibility with coding agents such as Antigravity, Gemini CLI, Claude Code, Cursor.",
+      "language": "TypeScript",
+      "stars": 10198,
+      "starsInPeriod": 1197,
+      "period": "weekly"
+    },
+    {
+      "fullName": "openai/codex-security",
+      "url": "https://github.com/openai/codex-security",
+      "description": "OpenAI's Codex Security CLI and TypeScript SDK for finding, validating, and fixing security vulnerabilities. npm: https://www.npmjs.com/package/@openai/codex-security",
+      "language": "TypeScript",
+      "stars": 14007,
+      "starsInPeriod": 2531,
+      "period": "weekly"
+    },
+    {
+      "fullName": "addyosmani/agent-skills",
+      "url": "https://github.com/addyosmani/agent-skills",
+      "description": "Production-grade engineering skills for AI coding agents.",
+      "language": "JavaScript",
+      "stars": 118728,
+      "starsInPeriod": 3884,
+      "period": "weekly"
+    }
+  ],
+  "arxiv": [],
+  "geeknews": [
+    {
+      "id": "https://news.hada.io/topic?id=37398",
+      "source": "geeknews",
+      "title": "Show GN: 고객이 직접 문자를 보내는(MO) 방식의 휴대폰 번호 인증 API (웹 SDK 출시)",
+      "url": "https://news.hada.io/topic?id=37398&utm_source=geeknews&utm_medium=rss&utm_campaign=news",
+      "domain": "news.hada.io",
+      "sub": null,
+      "publishedAt": "2026-11-18T15:02:33+09:00"
+    },
+    {
+      "id": "https://news.hada.io/topic?id=37396",
+      "source": "geeknews",
+      "title": "Show GN: Disposable - AI로 만든 작은 도구를 나누고 각자 에이전트로 다시 만드는 곳",
+      "url": "https://news.hada.io/topic?id=37396&utm_source=geeknews&utm_medium=rss&utm_campaign=news",
+      "domain": "news.hada.io",
+      "sub": null,
+      "publishedAt": "2026-11-18T14:46:26+09:00"
+    },
+    {
+      "id": "https://news.hada.io/topic?id=37395",
+      "source": "geeknews",
+      "title": "USN-9131-1: CRaC JDK 25 vulnerabilities",
+      "url": "https://news.hada.io/topic?id=37395&utm_source=geeknews&utm_medium=rss&utm_campaign=news",
+      "domain": "news.hada.io",
+      "sub": null,
+      "publishedAt": "2026-11-18T14:43:01+09:00"
+    },
+    {
+      "id": "https://news.hada.io/topic?id=37394",
+      "source": "geeknews",
+      "title": "FOSS for All Conference 2026: 커뮤니티 주도 국내 오픈소스 컨퍼런스",
+      "url": "https://news.hada.io/topic?id=37394&utm_source=geeknews&utm_medium=rss&utm_campaign=news",
+      "domain": "news.hada.io",
+      "sub": null,
+      "publishedAt": "2026-11-18T14:12:46+09:00"
+    },
+    {
+      "id": "https://news.hada.io/topic?id=37393",
+      "source": "geeknews",
+      "title": "GitHub 저장소 페이지 리디자인 제안 (2019)",
+      "url": "https://news.hada.io/topic?id=37393&utm_source=geeknews&utm_medium=rss&utm_campaign=news",
+      "domain": "news.hada.io",
+      "sub": null,
+      "publishedAt": "2026-11-18T14:02:27+09:00"
+    },
+    {
+      "id": "https://news.hada.io/topic?id=37392",
+      "source": "geeknews",
+      "title": "Google의 AI 답변, 검색 유입을 40% 줄임",
+      "url": "https://news.hada.io/topic?id=37392&utm_source=geeknews&utm_medium=rss&utm_campaign=news",
+      "domain": "news.hada.io",
+      "sub": null,
+      "publishedAt": "2026-11-18T13:41:59+09:00"
+    },
+    {
+      "id": "https://news.hada.io/topic?id=37391",
+      "source": "geeknews",
+      "title": "IRS 로그인에 요구되는 ID.me 약관 동의",
+      "url": "https://news.hada.io/topic?id=37391&utm_source=geeknews&utm_medium=rss&utm_campaign=news",
+      "domain": "news.hada.io",
+      "sub": null,
+      "publishedAt": "2026-11-18T13:38:59+09:00"
+    },
+    {
+      "id": "https://news.hada.io/topic?id=37390",
+      "source": "geeknews",
+      "title": "GitHub에서 사라진 마이크로소프트의 ONNX Runtime",
+      "url": "https://news.hada.io/topic?id=37390&utm_source=geeknews&utm_medium=rss&utm_campaign=news",
+      "domain": "news.hada.io",
+      "sub": null,
+      "publishedAt": "2026-11-18T12:30:59+09:00"
+    },
+    {
+      "id": "https://news.hada.io/topic?id=37388",
+      "source": "geeknews",
+      "title": "이스라엘 대 Wikipedia",
+      "url": "https://news.hada.io/topic?id=37388&utm_source=geeknews&utm_medium=rss&utm_campaign=news",
+      "domain": "news.hada.io",
+      "sub": null,
+      "publishedAt": "2026-11-18T11:32:23+09:00"
+    },
+    {
+      "id": "https://news.hada.io/topic?id=37385",
+      "source": "geeknews",
+      "title": "Show HN: Alloy CSS, JavaScript를 꺼도 작동하는 대화상자, 메뉴, 탭",
+      "url": "https://news.hada.io/topic?id=37385&utm_source=geeknews&utm_medium=rss&utm_campaign=news",
+      "domain": "news.hada.io",
+      "sub": null,
+      "publishedAt": "2026-11-18T10:32:22+09:00"
+    },
+    {
+      "id": "https://news.hada.io/topic?id=37384",
+      "source": "geeknews",
+      "title": "Show GN: Lightcap - 가볍고 빠른 맥용 화면 녹화/스크린샷 앱",
+      "url": "https://news.hada.io/topic?id=37384&utm_source=geeknews&utm_medium=rss&utm_campaign=news",
+      "domain": "news.hada.io",
+      "sub": null,
+      "publishedAt": "2026-11-18T10:31:57+09:00"
+    },
+    {
+      "id": "https://news.hada.io/topic?id=37383",
+      "source": "geeknews",
+      "title": "Show GN: 깎깎 - 칼로 연필을 깎고 그 끝으로 그려 보는 3D iOS 게임",
+      "url": "https://news.hada.io/topic?id=37383&utm_source=geeknews&utm_medium=rss&utm_campaign=news",
+      "domain": "news.hada.io",
+      "sub": null,
+      "publishedAt": "2026-11-18T09:59:30+09:00"
+    },
+    {
+      "id": "https://news.hada.io/topic?id=37382",
+      "source": "geeknews",
+      "title": "“X는 죽었다”는 말은 죽었다",
+      "url": "https://news.hada.io/topic?id=37382&utm_source=geeknews&utm_medium=rss&utm_campaign=news",
+      "domain": "news.hada.io",
+      "sub": null,
+      "publishedAt": "2026-11-18T09:40:02+09:00"
+    },
+    {
+      "id": "https://news.hada.io/topic?id=37381",
+      "source": "geeknews",
+      "title": "Quad9의 프랑스 철수: 탄광 속 카나리아가 보내는 경고",
+      "url": "https://news.hada.io/topic?id=37381&utm_source=geeknews&utm_medium=rss&utm_campaign=news",
+      "domain": "news.hada.io",
+      "sub": null,
+      "publishedAt": "2026-11-18T09:33:22+09:00"
+    },
+    {
+      "id": "https://news.hada.io/topic?id=37380",
+      "source": "geeknews",
+      "title": "SaaS에서 바이럴 루프 구현하고 측정하기",
+      "url": "https://news.hada.io/topic?id=37380&utm_source=geeknews&utm_medium=rss&utm_campaign=news",
+      "domain": "news.hada.io",
+      "sub": null,
+      "publishedAt": "2026-11-18T09:31:01+09:00"
+    },
+    {
+      "id": "https://news.hada.io/topic?id=37379",
+      "source": "geeknews",
+      "title": "chrome-capture - Chrome 탭의 화면과 소리를 최대 4K 120fps로 녹화하는 도구",
+      "url": "https://news.hada.io/topic?id=37379&utm_source=geeknews&utm_medium=rss&utm_campaign=news",
+      "domain": "news.hada.io",
+      "sub": null,
+      "publishedAt": "2026-11-18T09:30:02+09:00"
+    },
+    {
+      "id": "https://news.hada.io/topic?id=37378",
+      "source": "geeknews",
+      "title": "B2B 요금 모델: 사용자 수 기반 과금을 대체하는 3가지 방식",
+      "url": "https://news.hada.io/topic?id=37378&utm_source=geeknews&utm_medium=rss&utm_campaign=news",
+      "domain": "news.hada.io",
+      "sub": null,
+      "publishedAt": "2026-11-18T09:20:02+09:00"
+    },
+    {
+      "id": "https://news.hada.io/topic?id=37377",
+      "source": "geeknews",
+      "title": "실제로 등장한 curl의 Rust 재작성 프로젝트들",
+      "url": "https://news.hada.io/topic?id=37377&utm_source=geeknews&utm_medium=rss&utm_campaign=news",
+      "domain": "news.hada.io",
+      "sub": null,
+      "publishedAt": "2026-11-18T09:02:29+09:00"
+    },
+    {
+      "id": "https://news.hada.io/topic?id=37376",
+      "source": "geeknews",
+      "title": "Solid 2.0 - 비동기를 반응형 그래프에 통합한 안정 버전 출시",
+      "url": "https://news.hada.io/topic?id=37376&utm_source=geeknews&utm_medium=rss&utm_campaign=news",
+      "domain": "news.hada.io",
+      "sub": null,
+      "publishedAt": "2026-11-18T08:38:42+09:00"
+    },
+    {
+      "id": "https://news.hada.io/topic?id=37375",
+      "source": "geeknews",
+      "title": "350년 전, Ole Rømer는 빛의 속도가 유한하다는 사실을 발견했다",
+      "url": "https://news.hada.io/topic?id=37375&utm_source=geeknews&utm_medium=rss&utm_campaign=news",
+      "domain": "news.hada.io",
+      "sub": null,
+      "publishedAt": "2026-11-18T08:35:42+09:00"
+    }
+  ],
+  "reddit": [],
+  "hfModels": [
+    {
+      "id": "MiniMaxAI/MiniMax-H3-Image",
+      "url": "https://huggingface.co/MiniMaxAI/MiniMax-H3-Image",
+      "likes": 1513,
+      "downloads": 727110,
+      "pipeline": "text-to-image"
+    },
+    {
+      "id": "Qwen/Qwen3.8-27B",
+      "url": "https://huggingface.co/Qwen/Qwen3.8-27B",
+      "likes": 20465,
+      "downloads": 6942530,
+      "pipeline": "image-text-to-text"
+    },
+    {
+      "id": "higurashi-ai/Haru-4B",
+      "url": "https://huggingface.co/higurashi-ai/Haru-4B",
+      "likes": 534,
+      "downloads": 4445,
+      "pipeline": "audio-to-audio"
+    },
+    {
+      "id": "Lightricks/LTX-2.5",
+      "url": "https://huggingface.co/Lightricks/LTX-2.5",
+      "likes": 12439,
+      "downloads": 2828071,
+      "pipeline": "image-to-video"
+    },
+    {
+      "id": "thinkingmachines/Inkling-2-Small",
+      "url": "https://huggingface.co/thinkingmachines/Inkling-2-Small",
+      "likes": 446,
+      "downloads": 18359,
+      "pipeline": "image-text-to-text"
+    },
+    {
+      "id": "unsloth/Qwen3.8-27B-GGUF",
+      "url": "https://huggingface.co/unsloth/Qwen3.8-27B-GGUF",
+      "likes": 6149,
+      "downloads": 6827598,
+      "pipeline": null
+    },
+    {
+      "id": "sensenova/SenseNova-Loop-9B",
+      "url": "https://huggingface.co/sensenova/SenseNova-Loop-9B",
+      "likes": 234,
+      "downloads": 0,
+      "pipeline": "image-text-to-text"
+    },
+    {
+      "id": "chatrlabs/Qwen-Image-2.1-Uncensored-Omni-Quantized",
+      "url": "https://huggingface.co/chatrlabs/Qwen-Image-2.1-Uncensored-Omni-Quantized",
+      "likes": 527,
+      "downloads": 160748,
+      "pipeline": "text-to-image"
+    },
+    {
+      "id": "Comfy-Org/MiniMax-H3-Image",
+      "url": "https://huggingface.co/Comfy-Org/MiniMax-H3-Image",
+      "likes": 527,
+      "downloads": 2660341,
+      "pipeline": "text-to-image"
+    },
+    {
+      "id": "black-forest-labs/flux-3-image-klein-comfy",
+      "url": "https://huggingface.co/black-forest-labs/flux-3-image-klein-comfy",
+      "likes": 3420,
+      "downloads": 1062051,
+      "pipeline": "image-to-image"
+    },
+    {
+      "id": "harness-hub/Qwen3.8-27B-pi-adapted",
+      "url": "https://huggingface.co/harness-hub/Qwen3.8-27B-pi-adapted",
+      "likes": 192,
+      "downloads": 0,
+      "pipeline": null
+    },
+    {
+      "id": "n4ze3m/tiny-voca",
+      "url": "https://huggingface.co/n4ze3m/tiny-voca",
+      "likes": 239,
+      "downloads": 3042,
+      "pipeline": "text-to-speech"
+    },
+    {
+      "id": "DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NEO-CODER-MAX-MTP-GGUF",
+      "url": "https://huggingface.co/DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NEO-CODER-MAX-MTP-GGUF",
+      "likes": 3305,
+      "downloads": 1759757,
+      "pipeline": "image-text-to-text"
+    },
+    {
+      "id": "maxwell-model/Maxwell-V1-Flash",
+      "url": "https://huggingface.co/maxwell-model/Maxwell-V1-Flash",
+      "likes": 170,
+      "downloads": 287,
+      "pipeline": "text-generation"
+    },
+    {
+      "id": "meituan-longcat/LongCat-Video-Avatar-1.6",
+      "url": "https://huggingface.co/meituan-longcat/LongCat-Video-Avatar-1.6",
+      "likes": 212,
+      "downloads": 489,
+      "pipeline": null
+    },
+    {
+      "id": "Zyphra/ZONOS3-Mini",
+      "url": "https://huggingface.co/Zyphra/ZONOS3-Mini",
+      "likes": 514,
+      "downloads": 93909,
+      "pipeline": "text-to-speech"
+    },
+    {
+      "id": "speridlabs/idol",
+      "url": "https://huggingface.co/speridlabs/idol",
+      "likes": 2456,
+      "downloads": 36388,
+      "pipeline": "image-to-3d"
+    },
+    {
+      "id": "Edge0/Edge0-145B-NVFP4",
+      "url": "https://huggingface.co/Edge0/Edge0-145B-NVFP4",
+      "likes": 500,
+      "downloads": 61591,
+      "pipeline": "text-generation"
+    },
+    {
+      "id": "facebook/sam3",
+      "url": "https://huggingface.co/facebook/sam3",
+      "likes": 6905,
+      "downloads": 1971023,
+      "pipeline": "mask-generation"
+    },
+    {
+      "id": "huihui-ai/Huihui-Qwen3.8-27B-abliterated-GGUF",
+      "url": "https://huggingface.co/huihui-ai/Huihui-Qwen3.8-27B-abliterated-GGUF",
+      "likes": 2288,
+      "downloads": 4292911,
+      "pipeline": "image-text-to-text"
+    }
+  ],
+  "tools": [
+    {
+      "tool": "claude-code",
+      "name": "Claude Code",
+      "version": "v2.1.327",
+      "publishedAt": "2026-11-17T23:17:45Z",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.327",
+      "note": "Added a confirmation before /install-github-app changes a repository"
+    },
+    {
+      "tool": "codex",
+      "name": "Codex CLI",
+      "version": "rust-v0.170.0",
+      "publishedAt": "2026-11-18T03:40:48Z",
+      "url": "https://github.com/openai/codex/releases/tag/rust-v0.170.0",
+      "note": "Added WebRTC negotiation for realtime voice calls in the TUI. (#61172)"
+    },
+    {
+      "tool": "gemini-cli",
+      "name": "Gemini CLI",
+      "version": "v0.68.0",
+      "publishedAt": "2026-11-10T21:17:07Z",
+      "url": "https://github.com/google-gemini/gemini-cli/releases/tag/v0.68.0",
+      "note": "Changelog for v0.67.0-preview.0 by @gemini-cli-robot in https://github.com/google-gemini/gemini-cli/pull/29990"
+    },
+    {
+      "tool": "copilot",
+      "name": "GitHub Copilot",
+      "version": null,
+      "publishedAt": "2026-11-17T18:04:48.000Z",
+      "url": "https://github.blog/changelog/2026-11-17-github-copilot-fusion-updates-more-availability-benchmarks-and-models",
+      "note": "GitHub Copilot Fusion updates: more availability, benchmarks, and models"
+    },
+    {
+      "tool": "cursor",
+      "name": "Cursor",
+      "version": null,
+      "publishedAt": "2026-11-06",
+      "url": "https://cursor.com/changelog/voice-chat",
+      "note": "Voice Chat with Agents"
+    }
+  ],
+  "advisories": [
+    {
+      "id": "GHSA-x2vm-cf3p-m2w8",
+      "summary": "libp2p: gossipsub creates a permanent topics-map entry per distinct subscription with no cap in the default config",
+      "severity": "high",
+      "type": "reviewed",
+      "ecosystem": "npm",
+      "packages": [
+        "@libp2p/gossipsub"
+      ],
+      "url": "https://github.com/advisories/GHSA-x2vm-cf3p-m2w8",
+      "publishedAt": "2026-11-17T21:06:20Z"
+    },
+    {
+      "id": "GHSA-rvfr-cqwq-rc4j",
+      "summary": "libp2p: ASN.1 DER decoder drives an unbounded synchronous loop on attacker-controlled length fields, stalling the Node event loop pre-auth",
+      "severity": "high",
+      "type": "reviewed",
+      "ecosystem": "npm",
+      "packages": [
+        "@libp2p/crypto"
+      ],
+      "url": "https://github.com/advisories/GHSA-rvfr-cqwq-rc4j",
+      "publishedAt": "2026-11-17T21:05:08Z"
+    },
+    {
+      "id": "GHSA-vc7v-qv4w-wrv8",
+      "summary": "Next.js: Cache leak across root param values in nested 'use cache' functions via delayed inner stream metadata",
+      "severity": "medium",
+      "type": "reviewed",
+      "ecosystem": "npm",
+      "packages": [
+        "next"
+      ],
+      "url": "https://github.com/advisories/GHSA-vc7v-qv4w-wrv8",
+      "publishedAt": "2026-11-17T16:13:26Z"
+    },
+    {
+      "id": "GHSA-7h45-q5jx-7r87",
+      "summary": "Directus: Share update allows reassigning user_created and role",
+      "severity": "medium",
+      "type": "reviewed",
+      "ecosystem": "npm",
+      "packages": [
+        "directus"
+      ],
+      "url": "https://github.com/advisories/GHSA-7h45-q5jx-7r87",
+      "publishedAt": "2026-11-16T22:25:53Z"
+    },
+    {
+      "id": "GHSA-jq3q-62jc-fqq9",
+      "summary": "code-review-mcp-server: Command injection via unsanitized folderPath/baseBranch parameters",
+      "severity": "high",
+      "type": "reviewed",
+      "ecosystem": "npm",
+      "packages": [
+        "code-review-mcp-server"
+      ],
+      "url": "https://github.com/advisories/GHSA-jq3q-62jc-fqq9",
+      "publishedAt": "2026-11-16T22:09:06Z"
+    },
+    {
+      "id": "GHSA-mfr8-8qww-v76h",
+      "summary": "Next.js: Information disclosure across root params when a 'use cache' function is called through unstable_cache()",
+      "severity": "medium",
+      "type": "reviewed",
+      "ecosystem": "npm",
+      "packages": [
+        "next"
+      ],
+      "url": "https://github.com/advisories/GHSA-mfr8-8qww-v76h",
+      "publishedAt": "2026-11-16T18:51:22Z"
+    },
+    {
+      "id": "GHSA-hf59-9xwc-2g4p",
+      "summary": "Nuxt: Colliding island props can share one `/__nuxt_island` path (incomplete fix for CVE-2026-46342)",
+      "severity": "low",
+      "type": "reviewed",
+      "ecosystem": "npm",
+      "packages": [
+        "nuxt",
+        "@nuxt/nitro-server"
+      ],
+      "url": "https://github.com/advisories/GHSA-hf59-9xwc-2g4p",
+      "publishedAt": "2026-11-16T15:02:22Z"
+    },
+    {
+      "id": "GHSA-96x6-fvhx-49hg",
+      "summary": "Nuxt exposes the message and data of unhandled errors thrown during server rendering",
+      "severity": "medium",
+      "type": "reviewed",
+      "ecosystem": "npm",
+      "packages": [
+        "nuxt"
+      ],
+      "url": "https://github.com/advisories/GHSA-96x6-fvhx-49hg",
+      "publishedAt": "2026-11-16T15:01:26Z"
+    },
+    {
+      "id": "GHSA-r9jc-w898-3fv6",
+      "summary": "Nuxt payload URL generation has quadratic cost for repeated slashes in the request path",
+      "severity": "medium",
+      "type": "reviewed",
+      "ecosystem": "npm",
+      "packages": [
+        "nuxt"
+      ],
+      "url": "https://github.com/advisories/GHSA-r9jc-w898-3fv6",
+      "publishedAt": "2026-11-16T15:00:41Z"
+    },
+    {
+      "id": "GHSA-x2wv-5868-p7v2",
+      "summary": "@nuxt/webpack-builder and @nuxt/rspack-builder dev server serves built source to DNS rebinding pages",
+      "severity": "low",
+      "type": "reviewed",
+      "ecosystem": "npm",
+      "packages": [
+        "@nuxt/webpack-builder",
+        "@nuxt/rspack-builder"
+      ],
+      "url": "https://github.com/advisories/GHSA-x2wv-5868-p7v2",
+      "publishedAt": "2026-11-16T15:00:09Z"
+    },
+    {
+      "id": "GHSA-f3x9-2chm-73c8",
+      "summary": "Nuxt: Incomplete fix for GHSA-6gq8-jgmh-3ffp: an encoded slash (`%2F`) in the request path bypasses route rules on catch-all page routes",
+      "severity": "medium",
+      "type": "reviewed",
+      "ecosystem": "npm",
+      "packages": [
+        "nuxt",
+        "@nuxt/nitro-server",
+        "@nuxt/vite-server"
+      ],
+      "url": "https://github.com/advisories/GHSA-f3x9-2chm-73c8",
+      "publishedAt": "2026-11-16T14:59:45Z"
+    },
+    {
+      "id": "GHSA-m9j8-jcmv-hp69",
+      "summary": "SvelteKit: Build-time server-only module import guard could fail, resulting in server secrets being statically replaced in client bundle",
+      "severity": "high",
+      "type": "reviewed",
+      "ecosystem": "npm",
+      "packages": [
+        "@sveltejs/kit"
+      ],
+      "url": "https://github.com/advisories/GHSA-m9j8-jcmv-hp69",
+      "publishedAt": "2026-11-16T14:59:00Z"
+    },
+    {
+      "id": "GHSA-3r8g-jcqq-3p5j",
+      "summary": "SvelteKit: DoS while parsing form data from a remote functions `form`",
+      "severity": "high",
+      "type": "reviewed",
+      "ecosystem": "npm",
+      "packages": [
+        "@sveltejs/kit"
+      ],
+      "url": "https://github.com/advisories/GHSA-3r8g-jcqq-3p5j",
+      "publishedAt": "2026-11-16T14:57:35Z"
+    },
+    {
+      "id": "GHSA-6cf5-gc4q-fm3x",
+      "summary": "SvelteKit: Private `query.batch` functions could collide, producing unexpected parameter / function combinations",
+      "severity": "medium",
+      "type": "reviewed",
+      "ecosystem": "npm",
+      "packages": [
+        "@sveltejs/kit"
+      ],
+      "url": "https://github.com/advisories/GHSA-6cf5-gc4q-fm3x",
+      "publishedAt": "2026-11-16T14:49:03Z"
+    },
+    {
+      "id": "GHSA-rqp5-r3wg-vg35",
+      "summary": "SvelteKit: Protocol-relative module import during server-side route resolution allows cross-origin script execution",
+      "severity": "medium",
+      "type": "reviewed",
+      "ecosystem": "npm",
+      "packages": [
+        "@sveltejs/kit"
+      ],
+      "url": "https://github.com/advisories/GHSA-rqp5-r3wg-vg35",
+      "publishedAt": "2026-11-16T14:48:54Z"
+    },
+    {
+      "id": "GHSA-qfx6-q44v-9qqw",
+      "summary": "ag-psd can exhaust memory when parsing crafted PSD dimensions",
+      "severity": "high",
+      "type": "reviewed",
+      "ecosystem": "npm",
+      "packages": [
+        "ag-psd"
+      ],
+      "url": "https://github.com/advisories/GHSA-qfx6-q44v-9qqw",
+      "publishedAt": "2026-11-13T23:19:38Z"
+    },
+    {
+      "id": "GHSA-mw6w-2fmv-pvw3",
+      "summary": "SvelteKit: adapter-node crashes with an unhandled URIError when `reroute` rewrites malformed pathnames",
+      "severity": "medium",
+      "type": "reviewed",
+      "ecosystem": "npm",
+      "packages": [
+        "@sveltejs/kit"
+      ],
+      "url": "https://github.com/advisories/GHSA-mw6w-2fmv-pvw3",
+      "publishedAt": "2026-11-13T20:51:44Z"
+    },
+    {
+      "id": "GHSA-jf9x-2fg2-hx4w",
+      "summary": "SvelteKit: Prerendered paths are interpreted as regular expressions in Vercel route config generated by @sveltejs/adapter-vercel and @sveltejs/adapter-static",
+      "severity": "medium",
+      "type": "reviewed",
+      "ecosystem": "npm",
+      "packages": [
+        "@sveltejs/adapter-vercel",
+        "@sveltejs/adapter-static"
+      ],
+      "url": "https://github.com/advisories/GHSA-jf9x-2fg2-hx4w",
+      "publishedAt": "2026-11-13T20:43:23Z"
+    },
+    {
+      "id": "GHSA-5wg4-q3ww-283h",
+      "summary": "SvelteKit: Prerendered redirect paths can inject arbitrary rules into the `_redirects` file generated by `@sveltejs/adapter-cloudflare`",
+      "severity": "medium",
+      "type": "reviewed",
+      "ecosystem": "npm",
+      "packages": [
+        "@sveltejs/adapter-cloudflare"
+      ],
+      "url": "https://github.com/advisories/GHSA-5wg4-q3ww-283h",
+      "publishedAt": "2026-11-13T20:39:15Z"
+    },
+    {
+      "id": "GHSA-rqw3-x7hx-mm3p",
+      "summary": "SvelteKit: `@sveltejs/adapter-node` crashes when proxying certain requests via `fetch`",
+      "severity": "medium",
+      "type": "reviewed",
+      "ecosystem": "npm",
+      "packages": [
+        "@sveltejs/adapter-node"
+      ],
+      "url": "https://github.com/advisories/GHSA-rqw3-x7hx-mm3p",
+      "publishedAt": "2026-11-13T20:36:53Z"
+    },
+    {
+      "id": "GHSA-r99w-jh2x-3mg9",
+      "summary": "Nuxt: Incomplete fix for GHSA-9v7c-q64q-vv33: a leading `//` in the request path bypasses `server/middleware` path checks and server route rules on page routes",
+      "severity": "medium",
+      "type": "reviewed",
+      "ecosystem": "npm",
+      "packages": [
+        "@nuxt/nitro-server"
+      ],
+      "url": "https://github.com/advisories/GHSA-r99w-jh2x-3mg9",
+      "publishedAt": "2026-11-13T19:32:21Z"
+    },
+    {
+      "id": "GHSA-3v2p-hm54-8qcq",
+      "summary": "OpenTelemetry JavaScript: Insertion of Sensitive Information into Log File and Exposure of Sensitive Information to an Unauthorized Actor in @opentelemetry/instrumentation-http",
+      "severity": "medium",
+      "type": "reviewed",
+      "ecosystem": "npm",
+      "packages": [
+        "@opentelemetry/instrumentation-http"
+      ],
+      "url": "https://github.com/advisories/GHSA-3v2p-hm54-8qcq",
+      "publishedAt": "2026-11-13T19:29:20Z"
+    },
+    {
+      "id": "GHSA-mh32-jxcr-mh9f",
+      "summary": "Astro: XSS via attribute injection in dynamic tag names",
+      "severity": "low",
+      "type": "reviewed",
+      "ecosystem": "npm",
+      "packages": [
+        "astro"
+      ],
+      "url": "https://github.com/advisories/GHSA-mh32-jxcr-mh9f",
+      "publishedAt": "2026-11-13T18:39:54Z"
+    },
+    {
+      "id": "GHSA-r3h5-4585-7x3w",
+      "summary": "Astro: Image endpoint in @astrojs/node can read files from a case-variant sibling of the output directory on case-sensitive filesystems",
+      "severity": "medium",
+      "type": "reviewed",
+      "ecosystem": "npm",
+      "packages": [
+        "@astrojs/node",
+        "astro"
+      ],
+      "url": "https://github.com/advisories/GHSA-r3h5-4585-7x3w",
+      "publishedAt": "2026-11-13T18:35:59Z"
+    },
+    {
+      "id": "GHSA-mjrq-cffv-q4qc",
+      "summary": "Nuxt dev server serves files from a parent directory with a stray lockfile or workspace file",
+      "severity": "medium",
+      "type": "reviewed",
+      "ecosystem": "npm",
+      "packages": [
+        "@nuxt/schema"
+      ],
+      "url": "https://github.com/advisories/GHSA-mjrq-cffv-q4qc",
+      "publishedAt": "2026-11-13T18:11:49Z"
+    },
+    {
+      "id": "GHSA-46wx-v44x-9hh2",
+      "summary": "Hono: `csrf()` does not check requests sent by hyperlink auditing (`text/ping`)",
+      "severity": "medium",
+      "type": "reviewed",
+      "ecosystem": "npm",
+      "packages": [
+        "hono"
+      ],
+      "url": "https://github.com/advisories/GHSA-46wx-v44x-9hh2",
+      "publishedAt": "2026-11-12T23:31:25Z"
+    },
+    {
+      "id": "GHSA-4h7h-rv7c-7m2v",
+      "summary": "Hono: `validator('form')` skips validation for `multipart/form-data` requests with extra parameters",
+      "severity": "medium",
+      "type": "reviewed",
+      "ecosystem": "npm",
+      "packages": [
+        "hono"
+      ],
+      "url": "https://github.com/advisories/GHSA-4h7h-rv7c-7m2v",
+      "publishedAt": "2026-11-12T23:30:45Z"
+    },
+    {
+      "id": "GHSA-4m76-xfj5-7975",
+      "summary": "Hono: `mount()` and `app.mount()` can forward a path that bypasses middleware scoped inside the mount prefix",
+      "severity": "medium",
+      "type": "reviewed",
+      "ecosystem": "npm",
+      "packages": [
+        "hono"
+      ],
+      "url": "https://github.com/advisories/GHSA-4m76-xfj5-7975",
+      "publishedAt": "2026-11-12T23:24:11Z"
+    },
+    {
+      "id": "GHSA-h7mg-cq63-vhpq",
+      "summary": "Hono: RegExpRouter skips wildcard middleware for some route sets and for paths with an encoded line terminator",
+      "severity": "medium",
+      "type": "reviewed",
+      "ecosystem": "npm",
+      "packages": [
+        "hono"
+      ],
+      "url": "https://github.com/advisories/GHSA-h7mg-cq63-vhpq",
+      "publishedAt": "2026-11-12T23:23:30Z"
+    },
+    {
+      "id": "GHSA-3gg2-335m-rxc6",
+      "summary": "Hono: `css` helper does not escape a closing tag split between the template and an interpolated value, allowing HTML injection",
+      "severity": "low",
+      "type": "reviewed",
+      "ecosystem": "npm",
+      "packages": [
+        "hono"
+      ],
+      "url": "https://github.com/advisories/GHSA-3gg2-335m-rxc6",
+      "publishedAt": "2026-11-12T23:22:36Z"
+    },
+    {
+      "id": "GHSA-v858-xh7w-8jr5",
+      "summary": "pympp allows excessive sponsored transaction fees through padded calldata",
+      "severity": "medium",
+      "type": "reviewed",
+      "ecosystem": "pip",
+      "packages": [
+        "pympp"
+      ],
+      "url": "https://github.com/advisories/GHSA-v858-xh7w-8jr5",
+      "publishedAt": "2026-11-17T20:04:56Z"
+    },
+    {
+      "id": "GHSA-gfv3-m769-5xm3",
+      "summary": "Phoenix: Format String Injection in applyChatTemplate",
+      "severity": "critical",
+      "type": "reviewed",
+      "ecosystem": "pip",
+      "packages": [
+        "arize-phoenix"
+      ],
+      "url": "https://github.com/advisories/GHSA-gfv3-m769-5xm3",
+      "publishedAt": "2026-11-17T20:02:29Z"
+    },
+    {
+      "id": "GHSA-8cgq-x343-p74c",
+      "summary": "mail-parser: One hostile attachment aborts `write_attachments()` and silently drops the rest of the batch",
+      "severity": "medium",
+      "type": "reviewed",
+      "ecosystem": "pip",
+      "packages": [
+        "mail-parser"
+      ],
+      "url": "https://github.com/advisories/GHSA-8cgq-x343-p74c",
+      "publishedAt": "2026-11-16T22:22:13Z"
+    },
+    {
+      "id": "GHSA-xhrq-2mqv-q8wx",
+      "summary": "mail-parser: Uncaught `OverflowError` / `OSError` on an out-of-range `Received` date",
+      "severity": "medium",
+      "type": "reviewed",
+      "ecosystem": "pip",
+      "packages": [
+        "mail-parser"
+      ],
+      "url": "https://github.com/advisories/GHSA-xhrq-2mqv-q8wx",
+      "publishedAt": "2026-11-16T22:20:32Z"
+    },
+    {
+      "id": "GHSA-24mq-4vc6-2prf",
+      "summary": "mail-parser: Uncaught exceptions and silent header loss in mail-parser on attacker-controlled input",
+      "severity": "medium",
+      "type": "reviewed",
+      "ecosystem": "pip",
+      "packages": [
+        "mail-parser"
+      ],
+      "url": "https://github.com/advisories/GHSA-24mq-4vc6-2prf",
+      "publishedAt": "2026-11-16T22:12:51Z"
+    },
+    {
+      "id": "GHSA-72px-j8gh-p79x",
+      "summary": "mail-parser: Sender IP address spoofing in get_server_ipaddress()",
+      "severity": "high",
+      "type": "reviewed",
+      "ecosystem": "pip",
+      "packages": [
+        "mail-parser"
+      ],
+      "url": "https://github.com/advisories/GHSA-72px-j8gh-p79x",
+      "publishedAt": "2026-11-16T22:11:54Z"
+    },
+    {
+      "id": "GHSA-r7w7-vpq8-c5vv",
+      "summary": "mail-parser is vulnerable to polynomial ReDoS in email header parsing",
+      "severity": "high",
+      "type": "reviewed",
+      "ecosystem": "pip",
+      "packages": [
+        "mail-parser"
+      ],
+      "url": "https://github.com/advisories/GHSA-r7w7-vpq8-c5vv",
+      "publishedAt": "2026-11-16T22:11:08Z"
+    },
+    {
+      "id": "GHSA-fr3h-cpq2-9496",
+      "summary": "mail-parser: Path Traversal vulnerability in attachment extraction",
+      "severity": "medium",
+      "type": "reviewed",
+      "ecosystem": "pip",
+      "packages": [
+        "mail-parser"
+      ],
+      "url": "https://github.com/advisories/GHSA-fr3h-cpq2-9496",
+      "publishedAt": "2026-11-16T22:10:55Z"
+    },
+    {
+      "id": "GHSA-259w-wmqg-fp76",
+      "summary": "termux-sync: Arbitrary file write during restore via attacker-controlled manifest source path",
+      "severity": "high",
+      "type": "reviewed",
+      "ecosystem": "pip",
+      "packages": [
+        "termux-sync"
+      ],
+      "url": "https://github.com/advisories/GHSA-259w-wmqg-fp76",
+      "publishedAt": "2026-11-16T22:09:24Z"
+    },
+    {
+      "id": "GHSA-7mxv-7h3q-9324",
+      "summary": "NLTK dot2img runs Graphviz 'dot' without the trusted-exec chokepoint, enabling local code execution via a writable PATH element",
+      "severity": "high",
+      "type": "reviewed",
+      "ecosystem": "pip",
+      "packages": [
+        "nltk"
+      ],
+      "url": "https://github.com/advisories/GHSA-7mxv-7h3q-9324",
+      "publishedAt": "2026-11-16T18:45:51Z"
+    },
+    {
+      "id": "GHSA-jm3w-gw2p-xjfj",
+      "summary": "AIOHTTP: Event loop stall in add_domain() wildcard matching",
+      "severity": "high",
+      "type": "reviewed",
+      "ecosystem": "pip",
+      "packages": [
+        "aiohttp"
+      ],
+      "url": "https://github.com/advisories/GHSA-jm3w-gw2p-xjfj",
+      "publishedAt": "2026-11-16T14:56:35Z"
+    },
+    {
+      "id": "GHSA-5pv8-vvhc-h7jv",
+      "summary": "AIOHTTP: Unbounded cookie storage in client CookieJar",
+      "severity": "medium",
+      "type": "reviewed",
+      "ecosystem": "pip",
+      "packages": [
+        "aiohttp"
+      ],
+      "url": "https://github.com/advisories/GHSA-5pv8-vvhc-h7jv",
+      "publishedAt": "2026-11-16T14:55:06Z"
+    },
+    {
+      "id": "GHSA-xgw8-8ccx-rmqh",
+      "summary": "AIOHTTP: Too many URL-encoded form fields block the event loop",
+      "severity": "high",
+      "type": "reviewed",
+      "ecosystem": "pip",
+      "packages": [
+        "aiohttp"
+      ],
+      "url": "https://github.com/advisories/GHSA-xgw8-8ccx-rmqh",
+      "publishedAt": "2026-11-16T14:54:10Z"
+    },
+    {
+      "id": "GHSA-24c4-3p7v-29cm",
+      "summary": "AIOHTTP: Base64 multipart parts bypass client_max_size",
+      "severity": "high",
+      "type": "reviewed",
+      "ecosystem": "pip",
+      "packages": [
+        "aiohttp"
+      ],
+      "url": "https://github.com/advisories/GHSA-24c4-3p7v-29cm",
+      "publishedAt": "2026-11-16T14:53:12Z"
+    },
+    {
+      "id": "GHSA-3rp8-rxj8-mvjw",
+      "summary": "AIOHTTP: WebSocket max_msg_size bypass via integer overflow",
+      "severity": "high",
+      "type": "reviewed",
+      "ecosystem": "pip",
+      "packages": [
+        "aiohttp"
+      ],
+      "url": "https://github.com/advisories/GHSA-3rp8-rxj8-mvjw",
+      "publishedAt": "2026-11-16T14:52:40Z"
+    },
+    {
+      "id": "GHSA-pw86-h8fm-j323",
+      "summary": "AIOHTTP: Unbounded buffering of data received during an upgrade request",
+      "severity": "high",
+      "type": "reviewed",
+      "ecosystem": "pip",
+      "packages": [
+        "aiohttp"
+      ],
+      "url": "https://github.com/advisories/GHSA-pw86-h8fm-j323",
+      "publishedAt": "2026-11-16T14:52:05Z"
+    },
+    {
+      "id": "GHSA-28qf-cpwq-vmc2",
+      "summary": "AIOHTTP: Pure-Python parser request replay and buffer growth behind a declined upgrade",
+      "severity": "high",
+      "type": "reviewed",
+      "ecosystem": "pip",
+      "packages": [
+        "aiohttp"
+      ],
+      "url": "https://github.com/advisories/GHSA-28qf-cpwq-vmc2",
+      "publishedAt": "2026-11-16T14:51:53Z"
+    },
+    {
+      "id": "GHSA-h4cc-hm5h-fmm9",
+      "summary": "AIOHTTP: Concatenated compressed streams cause excessive CPU use",
+      "severity": "high",
+      "type": "reviewed",
+      "ecosystem": "pip",
+      "packages": [
+        "aiohttp"
+      ],
+      "url": "https://github.com/advisories/GHSA-h4cc-hm5h-fmm9",
+      "publishedAt": "2026-11-16T14:51:27Z"
+    },
+    {
+      "id": "GHSA-5rmc-48h2-hvcm",
+      "summary": "AIOHTTP: WebSocket receive queue limits bypassed by small or compressed messages",
+      "severity": "high",
+      "type": "reviewed",
+      "ecosystem": "pip",
+      "packages": [
+        "aiohttp"
+      ],
+      "url": "https://github.com/advisories/GHSA-5rmc-48h2-hvcm",
+      "publishedAt": "2026-11-16T14:51:01Z"
+    },
+    {
+      "id": "GHSA-xmfg-f9cm-w86q",
+      "summary": "NLTK: Symlink escape in chat80.sql_query bypasses the pathsec data-root sandbox to read out-of-root SQLite databases",
+      "severity": "medium",
+      "type": "reviewed",
+      "ecosystem": "pip",
+      "packages": [
+        "nltk"
+      ],
+      "url": "https://github.com/advisories/GHSA-xmfg-f9cm-w86q",
+      "publishedAt": "2026-11-16T14:47:23Z"
+    },
+    {
+      "id": "GHSA-59f9-gqg8-mqpj",
+      "summary": "NLTK: Path Traversal in save_maxent_params / load_maxent_params Allow Arbitrary File READ/WRITE",
+      "severity": "medium",
+      "type": "reviewed",
+      "ecosystem": "pip",
+      "packages": [
+        "nltk"
+      ],
+      "url": "https://github.com/advisories/GHSA-59f9-gqg8-mqpj",
+      "publishedAt": "2026-11-16T14:46:25Z"
+    },
+    {
+      "id": "GHSA-89p3-fcch-88ph",
+      "summary": "NLTK: Quadratic-time CPU denial of service in CCG lexicon parser (fromstring) on wide bracket bodies and operator chains",
+      "severity": "high",
+      "type": "reviewed",
+      "ecosystem": "pip",
+      "packages": [
+        "nltk"
+      ],
+      "url": "https://github.com/advisories/GHSA-89p3-fcch-88ph",
+      "publishedAt": "2026-11-14T00:08:50Z"
+    },
+    {
+      "id": "GHSA-r53h-rw34-8h97",
+      "summary": "NLTK: Quadratic-time CPU denial of service in Tree.chomsky_normal_form right-factor binarization via list.pop(0)",
+      "severity": "high",
+      "type": "reviewed",
+      "ecosystem": "pip",
+      "packages": [
+        "nltk"
+      ],
+      "url": "https://github.com/advisories/GHSA-r53h-rw34-8h97",
+      "publishedAt": "2026-11-14T00:07:59Z"
+    },
+    {
+      "id": "GHSA-v8f3-6phw-6mh9",
+      "summary": "NLTK: Quadratic-time CPU denial of service in ConllCorpusReader SRL instance builder via nested span rescan",
+      "severity": "high",
+      "type": "reviewed",
+      "ecosystem": "pip",
+      "packages": [
+        "nltk"
+      ],
+      "url": "https://github.com/advisories/GHSA-v8f3-6phw-6mh9",
+      "publishedAt": "2026-11-14T00:05:57Z"
+    },
+    {
+      "id": "GHSA-fg9w-wfp5-j933",
+      "summary": "NLTK: BllipParser passes caller-supplied model paths to the bllipparser C extension with no pathsec check, enabling arbitrary read",
+      "severity": "medium",
+      "type": "reviewed",
+      "ecosystem": "pip",
+      "packages": [
+        "nltk"
+      ],
+      "url": "https://github.com/advisories/GHSA-fg9w-wfp5-j933",
+      "publishedAt": "2026-11-13T23:20:56Z"
+    },
+    {
+      "id": "GHSA-gpwc-27cw-rh9r",
+      "summary": "NLTK: Quadratic CPU exhaustion in LegalitySyllableTokenizer.tokenize via unguarded onset reversal loop",
+      "severity": "medium",
+      "type": "reviewed",
+      "ecosystem": "pip",
+      "packages": [
+        "nltk"
+      ],
+      "url": "https://github.com/advisories/GHSA-gpwc-27cw-rh9r",
+      "publishedAt": "2026-11-13T21:16:34Z"
+    },
+    {
+      "id": "GHSA-ffr9-mgrr-wcvr",
+      "summary": "NLTK: Quadratic CPU exhaustion in TreebankWordTokenizer.span_tokenize via list.pop(0) in quote-restore loop",
+      "severity": "medium",
+      "type": "reviewed",
+      "ecosystem": "pip",
+      "packages": [
+        "nltk"
+      ],
+      "url": "https://github.com/advisories/GHSA-ffr9-mgrr-wcvr",
+      "publishedAt": "2026-11-13T21:08:55Z"
+    },
+    {
+      "id": "GHSA-8fx7-8jr8-84rv",
+      "summary": "NLTK: Unbounded CPU consumption in SteppingRecursiveDescentParser.parse() with ambiguous or self-embedding grammars",
+      "severity": "high",
+      "type": "reviewed",
+      "ecosystem": "pip",
+      "packages": [
+        "nltk"
+      ],
+      "url": "https://github.com/advisories/GHSA-8fx7-8jr8-84rv",
+      "publishedAt": "2026-11-13T21:02:19Z"
+    },
+    {
+      "id": "GHSA-qg35-44qx-7vrr",
+      "summary": "NLTK: Symlink escape in YCOECorpusReader lets a psd/pos directory symlink read files outside the corpus root within the data sandbox",
+      "severity": "high",
+      "type": "reviewed",
+      "ecosystem": "pip",
+      "packages": [
+        "nltk"
+      ],
+      "url": "https://github.com/advisories/GHSA-qg35-44qx-7vrr",
+      "publishedAt": "2026-11-13T20:55:16Z"
+    },
+    {
+      "id": "GHSA-5cjw-f85j-cv6r",
+      "summary": "Tornado: Open redirect via triple-slash redirect paths",
+      "severity": "low",
+      "type": "reviewed",
+      "ecosystem": "pip",
+      "packages": [
+        "tornado"
+      ],
+      "url": "https://github.com/advisories/GHSA-5cjw-f85j-cv6r",
+      "publishedAt": "2026-11-13T20:31:22Z"
+    }
+  ],
+  "kit": [
+    {
+      "fullName": "qybaihe/bla",
+      "url": "https://github.com/qybaihe/bla",
+      "description": "🛡️ BLA (bla-agents / Blind LLM Agents) — Open-source Blue Defense MCP server & CLI protecting JS/TS, Electron ASAR, WASM, Python, Native Binaries, SQLite, GGUF/Safetensors & Android DEX against AI reverse-engineering agents (REA).",
+      "stars": 6082,
+      "createdAt": "2026-10-25T05:25:45Z",
+      "topics": [
+        "adversarial-ai",
+        "ai-security",
+        "android-security",
+        "binary-protection",
+        "claude-code",
+        "codex",
+        "cursor",
+        "electron-security",
+        "gguf",
+        "ghidra",
+        "llm-security",
+        "mcp",
+        "mcp-server",
+        "obfuscation",
+        "python-security",
+        "reverse-engineering",
+        "safetensors",
+        "software-protection",
+        "webassembly"
+      ]
+    },
+    {
+      "fullName": "KKKKhazix/agent-autoloop",
+      "url": "https://github.com/KKKKhazix/agent-autoloop",
+      "description": "让你的命令行 Agent 在后台自己接活、自己跟进到底；平时不烦你，遇到拿不准的事才发卡片找你拍板。",
+      "stars": 5834,
+      "createdAt": "2026-11-03T08:02:11Z",
+      "topics": [
+        "ai-agents",
+        "automation",
+        "claude-code",
+        "cli",
+        "codex",
+        "event-driven",
+        "mcp",
+        "nodejs",
+        "self-hosted",
+        "typescript",
+        "workflow"
+      ]
+    },
+    {
+      "fullName": "vercel-labs/ui",
+      "url": "https://github.com/vercel-labs/ui",
+      "description": "A library of behaviors for agents to build the next generation of user interfaces.",
+      "stars": 5610,
+      "createdAt": "2026-10-26T17:39:27Z",
+      "topics": [
+        "accessibility",
+        "agent",
+        "agents",
+        "ai",
+        "aria",
+        "behaviors",
+        "component",
+        "component-library",
+        "headless",
+        "mcp",
+        "react",
+        "solid",
+        "svelte",
+        "vue",
+        "web-components",
+        "webmcp"
+      ]
+    },
+    {
+      "fullName": "DIYgod/pinky",
+      "url": "https://github.com/DIYgod/pinky",
+      "description": "Let AI use your iPhone or Android phone, with you in the loop: any MCP agent from macOS, Windows or Linux, or Pinky itself, right on the phone.",
+      "stars": 2404,
+      "createdAt": "2026-11-06T16:53:14Z",
+      "topics": [
+        "ai-agent",
+        "android",
+        "claude-code",
+        "ios",
+        "iphone",
+        "mcp",
+        "mcp-server",
+        "phone-automation"
+      ]
+    },
+    {
+      "fullName": "mdiri-ai/SoduWork",
+      "url": "https://github.com/mdiri-ai/SoduWork",
+      "description": "The AI-native engine for teams and their agents. Multi-harness, multi-agent, self-hosted.",
+      "stars": 2188,
+      "createdAt": "2026-10-29T02:43:14Z",
+      "topics": [
+        "agent-harness",
+        "agent-orchestration",
+        "agent-workflows",
+        "ai-agents",
+        "ai-workflows",
+        "anti-slop",
+        "claude-code",
+        "codex",
+        "deepseek",
+        "electron",
+        "fastapi",
+        "harness",
+        "human-in-the-loop",
+        "llm",
+        "mcp",
+        "multi-agent",
+        "opencode",
+        "plugin-system",
+        "self-hosted",
+        "team-collaboration"
+      ]
+    },
+    {
+      "fullName": "lexifina/global-law",
+      "url": "https://github.com/lexifina/global-law",
+      "description": "The world's law in git: any provision, any country, any date, and the law that wrote each word.",
+      "stars": 2096,
+      "createdAt": "2026-10-28T13:34:16Z",
+      "topics": [
+        "git",
+        "law",
+        "legal-tech",
+        "legislation",
+        "mcp",
+        "open-data"
+      ]
+    },
+    {
+      "fullName": "FrigadeHQ/yogurt",
+      "url": "https://github.com/FrigadeHQ/yogurt",
+      "description": "Private AI meeting notes that stay on your computer. A free, open-source alternative to Granola for Mac, Windows and Linux.",
+      "stars": 2077,
+      "createdAt": "2026-11-10T20:01:01Z",
+      "topics": [
+        "ai-meeting-assistant",
+        "ai-notetaker",
+        "electron",
+        "granola-alternative",
+        "linux",
+        "llama-cpp",
+        "local-ai",
+        "local-first",
+        "macos",
+        "mcp",
+        "meeting-minutes",
+        "meeting-notes",
+        "offline-first",
+        "open-source",
+        "privacy",
+        "speech-to-text",
+        "transcription",
+        "whisper",
+        "whisper-cpp",
+        "windows"
+      ]
+    },
+    {
+      "fullName": "erkamyaman/rust-anything",
+      "url": "https://github.com/erkamyaman/rust-anything",
+      "description": "Rewrite your whole app in Rust, one piece at a time, checked against the original's recorded behavior at every step. CLIs, HTTP servers and libraries in TypeScript, Python, C, Go, Ruby and Java.",
+      "stars": 1851,
+      "createdAt": "2026-11-16T12:10:36Z",
+      "topics": [
+        "agent-skills",
+        "claude-code",
+        "cli",
+        "code-migration",
+        "codex",
+        "ffi",
+        "golang",
+        "java",
+        "javascript",
+        "mcp",
+        "migration",
+        "napi",
+        "performance",
+        "porting",
+        "pyo3",
+        "python",
+        "rewrite",
+        "ruby",
+        "rust",
+        "typescript"
+      ]
+    },
+    {
+      "fullName": "yjid/kensaku",
+      "url": "https://github.com/yjid/kensaku",
+      "description": "Search inside documents, code, and even screenshots - instantly and locally. A free, open-source file launcher with OCR, semantic search, and MCP agent access.",
+      "stars": 1841,
+      "createdAt": "2026-10-24T21:00:26Z",
+      "topics": [
+        "ai-agents",
+        "desktop",
+        "desktop-search",
+        "file-search",
+        "full-text-search",
+        "launcher",
+        "local-first",
+        "mcp",
+        "ocr",
+        "open-source",
+        "privacy",
+        "rust",
+        "search",
+        "semantic-search",
+        "tauri",
+        "windows"
+      ]
+    },
+    {
+      "fullName": "agentes-chat/agentes-chat",
+      "url": "https://github.com/agentes-chat/agentes-chat",
+      "description": "Open-source, self-hosted Slack alternative where your team and AI agents work together in channels and DMs. Agents run on Claude, ChatGPT/Codex, Gemini or Grok, with MCP tools, their own computer and browser, routines, memory and approvals. Web, desktop and phone apps. Docker Compose + Postgres. AGPL-3.0.",
+      "stars": 1697,
+      "createdAt": "2026-11-09T00:50:28Z",
+      "topics": [
+        "agentic-ai",
+        "ai-agents",
+        "browser-automation",
+        "chat",
+        "claude",
+        "claude-code",
+        "codex",
+        "collaboration",
+        "computer-use",
+        "docker-compose",
+        "gemini",
+        "grok",
+        "human-in-the-loop",
+        "llm",
+        "mcp",
+        "multi-agent",
+        "openai",
+        "self-hosted",
+        "slack-alternative",
+        "team-chat"
+      ]
+    },
+    {
+      "fullName": "emanuele-em/kanzo",
+      "url": "https://github.com/emanuele-em/kanzo",
+      "description": "Self-hosted, sharable kanban for humans and agents. One 4.7 MB binary, 5 MB of RAM, 10 to 60 tokens per agent reply, starts in 3 ms, zero setup.",
+      "stars": 1228,
+      "createdAt": "2026-10-25T11:14:03Z",
+      "topics": [
+        "ai-agents",
+        "claude-code",
+        "cli",
+        "codex",
+        "coding-agents",
+        "kanban",
+        "local-first",
+        "mcp",
+        "mcp-server",
+        "model-context-protocol",
+        "productivity",
+        "project-management",
+        "raspberry-pi",
+        "rust",
+        "self-hosted",
+        "sqlite",
+        "task-manager"
+      ]
+    },
+    {
+      "fullName": "phone-harness/mcp",
+      "url": "https://github.com/phone-harness/mcp",
+      "description": "Connect AI agents to real iPhones and Androids",
+      "stars": 816,
+      "createdAt": "2026-10-23T06:27:40Z",
+      "topics": [
+        "ai-agents",
+        "android",
+        "iphone",
+        "mcp",
+        "mcp-server",
+        "mobile-automation",
+        "model-context-protocol",
+        "phone-automation"
+      ]
+    },
+    {
+      "fullName": "stubbi/asm",
+      "url": "https://github.com/stubbi/asm",
+      "description": "The package registry and command-line tool for assembly projects.",
+      "stars": 586,
+      "createdAt": "2026-10-31T23:22:41Z",
+      "topics": [
+        "aarch64",
+        "assembly",
+        "cli",
+        "linux",
+        "macos",
+        "mcp-server",
+        "package-manager",
+        "package-registry",
+        "riscv",
+        "x86-64"
+      ]
+    },
+    {
+      "fullName": "credoksopho1984/blender-ai-copilot-studio",
+      "url": "https://github.com/credoksopho1984/blender-ai-copilot-studio",
+      "description": "An AI copilot and MCP server for Blender that turns plain-language briefs into scene operations—inside a visual chat studio with multi-agent teams, your choice of AI models, and 27 built-in scene tools. · blender-ai-copilot-studio · blender ai · ai for blender · blender copilot · blender ai copilot · blender ai assistant · blender mcp server",
+      "stars": 516,
+      "createdAt": "2026-11-12T19:30:32Z",
+      "topics": [
+        "3d-automation",
+        "3d-modeling",
+        "blender",
+        "blender-addon",
+        "blender-agents",
+        "blender-ai",
+        "blender-assistant",
+        "blender-automation",
+        "blender-chatgpt",
+        "blender-copilot",
+        "blender-extension",
+        "blender-llm",
+        "blender-mcp",
+        "blender-plugin",
+        "blender-scripting",
+        "blender3d",
+        "bpy",
+        "mcp",
+        "mcp-server",
+        "model-context-protocol"
+      ]
+    },
+    {
+      "fullName": "racdeufindurch198812/Blender-AI-MCP-Studio",
+      "url": "https://github.com/racdeufindurch198812/Blender-AI-MCP-Studio",
+      "description": "Blender AI MCP Studio is an AI assistant and built-in Model Context Protocol MCP server for Blender that turns plain-language briefs into inspected, approved and reversible 3D scene operations — with a visual chat workspace, multi-agent teams and your choice of AI models. · blender ai mcp studio · mcp-for-blender · mcp for blender pro",
+      "stars": 515,
+      "createdAt": "2026-11-12T19:28:20Z",
+      "topics": [
+        "3d-automation",
+        "3d-modeling",
+        "blender",
+        "blender-addon",
+        "blender-agents",
+        "blender-ai",
+        "blender-assistant",
+        "blender-automation",
+        "blender-chatgpt",
+        "blender-copilot",
+        "blender-extension",
+        "blender-llm",
+        "blender-mcp",
+        "blender-plugin",
+        "blender-scripting",
+        "blender3d",
+        "bpy",
+        "mcp",
+        "mcp-server",
+        "model-context-protocol"
+      ]
+    },
+    {
+      "fullName": "tiobeharxi1987/blender-ai-copilot-flow",
+      "url": "https://github.com/tiobeharxi1987/blender-ai-copilot-flow",
+      "description": "A controlled AI workflow for Blender: every copilot edit is a supervised tool call—proposed, approved, executed in sequence, cancellable after the current step and undoable by name—inside a visual studio with a built-in MCP server. · blender-ai-copilot-flow · blender · blender 3d · blender addon · blender plugin · blender extension",
+      "stars": 514,
+      "createdAt": "2026-11-12T19:38:53Z",
+      "topics": [
+        "3d-automation",
+        "3d-modeling",
+        "blender",
+        "blender-addon",
+        "blender-agents",
+        "blender-ai",
+        "blender-assistant",
+        "blender-automation",
+        "blender-chatgpt",
+        "blender-copilot",
+        "blender-extension",
+        "blender-llm",
+        "blender-mcp",
+        "blender-plugin",
+        "blender-scripting",
+        "blender3d",
+        "bpy",
+        "mcp",
+        "mcp-server",
+        "model-context-protocol"
+      ]
+    },
+    {
+      "fullName": "Doug-218/blender-ai-copilot-forge",
+      "url": "https://github.com/Doug-218/blender-ai-copilot-forge",
+      "description": "A scene-forging AI copilot for Blender—describe the layout and watch primitives, cameras, lights, materials and parenting assemble in ordered steps, with approvals, named undo and a built-in MCP server. · blender-ai-copilot-forge · blender · blender 3d · blender addon · blender plugin · blender extension · blender scripting · blender automation",
+      "stars": 510,
+      "createdAt": "2026-11-12T19:35:10Z",
+      "topics": [
+        "3d-automation",
+        "3d-modeling",
+        "blender",
+        "blender-addon",
+        "blender-agents",
+        "blender-ai",
+        "blender-assistant",
+        "blender-automation",
+        "blender-chatgpt",
+        "blender-copilot",
+        "blender-extension",
+        "blender-llm",
+        "blender-mcp",
+        "blender-plugin",
+        "blender-scripting",
+        "blender3d",
+        "bpy",
+        "mcp",
+        "mcp-server",
+        "model-context-protocol"
+      ]
+    },
+    {
+      "fullName": "zovulrira1974/blender-ai-copilot-assets",
+      "url": "https://github.com/zovulrira1974/blender-ai-copilot-assets",
+      "description": "An asset-savvy AI copilot for Blender—search Poly Haven, Sketchfab and Poly Pizza mid-conversation, check what fits, import after your confirmation, with 27 scene tools and a built-in MCP server alongside. · blender-ai-copilot-assets · blender · blender 3d · blender addon · blender plugin · blender extension · blender scripting · blender automation",
+      "stars": 510,
+      "createdAt": "2026-11-12T19:39:54Z",
+      "topics": [
+        "3d-automation",
+        "3d-modeling",
+        "blender",
+        "blender-addon",
+        "blender-agents",
+        "blender-ai",
+        "blender-assistant",
+        "blender-automation",
+        "blender-chatgpt",
+        "blender-copilot",
+        "blender-extension",
+        "blender-llm",
+        "blender-mcp",
+        "blender-plugin",
+        "blender-scripting",
+        "blender3d",
+        "bpy",
+        "mcp",
+        "mcp-server",
+        "model-context-protocol"
+      ]
+    },
+    {
+      "fullName": "JuneYaooo/rea-video",
+      "url": "https://github.com/JuneYaooo/rea-video",
+      "description": "Reverse-engineer any video, shot by shot: filmed, AI-generated or coded, and how to remake it. Breakdowns in the open VIDEO.md format. 逆向一切视频，逐个镜头看是拍的、AI 生成的还是代码做的，再告诉你怎么复刻；拆解结果按 VIDEO.md 格式输出。",
+      "stars": 10409,
+      "createdAt": "2026-10-29T16:15:01Z",
+      "topics": [
+        "agent-skills",
+        "ai-video",
+        "aigc-detection",
+        "claude-code",
+        "codex",
+        "ffmpeg",
+        "prompt-engineering",
+        "remotion",
+        "reverse-engineering",
+        "short-video",
+        "shot-detection",
+        "subtitles",
+        "video-analysis",
+        "video-breakdown",
+        "video-editing",
+        "video-generation",
+        "videomd",
+        "vlm"
+      ]
+    },
+    {
+      "fullName": "haydenschmitty/floorplan",
+      "url": "https://github.com/haydenschmitty/floorplan",
+      "description": "See how your app actually fits together. An interactive, plain-English map of your codebase, drawn by Claude or Codex.",
+      "stars": 4746,
+      "createdAt": "2026-10-27T12:03:01Z",
+      "topics": [
+        "ai-coding",
+        "architecture-diagram",
+        "claude",
+        "claude-code",
+        "claude-code-plugin",
+        "codebase-visualization",
+        "codex",
+        "codex-plugin",
+        "developer-tools",
+        "onboarding",
+        "openai",
+        "vibe-coding"
+      ]
+    },
+    {
+      "fullName": "ersinkoc/phonebox",
+      "url": "https://github.com/ersinkoc/phonebox",
+      "description": "Turn an old Android phone into a customizable desk panel and touch control deck for Windows, Linux and macOS. 115 widgets for system stats, AI coding, media and automation. USB or paired Wi-Fi. No cloud required.",
+      "stars": 2803,
+      "createdAt": "2026-11-07T16:45:16Z",
+      "topics": [
+        "android",
+        "claude-code",
+        "codex",
+        "dashboard",
+        "desk-panel",
+        "dotnet",
+        "linux",
+        "macos",
+        "old-phone",
+        "smart-stack",
+        "stream-deck",
+        "system-monitor",
+        "tailscale",
+        "webhooks",
+        "widgets",
+        "windows"
+      ]
+    },
+    {
+      "fullName": "DenisSergeevitch/ex-ussr-kinship-research",
+      "url": "https://github.com/DenisSergeevitch/ex-ussr-kinship-research",
+      "description": "Evidence-first genealogy skill for AI agents (Codex, Claude Code): church books, civil, military, deportation and repression records across the former USSR. Replies in your language.",
+      "stars": 2609,
+      "createdAt": "2026-10-25T10:05:56Z",
+      "topics": [
+        "agent-skills",
+        "archives",
+        "claude-code",
+        "codex",
+        "family-history",
+        "familysearch",
+        "genealogy",
+        "ussr"
+      ]
+    },
+    {
+      "fullName": "caru-ini/stack-diagram",
+      "url": "https://github.com/caru-ini/stack-diagram",
+      "description": "Agent skill: describe your stack in a sentence, get an architecture diagram with official logos",
+      "stars": 2596,
+      "createdAt": "2026-11-01T05:35:12Z",
+      "topics": [
+        "agent-skills",
+        "architecture-diagram",
+        "claude-code",
+        "claude-skills",
+        "codex",
+        "diagram",
+        "system-architecture",
+        "tech-stack"
+      ]
+    },
+    {
+      "fullName": "N1nEmAn/sapper-v2",
+      "url": "https://github.com/N1nEmAn/sapper-v2",
+      "description": "The first fruit of the Nüwa tree — an autonomous AI pentest legion (634-team champion, 8h unattended, 1B tokens beat 4.5B). Not just a tool: evolvable by design. Grow your own fruit on the Nüwa Foundation (Create/Language/History).",
+      "stars": 2347,
+      "createdAt": "2026-10-30T15:12:35Z",
+      "topics": [
+        "agentic-workflows",
+        "ai-agents",
+        "ai-security",
+        "autonomous-agents",
+        "claude-code",
+        "ctf",
+        "cybersecurity",
+        "fact-graph",
+        "llm",
+        "multi-agent",
+        "pentest",
+        "swarm-intelligence"
+      ]
+    },
+    {
+      "fullName": "patch-gg/pixelfx",
+      "url": "https://github.com/patch-gg/pixelfx",
+      "description": "244 pixel art effects, every one a small piece of code. Plus a Claude Code skill to make your own.",
+      "stars": 8040,
+      "createdAt": "2026-10-30T06:43:25Z",
+      "topics": [
+        "agent-skills",
+        "animation",
+        "canvas",
+        "claude-code-plugin",
+        "gamedev",
+        "pixel-art",
+        "sprite-sheet",
+        "vfx"
+      ]
+    },
+    {
+      "fullName": "morganlinton/BeautifulRust",
+      "url": "https://github.com/morganlinton/BeautifulRust",
+      "description": "Agent Skills that teach coding agents to write, review, and port idiomatic Rust, plus a tested clippy config. Works with Claude Code, Codex, Copilot, Cursor, and Gemini CLI.",
+      "stars": 2051,
+      "createdAt": "2026-10-23T03:01:11Z",
+      "topics": [
+        "agent-skills",
+        "claude-code",
+        "claude-plugin",
+        "claude-skills",
+        "clippy",
+        "code-review",
+        "coding-agent",
+        "cursor",
+        "rust",
+        "style-guide"
+      ]
+    },
+    {
+      "fullName": "daveebbelaar/bama",
+      "url": "https://github.com/daveebbelaar/bama",
+      "description": "BAMA: Build Any Mac App. Agent skills to research, clone, design, build, optimize, and test native macOS apps with Swift and SwiftUI.",
+      "stars": 1896,
+      "createdAt": "2026-10-24T08:44:36Z",
+      "topics": [
+        "agent-skills",
+        "ai-agents",
+        "app-clone",
+        "claude-code",
+        "claude-code-plugin",
+        "codex",
+        "computer-use",
+        "liquid-glass",
+        "macos",
+        "macos-app",
+        "native-apps",
+        "skills",
+        "swift",
+        "swiftdata",
+        "swiftui"
+      ]
+    },
+    {
+      "fullName": "NiazMorshed2007/reanimate",
+      "url": "https://github.com/NiazMorshed2007/reanimate",
+      "description": "A Claude Code skill that reverse-engineers any animation frame by frame, then proves the copy moves the same.",
+      "stars": 1761,
+      "createdAt": "2026-10-29T06:20:59Z",
+      "topics": [
+        "agent-skills",
+        "animation",
+        "claude-code",
+        "claude-skills",
+        "frontend",
+        "motion",
+        "playwright"
+      ]
+    },
+    {
+      "fullName": "XiaoyeCodes/code-animation-prompts",
+      "url": "https://github.com/XiaoyeCodes/code-animation-prompts",
+      "description": "341 种代码动画风格提示词、196 张参考静帧与离线挑选器，封装为 Claude Code / Codex Skill，支持一键导入与 HTML 视频渲染。",
+      "stars": 1268,
+      "createdAt": "2026-10-29T10:45:47Z",
+      "topics": [
+        "agent-skills",
+        "animation",
+        "claude-code",
+        "codex",
+        "creative-coding",
+        "prompts",
+        "video-generation"
+      ]
+    },
+    {
+      "fullName": "dabingfy-dot/solo-to-team-skills",
+      "url": "https://github.com/dabingfy-dot/solo-to-team-skills",
+      "description": "Human-led MAS toolkit: 16 roles, 6 group templates, four platform bundles, evidence-based review and handoff. 一人成队：一个人统筹多智能体协作。",
+      "stars": 1029,
+      "createdAt": "2026-11-07T01:36:28Z",
+      "topics": [
+        "agent-skills",
+        "ai-agents",
+        "collaboration",
+        "human-in-the-loop",
+        "workflow"
+      ]
+    },
+    {
+      "fullName": "mhfed/vn-law-check",
+      "url": "https://github.com/mhfed/vn-law-check",
+      "description": "Audit pháp lý website theo luật Việt Nam (BVDLCN 91/2025, TMĐT 122/2025, ANM 116/2025, AI 134/2025) cho Claude Code, Cursor, Copilot, Windsurf, Cline",
+      "stars": 507,
+      "createdAt": "2026-11-02T09:22:02Z",
+      "topics": [
+        "agent-md",
+        "agent-skills",
+        "claude-code",
+        "claude-plugin",
+        "claude-skills",
+        "compliance",
+        "copilot-instructions",
+        "cursor-rules",
+        "data-protection",
+        "ecommerce",
+        "legal-tech",
+        "pdpl",
+        "privacy",
+        "skills",
+        "vibe-coding",
+        "vietnam",
+        "vietnam-law"
+      ]
+    },
+    {
+      "fullName": "yucezerey/turkish-anti-ai-skill",
+      "url": "https://github.com/yucezerey/turkish-anti-ai-skill",
+      "description": "Türkçe metinlerdeki yapay zeka izlerini (AI slop, translationese, çeviri kokan cümle mimarisi ve TDK hatalarını) temizleyen Agent Skill ve Humanizer paketi.",
+      "stars": 326,
+      "createdAt": "2026-11-05T20:08:28Z",
+      "topics": [
+        "agent-skills",
+        "ai-skills",
+        "ai-writing",
+        "claude-code",
+        "codex",
+        "cursor-rules",
+        "de-slop",
+        "gemini-cli",
+        "humanizer",
+        "llm",
+        "prompt-engineering",
+        "tdk",
+        "turkish",
+        "turkish-nlp"
+      ]
+    },
+    {
+      "fullName": "harsh-aghara/underhood",
+      "url": "https://github.com/harsh-aghara/underhood",
+      "description": "Don't vibe-skim the code. See how it actually works under the hood and where it can break.",
+      "stars": 17,
+      "createdAt": "2026-10-30T20:54:08Z",
+      "topics": [
+        "agent-skill",
+        "agent-skills",
+        "antigravity-skills",
+        "claude-code-skill",
+        "claude-code-skills",
+        "claude-skills",
+        "codex-skill",
+        "cursor-rules",
+        "cursor-skills",
+        "opencode-skills",
+        "skills",
+        "skills-sh",
+        "windsurf-rules"
+      ]
+    },
+    {
+      "fullName": "rover-001/checkmate",
+      "url": "https://github.com/rover-001/checkmate",
+      "description": "Goal-driven mode for AI coding agents. Reach the user's win condition in the fewest moves.",
+      "stars": 9,
+      "createdAt": "2026-10-24T06:51:27Z",
+      "topics": [
+        "ai-agent",
+        "checkmate",
+        "claude-code",
+        "codex",
+        "coding-agent",
+        "cursor-rules",
+        "developer-tools",
+        "goal-driven",
+        "llm",
+        "opencode",
+        "prompt-engineering"
+      ]
+    },
+    {
+      "fullName": "Hero-all/repo-airgap",
+      "url": "https://github.com/Hero-all/repo-airgap",
+      "description": "帮你查出开源软件“偷偷联网”的地方（上报数据、偷偷下载、弹广告），让它能在断网的内部网络里放心使用。Find where open-source software quietly goes online, so it can run safely offline.",
+      "stars": 8,
+      "createdAt": "2026-11-04T08:42:28Z",
+      "topics": [
+        "agent-skill",
+        "air-gap",
+        "claude-code",
+        "cursor-rules",
+        "devsecops",
+        "offline-first",
+        "privacy-audit",
+        "python-cli",
+        "self-hosted",
+        "telemetry"
+      ]
+    },
+    {
+      "fullName": "digital-lake-ai/lognexus",
+      "url": "https://github.com/digital-lake-ai/lognexus",
+      "description": "Universal Git-powered persistent memory, context rules & native MCP server for AI coding agents. Prevents context amnesia with stateful workflows, Git Notes, and cross-model review gates across Claude, OpenAI, Gemini & DeepSeek in Cursor, Claude Code & VS Code.",
+      "stars": 6,
+      "createdAt": "2026-10-21T14:54:10Z",
+      "topics": [
+        "ai-agents",
+        "ai-coding",
+        "claude",
+        "claude-code",
+        "code-review",
+        "context-management",
+        "cursor",
+        "cursor-rules",
+        "deepseek",
+        "developer-tools",
+        "gemini",
+        "git",
+        "git-notes",
+        "github-workflow",
+        "knowledge-graph",
+        "mcp",
+        "mcp-server",
+        "model-context-protocol",
+        "skills",
+        "traceability"
+      ]
+    },
+    {
+      "fullName": "karefined-eng/information-is-beautiful-skill",
+      "url": "https://github.com/karefined-eng/information-is-beautiful-skill",
+      "description": "Beautiful, honest data visualization as an Agent Skill — five laws, a chart matcher, a 25-point beauty audit. For Claude Code, Codex, Cursor & friends. Fan tribute, MIT.",
+      "stars": 5,
+      "createdAt": "2026-10-24T13:35:21Z",
+      "topics": [
+        "agent-skills",
+        "ai-agents",
+        "claude",
+        "claude-code",
+        "claude-code-plugin",
+        "cursor-rules",
+        "data-visualization",
+        "design-tools",
+        "developer-tools",
+        "iib",
+        "infographics",
+        "information-design",
+        "llm",
+        "prompt-engineering",
+        "skills",
+        "yagni"
+      ]
+    },
+    {
+      "fullName": "Yun-BaiBai/plain-to-meta",
+      "url": "https://github.com/Yun-BaiBai/plain-to-meta",
+      "description": "🔑 元知识与专业词提示词破译器 | Translate colloquial pain points into high-density domain jargon & Meta-Knowledge Keys (Progressive Disclosure, Ablation Study, Monte Carlo, Pyramid Principle) for AI Agents.",
+      "stars": 4,
+      "createdAt": "2026-11-09T07:01:56Z",
+      "topics": [
+        "agent-skills",
+        "claude-code",
+        "cursor-rules",
+        "llm",
+        "meta-knowledge",
+        "prompt-engineering",
+        "vibe-coding"
+      ]
+    },
+    {
+      "fullName": "PromptScale/saas-agent-blueprints",
+      "url": "https://github.com/PromptScale/saas-agent-blueprints",
+      "description": "Production-vetted .plan.md blueprints, PostgreSQL DDL schemas, CLAUDE.md, and .cursorrules to build self-hosted replacements for Harvest, Calendly, Typeform, Mermaid & Gumroad with Claude Code and Cursor.",
+      "stars": 4,
+      "createdAt": "2026-11-13T19:02:50Z",
+      "topics": [
+        "ai-agents",
+        "claude-code",
+        "cursor",
+        "cursor-rules",
+        "nextjs",
+        "postgresql",
+        "prompt-engineering",
+        "saas",
+        "self-hosted",
+        "windsurf"
+      ]
+    },
+    {
+      "fullName": "gethrbr/deckhand",
+      "url": "https://github.com/gethrbr/deckhand",
+      "description": "Free skills for coding agents: audit CLAUDE.md and AGENTS.md against the code, check your diff against them, and turn repeated PR review comments into rules.",
+      "stars": 3,
+      "createdAt": "2026-11-12T07:44:37Z",
+      "topics": [
+        "agent-skills",
+        "agents-md",
+        "claude-code",
+        "claude-code-plugin",
+        "claude-md",
+        "claude-skills",
+        "codex",
+        "cursor-rules"
+      ]
+    }
+  ],
+  "stars": {
+    "DietrichGebert/ponytail": 193389,
+    "cloudflare/security-audit-skill": 74960,
+    "anthropics/knowledge-work-plugins": 36466,
+    "php/php-src": 41791,
+    "Graphify-Labs/graphify": 149782,
+    "luongnv89/claude-howto": 47389,
+    "supabase/supabase": 115228,
+    "fastapi/fastapi": 104991,
+    "morluto/rea": 466853,
+    "Meloong-Git/PCL": 9743,
+    "ruvnet/ruflo": 81987,
+    "anthropics/claude-plugins-official": 47603,
+    "android/skills": 10635,
+    "K-Dense-AI/scientific-agent-skills": 57622,
+    "anomalyco/opencode": 227665,
+    "HKUDS/CLI-Anything": 59238,
+    "akitaonrails/ai-memory": 16081,
+    "NationalSecurityAgency/ghidra": 100485,
+    "debpalash/VoiceStudio": 113029,
+    "heygen-com/hyperframes": 86132,
+    "Comfy-Org/ComfyUI": 147407,
+    "stablyai/orca": 128146,
+    "mksglu/context-mode": 34251,
+    "NVIDIA/OpenShell": 21746,
+    "Renhuai123/ziwei-doushu": 18618,
+    "SnailSploit/Claude-Red": 11188,
+    "OpenBMB/VoxCPM": 42602,
+    "elie222/rakazo": 9067,
+    "nodejs/node": 123867,
+    "Nutlope/hallmark": 57082,
+    "aws/agent-toolkit-for-aws": 3520,
+    "pbakaus/impeccable": 112395,
+    "pollen-robotics/microduck": 13880,
+    "google-gemini/gemini-cli": 108913,
+    "jbiaojerry/ebook-treasure-chest": 24202,
+    "vllm-project/vllm": 97130,
+    "makecindy/cindy": 10272,
+    "TauricResearch/TradingAgents": 123001,
+    "JetBrains/thinkrail": 8336,
+    "multica-ai/andrej-karpathy-skills": 234072,
+    "pingdotgg/t3code": 64448,
+    "coollabsio/coolify": 66201,
+    "AgriciDaniel/claude-seo": 30467,
+    "Panniantong/Agent-Reach": 112864,
+    "nightly-labs/openbot": 8738,
+    "gitroomhq/postiz-app": 41855,
+    "alchaincyf/huashu-design": 29766,
+    "NVIDIA/SkillSpector": 26681,
+    "wshobson/agents": 42640,
+    "HKUDS/DeepTutor": 60186,
+    "elayadesign/ai-design-skills": 15952,
+    "togg53192-cmd/jailbreaks": 18137,
+    "macro-inc/macro": 6367,
+    "hmjz100/LinkSwift": 40369,
+    "ruvnet/RuView": 104546,
+    "expo/skills": 4186,
+    "xiaolai/the-craft-of-selfteaching": 19357,
+    "Leonxlnx/taste-skill": 117945,
+    "jakubkrehel/skills": 12335,
+    "thedotmack/claude-mem": 118065,
+    "milind-soni/OpenMausBot": 24987,
+    "CopilotKit/OpenBot": 12781,
+    "Donchitos/Claude-Code-Game-Studios": 39966,
+    "mattpocock/skills": 326940,
+    "hugohe3/ppt-master": 78050,
+    "lightpanda-io/browser": 42201,
+    "THU-MAIC/OpenMAIC": 43859,
+    "Orkas-AI/Orkas": 9438,
+    "bregman-arie/devops-exercises": 86890,
+    "vorssaint/vorssaint-utils": 35129,
+    "shiyu-coder/Kronos": 47951,
+    "public-apis/public-apis": 499920,
+    "AstrBotDevs/AstrBot": 47145,
+    "kornia/kornia": 12393,
+    "beenuar/AiSOC": 8083,
+    "cjpais/Handy": 39136,
+    "anomalyco/hex": 7319,
+    "patchy631/ai-engineering-hub": 41975,
+    "FlashML-org/FreeToken": 17280,
+    "hyprwm/Hyprland": 40696,
+    "ghostty-org/ghostty": 64203,
+    "vercel-labs/agent-desktop": 25094,
+    "JustVugg/colibri": 51805,
+    "max-sixty/worktrunk": 12605,
+    "D4Vinci/Scrapling": 104014,
+    "karpathy/nanochat": 60648,
+    "paperclipai/paperclip": 114637,
+    "p-e-w/heretic": 41696,
+    "spotify/portal-ai-plugins": 3295,
+    "floci-io/floci": 31895,
+    "Usagi-org/ai-goofish-monitor": 20163,
+    "NVIDIA/auto-ontology": 13688,
+    "github/spec-kit": 150338,
+    "The-PR-Agent/pr-agent": 16354,
+    "harry0703/MoneyPrinterTurbo": 144275,
+    "FareedKhan-dev/kimi-k3-in-c": 12316,
+    "garrytan/gstack": 141950,
+    "JiaFeiMiao-K-Cat/DiscImageStudio": 10242,
+    "Thysrael/Horizon": 14565,
+    "MichaelCade/90DaysOfDevOps": 30920,
+    "scenario-labs/skills": 3874,
+    "lz4/lz4": 12795,
+    "google/skills": 24406,
+    "ConardLi/garden-skills": 15400,
+    "calesthio/OpenMontage": 81411,
+    "microsoft/VibeVoice": 57246,
+    "zed-industries/zed": 95247,
+    "rails/rails": 59185,
+    "mpv-player/mpv": 38173,
+    "rust-lang/rust": 122306,
+    "react/react": 252889,
+    "angular/angular": 101564,
+    "symfony/symfony": 31446,
+    "prometheus/prometheus": 67681,
+    "microsoft/vscode": 195696,
+    "nushell/nushell": 41030,
+    "openssl/openssl": 31474,
+    "astral-sh/ruff": 51393,
+    "sherlock-project/sherlock": 113901,
+    "etcd-io/etcd": 52620,
+    "tailwindlabs/tailwindcss": 98770,
+    "mbillow/localthings": 1391,
+    "ranxianglei/billion-context": 7806,
+    "dsx-ai-factory/nvke": 1237,
+    "anthropics/claude-quickstarts": 21087,
+    "google-deepmind/mujoco": 18259,
+    "garrytan/gbrain": 33241,
+    "blader/humanizer": 70500,
+    "homeassistant-ai/ha-mcp": 7964,
+    "tokio-rs/topcoat": 7253,
+    "shadcn/improve": 12033,
+    "TheAlgorithms/Java": 67273,
+    "herdrdev/herdr": 51642,
+    "pookjw/HermesEnabler": 2189,
+    "nvm-sh/nvm": 96216,
+    "QwenLM/qwen-code": 30740,
+    "ashhart/TensorFold": 2317,
+    "Alishahryar1/free-claude-code": 71135,
+    "ggml-org/llama.cpp": 135684,
+    "louislam/uptime-kuma": 94573,
+    "block/buzz": 37562,
+    "Likely7/Veyra-NRVideo": 3290,
+    "tailscale/tailcat": 10066,
+    "lobehub/lobehub": 85735,
+    "google/elephant-goldfish-model": 20873,
+    "JuliusBrussee/caveman": 121134,
+    "NVIDIA/SkillEvaluator": 3405,
+    "martin-olivier/airgorah": 6612,
+    "ggml-org/ggml": 16105,
+    "DeanChensj/jiangshan-map": 7709,
+    "kajisho5/ffmpeg-skill": 7836
+  }
+}
