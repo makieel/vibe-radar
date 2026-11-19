@@ -1,0 +1,2404 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-11-19",
+  "collectedAt": "2026-11-19T06:43:48.743Z",
+  "mode": "full",
+  "scanNo": 28,
+  "sources": [
+    {
+      "id": "hn",
+      "ok": true,
+      "count": 30,
+      "error": null,
+      "reduced": false
+    },
+    {
+      "id": "geeknews",
+      "ok": true,
+      "count": 20,
+      "error": null,
+      "reduced": false
+    },
+    {
+      "id": "reddit",
+      "ok": false,
+      "count": 0,
+      "error": "HTTP 429 for https://www.reddit.com/r/ClaudeAI/top/.rss?t=day",
+      "reduced": false
+    },
+    {
+      "id": "arxiv",
+      "ok": false,
+      "count": 0,
+      "error": "The operation was aborted due to timeout",
+      "reduced": false
+    },
+    {
+      "id": "huggingface",
+      "ok": true,
+      "count": 20,
+      "error": null,
+      "reduced": false
+    },
+    {
+      "id": "trending",
+      "ok": true,
+      "count": 34,
+      "error": null,
+      "reduced": false
+    },
+    {
+      "id": "tools",
+      "ok": true,
+      "count": 5,
+      "error": null,
+      "reduced": false
+    },
+    {
+      "id": "advisories",
+      "ok": true,
+      "count": 60,
+      "error": null,
+      "reduced": false
+    },
+    {
+      "id": "kit",
+      "ok": true,
+      "count": 39,
+      "error": null,
+      "reduced": false
+    },
+    {
+      "id": "stars",
+      "ok": true,
+      "count": 151,
+      "error": null,
+      "reduced": false
+    }
+  ],
+  "gauge": {
+    "value": 52,
+    "avg7": 51,
+    "label": "normal",
+    "daysOfHistory": 7
+  },
+  "issues": [
+    {
+      "id": "97a3bfd94b",
+      "title": "Unauthenticated remote code execution in Nginx",
+      "title_ko": "Nginx에서 인증 없는 원격 코드 실행 취약점 발견",
+      "summary_ko": null,
+      "check_ko": null,
+      "heat": 55,
+      "heatReason": "HN 1278점 · 댓글 553",
+      "sources": [
+        "hn"
+      ],
+      "url": "https://www.wiz.io/blog/nginx-http2-rce-vulnerabilities",
+      "items": [
+        {
+          "source": "hn",
+          "title": "Unauthenticated remote code execution in Nginx",
+          "url": "https://www.wiz.io/blog/nginx-http2-rce-vulnerabilities",
+          "points": 1278,
+          "comments": 553
+        }
+      ]
+    },
+    {
+      "id": "b1f27447c2",
+      "title": "Gemini 4 Neon",
+      "title_ko": "구글, Gemini 4 Neon 공개",
+      "summary_ko": null,
+      "check_ko": null,
+      "heat": 53,
+      "heatReason": "HN 690점 · 댓글 584",
+      "sources": [
+        "hn"
+      ],
+      "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-neon/",
+      "items": [
+        {
+          "source": "hn",
+          "title": "Gemini 4 Neon",
+          "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-neon/",
+          "points": 690,
+          "comments": 584
+        }
+      ]
+    },
+    {
+      "id": "ad7d183795",
+      "title": "Gemini 4 Neon looks like an Opus 5.5 competitor",
+      "title_ko": "Gemini 4 Neon, Opus 5.5의 경쟁자가 될 것으로 보임",
+      "summary_ko": null,
+      "check_ko": null,
+      "heat": 51,
+      "heatReason": "HN 206점 · 댓글 67 · 출처 2곳",
+      "sources": [
+        "hn",
+        "geeknews"
+      ],
+      "url": "https://micjm.com/blog/gemini-4-neon-looks-like-a-top-model/",
+      "items": [
+        {
+          "source": "hn",
+          "title": "Gemini 4 Neon looks like an Opus 5.5 competitor",
+          "url": "https://micjm.com/blog/gemini-4-neon-looks-like-a-top-model/",
+          "points": 206,
+          "comments": 67
+        },
+        {
+          "source": "geeknews",
+          "title": "Gemini 4 Neon, Opus 5.5의 경쟁자가 될 것으로 보임",
+          "url": "https://news.hada.io/topic?id=37456&utm_source=geeknews&utm_medium=rss&utm_campaign=news",
+          "points": null,
+          "comments": null
+        }
+      ]
+    },
+    {
+      "id": "9b37b547af",
+      "title": "Show HN: ExitPath – Open-source ways out of Slack, Notion and Microsoft 365",
+      "title_ko": "ExitPath - Slack, Notion, Microsoft 365에서 벗어나는 오픈소스 대안",
+      "summary_ko": null,
+      "check_ko": null,
+      "heat": 51,
+      "heatReason": "HN 197점 · 댓글 60 · 출처 2곳",
+      "sources": [
+        "hn",
+        "geeknews"
+      ],
+      "url": "https://exitpath-ruddy.vercel.app/",
+      "items": [
+        {
+          "source": "hn",
+          "title": "Show HN: ExitPath – Open-source ways out of Slack, Notion and Microsoft 365",
+          "url": "https://exitpath-ruddy.vercel.app/",
+          "points": 197,
+          "comments": 60
+        },
+        {
+          "source": "geeknews",
+          "title": "Show HN: ExitPath - Slack, Notion, Microsoft 365에서 벗어나는 오픈소스 대안",
+          "url": "https://news.hada.io/topic?id=37447&utm_source=geeknews&utm_medium=rss&utm_campaign=news",
+          "points": null,
+          "comments": null
+        }
+      ]
+    },
+    {
+      "id": "df326524b7",
+      "title": "DNS resolvers are the wrong place to fight piracy",
+      "title_ko": "DNS 리졸버는 불법 복제와 싸울 올바른 장소가 아님",
+      "summary_ko": null,
+      "check_ko": null,
+      "heat": 51,
+      "heatReason": "HN 646점 · 댓글 251",
+      "sources": [
+        "hn"
+      ],
+      "url": "https://techstackups.com/articles/quad9-leaves-france-dns-blocking/",
+      "items": [
+        {
+          "source": "hn",
+          "title": "DNS resolvers are the wrong place to fight piracy",
+          "url": "https://techstackups.com/articles/quad9-leaves-france-dns-blocking/",
+          "points": 646,
+          "comments": 251
+        }
+      ]
+    },
+    {
+      "id": "ce8ed3851d",
+      "title": "Seven new models at scalable price-performance",
+      "title_ko": null,
+      "summary_ko": null,
+      "check_ko": null,
+      "heat": 50,
+      "heatReason": "HN 508점 · 댓글 336",
+      "sources": [
+        "hn"
+      ],
+      "url": "https://microsoft.ai/news/microsoft-ignite-2026/",
+      "items": [
+        {
+          "source": "hn",
+          "title": "Seven new models at scalable price-performance",
+          "url": "https://microsoft.ai/news/microsoft-ignite-2026/",
+          "points": 508,
+          "comments": 336
+        }
+      ]
+    },
+    {
+      "id": "4c3603c4be",
+      "title": "Inside Deutsche Bank",
+      "title_ko": null,
+      "summary_ko": null,
+      "check_ko": null,
+      "heat": 50,
+      "heatReason": "HN 636점 · 댓글 203",
+      "sources": [
+        "hn"
+      ],
+      "url": "https://www.inside-db.com/",
+      "items": [
+        {
+          "source": "hn",
+          "title": "Inside Deutsche Bank",
+          "url": "https://www.inside-db.com/",
+          "points": 636,
+          "comments": 203
+        }
+      ]
+    },
+    {
+      "id": "5d175a8f56",
+      "title": "We need smart people who give a shit",
+      "title_ko": null,
+      "summary_ko": null,
+      "check_ko": null,
+      "heat": 48,
+      "heatReason": "HN 422점 · 댓글 216",
+      "sources": [
+        "hn"
+      ],
+      "url": "https://violetpixel.com/blog/2026-11-17-we-need-smart-people-who-give-a-shit/",
+      "items": [
+        {
+          "source": "hn",
+          "title": "We need smart people who give a shit",
+          "url": "https://violetpixel.com/blog/2026-11-17-we-need-smart-people-who-give-a-shit/",
+          "points": 422,
+          "comments": 216
+        }
+      ]
+    },
+    {
+      "id": "2069295c6c",
+      "title": "AI agents ask better questions than KPMG accountants in audit trial",
+      "title_ko": null,
+      "summary_ko": null,
+      "check_ko": null,
+      "heat": 48,
+      "heatReason": "HN 438점 · 댓글 189",
+      "sources": [
+        "hn"
+      ],
+      "url": "https://europeanbusinessmagazine.com/ai-agents-better-questions-kpmg/",
+      "items": [
+        {
+          "source": "hn",
+          "title": "AI agents ask better questions than KPMG accountants in audit trial",
+          "url": "https://europeanbusinessmagazine.com/ai-agents-better-questions-kpmg/",
+          "points": 438,
+          "comments": 189
+        }
+      ]
+    },
+    {
+      "id": "1be1d8c030",
+      "title": "The Cambridge Dictionary has named ‘human’ as the Word of the Year 2026",
+      "title_ko": null,
+      "summary_ko": null,
+      "check_ko": null,
+      "heat": 45,
+      "heatReason": "HN 266점 · 댓글 191",
+      "sources": [
+        "hn"
+      ],
+      "url": "https://www.cam.ac.uk/news/cambridge-dictionary-reveals-word-of-the-year-2026",
+      "items": [
+        {
+          "source": "hn",
+          "title": "The Cambridge Dictionary has named ‘human’ as the Word of the Year 2026",
+          "url": "https://www.cam.ac.uk/news/cambridge-dictionary-reveals-word-of-the-year-2026",
+          "points": 266,
+          "comments": 191
+        }
+      ]
+    },
+    {
+      "id": "3357ad0fa2",
+      "title": "Genie 4 is now available",
+      "title_ko": null,
+      "summary_ko": null,
+      "check_ko": null,
+      "heat": 44,
+      "heatReason": "HN 231점 · 댓글 156",
+      "sources": [
+        "hn"
+      ],
+      "url": "https://blog.google/innovation-and-ai/models-and-research/google-deepmind/genie-4-now-available-project-genie/",
+      "items": [
+        {
+          "source": "hn",
+          "title": "Genie 4 is now available",
+          "url": "https://blog.google/innovation-and-ai/models-and-research/google-deepmind/genie-4-now-available-project-genie/",
+          "points": 231,
+          "comments": 156
+        }
+      ]
+    },
+    {
+      "id": "ddadc868c0",
+      "title": "Advancing chip design with OpenAI models",
+      "title_ko": null,
+      "summary_ko": null,
+      "check_ko": null,
+      "heat": 42,
+      "heatReason": "HN 194점 · 댓글 121",
+      "sources": [
+        "hn"
+      ],
+      "url": "https://openai.com/index/advancing-chip-design-with-our-models/",
+      "items": [
+        {
+          "source": "hn",
+          "title": "Advancing chip design with OpenAI models",
+          "url": "https://openai.com/index/advancing-chip-design-with-our-models/",
+          "points": 194,
+          "comments": 121
+        }
+      ]
+    },
+    {
+      "id": "0576121e92",
+      "title": "Multiple vulnerabilities in Regexp and String case conversion",
+      "title_ko": null,
+      "summary_ko": null,
+      "check_ko": null,
+      "heat": 40,
+      "heatReason": "HN 187점 · 댓글 60",
+      "sources": [
+        "hn"
+      ],
+      "url": "https://www.ruby-lang.org/en/news/2026/11/18/multiple-vulnerabilities-in-regexp-and-string/",
+      "items": [
+        {
+          "source": "hn",
+          "title": "Multiple vulnerabilities in Regexp and String case conversion",
+          "url": "https://www.ruby-lang.org/en/news/2026/11/18/multiple-vulnerabilities-in-regexp-and-string/",
+          "points": 187,
+          "comments": 60
+        }
+      ]
+    },
+    {
+      "id": "481464f183",
+      "title": "DaisyRose-27B",
+      "title_ko": null,
+      "summary_ko": null,
+      "check_ko": null,
+      "heat": 40,
+      "heatReason": "HN 180점 · 댓글 57",
+      "sources": [
+        "hn"
+      ],
+      "url": "https://www.radixark.com/blog/daisyrose-27b",
+      "items": [
+        {
+          "source": "hn",
+          "title": "DaisyRose-27B",
+          "url": "https://www.radixark.com/blog/daisyrose-27b",
+          "points": 180,
+          "comments": 57
+        }
+      ]
+    },
+    {
+      "id": "bf442bed91",
+      "title": "Show HN: Take Voyager 1 apart, down to a single memory chip",
+      "title_ko": null,
+      "summary_ko": null,
+      "check_ko": null,
+      "heat": 39,
+      "heatReason": "HN 182점 · 댓글 45",
+      "sources": [
+        "hn"
+      ],
+      "url": "https://rshekhar.com/voyager/",
+      "items": [
+        {
+          "source": "hn",
+          "title": "Show HN: Take Voyager 1 apart, down to a single memory chip",
+          "url": "https://rshekhar.com/voyager/",
+          "points": 182,
+          "comments": 45
+        }
+      ]
+    },
+    {
+      "id": "aa26f7a498",
+      "title": "The x86 CPU: From 4004 to 486",
+      "title_ko": null,
+      "summary_ko": null,
+      "check_ko": null,
+      "heat": 39,
+      "heatReason": "HN 165점 · 댓글 51",
+      "sources": [
+        "hn"
+      ],
+      "url": "https://pikuma.com/blog/history-of-x86-4004-to-486",
+      "items": [
+        {
+          "source": "hn",
+          "title": "The x86 CPU: From 4004 to 486",
+          "url": "https://pikuma.com/blog/history-of-x86-4004-to-486",
+          "points": 165,
+          "comments": 51
+        }
+      ]
+    },
+    {
+      "id": "7575e4d0fe",
+      "title": "Unreal Tournament 2004 in the Browser",
+      "title_ko": null,
+      "summary_ko": null,
+      "check_ko": null,
+      "heat": 38,
+      "heatReason": "HN 128점 · 댓글 53",
+      "sources": [
+        "hn"
+      ],
+      "url": "https://ut2004.dev/",
+      "items": [
+        {
+          "source": "hn",
+          "title": "Unreal Tournament 2004 in the Browser",
+          "url": "https://ut2004.dev/",
+          "points": 128,
+          "comments": 53
+        }
+      ]
+    },
+    {
+      "id": "38838b595a",
+      "title": "LLM assisted reverse engineering",
+      "title_ko": null,
+      "summary_ko": null,
+      "check_ko": null,
+      "heat": 38,
+      "heatReason": "HN 150점 · 댓글 38",
+      "sources": [
+        "hn"
+      ],
+      "url": "https://www.slowchronicle.com/posts/llm-assisted-reverse-engineering",
+      "items": [
+        {
+          "source": "hn",
+          "title": "LLM assisted reverse engineering",
+          "url": "https://www.slowchronicle.com/posts/llm-assisted-reverse-engineering",
+          "points": 150,
+          "comments": 38
+        }
+      ]
+    },
+    {
+      "id": "9f4f6dfd7c",
+      "title": "Dumping an AES key from a MyQ garage opener to stop rebooting when offline",
+      "title_ko": null,
+      "summary_ko": null,
+      "check_ko": null,
+      "heat": 35,
+      "heatReason": "HN 99점 · 댓글 34",
+      "sources": [
+        "hn"
+      ],
+      "url": "https://kusha.me/blog/stop_myq_homebridge_819lmb_rebooting/",
+      "items": [
+        {
+          "source": "hn",
+          "title": "Dumping an AES key from a MyQ garage opener to stop rebooting when offline",
+          "url": "https://kusha.me/blog/stop_myq_homebridge_819lmb_rebooting/",
+          "points": 99,
+          "comments": 34
+        }
+      ]
+    },
+    {
+      "id": "69c35458cc",
+      "title": "Launch HN: Maritime (YC F26) – A managed cloud for production AI agents",
+      "title_ko": null,
+      "summary_ko": null,
+      "check_ko": null,
+      "heat": 32,
+      "heatReason": "HN 48점 · 댓글 43",
+      "sources": [
+        "hn"
+      ],
+      "url": "https://news.ycombinator.com/item?id=50549188",
+      "items": [
+        {
+          "source": "hn",
+          "title": "Launch HN: Maritime (YC F26) – A managed cloud for production AI agents",
+          "url": "https://news.ycombinator.com/item?id=50549188",
+          "points": 48,
+          "comments": 43
+        }
+      ]
+    },
+    {
+      "id": "eb032acc94",
+      "title": "Cuttlefish on Mac: Android's Virtual Device Framework on Apple Silicon",
+      "title_ko": null,
+      "summary_ko": null,
+      "check_ko": null,
+      "heat": 30,
+      "heatReason": "HN 61점 · 댓글 12",
+      "sources": [
+        "hn"
+      ],
+      "url": "https://engineering.fb.com/2026/11/13/android/cuttlefish-on-mac/",
+      "items": [
+        {
+          "source": "hn",
+          "title": "Cuttlefish on Mac: Android's Virtual Device Framework on Apple Silicon",
+          "url": "https://engineering.fb.com/2026/11/13/android/cuttlefish-on-mac/",
+          "points": 61,
+          "comments": 12
+        }
+      ]
+    },
+    {
+      "id": "ad230b173a",
+      "title": "Palo Alto Networks to Acquire Applied Compute for $4.5B",
+      "title_ko": null,
+      "summary_ko": null,
+      "check_ko": null,
+      "heat": 28,
+      "heatReason": "HN 44점 · 댓글 10",
+      "sources": [
+        "hn"
+      ],
+      "url": "https://investors.paloaltonetworks.com/news-releases/news-release-details/palo-alto-networks-acquire-applied-compute-bringing-secure-open",
+      "items": [
+        {
+          "source": "hn",
+          "title": "Palo Alto Networks to Acquire Applied Compute for $4.5B",
+          "url": "https://investors.paloaltonetworks.com/news-releases/news-release-details/palo-alto-networks-acquire-applied-compute-bringing-secure-open",
+          "points": 44,
+          "comments": 10
+        }
+      ]
+    },
+    {
+      "id": "633c7c075d",
+      "title": "Show HN: Open-source, real-time object tracking for live video feeds",
+      "title_ko": null,
+      "summary_ko": null,
+      "check_ko": null,
+      "heat": 28,
+      "heatReason": "HN 75점 · 댓글 3",
+      "sources": [
+        "hn"
+      ],
+      "url": "https://github.com/aryamandarda/tamserve",
+      "items": [
+        {
+          "source": "hn",
+          "title": "Show HN: Open-source, real-time object tracking for live video feeds",
+          "url": "https://github.com/aryamandarda/tamserve",
+          "points": 75,
+          "comments": 3
+        }
+      ]
+    },
+    {
+      "id": "13a0b54d53",
+      "title": "A Collage Showing 49 Drill Holes Made by NASA's Curiosity Mars Rover",
+      "title_ko": null,
+      "summary_ko": null,
+      "check_ko": null,
+      "heat": 27,
+      "heatReason": "HN 48점 · 댓글 5",
+      "sources": [
+        "hn"
+      ],
+      "url": "https://science.nasa.gov/photojournal/a-collage-showing-49-drill-holes-made-by-nasas-curiosity-mars-rover/",
+      "items": [
+        {
+          "source": "hn",
+          "title": "A Collage Showing 49 Drill Holes Made by NASA's Curiosity Mars Rover",
+          "url": "https://science.nasa.gov/photojournal/a-collage-showing-49-drill-holes-made-by-nasas-curiosity-mars-rover/",
+          "points": 48,
+          "comments": 5
+        }
+      ]
+    },
+    {
+      "id": "8f60b8076f",
+      "title": "Previous-Token Prediction Based LLM Inversion for Prompt Reconstruction",
+      "title_ko": null,
+      "summary_ko": null,
+      "check_ko": null,
+      "heat": 26,
+      "heatReason": "HN 38점 · 댓글 7",
+      "sources": [
+        "hn"
+      ],
+      "url": "https://arxiv.org/abs/2607.29378",
+      "items": [
+        {
+          "source": "hn",
+          "title": "Previous-Token Prediction Based LLM Inversion for Prompt Reconstruction",
+          "url": "https://arxiv.org/abs/2607.29378",
+          "points": 38,
+          "comments": 7
+        }
+      ]
+    },
+    {
+      "id": "57da5d0dd9",
+      "title": "Mosquitoes are Ladakh's latest tourists",
+      "title_ko": null,
+      "summary_ko": null,
+      "check_ko": null,
+      "heat": 22,
+      "heatReason": "HN 33점 · 댓글 1",
+      "sources": [
+        "hn"
+      ],
+      "url": "https://ruralindiaonline.org/article/mosquitoes-are-ladakh-s-latest-tourists",
+      "items": [
+        {
+          "source": "hn",
+          "title": "Mosquitoes are Ladakh's latest tourists",
+          "url": "https://ruralindiaonline.org/article/mosquitoes-are-ladakh-s-latest-tourists",
+          "points": 33,
+          "comments": 1
+        }
+      ]
+    },
+    {
+      "id": "ecbb8798b0",
+      "title": "FailTrace – Reproduce a failed GitHub Actions run locally from its URL",
+      "title_ko": null,
+      "summary_ko": null,
+      "check_ko": null,
+      "heat": 22,
+      "heatReason": "HN 22점 · 댓글 5",
+      "sources": [
+        "hn"
+      ],
+      "url": "https://github.com/Ri4dH/failtrace",
+      "items": [
+        {
+          "source": "hn",
+          "title": "FailTrace – Reproduce a failed GitHub Actions run locally from its URL",
+          "url": "https://github.com/Ri4dH/failtrace",
+          "points": 22,
+          "comments": 5
+        }
+      ]
+    },
+    {
+      "id": "8f6c4b21b6",
+      "title": "google-research/paper-orchestra",
+      "title_ko": null,
+      "summary_ko": null,
+      "check_ko": null,
+      "heat": 22,
+      "heatReason": "스타 +1524",
+      "sources": [
+        "trending"
+      ],
+      "url": "https://github.com/google-research/paper-orchestra",
+      "items": [
+        {
+          "source": "trending",
+          "title": "google-research/paper-orchestra",
+          "url": "https://github.com/google-research/paper-orchestra",
+          "points": null,
+          "comments": null
+        }
+      ]
+    },
+    {
+      "id": "1b7de5aa2c",
+      "title": "Camera Index",
+      "title_ko": null,
+      "summary_ko": null,
+      "check_ko": null,
+      "heat": 21,
+      "heatReason": "HN 19점 · 댓글 4",
+      "sources": [
+        "hn"
+      ],
+      "url": "https://www.cameraindex.co.uk/",
+      "items": [
+        {
+          "source": "hn",
+          "title": "Camera Index",
+          "url": "https://www.cameraindex.co.uk/",
+          "points": 19,
+          "comments": 4
+        }
+      ]
+    },
+    {
+      "id": "768cda9a02",
+      "title": "mvanhorn/last30days-skill",
+      "title_ko": null,
+      "summary_ko": null,
+      "check_ko": null,
+      "heat": 20,
+      "heatReason": "스타 +1059",
+      "sources": [
+        "trending"
+      ],
+      "url": "https://github.com/mvanhorn/last30days-skill",
+      "items": [
+        {
+          "source": "trending",
+          "title": "mvanhorn/last30days-skill",
+          "url": "https://github.com/mvanhorn/last30days-skill",
+          "points": null,
+          "comments": null
+        }
+      ]
+    }
+  ],
+  "alerts": [
+    {
+      "id": "geeknews-https://news.hada.io/topic?id=37452",
+      "title": "PHP, Critical 등급 취약점 수정을 포함한 새로운 보안패치 예정(2026.11.19.)",
+      "title_ko": null,
+      "url": "https://news.hada.io/topic?id=37452&utm_source=geeknews&utm_medium=rss&utm_campaign=news",
+      "origin": "news",
+      "severity": null,
+      "packages": []
+    },
+    {
+      "id": "geeknews-https://news.hada.io/topic?id=37445",
+      "title": "NoisyTCP CVE-2026-99288: Linux 관리자가 알아야 할 사항",
+      "title_ko": "NoisyTCP CVE-2026-99288 취약점에 대해 Linux 관리자가 알아야 할 사항을 정리했습니다.",
+      "url": "https://news.hada.io/topic?id=37445&utm_source=geeknews&utm_medium=rss&utm_campaign=news",
+      "origin": "news",
+      "severity": null,
+      "packages": []
+    },
+    {
+      "id": "geeknews-https://news.hada.io/topic?id=37442",
+      "title": "Java4Shell: Java 17의 인증 전 원격 코드 실행 취약점으로 서버 위험 노출(CVE-2026-114938)",
+      "title_ko": "Java4Shell은 Java 17의 인증 전 원격 코드 실행 취약점으로 서버를 위험에 노출시킵니다.",
+      "url": "https://news.hada.io/topic?id=37442&utm_source=geeknews&utm_medium=rss&utm_campaign=news",
+      "origin": "news",
+      "severity": null,
+      "packages": []
+    }
+  ],
+  "tools": [
+    {
+      "tool": "gemini-cli",
+      "name": "Gemini CLI",
+      "version": "v0.69.0",
+      "publishedAt": "2026-11-19T01:45:47Z",
+      "url": "https://github.com/google-gemini/gemini-cli/releases/tag/v0.69.0",
+      "note": "fix(core,cli): preserve literal $ characters during template placeholder replacement by @jesussamuel-byte in https://git",
+      "note_ko": "jesussamuel-byte가 템플릿 플레이스홀더 교체 시 리터럴 $ 문자를 유지하도록 수정했습니다.",
+      "isRecent": true
+    },
+    {
+      "tool": "claude-code",
+      "name": "Claude Code",
+      "version": "v2.1.328",
+      "publishedAt": "2026-11-19T01:14:04Z",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.328",
+      "note": "Added auto mode for Claude Opus 4.6 and Sonnet 4.6 on Amazon Bedrock, Google Cloud's Agent Platform, Microsoft Foundry a",
+      "note_ko": "Amazon Bedrock, Google Cloud Agent Platform, Microsoft Foundry에서 Claude Opus 4.6 및 Sonnet 4.6용 오토 모드가 추가되었습니다.",
+      "isRecent": true
+    },
+    {
+      "tool": "copilot",
+      "name": "GitHub Copilot",
+      "version": null,
+      "publishedAt": "2026-11-18T22:04:50.000Z",
+      "url": "https://github.blog/changelog/2026-11-18-connect-supabase-box-calendly-and-more-to-copilot",
+      "note": "Connect Supabase, Box, Calendly, and more to Copilot",
+      "note_ko": "Supabase, Box, Calendly 등을 Copilot에 연결하세요.",
+      "isRecent": true
+    },
+    {
+      "tool": "codex",
+      "name": "Codex CLI",
+      "version": "rust-v0.170.0",
+      "publishedAt": "2026-11-18T03:40:48Z",
+      "url": "https://github.com/openai/codex/releases/tag/rust-v0.170.0",
+      "note": "Added WebRTC negotiation for realtime voice calls in the TUI. (#61172)",
+      "note_ko": "TUI에서 실시간 음성 통화를 위한 WebRTC 협상이 추가되었습니다. (#61172)",
+      "isRecent": true
+    },
+    {
+      "tool": "cursor",
+      "name": "Cursor",
+      "version": null,
+      "publishedAt": "2026-11-06",
+      "url": "https://cursor.com/changelog/voice-chat",
+      "note": "Voice Chat with Agents",
+      "note_ko": "에이전트와의 음성 채팅",
+      "isRecent": false
+    }
+  ],
+  "rising": [
+    {
+      "fullName": "GoogleChrome/modern-web-guidance-src",
+      "url": "https://github.com/GoogleChrome/modern-web-guidance-src",
+      "description": "Keep your coding agent up to date with the latest web best practices",
+      "description_ko": "최신 웹 모범 사례로 코딩 에이전트를 최신 상태로 유지하세요.",
+      "stars": 8920,
+      "delta7": 7166,
+      "deltaSource": "history",
+      "isNew": false,
+      "series": [
+        {
+          "date": "2026-11-12",
+          "stars": 1754
+        },
+        {
+          "date": "2026-11-13",
+          "stars": 2947
+        },
+        {
+          "date": "2026-11-14",
+          "stars": 4847
+        },
+        {
+          "date": "2026-11-15",
+          "stars": 6057
+        },
+        {
+          "date": "2026-11-16",
+          "stars": 7179
+        },
+        {
+          "date": "2026-11-17",
+          "stars": 8138
+        },
+        {
+          "date": "2026-11-18",
+          "stars": 8548
+        },
+        {
+          "date": "2026-11-19",
+          "stars": 8920
+        }
+      ]
+    },
+    {
+      "fullName": "dream-num/univer",
+      "url": "https://github.com/dream-num/univer",
+      "description": "Build your own AI office with Univer Office SDK. Bring editing, calculation, collaboration, and file processing into your product for people and AI agents. Built on an extensible open-source core.",
+      "description_ko": "Univer Office SDK로 나만의 AI 오피스를 구축하고 편집, 계산, 협업 기능을 제품에 도입하세요.",
+      "stars": 29958,
+      "delta7": 6840,
+      "deltaSource": "trending-weekly",
+      "isNew": false,
+      "series": [
+        {
+          "date": "2026-11-15",
+          "stars": 24497
+        },
+        {
+          "date": "2026-11-16",
+          "stars": 25755
+        },
+        {
+          "date": "2026-11-17",
+          "stars": 28322
+        },
+        {
+          "date": "2026-11-18",
+          "stars": 29388
+        },
+        {
+          "date": "2026-11-19",
+          "stars": 29958
+        }
+      ]
+    },
+    {
+      "fullName": "meta/astryx",
+      "url": "https://github.com/meta/astryx",
+      "description": "An open source design system that's fully customizable and agent ready",
+      "description_ko": "완전한 커스텀이 가능하고 에이전트 준비가 완료된 오픈소스 디자인 시스템",
+      "stars": 30679,
+      "delta7": 5683,
+      "deltaSource": "history",
+      "isNew": false,
+      "series": [
+        {
+          "date": "2026-11-08",
+          "stars": 14527
+        },
+        {
+          "date": "2026-11-09",
+          "stars": 16785
+        },
+        {
+          "date": "2026-11-10",
+          "stars": 20055
+        },
+        {
+          "date": "2026-11-11",
+          "stars": 22829
+        },
+        {
+          "date": "2026-11-12",
+          "stars": 24996
+        },
+        {
+          "date": "2026-11-13",
+          "stars": 26539
+        },
+        {
+          "date": "2026-11-14",
+          "stars": 27399
+        },
+        {
+          "date": "2026-11-15",
+          "stars": 28153
+        },
+        {
+          "date": "2026-11-16",
+          "stars": 28873
+        },
+        {
+          "date": "2026-11-17",
+          "stars": 29796
+        },
+        {
+          "date": "2026-11-18",
+          "stars": 30286
+        },
+        {
+          "date": "2026-11-19",
+          "stars": 30679
+        }
+      ]
+    },
+    {
+      "fullName": "affaan-m/ECC",
+      "url": "https://github.com/affaan-m/ECC",
+      "description": "The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond.",
+      "description_ko": "Claude Code, Codex, Opencode, Cursor 등을 위한 에이전트 하네스 성능 최적화 시스템입니다.",
+      "stars": 306748,
+      "delta7": 5372,
+      "deltaSource": "history",
+      "isNew": false,
+      "series": [
+        {
+          "date": "2026-10-27",
+          "stars": 289836
+        },
+        {
+          "date": "2026-10-28",
+          "stars": 290885
+        },
+        {
+          "date": "2026-10-29",
+          "stars": 291763
+        },
+        {
+          "date": "2026-10-30",
+          "stars": 292714
+        },
+        {
+          "date": "2026-10-31",
+          "stars": 293414
+        },
+        {
+          "date": "2026-11-01",
+          "stars": 294073
+        },
+        {
+          "date": "2026-11-02",
+          "stars": 294807
+        },
+        {
+          "date": "2026-11-03",
+          "stars": 295669
+        },
+        {
+          "date": "2026-11-04",
+          "stars": 296562
+        },
+        {
+          "date": "2026-11-05",
+          "stars": 297256
+        },
+        {
+          "date": "2026-11-06",
+          "stars": 297876
+        },
+        {
+          "date": "2026-11-07",
+          "stars": 298591
+        },
+        {
+          "date": "2026-11-08",
+          "stars": 299190
+        },
+        {
+          "date": "2026-11-09",
+          "stars": 299713
+        },
+        {
+          "date": "2026-11-10",
+          "stars": 300242
+        },
+        {
+          "date": "2026-11-11",
+          "stars": 300815
+        },
+        {
+          "date": "2026-11-12",
+          "stars": 301376
+        },
+        {
+          "date": "2026-11-13",
+          "stars": 302023
+        },
+        {
+          "date": "2026-11-14",
+          "stars": 302466
+        },
+        {
+          "date": "2026-11-15",
+          "stars": 303075
+        },
+        {
+          "date": "2026-11-16",
+          "stars": 303862
+        },
+        {
+          "date": "2026-11-17",
+          "stars": 304810
+        },
+        {
+          "date": "2026-11-18",
+          "stars": 305793
+        },
+        {
+          "date": "2026-11-19",
+          "stars": 306748
+        }
+      ]
+    },
+    {
+      "fullName": "obra/superpowers",
+      "url": "https://github.com/obra/superpowers",
+      "description": "An agentic skills framework & software development methodology that works.",
+      "description_ko": "실제로 작동하는 에이전틱 스킬 프레임워크이자 소프트웨어 개발 방법론입니다.",
+      "stars": 321479,
+      "delta7": 5167,
+      "deltaSource": "history",
+      "isNew": false,
+      "series": [
+        {
+          "date": "2026-10-28",
+          "stars": 306436
+        },
+        {
+          "date": "2026-10-29",
+          "stars": 307437
+        },
+        {
+          "date": "2026-10-30",
+          "stars": 308541
+        },
+        {
+          "date": "2026-10-31",
+          "stars": 309429
+        },
+        {
+          "date": "2026-11-01",
+          "stars": 310063
+        },
+        {
+          "date": "2026-11-02",
+          "stars": 310637
+        },
+        {
+          "date": "2026-11-03",
+          "stars": 311248
+        },
+        {
+          "date": "2026-11-04",
+          "stars": 311864
+        },
+        {
+          "date": "2026-11-05",
+          "stars": 312448
+        },
+        {
+          "date": "2026-11-06",
+          "stars": 313023
+        },
+        {
+          "date": "2026-11-07",
+          "stars": 313608
+        },
+        {
+          "date": "2026-11-08",
+          "stars": 314119
+        },
+        {
+          "date": "2026-11-09",
+          "stars": 314595
+        },
+        {
+          "date": "2026-11-10",
+          "stars": 315162
+        },
+        {
+          "date": "2026-11-11",
+          "stars": 315758
+        },
+        {
+          "date": "2026-11-12",
+          "stars": 316312
+        },
+        {
+          "date": "2026-11-13",
+          "stars": 316775
+        },
+        {
+          "date": "2026-11-14",
+          "stars": 317237
+        },
+        {
+          "date": "2026-11-15",
+          "stars": 317653
+        },
+        {
+          "date": "2026-11-16",
+          "stars": 318082
+        },
+        {
+          "date": "2026-11-17",
+          "stars": 318814
+        },
+        {
+          "date": "2026-11-18",
+          "stars": 319533
+        },
+        {
+          "date": "2026-11-19",
+          "stars": 321479
+        }
+      ]
+    },
+    {
+      "fullName": "alibaba/open-code-review",
+      "url": "https://github.com/alibaba/open-code-review",
+      "description": "Secure, fast, efficient, battle-tested at Alibaba's scale. Hybrid architecture code review tool: deterministic pipelines + LLM Agent, precise line-level comments, built-in multi-language ruleset (NPE, thread-safety, XSS, SQL injection), OpenAI & Anthropic compatible.",
+      "description_ko": "알리바바 규모에서 검증된 안전하고 빠르며 효율적인 하이브리드 아키텍처 코드 리뷰 도구입니다.",
+      "stars": 54236,
+      "delta7": 4383,
+      "deltaSource": "trending-weekly",
+      "isNew": false,
+      "series": [
+        {
+          "date": "2026-11-14",
+          "stars": 50620
+        },
+        {
+          "date": "2026-11-15",
+          "stars": 51438
+        },
+        {
+          "date": "2026-11-16",
+          "stars": 52104
+        },
+        {
+          "date": "2026-11-17",
+          "stars": 53188
+        },
+        {
+          "date": "2026-11-18",
+          "stars": 53929
+        },
+        {
+          "date": "2026-11-19",
+          "stars": 54236
+        }
+      ]
+    },
+    {
+      "fullName": "anthropics/skills",
+      "url": "https://github.com/anthropics/skills",
+      "description": "Public repository for Agent Skills",
+      "description_ko": "Agent Skills를 위한 공개 저장소입니다.",
+      "stars": 197346,
+      "delta7": 4205,
+      "deltaSource": "history",
+      "isNew": false,
+      "series": [
+        {
+          "date": "2026-10-31",
+          "stars": 185320
+        },
+        {
+          "date": "2026-11-01",
+          "stars": 185891
+        },
+        {
+          "date": "2026-11-02",
+          "stars": 186369
+        },
+        {
+          "date": "2026-11-03",
+          "stars": 186774
+        },
+        {
+          "date": "2026-11-04",
+          "stars": 187113
+        },
+        {
+          "date": "2026-11-05",
+          "stars": 187423
+        },
+        {
+          "date": "2026-11-06",
+          "stars": 187763
+        },
+        {
+          "date": "2026-11-07",
+          "stars": 188173
+        },
+        {
+          "date": "2026-11-08",
+          "stars": 188788
+        },
+        {
+          "date": "2026-11-09",
+          "stars": 189652
+        },
+        {
+          "date": "2026-11-10",
+          "stars": 190975
+        },
+        {
+          "date": "2026-11-11",
+          "stars": 192329
+        },
+        {
+          "date": "2026-11-12",
+          "stars": 193141
+        },
+        {
+          "date": "2026-11-13",
+          "stars": 193700
+        },
+        {
+          "date": "2026-11-14",
+          "stars": 194145
+        },
+        {
+          "date": "2026-11-15",
+          "stars": 194632
+        },
+        {
+          "date": "2026-11-16",
+          "stars": 195370
+        },
+        {
+          "date": "2026-11-17",
+          "stars": 196244
+        },
+        {
+          "date": "2026-11-18",
+          "stars": 196875
+        },
+        {
+          "date": "2026-11-19",
+          "stars": 197346
+        }
+      ]
+    },
+    {
+      "fullName": "we-promise/sure",
+      "url": "https://github.com/we-promise/sure",
+      "description": "The personal finance app for everyone (by everyone)",
+      "description_ko": "모두를 위한 (모두가 만드는) 개인 자산 관리 앱",
+      "stars": 16554,
+      "delta7": 3595,
+      "deltaSource": "history",
+      "isNew": false,
+      "series": [
+        {
+          "date": "2026-11-11",
+          "stars": 11946
+        },
+        {
+          "date": "2026-11-12",
+          "stars": 12959
+        },
+        {
+          "date": "2026-11-13",
+          "stars": 13919
+        },
+        {
+          "date": "2026-11-14",
+          "stars": 14743
+        },
+        {
+          "date": "2026-11-15",
+          "stars": 15310
+        },
+        {
+          "date": "2026-11-16",
+          "stars": 15718
+        },
+        {
+          "date": "2026-11-17",
+          "stars": 16079
+        },
+        {
+          "date": "2026-11-18",
+          "stars": 16321
+        },
+        {
+          "date": "2026-11-19",
+          "stars": 16554
+        }
+      ]
+    },
+    {
+      "fullName": "backnotprop/plannotator",
+      "url": "https://github.com/backnotprop/plannotator",
+      "description": "The workspace to stay in the loop and on top of agents - shape, decide, plan, annotate, review code, share with team, and send all feedback to agents with one click.",
+      "description_ko": "에이전트와 함께 소통하고 작업을 관리하는 업무 공간 — 기획, 결정, 계획, 주석 달기, 코드 리뷰, 팀 공유, 그리고 한 번의 클릭으로 모든 피드백을 에이전트에 전달할 수 있습니다.",
+      "stars": 13521,
+      "delta7": 3290,
+      "deltaSource": "trending-weekly",
+      "isNew": false,
+      "series": [
+        {
+          "date": "2026-11-14",
+          "stars": 10451
+        },
+        {
+          "date": "2026-11-15",
+          "stars": 11129
+        },
+        {
+          "date": "2026-11-16",
+          "stars": 11844
+        },
+        {
+          "date": "2026-11-17",
+          "stars": 12779
+        },
+        {
+          "date": "2026-11-18",
+          "stars": 13172
+        },
+        {
+          "date": "2026-11-19",
+          "stars": 13521
+        }
+      ]
+    },
+    {
+      "fullName": "tradermonty/claude-trading-skills",
+      "url": "https://github.com/tradermonty/claude-trading-skills",
+      "description": "Claude Code skills for equity investors and traders — market analysis, technical charting, economic calendars, screeners, and trading strategy development.",
+      "description_ko": "주식 투자자와 트레이더를 위한 시장 분석, 차트 작성, 경제 캘린더 기능을 제공하는 Claude Code 스킬입니다.",
+      "stars": 7109,
+      "delta7": 3242,
+      "deltaSource": "trending-weekly",
+      "isNew": false,
+      "series": [
+        {
+          "date": "2026-11-14",
+          "stars": 4169
+        },
+        {
+          "date": "2026-11-15",
+          "stars": 4815
+        },
+        {
+          "date": "2026-11-16",
+          "stars": 5566
+        },
+        {
+          "date": "2026-11-17",
+          "stars": 6550
+        },
+        {
+          "date": "2026-11-18",
+          "stars": 6932
+        },
+        {
+          "date": "2026-11-19",
+          "stars": 7109
+        }
+      ]
+    }
+  ],
+  "newRepos": [
+    {
+      "fullName": "HKUDS/CLI-Anything",
+      "url": "https://github.com/HKUDS/CLI-Anything",
+      "description": "\"CLI-Anything: Making ALL Software Agent-Native\" -- CLI-Hub: https://clianything.cc/",
+      "language": "Python",
+      "stars": 59990
+    },
+    {
+      "fullName": "NVIDIA/SkillEvaluator",
+      "url": "https://github.com/NVIDIA/SkillEvaluator",
+      "description": "Multi-tier framework for evaluating AI agent skills and plugins with quality gates, security scanning, harness compatibility checks, semantic overlap detection, synthetic evaluation dataset generation, and live agent evaluation that measures how skills affect agent behavior. Ships reusable CI templates that bring every check to any repository.",
+      "language": "Python",
+      "stars": 3872
+    },
+    {
+      "fullName": "nvm-sh/nvm",
+      "url": "https://github.com/nvm-sh/nvm",
+      "description": "Node Version Manager - POSIX-compliant bash script to manage multiple active node.js versions.",
+      "language": "Shell",
+      "stars": 96184
+    },
+    {
+      "fullName": "astral-sh/uv",
+      "url": "https://github.com/astral-sh/uv",
+      "description": "An extremely fast Python package and project manager, written in Rust.",
+      "language": "Rust",
+      "stars": 92305
+    },
+    {
+      "fullName": "jquery/jquery",
+      "url": "https://github.com/jquery/jquery",
+      "description": "jQuery JavaScript Library",
+      "language": "JavaScript",
+      "stars": 60051
+    },
+    {
+      "fullName": "appwrite/appwrite",
+      "url": "https://github.com/appwrite/appwrite",
+      "description": "The open-source cloud for agents & devs. Including Auth, Databases, Storage, Functions, Messaging, Hosting, Realtime, WAF and more",
+      "language": "TypeScript",
+      "stars": 58298
+    },
+    {
+      "fullName": "openvinotoolkit/openvino",
+      "url": "https://github.com/openvinotoolkit/openvino",
+      "description": "OpenVINO™ is an open source toolkit for optimizing and deploying AI inference",
+      "language": "C++",
+      "stars": 11397
+    },
+    {
+      "fullName": "DeanChensj/jiangshan-map",
+      "url": "https://github.com/DeanChensj/jiangshan-map",
+      "description": "江山时序 · 中国历史交互地图时间轴 (403 BCE – Present) | Interactive Historical Atlas of China across 18 dynasties, 198 territory snapshots, ancient-to-modern place genealogy & classical poetry routes",
+      "language": "JavaScript",
+      "stars": 8192
+    },
+    {
+      "fullName": "n8n-io/n8n",
+      "url": "https://github.com/n8n-io/n8n",
+      "description": "Fair-code workflow automation platform with native AI capabilities. Combine visual building with custom code, self-host or cloud, 400+ integrations.",
+      "language": "TypeScript",
+      "stars": 211238
+    },
+    {
+      "fullName": "solidjs/solid",
+      "url": "https://github.com/solidjs/solid",
+      "description": "A declarative, efficient, and flexible JavaScript library for building user interfaces.",
+      "language": "TypeScript",
+      "stars": 36679
+    },
+    {
+      "fullName": "punkpeye/awesome-mcp-servers",
+      "url": "https://github.com/punkpeye/awesome-mcp-servers",
+      "description": "A collection of MCP servers.",
+      "language": null,
+      "stars": 98133
+    }
+  ],
+  "droppedRepos": [
+    {
+      "fullName": "elementalsouls/Claude-BugHunter",
+      "url": "https://github.com/elementalsouls/Claude-BugHunter",
+      "description": "A Claude Code skill bundle for bug hunting and external red-team work - 82 skills, 15 slash commands, 681 disclosed-report patterns curated across 24 core vulnerability classes, plus enterprise identity + infrastructure attack matrices.",
+      "language": "Python",
+      "stars": 9818
+    },
+    {
+      "fullName": "Tencent/LoopForge",
+      "url": "https://github.com/Tencent/LoopForge",
+      "description": "Self-hosted workflows for coding-agent delivery. Orchestrate CodeBuddy, Codex and Claude Code with scripts and human approval gates. Includes Local workflows for coding assistants.",
+      "language": "Go",
+      "stars": 3498
+    },
+    {
+      "fullName": "jingyaogong/minimind",
+      "url": "https://github.com/jingyaogong/minimind",
+      "description": "🧠 Train a 64M-parameter LLM from scratch in just 2h!",
+      "language": "Python",
+      "stars": 66222
+    },
+    {
+      "fullName": "addyosmani/agent-skills",
+      "url": "https://github.com/addyosmani/agent-skills",
+      "description": "Production-grade engineering skills for AI coding agents.",
+      "language": "JavaScript",
+      "stars": 118728
+    }
+  ],
+  "kit": [
+    {
+      "fullName": "JuneYaooo/rea-video",
+      "url": "https://github.com/JuneYaooo/rea-video",
+      "description": "Reverse-engineer any video, shot by shot: filmed, AI-generated or coded, and how to remake it. Breakdowns in the open VIDEO.md format. 逆向一切视频，逐个镜头看是拍的、AI 生成的还是代码做的，再告诉你怎么复刻；拆解结果按 VIDEO.md 格式输出。",
+      "description_ko": "모든 영상을 샷 단위로 리버스 엔지니어링하여 촬영, AI 생성, 코드 여부와 자막, 편집, 오디오 제작 방식을 분석하고 재제작 방법을 알려줍니다.",
+      "stars": 10800,
+      "kind": "SKILL",
+      "isNew": true
+    },
+    {
+      "fullName": "patch-gg/pixelfx",
+      "url": "https://github.com/patch-gg/pixelfx",
+      "description": "244 pixel art effects, every one a small piece of code. Plus a Claude Code skill to make your own.",
+      "description_ko": "각각 작은 코드 조각으로 이루어진 244가지 픽셀 아트 효과와 자신만의 효과를 만들 수 있는 Claude Code 스킬을 제공합니다.",
+      "stars": 8185,
+      "kind": "SKILL",
+      "isNew": true
+    },
+    {
+      "fullName": "qybaihe/bla",
+      "url": "https://github.com/qybaihe/bla",
+      "description": "🛡️ BLA (bla-agents / Blind LLM Agents) — Open-source Blue Defense MCP server & CLI protecting JS/TS, Electron ASAR, WASM, Python, Native Binaries, SQLite, GGUF/Safetensors & Android DEX against AI reverse-engineering agents (REA).",
+      "description_ko": "REA 같은 AI 리버스 엔지니어링 에이전트로부터 바이너리, 앱, 스크립트를 보호하는 적대적 방어 쉴드 BLA입니다.",
+      "stars": 6156,
+      "kind": "MCP",
+      "isNew": true
+    },
+    {
+      "fullName": "KKKKhazix/agent-autoloop",
+      "url": "https://github.com/KKKKhazix/agent-autoloop",
+      "description": "让你的命令行 Agent 在后台自己接活、自己跟进到底；平时不烦你，遇到拿不准的事才发卡片找你拍板。",
+      "description_ko": "명령줄 에이전트가 백그라운드에서 스스로 작업을 수주하고 끝까지 처리하며, 평소에는 방해하지 않다가 확신이 서지 않는 일에만 카드를 보내 결정을 요청합니다.",
+      "stars": 5955,
+      "kind": "MCP",
+      "isNew": true
+    },
+    {
+      "fullName": "vercel-labs/ui",
+      "url": "https://github.com/vercel-labs/ui",
+      "description": "A library of behaviors for agents to build the next generation of user interfaces.",
+      "description_ko": "에이전트가 차세대 사용자 인터페이스를 구축할 수 있도록 지원하는 동작 라이브러리입니다",
+      "stars": 5943,
+      "kind": "MCP",
+      "isNew": true
+    },
+    {
+      "fullName": "haydenschmitty/floorplan",
+      "url": "https://github.com/haydenschmitty/floorplan",
+      "description": "See how your app actually fits together. An interactive, plain-English map of your codebase, drawn by Claude or Codex.",
+      "description_ko": "앱의 실제 구조를 파악할 수 있도록 Claude나 Codex가 그려주는, 알기 쉬운 영어로 된 대화형 코드베이스 맵입니다.",
+      "stars": 4879,
+      "kind": "OTHER",
+      "isNew": true
+    },
+    {
+      "fullName": "erkamyaman/rust-anything",
+      "url": "https://github.com/erkamyaman/rust-anything",
+      "description": "Rewrite your whole app in Rust, one piece at a time, checked against the original's recorded behavior at every step. CLIs, HTTP servers and libraries in TypeScript, Python, C, Go, Ruby and Java.",
+      "description_ko": "기존 앱의 동작을 검증하며 TypeScript, Python 등의 코드를 Rust로 점진적으로 재작성하세요.",
+      "stars": 3773,
+      "kind": "MCP",
+      "isNew": true
+    },
+    {
+      "fullName": "ersinkoc/phonebox",
+      "url": "https://github.com/ersinkoc/phonebox",
+      "description": "Turn an old Android phone into a customizable desk panel and touch control deck for Windows, Linux and macOS. 124 widgets and 30 templates for system stats, AI coding, media and automation, in 12 languages. USB or paired Wi-Fi. No cloud required.",
+      "description_ko": "오래된 안드로이드폰을 Windows, Linux, macOS용 맞춤형 데스크 패널 및 터치 컨트롤 덱으로 전환합니다.",
+      "stars": 3341,
+      "kind": "OTHER",
+      "isNew": true
+    },
+    {
+      "fullName": "mdiri-ai/SoduWork",
+      "url": "https://github.com/mdiri-ai/SoduWork",
+      "description": "The AI-native engine for teams and their agents. Multi-harness, multi-agent, self-hosted.",
+      "description_ko": "팀과 에이전트를 위한 AI 네이티브 엔진으로, 멀티 하니스, 멀티 에이전트, 자체 호스팅을 지원합니다.",
+      "stars": 3039,
+      "kind": "MCP",
+      "isNew": true
+    },
+    {
+      "fullName": "DenisSergeevitch/ex-ussr-kinship-research",
+      "url": "https://github.com/DenisSergeevitch/ex-ussr-kinship-research",
+      "description": "Evidence-first genealogy skill for AI agents (Codex, Claude Code): church books, civil, military, deportation and repression records across the former USSR. Replies in your language.",
+      "description_ko": "구소련 지역의 교회, 호적, 군대, 추방 및 탄압 기록을 활용하는 AI 에이전트(Codex, Claude Code)용 증거 기반 계보 조사 스킬입니다.",
+      "stars": 2658,
+      "kind": "SKILL",
+      "isNew": true
+    },
+    {
+      "fullName": "caru-ini/stack-diagram",
+      "url": "https://github.com/caru-ini/stack-diagram",
+      "description": "Agent skill: describe your stack in a sentence, get an architecture diagram with official logos",
+      "description_ko": "에이전트 스킬: 스택을 한 문장으로 설명하고 공식 로고가 포함된 아키텍처 다이어그램을 받아보세요.",
+      "stars": 2638,
+      "kind": "SKILL",
+      "isNew": true
+    },
+    {
+      "fullName": "DIYgod/pinky",
+      "url": "https://github.com/DIYgod/pinky",
+      "description": "Let AI use your iPhone or Android phone, with you in the loop: any MCP agent from macOS, Windows or Linux, or Pinky itself, right on the phone.",
+      "description_ko": "macOS, Windows, Linux의 모든 MCP 에이전트나 Pinky를 사용하여 사용자가 개입하면서 AI가 내 아이폰이나 안드로이드폰을 직접 조작할 수 있게 해줍니다.",
+      "stars": 2491,
+      "kind": "MCP",
+      "isNew": true
+    }
+  ],
+  "keywords": [
+    {
+      "term": "gemini",
+      "today": 7,
+      "avg7": 1.57,
+      "delta": 5.43,
+      "isNew": false
+    },
+    {
+      "term": "neon",
+      "today": 4,
+      "avg7": 0,
+      "delta": 4,
+      "isNew": true
+    },
+    {
+      "term": "agent skill",
+      "today": 6,
+      "avg7": 2.43,
+      "delta": 3.57,
+      "isNew": false
+    },
+    {
+      "term": "library",
+      "today": 4,
+      "avg7": 0.86,
+      "delta": 3.14,
+      "isNew": false
+    },
+    {
+      "term": "cursor",
+      "today": 4,
+      "avg7": 1,
+      "delta": 3,
+      "isNew": false
+    },
+    {
+      "term": "server",
+      "today": 4,
+      "avg7": 1,
+      "delta": 3,
+      "isNew": false
+    },
+    {
+      "term": "수정",
+      "today": 3,
+      "avg7": 0,
+      "delta": 3,
+      "isNew": true
+    },
+    {
+      "term": "web",
+      "today": 5,
+      "avg7": 2.14,
+      "delta": 2.86,
+      "isNew": false
+    },
+    {
+      "term": "development",
+      "today": 4,
+      "avg7": 1.29,
+      "delta": 2.71,
+      "isNew": false
+    },
+    {
+      "term": "cloud",
+      "today": 3,
+      "avg7": 0.29,
+      "delta": 2.71,
+      "isNew": false
+    },
+    {
+      "term": "skill",
+      "today": 9,
+      "avg7": 6.57,
+      "delta": 2.43,
+      "isNew": false
+    },
+    {
+      "term": "bring",
+      "today": 4,
+      "avg7": 1.57,
+      "delta": 2.43,
+      "isNew": false
+    },
+    {
+      "term": "framework",
+      "today": 4,
+      "avg7": 1.57,
+      "delta": 2.43,
+      "isNew": false
+    },
+    {
+      "term": "compatibility",
+      "today": 3,
+      "avg7": 0.57,
+      "delta": 2.43,
+      "isNew": false
+    },
+    {
+      "term": "agent",
+      "today": 18,
+      "avg7": 15.71,
+      "delta": 2.29,
+      "isNew": false
+    },
+    {
+      "term": "mcp server",
+      "today": 3,
+      "avg7": 0.71,
+      "delta": 2.29,
+      "isNew": false
+    },
+    {
+      "term": "모델",
+      "today": 3,
+      "avg7": 0.71,
+      "delta": 2.29,
+      "isNew": false
+    },
+    {
+      "term": "openai",
+      "today": 4,
+      "avg7": 1.86,
+      "delta": 2.14,
+      "isNew": false
+    },
+    {
+      "term": "mcp",
+      "today": 3,
+      "avg7": 0.86,
+      "delta": 2.14,
+      "isNew": false
+    },
+    {
+      "term": "exitpath",
+      "today": 2,
+      "avg7": 0,
+      "delta": 2,
+      "isNew": true
+    }
+  ],
+  "papers": [],
+  "paperCategories": [],
+  "hfModels": [
+    {
+      "id": "higurashi-ai/Haru-4B",
+      "url": "https://huggingface.co/higurashi-ai/Haru-4B",
+      "likes": 917,
+      "downloads": 5314,
+      "pipeline": "audio-to-audio"
+    },
+    {
+      "id": "MiniMaxAI/MiniMax-H3-Image",
+      "url": "https://huggingface.co/MiniMaxAI/MiniMax-H3-Image",
+      "likes": 1596,
+      "downloads": 759661,
+      "pipeline": "text-to-image"
+    },
+    {
+      "id": "Qwen/Qwen3.8-27B",
+      "url": "https://huggingface.co/Qwen/Qwen3.8-27B",
+      "likes": 20580,
+      "downloads": 6888351,
+      "pipeline": "image-text-to-text"
+    },
+    {
+      "id": "tencent/Hy4-flash",
+      "url": "https://huggingface.co/tencent/Hy4-flash",
+      "likes": 257,
+      "downloads": 159,
+      "pipeline": "image-text-to-text"
+    },
+    {
+      "id": "harness-hub/Qwen3.8-27B-pi-adapted",
+      "url": "https://huggingface.co/harness-hub/Qwen3.8-27B-pi-adapted",
+      "likes": 624,
+      "downloads": 377,
+      "pipeline": "image-text-to-text"
+    },
+    {
+      "id": "n4ze3m/tiny-voca",
+      "url": "https://huggingface.co/n4ze3m/tiny-voca",
+      "likes": 299,
+      "downloads": 4430,
+      "pipeline": "text-to-speech"
+    },
+    {
+      "id": "apple/FastFrames-L",
+      "url": "https://huggingface.co/apple/FastFrames-L",
+      "likes": 230,
+      "downloads": 0,
+      "pipeline": "text-to-video"
+    },
+    {
+      "id": "meituan-longcat/LongCat-Video-Avatar-1.6",
+      "url": "https://huggingface.co/meituan-longcat/LongCat-Video-Avatar-1.6",
+      "likes": 275,
+      "downloads": 1226,
+      "pipeline": null
+    },
+    {
+      "id": "Lightricks/LTX-2.5",
+      "url": "https://huggingface.co/Lightricks/LTX-2.5",
+      "likes": 12626,
+      "downloads": 2871190,
+      "pipeline": "image-to-video"
+    },
+    {
+      "id": "maxwell-model/Maxwell-V1-Flash",
+      "url": "https://huggingface.co/maxwell-model/Maxwell-V1-Flash",
+      "likes": 239,
+      "downloads": 1052,
+      "pipeline": "text-generation"
+    },
+    {
+      "id": "thinkingmachines/Inkling-2-Small",
+      "url": "https://huggingface.co/thinkingmachines/Inkling-2-Small",
+      "likes": 548,
+      "downloads": 30082,
+      "pipeline": "image-text-to-text"
+    },
+    {
+      "id": "chatrlabs/Qwen-Image-2.1-Uncensored-Omni-Quantized",
+      "url": "https://huggingface.co/chatrlabs/Qwen-Image-2.1-Uncensored-Omni-Quantized",
+      "likes": 639,
+      "downloads": 224306,
+      "pipeline": "text-to-image"
+    },
+    {
+      "id": "DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NEO-CODER-MAX-MTP-GGUF",
+      "url": "https://huggingface.co/DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NEO-CODER-MAX-MTP-GGUF",
+      "likes": 3366,
+      "downloads": 1773418,
+      "pipeline": "image-text-to-text"
+    },
+    {
+      "id": "sensenova/SenseNova-Loop-9B",
+      "url": "https://huggingface.co/sensenova/SenseNova-Loop-9B",
+      "likes": 342,
+      "downloads": 964,
+      "pipeline": "image-text-to-text"
+    },
+    {
+      "id": "unsloth/Qwen3.8-27B-GGUF",
+      "url": "https://huggingface.co/unsloth/Qwen3.8-27B-GGUF",
+      "likes": 6199,
+      "downloads": 6998076,
+      "pipeline": null
+    },
+    {
+      "id": "Edge0/Edge0-145B-NVFP4",
+      "url": "https://huggingface.co/Edge0/Edge0-145B-NVFP4",
+      "likes": 530,
+      "downloads": 73309,
+      "pipeline": "text-generation"
+    },
+    {
+      "id": "Zyphra/ZONOS3-Mini",
+      "url": "https://huggingface.co/Zyphra/ZONOS3-Mini",
+      "likes": 554,
+      "downloads": 114126,
+      "pipeline": "text-to-speech"
+    },
+    {
+      "id": "internlm/Sage-S2.1-Flash",
+      "url": "https://huggingface.co/internlm/Sage-S2.1-Flash",
+      "likes": 146,
+      "downloads": 678,
+      "pipeline": null
+    },
+    {
+      "id": "nvidia/NVIDIA-Nemotron-3.5-Bolt-E4B-4GB",
+      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-E4B-4GB",
+      "likes": 566,
+      "downloads": 163423,
+      "pipeline": "text-generation"
+    },
+    {
+      "id": "inworld/voice-isolator",
+      "url": "https://huggingface.co/inworld/voice-isolator",
+      "likes": 115,
+      "downloads": 0,
+      "pipeline": "audio-to-audio"
+    }
+  ],
+  "feeds": {
+    "hn": [
+      {
+        "id": 50547374,
+        "title": "Unauthenticated remote code execution in Nginx",
+        "url": "https://www.wiz.io/blog/nginx-http2-rce-vulnerabilities",
+        "domain": "wiz.io",
+        "points": 1278,
+        "comments": 553,
+        "hnUrl": "https://news.ycombinator.com/item?id=50547374"
+      },
+      {
+        "id": 50552424,
+        "title": "Gemini 4 Neon",
+        "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-neon/",
+        "domain": "blog.google",
+        "points": 690,
+        "comments": 584,
+        "hnUrl": "https://news.ycombinator.com/item?id=50552424"
+      },
+      {
+        "id": 50545958,
+        "title": "DNS resolvers are the wrong place to fight piracy",
+        "url": "https://techstackups.com/articles/quad9-leaves-france-dns-blocking/",
+        "domain": "techstackups.com",
+        "points": 646,
+        "comments": 251,
+        "hnUrl": "https://news.ycombinator.com/item?id=50545958"
+      },
+      {
+        "id": 50547620,
+        "title": "Inside Deutsche Bank",
+        "url": "https://www.inside-db.com/",
+        "domain": "inside-db.com",
+        "points": 636,
+        "comments": 203,
+        "hnUrl": "https://news.ycombinator.com/item?id=50547620"
+      },
+      {
+        "id": 50548021,
+        "title": "Seven new models at scalable price-performance",
+        "url": "https://microsoft.ai/news/microsoft-ignite-2026/",
+        "domain": "microsoft.ai",
+        "points": 508,
+        "comments": 336,
+        "hnUrl": "https://news.ycombinator.com/item?id=50548021"
+      },
+      {
+        "id": 50547777,
+        "title": "AI agents ask better questions than KPMG accountants in audit trial",
+        "url": "https://europeanbusinessmagazine.com/ai-agents-better-questions-kpmg/",
+        "domain": "europeanbusinessmagazine.com",
+        "points": 438,
+        "comments": 189,
+        "hnUrl": "https://news.ycombinator.com/item?id=50547777"
+      },
+      {
+        "id": 50554045,
+        "title": "We need smart people who give a shit",
+        "url": "https://violetpixel.com/blog/2026-11-17-we-need-smart-people-who-give-a-shit/",
+        "domain": "violetpixel.com",
+        "points": 422,
+        "comments": 216,
+        "hnUrl": "https://news.ycombinator.com/item?id=50554045"
+      },
+      {
+        "id": 50546914,
+        "title": "The Cambridge Dictionary has named ‘human’ as the Word of the Year 2026",
+        "url": "https://www.cam.ac.uk/news/cambridge-dictionary-reveals-word-of-the-year-2026",
+        "domain": "cam.ac.uk",
+        "points": 266,
+        "comments": 191,
+        "hnUrl": "https://news.ycombinator.com/item?id=50546914"
+      },
+      {
+        "id": 50550415,
+        "title": "Genie 4 is now available",
+        "url": "https://blog.google/innovation-and-ai/models-and-research/google-deepmind/genie-4-now-available-project-genie/",
+        "domain": "blog.google",
+        "points": 231,
+        "comments": 156,
+        "hnUrl": "https://news.ycombinator.com/item?id=50550415"
+      },
+      {
+        "id": 50554374,
+        "title": "Gemini 4 Neon looks like an Opus 5.5 competitor",
+        "url": "https://micjm.com/blog/gemini-4-neon-looks-like-a-top-model/",
+        "domain": "micjm.com",
+        "points": 206,
+        "comments": 67,
+        "hnUrl": "https://news.ycombinator.com/item?id=50554374"
+      },
+      {
+        "id": 50547980,
+        "title": "Show HN: ExitPath – Open-source ways out of Slack, Notion and Microsoft 365",
+        "url": "https://exitpath-ruddy.vercel.app/",
+        "domain": "exitpath-ruddy.vercel.app",
+        "points": 197,
+        "comments": 60,
+        "hnUrl": "https://news.ycombinator.com/item?id=50547980"
+      },
+      {
+        "id": 50549493,
+        "title": "Advancing chip design with OpenAI models",
+        "url": "https://openai.com/index/advancing-chip-design-with-our-models/",
+        "domain": "openai.com",
+        "points": 194,
+        "comments": 121,
+        "hnUrl": "https://news.ycombinator.com/item?id=50549493"
+      },
+      {
+        "id": 50554038,
+        "title": "Multiple vulnerabilities in Regexp and String case conversion",
+        "url": "https://www.ruby-lang.org/en/news/2026/11/18/multiple-vulnerabilities-in-regexp-and-string/",
+        "domain": "ruby-lang.org",
+        "points": 187,
+        "comments": 60,
+        "hnUrl": "https://news.ycombinator.com/item?id=50554038"
+      },
+      {
+        "id": 50548161,
+        "title": "Show HN: Take Voyager 1 apart, down to a single memory chip",
+        "url": "https://rshekhar.com/voyager/",
+        "domain": "rshekhar.com",
+        "points": 182,
+        "comments": 45,
+        "hnUrl": "https://news.ycombinator.com/item?id=50548161"
+      },
+      {
+        "id": 50551046,
+        "title": "DaisyRose-27B",
+        "url": "https://www.radixark.com/blog/daisyrose-27b",
+        "domain": "radixark.com",
+        "points": 180,
+        "comments": 57,
+        "hnUrl": "https://news.ycombinator.com/item?id=50551046"
+      },
+      {
+        "id": 50546967,
+        "title": "The x86 CPU: From 4004 to 486",
+        "url": "https://pikuma.com/blog/history-of-x86-4004-to-486",
+        "domain": "pikuma.com",
+        "points": 165,
+        "comments": 51,
+        "hnUrl": "https://news.ycombinator.com/item?id=50546967"
+      },
+      {
+        "id": 50553225,
+        "title": "LLM assisted reverse engineering",
+        "url": "https://www.slowchronicle.com/posts/llm-assisted-reverse-engineering",
+        "domain": "slowchronicle.com",
+        "points": 150,
+        "comments": 38,
+        "hnUrl": "https://news.ycombinator.com/item?id=50553225"
+      },
+      {
+        "id": 50554935,
+        "title": "Unreal Tournament 2004 in the Browser",
+        "url": "https://ut2004.dev/",
+        "domain": "ut2004.dev",
+        "points": 128,
+        "comments": 53,
+        "hnUrl": "https://news.ycombinator.com/item?id=50554935"
+      },
+      {
+        "id": 50525260,
+        "title": "Dumping an AES key from a MyQ garage opener to stop rebooting when offline",
+        "url": "https://kusha.me/blog/stop_myq_homebridge_819lmb_rebooting/",
+        "domain": "kusha.me",
+        "points": 99,
+        "comments": 34,
+        "hnUrl": "https://news.ycombinator.com/item?id=50525260"
+      },
+      {
+        "id": 50523377,
+        "title": "Show HN: Open-source, real-time object tracking for live video feeds",
+        "url": "https://github.com/aryamandarda/tamserve",
+        "domain": "github.com",
+        "points": 75,
+        "comments": 3,
+        "hnUrl": "https://news.ycombinator.com/item?id=50523377"
+      },
+      {
+        "id": 50510385,
+        "title": "Cuttlefish on Mac: Android's Virtual Device Framework on Apple Silicon",
+        "url": "https://engineering.fb.com/2026/11/13/android/cuttlefish-on-mac/",
+        "domain": "engineering.fb.com",
+        "points": 61,
+        "comments": 12,
+        "hnUrl": "https://news.ycombinator.com/item?id=50510385"
+      },
+      {
+        "id": 50549188,
+        "title": "Launch HN: Maritime (YC F26) – A managed cloud for production AI agents",
+        "url": "https://news.ycombinator.com/item?id=50549188",
+        "domain": "news.ycombinator.com",
+        "points": 48,
+        "comments": 43,
+        "hnUrl": "https://news.ycombinator.com/item?id=50549188"
+      },
+      {
+        "id": 50524227,
+        "title": "A Collage Showing 49 Drill Holes Made by NASA's Curiosity Mars Rover",
+        "url": "https://science.nasa.gov/photojournal/a-collage-showing-49-drill-holes-made-by-nasas-curiosity-mars-rover/",
+        "domain": "science.nasa.gov",
+        "points": 48,
+        "comments": 5,
+        "hnUrl": "https://news.ycombinator.com/item?id=50524227"
+      },
+      {
+        "id": 50554009,
+        "title": "Palo Alto Networks to Acquire Applied Compute for $4.5B",
+        "url": "https://investors.paloaltonetworks.com/news-releases/news-release-details/palo-alto-networks-acquire-applied-compute-bringing-secure-open",
+        "domain": "investors.paloaltonetworks.com",
+        "points": 44,
+        "comments": 10,
+        "hnUrl": "https://news.ycombinator.com/item?id=50554009"
+      },
+      {
+        "id": 50554908,
+        "title": "Previous-Token Prediction Based LLM Inversion for Prompt Reconstruction",
+        "url": "https://arxiv.org/abs/2607.29378",
+        "domain": "arxiv.org",
+        "points": 38,
+        "comments": 7,
+        "hnUrl": "https://news.ycombinator.com/item?id=50554908"
+      },
+      {
+        "id": 50542441,
+        "title": "Mosquitoes are Ladakh's latest tourists",
+        "url": "https://ruralindiaonline.org/article/mosquitoes-are-ladakh-s-latest-tourists",
+        "domain": "ruralindiaonline.org",
+        "points": 33,
+        "comments": 1,
+        "hnUrl": "https://news.ycombinator.com/item?id=50542441"
+      },
+      {
+        "id": 50554941,
+        "title": "FailTrace – Reproduce a failed GitHub Actions run locally from its URL",
+        "url": "https://github.com/Ri4dH/failtrace",
+        "domain": "github.com",
+        "points": 22,
+        "comments": 5,
+        "hnUrl": "https://news.ycombinator.com/item?id=50554941"
+      },
+      {
+        "id": 50530088,
+        "title": "Camera Index",
+        "url": "https://www.cameraindex.co.uk/",
+        "domain": "cameraindex.co.uk",
+        "points": 19,
+        "comments": 4,
+        "hnUrl": "https://news.ycombinator.com/item?id=50530088"
+      },
+      {
+        "id": 50518303,
+        "title": "Axelera Titania Brings Native FP8 and FP4 to In-Memory Compute",
+        "url": "https://futurumgroup.com/insights/axelera-titania-brings-native-fp8-and-fp4-to-in-memory-compute/",
+        "domain": "futurumgroup.com",
+        "points": 13,
+        "comments": 0,
+        "hnUrl": "https://news.ycombinator.com/item?id=50518303"
+      },
+      {
+        "id": 50556533,
+        "title": "15M web servers on one VM – smoltcp, DPDK, AF_XDP",
+        "url": "https://kapteko.com/15-million-webservers/",
+        "domain": "kapteko.com",
+        "points": 6,
+        "comments": 1,
+        "hnUrl": "https://news.ycombinator.com/item?id=50556533"
+      }
+    ],
+    "geeknews": [
+      {
+        "id": "https://news.hada.io/topic?id=37456",
+        "source": "geeknews",
+        "title": "Gemini 4 Neon, Opus 5.5의 경쟁자가 될 것으로 보임",
+        "url": "https://news.hada.io/topic?id=37456&utm_source=geeknews&utm_medium=rss&utm_campaign=news",
+        "domain": "news.hada.io",
+        "sub": null,
+        "publishedAt": "2026-11-19T14:31:52+09:00"
+      },
+      {
+        "id": "https://news.hada.io/topic?id=37454",
+        "source": "geeknews",
+        "title": "SK텔레콤 누구 스마트홈, 2028년 말 전체 서비스 종료",
+        "url": "https://news.hada.io/topic?id=37454&utm_source=geeknews&utm_medium=rss&utm_campaign=news",
+        "domain": "news.hada.io",
+        "sub": null,
+        "publishedAt": "2026-11-19T13:04:56+09:00"
+      },
+      {
+        "id": "https://news.hada.io/topic?id=37453",
+        "source": "geeknews",
+        "title": "Show HN: Voyager 1을 메모리 칩 하나까지 분해해 보기",
+        "url": "https://news.hada.io/topic?id=37453&utm_source=geeknews&utm_medium=rss&utm_campaign=news",
+        "domain": "news.hada.io",
+        "sub": null,
+        "publishedAt": "2026-11-19T12:32:09+09:00"
+      },
+      {
+        "id": "https://news.hada.io/topic?id=37452",
+        "source": "geeknews",
+        "title": "PHP, Critical 등급 취약점 수정을 포함한 새로운 보안패치 예정(2026.11.19.)",
+        "url": "https://news.hada.io/topic?id=37452&utm_source=geeknews&utm_medium=rss&utm_campaign=news",
+        "domain": "news.hada.io",
+        "sub": null,
+        "publishedAt": "2026-11-19T11:51:45+09:00"
+      },
+      {
+        "id": "https://news.hada.io/topic?id=37451",
+        "source": "geeknews",
+        "title": "Ask GN: 일별 집계 데이터가 나중에 바뀔 때, 자동화 리포트는 어떻게 관리하시나요?",
+        "url": "https://news.hada.io/topic?id=37451&utm_source=geeknews&utm_medium=rss&utm_campaign=news",
+        "domain": "news.hada.io",
+        "sub": null,
+        "publishedAt": "2026-11-19T11:50:28+09:00"
+      },
+      {
+        "id": "https://news.hada.io/topic?id=37448",
+        "source": "geeknews",
+        "title": "Show GN: AirStats - 24시간 기록을 보여주는 가벼운 오픈소스 맥 메뉴 막대 시스템 모니터",
+        "url": "https://news.hada.io/topic?id=37448&utm_source=geeknews&utm_medium=rss&utm_campaign=news",
+        "domain": "news.hada.io",
+        "sub": null,
+        "publishedAt": "2026-11-19T10:44:11+09:00"
+      },
+      {
+        "id": "https://news.hada.io/topic?id=37447",
+        "source": "geeknews",
+        "title": "Show HN: ExitPath - Slack, Notion, Microsoft 365에서 벗어나는 오픈소스 대안",
+        "url": "https://news.hada.io/topic?id=37447&utm_source=geeknews&utm_medium=rss&utm_campaign=news",
+        "domain": "news.hada.io",
+        "sub": null,
+        "publishedAt": "2026-11-19T10:37:56+09:00"
+      },
+      {
+        "id": "https://news.hada.io/topic?id=37446",
+        "source": "geeknews",
+        "title": "우리에겐 진심으로 신경 쓰는 똑똑한 사람들이 필요하다",
+        "url": "https://news.hada.io/topic?id=37446&utm_source=geeknews&utm_medium=rss&utm_campaign=news",
+        "domain": "news.hada.io",
+        "sub": null,
+        "publishedAt": "2026-11-19T10:34:56+09:00"
+      },
+      {
+        "id": "https://news.hada.io/topic?id=37445",
+        "source": "geeknews",
+        "title": "NoisyTCP CVE-2026-99288: Linux 관리자가 알아야 할 사항",
+        "url": "https://news.hada.io/topic?id=37445&utm_source=geeknews&utm_medium=rss&utm_campaign=news",
+        "domain": "news.hada.io",
+        "sub": null,
+        "publishedAt": "2026-11-19T10:12:56+09:00"
+      },
+      {
+        "id": "https://news.hada.io/topic?id=37442",
+        "source": "geeknews",
+        "title": "Java4Shell: Java 17의 인증 전 원격 코드 실행 취약점으로 서버 위험 노출(CVE-2026-114938)",
+        "url": "https://news.hada.io/topic?id=37442&utm_source=geeknews&utm_medium=rss&utm_campaign=news",
+        "domain": "news.hada.io",
+        "sub": null,
+        "publishedAt": "2026-11-19T09:37:30+09:00"
+      },
+      {
+        "id": "https://news.hada.io/topic?id=37441",
+        "source": "geeknews",
+        "title": "OpenAI 모델로 칩 설계 발전시키기",
+        "url": "https://news.hada.io/topic?id=37441&utm_source=geeknews&utm_medium=rss&utm_campaign=news",
+        "domain": "news.hada.io",
+        "sub": null,
+        "publishedAt": "2026-11-19T09:34:30+09:00"
+      },
+      {
+        "id": "https://news.hada.io/topic?id=37440",
+        "source": "geeknews",
+        "title": "Reticle - AI 코딩 에이전트가 웹/데스크톱 앱을 직접 조작해 검증하는 도구",
+        "url": "https://news.hada.io/topic?id=37440&utm_source=geeknews&utm_medium=rss&utm_campaign=news",
+        "domain": "news.hada.io",
+        "sub": null,
+        "publishedAt": "2026-11-19T09:30:02+09:00"
+      },
+      {
+        "id": "https://news.hada.io/topic?id=37438",
+        "source": "geeknews",
+        "title": "nginx2root - nginx 원격 코드 실행 취약점 5개와 Linux 커널 권한 상승 취약점",
+        "url": "https://news.hada.io/topic?id=37438&utm_source=geeknews&utm_medium=rss&utm_campaign=news",
+        "domain": "news.hada.io",
+        "sub": null,
+        "publishedAt": "2026-11-19T09:08:42+09:00"
+      },
+      {
+        "id": "https://news.hada.io/topic?id=37437",
+        "source": "geeknews",
+        "title": "Codeberg 도메인이 계정에서 갑자기 사라져 사이트 접속 불가",
+        "url": "https://news.hada.io/topic?id=37437&utm_source=geeknews&utm_medium=rss&utm_campaign=news",
+        "domain": "news.hada.io",
+        "sub": null,
+        "publishedAt": "2026-11-19T09:05:42+09:00"
+      },
+      {
+        "id": "https://news.hada.io/topic?id=37436",
+        "source": "geeknews",
+        "title": "Claude는 대규모 단백질 서열로 학습됐다",
+        "url": "https://news.hada.io/topic?id=37436&utm_source=geeknews&utm_medium=rss&utm_campaign=news",
+        "domain": "news.hada.io",
+        "sub": null,
+        "publishedAt": "2026-11-19T08:34:03+09:00"
+      },
+      {
+        "id": "https://news.hada.io/topic?id=37435",
+        "source": "geeknews",
+        "title": "KVM: x86: INIT 에뮬레이션 시 MMU 컨텍스트를 무조건 초기화하도록 수정(CVE-2026-99312)",
+        "url": "https://news.hada.io/topic?id=37435&utm_source=geeknews&utm_medium=rss&utm_campaign=news",
+        "domain": "news.hada.io",
+        "sub": null,
+        "publishedAt": "2026-11-19T07:36:07+09:00"
+      },
+      {
+        "id": "https://news.hada.io/topic?id=37434",
+        "source": "geeknews",
+        "title": "Tencent Hy4 Flash - 100만 토큰 컨텍스트를 지원하는 저비용 멀티모달 모델",
+        "url": "https://news.hada.io/topic?id=37434&utm_source=geeknews&utm_medium=rss&utm_campaign=news",
+        "domain": "news.hada.io",
+        "sub": null,
+        "publishedAt": "2026-11-19T07:33:07+09:00"
+      },
+      {
+        "id": "https://news.hada.io/topic?id=37433",
+        "source": "geeknews",
+        "title": "Google Gemini의 개인 비서 기능 ‘Tasks’, 이제 무료로 제공",
+        "url": "https://news.hada.io/topic?id=37433&utm_source=geeknews&utm_medium=rss&utm_campaign=news",
+        "domain": "news.hada.io",
+        "sub": null,
+        "publishedAt": "2026-11-19T07:24:26+09:00"
+      },
+      {
+        "id": "https://news.hada.io/topic?id=37432",
+        "source": "geeknews",
+        "title": "Gemini 4 Neon - 복잡한 코딩과 분석에 추론 성능과 효율을 갖춘 AI 모델",
+        "url": "https://news.hada.io/topic?id=37432&utm_source=geeknews&utm_medium=rss&utm_campaign=news",
+        "domain": "news.hada.io",
+        "sub": null,
+        "publishedAt": "2026-11-19T07:22:19+09:00"
+      },
+      {
+        "id": "https://news.hada.io/topic?id=37431",
+        "source": "geeknews",
+        "title": "Genie 4, Project Genie에서 이용 가능 - 실시간 세계 수정과 오디오 생성 지원",
+        "url": "https://news.hada.io/topic?id=37431&utm_source=geeknews&utm_medium=rss&utm_campaign=news",
+        "domain": "news.hada.io",
+        "sub": null,
+        "publishedAt": "2026-11-19T07:18:39+09:00"
+      }
+    ],
+    "reddit": []
+  }
+}
