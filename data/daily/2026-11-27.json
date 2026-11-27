@@ -1,0 +1,2317 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-11-27",
+  "collectedAt": "2026-11-27T07:36:07.099Z",
+  "mode": "full",
+  "scanNo": 36,
+  "sources": [
+    {
+      "id": "hn",
+      "ok": true,
+      "count": 30,
+      "error": null,
+      "reduced": false
+    },
+    {
+      "id": "geeknews",
+      "ok": true,
+      "count": 20,
+      "error": null,
+      "reduced": false
+    },
+    {
+      "id": "reddit",
+      "ok": false,
+      "count": 0,
+      "error": "HTTP 404 for https://www.reddit.com/r/ClaudeAI/top/.rss?t=day",
+      "reduced": false
+    },
+    {
+      "id": "arxiv",
+      "ok": false,
+      "count": 0,
+      "error": "HTTP 429 for https://export.arxiv.org/api/query?search_query=cat%3Acs.*%20OR%20cat%3Astat.ML&sortBy=submittedDate&sortOrder=descending&max_results=200",
+      "reduced": false
+    },
+    {
+      "id": "huggingface",
+      "ok": true,
+      "count": 20,
+      "error": null,
+      "reduced": false
+    },
+    {
+      "id": "trending",
+      "ok": true,
+      "count": 31,
+      "error": null,
+      "reduced": false
+    },
+    {
+      "id": "tools",
+      "ok": true,
+      "count": 5,
+      "error": null,
+      "reduced": false
+    },
+    {
+      "id": "advisories",
+      "ok": true,
+      "count": 60,
+      "error": null,
+      "reduced": false
+    },
+    {
+      "id": "kit",
+      "ok": true,
+      "count": 36,
+      "error": null,
+      "reduced": false
+    },
+    {
+      "id": "stars",
+      "ok": true,
+      "count": 139,
+      "error": null,
+      "reduced": false
+    }
+  ],
+  "gauge": {
+    "value": 51,
+    "avg7": 51.86,
+    "label": "normal",
+    "daysOfHistory": 7
+  },
+  "issues": [
+    {
+      "id": "8442eed6c9",
+      "title": "1Password Security Incident",
+      "title_ko": "1Password 보안 사고 발생",
+      "summary_ko": "1Password의 백엔드 시스템 일부와 관련해 보안 사고가 발생했습니다. 고객 볼트는 접근되지 않았으며 안전하게 유지되고 있습니다.",
+      "check_ko": "사용 중인 계정의 보안 상태와 공식 안내 사항을 확인해 보세요.",
+      "heat": 55,
+      "heatReason": "HN 1657점 · 댓글 709",
+      "sources": [
+        "hn"
+      ],
+      "url": "https://1password.com/blog/update-on-nov-2026-security-incident",
+      "items": [
+        {
+          "source": "hn",
+          "title": "1Password Security Incident",
+          "url": "https://1password.com/blog/update-on-nov-2026-security-incident",
+          "points": 1657,
+          "comments": 709
+        }
+      ]
+    },
+    {
+      "id": "b39aca2571",
+      "title": "AI made self-hosting fun again",
+      "title_ko": "AI가 다시 셀프 호스팅을 재미있게 만들다",
+      "summary_ko": "오랫동안 셀프 호스팅을 해온 작성자가 AI 코딩 에이전트를 활용해 인프라 구성과 관리를 더 적은 노력으로 수행하게 되면서 다시 흥미를 느끼게 되었습니다.",
+      "check_ko": "자신의 인프라 관리와 설정 파일 수정에 AI 코딩 도구를 어떻게 적용할 수 있을지 살펴보세요.",
+      "heat": 51,
+      "heatReason": "HN 578점 · 댓글 301",
+      "sources": [
+        "hn"
+      ],
+      "url": "https://janlukas.blog/posts/ai-self-hosting",
+      "items": [
+        {
+          "source": "hn",
+          "title": "AI made self-hosting fun again",
+          "url": "https://janlukas.blog/posts/ai-self-hosting",
+          "points": 578,
+          "comments": 301
+        }
+      ]
+    },
+    {
+      "id": "3ce6fc1888",
+      "title": "Tell HN: Happy Thanksgiving",
+      "title_ko": "HN에 전하는 추수감사절 인사",
+      "summary_ko": "경력과 삶에 도움을 준 주변의 고마운 사람들에게 감사의 마음을 담은 손글씨 메모를 전하자는 내용의 글입니다.",
+      "check_ko": "고마움을 전하고 싶었던 주변 사람들에게 감사를 표현해 보세요.",
+      "heat": 50,
+      "heatReason": "HN 678점 · 댓글 144",
+      "sources": [
+        "hn"
+      ],
+      "url": "https://news.ycombinator.com/item?id=50655664",
+      "items": [
+        {
+          "source": "hn",
+          "title": "Tell HN: Happy Thanksgiving",
+          "url": "https://news.ycombinator.com/item?id=50655664",
+          "points": 678,
+          "comments": 144
+        }
+      ]
+    },
+    {
+      "id": "5f86746955",
+      "title": "YouTube Ad Punisher – Auto-reloads YouTube pages when an ad plays",
+      "title_ko": "유튜브 광고가 재생될 때 페이지를 자동 새로고침하는 확장 프로그램",
+      "summary_ko": "유튜브 광고가 재생될 때 정확한 재생 시점을 유지하며 페이지를 자동으로 새로고침하여 광고를 우회하는 브라우저 확장 프로그램입니다.",
+      "check_ko": "유튜브 광고 대응 방식을 자동화하는 확장 프로그램의 작동 방식을 코드를 통해 확인해 보세요.",
+      "heat": 49,
+      "heatReason": "HN 360점 · 댓글 427",
+      "sources": [
+        "hn"
+      ],
+      "url": "https://github.com/antonpictures/youtube-punisher",
+      "items": [
+        {
+          "source": "hn",
+          "title": "YouTube Ad Punisher – Auto-reloads YouTube pages when an ad plays",
+          "url": "https://github.com/antonpictures/youtube-punisher",
+          "points": 360,
+          "comments": 427
+        }
+      ]
+    },
+    {
+      "id": "7ab53e7a26",
+      "title": "Intel One Mono font (2023)",
+      "title_ko": "Intel One Mono 폰트",
+      "summary_ko": "가독성과 시각 장애가 있는 개발자의 요구를 고려하여 설계된 오픈소스 고정폭 글꼴 패밀리입니다.",
+      "check_ko": "개발 환경에서 가독성을 높이기 위해 이 폰트를 직접 적용해 보세요.",
+      "heat": 49,
+      "heatReason": "HN 508점 · 댓글 249",
+      "sources": [
+        "hn"
+      ],
+      "url": "https://github.com/intel/intel-one-mono",
+      "items": [
+        {
+          "source": "hn",
+          "title": "Intel One Mono font (2023)",
+          "url": "https://github.com/intel/intel-one-mono",
+          "points": 508,
+          "comments": 249
+        }
+      ]
+    },
+    {
+      "id": "9ca4b3ecf9",
+      "title": "Nextcloud Office Desktop app",
+      "title_ko": null,
+      "summary_ko": null,
+      "check_ko": null,
+      "heat": 48,
+      "heatReason": "HN 424점 · 댓글 217",
+      "sources": [
+        "hn"
+      ],
+      "url": "https://nextcloud.com/blog/euro-office-comes-to-your-desktop-with-the-nextcloud-office-desktop-app/",
+      "items": [
+        {
+          "source": "hn",
+          "title": "Nextcloud Office Desktop app",
+          "url": "https://nextcloud.com/blog/euro-office-comes-to-your-desktop-with-the-nextcloud-office-desktop-app/",
+          "points": 424,
+          "comments": 217
+        }
+      ]
+    },
+    {
+      "id": "dadebd14f2",
+      "title": "Google Will Make AI Agents Use Its MCP Servers. The Gmail One Can't Send Email",
+      "title_ko": null,
+      "summary_ko": null,
+      "check_ko": null,
+      "heat": 47,
+      "heatReason": "HN 318점 · 댓글 274",
+      "sources": [
+        "hn"
+      ],
+      "url": "https://techstackups.com/articles/google-workspace-ai-agents-mcp/",
+      "items": [
+        {
+          "source": "hn",
+          "title": "Google Will Make AI Agents Use Its MCP Servers. The Gmail One Can't Send Email",
+          "url": "https://techstackups.com/articles/google-workspace-ai-agents-mcp/",
+          "points": 318,
+          "comments": 274
+        }
+      ]
+    },
+    {
+      "id": "edd6c06090",
+      "title": "Hard Drive pricing has gotten bad",
+      "title_ko": null,
+      "summary_ko": null,
+      "check_ko": null,
+      "heat": 45,
+      "heatReason": "HN 290점 · 댓글 188",
+      "sources": [
+        "hn"
+      ],
+      "url": "https://blog.ktz.me/black-friday-hard-drive-prices-are-messed-up/",
+      "items": [
+        {
+          "source": "hn",
+          "title": "Hard Drive pricing has gotten bad",
+          "url": "https://blog.ktz.me/black-friday-hard-drive-prices-are-messed-up/",
+          "points": 290,
+          "comments": 188
+        }
+      ]
+    },
+    {
+      "id": "7d64379b65",
+      "title": "The USAID Files",
+      "title_ko": null,
+      "summary_ko": null,
+      "check_ko": null,
+      "heat": 45,
+      "heatReason": "HN 236점 · 댓글 286",
+      "sources": [
+        "hn"
+      ],
+      "url": "https://reclaimthenet.org/usaid-files",
+      "items": [
+        {
+          "source": "hn",
+          "title": "The USAID Files",
+          "url": "https://reclaimthenet.org/usaid-files",
+          "points": 236,
+          "comments": 286
+        }
+      ]
+    },
+    {
+      "id": "4ab99e327f",
+      "title": "Moat: OpenRouter replacement",
+      "title_ko": null,
+      "summary_ko": null,
+      "check_ko": null,
+      "heat": 45,
+      "heatReason": "HN 276점 · 댓글 153",
+      "sources": [
+        "hn"
+      ],
+      "url": "https://commandcode.ai/moat",
+      "items": [
+        {
+          "source": "hn",
+          "title": "Moat: OpenRouter replacement",
+          "url": "https://commandcode.ai/moat",
+          "points": 276,
+          "comments": 153
+        }
+      ]
+    },
+    {
+      "id": "7aaa4e0ea1",
+      "title": "Kamil Khan Mumtaz: Pakistani architect, admired at home, almost invisible abroad",
+      "title_ko": null,
+      "summary_ko": null,
+      "check_ko": null,
+      "heat": 44,
+      "heatReason": "HN 339점 · 댓글 77",
+      "sources": [
+        "hn"
+      ],
+      "url": "https://worksinprogress.co/issue/the-greatest-architect-youve-never-heard-of-is-in-pakistan/",
+      "items": [
+        {
+          "source": "hn",
+          "title": "Kamil Khan Mumtaz: Pakistani architect, admired at home, almost invisible abroad",
+          "url": "https://worksinprogress.co/issue/the-greatest-architect-youve-never-heard-of-is-in-pakistan/",
+          "points": 339,
+          "comments": 77
+        }
+      ]
+    },
+    {
+      "id": "a1d60a2f72",
+      "title": "AMD-specific fork of llama.cpp",
+      "title_ko": null,
+      "summary_ko": null,
+      "check_ko": null,
+      "heat": 44,
+      "heatReason": "HN 333점 · 댓글 82",
+      "sources": [
+        "hn"
+      ],
+      "url": "https://devnull.land/amd-specific-llama-cpp",
+      "items": [
+        {
+          "source": "hn",
+          "title": "AMD-specific fork of llama.cpp",
+          "url": "https://devnull.land/amd-specific-llama-cpp",
+          "points": 333,
+          "comments": 82
+        }
+      ]
+    },
+    {
+      "id": "cec5cefa40",
+      "title": "CTO of 'RansomwareHelp' indicted for wire fraud",
+      "title_ko": null,
+      "summary_ko": null,
+      "check_ko": null,
+      "heat": 44,
+      "heatReason": "HN 249점 · 댓글 124",
+      "sources": [
+        "hn"
+      ],
+      "url": "https://krebsonsecurity.com/2026/11/cto-of-ransomwarehelp-indicted-for-wire-fraud/",
+      "items": [
+        {
+          "source": "hn",
+          "title": "CTO of 'RansomwareHelp' indicted for wire fraud",
+          "url": "https://krebsonsecurity.com/2026/11/cto-of-ransomwarehelp-indicted-for-wire-fraud/",
+          "points": 249,
+          "comments": 124
+        }
+      ]
+    },
+    {
+      "id": "96cf9c454f",
+      "title": "Company Culture = Slack Emoji ÷ √Headcount",
+      "title_ko": null,
+      "summary_ko": null,
+      "check_ko": null,
+      "heat": 44,
+      "heatReason": "HN 272점 · 댓글 122",
+      "sources": [
+        "hn"
+      ],
+      "url": "https://lia.mg/posts/measuring-company-culture-with-slack-emoji/",
+      "items": [
+        {
+          "source": "hn",
+          "title": "Company Culture = Slack Emoji ÷ √Headcount",
+          "url": "https://lia.mg/posts/measuring-company-culture-with-slack-emoji/",
+          "points": 272,
+          "comments": 122
+        }
+      ]
+    },
+    {
+      "id": "f76a4464de",
+      "title": "An algebraic quantization of gravity from the null cone",
+      "title_ko": null,
+      "summary_ko": null,
+      "check_ko": null,
+      "heat": 42,
+      "heatReason": "HN 234점 · 댓글 89",
+      "sources": [
+        "hn"
+      ],
+      "url": "https://arxiv.org/abs/2611.34924",
+      "items": [
+        {
+          "source": "hn",
+          "title": "An algebraic quantization of gravity from the null cone",
+          "url": "https://arxiv.org/abs/2611.34924",
+          "points": 234,
+          "comments": 89
+        }
+      ]
+    },
+    {
+      "id": "e1c95e906a",
+      "title": "Show HN: I wrote an entire Vim manual over 4 years",
+      "title_ko": null,
+      "summary_ko": null,
+      "check_ko": null,
+      "heat": 38,
+      "heatReason": "HN 135점 · 댓글 43",
+      "sources": [
+        "hn"
+      ],
+      "url": "http://themouseless.dev/vim/",
+      "items": [
+        {
+          "source": "hn",
+          "title": "Show HN: I wrote an entire Vim manual over 4 years",
+          "url": "http://themouseless.dev/vim/",
+          "points": 135,
+          "comments": 43
+        }
+      ]
+    },
+    {
+      "id": "80b9d9b599",
+      "title": "Curiosity Is No Solo Act",
+      "title_ko": null,
+      "summary_ko": null,
+      "check_ko": null,
+      "heat": 38,
+      "heatReason": "HN 147점 · 댓글 36",
+      "sources": [
+        "hn"
+      ],
+      "url": "https://thereader.mitpress.mit.edu/curiosity-is-no-solo-act/",
+      "items": [
+        {
+          "source": "hn",
+          "title": "Curiosity Is No Solo Act",
+          "url": "https://thereader.mitpress.mit.edu/curiosity-is-no-solo-act/",
+          "points": 147,
+          "comments": 36
+        }
+      ]
+    },
+    {
+      "id": "de6d0cc539",
+      "title": "Show HN: Three Linux VMs in a browser tab, each running a different browser",
+      "title_ko": null,
+      "summary_ko": null,
+      "check_ko": null,
+      "heat": 37,
+      "heatReason": "HN 136점 · 댓글 30",
+      "sources": [
+        "hn"
+      ],
+      "url": "https://michidk.github.io/sidebyside/",
+      "items": [
+        {
+          "source": "hn",
+          "title": "Show HN: Three Linux VMs in a browser tab, each running a different browser",
+          "url": "https://michidk.github.io/sidebyside/",
+          "points": 136,
+          "comments": 30
+        }
+      ]
+    },
+    {
+      "id": "5c4a0c9c60",
+      "title": "The need for a formally verifiable mainstream programming language",
+      "title_ko": null,
+      "summary_ko": null,
+      "check_ko": null,
+      "heat": 36,
+      "heatReason": "HN 87점 · 댓글 59",
+      "sources": [
+        "hn"
+      ],
+      "url": "https://blainehansen.me/post/mainstream-verifiable-language/",
+      "items": [
+        {
+          "source": "hn",
+          "title": "The need for a formally verifiable mainstream programming language",
+          "url": "https://blainehansen.me/post/mainstream-verifiable-language/",
+          "points": 87,
+          "comments": 59
+        }
+      ]
+    },
+    {
+      "id": "ed3c0dd624",
+      "title": "Show HN: Olumino, a Markdown notes and spaced repetition app",
+      "title_ko": null,
+      "summary_ko": null,
+      "check_ko": null,
+      "heat": 36,
+      "heatReason": "HN 97점 · 댓글 43",
+      "sources": [
+        "hn"
+      ],
+      "url": "https://olumino.app",
+      "items": [
+        {
+          "source": "hn",
+          "title": "Show HN: Olumino, a Markdown notes and spaced repetition app",
+          "url": "https://olumino.app",
+          "points": 97,
+          "comments": 43
+        }
+      ]
+    },
+    {
+      "id": "a552b3b51b",
+      "title": "Rvoip: VoIP stack in Rust",
+      "title_ko": null,
+      "summary_ko": null,
+      "check_ko": null,
+      "heat": 35,
+      "heatReason": "HN 119점 · 댓글 24",
+      "sources": [
+        "hn"
+      ],
+      "url": "https://github.com/eisenzopf/rvoip",
+      "items": [
+        {
+          "source": "hn",
+          "title": "Rvoip: VoIP stack in Rust",
+          "url": "https://github.com/eisenzopf/rvoip",
+          "points": 119,
+          "comments": 24
+        }
+      ]
+    },
+    {
+      "id": "1179ca5435",
+      "title": "NormalScript: A perfectly normal scripting language",
+      "title_ko": null,
+      "summary_ko": null,
+      "check_ko": null,
+      "heat": 35,
+      "heatReason": "HN 101점 · 댓글 25",
+      "sources": [
+        "hn"
+      ],
+      "url": "https://psychoscript.com/",
+      "items": [
+        {
+          "source": "hn",
+          "title": "NormalScript: A perfectly normal scripting language",
+          "url": "https://psychoscript.com/",
+          "points": 101,
+          "comments": 25
+        }
+      ]
+    },
+    {
+      "id": "dd57d49e57",
+      "title": "\"What's Claude's Fursona?\" and Other Questions",
+      "title_ko": null,
+      "summary_ko": null,
+      "check_ko": null,
+      "heat": 34,
+      "heatReason": "HN 72점 · 댓글 43",
+      "sources": [
+        "hn"
+      ],
+      "url": "https://herecomesthemoon.net/2026/11/whats-claudes-fursona/",
+      "items": [
+        {
+          "source": "hn",
+          "title": "\"What's Claude's Fursona?\" and Other Questions",
+          "url": "https://herecomesthemoon.net/2026/11/whats-claudes-fursona/",
+          "points": 72,
+          "comments": 43
+        }
+      ]
+    },
+    {
+      "id": "96c0975fca",
+      "title": "Largest 2D Chart library in the world using BUI: BlenderUI",
+      "title_ko": null,
+      "summary_ko": null,
+      "check_ko": null,
+      "heat": 34,
+      "heatReason": "HN 99점 · 댓글 21",
+      "sources": [
+        "hn"
+      ],
+      "url": "https://bui.preetham.top/charts/",
+      "items": [
+        {
+          "source": "hn",
+          "title": "Largest 2D Chart library in the world using BUI: BlenderUI",
+          "url": "https://bui.preetham.top/charts/",
+          "points": 99,
+          "comments": 21
+        }
+      ]
+    },
+    {
+      "id": "be6c580641",
+      "title": "Novita, StreamLake, etc. are ByteDance Ark wrappers",
+      "title_ko": null,
+      "summary_ko": null,
+      "check_ko": null,
+      "heat": 32,
+      "heatReason": "HN 90점 · 댓글 11",
+      "sources": [
+        "hn"
+      ],
+      "url": "https://kendell.dev/blog/arkwrapper/",
+      "items": [
+        {
+          "source": "hn",
+          "title": "Novita, StreamLake, etc. are ByteDance Ark wrappers",
+          "url": "https://kendell.dev/blog/arkwrapper/",
+          "points": 90,
+          "comments": 11
+        }
+      ]
+    },
+    {
+      "id": "81fa024fb5",
+      "title": "George Whitesides, 1939-2026",
+      "title_ko": null,
+      "summary_ko": null,
+      "check_ko": null,
+      "heat": 30,
+      "heatReason": "HN 73점 · 댓글 7",
+      "sources": [
+        "hn"
+      ],
+      "url": "https://www.science.org/content/blog-post/george-whitesides-1939-2026",
+      "items": [
+        {
+          "source": "hn",
+          "title": "George Whitesides, 1939-2026",
+          "url": "https://www.science.org/content/blog-post/george-whitesides-1939-2026",
+          "points": 73,
+          "comments": 7
+        }
+      ]
+    },
+    {
+      "id": "9d34331f00",
+      "title": "The group chat where your AI talks behind your back",
+      "title_ko": null,
+      "summary_ko": null,
+      "check_ko": null,
+      "heat": 27,
+      "heatReason": "HN 38점 · 댓글 9",
+      "sources": [
+        "hn"
+      ],
+      "url": "https://construct22.com/",
+      "items": [
+        {
+          "source": "hn",
+          "title": "The group chat where your AI talks behind your back",
+          "url": "https://construct22.com/",
+          "points": 38,
+          "comments": 9
+        }
+      ]
+    },
+    {
+      "id": "77d58a1ccf",
+      "title": "An introduction to uncertainty in machine learning",
+      "title_ko": null,
+      "summary_ko": null,
+      "check_ko": null,
+      "heat": 26,
+      "heatReason": "HN 62점 · 댓글 1",
+      "sources": [
+        "hn"
+      ],
+      "url": "https://chrhenning.com/blog/2026/introduction-to-uncertainty/",
+      "items": [
+        {
+          "source": "hn",
+          "title": "An introduction to uncertainty in machine learning",
+          "url": "https://chrhenning.com/blog/2026/introduction-to-uncertainty/",
+          "points": 62,
+          "comments": 1
+        }
+      ]
+    },
+    {
+      "id": "3180a066bc",
+      "title": "elementalsouls/Claude-BugHunter",
+      "title_ko": null,
+      "summary_ko": null,
+      "check_ko": null,
+      "heat": 22,
+      "heatReason": "스타 +1597",
+      "sources": [
+        "trending"
+      ],
+      "url": "https://github.com/elementalsouls/Claude-BugHunter",
+      "items": [
+        {
+          "source": "trending",
+          "title": "elementalsouls/Claude-BugHunter",
+          "url": "https://github.com/elementalsouls/Claude-BugHunter",
+          "points": null,
+          "comments": null
+        }
+      ]
+    },
+    {
+      "id": "06f0477c3c",
+      "title": "The Cutthroat Business of Shipwrecks",
+      "title_ko": null,
+      "summary_ko": null,
+      "check_ko": null,
+      "heat": 20,
+      "heatReason": "HN 19점 · 댓글 2",
+      "sources": [
+        "hn"
+      ],
+      "url": "https://daily.jstor.org/the-cutthroat-business-of-shipwrecks/",
+      "items": [
+        {
+          "source": "hn",
+          "title": "The Cutthroat Business of Shipwrecks",
+          "url": "https://daily.jstor.org/the-cutthroat-business-of-shipwrecks/",
+          "points": 19,
+          "comments": 2
+        }
+      ]
+    }
+  ],
+  "alerts": [],
+  "tools": [
+    {
+      "tool": "copilot",
+      "name": "GitHub Copilot",
+      "version": null,
+      "publishedAt": "2026-11-25T22:18:03.000Z",
+      "url": "https://github.blog/changelog/2026-11-25-copilot-code-review-billing-will-default-to-the-organization",
+      "note": "Copilot code review billing will default to the organization",
+      "note_ko": "Copilot 코드 리뷰 청구 설정이 기본적으로 조직 단위로 지정됩니다.",
+      "isRecent": true
+    },
+    {
+      "tool": "claude-code",
+      "name": "Claude Code",
+      "version": "v2.1.332",
+      "publishedAt": "2026-11-25T01:32:14Z",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.332",
+      "note": "Added skills from MCP servers (beta). They show as server:skill in the / menu; other skills keep their names",
+      "note_ko": "MCP 서버의 스킬(베타)이 추가되었습니다. / 메뉴에 server:skill로 표시되며, 다른 스킬들은 기존 이름을 유지합니다.",
+      "isRecent": true
+    },
+    {
+      "tool": "gemini-cli",
+      "name": "Gemini CLI",
+      "version": "v0.71.1",
+      "publishedAt": "2026-11-24T03:50:24Z",
+      "url": "https://github.com/google-gemini/gemini-cli/releases/tag/v0.71.1",
+      "note": "fix(patch): cherry-pick aafdfdf to release/v0.71.0-pr-30420 to patch version v0.71.0 and create version 0.71.1 by @gemin",
+      "note_ko": "aafdfdf 커밋을 release/v0.71.0-pr-30420에 체리픽하여 v0.71.0 패치 버전을 수정하고 0.71.1 버전을 생성했습니다.",
+      "isRecent": true
+    },
+    {
+      "tool": "codex",
+      "name": "Codex CLI",
+      "version": "rust-v0.172.0",
+      "publishedAt": "2026-11-24T00:03:55Z",
+      "url": "https://github.com/openai/codex/releases/tag/rust-v0.172.0",
+      "note": "Follow thread links from search results and transcripts to open saved conversations and nested agents in the terminal. (",
+      "note_ko": "검색 결과와 대화록의 스레드 링크를 따라 터미널에서 저장된 대화와 중첩 에이전트를 엽니다.",
+      "isRecent": true
+    },
+    {
+      "tool": "cursor",
+      "name": "Cursor",
+      "version": null,
+      "publishedAt": "2026-11-06",
+      "url": "https://cursor.com/changelog/voice-chat",
+      "note": "Voice Chat with Agents",
+      "note_ko": "에이전트와의 음성 채팅",
+      "isRecent": false
+    }
+  ],
+  "rising": [
+    {
+      "fullName": "elementalsouls/Claude-BugHunter",
+      "url": "https://github.com/elementalsouls/Claude-BugHunter",
+      "description": "A Claude Code skill bundle for bug hunting and external red-team work - 85 skills, 16 slash commands, 681 disclosed-report patterns curated across 24 core vulnerability classes, plus enterprise identity + infrastructure attack matrices.",
+      "description_ko": null,
+      "stars": 25047,
+      "delta7": 12126,
+      "deltaSource": "history",
+      "isNew": false,
+      "series": [
+        {
+          "date": "2026-11-16",
+          "stars": 6455
+        },
+        {
+          "date": "2026-11-17",
+          "stars": 7756
+        },
+        {
+          "date": "2026-11-18",
+          "stars": 9818
+        },
+        {
+          "date": "2026-11-19",
+          "stars": 11550
+        },
+        {
+          "date": "2026-11-20",
+          "stars": 12921
+        },
+        {
+          "date": "2026-11-21",
+          "stars": 14662
+        },
+        {
+          "date": "2026-11-22",
+          "stars": 16364
+        },
+        {
+          "date": "2026-11-23",
+          "stars": 18335
+        },
+        {
+          "date": "2026-11-24",
+          "stars": 20384
+        },
+        {
+          "date": "2026-11-25",
+          "stars": 21928
+        },
+        {
+          "date": "2026-11-26",
+          "stars": 23425
+        },
+        {
+          "date": "2026-11-27",
+          "stars": 25047
+        }
+      ]
+    },
+    {
+      "fullName": "firecrawl/firecrawl",
+      "url": "https://github.com/firecrawl/firecrawl",
+      "description": "Knowledge infrastructure to make your agents smarter. Search, scrape and access 550+ data providers through one API.",
+      "description_ko": "에이전트를 더 똑똑하게 만드는 지식 인프라로, 하나의 API를 통해 검색, 스크래핑 및 550개 이상의 데이터 제공자에 액세스합니다.",
+      "stars": 211171,
+      "delta7": 6667,
+      "deltaSource": "history",
+      "isNew": false,
+      "series": [
+        {
+          "date": "2026-11-20",
+          "stars": 204504
+        },
+        {
+          "date": "2026-11-21",
+          "stars": 205496
+        },
+        {
+          "date": "2026-11-22",
+          "stars": 206383
+        },
+        {
+          "date": "2026-11-23",
+          "stars": 207259
+        },
+        {
+          "date": "2026-11-24",
+          "stars": 208281
+        },
+        {
+          "date": "2026-11-25",
+          "stars": 209246
+        },
+        {
+          "date": "2026-11-26",
+          "stars": 210337
+        },
+        {
+          "date": "2026-11-27",
+          "stars": 211171
+        }
+      ]
+    },
+    {
+      "fullName": "XiaoYouChR/Ghost-Downloader-3",
+      "url": "https://github.com/XiaoYouChR/Ghost-Downloader-3",
+      "description": "The only downloader you need. 下载器的集大成者。",
+      "description_ko": "단 하나의 다운로더로 충분합니다.",
+      "stars": 19416,
+      "delta7": 6381,
+      "deltaSource": "history",
+      "isNew": false,
+      "series": [
+        {
+          "date": "2026-11-20",
+          "stars": 13035
+        },
+        {
+          "date": "2026-11-21",
+          "stars": 13907
+        },
+        {
+          "date": "2026-11-22",
+          "stars": 14589
+        },
+        {
+          "date": "2026-11-23",
+          "stars": 15537
+        },
+        {
+          "date": "2026-11-24",
+          "stars": 16789
+        },
+        {
+          "date": "2026-11-25",
+          "stars": 17677
+        },
+        {
+          "date": "2026-11-26",
+          "stars": 18558
+        },
+        {
+          "date": "2026-11-27",
+          "stars": 19416
+        }
+      ]
+    },
+    {
+      "fullName": "HKUDS/CLI-Anything",
+      "url": "https://github.com/HKUDS/CLI-Anything",
+      "description": "\"CLI-Anything: Making ALL Software Agent-Native\" -- CLI-Hub: https://clianything.cc/",
+      "description_ko": "\"CLI-Anything: 모든 소프트웨어를 에이전트 네이티브로 만들기\" -- CLI-Hub: https://clianything.cc/",
+      "stars": 66570,
+      "delta7": 5808,
+      "deltaSource": "history",
+      "isNew": false,
+      "series": [
+        {
+          "date": "2026-10-29",
+          "stars": 57584
+        },
+        {
+          "date": "2026-10-30",
+          "stars": 57718
+        },
+        {
+          "date": "2026-10-31",
+          "stars": 57836
+        },
+        {
+          "date": "2026-11-01",
+          "stars": 57930
+        },
+        {
+          "date": "2026-11-02",
+          "stars": 58039
+        },
+        {
+          "date": "2026-11-03",
+          "stars": 58136
+        },
+        {
+          "date": "2026-11-04",
+          "stars": 58188
+        },
+        {
+          "date": "2026-11-05",
+          "stars": 58264
+        },
+        {
+          "date": "2026-11-06",
+          "stars": 58309
+        },
+        {
+          "date": "2026-11-07",
+          "stars": 58365
+        },
+        {
+          "date": "2026-11-08",
+          "stars": 58413
+        },
+        {
+          "date": "2026-11-09",
+          "stars": 58464
+        },
+        {
+          "date": "2026-11-10",
+          "stars": 58513
+        },
+        {
+          "date": "2026-11-11",
+          "stars": 58556
+        },
+        {
+          "date": "2026-11-12",
+          "stars": 58613
+        },
+        {
+          "date": "2026-11-13",
+          "stars": 58657
+        },
+        {
+          "date": "2026-11-14",
+          "stars": 58709
+        },
+        {
+          "date": "2026-11-15",
+          "stars": 58737
+        },
+        {
+          "date": "2026-11-16",
+          "stars": 58765
+        },
+        {
+          "date": "2026-11-17",
+          "stars": 58880
+        },
+        {
+          "date": "2026-11-18",
+          "stars": 59238
+        },
+        {
+          "date": "2026-11-19",
+          "stars": 59990
+        },
+        {
+          "date": "2026-11-20",
+          "stars": 60762
+        },
+        {
+          "date": "2026-11-21",
+          "stars": 61545
+        },
+        {
+          "date": "2026-11-22",
+          "stars": 62206
+        },
+        {
+          "date": "2026-11-23",
+          "stars": 62975
+        },
+        {
+          "date": "2026-11-24",
+          "stars": 64111
+        },
+        {
+          "date": "2026-11-25",
+          "stars": 65125
+        },
+        {
+          "date": "2026-11-26",
+          "stars": 65904
+        },
+        {
+          "date": "2026-11-27",
+          "stars": 66570
+        }
+      ]
+    },
+    {
+      "fullName": "zhouxiaoka/autoclip",
+      "url": "https://github.com/zhouxiaoka/autoclip",
+      "description": "AutoClip｜The open-source OpusClip alternative — local-first AI clipping & MCP server, zero subscriptions. 一个链接，一键出片。开源 AI 视频剪辑桌面工具，将播客、访谈、课程等长视频自动剪成短视频，生成字幕、封面和发布文案，适配抖音、小红书、TikTok、Reels 与 YouTube Shorts。",
+      "description_ko": "오픈소스 OpusClip 대체재인 AutoClip은 로컬 우선 AI 클리핑 및 MCP 서버를 제공하며 구독료가 없습니다.",
+      "stars": 17209,
+      "delta7": 5660,
+      "deltaSource": "history",
+      "isNew": false,
+      "series": [
+        {
+          "date": "2026-11-20",
+          "stars": 11549
+        },
+        {
+          "date": "2026-11-21",
+          "stars": 12337
+        },
+        {
+          "date": "2026-11-22",
+          "stars": 12974
+        },
+        {
+          "date": "2026-11-23",
+          "stars": 13761
+        },
+        {
+          "date": "2026-11-24",
+          "stars": 14885
+        },
+        {
+          "date": "2026-11-25",
+          "stars": 15713
+        },
+        {
+          "date": "2026-11-26",
+          "stars": 16475
+        },
+        {
+          "date": "2026-11-27",
+          "stars": 17209
+        }
+      ]
+    },
+    {
+      "fullName": "obra/superpowers",
+      "url": "https://github.com/obra/superpowers",
+      "description": "An agentic skills framework & software development methodology that works.",
+      "description_ko": "실제로 작동하는 에이전틱 스킬 프레임워크이자 소프트웨어 개발 방법론입니다.",
+      "stars": 327734,
+      "delta7": 5449,
+      "deltaSource": "history",
+      "isNew": false,
+      "series": [
+        {
+          "date": "2026-10-29",
+          "stars": 307437
+        },
+        {
+          "date": "2026-10-30",
+          "stars": 308541
+        },
+        {
+          "date": "2026-10-31",
+          "stars": 309429
+        },
+        {
+          "date": "2026-11-01",
+          "stars": 310063
+        },
+        {
+          "date": "2026-11-02",
+          "stars": 310637
+        },
+        {
+          "date": "2026-11-03",
+          "stars": 311248
+        },
+        {
+          "date": "2026-11-04",
+          "stars": 311864
+        },
+        {
+          "date": "2026-11-05",
+          "stars": 312448
+        },
+        {
+          "date": "2026-11-06",
+          "stars": 313023
+        },
+        {
+          "date": "2026-11-07",
+          "stars": 313608
+        },
+        {
+          "date": "2026-11-08",
+          "stars": 314119
+        },
+        {
+          "date": "2026-11-09",
+          "stars": 314595
+        },
+        {
+          "date": "2026-11-10",
+          "stars": 315162
+        },
+        {
+          "date": "2026-11-11",
+          "stars": 315758
+        },
+        {
+          "date": "2026-11-12",
+          "stars": 316312
+        },
+        {
+          "date": "2026-11-13",
+          "stars": 316775
+        },
+        {
+          "date": "2026-11-14",
+          "stars": 317237
+        },
+        {
+          "date": "2026-11-15",
+          "stars": 317653
+        },
+        {
+          "date": "2026-11-16",
+          "stars": 318082
+        },
+        {
+          "date": "2026-11-17",
+          "stars": 318814
+        },
+        {
+          "date": "2026-11-18",
+          "stars": 319533
+        },
+        {
+          "date": "2026-11-19",
+          "stars": 321479
+        },
+        {
+          "date": "2026-11-20",
+          "stars": 322285
+        },
+        {
+          "date": "2026-11-21",
+          "stars": 322982
+        },
+        {
+          "date": "2026-11-22",
+          "stars": 323855
+        },
+        {
+          "date": "2026-11-23",
+          "stars": 324381
+        },
+        {
+          "date": "2026-11-24",
+          "stars": 325440
+        },
+        {
+          "date": "2026-11-25",
+          "stars": 326058
+        },
+        {
+          "date": "2026-11-26",
+          "stars": 326871
+        },
+        {
+          "date": "2026-11-27",
+          "stars": 327734
+        }
+      ]
+    },
+    {
+      "fullName": "cathrynlavery/diagram-design",
+      "url": "https://github.com/cathrynlavery/diagram-design",
+      "description": "Editorial diagram design for Claude Code, Codex, GitHub Copilot, Cursor, Factory Droid, Qoder, and Pi. 52 diagram types. Self-contained HTML + SVG. No shadows. No Mermaid slop.",
+      "description_ko": "Claude Code, Codex, GitHub Copilot, Cursor, Factory Droid, Qoder, Pi를 위한 에디토리얼 다이어그램 디자인입니다.",
+      "stars": 74080,
+      "delta7": 5255,
+      "deltaSource": "history",
+      "isNew": false,
+      "series": [
+        {
+          "date": "2026-11-20",
+          "stars": 68825
+        },
+        {
+          "date": "2026-11-21",
+          "stars": 69417
+        },
+        {
+          "date": "2026-11-22",
+          "stars": 69898
+        },
+        {
+          "date": "2026-11-23",
+          "stars": 70482
+        },
+        {
+          "date": "2026-11-24",
+          "stars": 71303
+        },
+        {
+          "date": "2026-11-25",
+          "stars": 72383
+        },
+        {
+          "date": "2026-11-26",
+          "stars": 73326
+        },
+        {
+          "date": "2026-11-27",
+          "stars": 74080
+        }
+      ]
+    },
+    {
+      "fullName": "mjmirza/app-store-compliance",
+      "url": "https://github.com/mjmirza/app-store-compliance",
+      "description": "Avoid common App Store and Google Play rejections. Open playbook and pre-submission guard with 125 documented rejection patterns and fixes, privacy manifest and Data safety checks, 117 tracked deadlines (EU AI Act, DSA, COPPA, age laws), and a skill for AI coding agents.",
+      "description_ko": "일반적인 App Store 및 Google Play 거절 사유를 방지하세요.",
+      "stars": 7192,
+      "delta7": 5110,
+      "deltaSource": "history",
+      "isNew": false,
+      "series": [
+        {
+          "date": "2026-11-20",
+          "stars": 2082
+        },
+        {
+          "date": "2026-11-21",
+          "stars": 2896
+        },
+        {
+          "date": "2026-11-22",
+          "stars": 3521
+        },
+        {
+          "date": "2026-11-23",
+          "stars": 4210
+        },
+        {
+          "date": "2026-11-24",
+          "stars": 5288
+        },
+        {
+          "date": "2026-11-25",
+          "stars": 6068
+        },
+        {
+          "date": "2026-11-26",
+          "stars": 6650
+        },
+        {
+          "date": "2026-11-27",
+          "stars": 7192
+        }
+      ]
+    },
+    {
+      "fullName": "mvanhorn/last30days-skill",
+      "url": "https://github.com/mvanhorn/last30days-skill",
+      "description": "AI agent skill that researches any topic across Reddit, X, YouTube, HN, Polymarket, and the web - then synthesizes a grounded summary",
+      "description_ko": "Reddit, X, YouTube, HN, Polymarket 및 웹 전반에서 주제를 조사하고 사실에 기반한 요약을 종합하는 AI 에이전트 스킬입니다.",
+      "stars": 75971,
+      "delta7": 4987,
+      "deltaSource": "history",
+      "isNew": false,
+      "series": [
+        {
+          "date": "2026-11-17",
+          "stars": 68367
+        },
+        {
+          "date": "2026-11-18",
+          "stars": 69354
+        },
+        {
+          "date": "2026-11-19",
+          "stars": 70260
+        },
+        {
+          "date": "2026-11-20",
+          "stars": 70984
+        },
+        {
+          "date": "2026-11-21",
+          "stars": 71567
+        },
+        {
+          "date": "2026-11-22",
+          "stars": 72145
+        },
+        {
+          "date": "2026-11-23",
+          "stars": 72949
+        },
+        {
+          "date": "2026-11-24",
+          "stars": 73715
+        },
+        {
+          "date": "2026-11-25",
+          "stars": 74547
+        },
+        {
+          "date": "2026-11-26",
+          "stars": 75318
+        },
+        {
+          "date": "2026-11-27",
+          "stars": 75971
+        }
+      ]
+    },
+    {
+      "fullName": "jingyaogong/minimind",
+      "url": "https://github.com/jingyaogong/minimind",
+      "description": "🧠 两小时从 0 训出你的 64M 大模型。Train your own 64M LLM from scratch in 2 hours.",
+      "description_ko": "🧠 2시간 만에 0부터 64M 대형 언어 모델을 직접 학습시켜 보세요.",
+      "stars": 71889,
+      "delta7": 4726,
+      "deltaSource": "history",
+      "isNew": false,
+      "series": [
+        {
+          "date": "2026-11-18",
+          "stars": 66222
+        },
+        {
+          "date": "2026-11-19",
+          "stars": 66556
+        },
+        {
+          "date": "2026-11-20",
+          "stars": 67163
+        },
+        {
+          "date": "2026-11-21",
+          "stars": 67808
+        },
+        {
+          "date": "2026-11-22",
+          "stars": 68250
+        },
+        {
+          "date": "2026-11-23",
+          "stars": 68963
+        },
+        {
+          "date": "2026-11-24",
+          "stars": 69819
+        },
+        {
+          "date": "2026-11-25",
+          "stars": 70539
+        },
+        {
+          "date": "2026-11-26",
+          "stars": 71238
+        },
+        {
+          "date": "2026-11-27",
+          "stars": 71889
+        }
+      ]
+    }
+  ],
+  "newRepos": [
+    {
+      "fullName": "obsidianmd/obsidian-skills",
+      "url": "https://github.com/obsidianmd/obsidian-skills",
+      "description": "Teach your agent to use Obsidian and open formats including Markdown, Bases, JSON Canvas.",
+      "language": "Shell",
+      "stars": 54120
+    }
+  ],
+  "droppedRepos": [],
+  "kit": [
+    {
+      "fullName": "JuneYaooo/rea-video",
+      "url": "https://github.com/JuneYaooo/rea-video",
+      "description": "Reverse-engineer any video, shot by shot: filmed, AI-generated or coded, and how to remake it. Breakdowns in the open VIDEO.md format. 逆向一切视频，逐个镜头看是拍的、AI 生成的还是代码做的，再告诉你怎么复刻；拆解结果按 VIDEO.md 格式输出。",
+      "description_ko": "모든 영상을 샷 단위로 리버스 엔지니어링하여 촬영, AI 생성, 코드 여부와 자막, 편집, 오디오 제작 방식을 분석하고 재제작 방법을 알려줍니다.",
+      "stars": 13776,
+      "kind": "SKILL",
+      "isNew": true
+    },
+    {
+      "fullName": "erkamyaman/rust-anything",
+      "url": "https://github.com/erkamyaman/rust-anything",
+      "description": "Rewrite your app in Rust, piece by piece, checked against the original at every step. Works with TypeScript, JavaScript, Python, Go, Ruby, Java, C, PHP, C#, Kotlin and PowerShell.",
+      "description_ko": "기존 앱의 동작을 검증하며 TypeScript, Python 등의 코드를 Rust로 점진적으로 재작성하세요.",
+      "stars": 10414,
+      "kind": "MCP",
+      "isNew": true
+    },
+    {
+      "fullName": "patch-gg/pixelfx",
+      "url": "https://github.com/patch-gg/pixelfx",
+      "description": "244 pixel art effects, every one a small piece of code. Plus a Claude Code skill to make your own.",
+      "description_ko": "각각 작은 코드 조각으로 이루어진 244가지 픽셀 아트 효과와 자신만의 효과를 만들 수 있는 Claude Code 스킬을 제공합니다.",
+      "stars": 9541,
+      "kind": "SKILL",
+      "isNew": true
+    },
+    {
+      "fullName": "mdiri-ai/SoduWork",
+      "url": "https://github.com/mdiri-ai/SoduWork",
+      "description": "The AI-native engine for teams and their agents. Multi-harness, multi-agent, self-hosted.",
+      "description_ko": "팀과 에이전트를 위한 AI 네이티브 엔진으로, 멀티 하니스, 멀티 에이전트, 자체 호스팅을 지원합니다.",
+      "stars": 8362,
+      "kind": "MCP",
+      "isNew": true
+    },
+    {
+      "fullName": "ersinkoc/phonebox",
+      "url": "https://github.com/ersinkoc/phonebox",
+      "description": "Turn an old Android phone into a customizable desk panel and touch control deck for Windows, Linux and macOS. 124 widgets and 30 templates for system stats, AI coding, media and automation, in 13 languages. USB or paired Wi-Fi. No cloud required.",
+      "description_ko": "오래된 안드로이드폰을 Windows, Linux, macOS용 맞춤형 데스크 패널 및 터치 컨트롤 덱으로 전환합니다.",
+      "stars": 7409,
+      "kind": "OTHER",
+      "isNew": true
+    },
+    {
+      "fullName": "KKKKhazix/agent-autoloop",
+      "url": "https://github.com/KKKKhazix/agent-autoloop",
+      "description": "让你的命令行 Agent 在后台自己接活、自己跟进到底；平时不烦你，遇到拿不准的事才发卡片找你拍板。",
+      "description_ko": "명령줄 에이전트가 백그라운드에서 스스로 작업을 수주하고 끝까지 처리하며, 평소에는 방해하지 않다가 확신이 서지 않는 일에만 카드를 보내 결정을 요청합니다.",
+      "stars": 6680,
+      "kind": "MCP",
+      "isNew": true
+    },
+    {
+      "fullName": "XinaTian/MROffice",
+      "url": "https://github.com/XinaTian/MROffice",
+      "description": "MR Office — the open-source editors of the AI office suite closest to Microsoft Office: documents, spreadsheets, presentations, PDF and code in the browser. Copilot in every editor edits real Word, Excel and PowerPoint files with you; an MCP server lets Claude, ChatGPT, Cursor and Codex create and edit them; embed it in your app with one line.",
+      "description_ko": "Microsoft Office와 가장 유사한 오픈소스 AI 오피스 스위트 에디터로, 브라우저에서 문서, 스프레드시트, 프레젠테이션, PDF, 코드를 지원합니다.",
+      "stars": 4783,
+      "kind": "MCP",
+      "isNew": true
+    },
+    {
+      "fullName": "EL4CTEO/fast-anything",
+      "url": "https://github.com/EL4CTEO/fast-anything",
+      "description": "Don't rewrite it in Rust. Rewrite the 5% that's slow: profile Python, Node or Ruby apps, port the hot functions with your coding agent, prove they behave the same.",
+      "description_ko": "Rust로 전부 다시 작성하지 말고 느린 5%만 다시 작성하세요. 파이썬, 노드, 루비 앱을 프로파일링하고 코딩 에이전트로 핵심 함수를 포팅한 뒤 동일하게 동작하는지 검증합니다.",
+      "stars": 4321,
+      "kind": "MCP",
+      "isNew": true
+    },
+    {
+      "fullName": "FrigadeHQ/yogurt",
+      "url": "https://github.com/FrigadeHQ/yogurt",
+      "description": "Private AI meeting notes that stay on your computer. No meeting bot. Free and open source for Mac, Windows and Linux. An alternative to Granola, Otter and Fireflies.",
+      "description_ko": "사용자 컴퓨터에 로컬로 저장되는 비공개 AI 회의록이며, Mac, Windows, Linux를 지원하는 Granola의 무료 오픈소스 대안입니다.",
+      "stars": 3702,
+      "kind": "MCP",
+      "isNew": true
+    },
+    {
+      "fullName": "caru-ini/stack-diagram",
+      "url": "https://github.com/caru-ini/stack-diagram",
+      "description": "Agent skill: describe your stack in a sentence, get an architecture diagram with official logos",
+      "description_ko": "에이전트 스킬: 스택을 한 문장으로 설명하고 공식 로고가 포함된 아키텍처 다이어그램을 받아보세요.",
+      "stars": 2962,
+      "kind": "SKILL",
+      "isNew": true
+    },
+    {
+      "fullName": "sybil-solutions/inference-optimisation-skill",
+      "url": "https://github.com/sybil-solutions/inference-optimisation-skill",
+      "description": "Agent skill for hill-climbing local LLM serving speed (decode, speculative decoding, prefill, KV, startup, TTFT) on any hardware and quantization",
+      "description_ko": "어떤 하드웨어와 양자화 환경에서도 로컬 LLM의 서빙 속도를 최적화하는 에이전트 스킬입니다.",
+      "stars": 2840,
+      "kind": "SKILL",
+      "isNew": true
+    },
+    {
+      "fullName": "DIYgod/pinky",
+      "url": "https://github.com/DIYgod/pinky",
+      "description": "Let AI use your iPhone or Android phone, with you in the loop: any MCP agent from macOS, Windows or Linux, or Pinky itself, right on the phone.",
+      "description_ko": "macOS, Windows, Linux의 모든 MCP 에이전트나 Pinky를 사용하여 사용자가 개입하면서 AI가 내 아이폰이나 안드로이드폰을 직접 조작할 수 있게 해줍니다.",
+      "stars": 2826,
+      "kind": "MCP",
+      "isNew": true
+    }
+  ],
+  "keywords": [
+    {
+      "term": "agent",
+      "today": 18,
+      "avg7": 15.29,
+      "delta": 2.71,
+      "isNew": false
+    },
+    {
+      "term": "mcp server",
+      "today": 5,
+      "avg7": 3,
+      "delta": 2,
+      "isNew": false
+    },
+    {
+      "term": "kamil",
+      "today": 2,
+      "avg7": 0,
+      "delta": 2,
+      "isNew": true
+    },
+    {
+      "term": "kamil khan",
+      "today": 2,
+      "avg7": 0,
+      "delta": 2,
+      "isNew": true
+    },
+    {
+      "term": "khan",
+      "today": 2,
+      "avg7": 0,
+      "delta": 2,
+      "isNew": true
+    },
+    {
+      "term": "khan mumtaz",
+      "today": 2,
+      "avg7": 0,
+      "delta": 2,
+      "isNew": true
+    },
+    {
+      "term": "mumtaz",
+      "today": 2,
+      "avg7": 0,
+      "delta": 2,
+      "isNew": true
+    },
+    {
+      "term": "slack",
+      "today": 2,
+      "avg7": 0,
+      "delta": 2,
+      "isNew": true
+    },
+    {
+      "term": "usaid",
+      "today": 2,
+      "avg7": 0,
+      "delta": 2,
+      "isNew": true
+    },
+    {
+      "term": "usaid file",
+      "today": 2,
+      "avg7": 0,
+      "delta": 2,
+      "isNew": true
+    },
+    {
+      "term": "vim",
+      "today": 2,
+      "avg7": 0,
+      "delta": 2,
+      "isNew": true
+    },
+    {
+      "term": "mcp",
+      "today": 5,
+      "avg7": 3.29,
+      "delta": 1.71,
+      "isNew": false
+    },
+    {
+      "term": "app",
+      "today": 4,
+      "avg7": 2.29,
+      "delta": 1.71,
+      "isNew": false
+    },
+    {
+      "term": "act",
+      "today": 3,
+      "avg7": 1.29,
+      "delta": 1.71,
+      "isNew": false
+    },
+    {
+      "term": "browser",
+      "today": 2,
+      "avg7": 0.29,
+      "delta": 1.71,
+      "isNew": false
+    },
+    {
+      "term": "language",
+      "today": 2,
+      "avg7": 0.29,
+      "delta": 1.71,
+      "isNew": false
+    },
+    {
+      "term": "machine",
+      "today": 2,
+      "avg7": 0.29,
+      "delta": 1.71,
+      "isNew": false
+    },
+    {
+      "term": "markdown",
+      "today": 2,
+      "avg7": 0.29,
+      "delta": 1.71,
+      "isNew": false
+    },
+    {
+      "term": "server",
+      "today": 5,
+      "avg7": 3.43,
+      "delta": 1.57,
+      "isNew": false
+    },
+    {
+      "term": "file",
+      "today": 3,
+      "avg7": 1.43,
+      "delta": 1.57,
+      "isNew": false
+    }
+  ],
+  "papers": [],
+  "paperCategories": [],
+  "hfModels": [
+    {
+      "id": "thinkingmachines/Inkling-2-Mini",
+      "url": "https://huggingface.co/thinkingmachines/Inkling-2-Mini",
+      "likes": 6319,
+      "downloads": 96527,
+      "pipeline": "image-text-to-text"
+    },
+    {
+      "id": "unsloth/Inkling-2-Mini-GGUF",
+      "url": "https://huggingface.co/unsloth/Inkling-2-Mini-GGUF",
+      "likes": 1517,
+      "downloads": 2445633,
+      "pipeline": "image-text-to-text"
+    },
+    {
+      "id": "AtomicChat/Inkling-2-Mini-Uncensored-GGUF",
+      "url": "https://huggingface.co/AtomicChat/Inkling-2-Mini-Uncensored-GGUF",
+      "likes": 954,
+      "downloads": 762491,
+      "pipeline": "image-text-to-text"
+    },
+    {
+      "id": "SulphurAI/Sulphur-3",
+      "url": "https://huggingface.co/SulphurAI/Sulphur-3",
+      "likes": 1254,
+      "downloads": 189735,
+      "pipeline": null
+    },
+    {
+      "id": "prism-ml/Ternary-Bonsai-2.5-27B-GGUF",
+      "url": "https://huggingface.co/prism-ml/Ternary-Bonsai-2.5-27B-GGUF",
+      "likes": 555,
+      "downloads": 59366,
+      "pipeline": "text-generation"
+    },
+    {
+      "id": "inworld/voice-isolator",
+      "url": "https://huggingface.co/inworld/voice-isolator",
+      "likes": 975,
+      "downloads": 15244,
+      "pipeline": "audio-to-audio"
+    },
+    {
+      "id": "Lightricks/LTX-2.5",
+      "url": "https://huggingface.co/Lightricks/LTX-2.5",
+      "likes": 13617,
+      "downloads": 3041405,
+      "pipeline": "image-to-video"
+    },
+    {
+      "id": "nvidia/Nemotron-Labs-Image-30B-A3B",
+      "url": "https://huggingface.co/nvidia/Nemotron-Labs-Image-30B-A3B",
+      "likes": 290,
+      "downloads": 218,
+      "pipeline": "text-to-image"
+    },
+    {
+      "id": "llamaindex/OCRia-nano-1",
+      "url": "https://huggingface.co/llamaindex/OCRia-nano-1",
+      "likes": 290,
+      "downloads": 126,
+      "pipeline": "image-to-text"
+    },
+    {
+      "id": "apple/DepthPro2",
+      "url": "https://huggingface.co/apple/DepthPro2",
+      "likes": 1326,
+      "downloads": 0,
+      "pipeline": "depth-estimation"
+    },
+    {
+      "id": "inclusionAI/Ling-3.2-air",
+      "url": "https://huggingface.co/inclusionAI/Ling-3.2-air",
+      "likes": 274,
+      "downloads": 1467,
+      "pipeline": null
+    },
+    {
+      "id": "strata-engine/Inkling-2-Mini-Strata",
+      "url": "https://huggingface.co/strata-engine/Inkling-2-Mini-Strata",
+      "likes": 244,
+      "downloads": 2965,
+      "pipeline": "image-text-to-text"
+    },
+    {
+      "id": "nari-labs/Qwen3.8-27B-NariQ-GGUF",
+      "url": "https://huggingface.co/nari-labs/Qwen3.8-27B-NariQ-GGUF",
+      "likes": 217,
+      "downloads": 14337,
+      "pipeline": "image-text-to-text"
+    },
+    {
+      "id": "Sentinel7/h3",
+      "url": "https://huggingface.co/Sentinel7/h3",
+      "likes": 2155,
+      "downloads": 0,
+      "pipeline": null
+    },
+    {
+      "id": "orcarouter/Inkling-2-Mini-abliterated-GGUF",
+      "url": "https://huggingface.co/orcarouter/Inkling-2-Mini-abliterated-GGUF",
+      "likes": 301,
+      "downloads": 12157,
+      "pipeline": "text-generation"
+    },
+    {
+      "id": "sand-ai/MAGI-2-preview",
+      "url": "https://huggingface.co/sand-ai/MAGI-2-preview",
+      "likes": 308,
+      "downloads": 0,
+      "pipeline": "image-text-to-video"
+    },
+    {
+      "id": "Aleph-Alpha/Kolibri-1.1",
+      "url": "https://huggingface.co/Aleph-Alpha/Kolibri-1.1",
+      "likes": 190,
+      "downloads": 837,
+      "pipeline": "text-generation"
+    },
+    {
+      "id": "ISTA-DASLab/Inkling-2-Mini-GSQ-RCO-GGUF",
+      "url": "https://huggingface.co/ISTA-DASLab/Inkling-2-Mini-GSQ-RCO-GGUF",
+      "likes": 157,
+      "downloads": 0,
+      "pipeline": "text-generation"
+    },
+    {
+      "id": "Qwen/Qwen3.8-27B",
+      "url": "https://huggingface.co/Qwen/Qwen3.8-27B",
+      "likes": 21878,
+      "downloads": 6047011,
+      "pipeline": "image-text-to-text"
+    },
+    {
+      "id": "KRAFTON/Raon-1-mini",
+      "url": "https://huggingface.co/KRAFTON/Raon-1-mini",
+      "likes": 168,
+      "downloads": 264,
+      "pipeline": "text-generation"
+    }
+  ],
+  "feeds": {
+    "hn": [
+      {
+        "id": 50644817,
+        "title": "1Password Security Incident",
+        "url": "https://1password.com/blog/update-on-nov-2026-security-incident",
+        "domain": "1password.com",
+        "points": 1657,
+        "comments": 709,
+        "hnUrl": "https://news.ycombinator.com/item?id=50644817"
+      },
+      {
+        "id": 50655664,
+        "title": "Tell HN: Happy Thanksgiving",
+        "url": "https://news.ycombinator.com/item?id=50655664",
+        "domain": "news.ycombinator.com",
+        "points": 678,
+        "comments": 144,
+        "hnUrl": "https://news.ycombinator.com/item?id=50655664"
+      },
+      {
+        "id": 50660180,
+        "title": "AI made self-hosting fun again",
+        "url": "https://janlukas.blog/posts/ai-self-hosting",
+        "domain": "janlukas.blog",
+        "points": 578,
+        "comments": 301,
+        "hnUrl": "https://news.ycombinator.com/item?id=50660180"
+      },
+      {
+        "id": 50653667,
+        "title": "Intel One Mono font (2023)",
+        "url": "https://github.com/intel/intel-one-mono",
+        "domain": "github.com",
+        "points": 508,
+        "comments": 249,
+        "hnUrl": "https://news.ycombinator.com/item?id=50653667"
+      },
+      {
+        "id": 50654289,
+        "title": "Nextcloud Office Desktop app",
+        "url": "https://nextcloud.com/blog/euro-office-comes-to-your-desktop-with-the-nextcloud-office-desktop-app/",
+        "domain": "nextcloud.com",
+        "points": 424,
+        "comments": 217,
+        "hnUrl": "https://news.ycombinator.com/item?id=50654289"
+      },
+      {
+        "id": 50657530,
+        "title": "YouTube Ad Punisher – Auto-reloads YouTube pages when an ad plays",
+        "url": "https://github.com/antonpictures/youtube-punisher",
+        "domain": "github.com",
+        "points": 360,
+        "comments": 427,
+        "hnUrl": "https://news.ycombinator.com/item?id=50657530"
+      },
+      {
+        "id": 50659841,
+        "title": "Kamil Khan Mumtaz: Pakistani architect, admired at home, almost invisible abroad",
+        "url": "https://worksinprogress.co/issue/the-greatest-architect-youve-never-heard-of-is-in-pakistan/",
+        "domain": "worksinprogress.co",
+        "points": 339,
+        "comments": 77,
+        "hnUrl": "https://news.ycombinator.com/item?id=50659841"
+      },
+      {
+        "id": 50657265,
+        "title": "AMD-specific fork of llama.cpp",
+        "url": "https://devnull.land/amd-specific-llama-cpp",
+        "domain": "devnull.land",
+        "points": 333,
+        "comments": 82,
+        "hnUrl": "https://news.ycombinator.com/item?id=50657265"
+      },
+      {
+        "id": 50653477,
+        "title": "Google Will Make AI Agents Use Its MCP Servers. The Gmail One Can't Send Email",
+        "url": "https://techstackups.com/articles/google-workspace-ai-agents-mcp/",
+        "domain": "techstackups.com",
+        "points": 318,
+        "comments": 274,
+        "hnUrl": "https://news.ycombinator.com/item?id=50653477"
+      },
+      {
+        "id": 50661646,
+        "title": "Hard Drive pricing has gotten bad",
+        "url": "https://blog.ktz.me/black-friday-hard-drive-prices-are-messed-up/",
+        "domain": "blog.ktz.me",
+        "points": 290,
+        "comments": 188,
+        "hnUrl": "https://news.ycombinator.com/item?id=50661646"
+      },
+      {
+        "id": 50652184,
+        "title": "Moat: OpenRouter replacement",
+        "url": "https://commandcode.ai/moat",
+        "domain": "commandcode.ai",
+        "points": 276,
+        "comments": 153,
+        "hnUrl": "https://news.ycombinator.com/item?id=50652184"
+      },
+      {
+        "id": 50659640,
+        "title": "Company Culture = Slack Emoji ÷ √Headcount",
+        "url": "https://lia.mg/posts/measuring-company-culture-with-slack-emoji/",
+        "domain": "lia.mg",
+        "points": 272,
+        "comments": 122,
+        "hnUrl": "https://news.ycombinator.com/item?id=50659640"
+      },
+      {
+        "id": 50657645,
+        "title": "CTO of 'RansomwareHelp' indicted for wire fraud",
+        "url": "https://krebsonsecurity.com/2026/11/cto-of-ransomwarehelp-indicted-for-wire-fraud/",
+        "domain": "krebsonsecurity.com",
+        "points": 249,
+        "comments": 124,
+        "hnUrl": "https://news.ycombinator.com/item?id=50657645"
+      },
+      {
+        "id": 50649040,
+        "title": "The USAID Files",
+        "url": "https://reclaimthenet.org/usaid-files",
+        "domain": "reclaimthenet.org",
+        "points": 236,
+        "comments": 286,
+        "hnUrl": "https://news.ycombinator.com/item?id=50649040"
+      },
+      {
+        "id": 50651863,
+        "title": "An algebraic quantization of gravity from the null cone",
+        "url": "https://arxiv.org/abs/2611.34924",
+        "domain": "arxiv.org",
+        "points": 234,
+        "comments": 89,
+        "hnUrl": "https://news.ycombinator.com/item?id=50651863"
+      },
+      {
+        "id": 50636931,
+        "title": "Curiosity Is No Solo Act",
+        "url": "https://thereader.mitpress.mit.edu/curiosity-is-no-solo-act/",
+        "domain": "thereader.mitpress.mit.edu",
+        "points": 147,
+        "comments": 36,
+        "hnUrl": "https://news.ycombinator.com/item?id=50636931"
+      },
+      {
+        "id": 50656036,
+        "title": "Show HN: Three Linux VMs in a browser tab, each running a different browser",
+        "url": "https://michidk.github.io/sidebyside/",
+        "domain": "michidk.github.io",
+        "points": 136,
+        "comments": 30,
+        "hnUrl": "https://news.ycombinator.com/item?id=50656036"
+      },
+      {
+        "id": 50655868,
+        "title": "Show HN: I wrote an entire Vim manual over 4 years",
+        "url": "http://themouseless.dev/vim/",
+        "domain": "themouseless.dev",
+        "points": 135,
+        "comments": 43,
+        "hnUrl": "https://news.ycombinator.com/item?id=50655868"
+      },
+      {
+        "id": 50658632,
+        "title": "Rvoip: VoIP stack in Rust",
+        "url": "https://github.com/eisenzopf/rvoip",
+        "domain": "github.com",
+        "points": 119,
+        "comments": 24,
+        "hnUrl": "https://news.ycombinator.com/item?id=50658632"
+      },
+      {
+        "id": 50651430,
+        "title": "NormalScript: A perfectly normal scripting language",
+        "url": "https://psychoscript.com/",
+        "domain": "psychoscript.com",
+        "points": 101,
+        "comments": 25,
+        "hnUrl": "https://news.ycombinator.com/item?id=50651430"
+      },
+      {
+        "id": 50658193,
+        "title": "Largest 2D Chart library in the world using BUI: BlenderUI",
+        "url": "https://bui.preetham.top/charts/",
+        "domain": "bui.preetham.top",
+        "points": 99,
+        "comments": 21,
+        "hnUrl": "https://news.ycombinator.com/item?id=50658193"
+      },
+      {
+        "id": 50651099,
+        "title": "Show HN: Olumino, a Markdown notes and spaced repetition app",
+        "url": "https://olumino.app",
+        "domain": "olumino.app",
+        "points": 97,
+        "comments": 43,
+        "hnUrl": "https://news.ycombinator.com/item?id=50651099"
+      },
+      {
+        "id": 50660273,
+        "title": "Novita, StreamLake, etc. are ByteDance Ark wrappers",
+        "url": "https://kendell.dev/blog/arkwrapper/",
+        "domain": "kendell.dev",
+        "points": 90,
+        "comments": 11,
+        "hnUrl": "https://news.ycombinator.com/item?id=50660273"
+      },
+      {
+        "id": 50663089,
+        "title": "The need for a formally verifiable mainstream programming language",
+        "url": "https://blainehansen.me/post/mainstream-verifiable-language/",
+        "domain": "blainehansen.me",
+        "points": 87,
+        "comments": 59,
+        "hnUrl": "https://news.ycombinator.com/item?id=50663089"
+      },
+      {
+        "id": 50657936,
+        "title": "George Whitesides, 1939-2026",
+        "url": "https://www.science.org/content/blog-post/george-whitesides-1939-2026",
+        "domain": "science.org",
+        "points": 73,
+        "comments": 7,
+        "hnUrl": "https://news.ycombinator.com/item?id=50657936"
+      },
+      {
+        "id": 50662933,
+        "title": "\"What's Claude's Fursona?\" and Other Questions",
+        "url": "https://herecomesthemoon.net/2026/11/whats-claudes-fursona/",
+        "domain": "herecomesthemoon.net",
+        "points": 72,
+        "comments": 43,
+        "hnUrl": "https://news.ycombinator.com/item?id=50662933"
+      },
+      {
+        "id": 50658498,
+        "title": "An introduction to uncertainty in machine learning",
+        "url": "https://chrhenning.com/blog/2026/introduction-to-uncertainty/",
+        "domain": "chrhenning.com",
+        "points": 62,
+        "comments": 1,
+        "hnUrl": "https://news.ycombinator.com/item?id=50658498"
+      },
+      {
+        "id": 50663595,
+        "title": "The group chat where your AI talks behind your back",
+        "url": "https://construct22.com/",
+        "domain": "construct22.com",
+        "points": 38,
+        "comments": 9,
+        "hnUrl": "https://news.ycombinator.com/item?id=50663595"
+      },
+      {
+        "id": 50661705,
+        "title": "The Cutthroat Business of Shipwrecks",
+        "url": "https://daily.jstor.org/the-cutthroat-business-of-shipwrecks/",
+        "domain": "daily.jstor.org",
+        "points": 19,
+        "comments": 2,
+        "hnUrl": "https://news.ycombinator.com/item?id=50661705"
+      },
+      {
+        "id": 50663666,
+        "title": "Ladybird browser's first downloadable alpha is surprisingly capable",
+        "url": "https://arstechnica.com/gadgets/2026/11/ladybirds-new-alpha-shows-theres-life-beyond-chromium/",
+        "domain": "arstechnica.com",
+        "points": 13,
+        "comments": 2,
+        "hnUrl": "https://news.ycombinator.com/item?id=50663666"
+      }
+    ],
+    "geeknews": [
+      {
+        "id": "https://news.hada.io/topic?id=37948",
+        "source": "geeknews",
+        "title": "Kagi Watch - 어린이를 위한 화면 없는 무전기",
+        "url": "https://news.hada.io/topic?id=37948&utm_source=geeknews&utm_medium=rss&utm_campaign=news",
+        "domain": "news.hada.io",
+        "sub": null,
+        "publishedAt": "2026-11-27T15:38:12+09:00"
+      },
+      {
+        "id": "https://news.hada.io/topic?id=37947",
+        "source": "geeknews",
+        "title": "Show HN: 4년에 걸쳐 Vim 매뉴얼 한 권을 완성했습니다",
+        "url": "https://news.hada.io/topic?id=37947&utm_source=geeknews&utm_medium=rss&utm_campaign=news",
+        "domain": "news.hada.io",
+        "sub": null,
+        "publishedAt": "2026-11-27T15:35:11+09:00"
+      },
+      {
+        "id": "https://news.hada.io/topic?id=37946",
+        "source": "geeknews",
+        "title": "C++에서 = default와 {}는 같은 생성자가 아님",
+        "url": "https://news.hada.io/topic?id=37946&utm_source=geeknews&utm_medium=rss&utm_campaign=news",
+        "domain": "news.hada.io",
+        "sub": null,
+        "publishedAt": "2026-11-27T14:41:46+09:00"
+      },
+      {
+        "id": "https://news.hada.io/topic?id=37945",
+        "source": "geeknews",
+        "title": "Show HN: 브라우저 탭 하나에서 서로 다른 브라우저를 실행하는 Linux VM 3개",
+        "url": "https://news.hada.io/topic?id=37945&utm_source=geeknews&utm_medium=rss&utm_campaign=news",
+        "domain": "news.hada.io",
+        "sub": null,
+        "publishedAt": "2026-11-27T14:38:46+09:00"
+      },
+      {
+        "id": "https://news.hada.io/topic?id=37944",
+        "source": "geeknews",
+        "title": "NP_R ≠ PAR_R: 실수 계산 모델에서 퍼머넌트의 짧은 인증서가 없다는 연구",
+        "url": "https://news.hada.io/topic?id=37944&utm_source=geeknews&utm_medium=rss&utm_campaign=news",
+        "domain": "news.hada.io",
+        "sub": null,
+        "publishedAt": "2026-11-27T14:35:45+09:00"
+      },
+      {
+        "id": "https://news.hada.io/topic?id=37942",
+        "source": "geeknews",
+        "title": "Show GN: 웰사 한글 입력기 - adb 로 안드로이드 입력칸에 한글 넣기",
+        "url": "https://news.hada.io/topic?id=37942&utm_source=geeknews&utm_medium=rss&utm_campaign=news",
+        "domain": "news.hada.io",
+        "sub": null,
+        "publishedAt": "2026-11-27T14:18:14+09:00"
+      },
+      {
+        "id": "https://news.hada.io/topic?id=37941",
+        "source": "geeknews",
+        "title": "영국의 유령역들",
+        "url": "https://news.hada.io/topic?id=37941&utm_source=geeknews&utm_medium=rss&utm_campaign=news",
+        "domain": "news.hada.io",
+        "sub": null,
+        "publishedAt": "2026-11-27T13:49:32+09:00"
+      },
+      {
+        "id": "https://news.hada.io/topic?id=37939",
+        "source": "geeknews",
+        "title": "IBM, 컨설팅 부문 대부분 직무의 이민 스폰서십 종료",
+        "url": "https://news.hada.io/topic?id=37939&utm_source=geeknews&utm_medium=rss&utm_campaign=news",
+        "domain": "news.hada.io",
+        "sub": null,
+        "publishedAt": "2026-11-27T13:46:31+09:00"
+      },
+      {
+        "id": "https://news.hada.io/topic?id=37938",
+        "source": "geeknews",
+        "title": "하드디스크 가격이 심각해졌다",
+        "url": "https://news.hada.io/topic?id=37938&utm_source=geeknews&utm_medium=rss&utm_campaign=news",
+        "domain": "news.hada.io",
+        "sub": null,
+        "publishedAt": "2026-11-27T13:43:31+09:00"
+      },
+      {
+        "id": "https://news.hada.io/topic?id=37937",
+        "source": "geeknews",
+        "title": "기업 문화 = Slack 이모지 ÷ √직원 수",
+        "url": "https://news.hada.io/topic?id=37937&utm_source=geeknews&utm_medium=rss&utm_campaign=news",
+        "domain": "news.hada.io",
+        "sub": null,
+        "publishedAt": "2026-11-27T13:40:31+09:00"
+      },
+      {
+        "id": "https://news.hada.io/topic?id=37934",
+        "source": "geeknews",
+        "title": "Show GN: RealView - 머스크가 공개한 테슬라 Reality View 구조를 코드로 구현, 맥북 한 대로 학습",
+        "url": "https://news.hada.io/topic?id=37934&utm_source=geeknews&utm_medium=rss&utm_campaign=news",
+        "domain": "news.hada.io",
+        "sub": null,
+        "publishedAt": "2026-11-27T11:49:37+09:00"
+      },
+      {
+        "id": "https://news.hada.io/topic?id=37933",
+        "source": "geeknews",
+        "title": "USAID Files - 빅테크 협력과 허위정보 대응에 관한 내부 자료",
+        "url": "https://news.hada.io/topic?id=37933&utm_source=geeknews&utm_medium=rss&utm_campaign=news",
+        "domain": "news.hada.io",
+        "sub": null,
+        "publishedAt": "2026-11-27T11:37:16+09:00"
+      },
+      {
+        "id": "https://news.hada.io/topic?id=37932",
+        "source": "geeknews",
+        "title": "Show GN: ARCUS-STACK - 매번하는 반복을 조금 더 똑똑하게, 여러 AI 코딩 에이전트에게 시킬 수 있는 스킬팩",
+        "url": "https://news.hada.io/topic?id=37932&utm_source=geeknews&utm_medium=rss&utm_campaign=news",
+        "domain": "news.hada.io",
+        "sub": null,
+        "publishedAt": "2026-11-27T11:31:08+09:00"
+      },
+      {
+        "id": "https://news.hada.io/topic?id=37931",
+        "source": "geeknews",
+        "title": "리만 가설이란 무엇인가? 시각적으로 이해하기",
+        "url": "https://news.hada.io/topic?id=37931&utm_source=geeknews&utm_medium=rss&utm_campaign=news",
+        "domain": "news.hada.io",
+        "sub": null,
+        "publishedAt": "2026-11-27T10:50:02+09:00"
+      },
+      {
+        "id": "https://news.hada.io/topic?id=37930",
+        "source": "geeknews",
+        "title": "State of AI 2026: 올해의 가장 큰 이슈와 2027년 AGI 가능성",
+        "url": "https://news.hada.io/topic?id=37930&utm_source=geeknews&utm_medium=rss&utm_campaign=news",
+        "domain": "news.hada.io",
+        "sub": null,
+        "publishedAt": "2026-11-27T10:40:02+09:00"
+      },
+      {
+        "id": "https://news.hada.io/topic?id=37928",
+        "source": "geeknews",
+        "title": "AI 덕분에 셀프 호스팅이 다시 즐거워졌다",
+        "url": "https://news.hada.io/topic?id=37928&utm_source=geeknews&utm_medium=rss&utm_campaign=news",
+        "domain": "news.hada.io",
+        "sub": null,
+        "publishedAt": "2026-11-27T09:33:22+09:00"
+      },
+      {
+        "id": "https://news.hada.io/topic?id=37927",
+        "source": "geeknews",
+        "title": "tidy - Prettier 스타일로 코드를 정리하는 Rust 기반 고속 포매터",
+        "url": "https://news.hada.io/topic?id=37927&utm_source=geeknews&utm_medium=rss&utm_campaign=news",
+        "domain": "news.hada.io",
+        "sub": null,
+        "publishedAt": "2026-11-27T09:30:02+09:00"
+      },
+      {
+        "id": "https://news.hada.io/topic?id=37925",
+        "source": "geeknews",
+        "title": "Kamil Khan Mumtaz: 파키스탄에서는 존경받지만 해외에서는 거의 알려지지 않은 건축가",
+        "url": "https://news.hada.io/topic?id=37925&utm_source=geeknews&utm_medium=rss&utm_campaign=news",
+        "domain": "news.hada.io",
+        "sub": null,
+        "publishedAt": "2026-11-27T08:32:24+09:00"
+      },
+      {
+        "id": "https://news.hada.io/topic?id=37923",
+        "source": "geeknews",
+        "title": "Show HN: Fuck_data_brokers.py - 데이터 브로커에 개인정보 삭제를 요청하는 Python 도구",
+        "url": "https://news.hada.io/topic?id=37923&utm_source=geeknews&utm_medium=rss&utm_campaign=news",
+        "domain": "news.hada.io",
+        "sub": null,
+        "publishedAt": "2026-11-27T07:36:48+09:00"
+      },
+      {
+        "id": "https://news.hada.io/topic?id=37922",
+        "source": "geeknews",
+        "title": "OpenAI가 비용 통제에 나섰을까? - GPT-6.2의 추론 토큰 감소",
+        "url": "https://news.hada.io/topic?id=37922&utm_source=geeknews&utm_medium=rss&utm_campaign=news",
+        "domain": "news.hada.io",
+        "sub": null,
+        "publishedAt": "2026-11-27T07:33:47+09:00"
+      }
+    ],
+    "reddit": []
+  }
+}
