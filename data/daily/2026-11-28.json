@@ -1,0 +1,2349 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-11-28",
+  "collectedAt": "2026-11-28T07:03:25.694Z",
+  "mode": "full",
+  "scanNo": 37,
+  "sources": [
+    {
+      "id": "hn",
+      "ok": true,
+      "count": 30,
+      "error": null,
+      "reduced": false
+    },
+    {
+      "id": "geeknews",
+      "ok": true,
+      "count": 20,
+      "error": null,
+      "reduced": false
+    },
+    {
+      "id": "reddit",
+      "ok": false,
+      "count": 0,
+      "error": "HTTP 404 for https://www.reddit.com/r/ClaudeAI/top/.rss?t=day",
+      "reduced": false
+    },
+    {
+      "id": "arxiv",
+      "ok": false,
+      "count": 0,
+      "error": "HTTP 429 for https://export.arxiv.org/api/query?search_query=cat%3Acs.*%20OR%20cat%3Astat.ML&sortBy=submittedDate&sortOrder=descending&max_results=200",
+      "reduced": false
+    },
+    {
+      "id": "huggingface",
+      "ok": true,
+      "count": 20,
+      "error": null,
+      "reduced": false
+    },
+    {
+      "id": "trending",
+      "ok": true,
+      "count": 31,
+      "error": null,
+      "reduced": false
+    },
+    {
+      "id": "tools",
+      "ok": true,
+      "count": 5,
+      "error": null,
+      "reduced": false
+    },
+    {
+      "id": "advisories",
+      "ok": true,
+      "count": 60,
+      "error": null,
+      "reduced": false
+    },
+    {
+      "id": "kit",
+      "ok": true,
+      "count": 37,
+      "error": null,
+      "reduced": false
+    },
+    {
+      "id": "stars",
+      "ok": true,
+      "count": 134,
+      "error": null,
+      "reduced": false
+    }
+  ],
+  "gauge": {
+    "value": 49,
+    "avg7": 51.86,
+    "label": "normal",
+    "daysOfHistory": 7
+  },
+  "issues": [
+    {
+      "id": "3a5532420c",
+      "title": "Atari Homebrew Awards Cancelled",
+      "title_ko": "아타리 홈브루 어워즈 취소",
+      "summary_ko": "아타리 홈브루 어워즈가 취소되었어요.",
+      "check_ko": "아타리 홈브루 어워즈 취소 공지 및 관련 내용을 확인해 보세요.",
+      "heat": 52,
+      "heatReason": "HN 168점 · 댓글 160 · 출처 2곳",
+      "sources": [
+        "hn",
+        "geeknews"
+      ],
+      "url": "https://forums.atariage.com/topic/394894-atari-homebrew-awards-cancelled/",
+      "items": [
+        {
+          "source": "hn",
+          "title": "Atari Homebrew Awards Cancelled",
+          "url": "https://forums.atariage.com/topic/394894-atari-homebrew-awards-cancelled/",
+          "points": 168,
+          "comments": 160
+        },
+        {
+          "source": "geeknews",
+          "title": "Atari Homebrew Awards 취소",
+          "url": "https://news.hada.io/topic?id=37990&utm_source=geeknews&utm_medium=rss&utm_campaign=news",
+          "points": null,
+          "comments": null
+        }
+      ]
+    },
+    {
+      "id": "170e3aa9f5",
+      "title": "Michael Nielsen took down his book on neural nets",
+      "title_ko": "마이클 닐슨, 신경망 책 비공개 전환",
+      "summary_ko": "마이클 닐슨이 2011년에서 2015년 사이에 집필한 신경망 관련 책을 내렸어요. 프런티어 랩들의 무모한 행동으로 시스템이 예상보다 훨씬 빠르게 발전하면서 인류가 대응할 시간을 잃었다고 밝혔으며, 이 연구에 기여할 사람들을 돕고 싶지 않아 책을 내렸다고 설명했어요.",
+      "check_ko": "마이클 닐슨이 책을 내린 이유와 작성한 글의 전문을 확인해 보세요.",
+      "heat": 50,
+      "heatReason": "HN 484점 · 댓글 299",
+      "sources": [
+        "hn"
+      ],
+      "url": "https://neuralnetworksanddeeplearning.com/",
+      "items": [
+        {
+          "source": "hn",
+          "title": "Michael Nielsen took down his book on neural nets",
+          "url": "https://neuralnetworksanddeeplearning.com/",
+          "points": 484,
+          "comments": 299
+        }
+      ]
+    },
+    {
+      "id": "1a0c89de1b",
+      "title": "Credit card skimming scripts using WebRTC found on popular shopping sites",
+      "title_ko": "WebRTC를 사용한 신용카드 스키밍 스크립트가 인기 쇼핑몰에서 발견됨",
+      "summary_ko": "블랙프라이데이를 앞두고 라스카나, 쌤소나이트, 아메리칸 투어리스트, 리볼브, FWRD의 온라인 스토어에서 카드 스키밍 스크립트가 발견되었어요. 신고를 받은 기업들은 블랙프라이데이 이전에 해당 스크립트를 모두 제거했어요.",
+      "check_ko": "사용 중인 쇼핑몰이나 웹사이트에 유사한 스키밍 스크립트 취약점이 없는지 점검해 보세요.",
+      "heat": 49,
+      "heatReason": "HN 492점 · 댓글 259",
+      "sources": [
+        "hn"
+      ],
+      "url": "https://www.infohawk.com/news/2026-11-27-black-friday-webrtc-skimmer",
+      "items": [
+        {
+          "source": "hn",
+          "title": "Credit card skimming scripts using WebRTC found on popular shopping sites",
+          "url": "https://www.infohawk.com/news/2026-11-27-black-friday-webrtc-skimmer",
+          "points": 492,
+          "comments": 259
+        }
+      ]
+    },
+    {
+      "id": "95692f6294",
+      "title": "GPT 6.2 Astra Solves a Historical Mystery",
+      "title_ko": "GPT 6.2 아스트라, 역사적 미스터리 해결",
+      "summary_ko": "GPT 6.2 아스트라가 역사적 미스터리를 해결했어요.",
+      "check_ko": "GPT 6.2 아스트라가 해결한 역사적 미스터리의 내용과 상세 정보를 확인해 보세요.",
+      "heat": 48,
+      "heatReason": "HN 407점 · 댓글 256",
+      "sources": [
+        "hn"
+      ],
+      "url": "https://generativehistory.substack.com/p/gpt-62-astra-solves-a-historical",
+      "items": [
+        {
+          "source": "hn",
+          "title": "GPT 6.2 Astra Solves a Historical Mystery",
+          "url": "https://generativehistory.substack.com/p/gpt-62-astra-solves-a-historical",
+          "points": 407,
+          "comments": 256
+        }
+      ]
+    },
+    {
+      "id": "cac03f51ed",
+      "title": "States sue SpaceX to stop Grok from generating child sex images, revenge porn",
+      "title_ko": "미국 주 정부들, 그록의 아동 성착취물 및 리벤지 포르노 생성 중단을 위해 스페이스X 상대로 소송 제기",
+      "summary_ko": "버지니아와 오리건 주 검찰총장이 X의 모회사인 스페이스X, xAI, 그록을 상대로 플랫폼 내 아동 성착취물 및 비동의 이미지 생성 및 홍보에 책임을 묻는 소송을 제기했어요. 버지니아주는 플랫폼과 AI 도구의 안전성에 대한 허위 보장으로 이용자들을 오도했다고 주장했어요.",
+      "check_ko": "소송의 구체적인 청구 내용과 주요 쟁점을 확인해 보세요.",
+      "heat": 47,
+      "heatReason": "HN 356점 · 댓글 202",
+      "sources": [
+        "hn"
+      ],
+      "url": "https://www.oag.state.va.us/media-center/news-releases/jay-jones/3162-attorneys-general-jones-and-rayfield-file-suit-against-spacex-parent-company-of-x-xai-and-grok-over-creation-and-promotion-of-child-exploitation-and-non-consensual-images-on-platform",
+      "items": [
+        {
+          "source": "hn",
+          "title": "States sue SpaceX to stop Grok from generating child sex images, revenge porn",
+          "url": "https://www.oag.state.va.us/media-center/news-releases/jay-jones/3162-attorneys-general-jones-and-rayfield-file-suit-against-spacex-parent-company-of-x-xai-and-grok-over-creation-and-promotion-of-child-exploitation-and-non-consensual-images-on-platform",
+          "points": 356,
+          "comments": 202
+        }
+      ]
+    },
+    {
+      "id": "499e7279d4",
+      "title": "Show HN: bouncemarket – a live prediction market game for a bouncing ball",
+      "title_ko": null,
+      "summary_ko": null,
+      "check_ko": null,
+      "heat": 46,
+      "heatReason": "HN 359점 · 댓글 119",
+      "sources": [
+        "hn"
+      ],
+      "url": "https://bouncemarket.minhanhday.com/",
+      "items": [
+        {
+          "source": "hn",
+          "title": "Show HN: bouncemarket – a live prediction market game for a bouncing ball",
+          "url": "https://bouncemarket.minhanhday.com/",
+          "points": 359,
+          "comments": 119
+        }
+      ]
+    },
+    {
+      "id": "c8be8459a2",
+      "title": "Google's DeepCrossAttention achieves comparable model quality up to 3x faster",
+      "title_ko": null,
+      "summary_ko": null,
+      "check_ko": null,
+      "heat": 45,
+      "heatReason": "HN 299점 · 댓글 121",
+      "sources": [
+        "hn"
+      ],
+      "url": "https://research.google/blog/supercharging-transformer-residual-connections/",
+      "items": [
+        {
+          "source": "hn",
+          "title": "Google's DeepCrossAttention achieves comparable model quality up to 3x faster",
+          "url": "https://research.google/blog/supercharging-transformer-residual-connections/",
+          "points": 299,
+          "comments": 121
+        }
+      ]
+    },
+    {
+      "id": "5e86333f39",
+      "title": "Convex skills send the user's app idea to a remote server without telling them",
+      "title_ko": null,
+      "summary_ko": null,
+      "check_ko": null,
+      "heat": 43,
+      "heatReason": "HN 274점 · 댓글 88",
+      "sources": [
+        "hn"
+      ],
+      "url": "https://github.com/convex/convex-backend-skill/issues/64",
+      "items": [
+        {
+          "source": "hn",
+          "title": "Convex skills send the user's app idea to a remote server without telling them",
+          "url": "https://github.com/convex/convex-backend-skill/issues/64",
+          "points": 274,
+          "comments": 88
+        }
+      ]
+    },
+    {
+      "id": "1165c17af4",
+      "title": "The Balatro Timeline",
+      "title_ko": null,
+      "summary_ko": null,
+      "check_ko": null,
+      "heat": 42,
+      "heatReason": "HN 253점 · 댓글 56",
+      "sources": [
+        "hn"
+      ],
+      "url": "https://localthunk.com/blog/balatro-timeline-3aarh",
+      "items": [
+        {
+          "source": "hn",
+          "title": "The Balatro Timeline",
+          "url": "https://localthunk.com/blog/balatro-timeline-3aarh",
+          "points": 253,
+          "comments": 56
+        }
+      ]
+    },
+    {
+      "id": "9f08d28613",
+      "title": "False computer-checked proofs",
+      "title_ko": null,
+      "summary_ko": null,
+      "check_ko": null,
+      "heat": 42,
+      "heatReason": "HN 214점 · 댓글 83",
+      "sources": [
+        "hn"
+      ],
+      "url": "https://cr.yp.to/proofs/falseccp.html",
+      "items": [
+        {
+          "source": "hn",
+          "title": "False computer-checked proofs",
+          "url": "https://cr.yp.to/proofs/falseccp.html",
+          "points": 214,
+          "comments": 83
+        }
+      ]
+    },
+    {
+      "id": "77ab8f6da7",
+      "title": "First images of the impact of DART asteroid deflection experiment",
+      "title_ko": null,
+      "summary_ko": null,
+      "check_ko": null,
+      "heat": 41,
+      "heatReason": "HN 205점 · 댓글 62",
+      "sources": [
+        "hn"
+      ],
+      "url": "https://arstechnica.com/space/2026/11/europes-hera-mission-returns-to-the-chaotic-scene-of-a-cosmic-smashup/",
+      "items": [
+        {
+          "source": "hn",
+          "title": "First images of the impact of DART asteroid deflection experiment",
+          "url": "https://arstechnica.com/space/2026/11/europes-hera-mission-returns-to-the-chaotic-scene-of-a-cosmic-smashup/",
+          "points": 205,
+          "comments": 62
+        }
+      ]
+    },
+    {
+      "id": "15bb9e5c3a",
+      "title": "Citroën Hydraulic System",
+      "title_ko": null,
+      "summary_ko": null,
+      "check_ko": null,
+      "heat": 40,
+      "heatReason": "HN 172점 · 댓글 54",
+      "sources": [
+        "hn"
+      ],
+      "url": "https://www.citroenet.org.uk/miscellaneous/hydraulics/hydraulics-1.html",
+      "items": [
+        {
+          "source": "hn",
+          "title": "Citroën Hydraulic System",
+          "url": "https://www.citroenet.org.uk/miscellaneous/hydraulics/hydraulics-1.html",
+          "points": 172,
+          "comments": 54
+        }
+      ]
+    },
+    {
+      "id": "8dba89f4b1",
+      "title": "Show HN: DragDropMath – Learn math by feel",
+      "title_ko": null,
+      "summary_ko": null,
+      "check_ko": null,
+      "heat": 37,
+      "heatReason": "HN 123점 · 댓글 37",
+      "sources": [
+        "hn"
+      ],
+      "url": "https://dragdropmath.com/",
+      "items": [
+        {
+          "source": "hn",
+          "title": "Show HN: DragDropMath – Learn math by feel",
+          "url": "https://dragdropmath.com/",
+          "points": 123,
+          "comments": 37
+        }
+      ]
+    },
+    {
+      "id": "906ccc2e21",
+      "title": "Cyberpunk Television Shows",
+      "title_ko": null,
+      "summary_ko": null,
+      "check_ko": null,
+      "heat": 36,
+      "heatReason": "HN 83점 · 댓글 81",
+      "sources": [
+        "hn"
+      ],
+      "url": "https://shellzine.net/cyberpunk-television/",
+      "items": [
+        {
+          "source": "hn",
+          "title": "Cyberpunk Television Shows",
+          "url": "https://shellzine.net/cyberpunk-television/",
+          "points": 83,
+          "comments": 81
+        }
+      ]
+    },
+    {
+      "id": "6814e964dd",
+      "title": "Show HN: Analysis of Hacker News predictions since 2008",
+      "title_ko": null,
+      "summary_ko": null,
+      "check_ko": null,
+      "heat": 36,
+      "heatReason": "HN 80점 · 댓글 69",
+      "sources": [
+        "hn"
+      ],
+      "url": "https://hnpredictions.com/",
+      "items": [
+        {
+          "source": "hn",
+          "title": "Show HN: Analysis of Hacker News predictions since 2008",
+          "url": "https://hnpredictions.com/",
+          "points": 80,
+          "comments": 69
+        }
+      ]
+    },
+    {
+      "id": "3945c73698",
+      "title": "Source Control from Hell",
+      "title_ko": null,
+      "summary_ko": null,
+      "check_ko": null,
+      "heat": 36,
+      "heatReason": "HN 84점 · 댓글 62",
+      "sources": [
+        "hn"
+      ],
+      "url": "https://frantic.im/git/",
+      "items": [
+        {
+          "source": "hn",
+          "title": "Source Control from Hell",
+          "url": "https://frantic.im/git/",
+          "points": 84,
+          "comments": 62
+        }
+      ]
+    },
+    {
+      "id": "eb1fdf9047",
+      "title": "Unkernel: Real Linux kernel, compiled to WebAssembly",
+      "title_ko": null,
+      "summary_ko": null,
+      "check_ko": null,
+      "heat": 35,
+      "heatReason": "HN 155점 · 댓글 11",
+      "sources": [
+        "hn"
+      ],
+      "url": "https://unkernel.dev",
+      "items": [
+        {
+          "source": "hn",
+          "title": "Unkernel: Real Linux kernel, compiled to WebAssembly",
+          "url": "https://unkernel.dev",
+          "points": 155,
+          "comments": 11
+        }
+      ]
+    },
+    {
+      "id": "531a3bcad4",
+      "title": "9/UX: a Macintosh-inspired desktop for 9front",
+      "title_ko": null,
+      "summary_ko": null,
+      "check_ko": null,
+      "heat": 35,
+      "heatReason": "HN 111점 · 댓글 26",
+      "sources": [
+        "hn"
+      ],
+      "url": "https://progrium.github.io/9ux/",
+      "items": [
+        {
+          "source": "hn",
+          "title": "9/UX: a Macintosh-inspired desktop for 9front",
+          "url": "https://progrium.github.io/9ux/",
+          "points": 111,
+          "comments": 26
+        }
+      ]
+    },
+    {
+      "id": "27442ec859",
+      "title": "Tabernetes: A Kubernetes cluster whose nodes are browser tabs",
+      "title_ko": null,
+      "summary_ko": null,
+      "check_ko": null,
+      "heat": 34,
+      "heatReason": "HN 85점 · 댓글 31",
+      "sources": [
+        "hn"
+      ],
+      "url": "https://tabernet.es/",
+      "items": [
+        {
+          "source": "hn",
+          "title": "Tabernetes: A Kubernetes cluster whose nodes are browser tabs",
+          "url": "https://tabernet.es/",
+          "points": 85,
+          "comments": 31
+        }
+      ]
+    },
+    {
+      "id": "0ad3550745",
+      "title": "Rayshader 1.0: Exit the Matrix",
+      "title_ko": null,
+      "summary_ko": null,
+      "check_ko": null,
+      "heat": 34,
+      "heatReason": "HN 109점 · 댓글 14",
+      "sources": [
+        "hn"
+      ],
+      "url": "https://www.tylermw.com/posts/rayverse/rayshader-1-0-exit-the-matrix.html",
+      "items": [
+        {
+          "source": "hn",
+          "title": "Rayshader 1.0: Exit the Matrix",
+          "url": "https://www.tylermw.com/posts/rayverse/rayshader-1-0-exit-the-matrix.html",
+          "points": 109,
+          "comments": 14
+        }
+      ]
+    },
+    {
+      "id": "5b1728bd15",
+      "title": "Build your own amp modeler: $78 DIY pedal kit from TONE3000",
+      "title_ko": null,
+      "summary_ko": null,
+      "check_ko": null,
+      "heat": 32,
+      "heatReason": "HN 79점 · 댓글 17",
+      "sources": [
+        "hn"
+      ],
+      "url": "https://www.guitarworld.com/gear/guitar-pedals/tone3000-daisy-audio-diy-pedal-kit",
+      "items": [
+        {
+          "source": "hn",
+          "title": "Build your own amp modeler: $78 DIY pedal kit from TONE3000",
+          "url": "https://www.guitarworld.com/gear/guitar-pedals/tone3000-daisy-audio-diy-pedal-kit",
+          "points": 79,
+          "comments": 17
+        }
+      ]
+    },
+    {
+      "id": "53e2dc491d",
+      "title": "The AT&T Unix PC (3B1) VM",
+      "title_ko": null,
+      "summary_ko": null,
+      "check_ko": null,
+      "heat": 32,
+      "heatReason": "HN 77점 · 댓글 13",
+      "sources": [
+        "hn"
+      ],
+      "url": "https://virtuallyfun.com/2026/11/22/the-ultimate-att-unix-pc-3b1-vm-w-tcp-ip-and-apps/",
+      "items": [
+        {
+          "source": "hn",
+          "title": "The AT&T Unix PC (3B1) VM",
+          "url": "https://virtuallyfun.com/2026/11/22/the-ultimate-att-unix-pc-3b1-vm-w-tcp-ip-and-apps/",
+          "points": 77,
+          "comments": 13
+        }
+      ]
+    },
+    {
+      "id": "44e584d731",
+      "title": "Prospero: Bloat-free, native AI coding harness with ImGui",
+      "title_ko": null,
+      "summary_ko": null,
+      "check_ko": null,
+      "heat": 30,
+      "heatReason": "HN 55점 · 댓글 18",
+      "sources": [
+        "hn"
+      ],
+      "url": "https://github.com/skeeto/prospero",
+      "items": [
+        {
+          "source": "hn",
+          "title": "Prospero: Bloat-free, native AI coding harness with ImGui",
+          "url": "https://github.com/skeeto/prospero",
+          "points": 55,
+          "comments": 18
+        }
+      ]
+    },
+    {
+      "id": "5e37abf8f4",
+      "title": "SessionGraph: Visualize all your coding agent sessions in one interactive graph",
+      "title_ko": null,
+      "summary_ko": null,
+      "check_ko": null,
+      "heat": 30,
+      "heatReason": "HN 44점 · 댓글 23",
+      "sources": [
+        "hn"
+      ],
+      "url": "https://sessiongraph.ai/",
+      "items": [
+        {
+          "source": "hn",
+          "title": "SessionGraph: Visualize all your coding agent sessions in one interactive graph",
+          "url": "https://sessiongraph.ai/",
+          "points": 44,
+          "comments": 23
+        }
+      ]
+    },
+    {
+      "id": "2c6193f753",
+      "title": "Lydian Chromatic Concept of Tonal Organization",
+      "title_ko": null,
+      "summary_ko": null,
+      "check_ko": null,
+      "heat": 30,
+      "heatReason": "HN 58점 · 댓글 13",
+      "sources": [
+        "hn"
+      ],
+      "url": "https://en.wikipedia.org/wiki/Lydian_Chromatic_Concept_of_Tonal_Organization",
+      "items": [
+        {
+          "source": "hn",
+          "title": "Lydian Chromatic Concept of Tonal Organization",
+          "url": "https://en.wikipedia.org/wiki/Lydian_Chromatic_Concept_of_Tonal_Organization",
+          "points": 58,
+          "comments": 13
+        }
+      ]
+    },
+    {
+      "id": "41221aa164",
+      "title": "Sydney Fire Ant Infestation",
+      "title_ko": null,
+      "summary_ko": null,
+      "check_ko": null,
+      "heat": 27,
+      "heatReason": "HN 37점 · 댓글 13",
+      "sources": [
+        "hn"
+      ],
+      "url": "https://www.abc.net.au/news/2026-11-25/nsw-government-ramps-up-efforts-to-respond-to-fire-ants-/107424812",
+      "items": [
+        {
+          "source": "hn",
+          "title": "Sydney Fire Ant Infestation",
+          "url": "https://www.abc.net.au/news/2026-11-25/nsw-government-ramps-up-efforts-to-respond-to-fire-ants-/107424812",
+          "points": 37,
+          "comments": 13
+        }
+      ]
+    },
+    {
+      "id": "cdde399165",
+      "title": "How WinHelp Files Work",
+      "title_ko": null,
+      "summary_ko": null,
+      "check_ko": null,
+      "heat": 27,
+      "heatReason": "HN 28점 · 댓글 23",
+      "sources": [
+        "hn"
+      ],
+      "url": "https://quin.fyi/posts/how-winhelp-files-work.html",
+      "items": [
+        {
+          "source": "hn",
+          "title": "How WinHelp Files Work",
+          "url": "https://quin.fyi/posts/how-winhelp-files-work.html",
+          "points": 28,
+          "comments": 23
+        }
+      ]
+    },
+    {
+      "id": "726d1967be",
+      "title": "Paolo Soleri built a utopian eco-city in the Arizona desert",
+      "title_ko": null,
+      "summary_ko": null,
+      "check_ko": null,
+      "heat": 23,
+      "heatReason": "HN 25점 · 댓글 4",
+      "sources": [
+        "hn"
+      ],
+      "url": "https://www.worldofinteriors.com/story/paolo-soleri-arconsati-arizona",
+      "items": [
+        {
+          "source": "hn",
+          "title": "Paolo Soleri built a utopian eco-city in the Arizona desert",
+          "url": "https://www.worldofinteriors.com/story/paolo-soleri-arconsati-arizona",
+          "points": 25,
+          "comments": 4
+        }
+      ]
+    },
+    {
+      "id": "3180a066bc",
+      "title": "elementalsouls/Claude-BugHunter",
+      "title_ko": null,
+      "summary_ko": null,
+      "check_ko": null,
+      "heat": 22,
+      "heatReason": "스타 +1608",
+      "sources": [
+        "trending"
+      ],
+      "url": "https://github.com/elementalsouls/Claude-BugHunter",
+      "items": [
+        {
+          "source": "trending",
+          "title": "elementalsouls/Claude-BugHunter",
+          "url": "https://github.com/elementalsouls/Claude-BugHunter",
+          "points": null,
+          "comments": null
+        }
+      ]
+    },
+    {
+      "id": "cfd2851c47",
+      "title": "obra/superpowers",
+      "title_ko": null,
+      "summary_ko": null,
+      "check_ko": null,
+      "heat": 20,
+      "heatReason": "스타 +922",
+      "sources": [
+        "trending"
+      ],
+      "url": "https://github.com/obra/superpowers",
+      "items": [
+        {
+          "source": "trending",
+          "title": "obra/superpowers",
+          "url": "https://github.com/obra/superpowers",
+          "points": null,
+          "comments": null
+        }
+      ]
+    }
+  ],
+  "alerts": [],
+  "tools": [
+    {
+      "tool": "copilot",
+      "name": "GitHub Copilot",
+      "version": null,
+      "publishedAt": "2026-11-25T22:18:03.000Z",
+      "url": "https://github.blog/changelog/2026-11-25-copilot-code-review-billing-will-default-to-the-organization",
+      "note": "Copilot code review billing will default to the organization",
+      "note_ko": "Copilot 코드 리뷰 청구 설정이 기본적으로 조직 단위로 지정됩니다.",
+      "isRecent": true
+    },
+    {
+      "tool": "claude-code",
+      "name": "Claude Code",
+      "version": "v2.1.332",
+      "publishedAt": "2026-11-25T01:32:14Z",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.332",
+      "note": "Added skills from MCP servers (beta). They show as server:skill in the / menu; other skills keep their names",
+      "note_ko": "MCP 서버의 스킬(베타)이 추가되었습니다. / 메뉴에 server:skill로 표시되며, 다른 스킬들은 기존 이름을 유지합니다.",
+      "isRecent": true
+    },
+    {
+      "tool": "gemini-cli",
+      "name": "Gemini CLI",
+      "version": "v0.71.1",
+      "publishedAt": "2026-11-24T03:50:24Z",
+      "url": "https://github.com/google-gemini/gemini-cli/releases/tag/v0.71.1",
+      "note": "fix(patch): cherry-pick aafdfdf to release/v0.71.0-pr-30420 to patch version v0.71.0 and create version 0.71.1 by @gemin",
+      "note_ko": "aafdfdf 커밋을 release/v0.71.0-pr-30420에 체리픽하여 v0.71.0 패치 버전을 수정하고 0.71.1 버전을 생성했습니다.",
+      "isRecent": true
+    },
+    {
+      "tool": "codex",
+      "name": "Codex CLI",
+      "version": "rust-v0.172.0",
+      "publishedAt": "2026-11-24T00:03:55Z",
+      "url": "https://github.com/openai/codex/releases/tag/rust-v0.172.0",
+      "note": "Follow thread links from search results and transcripts to open saved conversations and nested agents in the terminal. (",
+      "note_ko": "검색 결과와 대화록의 스레드 링크를 따라 터미널에서 저장된 대화와 중첩 에이전트를 엽니다.",
+      "isRecent": true
+    },
+    {
+      "tool": "cursor",
+      "name": "Cursor",
+      "version": null,
+      "publishedAt": "2026-11-06",
+      "url": "https://cursor.com/changelog/voice-chat",
+      "note": "Voice Chat with Agents",
+      "note_ko": "에이전트와의 음성 채팅",
+      "isRecent": false
+    }
+  ],
+  "rising": [
+    {
+      "fullName": "elementalsouls/Claude-BugHunter",
+      "url": "https://github.com/elementalsouls/Claude-BugHunter",
+      "description": "A Claude Code skill bundle for bug hunting and external red-team work - 85 skills, 16 slash commands, 681 disclosed-report patterns curated across 24 core vulnerability classes, plus enterprise identity + infrastructure attack matrices.",
+      "description_ko": null,
+      "stars": 26426,
+      "delta7": 11764,
+      "deltaSource": "history",
+      "isNew": false,
+      "series": [
+        {
+          "date": "2026-11-16",
+          "stars": 6455
+        },
+        {
+          "date": "2026-11-17",
+          "stars": 7756
+        },
+        {
+          "date": "2026-11-18",
+          "stars": 9818
+        },
+        {
+          "date": "2026-11-19",
+          "stars": 11550
+        },
+        {
+          "date": "2026-11-20",
+          "stars": 12921
+        },
+        {
+          "date": "2026-11-21",
+          "stars": 14662
+        },
+        {
+          "date": "2026-11-22",
+          "stars": 16364
+        },
+        {
+          "date": "2026-11-23",
+          "stars": 18335
+        },
+        {
+          "date": "2026-11-24",
+          "stars": 20384
+        },
+        {
+          "date": "2026-11-25",
+          "stars": 21928
+        },
+        {
+          "date": "2026-11-26",
+          "stars": 23425
+        },
+        {
+          "date": "2026-11-27",
+          "stars": 25047
+        },
+        {
+          "date": "2026-11-28",
+          "stars": 26426
+        }
+      ]
+    },
+    {
+      "fullName": "firecrawl/firecrawl",
+      "url": "https://github.com/firecrawl/firecrawl",
+      "description": "Knowledge infrastructure to make your agents smarter. Search, scrape and access 550+ data providers through one API.",
+      "description_ko": "에이전트를 더 똑똑하게 만드는 지식 인프라로, 하나의 API를 통해 검색, 스크래핑 및 550개 이상의 데이터 제공자에 액세스합니다.",
+      "stars": 211846,
+      "delta7": 6350,
+      "deltaSource": "history",
+      "isNew": false,
+      "series": [
+        {
+          "date": "2026-11-20",
+          "stars": 204504
+        },
+        {
+          "date": "2026-11-21",
+          "stars": 205496
+        },
+        {
+          "date": "2026-11-22",
+          "stars": 206383
+        },
+        {
+          "date": "2026-11-23",
+          "stars": 207259
+        },
+        {
+          "date": "2026-11-24",
+          "stars": 208281
+        },
+        {
+          "date": "2026-11-25",
+          "stars": 209246
+        },
+        {
+          "date": "2026-11-26",
+          "stars": 210337
+        },
+        {
+          "date": "2026-11-27",
+          "stars": 211171
+        },
+        {
+          "date": "2026-11-28",
+          "stars": 211846
+        }
+      ]
+    },
+    {
+      "fullName": "XiaoYouChR/Ghost-Downloader-3",
+      "url": "https://github.com/XiaoYouChR/Ghost-Downloader-3",
+      "description": "The only downloader you need. 下载器的集大成者。",
+      "description_ko": "단 하나의 다운로더로 충분합니다.",
+      "stars": 20049,
+      "delta7": 6142,
+      "deltaSource": "history",
+      "isNew": false,
+      "series": [
+        {
+          "date": "2026-11-20",
+          "stars": 13035
+        },
+        {
+          "date": "2026-11-21",
+          "stars": 13907
+        },
+        {
+          "date": "2026-11-22",
+          "stars": 14589
+        },
+        {
+          "date": "2026-11-23",
+          "stars": 15537
+        },
+        {
+          "date": "2026-11-24",
+          "stars": 16789
+        },
+        {
+          "date": "2026-11-25",
+          "stars": 17677
+        },
+        {
+          "date": "2026-11-26",
+          "stars": 18558
+        },
+        {
+          "date": "2026-11-27",
+          "stars": 19416
+        },
+        {
+          "date": "2026-11-28",
+          "stars": 20049
+        }
+      ]
+    },
+    {
+      "fullName": "HKUDS/CLI-Anything",
+      "url": "https://github.com/HKUDS/CLI-Anything",
+      "description": "\"CLI-Anything: Making ALL Software Agent-Native\" -- CLI-Hub: https://clianything.cc/",
+      "description_ko": "\"CLI-Anything: 모든 소프트웨어를 에이전트 네이티브로 만들기\" -- CLI-Hub: https://clianything.cc/",
+      "stars": 67124,
+      "delta7": 5579,
+      "deltaSource": "history",
+      "isNew": false,
+      "series": [
+        {
+          "date": "2026-10-30",
+          "stars": 57718
+        },
+        {
+          "date": "2026-10-31",
+          "stars": 57836
+        },
+        {
+          "date": "2026-11-01",
+          "stars": 57930
+        },
+        {
+          "date": "2026-11-02",
+          "stars": 58039
+        },
+        {
+          "date": "2026-11-03",
+          "stars": 58136
+        },
+        {
+          "date": "2026-11-04",
+          "stars": 58188
+        },
+        {
+          "date": "2026-11-05",
+          "stars": 58264
+        },
+        {
+          "date": "2026-11-06",
+          "stars": 58309
+        },
+        {
+          "date": "2026-11-07",
+          "stars": 58365
+        },
+        {
+          "date": "2026-11-08",
+          "stars": 58413
+        },
+        {
+          "date": "2026-11-09",
+          "stars": 58464
+        },
+        {
+          "date": "2026-11-10",
+          "stars": 58513
+        },
+        {
+          "date": "2026-11-11",
+          "stars": 58556
+        },
+        {
+          "date": "2026-11-12",
+          "stars": 58613
+        },
+        {
+          "date": "2026-11-13",
+          "stars": 58657
+        },
+        {
+          "date": "2026-11-14",
+          "stars": 58709
+        },
+        {
+          "date": "2026-11-15",
+          "stars": 58737
+        },
+        {
+          "date": "2026-11-16",
+          "stars": 58765
+        },
+        {
+          "date": "2026-11-17",
+          "stars": 58880
+        },
+        {
+          "date": "2026-11-18",
+          "stars": 59238
+        },
+        {
+          "date": "2026-11-19",
+          "stars": 59990
+        },
+        {
+          "date": "2026-11-20",
+          "stars": 60762
+        },
+        {
+          "date": "2026-11-21",
+          "stars": 61545
+        },
+        {
+          "date": "2026-11-22",
+          "stars": 62206
+        },
+        {
+          "date": "2026-11-23",
+          "stars": 62975
+        },
+        {
+          "date": "2026-11-24",
+          "stars": 64111
+        },
+        {
+          "date": "2026-11-25",
+          "stars": 65125
+        },
+        {
+          "date": "2026-11-26",
+          "stars": 65904
+        },
+        {
+          "date": "2026-11-27",
+          "stars": 66570
+        },
+        {
+          "date": "2026-11-28",
+          "stars": 67124
+        }
+      ]
+    },
+    {
+      "fullName": "obra/superpowers",
+      "url": "https://github.com/obra/superpowers",
+      "description": "An agentic skills framework & software development methodology that works.",
+      "description_ko": "실제로 작동하는 에이전틱 스킬 프레임워크이자 소프트웨어 개발 방법론입니다.",
+      "stars": 328509,
+      "delta7": 5527,
+      "deltaSource": "history",
+      "isNew": false,
+      "series": [
+        {
+          "date": "2026-10-30",
+          "stars": 308541
+        },
+        {
+          "date": "2026-10-31",
+          "stars": 309429
+        },
+        {
+          "date": "2026-11-01",
+          "stars": 310063
+        },
+        {
+          "date": "2026-11-02",
+          "stars": 310637
+        },
+        {
+          "date": "2026-11-03",
+          "stars": 311248
+        },
+        {
+          "date": "2026-11-04",
+          "stars": 311864
+        },
+        {
+          "date": "2026-11-05",
+          "stars": 312448
+        },
+        {
+          "date": "2026-11-06",
+          "stars": 313023
+        },
+        {
+          "date": "2026-11-07",
+          "stars": 313608
+        },
+        {
+          "date": "2026-11-08",
+          "stars": 314119
+        },
+        {
+          "date": "2026-11-09",
+          "stars": 314595
+        },
+        {
+          "date": "2026-11-10",
+          "stars": 315162
+        },
+        {
+          "date": "2026-11-11",
+          "stars": 315758
+        },
+        {
+          "date": "2026-11-12",
+          "stars": 316312
+        },
+        {
+          "date": "2026-11-13",
+          "stars": 316775
+        },
+        {
+          "date": "2026-11-14",
+          "stars": 317237
+        },
+        {
+          "date": "2026-11-15",
+          "stars": 317653
+        },
+        {
+          "date": "2026-11-16",
+          "stars": 318082
+        },
+        {
+          "date": "2026-11-17",
+          "stars": 318814
+        },
+        {
+          "date": "2026-11-18",
+          "stars": 319533
+        },
+        {
+          "date": "2026-11-19",
+          "stars": 321479
+        },
+        {
+          "date": "2026-11-20",
+          "stars": 322285
+        },
+        {
+          "date": "2026-11-21",
+          "stars": 322982
+        },
+        {
+          "date": "2026-11-22",
+          "stars": 323855
+        },
+        {
+          "date": "2026-11-23",
+          "stars": 324381
+        },
+        {
+          "date": "2026-11-24",
+          "stars": 325440
+        },
+        {
+          "date": "2026-11-25",
+          "stars": 326058
+        },
+        {
+          "date": "2026-11-26",
+          "stars": 326871
+        },
+        {
+          "date": "2026-11-27",
+          "stars": 327734
+        },
+        {
+          "date": "2026-11-28",
+          "stars": 328509
+        }
+      ]
+    },
+    {
+      "fullName": "zhouxiaoka/autoclip",
+      "url": "https://github.com/zhouxiaoka/autoclip",
+      "description": "AutoClip｜The open-source OpusClip alternative — local-first AI clipping & MCP server, zero subscriptions. 一个链接，一键出片。开源 AI 视频剪辑桌面工具，将播客、访谈、课程等长视频自动剪成短视频，生成字幕、封面和发布文案，适配抖音、小红书、TikTok、Reels 与 YouTube Shorts。",
+      "description_ko": "오픈소스 OpusClip 대체재인 AutoClip은 로컬 우선 AI 클리핑 및 MCP 서버를 제공하며 구독료가 없습니다.",
+      "stars": 17724,
+      "delta7": 5387,
+      "deltaSource": "history",
+      "isNew": false,
+      "series": [
+        {
+          "date": "2026-11-20",
+          "stars": 11549
+        },
+        {
+          "date": "2026-11-21",
+          "stars": 12337
+        },
+        {
+          "date": "2026-11-22",
+          "stars": 12974
+        },
+        {
+          "date": "2026-11-23",
+          "stars": 13761
+        },
+        {
+          "date": "2026-11-24",
+          "stars": 14885
+        },
+        {
+          "date": "2026-11-25",
+          "stars": 15713
+        },
+        {
+          "date": "2026-11-26",
+          "stars": 16475
+        },
+        {
+          "date": "2026-11-27",
+          "stars": 17209
+        },
+        {
+          "date": "2026-11-28",
+          "stars": 17724
+        }
+      ]
+    },
+    {
+      "fullName": "cathrynlavery/diagram-design",
+      "url": "https://github.com/cathrynlavery/diagram-design",
+      "description": "Editorial diagram design for Claude Code, Codex, GitHub Copilot, Cursor, Factory Droid, Qoder, and Pi. 52 diagram types. Self-contained HTML + SVG. No shadows. No Mermaid slop.",
+      "description_ko": "Claude Code, Codex, GitHub Copilot, Cursor, Factory Droid, Qoder, Pi를 위한 에디토리얼 다이어그램 디자인입니다.",
+      "stars": 74577,
+      "delta7": 5160,
+      "deltaSource": "history",
+      "isNew": false,
+      "series": [
+        {
+          "date": "2026-11-20",
+          "stars": 68825
+        },
+        {
+          "date": "2026-11-21",
+          "stars": 69417
+        },
+        {
+          "date": "2026-11-22",
+          "stars": 69898
+        },
+        {
+          "date": "2026-11-23",
+          "stars": 70482
+        },
+        {
+          "date": "2026-11-24",
+          "stars": 71303
+        },
+        {
+          "date": "2026-11-25",
+          "stars": 72383
+        },
+        {
+          "date": "2026-11-26",
+          "stars": 73326
+        },
+        {
+          "date": "2026-11-27",
+          "stars": 74080
+        },
+        {
+          "date": "2026-11-28",
+          "stars": 74577
+        }
+      ]
+    },
+    {
+      "fullName": "mjmirza/app-store-compliance",
+      "url": "https://github.com/mjmirza/app-store-compliance",
+      "description": "Avoid common App Store and Google Play rejections. Open playbook and pre-submission guard with 125 documented rejection patterns and fixes, privacy manifest and Data safety checks, 117 tracked deadlines (EU AI Act, DSA, COPPA, age laws), and a skill for AI coding agents.",
+      "description_ko": "일반적인 App Store 및 Google Play 거절 사유를 방지하세요.",
+      "stars": 8055,
+      "delta7": 5159,
+      "deltaSource": "history",
+      "isNew": false,
+      "series": [
+        {
+          "date": "2026-11-20",
+          "stars": 2082
+        },
+        {
+          "date": "2026-11-21",
+          "stars": 2896
+        },
+        {
+          "date": "2026-11-22",
+          "stars": 3521
+        },
+        {
+          "date": "2026-11-23",
+          "stars": 4210
+        },
+        {
+          "date": "2026-11-24",
+          "stars": 5288
+        },
+        {
+          "date": "2026-11-25",
+          "stars": 6068
+        },
+        {
+          "date": "2026-11-26",
+          "stars": 6650
+        },
+        {
+          "date": "2026-11-27",
+          "stars": 7192
+        },
+        {
+          "date": "2026-11-28",
+          "stars": 8055
+        }
+      ]
+    },
+    {
+      "fullName": "mvanhorn/last30days-skill",
+      "url": "https://github.com/mvanhorn/last30days-skill",
+      "description": "AI agent skill that researches any topic across Reddit, X, YouTube, HN, Polymarket, and the web - then synthesizes a grounded summary",
+      "description_ko": "Reddit, X, YouTube, HN, Polymarket 및 웹 전반에서 주제를 조사하고 사실에 기반한 요약을 종합하는 AI 에이전트 스킬입니다.",
+      "stars": 76473,
+      "delta7": 4906,
+      "deltaSource": "history",
+      "isNew": false,
+      "series": [
+        {
+          "date": "2026-11-17",
+          "stars": 68367
+        },
+        {
+          "date": "2026-11-18",
+          "stars": 69354
+        },
+        {
+          "date": "2026-11-19",
+          "stars": 70260
+        },
+        {
+          "date": "2026-11-20",
+          "stars": 70984
+        },
+        {
+          "date": "2026-11-21",
+          "stars": 71567
+        },
+        {
+          "date": "2026-11-22",
+          "stars": 72145
+        },
+        {
+          "date": "2026-11-23",
+          "stars": 72949
+        },
+        {
+          "date": "2026-11-24",
+          "stars": 73715
+        },
+        {
+          "date": "2026-11-25",
+          "stars": 74547
+        },
+        {
+          "date": "2026-11-26",
+          "stars": 75318
+        },
+        {
+          "date": "2026-11-27",
+          "stars": 75971
+        },
+        {
+          "date": "2026-11-28",
+          "stars": 76473
+        }
+      ]
+    },
+    {
+      "fullName": "jingyaogong/minimind",
+      "url": "https://github.com/jingyaogong/minimind",
+      "description": "🧠 两小时从 0 训出你的 64M 大模型。Train your own 64M LLM from scratch in 2 hours.",
+      "description_ko": "🧠 2시간 만에 0부터 64M 대형 언어 모델을 직접 학습시켜 보세요.",
+      "stars": 72315,
+      "delta7": 4507,
+      "deltaSource": "history",
+      "isNew": false,
+      "series": [
+        {
+          "date": "2026-11-18",
+          "stars": 66222
+        },
+        {
+          "date": "2026-11-19",
+          "stars": 66556
+        },
+        {
+          "date": "2026-11-20",
+          "stars": 67163
+        },
+        {
+          "date": "2026-11-21",
+          "stars": 67808
+        },
+        {
+          "date": "2026-11-22",
+          "stars": 68250
+        },
+        {
+          "date": "2026-11-23",
+          "stars": 68963
+        },
+        {
+          "date": "2026-11-24",
+          "stars": 69819
+        },
+        {
+          "date": "2026-11-25",
+          "stars": 70539
+        },
+        {
+          "date": "2026-11-26",
+          "stars": 71238
+        },
+        {
+          "date": "2026-11-27",
+          "stars": 71889
+        },
+        {
+          "date": "2026-11-28",
+          "stars": 72315
+        }
+      ]
+    }
+  ],
+  "newRepos": [],
+  "droppedRepos": [],
+  "kit": [
+    {
+      "fullName": "erkamyaman/rust-anything",
+      "url": "https://github.com/erkamyaman/rust-anything",
+      "description": "Rewrite your app in Rust, piece by piece, checked against the original at every step. Works with TypeScript, JavaScript, Python, Go, Ruby, Java, C, PHP, C#, Kotlin and PowerShell.",
+      "description_ko": "기존 앱의 동작을 검증하며 TypeScript, Python 등의 코드를 Rust로 점진적으로 재작성하세요.",
+      "stars": 10887,
+      "kind": "MCP",
+      "isNew": true
+    },
+    {
+      "fullName": "patch-gg/pixelfx",
+      "url": "https://github.com/patch-gg/pixelfx",
+      "description": "244 pixel art effects, every one a small piece of code. Plus a Claude Code skill to make your own.",
+      "description_ko": "각각 작은 코드 조각으로 이루어진 244가지 픽셀 아트 효과와 자신만의 효과를 만들 수 있는 Claude Code 스킬을 제공합니다.",
+      "stars": 9677,
+      "kind": "SKILL",
+      "isNew": true
+    },
+    {
+      "fullName": "ersinkoc/phonebox",
+      "url": "https://github.com/ersinkoc/phonebox",
+      "description": "Turn an old Android phone into a customizable desk panel and touch control deck for Windows, Linux and macOS. 124 widgets and 30 templates for system stats, AI coding, media and automation, in 13 languages. USB or paired Wi-Fi. No cloud required.",
+      "description_ko": "오래된 안드로이드폰을 Windows, Linux, macOS용 맞춤형 데스크 패널 및 터치 컨트롤 덱으로 전환합니다.",
+      "stars": 7817,
+      "kind": "OTHER",
+      "isNew": true
+    },
+    {
+      "fullName": "KKKKhazix/agent-autoloop",
+      "url": "https://github.com/KKKKhazix/agent-autoloop",
+      "description": "让你的命令行 Agent 在后台自己接活、自己跟进到底；平时不烦你，遇到拿不准的事才发卡片找你拍板。",
+      "description_ko": "명령줄 에이전트가 백그라운드에서 스스로 작업을 수주하고 끝까지 처리하며, 평소에는 방해하지 않다가 확신이 서지 않는 일에만 카드를 보내 결정을 요청합니다.",
+      "stars": 6739,
+      "kind": "MCP",
+      "isNew": true
+    },
+    {
+      "fullName": "XinaTian/MROffice",
+      "url": "https://github.com/XinaTian/MROffice",
+      "description": "MR Office — the open-source editors of the AI office suite closest to Microsoft Office: documents, spreadsheets, presentations, PDF and code in the browser. Copilot in every editor edits real Word, Excel and PowerPoint files with you; an MCP server lets Claude, ChatGPT, Cursor and Codex create and edit them; embed it in your app with one line.",
+      "description_ko": "Microsoft Office와 가장 유사한 오픈소스 AI 오피스 스위트 에디터로, 브라우저에서 문서, 스프레드시트, 프레젠테이션, PDF, 코드를 지원합니다.",
+      "stars": 5240,
+      "kind": "MCP",
+      "isNew": true
+    },
+    {
+      "fullName": "EL4CTEO/fast-anything",
+      "url": "https://github.com/EL4CTEO/fast-anything",
+      "description": "Don't rewrite it in Rust. Rewrite the 5% that's slow: profile your app, port the hot functions with your coding agent, prove they behave the same. Python, JS/TS, Ruby, Java, Kotlin, Go, PHP, C/C++, C#, R.",
+      "description_ko": "Rust로 전부 다시 작성하지 말고 느린 5%만 다시 작성하세요. 파이썬, 노드, 루비 앱을 프로파일링하고 코딩 에이전트로 핵심 함수를 포팅한 뒤 동일하게 동작하는지 검증합니다.",
+      "stars": 4527,
+      "kind": "MCP",
+      "isNew": true
+    },
+    {
+      "fullName": "FrigadeHQ/yogurt",
+      "url": "https://github.com/FrigadeHQ/yogurt",
+      "description": "Private AI meeting notes that stay on your computer. No meeting bot. Free and open source for Mac, Windows and Linux. An alternative to Granola, Otter and Fireflies.",
+      "description_ko": "사용자 컴퓨터에 로컬로 저장되는 비공개 AI 회의록이며, Mac, Windows, Linux를 지원하는 Granola의 무료 오픈소스 대안입니다.",
+      "stars": 3776,
+      "kind": "MCP",
+      "isNew": true
+    },
+    {
+      "fullName": "caru-ini/stack-diagram",
+      "url": "https://github.com/caru-ini/stack-diagram",
+      "description": "Agent skill: describe your stack in a sentence, get an architecture diagram with official logos",
+      "description_ko": "에이전트 스킬: 스택을 한 문장으로 설명하고 공식 로고가 포함된 아키텍처 다이어그램을 받아보세요.",
+      "stars": 2980,
+      "kind": "SKILL",
+      "isNew": true
+    },
+    {
+      "fullName": "sybil-solutions/inference-optimisation-skill",
+      "url": "https://github.com/sybil-solutions/inference-optimisation-skill",
+      "description": "Agent skill for hill-climbing local LLM serving speed (decode, speculative decoding, prefill, KV, startup, TTFT) on any hardware and quantization",
+      "description_ko": "어떤 하드웨어와 양자화 환경에서도 로컬 LLM의 서빙 속도를 최적화하는 에이전트 스킬입니다.",
+      "stars": 2891,
+      "kind": "SKILL",
+      "isNew": true
+    },
+    {
+      "fullName": "DIYgod/pinky",
+      "url": "https://github.com/DIYgod/pinky",
+      "description": "Let AI use your iPhone or Android phone, with you in the loop: any MCP agent from macOS, Windows or Linux, or Pinky itself, right on the phone.",
+      "description_ko": "macOS, Windows, Linux의 모든 MCP 에이전트나 Pinky를 사용하여 사용자가 개입하면서 AI가 내 아이폰이나 안드로이드폰을 직접 조작할 수 있게 해줍니다.",
+      "stars": 2844,
+      "kind": "MCP",
+      "isNew": true
+    },
+    {
+      "fullName": "N1nEmAn/sapper-v2",
+      "url": "https://github.com/N1nEmAn/sapper-v2",
+      "description": "The first fruit of the Nüwa tree — an autonomous AI pentest legion (634-team champion, 8h unattended, 1B tokens beat 4.5B). Not just a tool: evolvable by design. Grow your own fruit on the Nüwa Foundation (Create/Language/History).",
+      "description_ko": "자율형 AI 모의 해킹 군단인 뉘와 나무의 첫 번째 결실입니다.",
+      "stars": 2683,
+      "kind": "AGENT",
+      "isNew": true
+    },
+    {
+      "fullName": "pierridotite/mobile-agent-testers",
+      "url": "https://github.com/pierridotite/mobile-agent-testers",
+      "description": "20 AI testers on 20 different phones, in parallel, on GitHub's free runners: Claude Code agents on iOS Simulators and Android emulators that find broken flows, translation, layout and accessibility bugs",
+      "description_ko": "GitHub의 무료 러너에서 20대의 서로 다른 스마트폰을 대상으로 20명의 AI 테스터를 병렬 구동: iOS 시뮬레이터와 안드로이드 에뮬레이터에서 깨진 플로우, 번역, 레이아웃 및 접근성 버그를 찾는 Claude Code 에이전트",
+      "stars": 2642,
+      "kind": "AGENT",
+      "isNew": true
+    }
+  ],
+  "keywords": [
+    {
+      "term": "agent",
+      "today": 18,
+      "avg7": 15.71,
+      "delta": 2.29,
+      "isNew": false
+    },
+    {
+      "term": "atari",
+      "today": 2,
+      "avg7": 0,
+      "delta": 2,
+      "isNew": true
+    },
+    {
+      "term": "atari homebrew",
+      "today": 2,
+      "avg7": 0,
+      "delta": 2,
+      "isNew": true
+    },
+    {
+      "term": "awards",
+      "today": 2,
+      "avg7": 0,
+      "delta": 2,
+      "isNew": true
+    },
+    {
+      "term": "balatro",
+      "today": 2,
+      "avg7": 0,
+      "delta": 2,
+      "isNew": true
+    },
+    {
+      "term": "citro",
+      "today": 2,
+      "avg7": 0,
+      "delta": 2,
+      "isNew": true
+    },
+    {
+      "term": "convex",
+      "today": 2,
+      "avg7": 0,
+      "delta": 2,
+      "isNew": true
+    },
+    {
+      "term": "dart",
+      "today": 2,
+      "avg7": 0,
+      "delta": 2,
+      "isNew": true
+    },
+    {
+      "term": "deepcrossattention",
+      "today": 2,
+      "avg7": 0,
+      "delta": 2,
+      "isNew": true
+    },
+    {
+      "term": "google deepcrossattention",
+      "today": 2,
+      "avg7": 0,
+      "delta": 2,
+      "isNew": true
+    },
+    {
+      "term": "grok",
+      "today": 2,
+      "avg7": 0,
+      "delta": 2,
+      "isNew": true
+    },
+    {
+      "term": "homebrew",
+      "today": 2,
+      "avg7": 0,
+      "delta": 2,
+      "isNew": true
+    },
+    {
+      "term": "homebrew awards",
+      "today": 2,
+      "avg7": 0,
+      "delta": 2,
+      "isNew": true
+    },
+    {
+      "term": "images",
+      "today": 2,
+      "avg7": 0,
+      "delta": 2,
+      "isNew": true
+    },
+    {
+      "term": "michael",
+      "today": 2,
+      "avg7": 0,
+      "delta": 2,
+      "isNew": true
+    },
+    {
+      "term": "michael nielsen",
+      "today": 2,
+      "avg7": 0,
+      "delta": 2,
+      "isNew": true
+    },
+    {
+      "term": "nielsen",
+      "today": 2,
+      "avg7": 0,
+      "delta": 2,
+      "isNew": true
+    },
+    {
+      "term": "prediction",
+      "today": 2,
+      "avg7": 0,
+      "delta": 2,
+      "isNew": true
+    },
+    {
+      "term": "spacex",
+      "today": 2,
+      "avg7": 0,
+      "delta": 2,
+      "isNew": true
+    },
+    {
+      "term": "webrtc",
+      "today": 2,
+      "avg7": 0,
+      "delta": 2,
+      "isNew": true
+    }
+  ],
+  "papers": [],
+  "paperCategories": [],
+  "hfModels": [
+    {
+      "id": "thinkingmachines/Inkling-2-Mini",
+      "url": "https://huggingface.co/thinkingmachines/Inkling-2-Mini",
+      "likes": 6503,
+      "downloads": 155741,
+      "pipeline": "image-text-to-text"
+    },
+    {
+      "id": "unsloth/Inkling-2-Mini-GGUF",
+      "url": "https://huggingface.co/unsloth/Inkling-2-Mini-GGUF",
+      "likes": 1625,
+      "downloads": 3302340,
+      "pipeline": "image-text-to-text"
+    },
+    {
+      "id": "SulphurAI/Sulphur-3",
+      "url": "https://huggingface.co/SulphurAI/Sulphur-3",
+      "likes": 1385,
+      "downloads": 539421,
+      "pipeline": null
+    },
+    {
+      "id": "prism-ml/Ternary-Bonsai-2.5-27B-GGUF",
+      "url": "https://huggingface.co/prism-ml/Ternary-Bonsai-2.5-27B-GGUF",
+      "likes": 652,
+      "downloads": 382546,
+      "pipeline": "text-generation"
+    },
+    {
+      "id": "AtomicChat/Inkling-2-Mini-Uncensored-GGUF",
+      "url": "https://huggingface.co/AtomicChat/Inkling-2-Mini-Uncensored-GGUF",
+      "likes": 1046,
+      "downloads": 1059763,
+      "pipeline": "image-text-to-text"
+    },
+    {
+      "id": "inworld/voice-isolator",
+      "url": "https://huggingface.co/inworld/voice-isolator",
+      "likes": 1017,
+      "downloads": 20510,
+      "pipeline": "audio-to-audio"
+    },
+    {
+      "id": "Lightricks/LTX-2.5",
+      "url": "https://huggingface.co/Lightricks/LTX-2.5",
+      "likes": 13750,
+      "downloads": 3080701,
+      "pipeline": "image-to-video"
+    },
+    {
+      "id": "llamaindex/OCRia-nano-1",
+      "url": "https://huggingface.co/llamaindex/OCRia-nano-1",
+      "likes": 366,
+      "downloads": 626,
+      "pipeline": "image-to-text"
+    },
+    {
+      "id": "nvidia/Nemotron-Labs-Image-30B-A3B",
+      "url": "https://huggingface.co/nvidia/Nemotron-Labs-Image-30B-A3B",
+      "likes": 344,
+      "downloads": 1692,
+      "pipeline": "text-to-image"
+    },
+    {
+      "id": "ISTA-DASLab/Inkling-2-Mini-GSQ-RCO-GGUF",
+      "url": "https://huggingface.co/ISTA-DASLab/Inkling-2-Mini-GSQ-RCO-GGUF",
+      "likes": 293,
+      "downloads": 24931,
+      "pipeline": "text-generation"
+    },
+    {
+      "id": "strata-engine/Inkling-2-Mini-Strata",
+      "url": "https://huggingface.co/strata-engine/Inkling-2-Mini-Strata",
+      "likes": 308,
+      "downloads": 4532,
+      "pipeline": "image-text-to-text"
+    },
+    {
+      "id": "sand-ai/MAGI-2-preview",
+      "url": "https://huggingface.co/sand-ai/MAGI-2-preview",
+      "likes": 372,
+      "downloads": 0,
+      "pipeline": "image-text-to-video"
+    },
+    {
+      "id": "apple/DepthPro2",
+      "url": "https://huggingface.co/apple/DepthPro2",
+      "likes": 1369,
+      "downloads": 0,
+      "pipeline": "depth-estimation"
+    },
+    {
+      "id": "kandinskylab/Kandinsky-ImageSR-2.0",
+      "url": "https://huggingface.co/kandinskylab/Kandinsky-ImageSR-2.0",
+      "likes": 203,
+      "downloads": 582,
+      "pipeline": "image-to-image"
+    },
+    {
+      "id": "baidu/ERNIE-5.5-Flash-Preview",
+      "url": "https://huggingface.co/baidu/ERNIE-5.5-Flash-Preview",
+      "likes": 394,
+      "downloads": 2609,
+      "pipeline": "text-generation"
+    },
+    {
+      "id": "Qwen/Qwen3.8-27B",
+      "url": "https://huggingface.co/Qwen/Qwen3.8-27B",
+      "likes": 21945,
+      "downloads": 5752506,
+      "pipeline": "image-text-to-text"
+    },
+    {
+      "id": "Sentinel7/h3",
+      "url": "https://huggingface.co/Sentinel7/h3",
+      "likes": 2262,
+      "downloads": 0,
+      "pipeline": null
+    },
+    {
+      "id": "Lakonik/pi-H3",
+      "url": "https://huggingface.co/Lakonik/pi-H3",
+      "likes": 370,
+      "downloads": 97525,
+      "pipeline": "image-text-to-video"
+    },
+    {
+      "id": "inclusionAI/Ling-3.2-air",
+      "url": "https://huggingface.co/inclusionAI/Ling-3.2-air",
+      "likes": 309,
+      "downloads": 2403,
+      "pipeline": null
+    },
+    {
+      "id": "orcarouter/Inkling-2-Mini-abliterated-GGUF",
+      "url": "https://huggingface.co/orcarouter/Inkling-2-Mini-abliterated-GGUF",
+      "likes": 345,
+      "downloads": 21019,
+      "pipeline": "text-generation"
+    }
+  ],
+  "feeds": {
+    "hn": [
+      {
+        "id": 50668145,
+        "title": "Credit card skimming scripts using WebRTC found on popular shopping sites",
+        "url": "https://www.infohawk.com/news/2026-11-27-black-friday-webrtc-skimmer",
+        "domain": "infohawk.com",
+        "points": 492,
+        "comments": 259,
+        "hnUrl": "https://news.ycombinator.com/item?id=50668145"
+      },
+      {
+        "id": 50670757,
+        "title": "Michael Nielsen took down his book on neural nets",
+        "url": "https://neuralnetworksanddeeplearning.com/",
+        "domain": "neuralnetworksanddeeplearning.com",
+        "points": 484,
+        "comments": 299,
+        "hnUrl": "https://news.ycombinator.com/item?id=50670757"
+      },
+      {
+        "id": 50643158,
+        "title": "GPT 6.2 Astra Solves a Historical Mystery",
+        "url": "https://generativehistory.substack.com/p/gpt-62-astra-solves-a-historical",
+        "domain": "generativehistory.substack.com",
+        "points": 407,
+        "comments": 256,
+        "hnUrl": "https://news.ycombinator.com/item?id=50643158"
+      },
+      {
+        "id": 50667726,
+        "title": "Show HN: bouncemarket – a live prediction market game for a bouncing ball",
+        "url": "https://bouncemarket.minhanhday.com/",
+        "domain": "bouncemarket.minhanhday.com",
+        "points": 359,
+        "comments": 119,
+        "hnUrl": "https://news.ycombinator.com/item?id=50667726"
+      },
+      {
+        "id": 50670855,
+        "title": "States sue SpaceX to stop Grok from generating child sex images, revenge porn",
+        "url": "https://www.oag.state.va.us/media-center/news-releases/jay-jones/3162-attorneys-general-jones-and-rayfield-file-suit-against-spacex-parent-company-of-x-xai-and-grok-over-creation-and-promotion-of-child-exploitation-and-non-consensual-images-on-platform",
+        "domain": "oag.state.va.us",
+        "points": 356,
+        "comments": 202,
+        "hnUrl": "https://news.ycombinator.com/item?id=50670855"
+      },
+      {
+        "id": 50672565,
+        "title": "Google's DeepCrossAttention achieves comparable model quality up to 3x faster",
+        "url": "https://research.google/blog/supercharging-transformer-residual-connections/",
+        "domain": "research.google",
+        "points": 299,
+        "comments": 121,
+        "hnUrl": "https://news.ycombinator.com/item?id=50672565"
+      },
+      {
+        "id": 50669765,
+        "title": "Convex skills send the user's app idea to a remote server without telling them",
+        "url": "https://github.com/convex/convex-backend-skill/issues/64",
+        "domain": "github.com",
+        "points": 274,
+        "comments": 88,
+        "hnUrl": "https://news.ycombinator.com/item?id=50669765"
+      },
+      {
+        "id": 50657346,
+        "title": "The Balatro Timeline",
+        "url": "https://localthunk.com/blog/balatro-timeline-3aarh",
+        "domain": "localthunk.com",
+        "points": 253,
+        "comments": 56,
+        "hnUrl": "https://news.ycombinator.com/item?id=50657346"
+      },
+      {
+        "id": 50667989,
+        "title": "False computer-checked proofs",
+        "url": "https://cr.yp.to/proofs/falseccp.html",
+        "domain": "cr.yp.to",
+        "points": 214,
+        "comments": 83,
+        "hnUrl": "https://news.ycombinator.com/item?id=50667989"
+      },
+      {
+        "id": 50657392,
+        "title": "First images of the impact of DART asteroid deflection experiment",
+        "url": "https://arstechnica.com/space/2026/11/europes-hera-mission-returns-to-the-chaotic-scene-of-a-cosmic-smashup/",
+        "domain": "arstechnica.com",
+        "points": 205,
+        "comments": 62,
+        "hnUrl": "https://news.ycombinator.com/item?id=50657392"
+      },
+      {
+        "id": 50662313,
+        "title": "Citroën Hydraulic System",
+        "url": "https://www.citroenet.org.uk/miscellaneous/hydraulics/hydraulics-1.html",
+        "domain": "citroenet.org.uk",
+        "points": 172,
+        "comments": 54,
+        "hnUrl": "https://news.ycombinator.com/item?id=50662313"
+      },
+      {
+        "id": 50673688,
+        "title": "Atari Homebrew Awards Cancelled",
+        "url": "https://forums.atariage.com/topic/394894-atari-homebrew-awards-cancelled/",
+        "domain": "forums.atariage.com",
+        "points": 168,
+        "comments": 160,
+        "hnUrl": "https://news.ycombinator.com/item?id=50673688"
+      },
+      {
+        "id": 50674218,
+        "title": "Unkernel: Real Linux kernel, compiled to WebAssembly",
+        "url": "https://unkernel.dev",
+        "domain": "unkernel.dev",
+        "points": 155,
+        "comments": 11,
+        "hnUrl": "https://news.ycombinator.com/item?id=50674218"
+      },
+      {
+        "id": 50669673,
+        "title": "Show HN: DragDropMath – Learn math by feel",
+        "url": "https://dragdropmath.com/",
+        "domain": "dragdropmath.com",
+        "points": 123,
+        "comments": 37,
+        "hnUrl": "https://news.ycombinator.com/item?id=50669673"
+      },
+      {
+        "id": 50672008,
+        "title": "9/UX: a Macintosh-inspired desktop for 9front",
+        "url": "https://progrium.github.io/9ux/",
+        "domain": "progrium.github.io",
+        "points": 111,
+        "comments": 26,
+        "hnUrl": "https://news.ycombinator.com/item?id=50672008"
+      },
+      {
+        "id": 50667371,
+        "title": "Rayshader 1.0: Exit the Matrix",
+        "url": "https://www.tylermw.com/posts/rayverse/rayshader-1-0-exit-the-matrix.html",
+        "domain": "tylermw.com",
+        "points": 109,
+        "comments": 14,
+        "hnUrl": "https://news.ycombinator.com/item?id=50667371"
+      },
+      {
+        "id": 50672521,
+        "title": "Tabernetes: A Kubernetes cluster whose nodes are browser tabs",
+        "url": "https://tabernet.es/",
+        "domain": "tabernet.es",
+        "points": 85,
+        "comments": 31,
+        "hnUrl": "https://news.ycombinator.com/item?id=50672521"
+      },
+      {
+        "id": 50672142,
+        "title": "Source Control from Hell",
+        "url": "https://frantic.im/git/",
+        "domain": "frantic.im",
+        "points": 84,
+        "comments": 62,
+        "hnUrl": "https://news.ycombinator.com/item?id=50672142"
+      },
+      {
+        "id": 50644213,
+        "title": "Cyberpunk Television Shows",
+        "url": "https://shellzine.net/cyberpunk-television/",
+        "domain": "shellzine.net",
+        "points": 83,
+        "comments": 81,
+        "hnUrl": "https://news.ycombinator.com/item?id=50644213"
+      },
+      {
+        "id": 50633531,
+        "title": "Show HN: Analysis of Hacker News predictions since 2008",
+        "url": "https://hnpredictions.com/",
+        "domain": "hnpredictions.com",
+        "points": 80,
+        "comments": 69,
+        "hnUrl": "https://news.ycombinator.com/item?id=50633531"
+      },
+      {
+        "id": 50631823,
+        "title": "Build your own amp modeler: $78 DIY pedal kit from TONE3000",
+        "url": "https://www.guitarworld.com/gear/guitar-pedals/tone3000-daisy-audio-diy-pedal-kit",
+        "domain": "guitarworld.com",
+        "points": 79,
+        "comments": 17,
+        "hnUrl": "https://news.ycombinator.com/item?id=50631823"
+      },
+      {
+        "id": 50670841,
+        "title": "The AT&T Unix PC (3B1) VM",
+        "url": "https://virtuallyfun.com/2026/11/22/the-ultimate-att-unix-pc-3b1-vm-w-tcp-ip-and-apps/",
+        "domain": "virtuallyfun.com",
+        "points": 77,
+        "comments": 13,
+        "hnUrl": "https://news.ycombinator.com/item?id=50670841"
+      },
+      {
+        "id": 50638593,
+        "title": "Lydian Chromatic Concept of Tonal Organization",
+        "url": "https://en.wikipedia.org/wiki/Lydian_Chromatic_Concept_of_Tonal_Organization",
+        "domain": "en.wikipedia.org",
+        "points": 58,
+        "comments": 13,
+        "hnUrl": "https://news.ycombinator.com/item?id=50638593"
+      },
+      {
+        "id": 50671275,
+        "title": "Prospero: Bloat-free, native AI coding harness with ImGui",
+        "url": "https://github.com/skeeto/prospero",
+        "domain": "github.com",
+        "points": 55,
+        "comments": 18,
+        "hnUrl": "https://news.ycombinator.com/item?id=50671275"
+      },
+      {
+        "id": 50671651,
+        "title": "SessionGraph: Visualize all your coding agent sessions in one interactive graph",
+        "url": "https://sessiongraph.ai/",
+        "domain": "sessiongraph.ai",
+        "points": 44,
+        "comments": 23,
+        "hnUrl": "https://news.ycombinator.com/item?id=50671651"
+      },
+      {
+        "id": 50650253,
+        "title": "Sydney Fire Ant Infestation",
+        "url": "https://www.abc.net.au/news/2026-11-25/nsw-government-ramps-up-efforts-to-respond-to-fire-ants-/107424812",
+        "domain": "abc.net.au",
+        "points": 37,
+        "comments": 13,
+        "hnUrl": "https://news.ycombinator.com/item?id=50650253"
+      },
+      {
+        "id": 50654773,
+        "title": "How WinHelp Files Work",
+        "url": "https://quin.fyi/posts/how-winhelp-files-work.html",
+        "domain": "quin.fyi",
+        "points": 28,
+        "comments": 23,
+        "hnUrl": "https://news.ycombinator.com/item?id=50654773"
+      },
+      {
+        "id": 50666724,
+        "title": "Paolo Soleri built a utopian eco-city in the Arizona desert",
+        "url": "https://www.worldofinteriors.com/story/paolo-soleri-arconsati-arizona",
+        "domain": "worldofinteriors.com",
+        "points": 25,
+        "comments": 4,
+        "hnUrl": "https://news.ycombinator.com/item?id=50666724"
+      },
+      {
+        "id": 50632052,
+        "title": "Loom seamlessly combines weaving, knitting and braiding",
+        "url": "https://news.cornell.edu/stories/2026/11/loom-seamlessly-combines-weaving-knitting-and-braiding",
+        "domain": "news.cornell.edu",
+        "points": 19,
+        "comments": 0,
+        "hnUrl": "https://news.ycombinator.com/item?id=50632052"
+      },
+      {
+        "id": 50657300,
+        "title": "fplotlib – Fortran Plotting Library",
+        "url": "https://github.com/fortran-lang/fplotlib",
+        "domain": "github.com",
+        "points": 9,
+        "comments": 0,
+        "hnUrl": "https://news.ycombinator.com/item?id=50657300"
+      }
+    ],
+    "geeknews": [
+      {
+        "id": "https://news.hada.io/topic?id=37990",
+        "source": "geeknews",
+        "title": "Atari Homebrew Awards 취소",
+        "url": "https://news.hada.io/topic?id=37990&utm_source=geeknews&utm_medium=rss&utm_campaign=news",
+        "domain": "news.hada.io",
+        "sub": null,
+        "publishedAt": "2026-11-28T14:33:23+09:00"
+      },
+      {
+        "id": "https://news.hada.io/topic?id=37989",
+        "source": "geeknews",
+        "title": ".php 최상위 도메인 신청에 대한 반대 의견, ICANN 사이트에 공개",
+        "url": "https://news.hada.io/topic?id=37989&utm_source=geeknews&utm_medium=rss&utm_campaign=news",
+        "domain": "news.hada.io",
+        "sub": null,
+        "publishedAt": "2026-11-28T14:01:53+09:00"
+      },
+      {
+        "id": "https://news.hada.io/topic?id=37988",
+        "source": "geeknews",
+        "title": "Balatro 개발 연대기",
+        "url": "https://news.hada.io/topic?id=37988&utm_source=geeknews&utm_medium=rss&utm_campaign=news",
+        "domain": "news.hada.io",
+        "sub": null,
+        "publishedAt": "2026-11-28T13:34:24+09:00"
+      },
+      {
+        "id": "https://news.hada.io/topic?id=37987",
+        "source": "geeknews",
+        "title": "Google DeepCrossAttention, 최대 3배 빠르게 동등한 모델 품질 달성",
+        "url": "https://news.hada.io/topic?id=37987&utm_source=geeknews&utm_medium=rss&utm_campaign=news",
+        "domain": "news.hada.io",
+        "sub": null,
+        "publishedAt": "2026-11-28T12:33:23+09:00"
+      },
+      {
+        "id": "https://news.hada.io/topic?id=37984",
+        "source": "geeknews",
+        "title": "Citroën 유압 시스템",
+        "url": "https://news.hada.io/topic?id=37984&utm_source=geeknews&utm_medium=rss&utm_campaign=news",
+        "domain": "news.hada.io",
+        "sub": null,
+        "publishedAt": "2026-11-28T11:34:19+09:00"
+      },
+      {
+        "id": "https://news.hada.io/topic?id=37983",
+        "source": "geeknews",
+        "title": "“나는 두렵다”: 《Careless People》의 Sarah Wynn-Williams가 겪는 발언 금지 명령 아래의 삶",
+        "url": "https://news.hada.io/topic?id=37983&utm_source=geeknews&utm_medium=rss&utm_campaign=news",
+        "domain": "news.hada.io",
+        "sub": null,
+        "publishedAt": "2026-11-28T10:33:30+09:00"
+      },
+      {
+        "id": "https://news.hada.io/topic?id=37980",
+        "source": "geeknews",
+        "title": "BUI: BlenderUI를 사용하는 세계 최대 2D 차트 라이브러리",
+        "url": "https://news.hada.io/topic?id=37980&utm_source=geeknews&utm_medium=rss&utm_campaign=news",
+        "domain": "news.hada.io",
+        "sub": null,
+        "publishedAt": "2026-11-28T09:31:35+09:00"
+      },
+      {
+        "id": "https://news.hada.io/topic?id=37979",
+        "source": "geeknews",
+        "title": "Jolt - C와 대화하는 Clojure",
+        "url": "https://news.hada.io/topic?id=37979&utm_source=geeknews&utm_medium=rss&utm_campaign=news",
+        "domain": "news.hada.io",
+        "sub": null,
+        "publishedAt": "2026-11-28T09:30:02+09:00"
+      },
+      {
+        "id": "https://news.hada.io/topic?id=37978",
+        "source": "geeknews",
+        "title": "모두가 모든 것을 만들고 있다",
+        "url": "https://news.hada.io/topic?id=37978&utm_source=geeknews&utm_medium=rss&utm_campaign=news",
+        "domain": "news.hada.io",
+        "sub": null,
+        "publishedAt": "2026-11-28T09:10:02+09:00"
+      },
+      {
+        "id": "https://news.hada.io/topic?id=37976",
+        "source": "geeknews",
+        "title": "머신러닝의 불확실성 입문",
+        "url": "https://news.hada.io/topic?id=37976&utm_source=geeknews&utm_medium=rss&utm_campaign=news",
+        "domain": "news.hada.io",
+        "sub": null,
+        "publishedAt": "2026-11-28T08:46:25+09:00"
+      },
+      {
+        "id": "https://news.hada.io/topic?id=37975",
+        "source": "geeknews",
+        "title": "컴퓨터 검증을 통과한 거짓 증명",
+        "url": "https://news.hada.io/topic?id=37975&utm_source=geeknews&utm_medium=rss&utm_campaign=news",
+        "domain": "news.hada.io",
+        "sub": null,
+        "publishedAt": "2026-11-28T08:43:25+09:00"
+      },
+      {
+        "id": "https://news.hada.io/topic?id=37974",
+        "source": "geeknews",
+        "title": "미국 주정부들, Grok의 비동의 성적 이미지 생성 및 유통 문제로 SpaceX 제소",
+        "url": "https://news.hada.io/topic?id=37974&utm_source=geeknews&utm_medium=rss&utm_campaign=news",
+        "domain": "news.hada.io",
+        "sub": null,
+        "publishedAt": "2026-11-28T08:40:25+09:00"
+      },
+      {
+        "id": "https://news.hada.io/topic?id=37973",
+        "source": "geeknews",
+        "title": "Convex 스킬, 사용자에게 알리지 않고 앱 아이디어를 원격 서버로 전송",
+        "url": "https://news.hada.io/topic?id=37973&utm_source=geeknews&utm_medium=rss&utm_campaign=news",
+        "domain": "news.hada.io",
+        "sub": null,
+        "publishedAt": "2026-11-28T07:32:40+09:00"
+      },
+      {
+        "id": "https://news.hada.io/topic?id=37972",
+        "source": "geeknews",
+        "title": "DART 소행성 궤도 변경 실험의 충돌 흔적을 담은 첫 이미지",
+        "url": "https://news.hada.io/topic?id=37972&utm_source=geeknews&utm_medium=rss&utm_campaign=news",
+        "domain": "news.hada.io",
+        "sub": null,
+        "publishedAt": "2026-11-28T06:37:47+09:00"
+      },
+      {
+        "id": "https://news.hada.io/topic?id=37971",
+        "source": "geeknews",
+        "title": "Michael Nielsen, 자신의 신경망 책을 내림",
+        "url": "https://news.hada.io/topic?id=37971&utm_source=geeknews&utm_medium=rss&utm_campaign=news",
+        "domain": "news.hada.io",
+        "sub": null,
+        "publishedAt": "2026-11-28T06:34:47+09:00"
+      },
+      {
+        "id": "https://news.hada.io/topic?id=37970",
+        "source": "geeknews",
+        "title": "Claude가 자신을 동물 캐릭터로 그린다면?",
+        "url": "https://news.hada.io/topic?id=37970&utm_source=geeknews&utm_medium=rss&utm_campaign=news",
+        "domain": "news.hada.io",
+        "sub": null,
+        "publishedAt": "2026-11-28T05:39:52+09:00"
+      },
+      {
+        "id": "https://news.hada.io/topic?id=37969",
+        "source": "geeknews",
+        "title": "GPT-6.2 Astra, 1808년 익명 스케치북을 그린 사람을 찾다",
+        "url": "https://news.hada.io/topic?id=37969&utm_source=geeknews&utm_medium=rss&utm_campaign=news",
+        "domain": "news.hada.io",
+        "sub": null,
+        "publishedAt": "2026-11-28T05:36:52+09:00"
+      },
+      {
+        "id": "https://news.hada.io/topic?id=37968",
+        "source": "geeknews",
+        "title": "나는 AI가 두렵다",
+        "url": "https://news.hada.io/topic?id=37968&utm_source=geeknews&utm_medium=rss&utm_campaign=news",
+        "domain": "news.hada.io",
+        "sub": null,
+        "publishedAt": "2026-11-28T04:38:51+09:00"
+      },
+      {
+        "id": "https://news.hada.io/topic?id=37967",
+        "source": "geeknews",
+        "title": "인기 쇼핑 사이트에서 WebRTC를 이용한 신용카드 정보 탈취 스크립트 발견",
+        "url": "https://news.hada.io/topic?id=37967&utm_source=geeknews&utm_medium=rss&utm_campaign=news",
+        "domain": "news.hada.io",
+        "sub": null,
+        "publishedAt": "2026-11-28T04:35:50+09:00"
+      },
+      {
+        "id": "https://news.hada.io/topic?id=37966",
+        "source": "geeknews",
+        "title": "뉴욕과 캘리포니아, 새해부터 연령 기반 접근 제한 규칙 시행",
+        "url": "https://news.hada.io/topic?id=37966&utm_source=geeknews&utm_medium=rss&utm_campaign=news",
+        "domain": "news.hada.io",
+        "sub": null,
+        "publishedAt": "2026-11-28T03:33:55+09:00"
+      }
+    ],
+    "reddit": []
+  }
+}
